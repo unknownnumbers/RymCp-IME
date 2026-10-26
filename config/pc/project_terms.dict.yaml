@@ -1,0 +1,11 @@
+# Project-selected terms approved in Q102; no bulk upstream dictionary import.
+# Keep canonical dictionary pinyin; the existing speller handles ing/eng input.
+---
+name: project_terms
+version: '2026-10-18.1'
+sort: by_weight
+use_preset_vocabulary: false
+...
+正定矩陣	zheng ding ju zhen	100
+半正定矩陣	ban zheng ding ju zhen	100
+幺半群	yao ban qun	100

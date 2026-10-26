@@ -1,0 +1,25 @@
+# PDE 精選詞；Q115/Q116 已確認。來源見 licenses/pde-terms-sources.md。
+---
+name: project_pde_terms
+version: "2026-10-19.2"
+sort: by_weight
+use_preset_vocabulary: false
+...
+有限維約化	you xian wei yue hua	400
+二階項	er jie xiang	400
+偏導數	pian dao shu	400
+臨界條件	lin jie tiao jian	400
+多解性	duo jie xing	1600
+漸近性態	jian jin xing tai	400
+橢圓型偏微分方程	tuo yuan xing pian wei fen fang cheng	400
+弱解	ruo jie	1600
+緊性	jin xing	1600
+先驗估計	xian yan gu ji	400
+臨界指數	lin jie zhi shu	400
+能量泛函	neng liang fan han	400
+緊嵌入	jin qian ru	400
+非退化	fei tui hua	400
+山路定理	shan lu ding li	400
+有界域	you jie yu	400
+弱收斂	ruo shou lian	400
+強收斂	qiang shou lian	400

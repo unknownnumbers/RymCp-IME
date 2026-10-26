@@ -1,0 +1,469 @@
+{
+  "prepared_at": "2026-10-26",
+  "scope": "Public licence and attribution files only. Main project licensing boundaries are defined in THIRD_PARTY_NOTICES.md.",
+  "version_policy": "Mirtle parent pinned at 87e73d7182916f3db9dbc0b6a4d18a78a775b298. Upstream notice snapshots are identified individually and are not asserted to be the exact upstream data revisions consumed by Mirtle.",
+  "source_relations": {
+    "mirtle_direct_credits": [
+      "kfcd/chaizi (CC-BY-3.0)",
+      "CHISE/ids (GPL-2.0-or-later)",
+      "yi-bai/ids (MIT)"
+    ],
+    "mirtle_history": "Includes additions from henrysting/chaizi, whose fixed LICENSE blob is identical to kfcd/chaizi.",
+    "chise_mirror": "chise/ids is the CHISE maintainer's GitHub mirror of https://gitlab.chise.org/CHISE/ids; the GitLab primary README was also read through web search.",
+    "license_history": "GitHub path histories show kfcd/chaizi LICENSE unchanged since initial commit 218276daa1ca1465ca4ef6864ec22783ea16a84f (2015-09-07); yi-bai/ids LICENSE unchanged since initial commit 0c62f4a5042c7513f127dfff6a5a10608e1628bf (2021-04-05). These facts concern notices, not precise downstream data provenance."
+  },
+  "native_scope": "Direct fixed engine and plugin licenses, plus the vendored Lua notices. Other build dependencies/submodules retain their own upstream licenses and are not claimed fully inventoried here. The pinned librime-lua CMakeLists.txt selects in-tree lua5.4 when its lua.h exists; lua5.3 notice is retained for completeness of the downloaded thirdparty source tree, not claimed as linked runtime.",
+  "files": [
+    {
+      "path": "licenses/CC-BY-SA-4.0.txt",
+      "bytes": 20138,
+      "sha256": "28a9529c7d0bb4dc51f4bf5c116a3d16ef247a052f7591466768ddf563fd1cf5",
+      "git_blob_sha1": "2d58298e6eda10e7204abb52722efbc840db2390",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/legalcode.txt",
+      "scope_note": "Complete CC BY-SA 4.0 legal code; scope is defined in THIRD_PARTY_NOTICES.md.",
+      "saved_representation": "Original saved notice bytes retained without edits."
+    },
+    {
+      "path": "licenses/EDRDG-licence.html",
+      "bytes": 13587,
+      "sha256": "52f60ea9ca68170a2f0663d7dba381ebf1bd57c17a3347dfe21153865c156692",
+      "git_blob_sha1": "6629edeac2c1d19c93b4876d83103902f78c47fe",
+      "url": "https://www.edrdg.org/edrdg/licence.html",
+      "scope_note": "Complete saved EDRDG licence and attribution statement.",
+      "saved_representation": "Original saved notice bytes retained without edits."
+    },
+    {
+      "path": "licenses/english-extensions-Ice-GPL-3.0.txt",
+      "bytes": 35149,
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+      "git_blob_sha1": "f288702d2fa16d3cdf0035b15a9fcbc552cd88e7",
+      "url": "https://github.com/iDvel/rime-ice/blob/da1fbe602e38f26db846fa10120ee64c2b0324c0/LICENSE",
+      "scope_note": "GPLv3 for Ice reference and derived extension material.",
+      "saved_representation": "Original saved notice bytes retained without edits."
+    },
+    {
+      "path": "licenses/essay-LGPL-3.0.txt",
+      "bytes": 7652,
+      "sha256": "97628afebc60f026f5c2b25d7491c46a5c4ee61f693e7cfa07fbd2c03605979b",
+      "git_blob_sha1": "341c30bda4457610db4829294e5d7e526d4c835b",
+      "url": "https://github.com/rime/rime-essay/blob/master/LICENSE",
+      "scope_note": "LGPLv3; precise source-data commit of the Weasel 0.17.4 essay package remains unidentified.",
+      "saved_representation": "Original saved notice bytes retained without edits."
+    },
+    {
+      "path": "licenses/JMdict-EDICT_Dictionary_Project.html",
+      "bytes": 44987,
+      "sha256": "873d4730db9b07f5f2554628f30969147e5054ad1f3bc1d528418d1b4961b791",
+      "git_blob_sha1": "0bf11a6579f98c5cbe963a275e50fb02bba566da",
+      "url": "https://www.edrdg.org/wiki/JMdict-EDICT_Dictionary_Project.html",
+      "scope_note": "Complete saved official project documentation.",
+      "saved_representation": "Original saved notice bytes retained without edits."
+    },
+    {
+      "path": "licenses/KANJIDIC_Project.html",
+      "bytes": 58521,
+      "sha256": "d58b6d859772c5c2031911eb7604f2d55d50c4ac6abc8bfece17550899baaf7d",
+      "git_blob_sha1": "63f84315a1fe87391a0b9f8858647f9385e75ab8",
+      "url": "https://www.edrdg.org/wiki/KANJIDIC_Project.html",
+      "scope_note": "Complete saved official project documentation.",
+      "saved_representation": "Original saved notice bytes retained without edits."
+    },
+    {
+      "path": "licenses/luna-compact-model-LGPL-3.0.txt",
+      "bytes": 7651,
+      "sha256": "da7eabb7bafdf7d3ae5e9f223aa5bdc1eece45ac569dc21b3b037520b4464768",
+      "git_blob_sha1": "65c5ca88a67c30becee01c5a8816d964b03862f9",
+      "url": "https://github.com/lotem/rime-octagram-data/blob/8ceef1b42eb77e86501382a52e85c309c0f2f04c/LICENSE",
+      "scope_note": "LGPLv3 at fixed model release tag commit.",
+      "saved_representation": "Original saved notice bytes retained without edits."
+    },
+    {
+      "path": "licenses/luna-pinyin-LGPL-3.0.txt",
+      "bytes": 7652,
+      "sha256": "97628afebc60f026f5c2b25d7491c46a5c4ee61f693e7cfa07fbd2c03605979b",
+      "git_blob_sha1": "341c30bda4457610db4829294e5d7e526d4c835b",
+      "url": "https://github.com/rime/rime-luna-pinyin/blob/master/LICENSE",
+      "scope_note": "LGPLv3; precise source-data commit of the Weasel 0.17.4 Luna dictionary remains unidentified.",
+      "saved_representation": "Original saved notice bytes retained without edits."
+    },
+    {
+      "path": "licenses/OpenCC-LICENSE.txt",
+      "bytes": 9165,
+      "sha256": "b534e465949558eec2597b04f5092b5e161236a68dfbfd04d547592ac3964308",
+      "git_blob_sha1": "9f7a310eb2b143dfc4b73551ea60ca17eb2b981f",
+      "url": "https://github.com/BYVoid/OpenCC/blob/master/LICENSE",
+      "scope_note": "Apache-2.0 notice; OpenCC source-data versions are identified separately in docs/sources/jp-v-sources.md.",
+      "saved_representation": "Original saved notice bytes retained without edits."
+    },
+    {
+      "path": "licenses/pde-terms-reference-GPL-3.0.txt",
+      "bytes": 35149,
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+      "git_blob_sha1": "f288702d2fa16d3cdf0035b15a9fcbc552cd88e7",
+      "url": "https://github.com/gaboolic/rime-frost/blob/19c615189c1173a84e7e9970469fb3d38db45766/LICENSE",
+      "scope_note": "GPLv3 of the explicitly selected Frost term references.",
+      "saved_representation": "Original saved notice bytes retained without edits."
+    },
+    {
+      "path": "licenses/project-terms-reference-LICENSE.txt",
+      "bytes": 35149,
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+      "git_blob_sha1": "f288702d2fa16d3cdf0035b15a9fcbc552cd88e7",
+      "url": "https://github.com/gaboolic/rime-frost/blob/19c615189c1173a84e7e9970469fb3d38db45766/LICENSE",
+      "scope_note": "GPLv3 of the explicitly selected Frost term references.",
+      "saved_representation": "Original saved notice bytes retained without edits."
+    },
+    {
+      "path": "licenses/SCOWL-case-forms-Copyright.txt",
+      "bytes": 11758,
+      "sha256": "283326a422e29c510e2ba6805518c418ce3c35ed1fadc3eec83d2da4f6c5a055",
+      "git_blob_sha1": "e49dc1664903f5ece9819a88ea920d65337d37ae",
+      "url": "https://sourceforge.net/projects/wordlist/files/SCOWL/2020.12.07/scowl-2020.12.07.tar.gz/download",
+      "scope_note": "Complete Copyright from SCOWL 2020.12.07 for the case-forms evidence table; distinct from unknown historical SCOWL version used by SymSpell.",
+      "saved_representation": "Original saved notice bytes retained without edits."
+    },
+    {
+      "path": "licenses/tools-Ice-GPL-3.0.txt",
+      "bytes": 35149,
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+      "git_blob_sha1": "f288702d2fa16d3cdf0035b15a9fcbc552cd88e7",
+      "url": "https://github.com/iDvel/rime-ice/blob/da1fbe602e38f26db846fa10120ee64c2b0324c0/LICENSE",
+      "scope_note": "GPLv3 for Ice-referenced tool modules; original file comments retain contributor names.",
+      "saved_representation": "Original saved notice bytes retained without edits."
+    },
+    {
+      "path": "licenses/Unicode-3.0.txt",
+      "bytes": 1995,
+      "sha256": "e7a93b009565cfce55919a381437ac4db883e9da2126fa28b91d12732bc53d96",
+      "git_blob_sha1": "56da58912807030b451a4700687d5bd02c72d6ed",
+      "url": "https://www.unicode.org/license.txt",
+      "scope_note": "Unicode License V3; Unicode/Unihan data version is 17.0.0.",
+      "saved_representation": "Original saved notice bytes retained without edits."
+    },
+    {
+      "path": "licenses/english-core/CC-BY-3.0-legalcode.txt",
+      "bytes": 19467,
+      "sha256": "e6bc9e9c474700b708f568bac9e5a8a9bcb2b1dad53442f5ba449fcb848b8e76",
+      "git_blob_sha1": "1a16e05564d2aaa880bbe9e506a0a0226d8742cc",
+      "url": "https://creativecommons.org/licenses/by/3.0/legalcode.txt",
+      "scope_note": "Complete CC BY3.0 legal code",
+      "saved_representation": "Original saved notice bytes retained without edits."
+    },
+    {
+      "path": "licenses/english-core/Google-Books-CC-BY-3.0-NOTICE.txt",
+      "bytes": 520,
+      "sha256": "1217936ef3aa54dd32dec74d12d9dad60217ba44c93aa37e83b55798ca9006a6",
+      "git_blob_sha1": "37c87185ade0b19c14c2b4ced9a35a72fd4cf021",
+      "url": "https://storage.googleapis.com/books/ngrams/books/datasetsv3.html",
+      "scope_note": "Complete saved usage statement excerpt; CC BY3.0",
+      "saved_representation": "Original saved notice bytes retained without edits."
+    },
+    {
+      "path": "licenses/english-core/Google-Books-Ngram-official.html",
+      "bytes": 5220205,
+      "sha256": "b2f66a50d5713f91e181c8b5f685e03c9ceda80c2ce9ab7d69083d69a0f4bf50",
+      "git_blob_sha1": "ae9a11d697a0f26c45d8a6c7d2b4b40cc821bb6f",
+      "url": "https://storage.googleapis.com/books/ngrams/books/datasetsv3.html",
+      "scope_note": "Official saved Ngram data page; it does not identify the exact corpus version used by SymSpell",
+      "saved_representation": "Original saved notice bytes retained without edits."
+    },
+    {
+      "path": "licenses/english-core/SCOWL-COPYRIGHT-SOURCES-CREDITS.txt",
+      "bytes": 12311,
+      "sha256": "c26200b51aaae11bde2b84561750037be8e7808f2dcbb11545ba279f48a62bc1",
+      "git_blob_sha1": "800d2fafc32e5ea0d1be748319f56eb5ddd303b8",
+      "url": "https://wordlist.aspell.net/scowl_v1-readme/",
+      "scope_note": "Complete collective and component copyright/source/credit section",
+      "saved_representation": "Original saved notice bytes retained without edits."
+    },
+    {
+      "path": "licenses/english-core/SCOWL-full-README.txt",
+      "bytes": 31348,
+      "sha256": "423b719107fdb8d33623ffd8cdcc50e918b103befb8bf79e0f54677c10c18fe7",
+      "git_blob_sha1": "2e89dc2bff2ea5f6719ba6ce53a6579122be1b92",
+      "url": "https://wordlist.aspell.net/scowl_v1-readme/",
+      "scope_note": "Complete README text snapshot",
+      "saved_representation": "Original saved notice bytes retained without edits."
+    },
+    {
+      "path": "licenses/english-core/SCOWL-official-readme.html",
+      "bytes": 34210,
+      "sha256": "9c1c0f5f535575176cea2c6cef6438850b1732b97a43c994f69a35a4cb8506e7",
+      "git_blob_sha1": "29ec80ad398f07a042287db8aed37eba8ffcc92a",
+      "url": "https://wordlist.aspell.net/scowl_v1-readme/",
+      "scope_note": "Official README snapshot; not asserted to be the source-data revision used by SymSpell",
+      "saved_representation": "Original saved notice bytes retained without edits."
+    },
+    {
+      "path": "licenses/english-core/SymSpell-MIT.txt",
+      "bytes": 1066,
+      "sha256": "858e5c7e7a38824f33cf466719509884f2ee5e35992dbfce377fec0656545814",
+      "git_blob_sha1": "0609ae796607a0d6cb90822b0854786f301672dd",
+      "url": "https://raw.githubusercontent.com/wolfgarbe/SymSpell/2ac2df1d01c99711162c4c38a191e522ed4b29c7/LICENSE",
+      "scope_note": "MIT ©2018 Wolf Garbe",
+      "saved_representation": "Original saved notice bytes retained without edits."
+    },
+    {
+      "path": "licenses/english-core/SymSpell-upstream-README.md",
+      "bytes": 35304,
+      "sha256": "e190b785c1b391921127bdfa51dde44d09da568968a379a96b50b2bc4ea589e5",
+      "git_blob_sha1": "394b507a89b366ecfe997eec6e2a2f9e872e4c73",
+      "url": "https://raw.githubusercontent.com/wolfgarbe/SymSpell/2ac2df1d01c99711162c4c38a191e522ed4b29c7/README.md",
+      "scope_note": "Pinned SymSpell upstream source description",
+      "saved_representation": "Original saved notice bytes retained without edits."
+    },
+    {
+      "path": "licenses/radical-stroke/radical-GPL-3.0.txt",
+      "bytes": 35149,
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+      "git_blob_sha1": "f288702d2fa16d3cdf0035b15a9fcbc552cd88e7",
+      "url": "https://raw.githubusercontent.com/mirtlecn/rime-radical-pinyin/87e73d7182916f3db9dbc0b6a4d18a78a775b298/LICENSE",
+      "scope_note": "Mirtle fixed root GPLv3",
+      "saved_representation": "Original saved notice bytes retained without edits."
+    },
+    {
+      "path": "licenses/radical-stroke/radical-source-credits.md",
+      "bytes": 1666,
+      "sha256": "a9116ac2233f134e2713148e84a785781c21de57d9c7461b81b9c76b5be9caa8",
+      "git_blob_sha1": "883168160951696298efdf3eff692efdf6ce7147",
+      "url": "https://raw.githubusercontent.com/mirtlecn/rime-radical-pinyin/87e73d7182916f3db9dbc0b6a4d18a78a775b298/src/README.md",
+      "scope_note": "Complete original Mirtle source credits and data history",
+      "saved_representation": "Original saved notice bytes retained without edits."
+    },
+    {
+      "path": "licenses/radical-stroke/stroke-AUTHORS",
+      "bytes": 273,
+      "sha256": "f0cbba217e049471ccb40751b7d2e1c98144bb2ad4ec15b9f5af057121ec99d6",
+      "git_blob_sha1": "f26b1524b139a7657903a4b2114460f47b45ee85",
+      "url": "https://raw.githubusercontent.com/rime/rime-stroke/1e8fff9b9494ddec23b0cbc526bcfd8171a6fd48/AUTHORS",
+      "scope_note": "Original Rime/CNS11643 attribution retained; source-data versions remain separately described",
+      "saved_representation": "Original saved notice bytes retained without edits."
+    },
+    {
+      "path": "licenses/radical-stroke/stroke-LGPL-3.0.txt",
+      "bytes": 7651,
+      "sha256": "da7eabb7bafdf7d3ae5e9f223aa5bdc1eece45ac569dc21b3b037520b4464768",
+      "git_blob_sha1": "65c5ca88a67c30becee01c5a8816d964b03862f9",
+      "url": "https://raw.githubusercontent.com/rime/rime-stroke/1e8fff9b9494ddec23b0cbc526bcfd8171a6fd48/LICENSE",
+      "scope_note": "LGPLv3 text from the separately inspected stroke 2.0 source; current table derives from official packaged stroke 1.1 with unidentified upstream commit",
+      "saved_representation": "Original saved notice bytes retained without edits."
+    },
+    {
+      "url": "https://creativecommons.org/licenses/by/3.0/legalcode.txt",
+      "bytes": 19467,
+      "sha256": "e6bc9e9c474700b708f568bac9e5a8a9bcb2b1dad53442f5ba449fcb848b8e76",
+      "git_blob_sha1": "1a16e05564d2aaa880bbe9e506a0a0226d8742cc",
+      "upstream_git_blob_sha1": null,
+      "saved_bytes_match_upstream_blob": null,
+      "path": "licenses/supplement/CC-BY-3.0-legalcode.txt",
+      "saved_representation": "Original complete notice bytes retained, or complete notice excerpt as identified by extraction."
+    },
+    {
+      "repo": "chise/ids",
+      "ref": "ac35413635608512f5e10187812cfab3b6ea47c1",
+      "path": "licenses/supplement/CHISE-ids-README.md",
+      "url": "https://raw.githubusercontent.com/chise/ids/ac35413635608512f5e10187812cfab3b6ea47c1/README.md",
+      "bytes": 10218,
+      "sha256": "1a77ce743b5bd2814e748599587b7792992ec7413bcc824336bab14f07c9f741",
+      "git_blob_sha1": "b3353c6cfaaea248d1632b878de9c77e9c4e55b6",
+      "upstream_git_blob_sha1": "b3353c6cfaaea248d1632b878de9c77e9c4e55b6",
+      "saved_bytes_match_upstream_blob": true,
+      "saved_representation": "Original complete notice bytes retained, or complete notice excerpt as identified by extraction."
+    },
+    {
+      "repo": "chise/ids",
+      "ref": "ac35413635608512f5e10187812cfab3b6ea47c1",
+      "path": "licenses/supplement/CHISE-ids.el-NOTICE.txt",
+      "url": "https://raw.githubusercontent.com/chise/ids/ac35413635608512f5e10187812cfab3b6ea47c1/ids.el",
+      "extraction": "Verbatim file header identifying MORIOKA Tomohiko and GPL-2.0-or-later for ids.el; this is package source attribution, not a claim that its file-specific copyright line independently identifies all database copyrights.",
+      "bytes": 1014,
+      "sha256": "5282692f7b4c101dc4512e93c04dd8b5f126abdeb9b8cb2353623944107c054f",
+      "git_blob_sha1": "b5ebbe54a9ee74335763a4aeb9c71ae7a6a69836",
+      "upstream_git_blob_sha1": "c793a24911b207761c017930dfc2c6ac72e958e3",
+      "saved_bytes_match_upstream_blob": null,
+      "saved_representation": "Original complete notice bytes retained, or complete notice excerpt as identified by extraction."
+    },
+    {
+      "repo": "chise/xemacs-chise",
+      "ref": "0dc65c74293d3b74eda1a9861273675a5b26fd99",
+      "path": "licenses/supplement/GPL-2.0.txt",
+      "url": "https://raw.githubusercontent.com/chise/xemacs-chise/0dc65c74293d3b74eda1a9861273675a5b26fd99/COPYING",
+      "bytes": 18063,
+      "sha256": "a3d34486366e8499239ce6ea86e38f46b6cce84891476032f59fee9becb398ee",
+      "git_blob_sha1": "1942c4334c5e9873360965a4576621bc74bce816",
+      "upstream_git_blob_sha1": "1942c4334c5e9873360965a4576621bc74bce816",
+      "saved_bytes_match_upstream_blob": true,
+      "saved_representation": "Original complete notice bytes retained, or complete notice excerpt as identified by extraction."
+    },
+    {
+      "repo": "henrysting/chaizi",
+      "ref": "c751e804f35e2039e6bbb2456055ab3fa8737f7d",
+      "path": "licenses/supplement/henrysting-chaizi-LICENSE.txt",
+      "url": "https://raw.githubusercontent.com/henrysting/chaizi/c751e804f35e2039e6bbb2456055ab3fa8737f7d/LICENSE",
+      "bytes": 836,
+      "sha256": "243ce65e3a5a24669b08b5b6d25e82e961dfc747f841f04f199126a218968100",
+      "git_blob_sha1": "4a5b7255a1ef0a6ccb30250080e3d4a251979505",
+      "upstream_git_blob_sha1": "4a5b7255a1ef0a6ccb30250080e3d4a251979505",
+      "saved_bytes_match_upstream_blob": true,
+      "saved_representation": "Original complete notice bytes retained, or complete notice excerpt as identified by extraction."
+    },
+    {
+      "repo": "henrysting/chaizi",
+      "ref": "c751e804f35e2039e6bbb2456055ab3fa8737f7d",
+      "path": "licenses/supplement/henrysting-chaizi-README.md",
+      "url": "https://raw.githubusercontent.com/henrysting/chaizi/c751e804f35e2039e6bbb2456055ab3fa8737f7d/README.md",
+      "bytes": 2191,
+      "sha256": "e02fd4ebf8c5527f867afd0a873c660bbfd66e691e4f417fa2e35926f6e042c3",
+      "git_blob_sha1": "cbada2b81a3fb013a0df7ac5494a3c18f71caa0a",
+      "upstream_git_blob_sha1": "cbada2b81a3fb013a0df7ac5494a3c18f71caa0a",
+      "saved_bytes_match_upstream_blob": true,
+      "saved_representation": "Original complete notice bytes retained, or complete notice excerpt as identified by extraction."
+    },
+    {
+      "repo": "kfcd/chaizi",
+      "ref": "e177ab54ce4edf255315a60593ffecbd8167e96b",
+      "path": "licenses/supplement/kfcd-chaizi-LICENSE.txt",
+      "url": "https://raw.githubusercontent.com/kfcd/chaizi/e177ab54ce4edf255315a60593ffecbd8167e96b/LICENSE",
+      "bytes": 836,
+      "sha256": "243ce65e3a5a24669b08b5b6d25e82e961dfc747f841f04f199126a218968100",
+      "git_blob_sha1": "4a5b7255a1ef0a6ccb30250080e3d4a251979505",
+      "upstream_git_blob_sha1": "4a5b7255a1ef0a6ccb30250080e3d4a251979505",
+      "saved_bytes_match_upstream_blob": true,
+      "saved_representation": "Original complete notice bytes retained, or complete notice excerpt as identified by extraction."
+    },
+    {
+      "repo": "kfcd/chaizi",
+      "ref": "e177ab54ce4edf255315a60593ffecbd8167e96b",
+      "path": "licenses/supplement/kfcd-chaizi-README.md",
+      "url": "https://raw.githubusercontent.com/kfcd/chaizi/e177ab54ce4edf255315a60593ffecbd8167e96b/README.md",
+      "bytes": 2249,
+      "sha256": "9b52172aaf8f6170e475288706ce095ab7b5f8d5b1815e75ebf72ffa0b8fcfee",
+      "git_blob_sha1": "49bbc43049b2a0eb9dd51b894ecfe046c638ba72",
+      "upstream_git_blob_sha1": "49bbc43049b2a0eb9dd51b894ecfe046c638ba72",
+      "saved_bytes_match_upstream_blob": true,
+      "saved_representation": "Original complete notice bytes retained, or complete notice excerpt as identified by extraction."
+    },
+    {
+      "repo": "rime/librime",
+      "ref": "1c23358157934bd6e6d6981f0c0164f05393b497",
+      "path": "licenses/supplement/librime-LICENSE.txt",
+      "url": "https://raw.githubusercontent.com/rime/librime/1c23358157934bd6e6d6981f0c0164f05393b497/LICENSE",
+      "bytes": 1513,
+      "sha256": "f67d27a6d2d586fcfed4b4c886a83747095396a39b6641e18e855086be2ec400",
+      "git_blob_sha1": "f05b7c297121afc7e6115d8e4eada27d049894a1",
+      "upstream_git_blob_sha1": "f05b7c297121afc7e6115d8e4eada27d049894a1",
+      "saved_bytes_match_upstream_blob": true,
+      "saved_representation": "Original complete notice bytes retained, or complete notice excerpt as identified by extraction."
+    },
+    {
+      "repo": "hchunhui/librime-lua",
+      "ref": "e3912a4b3ac2c202d89face3fef3d41eb1d7fcd6",
+      "path": "licenses/supplement/librime-lua-LICENSE.txt",
+      "url": "https://raw.githubusercontent.com/hchunhui/librime-lua/e3912a4b3ac2c202d89face3fef3d41eb1d7fcd6/LICENSE",
+      "bytes": 1520,
+      "sha256": "c6bd4f58b13ae9d45c5e53adddeea5049114a25862797c6c6f64920431eea249",
+      "git_blob_sha1": "3be95a67fc6bd90d7c769acdf897b3901605cf00",
+      "upstream_git_blob_sha1": "3be95a67fc6bd90d7c769acdf897b3901605cf00",
+      "saved_bytes_match_upstream_blob": true,
+      "saved_representation": "Original complete notice bytes retained, or complete notice excerpt as identified by extraction."
+    },
+    {
+      "repo": "lotem/librime-octagram",
+      "ref": "dfcc15115788c828d9dd7b4bff68067d3ce2ffb8",
+      "path": "licenses/supplement/librime-octagram-LICENSE.txt",
+      "url": "https://raw.githubusercontent.com/lotem/librime-octagram/dfcc15115788c828d9dd7b4bff68067d3ce2ffb8/LICENSE",
+      "bytes": 35147,
+      "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903",
+      "git_blob_sha1": "94a9ed024d3859793618152ea559a168bbcbb5e2",
+      "upstream_git_blob_sha1": "94a9ed024d3859793618152ea559a168bbcbb5e2",
+      "saved_bytes_match_upstream_blob": true,
+      "saved_representation": "Original complete notice bytes retained, or complete notice excerpt as identified by extraction."
+    },
+    {
+      "repo": "rime/librime-predict",
+      "ref": "920bd41ebf6f9bf6855d14fbe80212e54e749791",
+      "path": "licenses/supplement/librime-predict-LICENSE.txt",
+      "url": "https://raw.githubusercontent.com/rime/librime-predict/920bd41ebf6f9bf6855d14fbe80212e54e749791/LICENSE",
+      "bytes": 1502,
+      "sha256": "9b1bbdf15a381884b47dfd9422e68f6382170b2841c476afc076f2d448c7a59f",
+      "git_blob_sha1": "98b5bc347734e6da48cfb50e384589345e5b541b",
+      "upstream_git_blob_sha1": "98b5bc347734e6da48cfb50e384589345e5b541b",
+      "saved_bytes_match_upstream_blob": true,
+      "saved_representation": "Original complete notice bytes retained, or complete notice excerpt as identified by extraction."
+    },
+    {
+      "repo": "hchunhui/librime-lua",
+      "ref": "115e000c878d1170337f7ca934d7a84f68986e39",
+      "path": "licenses/supplement/Lua-5.3-MIT-NOTICE.txt",
+      "url": "https://raw.githubusercontent.com/hchunhui/librime-lua/115e000c878d1170337f7ca934d7a84f68986e39/lua5.3/lua.h",
+      "extraction": "Complete copyright and MIT permission/warranty comment block extracted verbatim from lua.h; source code outside this notice is not copied.",
+      "bytes": 1263,
+      "sha256": "062940535f605b12291d6e1df9c92bbdc121165bea3d4ac92c697f23f83e2aff",
+      "git_blob_sha1": "f922dcd6f4c1f330eeaa597f0e50f009ef660359",
+      "upstream_git_blob_sha1": "c236e360957949816ff78973f8695300b2a63b96",
+      "saved_bytes_match_upstream_blob": null,
+      "saved_representation": "Original complete notice bytes retained, or complete notice excerpt as identified by extraction."
+    },
+    {
+      "repo": "hchunhui/librime-lua",
+      "ref": "115e000c878d1170337f7ca934d7a84f68986e39",
+      "path": "licenses/supplement/Lua-5.4-MIT-NOTICE.txt",
+      "url": "https://raw.githubusercontent.com/hchunhui/librime-lua/115e000c878d1170337f7ca934d7a84f68986e39/lua5.4/lua.h",
+      "extraction": "Complete copyright and MIT permission/warranty comment block extracted verbatim from lua.h; source code outside this notice is not copied.",
+      "bytes": 1263,
+      "sha256": "b66c57df1c7de7a62eec9af87d7cde02a2a6ce791758ccc7a79c6781c360526d",
+      "git_blob_sha1": "eca7b45dc76ee42dd4f890dd55998c201325ed0d",
+      "upstream_git_blob_sha1": "f050dac0913175c9d01f3ccb6a47ca0e9ab5c06a",
+      "saved_bytes_match_upstream_blob": null,
+      "saved_representation": "Original complete notice bytes retained, or complete notice excerpt as identified by extraction."
+    },
+    {
+      "repo": "mirtlecn/rime-radical-pinyin",
+      "ref": "87e73d7182916f3db9dbc0b6a4d18a78a775b298",
+      "path": "licenses/supplement/Mirtle-GPL-3.0.txt",
+      "url": "https://raw.githubusercontent.com/mirtlecn/rime-radical-pinyin/87e73d7182916f3db9dbc0b6a4d18a78a775b298/LICENSE",
+      "bytes": 35149,
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+      "git_blob_sha1": "f288702d2fa16d3cdf0035b15a9fcbc552cd88e7",
+      "upstream_git_blob_sha1": "f288702d2fa16d3cdf0035b15a9fcbc552cd88e7",
+      "saved_bytes_match_upstream_blob": true,
+      "saved_representation": "Original complete notice bytes retained, or complete notice excerpt as identified by extraction."
+    },
+    {
+      "repo": "mirtlecn/rime-radical-pinyin",
+      "ref": "87e73d7182916f3db9dbc0b6a4d18a78a775b298",
+      "path": "licenses/supplement/mirtle-src-README.md",
+      "url": "https://raw.githubusercontent.com/mirtlecn/rime-radical-pinyin/87e73d7182916f3db9dbc0b6a4d18a78a775b298/src/README.md",
+      "bytes": 1725,
+      "sha256": "20c8f02136554444af8929a846853bb37f7c6a42d06f7a20bbab504ae9fd6b4f",
+      "git_blob_sha1": "bbba9921d5bc5d4268cadd3e03c720c9e74de982",
+      "upstream_git_blob_sha1": "bbba9921d5bc5d4268cadd3e03c720c9e74de982",
+      "saved_bytes_match_upstream_blob": true,
+      "saved_representation": "Original complete notice bytes retained, or complete notice excerpt as identified by extraction."
+    },
+    {
+      "repo": "yi-bai/ids",
+      "ref": "da1e9f8a09e2ec8faaf176bac99203f978282041",
+      "path": "licenses/supplement/yi-bai-ids-LICENSE.txt",
+      "url": "https://raw.githubusercontent.com/yi-bai/ids/da1e9f8a09e2ec8faaf176bac99203f978282041/LICENSE",
+      "bytes": 1063,
+      "sha256": "f1d89fe379529df4166f75142ff82c7cc302795ec992e2a64c189aa8733da419",
+      "git_blob_sha1": "434aac38b00bcb180d461ec26c95a213ccc3f3a0",
+      "upstream_git_blob_sha1": "434aac38b00bcb180d461ec26c95a213ccc3f3a0",
+      "saved_bytes_match_upstream_blob": true,
+      "saved_representation": "Original complete notice bytes retained, or complete notice excerpt as identified by extraction."
+    },
+    {
+      "repo": "yi-bai/ids",
+      "ref": "da1e9f8a09e2ec8faaf176bac99203f978282041",
+      "path": "licenses/supplement/yi-bai-ids-README.md",
+      "url": "https://raw.githubusercontent.com/yi-bai/ids/da1e9f8a09e2ec8faaf176bac99203f978282041/README.md",
+      "bytes": 781,
+      "sha256": "6ce6a9b2b28d0b59327324d3f7c7b874c574674041074f6f115c9d0107437138",
+      "git_blob_sha1": "6e3b51236c8e28cfb5108278d48e4a816eea1117",
+      "upstream_git_blob_sha1": "6e3b51236c8e28cfb5108278d48e4a816eea1117",
+      "saved_bytes_match_upstream_blob": true,
+      "saved_representation": "Original complete notice bytes retained, or complete notice excerpt as identified by extraction."
+    }
+  ]
+}

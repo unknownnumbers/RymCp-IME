@@ -1,0 +1,26 @@
+name: Source and configuration checks
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install syntax checker
+        run: python -m pip install PyYAML==6.0.2
+      - name: Verify source snapshot and syntax
+        run: python scripts/verify_release.py --require-yaml
+      - name: Verify independent Japanese spelling rules
+        run: python config/pc/tools/validate-japanese-base.py --directory config/pc

@@ -1,0 +1,42 @@
+patch:
+  schema_list:
+    - schema: pc_research
+    - schema: jp_sela
+  menu/page_size: 6  # 每頁後選詞數目
+#小狼毫的设置栏只能通过快捷键来呼出设置栏. 默认的快捷键有:
+# Control+`
+# Control+Shift+`
+# F4
+# 删除F4这个快捷键
+  switcher:
+    hotkeys:
+      - "Control+grave" #只保留这个默认方案
+  key_binder:
+    bindings:
+      __patch:
+        - key_bindings:/paging_with_minus_equal
+        - key_bindings:/move_by_word_with_tab
+        - __append: #改编自- key_bindings:/emacs_editing
+          - { when: composing, accept: Control+g, send: BackSpace }
+          - { when: composing, accept: Control+a, send: Left }
+          - { when: composing, accept: Control+d, send: Right }    
+          - { when: has_menu, accept: Control+w, send: Page_Up }
+          - { when: has_menu, accept: Control+s, send: Page_Down }
+        #- key_bindings:/paging_with_comma_period
+        - __append: #改编自- key_bindings:/numbered_mode_switch
+          - { when: always, accept: Control+e, select: jp_sela }
+          - { when: always, accept: Control+r, select: pc_research }
+          - { when: always, accept: Control+Shift+f, toggle: simplification }
+          - { when: always, accept: Control+Shift+F, toggle: simplification } # 繁简字轉化開關 # https://github.com/iDvel/rime-ice/issues/645 (快捷键无效:一些按键会被 shift 转换变成其他键, 例如: 数字 3 变成 #(numbersign), f 變成 F)
+          - { when: always, accept: Control+period, toggle: ascii_punct } # 中西文標點轉換開關
+        #- __append: #改编自- key_bindings:/numbered_mode_switch
+         # - { when: always, accept: Shift+F, toggle: simplification } # 
+  ascii_composer:
+    good_old_caps_lock: true
+    switch_key:
+      Shift_L: noop #inline_ascii # commit_code 已輸入的編碼字符上屏並切換至西文輸入模式 # inline_ascii 在輸入法的臨時西文編輯區內輸入字母、數字、符號、空格等，回車上屏後自動復位到中文
+      Shift_R: inline_ascii # commit_text 已輸入的候選文字上屏並切換至西文輸入模式
+      Control_L: noop # 屏蔽該切換鍵
+      Control_R: noop # 屏蔽該切換鍵
+      Caps_Lock: clear #clear
+      Eisu_toggle: clear # clear

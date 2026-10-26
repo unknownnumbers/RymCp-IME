@@ -1,0 +1,30 @@
+id	display	kind	key	native_code	native_text	before	reference_seed	after	source_ids
+E01	elliptic	ordinary	elliptic	elliptic	elliptic	955168	955168	8000000	S1
+E02	nonlinear	ordinary	nonlinear	nonlinear	nonlinear	3725269	3725269	8000000	S3
+E03	existence	ordinary	existence	existence	existence	15903650	15903650	15903650	S1
+E04	multiplicity	ordinary	multiplicity	multiplicity	multiplicity	896177	896177	8000000	S4
+E05	asymptotic	ordinary	asymptotic	asymptotic	asymptotic	1184419	1184419	8000000	S3
+E06	asymptotics	ordinary	asymptotics	asymptotics	asymptotics		1000000	8000000	S3
+E07	reduction	ordinary	reduction	reduction	reduction	28954254	28954254	28954254	S5
+E08	bifurcation	ordinary	bifurcation	bifurcation	bifurcation	449079	449079	8000000	S5
+E09	variational	ordinary	variational	variational	variational	441027	441027	8000000	S1
+E10	compactness	ordinary	compactness	compactness	compactness	246889	246889	8000000	S1
+E11	embedding	ordinary	embedding	embedding	embedding	1541093	1541093	8000000	S1
+E12	convergence	ordinary	convergence	convergence	convergence	5663627	5663627	8000000	S1
+E13	coercive	ordinary	coercive	coercive	coercive	544162	544162	8000000	S1
+E14	coercivity	ordinary	coercivity	coercivity	coercivity		1000000	8000000	S1
+E15	nondegenerate	ordinary	nondegenerate	nondegenerate	nondegenerate		1000000	8000000	S6
+E16	nondegeneracy	ordinary	nondegeneracy	nondegeneracy	nondegeneracy		1000000	8000000	S6
+E17	regularity	ordinary	regularity	regularity	regularity	843301	843301	8000000	S1
+E18	eigenvalue	ordinary	eigenvalue	eigenvalue	eigenvalue	681416	681416	8000000	S1
+E19	critical	ordinary	critical	critical	critical	46136062	46136062	46136062	S6
+E20	functional	ordinary	functional	functional	functional	41862937	41862937	41862937	S1
+E21	Sobolev	eponym	sobolev	sobolev	Sobolev		1000000	8000000	S1
+E22	Laplacian	eponym	laplacian	laplacian	Laplacian		1000000	8000000	S1
+E24	Fredholm	eponym	fredholm	fredholm	Fredholm		1000000	8000000	S1
+E25	Banach	eponym	banach	banach	banach	297776	297776	8000000	S1
+E26	Hilbert	eponym	hilbert	hilbert	hilbert	909976	909976	8000000	S1
+E27	Dirichlet	eponym	dirichlet	dirichlet	dirichlet	242565	242565	8000000	S1
+E28	Schauder	eponym	schauder	schauder	Schauder		1000000	8000000	S2
+E29	Lyapunov	eponym	lyapunov	lyapunov	Lyapunov		1000000	8000000	S5
+E30	Schmidt	eponym	schmidt	schmidt	schmidt	4367060	4367060	8000000	S5

@@ -1,0 +1,153 @@
+name: Native source assembly and optional compilation
+
+on:
+  workflow_dispatch:
+    inputs:
+      compile:
+        description: Compile R5 SDKs, N01 x64 and both Weasel variants after source assembly
+        type: boolean
+        default: false
+        required: true
+
+permissions:
+  contents: read
+
+defaults:
+  run:
+    shell: pwsh
+
+jobs:
+  inventory:
+    runs-on: windows-2022
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Verify source hashes and script syntax
+        run: ./scripts/native/Test-Inventory.ps1
+
+  assembly:
+    needs: inventory
+    runs-on: windows-2022
+    timeout-minutes: 30
+    strategy:
+      fail-fast: false
+      matrix:
+        variant: [weasel-61033, weasel-61020, engine-r5, engine-n01]
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Assemble fixed public upstreams and apply complete deltas
+        run: |
+          ./scripts/native/Prepare-Sources.ps1 -Variant '${{ matrix.variant }}' -Destination (Join-Path $env:RUNNER_TEMP 'native-source')
+      - name: Preserve source assembly evidence
+        uses: actions/upload-artifact@v4
+        with:
+          name: source-assembly-${{ matrix.variant }}
+          path: ${{ runner.temp }}/native-source/native-source-assembly.json
+          if-no-files-found: error
+          retention-days: 14
+
+  engine:
+    needs: assembly
+    if: ${{ inputs.compile }}
+    runs-on: windows-2022
+    timeout-minutes: 60
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - variant: engine-r5
+            arch: x64
+            msvc_arch: x64
+          - variant: engine-r5
+            arch: x86
+            msvc_arch: x64_x86
+          - variant: engine-n01
+            arch: x64
+            msvc_arch: x64
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: ilammy/msvc-dev-cmd@v1
+        with:
+          arch: ${{ matrix.msvc_arch }}
+      - name: Assemble engine sources
+        run: |
+          ./scripts/native/Prepare-Sources.ps1 -Variant '${{ matrix.variant }}' -Destination (Join-Path $env:RUNNER_TEMP 'engine')
+      - name: Build engine, preedit helper34 and upstream tests
+        run: |
+          ./scripts/native/Build-Engine.ps1 -Variant '${{ matrix.variant }}' -Architecture '${{ matrix.arch }}' -SourcePath (Join-Path $env:RUNNER_TEMP 'engine') -CacheDirectory (Join-Path $env:RUNNER_TEMP 'native-cache') -OutputDirectory (Join-Path $env:RUNNER_TEMP 'engine-output')
+      - name: Preserve successful engine development output and source notices
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ matrix.variant }}-${{ matrix.arch }}
+          path: ${{ runner.temp }}/engine-output
+          if-no-files-found: error
+          retention-days: 14
+      - name: Preserve compiler diagnostics
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: failure-${{ matrix.variant }}-${{ matrix.arch }}
+          path: |
+            ${{ runner.temp }}/engine/ci-logs
+            ${{ runner.temp }}/engine/build/CMakeFiles/*.log
+          if-no-files-found: warn
+          retention-days: 14
+
+  weasel:
+    needs: engine
+    if: ${{ inputs.compile }}
+    runs-on: windows-2022
+    timeout-minutes: 90
+    strategy:
+      fail-fast: false
+      matrix:
+        variant: [weasel-61033, weasel-61020]
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: microsoft/setup-msbuild@v2
+        with:
+          vs-version: '[17.0,18.0)'
+      - uses: ilammy/msvc-dev-cmd@v1
+        with:
+          arch: x64
+      - name: Get R5 x64 SDK from this workflow run
+        uses: actions/download-artifact@v4
+        with:
+          name: engine-r5-x64
+          path: ${{ runner.temp }}/sdk/engine-r5-x64
+      - name: Get R5 x86 SDK from this workflow run
+        uses: actions/download-artifact@v4
+        with:
+          name: engine-r5-x86
+          path: ${{ runner.temp }}/sdk/engine-r5-x86
+      - name: Assemble Weasel source and fixed submodules
+        run: |
+          ./scripts/native/Prepare-Sources.ps1 -Variant '${{ matrix.variant }}' -Destination (Join-Path $env:RUNNER_TEMP 'weasel')
+      - name: Build the declared products and controlled Shift fixtures
+        run: |
+          ./scripts/native/Build-Weasel.ps1 -Variant '${{ matrix.variant }}' -SourcePath (Join-Path $env:RUNNER_TEMP 'weasel') -SdkRoot (Join-Path $env:RUNNER_TEMP 'sdk') -CacheDirectory (Join-Path $env:RUNNER_TEMP 'native-cache') -OutputDirectory (Join-Path $env:RUNNER_TEMP 'weasel-output')
+      - name: Preserve successful development output and source notices
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ matrix.variant }}-development
+          path: ${{ runner.temp }}/weasel-output
+          if-no-files-found: error
+          retention-days: 14
+      - name: Preserve compiler diagnostics
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: failure-${{ matrix.variant }}
+          path: |
+            ${{ runner.temp }}/weasel/ci-logs
+            ${{ runner.temp }}/weasel/msbuild*.log
+          if-no-files-found: warn
+          retention-days: 14

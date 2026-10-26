@@ -1,0 +1,17 @@
+# 原生前端／引擎：固定來源與授權
+
+前端來源固定[rime/weasel@9cc96e20dc71b80876b12f689bb5863c76c2a7ed](https://github.com/rime/weasel/tree/9cc96e20dc71b80876b12f689bb5863c76c2a7ed)，保留[GPLv3](../../LICENSE)與原檔署名。本工程在此基底上的實際patch及可執行構建流程見[原生BUILD](../../native/BUILD.md)；舊版manifest不代替目前patch鏈。
+
+| 元件 | 固定commit | 保留通知 |
+| --- | --- | --- |
+| [librime](https://github.com/rime/librime/tree/1c23358157934bd6e6d6981f0c0164f05393b497) | `1c23358157934bd6e6d6981f0c0164f05393b497` | [BSD-3-Clause，©2014 RIME Developers](../../licenses/supplement/librime-LICENSE.txt) |
+| [librime-lua](https://github.com/hchunhui/librime-lua/tree/e3912a4b3ac2c202d89face3fef3d41eb1d7fcd6) | `e3912a4b3ac2c202d89face3fef3d41eb1d7fcd6` | [BSD-3-Clause，©2021 librime-lua Developers](../../licenses/supplement/librime-lua-LICENSE.txt) |
+| [librime-octagram](https://github.com/lotem/librime-octagram/tree/dfcc15115788c828d9dd7b4bff68067d3ce2ffb8) | `dfcc15115788c828d9dd7b4bff68067d3ce2ffb8` | [GNU GPLv3](../../licenses/supplement/librime-octagram-LICENSE.txt) |
+| [librime-predict](https://github.com/rime/librime-predict/tree/920bd41ebf6f9bf6855d14fbe80212e54e749791) | `920bd41ebf6f9bf6855d14fbe80212e54e749791` | [BSD-3-Clause，©2023 RIME Developers](../../licenses/supplement/librime-predict-LICENSE.txt) |
+| [librime-lua thirdparty](https://github.com/hchunhui/librime-lua/tree/115e000c878d1170337f7ca934d7a84f68986e39) | `115e000c878d1170337f7ca934d7a84f68986e39` | [Lua5.4 MIT，©1994–2024 Lua.org／PUC-Rio](../../licenses/supplement/Lua-5.4-MIT-NOTICE.txt) |
+
+thirdparty與librime-lua主體來自同一repo的不同固定樹，不能只抓主體commit而省掉內附Lua。固定CMake入口在`thirdparty/lua5.4/lua.h`存在時編譯內附Lua5.4；同源樹另有Lua5.3，保存其[通知](../../licenses/supplement/Lua-5.3-MIT-NOTICE.txt)不表示實際連結兩版。
+
+Boost及librime的glog、leveldb、yaml-cpp、googletest、marisa-trie、OpenCC等依賴按實際構建固定來源取得，保留其上游授權及通知。本倉庫首批以源碼／配置為主；這裡的直接元件表沒有把尚未發布的完整二進位安裝包宣稱為已完成全部間接元件通知整理。
+
+固定下載、patch重放與CI產物校驗的範圍由BUILD記錄；沒有承諾不同工具鏈的位元完全一致。構建腳本是程式碼，依GPLv3及保留的第三方條款提供；新寫BUILD說明本身的CC BY-SA4.0不覆蓋腳本或上游源碼。

@@ -1,0 +1,18 @@
+{
+  "input_rows": 2706,
+  "rejected_rows": 0,
+  "format": "ascii-prefix-delete-v1",
+  "prefix_length": 7,
+  "max_distance": 2,
+  "record_bytes": 16,
+  "word_count": 2706,
+  "key_count": 41837,
+  "posting_count": 60870,
+  "largest_posting": 101,
+  "bytes": {
+    "words.txt": 27240,
+    "keys.bin": 669392,
+    "postings.bin": 243480
+  },
+  "build_seconds": 0.06
+}
