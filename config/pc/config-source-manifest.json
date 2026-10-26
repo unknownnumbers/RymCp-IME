@@ -206,8 +206,8 @@
     {
       "path": "licenses/dictionary-quality-q121-sources.md",
       "source_sha256": "b28e4ef6622482688ebeeb8481edf0c4d57c11a418695b71f12e8519d3da30ac",
-      "sha256": "8cd59e1acc1f95174797c387e15c4c80905ccef18fc50304dc0d33b4e07a84cd",
-      "bytes": 287,
+      "sha256": "4270e353ebaf95a55dac22579b12c3cde419c82b58b62263f1633b1216560fb0",
+      "bytes": 282,
       "action": "link to one sanitized public source record"
     },
     {
@@ -220,8 +220,8 @@
     {
       "path": "licenses/english-case-forms-sources.md",
       "source_sha256": "8b96be902e46bd0d1c82681312e5e52431dad945d780ba72df6f7b4910a944ab",
-      "sha256": "f944a2eedd8eb030e2c1cef415ca8851cbf565e5707ecbbd2761e01e4af468ae",
-      "bytes": 277,
+      "sha256": "32a8a485bc1722d723384a44501ed86673c467d1a97bb5bcbceb3b950b0dcf44",
+      "bytes": 272,
       "action": "link to one sanitized public source record"
     },
     {
@@ -234,15 +234,15 @@
     {
       "path": "licenses/english-extensions-sources.md",
       "source_sha256": "f67c76cd39dc4ca55f7feb748bbcdf1886e79c7340594ed03af63fffaa5f361c",
-      "sha256": "96e32556a3cf93043ce759945f1cc3fdbc5f568969a57d77f304e3ae85e748e2",
-      "bytes": 277,
+      "sha256": "76a4375f4f781308f0da868648035d6b04f0c5ee9439bc9a1802d7038981c604",
+      "bytes": 272,
       "action": "link to one sanitized public source record"
     },
     {
       "path": "licenses/english-pde-sources.md",
       "source_sha256": "b07d3b999228cc4016e13a2c8f5c2a419020ae1224a49b98b2618f7117150f76",
-      "sha256": "0be5d81b85419a352c18043bf75a0dbea210ebf232791fe8da0643a8f46d4950",
-      "bytes": 263,
+      "sha256": "fa4729487b31561e74d10bfefc3daa3160ad6d52e1a6d0ecbc2477115936a423",
+      "bytes": 258,
       "action": "link to one sanitized public source record"
     },
     {
@@ -262,15 +262,15 @@
     {
       "path": "licenses/jp-q-sources.md",
       "source_sha256": "280d267c54a843dcd10cd8fb73047bfa413e11b90b0637950c5da771f98f4e66",
-      "sha256": "e35ab4fcea49623fc89f1511810a917be8e9edabf0dc0b31fa5ae6e9d709af5b",
-      "bytes": 249,
+      "sha256": "c80ad0ab401255539ca6c893879754014eeae98fc8696443bee4b05514d0fe62",
+      "bytes": 244,
       "action": "link to one sanitized public source record"
     },
     {
       "path": "licenses/jp-v-sources.md",
       "source_sha256": "39a0ad4d4f1379fc5d2d1c9ee08f1e633b8c5a536261ed49b8500072abae2c5a",
-      "sha256": "3b7bc1b272a555aa987cb17d35c3b8a112674b7653866c6a6d0889aeec390515",
-      "bytes": 249,
+      "sha256": "4189562b4918814d8277436cbe3c066af02957baa4e102bb384d03ce4a242aa2",
+      "bytes": 244,
       "action": "link to one sanitized public source record"
     },
     {
@@ -290,8 +290,8 @@
     {
       "path": "licenses/luna-compact-model-sources.md",
       "source_sha256": "88c00dfdbb98cc86099cf1fd58ec4a85996a24dfbe627dddc97ffe06133d7cb4",
-      "sha256": "6b881dbc4255d77258d982cd09d0202269051cc80d38a7026f6e904b86fc7ac8",
-      "bytes": 277,
+      "sha256": "1ffb3872e6703a78405d6a9d30dd334e8aa1574efbcdeda1cd0ecb50eb936f93",
+      "bytes": 272,
       "action": "link to one sanitized public source record"
     },
     {
@@ -304,15 +304,15 @@
     {
       "path": "licenses/mdx-orthography-sources.md",
       "source_sha256": "356c5161fd81b4803bd8eb2f50077f86d24a8f7753fdadd96a26c049625d7fb0",
-      "sha256": "5a76ca6d744ec10981fd9c2b98ef2944d2d9b62b8abb6f07c118e1523f41b559",
-      "bytes": 271,
+      "sha256": "118374ab65fec8ac57df1023f52db1ae05d658510f7d2291eaee33258e6554ad",
+      "bytes": 266,
       "action": "link to one sanitized public source record"
     },
     {
       "path": "licenses/mixed-phrases-sources.md",
       "source_sha256": "28d2e5efe7cc4580e2c3a7d3becc4023052a45951fe504b61d59919166ed2fd6",
-      "sha256": "7db246e800471237cbfe0d0bf9ee39264b24437ed0f307d696bac12606364ad5",
-      "bytes": 267,
+      "sha256": "54770c7903a15e11f608f4408f5be4d089a1e9b738944d8aeb4e890ed51d5851",
+      "bytes": 262,
       "action": "link to one sanitized public source record"
     },
     {
@@ -332,15 +332,15 @@
     {
       "path": "licenses/pde-terms-sources.md",
       "source_sha256": "b75007e8ca308bcdd4291206b730596e955b6e663705b30dbd70919aa91d08a3",
-      "sha256": "dcd7d974d2d42482040f8ae5aa7e14985d13fbeedf405cf40a36844d2fd38d62",
-      "bytes": 259,
+      "sha256": "25a975aceaa88bf6a429a1c7690a1247d5835eb00b23c88f9539b2b483ccbb2a",
+      "bytes": 254,
       "action": "link to one sanitized public source record"
     },
     {
       "path": "licenses/project-literary-sources.md",
       "source_sha256": "84fcef27cb6e3cec5636cabcadd1ed9cfe09a5056a1a62b90e5ef19072a4af0d",
-      "sha256": "da75de18b3d20ec5e580471dafb1a631e0c9f17ce7457cbd008b97c965502a6c",
-      "bytes": 273,
+      "sha256": "70f22e06dbe2351295f33bad05848bca86c4413d6c8f7fbe4f4ad3da23bfe4a1",
+      "bytes": 268,
       "action": "link to one sanitized public source record"
     },
     {
@@ -353,8 +353,8 @@
     {
       "path": "licenses/project-terms-sources.md",
       "source_sha256": "dd812c0b25863e98e464fdcccf0109bffc30932402057da5c1bf29d4bfd2edf9",
-      "sha256": "3d4350179419d8275e70356d5c7e91773487dc950c5232f41f0d860c0a40f107",
-      "bytes": 267,
+      "sha256": "853a864c1be2aaa91f48bd4cf16ff1a231e4083359428ff073768e5bcfcf5a27",
+      "bytes": 262,
       "action": "link to one sanitized public source record"
     },
     {
@@ -381,15 +381,15 @@
     {
       "path": "licenses/tools-sources.md",
       "source_sha256": "087f992cf3fe14ec2bb724e986a0b214a3635049bef650e4a13d3cb7f376006b",
-      "sha256": "dde7ed566c1c4a35f3e8d09ad7e8cfd7feb0b56b5a039c19dc926a0d6d89a316",
-      "bytes": 251,
+      "sha256": "9ef82c69ad8b344baaf85790a75cdeb977f434632e3db316525eaca91aa4aa1d",
+      "bytes": 246,
       "action": "link to one sanitized public source record"
     },
     {
       "path": "licenses/u-readings-sources.md",
       "source_sha256": "09422adde4c35adf6b8c10f5bed8fe722f1386911ab367d08f7f62b6054a7875",
-      "sha256": "5174735c78ff9245e16bd8e479055bd92beba1b0750e481b9f9f6f7c23f019e6",
-      "bytes": 261,
+      "sha256": "8f87bf1cdbc6bd94731fb55c939eed44b21e96628daa4af542b606838ee8bd5b",
+      "bytes": 256,
       "action": "link to one sanitized public source record"
     },
     {
@@ -885,13 +885,13 @@
     },
     {
       "path": "JAPANESE.md",
-      "sha256": "855211bbddc95dc1fda413e318731a79ca4e8fccd169e55bb1cca6b2b7c93c42",
-      "bytes": 2830
+      "sha256": "085984c022cf10084671f97a719818b73f2993023c3de9cb901ebf92d0d579a1",
+      "bytes": 2138
     },
     {
       "path": "OPENCC.md",
-      "sha256": "4357d305a452967ef0b5411a97f034abd0d3a21b5285f03aba9349046e5ceaea",
-      "bytes": 1445
+      "sha256": "5d2a291c2ec288636a7f00a693a81774aeca3e327aeae7a962939552c7228b69",
+      "bytes": 1414
     },
     {
       "path": "tools/generate-japanese-base.py",

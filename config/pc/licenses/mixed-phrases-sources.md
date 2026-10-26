@@ -1,5 +1,5 @@
 # 公開來源說明
 
-這份來源說明的公開維護版本見 [mixed-phrases-sources.md](../../../docs/sources/mixed-phrases-sources.md)。
+這份來源說明的公開維護版本見 [mixed-phrases-sources.md](../../../docs/sources/mixed-phrases-sources.md).
 
-對應第三方授權正文與署名仍隨本目錄及倉庫 licenses/ 保存；本索引不更改任何第三方授權。
+對應第三方授權正文與署名仍隨本目錄及倉庫 licenses/ 保存; 本索引不更改任何第三方授權.

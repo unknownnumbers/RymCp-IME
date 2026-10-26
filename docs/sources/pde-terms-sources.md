@@ -1,10 +1,10 @@
 # PDE精選詞與essay初始權重
 
-`project_pde_terms`使用TC規範詞形及普通話標準拼音，字典保留`ing/eng`，SC輸出由既有轉換層處理。新增18詞的初始值均為400；後續多解性／弱解／緊性改為1600，其餘保持400。這些是本工程選定的初始排序參數，不是私人使用次數或跨詞庫比較的語料分數。
+`project_pde_terms`使用TC規範詞形及國語標準拼音, 字典保留`ing/eng`, SC輸出由既有轉換層處理. 新增18詞的初始值均為400; 後續多解性/弱解/緊性改為1600, 其餘保持400. 這些是本工程選定的初始排序參數, 不是私人使用次數或跨詞庫比較的語料分數.
 
 ## 18條詞與來源
 
-白霜來源固定[gaboolic/rime-frost@19c615189c1173a84e7e9970469fb3d38db45766](https://github.com/gaboolic/rime-frost/tree/19c615189c1173a84e7e9970469fb3d38db45766)，參考檔為[cn_dicts_cell/shulihua.dict.yaml](https://github.com/gaboolic/rime-frost/blob/19c615189c1173a84e7e9970469fb3d38db45766/cn_dicts_cell/shulihua.dict.yaml)，[GPLv3全文](../../licenses/pde-terms-reference-GPL-3.0.txt)隨附。只借下列明列詞／拼音，不匯入整份表。TC整理及初始權重由本工程完成。
+白霜來源固定[gaboolic/rime-frost@19c615189c1173a84e7e9970469fb3d38db45766](https://github.com/gaboolic/rime-frost/tree/19c615189c1173a84e7e9970469fb3d38db45766), 參考檔為[cn_dicts_cell/shulihua.dict.yaml](https://github.com/gaboolic/rime-frost/blob/19c615189c1173a84e7e9970469fb3d38db45766/cn_dicts_cell/shulihua.dict.yaml), [GPLv3全文](../../licenses/pde-terms-reference-GPL-3.0.txt) 隨附. 只借下列明列詞/拼音, 不匯入整份表. TC整理及初始權重由本工程完成.
 
 | 詞 | 規範拼音 | 來源 |
 | --- | --- | --- |
@@ -29,7 +29,7 @@
 
 ## essay的17項初始權重
 
-`essay.txt`源自官方Weasel0.17.4安裝資料的[rime-essay](https://github.com/rime/rime-essay)成品；精確上游commit未識別。[LGPLv3](../../licenses/essay-LGPL-3.0.txt)及[GPLv3](../../LICENSE)隨附。原拼音主表不改多音身份；下表只改essay第二欄。
+`essay.txt`源自官方Weasel0.17.4安裝資料的[rime-essay](https://github.com/rime/rime-essay) 成品; 精確上游commit未識別. [LGPLv3](../../licenses/essay-LGPL-3.0.txt) 及[GPLv3](../../LICENSE) 隨附. 原拼音主表不改多音身份; 下表只改essay第二欄.
 
 | 詞 | 原權重 | 修訂權重 |
 | --- | ---: | ---: |
@@ -51,4 +51,4 @@
 | 遞歸 | 850 | 3400 |
 | 邊值問題 | 12 | 48 |
 
-來源修訂使用絕對前後值，不對已修改詞頻再乘四。後續另有[緩存權重與重複列修訂](dictionary-quality-q121-sources.md)。
+來源修訂使用絕對前後值, 不對已修改詞頻再乘四. 後續另有[緩存權重與重複列修訂](dictionary-quality-q121-sources.md).
