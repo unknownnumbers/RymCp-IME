@@ -28,6 +28,36 @@
       "sha256": "3625b1549482e40b524069aa6bc1afd0ad2cb52f722d7fe50d2247a64805803e"
     },
     {
+      "path": "LICENSE",
+      "bytes": 35147,
+      "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4318,
+      "sha256": "0e636d56257ad634c09c897d079e2c993d3ca8ccc789aaba901d82f9935f57ae"
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "bytes": 5567,
+      "sha256": "036d8640f5e95be775aa8bcdbcdfcd4ca9b651e8a1acb39093dcd3fff2c81252"
+    },
+    {
+      "path": "TODO.md",
+      "bytes": 2065,
+      "sha256": "a6ba87ee6cbfee415df0a1021b43571142258ef19c24cc1af222ec81098e48c9"
+    },
+    {
+      "path": "config/pc/JAPANESE.md",
+      "bytes": 2830,
+      "sha256": "855211bbddc95dc1fda413e318731a79ca4e8fccd169e55bb1cca6b2b7c93c42"
+    },
+    {
+      "path": "config/pc/OPENCC.md",
+      "bytes": 1445,
+      "sha256": "4357d305a452967ef0b5411a97f034abd0d3a21b5285f03aba9349046e5ceaea"
+    },
+    {
       "path": "config/pc/config-source-manifest.json",
       "bytes": 37845,
       "sha256": "de086a172932a51140bb0e8c28edb856d8e74d15a6edac6124765ebcc6d69c0d"
@@ -36,6 +66,11 @@
       "path": "config/pc/default.custom.yaml",
       "bytes": 2267,
       "sha256": "38204c74ef03bcbbf497dda3ed3ee85dc88e619d6a9098e5bcbd48a33c9d4ce8"
+    },
+    {
+      "path": "config/pc/english_extensions.dict.yaml",
+      "bytes": 42702,
+      "sha256": "741e599624d93dd6a990a8c3e130354c3ab35fe134811c82b99c4e1b3452e563"
     },
     {
       "path": "config/pc/english_extensions/build-report.json",
@@ -66,11 +101,6 @@
       "path": "config/pc/english_extensions/words.txt",
       "bytes": 27240,
       "sha256": "d13c4ad6e5ab2933e67ca891c19e80ab0014a3b4f02bbfc5f9e2cf04dc8188bb"
-    },
-    {
-      "path": "config/pc/english_extensions.dict.yaml",
-      "bytes": 42702,
-      "sha256": "741e599624d93dd6a990a8c3e130354c3ab35fe134811c82b99c4e1b3452e563"
     },
     {
       "path": "config/pc/english_frequency_overrides.tsv",
@@ -126,11 +156,6 @@
       "path": "config/pc/japanese-q-canonical.json",
       "bytes": 6078,
       "sha256": "2164b1a91a8b1d48e91af5e14d491a46528f26e9386d14fbd4a424957188fcb6"
-    },
-    {
-      "path": "config/pc/JAPANESE.md",
-      "bytes": 2830,
-      "sha256": "855211bbddc95dc1fda413e318731a79ca4e8fccd169e55bb1cca6b2b7c93c42"
     },
     {
       "path": "config/pc/jp-v-compatibility.json",
@@ -198,14 +223,39 @@
       "sha256": "28a9529c7d0bb4dc51f4bf5c116a3d16ef247a052f7591466768ddf563fd1cf5"
     },
     {
-      "path": "config/pc/licenses/dictionary-quality-q121-sources.md",
-      "bytes": 287,
-      "sha256": "8cd59e1acc1f95174797c387e15c4c80905ccef18fc50304dc0d33b4e07a84cd"
-    },
-    {
       "path": "config/pc/licenses/EDRDG-licence.html",
       "bytes": 13587,
       "sha256": "52f60ea9ca68170a2f0663d7dba381ebf1bd57c17a3347dfe21153865c156692"
+    },
+    {
+      "path": "config/pc/licenses/JMdict-EDICT_Dictionary_Project.html",
+      "bytes": 44987,
+      "sha256": "873d4730db9b07f5f2554628f30969147e5054ad1f3bc1d528418d1b4961b791"
+    },
+    {
+      "path": "config/pc/licenses/KANJIDIC_Project.html",
+      "bytes": 58521,
+      "sha256": "d58b6d859772c5c2031911eb7604f2d55d50c4ac6abc8bfece17550899baaf7d"
+    },
+    {
+      "path": "config/pc/licenses/OpenCC-LICENSE.txt",
+      "bytes": 9165,
+      "sha256": "b534e465949558eec2597b04f5092b5e161236a68dfbfd04d547592ac3964308"
+    },
+    {
+      "path": "config/pc/licenses/SCOWL-case-forms-Copyright.txt",
+      "bytes": 11758,
+      "sha256": "283326a422e29c510e2ba6805518c418ce3c35ed1fadc3eec83d2da4f6c5a055"
+    },
+    {
+      "path": "config/pc/licenses/Unicode-3.0.txt",
+      "bytes": 1995,
+      "sha256": "e7a93b009565cfce55919a381437ac4db883e9da2126fa28b91d12732bc53d96"
+    },
+    {
+      "path": "config/pc/licenses/dictionary-quality-q121-sources.md",
+      "bytes": 287,
+      "sha256": "8cd59e1acc1f95174797c387e15c4c80905ccef18fc50304dc0d33b4e07a84cd"
     },
     {
       "path": "config/pc/licenses/english-case-forms-sources.md",
@@ -233,11 +283,6 @@
       "sha256": "97628afebc60f026f5c2b25d7491c46a5c4ee61f693e7cfa07fbd2c03605979b"
     },
     {
-      "path": "config/pc/licenses/JMdict-EDICT_Dictionary_Project.html",
-      "bytes": 44987,
-      "sha256": "873d4730db9b07f5f2554628f30969147e5054ad1f3bc1d528418d1b4961b791"
-    },
-    {
       "path": "config/pc/licenses/jp-q-sources.md",
       "bytes": 249,
       "sha256": "e35ab4fcea49623fc89f1511810a917be8e9edabf0dc0b31fa5ae6e9d709af5b"
@@ -246,11 +291,6 @@
       "path": "config/pc/licenses/jp-v-sources.md",
       "bytes": 249,
       "sha256": "3b7bc1b272a555aa987cb17d35c3b8a112674b7653866c6a6d0889aeec390515"
-    },
-    {
-      "path": "config/pc/licenses/KANJIDIC_Project.html",
-      "bytes": 58521,
-      "sha256": "d58b6d859772c5c2031911eb7604f2d55d50c4ac6abc8bfece17550899baaf7d"
     },
     {
       "path": "config/pc/licenses/luna-compact-model-LGPL-3.0.txt",
@@ -276,11 +316,6 @@
       "path": "config/pc/licenses/mixed-phrases-sources.md",
       "bytes": 267,
       "sha256": "7db246e800471237cbfe0d0bf9ee39264b24437ed0f307d696bac12606364ad5"
-    },
-    {
-      "path": "config/pc/licenses/OpenCC-LICENSE.txt",
-      "bytes": 9165,
-      "sha256": "b534e465949558eec2597b04f5092b5e161236a68dfbfd04d547592ac3964308"
     },
     {
       "path": "config/pc/licenses/pde-terms-reference-GPL-3.0.txt",
@@ -313,11 +348,6 @@
       "sha256": "a7609756347045c36bf384aa948e4d406df4b2e0d9a293a8e7d91587cf70135b"
     },
     {
-      "path": "config/pc/licenses/SCOWL-case-forms-Copyright.txt",
-      "bytes": 11758,
-      "sha256": "283326a422e29c510e2ba6805518c418ce3c35ed1fadc3eec83d2da4f6c5a055"
-    },
-    {
       "path": "config/pc/licenses/tools-Ice-GPL-3.0.txt",
       "bytes": 35149,
       "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
@@ -331,11 +361,6 @@
       "path": "config/pc/licenses/u-readings-sources.md",
       "bytes": 261,
       "sha256": "5174735c78ff9245e16bd8e479055bd92beba1b0750e481b9f9f6f7c23f019e6"
-    },
-    {
-      "path": "config/pc/licenses/Unicode-3.0.txt",
-      "bytes": 1995,
-      "sha256": "e7a93b009565cfce55919a381437ac4db883e9da2126fa28b91d12732bc53d96"
     },
     {
       "path": "config/pc/lua/candidate_keys.lua",
@@ -588,11 +613,6 @@
       "sha256": "e8a7da2487f1c15053f2251ae06441be7d9bf5a8982bf87f4f74b5e025c26ae4"
     },
     {
-      "path": "config/pc/OPENCC.md",
-      "bytes": 1445,
-      "sha256": "4357d305a452967ef0b5411a97f034abd0d3a21b5285f03aba9349046e5ceaea"
-    },
-    {
       "path": "config/pc/pc_research.custom.yaml",
       "bytes": 261033,
       "sha256": "b661a8f05b9238c6a3feab0467826a90479431b3a20a8cd224a0b3e484e07ee5"
@@ -703,6 +723,11 @@
       "sha256": "5d4cea0580486db03aaeef7eb0c68ab033d1930e2f98570626f090473960315f"
     },
     {
+      "path": "docs/sources/README.md",
+      "bytes": 2961,
+      "sha256": "ecd0f3bbf1b7f7bd5672ec275402ac4a099c9b718e858fa1f83c477db2c64525"
+    },
+    {
       "path": "docs/sources/dictionary-quality-q121-sources.md",
       "bytes": 2596,
       "sha256": "7cad526fdba04bc997d8b9f58cf128b5ee83ef3849bfce4e1bdbb48632f1b516"
@@ -783,11 +808,6 @@
       "sha256": "e01144201b448e4ac05f5f56e243893522c7db37b9eb5a2eff6763b4b9c61827"
     },
     {
-      "path": "docs/sources/README.md",
-      "bytes": 2961,
-      "sha256": "ecd0f3bbf1b7f7bd5672ec275402ac4a099c9b718e858fa1f83c477db2c64525"
-    },
-    {
       "path": "docs/sources/tools-sources.md",
       "bytes": 1132,
       "sha256": "a3b50ecef09f1b17cff2865cf8e8e7909fefbec32e57609027cb5b83b9b948d6"
@@ -798,11 +818,6 @@
       "sha256": "2557a95b253e96e7b618c92029ead0753f42277e7542771f0944fbb398643790"
     },
     {
-      "path": "LICENSE",
-      "bytes": 35147,
-      "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903"
-    },
-    {
       "path": "licenses/CC-BY-SA-4.0.txt",
       "bytes": 20138,
       "sha256": "28a9529c7d0bb4dc51f4bf5c116a3d16ef247a052f7591466768ddf563fd1cf5"
@@ -811,6 +826,36 @@
       "path": "licenses/EDRDG-licence.html",
       "bytes": 13587,
       "sha256": "52f60ea9ca68170a2f0663d7dba381ebf1bd57c17a3347dfe21153865c156692"
+    },
+    {
+      "path": "licenses/JMdict-EDICT_Dictionary_Project.html",
+      "bytes": 44987,
+      "sha256": "873d4730db9b07f5f2554628f30969147e5054ad1f3bc1d528418d1b4961b791"
+    },
+    {
+      "path": "licenses/KANJIDIC_Project.html",
+      "bytes": 58521,
+      "sha256": "d58b6d859772c5c2031911eb7604f2d55d50c4ac6abc8bfece17550899baaf7d"
+    },
+    {
+      "path": "licenses/OpenCC-LICENSE.txt",
+      "bytes": 9165,
+      "sha256": "b534e465949558eec2597b04f5092b5e161236a68dfbfd04d547592ac3964308"
+    },
+    {
+      "path": "licenses/README.md",
+      "bytes": 1088,
+      "sha256": "153283762b662125dffb1318e86b903ed18ed42c6e469077c800a5128c1a287a"
+    },
+    {
+      "path": "licenses/SCOWL-case-forms-Copyright.txt",
+      "bytes": 11758,
+      "sha256": "283326a422e29c510e2ba6805518c418ce3c35ed1fadc3eec83d2da4f6c5a055"
+    },
+    {
+      "path": "licenses/Unicode-3.0.txt",
+      "bytes": 1995,
+      "sha256": "e7a93b009565cfce55919a381437ac4db883e9da2126fa28b91d12732bc53d96"
     },
     {
       "path": "licenses/english-core/CC-BY-3.0-legalcode.txt",
@@ -863,16 +908,6 @@
       "sha256": "97628afebc60f026f5c2b25d7491c46a5c4ee61f693e7cfa07fbd2c03605979b"
     },
     {
-      "path": "licenses/JMdict-EDICT_Dictionary_Project.html",
-      "bytes": 44987,
-      "sha256": "873d4730db9b07f5f2554628f30969147e5054ad1f3bc1d528418d1b4961b791"
-    },
-    {
-      "path": "licenses/KANJIDIC_Project.html",
-      "bytes": 58521,
-      "sha256": "d58b6d859772c5c2031911eb7604f2d55d50c4ac6abc8bfece17550899baaf7d"
-    },
-    {
       "path": "licenses/luna-compact-model-LGPL-3.0.txt",
       "bytes": 7651,
       "sha256": "da7eabb7bafdf7d3ae5e9f223aa5bdc1eece45ac569dc21b3b037520b4464768"
@@ -881,11 +916,6 @@
       "path": "licenses/luna-pinyin-LGPL-3.0.txt",
       "bytes": 7652,
       "sha256": "97628afebc60f026f5c2b25d7491c46a5c4ee61f693e7cfa07fbd2c03605979b"
-    },
-    {
-      "path": "licenses/OpenCC-LICENSE.txt",
-      "bytes": 9165,
-      "sha256": "b534e465949558eec2597b04f5092b5e161236a68dfbfd04d547592ac3964308"
     },
     {
       "path": "licenses/pde-terms-reference-GPL-3.0.txt",
@@ -918,16 +948,6 @@
       "sha256": "da7eabb7bafdf7d3ae5e9f223aa5bdc1eece45ac569dc21b3b037520b4464768"
     },
     {
-      "path": "licenses/README.md",
-      "bytes": 1088,
-      "sha256": "153283762b662125dffb1318e86b903ed18ed42c6e469077c800a5128c1a287a"
-    },
-    {
-      "path": "licenses/SCOWL-case-forms-Copyright.txt",
-      "bytes": 11758,
-      "sha256": "283326a422e29c510e2ba6805518c418ce3c35ed1fadc3eec83d2da4f6c5a055"
-    },
-    {
       "path": "licenses/supplement/CC-BY-3.0-legalcode.txt",
       "bytes": 19467,
       "sha256": "e6bc9e9c474700b708f568bac9e5a8a9bcb2b1dad53442f5ba449fcb848b8e76"
@@ -946,6 +966,26 @@
       "path": "licenses/supplement/GPL-2.0.txt",
       "bytes": 18063,
       "sha256": "a3d34486366e8499239ce6ea86e38f46b6cce84891476032f59fee9becb398ee"
+    },
+    {
+      "path": "licenses/supplement/Lua-5.3-MIT-NOTICE.txt",
+      "bytes": 1263,
+      "sha256": "062940535f605b12291d6e1df9c92bbdc121165bea3d4ac92c697f23f83e2aff"
+    },
+    {
+      "path": "licenses/supplement/Lua-5.4-MIT-NOTICE.txt",
+      "bytes": 1263,
+      "sha256": "b66c57df1c7de7a62eec9af87d7cde02a2a6ce791758ccc7a79c6781c360526d"
+    },
+    {
+      "path": "licenses/supplement/Mirtle-GPL-3.0.txt",
+      "bytes": 35149,
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+    },
+    {
+      "path": "licenses/supplement/README.md",
+      "bytes": 4775,
+      "sha256": "468ed935a058c18568610464475b5e28c95f5e1e118399c3a960f12bc8158b5d"
     },
     {
       "path": "licenses/supplement/henrysting-chaizi-LICENSE.txt",
@@ -988,29 +1028,9 @@
       "sha256": "9b1bbdf15a381884b47dfd9422e68f6382170b2841c476afc076f2d448c7a59f"
     },
     {
-      "path": "licenses/supplement/Lua-5.3-MIT-NOTICE.txt",
-      "bytes": 1263,
-      "sha256": "062940535f605b12291d6e1df9c92bbdc121165bea3d4ac92c697f23f83e2aff"
-    },
-    {
-      "path": "licenses/supplement/Lua-5.4-MIT-NOTICE.txt",
-      "bytes": 1263,
-      "sha256": "b66c57df1c7de7a62eec9af87d7cde02a2a6ce791758ccc7a79c6781c360526d"
-    },
-    {
-      "path": "licenses/supplement/Mirtle-GPL-3.0.txt",
-      "bytes": 35149,
-      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
-    },
-    {
       "path": "licenses/supplement/mirtle-src-README.md",
       "bytes": 1725,
       "sha256": "20c8f02136554444af8929a846853bb37f7c6a42d06f7a20bbab504ae9fd6b4f"
-    },
-    {
-      "path": "licenses/supplement/README.md",
-      "bytes": 4775,
-      "sha256": "468ed935a058c18568610464475b5e28c95f5e1e118399c3a960f12bc8158b5d"
     },
     {
       "path": "licenses/supplement/yi-bai-ids-LICENSE.txt",
@@ -1033,14 +1053,14 @@
       "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
     },
     {
-      "path": "licenses/Unicode-3.0.txt",
-      "bytes": 1995,
-      "sha256": "e7a93b009565cfce55919a381437ac4db883e9da2126fa28b91d12732bc53d96"
-    },
-    {
       "path": "native/BUILD.md",
       "bytes": 6319,
       "sha256": "e6b76dbc467fa3fa12e2cc516de57eef94467afd25078f2c5361fb1071a58e55"
+    },
+    {
+      "path": "native/VALIDATION.md",
+      "bytes": 1389,
+      "sha256": "6f14781c6272e8c169f509340185b9aefb687322d7ce2d6f7072641239ce2f4f"
     },
     {
       "path": "native/engine/librime-lua-n01.patch",
@@ -1083,11 +1103,6 @@
       "sha256": "bedb6d25c5e7fd054e3730f42e13e7902d414fd3bc96aee220b974ea9d4eef41"
     },
     {
-      "path": "native/VALIDATION.md",
-      "bytes": 1389,
-      "sha256": "6f14781c6272e8c169f509340185b9aefb687322d7ce2d6f7072641239ce2f4f"
-    },
-    {
       "path": "native/weasel/weasel-61020.patch",
       "bytes": 156298,
       "sha256": "3c545186342577eb512a5448eb842fd30183714bfa1703649ae2caf0eacbf432"
@@ -1096,11 +1111,6 @@
       "path": "native/weasel/weasel-61033.patch",
       "bytes": 218515,
       "sha256": "d6be3d8307997be6d46f54ce2519ede0f6eed6070d72554d3faab85fb99d4c72"
-    },
-    {
-      "path": "README.md",
-      "bytes": 4318,
-      "sha256": "0e636d56257ad634c09c897d079e2c993d3ca8ccc789aaba901d82f9935f57ae"
     },
     {
       "path": "scripts/data/build_english_index.py",
@@ -1144,8 +1154,8 @@
     },
     {
       "path": "scripts/verify_release.py",
-      "bytes": 4996,
-      "sha256": "8c565927cb03f9490dac7478b272278b95d18567ec64134a4d610753746a16b7"
+      "bytes": 5400,
+      "sha256": "e6fef4bdd9c665156d7bb320882632792876246730e4f9811520480bc0a4aef2"
     },
     {
       "path": "tests/Probe-Configuration.ps1",
@@ -1156,16 +1166,6 @@
       "path": "tests/RimeProbe.cs",
       "bytes": 10407,
       "sha256": "2aa89e0edf9da61c4f3e1ba50f480716a7d6f52bb18ac3a4aa19b24a4556b820"
-    },
-    {
-      "path": "THIRD_PARTY_NOTICES.md",
-      "bytes": 5567,
-      "sha256": "036d8640f5e95be775aa8bcdbcdfcd4ca9b651e8a1acb39093dcd3fff2c81252"
-    },
-    {
-      "path": "TODO.md",
-      "bytes": 2065,
-      "sha256": "a6ba87ee6cbfee415df0a1021b43571142258ef19c24cc1af222ec81098e48c9"
     }
   ]
 }

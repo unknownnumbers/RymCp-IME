@@ -17,8 +17,9 @@ MANIFEST = ROOT / 'release-manifest.json'
 
 
 def files():
-    return sorted(p for p in ROOT.rglob('*') if p.is_file()
-                  and not any(part in IGNORED for part in p.relative_to(ROOT).parts))
+    return sorted((p for p in ROOT.rglob('*') if p.is_file()
+                   and not any(part in IGNORED for part in p.relative_to(ROOT).parts)),
+                  key=lambda p: p.relative_to(ROOT).as_posix())
 
 
 def digest(path):
@@ -100,8 +101,13 @@ def main():
         MANIFEST.write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
     else:
         manifest = json.loads(MANIFEST.read_text(encoding='utf-8'))
-        if manifest['files'] != records:
-            raise SystemExit('Source snapshot differs from release-manifest.json')
+        expected = {record['path']: record for record in manifest['files']}
+        actual = {record['path']: record for record in records}
+        if expected != actual:
+            changed = sorted(name for name in expected.keys() | actual.keys()
+                             if expected.get(name) != actual.get(name))
+            raise SystemExit('Source snapshot differs from release-manifest.json: '
+                             + ', '.join(changed[:10]))
     print(json.dumps({
         'verifiedFiles': len(records), 'pythonParsed': python_count,
         'jsonParsed': json_count, 'yamlParsed': yaml_count,
