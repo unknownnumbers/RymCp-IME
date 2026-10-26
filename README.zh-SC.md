@@ -22,7 +22,7 @@ RymCp 希望把日常打字变成重新熟悉乡音的入口. 现在先公开 Ri
 | 查字与工具 | 拆字/笔画查字、国语读音显示、Unicode、Greek/数学符号及计算器 |
 | 原生修改 | Weasel 前端、librime 及 librime-lua 的固定上游与完整补丁 |
 
-配置使用配套的前端与引擎接口. 使用方式见 [PC 说明](docs/PC.md)、[日语说明](config/pc/JAPANESE.md) 及[构建说明](docs/BUILD.md). 界面语言与输出字形分开处理.
+配置使用配套的前端与引擎接口. 使用方式见 [PC 说明](docs/PC.md)、[日语说明](config/pc/JAPANESE.md) 及[构建说明](docs/BUILD.md).
 
 ## 乡音复健的理念
 

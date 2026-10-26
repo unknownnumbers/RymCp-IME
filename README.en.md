@@ -22,7 +22,7 @@ The initial release provides Windows PC source and configuration. A standalone i
 | Character lookup and tools | Component/stroke lookup, Mandarin pronunciation display, Unicode, Greek/mathematical symbols and a calculator |
 | Native modifications | Fixed upstream versions and complete patches for the Weasel frontend, librime and librime-lua |
 
-The configuration uses the accompanying frontend and engine interfaces. See the [PC guide](docs/PC.md), [Japanese guide](config/pc/JAPANESE.md) and [build guide](docs/BUILD.md). UI language and output forms are handled separately.
+The configuration uses the accompanying frontend and engine interfaces. See the [PC guide](docs/PC.md), [Japanese guide](config/pc/JAPANESE.md) and [build guide](docs/BUILD.md).
 
 ## The idea behind relearning home speech
 
