@@ -63,4 +63,4 @@ The early Japanese input design drew inspiration from [Selaube's Japanese scheme
 
 The public content consists of shared code and data. Personal learning databases, backups and field records remain local.
 
-Code is licensed under [GPLv3](LICENSE). Original text in the newly written README, TODO, PC usage and build documentation is licensed under [CC BY-SA 4.0](licenses/CC-BY-SA-4.0.txt). Third-party code, dictionaries, models and quoted source text retain their own licenses. See the third-party notices for details.
+Our original code and configuration are licensed under [GPL-3.0-only](LICENSE). Original prose throughout the project's documentation is licensed under [CC BY-SA 4.0](licenses/CC-BY-SA-4.0.txt). Third-party materials and quoted source text retain their own licenses. See the [third-party notices](THIRD_PARTY_NOTICES.md) and [file license index](licenses/file-licenses.json).

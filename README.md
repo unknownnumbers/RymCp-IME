@@ -63,4 +63,4 @@ RymCp 希望把日常打字變成重新熟悉鄉音的入口. 現在先公開 Ri
 
 公開內容為共享程式與資料. 個人學習庫、備份與現場紀錄留在本機.
 
-程式碼採 [GPLv3](LICENSE). 新寫 README、TODO、PC 使用與構建說明的原創文字採 [CC BY-SA 4.0](licenses/CC-BY-SA-4.0.txt). 第三方程式、詞庫、模型與引用原文保留各自授權, 詳見第三方通知.
+本工程原創程式碼與配置採 [GPL-3.0-only](LICENSE), 各說明文件中的原創文字採 [CC BY-SA 4.0](licenses/CC-BY-SA-4.0.txt). 第三方材料與引用原文保留各自授權, 詳見[第三方通知](THIRD_PARTY_NOTICES.md)及[逐檔授權索引](licenses/file-licenses.json).

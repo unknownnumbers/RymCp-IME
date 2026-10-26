@@ -1,4 +1,4 @@
--- Unicode 17.0.0: White_Space, Default_Ignorable and Cf; see references/Unicode-LICENSE.txt.
+-- Unicode 17.0.0: White_Space, Default_Ignorable and Cf; see licenses/Unicode-3.0.txt at the repository root.
 return {
   invisible = {
     {0x20, 0x20},

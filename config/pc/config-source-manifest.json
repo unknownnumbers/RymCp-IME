@@ -73,9 +73,9 @@
     {
       "path": "english_full.dict.yaml",
       "source_sha256": "222572238fd82220201d495d6de9bd5ac0d78d26bd1acc366be54ae577f5ee7c",
-      "sha256": "222572238fd82220201d495d6de9bd5ac0d78d26bd1acc366be54ae577f5ee7c",
-      "bytes": 2086654,
-      "action": "unchanged"
+      "sha256": "f9d4dec60a6f95c9702a675ea2c19d908d1d525c1c56a303a680e5e53d4bdee9",
+      "bytes": 2086683,
+      "action": "source notice pointer updated; data rows unchanged"
     },
     {
       "path": "english_full.schema.yaml",
@@ -521,9 +521,9 @@
     {
       "path": "lua/jp_family_data.lua",
       "source_sha256": "cd1ec95f5ec5a93265cc9e94ace86a3add680ab502b95b6598f836d0007b1fc8",
-      "sha256": "cd1ec95f5ec5a93265cc9e94ace86a3add680ab502b95b6598f836d0007b1fc8",
-      "bytes": 187594,
-      "action": "unchanged"
+      "sha256": "17ee0d663c8025c2aee8d4768057df9f3cba0fe8b0423eb712a66629bf0fee48",
+      "bytes": 570526,
+      "action": "q_codes regenerated from public official readings and current canonical rules; other family fields retained"
     },
     {
       "path": "lua/jp_family.lua",
@@ -682,9 +682,9 @@
     {
       "path": "lua/tool_unicode_data.lua",
       "source_sha256": "e922e1b0c75a7609d1414d258fb85b27c55d43fead94a46994760f52ed1209b4",
-      "sha256": "e922e1b0c75a7609d1414d258fb85b27c55d43fead94a46994760f52ed1209b4",
-      "bytes": 5953,
-      "action": "unchanged"
+      "sha256": "84ced4a71016ee930f04c7d70f8982e61231cf5fe113cc19cbaa0f69bec7526d",
+      "bytes": 5970,
+      "action": "source notice pointer updated; data rows unchanged"
     },
     {
       "path": "lua/tool_unicode.lua",

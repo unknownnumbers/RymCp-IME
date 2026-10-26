@@ -26,6 +26,50 @@ def digest(path):
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
+def verify_licenses(payload):
+    """Check license coverage, source links and retained original notice bytes."""
+    index = json.loads((ROOT / 'licenses/file-licenses.json').read_text(encoding='utf-8'))
+    records = index['files']
+    actual = {p.relative_to(ROOT).as_posix() for p in payload}
+    declared = [record['path'] for record in records]
+    if len(declared) != len(set(declared)) or set(declared) != actual:
+        missing = sorted(actual - set(declared))
+        stale = sorted(set(declared) - actual)
+        raise SystemExit(f'License index coverage differs: missing={missing}, stale={stale}')
+
+    def require_file(name):
+        path = ROOT / name
+        if not path.resolve().is_relative_to(ROOT.resolve()) or not path.is_file():
+            raise SystemExit(f'Missing or invalid license reference: {name}')
+        return path
+
+    sources = index['sources']
+    for source in sources.values():
+        for name in source.get('notices', []) + source.get('evidence', []):
+            require_file(name)
+    manifest = json.loads((ROOT / 'licenses/third-party-source-manifest.json').read_text(encoding='utf-8'))
+    originals = {record['path']: record for record in manifest['files']}
+    for name, record in originals.items():
+        path = require_file(name)
+        raw = path.read_bytes()
+        if len(raw) != record['bytes'] or digest(path) != record['sha256']:
+            raise SystemExit(f'Retained upstream notice differs: {name}')
+        blob = b'blob ' + str(len(raw)).encode('ascii') + b'\0' + raw
+        if hashlib.sha1(blob).hexdigest() != record['git_blob_sha1']:
+            raise SystemExit(f'Retained upstream notice Git blob differs: {name}')
+    for record in records:
+        for name in record.get('references', []):
+            require_file(name)
+        for name in record.get('source_ids', []):
+            if name not in sources:
+                raise SystemExit(f'Unknown license source in {record["path"]}: {name}')
+        if 'notice_record' in record:
+            original = originals.get(record['notice_record'])
+            if not original or digest(ROOT / record['path']) != original['sha256']:
+                raise SystemExit(f'Upstream notice copy differs: {record["path"]}')
+    return len(records), len(originals)
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--write-manifest', action='store_true', help='Record a new reviewed source snapshot before committing')
@@ -82,6 +126,7 @@ def main():
                 target = target.split('#', 1)[0]
                 if target and not (path.parent / target).exists():
                     raise SystemExit(f'Missing link in {path.relative_to(ROOT)}: {target}')
+    licensed_count, notice_count = verify_licenses(payload)
     records = [{
         'path': path.relative_to(ROOT).as_posix(),
         'bytes': path.stat().st_size,
@@ -98,7 +143,7 @@ def main():
             'upstreamGenerationLimits': 'See docs/sources/README.md; fixed snapshots do not establish complete historical corpus regeneration.',
             'files': records,
         }
-        MANIFEST.write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+        MANIFEST.write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + '\n', encoding='utf-8', newline='\n')
     else:
         manifest = json.loads(MANIFEST.read_text(encoding='utf-8'))
         expected = {record['path']: record for record in manifest['files']}
@@ -113,6 +158,7 @@ def main():
         'jsonParsed': json_count, 'yamlParsed': yaml_count,
         'yamlParserAvailable': yaml is not None,
         'personalMarkers': 0, 'missingMarkdownLinks': 0,
+        'licensedFiles': licensed_count, 'retainedNotices': notice_count,
     }, ensure_ascii=False))
 
 

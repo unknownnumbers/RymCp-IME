@@ -1,6 +1,6 @@
 # Project PDE English supplement and selected frequency floor; Q118/Q119. See licenses/english-pde-sources.md.
 # SymSpell source plus the separately documented project supplement.
-# Preserve data/README.md, source-manifest.json and licenses when distributing.
+# Preserve docs/sources/english-core-sources.md, config-source-manifest.json and licenses when distributing.
 ---
 name: english_full
 version: "2026-10-19.quality.1"

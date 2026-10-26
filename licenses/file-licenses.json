@@ -1,0 +1,2967 @@
+{
+  "format": "rymcp-file-license-index-v1",
+  "scope": "License scope for every file in this source and configuration snapshot. Retained notices and source-specific terms take precedence over project defaults.",
+  "project_program_license": "GPL-3.0-only",
+  "project_original_documentation_license": "CC-BY-SA-4.0",
+  "data_scope": "A generator license does not replace the licenses of its source data or generated derivatives. Each data entry identifies its applicable source chain.",
+  "sources": {
+    "luna": {
+      "origin": "rime/rime-luna-pinyin, official Weasel 0.17.4 data package",
+      "version": "2024.02.10",
+      "upstream_commit": null,
+      "retained_terms": [
+        "GNU LGPL version 3",
+        "original header credits"
+      ],
+      "notices": [
+        "licenses/luna-pinyin-LGPL-3.0.txt",
+        "LICENSE"
+      ],
+      "evidence": [
+        "docs/sources/README.md",
+        "docs/sources/dictionary-quality-q121-sources.md"
+      ],
+      "caveat": "The precise upstream data commit packaged by Weasel is unknown. Original source credits are preserved in the dictionary header."
+    },
+    "essay": {
+      "origin": "rime/rime-essay, official Weasel 0.17.4 data package",
+      "upstream_commit": null,
+      "retained_terms": [
+        "GNU LGPL version 3"
+      ],
+      "notices": [
+        "licenses/essay-LGPL-3.0.txt",
+        "LICENSE"
+      ],
+      "evidence": [
+        "docs/sources/README.md",
+        "docs/sources/pde-terms-sources.md"
+      ],
+      "caveat": "Precise original data commit is unknown. Project frequency edits do not relabel the base."
+    },
+    "compact_model": {
+      "origin": "lotem/rime-octagram-data release 20260712",
+      "upstream_commit": "8ceef1b42eb77e86501382a52e85c309c0f2f04c",
+      "url": "https://github.com/lotem/rime-octagram-data/releases/tag/20260712",
+      "retained_terms": [
+        "GNU LGPL version 3"
+      ],
+      "notices": [
+        "licenses/luna-compact-model-LGPL-3.0.txt",
+        "LICENSE"
+      ],
+      "evidence": [
+        "docs/sources/luna-compact-model-sources.md"
+      ]
+    },
+    "symspell_core": {
+      "origin": "Wolf Garbe/SymSpell frequency_dictionary_en_82_765.txt",
+      "version": "v6.7.3",
+      "upstream_commit": "2ac2df1d01c99711162c4c38a191e522ed4b29c7",
+      "url": "https://github.com/wolfgarbe/SymSpell/blob/2ac2df1d01c99711162c4c38a191e522ed4b29c7/SymSpell/frequency_dictionary_en_82_765.txt",
+      "retained_terms": [
+        "SymSpell MIT notice, copyright 2018 Wolf Garbe",
+        "Google Books Ngram CC BY 3.0 Unported notice",
+        "SCOWL composite copyright, sources and credits, including UKACD"
+      ],
+      "notices": [
+        "licenses/english-core/SymSpell-MIT.txt",
+        "licenses/english-core/SymSpell-upstream-README.md",
+        "licenses/english-core/Google-Books-Ngram-official.html",
+        "licenses/english-core/Google-Books-CC-BY-3.0-NOTICE.txt",
+        "licenses/english-core/CC-BY-3.0-legalcode.txt",
+        "licenses/english-core/SCOWL-official-readme.html",
+        "licenses/english-core/SCOWL-full-README.txt",
+        "licenses/english-core/SCOWL-COPYRIGHT-SOURCES-CREDITS.txt"
+      ],
+      "evidence": [
+        "docs/sources/english-core-sources.md",
+        "docs/sources/english-pde-sources.md"
+      ],
+      "caveat": "The exact Google Books corpus/slice, historical SCOWL version/options and original SymSpell filtering process are unknown. The retained notices identify the source chain."
+    },
+    "ice": {
+      "origin": "iDvel/rime-ice",
+      "upstream_commit": "da1fbe602e38f26db846fa10120ee64c2b0324c0",
+      "source_paths": [
+        "en_dicts/en_ext.dict.yaml",
+        "melt_eng.schema.yaml algebra_common",
+        "others/cn_en.txt",
+        "en_dicts/cn_en.txt"
+      ],
+      "retained_terms": [
+        "GNU GPL version 3",
+        "original contributors"
+      ],
+      "notices": [
+        "licenses/english-extensions-Ice-GPL-3.0.txt",
+        "LICENSE"
+      ],
+      "evidence": [
+        "docs/sources/english-extensions-sources.md",
+        "docs/sources/mixed-phrases-sources.md"
+      ]
+    },
+    "scowl_case": {
+      "origin": "SCOWL 2020.12.07",
+      "url": "https://sourceforge.net/projects/wordlist/files/SCOWL/2020.12.07/scowl-2020.12.07.tar.gz/download",
+      "source_paths": [
+        "final/english-words.*",
+        "final/american-words.*",
+        "final/british-words.*"
+      ],
+      "retained_terms": [
+        "SCOWL composite copyright and source terms in full Copyright file"
+      ],
+      "notices": [
+        "licenses/SCOWL-case-forms-Copyright.txt"
+      ],
+      "evidence": [
+        "docs/sources/english-case-forms-sources.md"
+      ],
+      "caveat": "This independently pinned case-evidence source is not claimed to be SymSpell's historical SCOWL input."
+    },
+    "frost_terms": {
+      "origin": "gaboolic/rime-frost cn_dicts_cell/shulihua.dict.yaml",
+      "upstream_commit": "19c615189c1173a84e7e9970469fb3d38db45766",
+      "retained_terms": [
+        "GNU GPL version 3"
+      ],
+      "notices": [
+        "licenses/project-terms-reference-LICENSE.txt",
+        "licenses/pde-terms-reference-GPL-3.0.txt",
+        "LICENSE"
+      ],
+      "evidence": [
+        "docs/sources/pde-terms-sources.md",
+        "docs/sources/project-terms-sources.md"
+      ]
+    },
+    "radical": {
+      "origin": "mirtlecn/rime-radical-pinyin",
+      "upstream_commit": "87e73d7182916f3db9dbc0b6a4d18a78a775b298",
+      "retained_terms": [
+        "Mirtle GNU GPL version 3",
+        "kfcd/chaizi CC BY 3.0",
+        "henrysting/chaizi CC BY 3.0",
+        "CHISE ids GPL version 2 or later",
+        "yi-bai/ids MIT"
+      ],
+      "notices": [
+        "licenses/radical-stroke/radical-GPL-3.0.txt",
+        "licenses/radical-stroke/radical-source-credits.md",
+        "licenses/supplement/kfcd-chaizi-LICENSE.txt",
+        "licenses/supplement/kfcd-chaizi-README.md",
+        "licenses/supplement/henrysting-chaizi-LICENSE.txt",
+        "licenses/supplement/henrysting-chaizi-README.md",
+        "licenses/supplement/CHISE-ids-README.md",
+        "licenses/supplement/CHISE-ids.el-NOTICE.txt",
+        "licenses/supplement/GPL-2.0.txt",
+        "licenses/supplement/yi-bai-ids-LICENSE.txt",
+        "licenses/supplement/yi-bai-ids-README.md",
+        "licenses/supplement/CC-BY-3.0-legalcode.txt",
+        "LICENSE"
+      ],
+      "evidence": [
+        "docs/sources/radical-stroke-sources.md",
+        "licenses/third-party-source-manifest.json"
+      ],
+      "caveat": "Mirtle credits these sources, but the exact consumed data revisions and row-level lineage are unknown. Individually pinned supplementary notice snapshots are not represented as the exact Mirtle data inputs."
+    },
+    "stroke": {
+      "origin": "rime/rime-stroke, official Weasel 0.17.4 data/stroke.dict.yaml",
+      "version": "1.1",
+      "upstream_commit": null,
+      "retained_terms": [
+        "GNU LGPL version 3",
+        "AUTHORS credits and CNS11643 redistribution statement"
+      ],
+      "notices": [
+        "licenses/radical-stroke/stroke-LGPL-3.0.txt",
+        "licenses/radical-stroke/stroke-AUTHORS",
+        "LICENSE"
+      ],
+      "evidence": [
+        "docs/sources/query-strokes-source.json",
+        "docs/sources/radical-stroke-sources.md"
+      ],
+      "caveat": "Research comparison source version 2.0 at 1e8fff9b9494ddec23b0cbc526bcfd8171a6fd48 is not the source of the deployed version 1.1 table."
+    },
+    "unihan17": {
+      "origin": "Unicode/Unihan 17.0.0",
+      "url": "https://www.unicode.org/Public/17.0.0/ucd/Unihan.zip",
+      "retained_terms": [
+        "Unicode License V3, copyright Unicode, Inc."
+      ],
+      "notices": [
+        "licenses/Unicode-3.0.txt"
+      ],
+      "evidence": [
+        "docs/sources/jp-v-sources.md",
+        "docs/sources/u-readings-sources.md"
+      ]
+    },
+    "unicode17": {
+      "origin": "Unicode Character Database 17.0.0",
+      "url": "https://www.unicode.org/Public/17.0.0/ucd/",
+      "source_paths": [
+        "UnicodeData.txt",
+        "DerivedCoreProperties.txt",
+        "PropList.txt"
+      ],
+      "retained_terms": [
+        "Unicode License V3, copyright Unicode, Inc."
+      ],
+      "notices": [
+        "licenses/Unicode-3.0.txt"
+      ],
+      "evidence": [
+        "docs/sources/tools-sources.md"
+      ]
+    },
+    "jmdict": {
+      "origin": "JMdict_e.gz, EDRDG/James William Breen",
+      "url": "https://www.edrdg.org/pub/Nihongo/JMdict_e.gz",
+      "retained_terms": [
+        "CC BY-SA 4.0 for dictionary derivatives",
+        "EDRDG and James William Breen attribution"
+      ],
+      "notices": [
+        "licenses/EDRDG-licence.html",
+        "licenses/CC-BY-SA-4.0.txt",
+        "licenses/JMdict-EDICT_Dictionary_Project.html"
+      ],
+      "evidence": [
+        "docs/sources/jp-q-sources.md",
+        "docs/sources/jp-v-sources.md"
+      ]
+    },
+    "kanjidic2": {
+      "origin": "KANJIDIC2, EDRDG/James William Breen",
+      "url": "https://www.edrdg.org/kanjidic/kanjidic2.xml.gz",
+      "retained_terms": [
+        "CC BY-SA 4.0 for dictionary derivatives",
+        "EDRDG and James William Breen attribution"
+      ],
+      "notices": [
+        "licenses/EDRDG-licence.html",
+        "licenses/CC-BY-SA-4.0.txt",
+        "licenses/KANJIDIC_Project.html"
+      ],
+      "evidence": [
+        "docs/sources/jp-v-sources.md"
+      ]
+    },
+    "bunka": {
+      "origin": "Agency for Cultural Affairs, joyo kanji index",
+      "url": "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/kanji/joyokanjisakuin/index.html",
+      "retained_terms": [
+        "Source attribution for published character, form and reading facts."
+      ],
+      "evidence": [
+        "docs/sources/jp-v-sources.md"
+      ]
+    },
+    "opencc": {
+      "origin": "BYVoid/OpenCC",
+      "source_paths": [
+        "data/dictionary/JPShinjitaiCharacters.txt at then-current master",
+        "data/dictionary/JPVariants.txt at ver.1.1.9"
+      ],
+      "retained_terms": [
+        "Apache License 2.0",
+        "original OpenCC authors"
+      ],
+      "notices": [
+        "licenses/OpenCC-LICENSE.txt"
+      ],
+      "evidence": [
+        "docs/sources/jp-v-sources.md",
+        "docs/sources/mdx-orthography-sources.md"
+      ],
+      "caveat": "Standard TSPhrases.ocd2/TSCharacters.ocd2 conversions are external installed OpenCC resources, not shipped raw databases in this source/config overlay. The JP master snapshot has a recorded content hash but no exact upstream commit established."
+    },
+    "project": {
+      "origin": "RymCp IME project-authored engineering code, mapping expression, configuration and additions",
+      "retained_terms": [
+        "GPL-3.0-only for original program, configuration, generator, mapping and integration expression within project rights.",
+        "CC-BY-SA-4.0 for original explanatory documentation.",
+        "Data derived from external sources retains the applicable source terms."
+      ],
+      "notices": [
+        "LICENSE"
+      ],
+      "caveat": "The GPL assignment does not create exclusive rights in isolated words, factual readings, alphabet characters, mathematical symbols, public-domain poetry or independently usable external datasets."
+    },
+    "poem": {
+      "origin": "Lin Zexu, classical poem 赴戍登程口占示家人, second poem",
+      "retained_terms": [
+        "Historical verse text is public domain; own mapping/arrangement expression remains under root GPL where copyright exists."
+      ],
+      "evidence": [
+        "docs/sources/project-literary-sources.md"
+      ]
+    },
+    "mdx_reference": {
+      "origin": "Local curated MDX used as research reference only",
+      "retained_terms": [
+        "GPL-3.0-only for the original small mapping rules; the external dictionary database is not distributed."
+      ],
+      "evidence": [
+        "docs/sources/mdx-orthography-sources.md"
+      ]
+    },
+    "jpf_grammar": {
+      "origin": "Japan Foundation grammar references",
+      "urls": [
+        "https://www.jpf.go.jp/j/urawa/j_rsorcs/textbook/dl/setsumei/setsumei_all.pdf",
+        "https://www.kyozai.jpf.go.jp/kyozai/material/BTS00068/ja/render.do"
+      ],
+      "evidence": [
+        "docs/sources/jp-q-sources.md"
+      ]
+    },
+    "native_weasel": {
+      "origin": "https://github.com/rime/weasel.git",
+      "upstream_commit": "9cc96e20dc71b80876b12f689bb5863c76c2a7ed",
+      "retained_terms": [
+        "GPL-3.0"
+      ],
+      "notices": [
+        "LICENSE"
+      ],
+      "evidence": [
+        "docs/sources/native-components.md",
+        "native/source-manifest.json"
+      ]
+    },
+    "native_librime": {
+      "origin": "https://github.com/rime/librime.git",
+      "upstream_commit": "1c23358157934bd6e6d6981f0c0164f05393b497",
+      "retained_terms": [
+        "BSD-3-Clause"
+      ],
+      "notices": [
+        "licenses/supplement/librime-LICENSE.txt"
+      ],
+      "evidence": [
+        "docs/sources/native-components.md",
+        "native/source-manifest.json"
+      ]
+    },
+    "native_librimeLua": {
+      "origin": "https://github.com/hchunhui/librime-lua.git",
+      "upstream_commit": "e3912a4b3ac2c202d89face3fef3d41eb1d7fcd6",
+      "retained_terms": [
+        "BSD-3-Clause"
+      ],
+      "notices": [
+        "licenses/supplement/librime-lua-LICENSE.txt"
+      ],
+      "evidence": [
+        "docs/sources/native-components.md",
+        "native/source-manifest.json"
+      ]
+    },
+    "native_luaThirdparty": {
+      "origin": "https://github.com/hchunhui/librime-lua.git",
+      "upstream_commit": "115e000c878d1170337f7ca934d7a84f68986e39",
+      "retained_terms": [
+        "MIT"
+      ],
+      "notices": [
+        "licenses/supplement/Lua-5.4-MIT-NOTICE.txt"
+      ],
+      "evidence": [
+        "docs/sources/native-components.md",
+        "native/source-manifest.json"
+      ]
+    },
+    "native_octagram": {
+      "origin": "https://github.com/lotem/librime-octagram.git",
+      "upstream_commit": "dfcc15115788c828d9dd7b4bff68067d3ce2ffb8",
+      "retained_terms": [
+        "GPL-3.0"
+      ],
+      "notices": [
+        "licenses/supplement/librime-octagram-LICENSE.txt"
+      ],
+      "evidence": [
+        "docs/sources/native-components.md",
+        "native/source-manifest.json"
+      ]
+    },
+    "native_predict": {
+      "origin": "https://github.com/rime/librime-predict.git",
+      "upstream_commit": "920bd41ebf6f9bf6855d14fbe80212e54e749791",
+      "retained_terms": [
+        "BSD-3-Clause"
+      ],
+      "notices": [
+        "licenses/supplement/librime-predict-LICENSE.txt"
+      ],
+      "evidence": [
+        "docs/sources/native-components.md",
+        "native/source-manifest.json"
+      ]
+    }
+  },
+  "files": [
+    {
+      "path": ".gitattributes",
+      "kind": "project-metadata",
+      "project_license": "GPL-3.0-only",
+      "license_scope": "Original structured metadata and configuration; cited upstream material retains its own terms.",
+      "references": [
+        "LICENSE",
+        "THIRD_PARTY_NOTICES.md"
+      ]
+    },
+    {
+      "path": ".github/workflows/native.yml",
+      "kind": "program-or-configuration",
+      "project_license": "GPL-3.0-only",
+      "license_scope": "Original project additions and modifications; retained upstream expression keeps its original terms.",
+      "retained_upstream_terms": [],
+      "references": [
+        "LICENSE"
+      ]
+    },
+    {
+      "path": ".github/workflows/verify.yml",
+      "kind": "program-or-configuration",
+      "project_license": "GPL-3.0-only",
+      "license_scope": "Original project additions and modifications; retained upstream expression keeps its original terms.",
+      "retained_upstream_terms": [],
+      "references": [
+        "LICENSE"
+      ]
+    },
+    {
+      "path": ".gitignore",
+      "kind": "project-metadata",
+      "project_license": "GPL-3.0-only",
+      "license_scope": "Original structured metadata and configuration; cited upstream material retains its own terms.",
+      "references": [
+        "LICENSE",
+        "THIRD_PARTY_NOTICES.md"
+      ]
+    },
+    {
+      "path": "LICENSE",
+      "kind": "license-text",
+      "license_scope": "Verbatim GNU GPL version 3 legal text.",
+      "references": [
+        "THIRD_PARTY_NOTICES.md"
+      ]
+    },
+    {
+      "path": "README.en.md",
+      "kind": "project-explanatory-document",
+      "project_license": "CC-BY-SA-4.0",
+      "license_scope": "Original explanatory prose; quotations, attribution statements and code/data excerpts retain their own terms.",
+      "references": [
+        "THIRD_PARTY_NOTICES.md",
+        "licenses/CC-BY-SA-4.0.txt"
+      ]
+    },
+    {
+      "path": "README.md",
+      "kind": "project-explanatory-document",
+      "project_license": "CC-BY-SA-4.0",
+      "license_scope": "Original explanatory prose; quotations, attribution statements and code/data excerpts retain their own terms.",
+      "references": [
+        "THIRD_PARTY_NOTICES.md",
+        "licenses/CC-BY-SA-4.0.txt"
+      ]
+    },
+    {
+      "path": "README.zh-SC.md",
+      "kind": "project-explanatory-document",
+      "project_license": "CC-BY-SA-4.0",
+      "license_scope": "Original explanatory prose; quotations, attribution statements and code/data excerpts retain their own terms.",
+      "references": [
+        "THIRD_PARTY_NOTICES.md",
+        "licenses/CC-BY-SA-4.0.txt"
+      ]
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "kind": "project-explanatory-document",
+      "project_license": "CC-BY-SA-4.0",
+      "license_scope": "Original explanatory prose; quotations, attribution statements and code/data excerpts retain their own terms.",
+      "references": [
+        "THIRD_PARTY_NOTICES.md",
+        "licenses/CC-BY-SA-4.0.txt"
+      ]
+    },
+    {
+      "path": "TODO.md",
+      "kind": "project-explanatory-document",
+      "project_license": "CC-BY-SA-4.0",
+      "license_scope": "Original explanatory prose; quotations, attribution statements and code/data excerpts retain their own terms.",
+      "references": [
+        "THIRD_PARTY_NOTICES.md",
+        "licenses/CC-BY-SA-4.0.txt"
+      ]
+    },
+    {
+      "path": "config/pc/JAPANESE.md",
+      "kind": "project-explanatory-document",
+      "project_license": "CC-BY-SA-4.0",
+      "license_scope": "Original explanatory prose; quotations, attribution statements and code/data excerpts retain their own terms.",
+      "references": [
+        "THIRD_PARTY_NOTICES.md",
+        "licenses/CC-BY-SA-4.0.txt"
+      ]
+    },
+    {
+      "path": "config/pc/OPENCC.md",
+      "kind": "project-explanatory-document",
+      "project_license": "CC-BY-SA-4.0",
+      "license_scope": "Original explanatory prose; quotations, attribution statements and code/data excerpts retain their own terms.",
+      "references": [
+        "THIRD_PARTY_NOTICES.md",
+        "licenses/CC-BY-SA-4.0.txt"
+      ]
+    },
+    {
+      "path": "config/pc/config-source-manifest.json",
+      "kind": "data-or-generated-data",
+      "source_group": "data-build-metadata",
+      "source_ids": [
+        "project"
+      ],
+      "license_scope": "GPLv3 own structured build/source metadata; the referenced data terms remain distinct",
+      "references": []
+    },
+    {
+      "path": "config/pc/default.custom.yaml",
+      "kind": "program-or-configuration",
+      "project_license": "GPL-3.0-only",
+      "license_scope": "Original project additions and modifications; retained upstream expression keeps its original terms.",
+      "retained_upstream_terms": [],
+      "references": [
+        "LICENSE"
+      ]
+    },
+    {
+      "path": "config/pc/english_extensions.dict.yaml",
+      "kind": "data-or-generated-data",
+      "source_group": "english-extensions",
+      "source_ids": [
+        "ice",
+        "project"
+      ],
+      "license_scope": "GPLv3-derived extension data with original Ice attribution",
+      "references": [
+        "docs/sources/english-extensions-sources.md",
+        "docs/sources/english-pde-sources.md"
+      ]
+    },
+    {
+      "path": "config/pc/english_extensions/build-report.json",
+      "kind": "data-or-generated-data",
+      "source_group": "data-build-metadata",
+      "source_ids": [
+        "project"
+      ],
+      "license_scope": "GPLv3 own structured build/source metadata; the referenced data terms remain distinct",
+      "references": []
+    },
+    {
+      "path": "config/pc/english_extensions/case_forms.tsv",
+      "kind": "data-or-generated-data",
+      "source_group": "english-case-evidence",
+      "source_ids": [
+        "scowl_case",
+        "ice",
+        "project"
+      ],
+      "license_scope": "Own compact case-evidence map; SCOWL and Ice source notices retained",
+      "references": [
+        "docs/sources/english-case-forms-sources.md"
+      ]
+    },
+    {
+      "path": "config/pc/english_extensions/entries.tsv",
+      "kind": "data-or-generated-data",
+      "source_group": "english-extensions",
+      "source_ids": [
+        "ice",
+        "project"
+      ],
+      "license_scope": "GPLv3-derived extension data with original Ice attribution",
+      "references": [
+        "docs/sources/english-extensions-sources.md",
+        "docs/sources/english-pde-sources.md"
+      ]
+    },
+    {
+      "path": "config/pc/english_extensions/keys.bin",
+      "kind": "data-or-generated-data",
+      "source_group": "english-extensions",
+      "source_ids": [
+        "ice",
+        "project"
+      ],
+      "license_scope": "GPLv3-derived extension data with original Ice attribution",
+      "references": [
+        "docs/sources/english-extensions-sources.md",
+        "docs/sources/english-pde-sources.md"
+      ]
+    },
+    {
+      "path": "config/pc/english_extensions/postings.bin",
+      "kind": "data-or-generated-data",
+      "source_group": "english-extensions",
+      "source_ids": [
+        "ice",
+        "project"
+      ],
+      "license_scope": "GPLv3-derived extension data with original Ice attribution",
+      "references": [
+        "docs/sources/english-extensions-sources.md",
+        "docs/sources/english-pde-sources.md"
+      ]
+    },
+    {
+      "path": "config/pc/english_extensions/words.txt",
+      "kind": "data-or-generated-data",
+      "source_group": "english-extensions",
+      "source_ids": [
+        "ice",
+        "project"
+      ],
+      "license_scope": "GPLv3-derived extension data with original Ice attribution",
+      "references": [
+        "docs/sources/english-extensions-sources.md",
+        "docs/sources/english-pde-sources.md"
+      ]
+    },
+    {
+      "path": "config/pc/english_frequency_overrides.tsv",
+      "kind": "data-or-generated-data",
+      "source_group": "english-ranking-overrides",
+      "source_ids": [
+        "project",
+        "symspell_core",
+        "ice"
+      ],
+      "license_scope": "Own GPLv3 selection, ranking parameters and provenance record; original copied source counts retain source terms",
+      "references": [
+        "docs/sources/english-pde-sources.md"
+      ]
+    },
+    {
+      "path": "config/pc/english_full.dict.yaml",
+      "kind": "data-or-generated-data",
+      "source_group": "english-core",
+      "source_ids": [
+        "symspell_core",
+        "project"
+      ],
+      "license_scope": "Retain English source chain notices for all representations; own index format/generator GPLv3",
+      "references": [
+        "docs/sources/english-core-sources.md",
+        "docs/sources/english-pde-sources.md"
+      ]
+    },
+    {
+      "path": "config/pc/english_full.schema.yaml",
+      "kind": "program-or-configuration",
+      "project_license": "GPL-3.0-only",
+      "license_scope": "Original project additions and modifications; retained upstream expression keeps its original terms.",
+      "retained_upstream_terms": [],
+      "references": [
+        "LICENSE"
+      ]
+    },
+    {
+      "path": "config/pc/english_index/build-report.json",
+      "kind": "data-or-generated-data",
+      "source_group": "data-build-metadata",
+      "source_ids": [
+        "project"
+      ],
+      "license_scope": "GPLv3 own structured build/source metadata; the referenced data terms remain distinct",
+      "references": []
+    },
+    {
+      "path": "config/pc/english_index/keys.bin",
+      "kind": "data-or-generated-data",
+      "source_group": "english-core",
+      "source_ids": [
+        "symspell_core",
+        "project"
+      ],
+      "license_scope": "Retain English source chain notices for all representations; own index format/generator GPLv3",
+      "references": [
+        "docs/sources/english-core-sources.md",
+        "docs/sources/english-pde-sources.md"
+      ]
+    },
+    {
+      "path": "config/pc/english_index/postings.bin",
+      "kind": "data-or-generated-data",
+      "source_group": "english-core",
+      "source_ids": [
+        "symspell_core",
+        "project"
+      ],
+      "license_scope": "Retain English source chain notices for all representations; own index format/generator GPLv3",
+      "references": [
+        "docs/sources/english-core-sources.md",
+        "docs/sources/english-pde-sources.md"
+      ]
+    },
+    {
+      "path": "config/pc/english_index/vocabulary.tsv",
+      "kind": "data-or-generated-data",
+      "source_group": "english-core",
+      "source_ids": [
+        "symspell_core",
+        "project"
+      ],
+      "license_scope": "Retain English source chain notices for all representations; own index format/generator GPLv3",
+      "references": [
+        "docs/sources/english-core-sources.md",
+        "docs/sources/english-pde-sources.md"
+      ]
+    },
+    {
+      "path": "config/pc/english_index/words.txt",
+      "kind": "data-or-generated-data",
+      "source_group": "english-core",
+      "source_ids": [
+        "symspell_core",
+        "project"
+      ],
+      "license_scope": "Retain English source chain notices for all representations; own index format/generator GPLv3",
+      "references": [
+        "docs/sources/english-core-sources.md",
+        "docs/sources/english-pde-sources.md"
+      ]
+    },
+    {
+      "path": "config/pc/essay.txt",
+      "kind": "data-or-generated-data",
+      "source_group": "essay-data",
+      "source_ids": [
+        "essay",
+        "project"
+      ],
+      "license_scope": "LGPLv3 base with project-selected weights",
+      "references": [
+        "docs/sources/pde-terms-sources.md"
+      ]
+    },
+    {
+      "path": "config/pc/frequency_overrides.tsv",
+      "kind": "data-or-generated-data",
+      "source_group": "essay-ranking-overrides",
+      "source_ids": [
+        "project",
+        "essay"
+      ],
+      "license_scope": "Own GPLv3 selection and change ledger; copied source counts retain LGPLv3 provenance",
+      "references": [
+        "docs/sources/pde-terms-sources.md"
+      ]
+    },
+    {
+      "path": "config/pc/japanese-q-canonical.json",
+      "kind": "data-or-generated-data",
+      "source_group": "jp-independent-kana",
+      "source_ids": [
+        "project"
+      ],
+      "license_scope": "GPLv3 original mapping specification; no exclusive claim on kana characters",
+      "references": [
+        "docs/sources/jp-q-sources.md"
+      ]
+    },
+    {
+      "path": "config/pc/jp-v-compatibility.json",
+      "kind": "data-or-generated-data",
+      "source_group": "jp-character-selection",
+      "source_ids": [
+        "project",
+        "unihan17",
+        "bunka",
+        "opencc"
+      ],
+      "license_scope": "Own explicit selection/metadata GPLv3; sourced Unicode/OpenCC factual portions retain original notices",
+      "references": [
+        "docs/sources/jp-v-sources.md"
+      ]
+    },
+    {
+      "path": "config/pc/jp_q_lookup.dict.yaml",
+      "kind": "data-or-generated-data",
+      "source_group": "jp-q-jmdict",
+      "source_ids": [
+        "jmdict",
+        "project",
+        "jpf_grammar"
+      ],
+      "license_scope": "JMdict derivative data CC BY-SA 4.0; own generation code GPLv3",
+      "references": [
+        "docs/sources/jp-q-sources.md"
+      ]
+    },
+    {
+      "path": "config/pc/jp_q_lookup.schema.yaml",
+      "kind": "program-or-configuration",
+      "project_license": "GPL-3.0-only",
+      "license_scope": "Original project additions and modifications; retained upstream expression keeps its original terms.",
+      "retained_upstream_terms": [],
+      "references": [
+        "LICENSE"
+      ]
+    },
+    {
+      "path": "config/pc/jp_sela.custom.yaml",
+      "kind": "program-or-configuration",
+      "project_license": "GPL-3.0-only",
+      "license_scope": "Original project additions and modifications; retained upstream expression keeps its original terms. Existing Rime spelling-rule source comments remain in the file.",
+      "retained_upstream_terms": [],
+      "references": [
+        "LICENSE",
+        "config/pc/JAPANESE.md"
+      ]
+    },
+    {
+      "path": "config/pc/jp_sela.schema.yaml",
+      "kind": "program-or-configuration",
+      "project_license": "GPL-3.0-only",
+      "license_scope": "Original project additions and modifications; retained upstream expression keeps its original terms.",
+      "retained_upstream_terms": [],
+      "references": [
+        "LICENSE",
+        "config/pc/JAPANESE.md",
+        "config/pc/japanese-q-canonical.json",
+        "config/pc/tools/generate-japanese-base.py"
+      ]
+    },
+    {
+      "path": "config/pc/jp_sela_custom.dict.yaml",
+      "kind": "data-or-generated-data",
+      "source_group": "jp-independent-kana",
+      "source_ids": [
+        "project"
+      ],
+      "license_scope": "GPLv3 original mapping specification; no exclusive claim on kana characters",
+      "references": [
+        "docs/sources/jp-q-sources.md"
+      ]
+    },
+    {
+      "path": "config/pc/jp_small_lookup.dict.yaml",
+      "kind": "data-or-generated-data",
+      "source_group": "jp-independent-kana",
+      "source_ids": [
+        "project"
+      ],
+      "license_scope": "GPLv3 original mapping specification; no exclusive claim on kana characters",
+      "references": [
+        "docs/sources/jp-q-sources.md"
+      ]
+    },
+    {
+      "path": "config/pc/jp_small_lookup.schema.yaml",
+      "kind": "program-or-configuration",
+      "project_license": "GPL-3.0-only",
+      "license_scope": "Original project additions and modifications; retained upstream expression keeps its original terms.",
+      "retained_upstream_terms": [],
+      "references": [
+        "LICENSE"
+      ]
+    },
+    {
+      "path": "config/pc/jp_v.dict.yaml",
+      "kind": "data-or-generated-data",
+      "source_group": "jp-v-dictionary-data",
+      "source_ids": [
+        "kanjidic2",
+        "jmdict",
+        "unihan17",
+        "bunka",
+        "opencc",
+        "project"
+      ],
+      "license_scope": "EDRDG derivative parts CC BY-SA 4.0; Unicode License V3 and OpenCC Apache-2.0 portions retained",
+      "references": [
+        "docs/sources/jp-v-sources.md"
+      ]
+    },
+    {
+      "path": "config/pc/jp_v_lookup.schema.yaml",
+      "kind": "program-or-configuration",
+      "project_license": "GPL-3.0-only",
+      "license_scope": "Original project additions and modifications; retained upstream expression keeps its original terms.",
+      "retained_upstream_terms": [],
+      "references": [
+        "LICENSE",
+        "docs/sources/jp-v-sources.md"
+      ]
+    },
+    {
+      "path": "config/pc/jp_v_pc_lookup.schema.yaml",
+      "kind": "program-or-configuration",
+      "project_license": "GPL-3.0-only",
+      "license_scope": "Original project additions and modifications; retained upstream expression keeps its original terms.",
+      "retained_upstream_terms": [],
+      "references": [
+        "LICENSE",
+        "docs/sources/jp-v-sources.md"
+      ]
+    },
+    {
+      "path": "config/pc/jp_v_words.tsv",
+      "kind": "data-or-generated-data",
+      "source_group": "jp-word-family-data",
+      "source_ids": [
+        "jmdict",
+        "project"
+      ],
+      "license_scope": "JMdict derivative data CC BY-SA 4.0; own index/reader code GPLv3 separately",
+      "references": [
+        "docs/sources/jp-v-sources.md"
+      ]
+    },
+    {
+      "path": "config/pc/licenses/CC-BY-SA-4.0.txt",
+      "kind": "retained-upstream-notice-copy",
+      "notice_record": "licenses/CC-BY-SA-4.0.txt",
+      "references": [
+        "licenses/third-party-source-manifest.json"
+      ]
+    },
+    {
+      "path": "config/pc/licenses/EDRDG-licence.html",
+      "kind": "retained-upstream-notice-copy",
+      "notice_record": "licenses/EDRDG-licence.html",
+      "references": [
+        "licenses/third-party-source-manifest.json"
+      ]
+    },
+    {
+      "path": "config/pc/licenses/JMdict-EDICT_Dictionary_Project.html",
+      "kind": "retained-upstream-notice-copy",
+      "notice_record": "licenses/JMdict-EDICT_Dictionary_Project.html",
+      "references": [
+        "licenses/third-party-source-manifest.json"
+      ]
+    },
+    {
+      "path": "config/pc/licenses/KANJIDIC_Project.html",
+      "kind": "retained-upstream-notice-copy",
+      "notice_record": "licenses/KANJIDIC_Project.html",
+      "references": [
+        "licenses/third-party-source-manifest.json"
+      ]
+    },
+    {
+      "path": "config/pc/licenses/OpenCC-LICENSE.txt",
+      "kind": "retained-upstream-notice-copy",
+      "notice_record": "licenses/OpenCC-LICENSE.txt",
+      "references": [
+        "licenses/third-party-source-manifest.json"
+      ]
+    },
+    {
+      "path": "config/pc/licenses/SCOWL-case-forms-Copyright.txt",
+      "kind": "retained-upstream-notice-copy",
+      "notice_record": "licenses/SCOWL-case-forms-Copyright.txt",
+      "references": [
+        "licenses/third-party-source-manifest.json"
+      ]
+    },
+    {
+      "path": "config/pc/licenses/Unicode-3.0.txt",
+      "kind": "retained-upstream-notice-copy",
+      "notice_record": "licenses/Unicode-3.0.txt",
+      "references": [
+        "licenses/third-party-source-manifest.json"
+      ]
+    },
+    {
+      "path": "config/pc/licenses/dictionary-quality-q121-sources.md",
+      "kind": "project-explanatory-document",
+      "project_license": "CC-BY-SA-4.0",
+      "license_scope": "Original explanatory prose; quotations, attribution statements and code/data excerpts retain their own terms.",
+      "references": [
+        "THIRD_PARTY_NOTICES.md",
+        "licenses/CC-BY-SA-4.0.txt"
+      ]
+    },
+    {
+      "path": "config/pc/licenses/english-case-forms-sources.md",
+      "kind": "project-explanatory-document",
+      "project_license": "CC-BY-SA-4.0",
+      "license_scope": "Original explanatory prose; quotations, attribution statements and code/data excerpts retain their own terms.",
+      "references": [
+        "THIRD_PARTY_NOTICES.md",
+        "licenses/CC-BY-SA-4.0.txt"
+      ]
+    },
+    {
+      "path": "config/pc/licenses/english-extensions-Ice-GPL-3.0.txt",
+      "kind": "retained-upstream-notice-copy",
+      "notice_record": "licenses/supplement/Mirtle-GPL-3.0.txt",
+      "references": [
+        "licenses/third-party-source-manifest.json"
+      ]
+    },
+    {
+      "path": "config/pc/licenses/english-extensions-sources.md",
+      "kind": "project-explanatory-document",
+      "project_license": "CC-BY-SA-4.0",
+      "license_scope": "Original explanatory prose; quotations, attribution statements and code/data excerpts retain their own terms.",
+      "references": [
+        "THIRD_PARTY_NOTICES.md",
+        "licenses/CC-BY-SA-4.0.txt"
+      ]
+    },
+    {
+      "path": "config/pc/licenses/english-pde-sources.md",
+      "kind": "project-explanatory-document",
+      "project_license": "CC-BY-SA-4.0",
+      "license_scope": "Original explanatory prose; quotations, attribution statements and code/data excerpts retain their own terms.",
+      "references": [
+        "THIRD_PARTY_NOTICES.md",
+        "licenses/CC-BY-SA-4.0.txt"
+      ]
+    },
+    {
+      "path": "config/pc/licenses/essay-LGPL-3.0.txt",
+      "kind": "retained-upstream-notice-copy",
+      "notice_record": "licenses/luna-pinyin-LGPL-3.0.txt",
+      "references": [
+        "licenses/third-party-source-manifest.json"
+      ]
+    },
+    {
+      "path": "config/pc/licenses/jp-q-sources.md",
+      "kind": "project-explanatory-document",
+      "project_license": "CC-BY-SA-4.0",
+      "license_scope": "Original explanatory prose; quotations, attribution statements and code/data excerpts retain their own terms.",
+      "references": [
+        "THIRD_PARTY_NOTICES.md",
+        "licenses/CC-BY-SA-4.0.txt"
+      ]
+    },
+    {
+      "path": "config/pc/licenses/jp-v-sources.md",
+      "kind": "project-explanatory-document",
+      "project_license": "CC-BY-SA-4.0",
+      "license_scope": "Original explanatory prose; quotations, attribution statements and code/data excerpts retain their own terms.",
+      "references": [
+        "THIRD_PARTY_NOTICES.md",
+        "licenses/CC-BY-SA-4.0.txt"
+      ]
+    },
+    {
+      "path": "config/pc/licenses/luna-compact-model-LGPL-3.0.txt",
+      "kind": "retained-upstream-notice-copy",
+      "notice_record": "licenses/radical-stroke/stroke-LGPL-3.0.txt",
+      "references": [
+        "licenses/third-party-source-manifest.json"
+      ]
+    },
+    {
+      "path": "config/pc/licenses/luna-compact-model-sources.md",
+      "kind": "project-explanatory-document",
+      "project_license": "CC-BY-SA-4.0",
+      "license_scope": "Original explanatory prose; quotations, attribution statements and code/data excerpts retain their own terms.",
+      "references": [
+        "THIRD_PARTY_NOTICES.md",
+        "licenses/CC-BY-SA-4.0.txt"
+      ]
+    },
+    {
+      "path": "config/pc/licenses/luna-pinyin-LGPL-3.0.txt",
+      "kind": "retained-upstream-notice-copy",
+      "notice_record": "licenses/luna-pinyin-LGPL-3.0.txt",
+      "references": [
+        "licenses/third-party-source-manifest.json"
+      ]
+    },
+    {
+      "path": "config/pc/licenses/mdx-orthography-sources.md",
+      "kind": "project-explanatory-document",
+      "project_license": "CC-BY-SA-4.0",
+      "license_scope": "Original explanatory prose; quotations, attribution statements and code/data excerpts retain their own terms.",
+      "references": [
+        "THIRD_PARTY_NOTICES.md",
+        "licenses/CC-BY-SA-4.0.txt"
+      ]
+    },
+    {
+      "path": "config/pc/licenses/mixed-phrases-sources.md",
+      "kind": "project-explanatory-document",
+      "project_license": "CC-BY-SA-4.0",
+      "license_scope": "Original explanatory prose; quotations, attribution statements and code/data excerpts retain their own terms.",
+      "references": [
+        "THIRD_PARTY_NOTICES.md",
+        "licenses/CC-BY-SA-4.0.txt"
+      ]
+    },
+    {
+      "path": "config/pc/licenses/pde-terms-reference-GPL-3.0.txt",
+      "kind": "retained-upstream-notice-copy",
+      "notice_record": "licenses/supplement/Mirtle-GPL-3.0.txt",
+      "references": [
+        "licenses/third-party-source-manifest.json"
+      ]
+    },
+    {
+      "path": "config/pc/licenses/pde-terms-sources.md",
+      "kind": "project-explanatory-document",
+      "project_license": "CC-BY-SA-4.0",
+      "license_scope": "Original explanatory prose; quotations, attribution statements and code/data excerpts retain their own terms.",
+      "references": [
+        "THIRD_PARTY_NOTICES.md",
+        "licenses/CC-BY-SA-4.0.txt"
+      ]
+    },
+    {
+      "path": "config/pc/licenses/project-literary-sources.md",
+      "kind": "project-explanatory-document",
+      "project_license": "CC-BY-SA-4.0",
+      "license_scope": "Original explanatory prose; quotations, attribution statements and code/data excerpts retain their own terms.",
+      "references": [
+        "THIRD_PARTY_NOTICES.md",
+        "licenses/CC-BY-SA-4.0.txt"
+      ]
+    },
+    {
+      "path": "config/pc/licenses/project-terms-reference-LICENSE.txt",
+      "kind": "retained-upstream-notice-copy",
+      "notice_record": "licenses/supplement/Mirtle-GPL-3.0.txt",
+      "references": [
+        "licenses/third-party-source-manifest.json"
+      ]
+    },
+    {
+      "path": "config/pc/licenses/project-terms-sources.md",
+      "kind": "project-explanatory-document",
+      "project_license": "CC-BY-SA-4.0",
+      "license_scope": "Original explanatory prose; quotations, attribution statements and code/data excerpts retain their own terms.",
+      "references": [
+        "THIRD_PARTY_NOTICES.md",
+        "licenses/CC-BY-SA-4.0.txt"
+      ]
+    },
+    {
+      "path": "config/pc/licenses/query-strokes-source.json",
+      "kind": "project-metadata",
+      "project_license": "GPL-3.0-only",
+      "license_scope": "Original structured metadata and configuration; cited upstream material retains its own terms.",
+      "references": [
+        "LICENSE",
+        "THIRD_PARTY_NOTICES.md"
+      ]
+    },
+    {
+      "path": "config/pc/licenses/tools-Ice-GPL-3.0.txt",
+      "kind": "retained-upstream-notice-copy",
+      "notice_record": "licenses/supplement/Mirtle-GPL-3.0.txt",
+      "references": [
+        "licenses/third-party-source-manifest.json"
+      ]
+    },
+    {
+      "path": "config/pc/licenses/tools-sources.md",
+      "kind": "project-explanatory-document",
+      "project_license": "CC-BY-SA-4.0",
+      "license_scope": "Original explanatory prose; quotations, attribution statements and code/data excerpts retain their own terms.",
+      "references": [
+        "THIRD_PARTY_NOTICES.md",
+        "licenses/CC-BY-SA-4.0.txt"
+      ]
+    },
+    {
+      "path": "config/pc/licenses/u-readings-sources.md",
+      "kind": "project-explanatory-document",
+      "project_license": "CC-BY-SA-4.0",
+      "license_scope": "Original explanatory prose; quotations, attribution statements and code/data excerpts retain their own terms.",
+      "references": [
+        "THIRD_PARTY_NOTICES.md",
+        "licenses/CC-BY-SA-4.0.txt"
+      ]
+    },
+    {
+      "path": "config/pc/lua/candidate_keys.lua",
+      "kind": "program-or-configuration",
+      "project_license": "GPL-3.0-only",
+      "license_scope": "Original project additions and modifications; retained upstream expression keeps its original terms.",
+      "retained_upstream_terms": [],
+      "references": [
+        "LICENSE"
+      ]
+    },
+    {
+      "path": "config/pc/lua/cn_boundaries.lua",
+      "kind": "program-or-configuration",
+      "project_license": "GPL-3.0-only",
+      "license_scope": "Original project additions and modifications; retained upstream expression keeps its original terms.",
+      "retained_upstream_terms": [],
+      "references": [
+        "LICENSE"
+      ]
+    },
+    {
+      "path": "config/pc/lua/cn_extra_forms.lua",
+      "kind": "data-or-generated-data",
+      "source_group": "cn-spelling-data",
+      "source_ids": [
+        "project",
+        "luna",
+        "ice"
+      ],
+      "license_scope": "Own GPLv3 spelling-mapping expression; source factual syllable inventory and Ice rule reference retained",
+      "references": [
+        "docs/sources/README.md"
+      ]
+    },
+    {
+      "path": "config/pc/lua/cn_forms.lua",
+      "kind": "data-or-generated-data",
+      "source_group": "cn-spelling-data",
+      "source_ids": [
+        "project",
+        "luna",
+        "ice"
+      ],
+      "license_scope": "Own GPLv3 spelling-mapping expression; source factual syllable inventory and Ice rule reference retained",
+      "references": [
+        "docs/sources/README.md"
+      ]
+    },
+    {
+      "path": "config/pc/lua/cn_match.lua",
+      "kind": "program-or-configuration",
+      "project_license": "GPL-3.0-only",
+      "license_scope": "Original project additions and modifications; retained upstream expression keeps its original terms.",
+      "retained_upstream_terms": [],
+      "references": [
+        "LICENSE"
+      ]
+    },
+    {
+      "path": "config/pc/lua/cn_native_boundary.lua",
+      "kind": "program-or-configuration",
+      "project_license": "GPL-3.0-only",
+      "license_scope": "Original project additions and modifications; retained upstream expression keeps its original terms.",
+      "retained_upstream_terms": [],
+      "references": [
+        "LICENSE"
+      ]
+    },
+    {
+      "path": "config/pc/lua/cn_neighbor_keys.lua",
+      "kind": "data-or-generated-data",
+      "source_group": "cn-spelling-data",
+      "source_ids": [
+        "project",
+        "luna",
+        "ice"
+      ],
+      "license_scope": "Own GPLv3 spelling-mapping expression; source factual syllable inventory and Ice rule reference retained",
+      "references": [
+        "docs/sources/README.md"
+      ]
+    },
+    {
+      "path": "config/pc/lua/cn_normal_codec.lua",
+      "kind": "program-or-configuration",
+      "project_license": "GPL-3.0-only",
+      "license_scope": "Original project additions and modifications; retained upstream expression keeps its original terms.",
+      "retained_upstream_terms": [],
+      "references": [
+        "LICENSE"
+      ]
+    },
+    {
+      "path": "config/pc/lua/cn_orthography.lua",
+      "kind": "program-or-configuration",
+      "project_license": "GPL-3.0-only",
+      "license_scope": "Original project additions and modifications; retained upstream expression keeps its original terms.",
+      "retained_upstream_terms": [],
+      "references": [
+        "LICENSE",
+        "docs/sources/mdx-orthography-sources.md"
+      ]
+    },
+    {
+      "path": "config/pc/lua/cn_preedit_spacing.lua",
+      "kind": "program-or-configuration",
+      "project_license": "GPL-3.0-only",
+      "license_scope": "Original project additions and modifications; retained upstream expression keeps its original terms.",
+      "retained_upstream_terms": [],
+      "references": [
+        "LICENSE"
+      ]
+    },
+    {
+      "path": "config/pc/lua/cn_tolerance.lua",
+      "kind": "program-or-configuration",
+      "project_license": "GPL-3.0-only",
+      "license_scope": "Original project additions and modifications; retained upstream expression keeps its original terms.",
+      "retained_upstream_terms": [],
+      "references": [
+        "LICENSE"
+      ]
+    },
+    {
+      "path": "config/pc/lua/cn_translator.lua",
+      "kind": "program-or-configuration",
+      "project_license": "GPL-3.0-only",
+      "license_scope": "Original project additions and modifications; retained upstream expression keeps its original terms.",
+      "retained_upstream_terms": [],
+      "references": [
+        "LICENSE"
+      ]
+    },
+    {
+      "path": "config/pc/lua/draft_limit.lua",
+      "kind": "program-or-configuration",
+      "project_license": "GPL-3.0-only",
+      "license_scope": "Original project additions and modifications; retained upstream expression keeps its original terms.",
+      "retained_upstream_terms": [],
+      "references": [
+        "LICENSE"
+      ]
+    },
+    {
+      "path": "config/pc/lua/en_index.lua",
+      "kind": "program-or-configuration",
+      "project_license": "GPL-3.0-only",
+      "license_scope": "Original project additions and modifications; retained upstream expression keeps its original terms.",
+      "retained_upstream_terms": [],
+      "references": [
+        "LICENSE"
+      ]
+    },
+    {
+      "path": "config/pc/lua/en_indexed_translator.lua",
+      "kind": "program-or-configuration",
+      "project_license": "GPL-3.0-only",
+      "license_scope": "Original project additions and modifications; retained upstream expression keeps its original terms.",
+      "retained_upstream_terms": [],
+      "references": [
+        "LICENSE"
+      ]
+    },
+    {
+      "path": "config/pc/lua/en_processor.lua",
+      "kind": "program-or-configuration",
+      "project_license": "GPL-3.0-only",
+      "license_scope": "Original project additions and modifications; retained upstream expression keeps its original terms.",
+      "retained_upstream_terms": [],
+      "references": [
+        "LICENSE"
+      ]
+    },
+    {
+      "path": "config/pc/lua/en_segmentor.lua",
+      "kind": "program-or-configuration",
+      "project_license": "GPL-3.0-only",
+      "license_scope": "Original project additions and modifications; retained upstream expression keeps its original terms.",
+      "retained_upstream_terms": [],
+      "references": [
+        "LICENSE"
+      ]
+    },
+    {
+      "path": "config/pc/lua/jp_family.lua",
+      "kind": "program-or-configuration",
+      "project_license": "GPL-3.0-only",
+      "license_scope": "Original project additions and modifications; retained upstream expression keeps its original terms.",
+      "retained_upstream_terms": [],
+      "references": [
+        "LICENSE"
+      ]
+    },
+    {
+      "path": "config/pc/lua/jp_family_data.lua",
+      "kind": "data-or-generated-data",
+      "source_group": "jp-family-data",
+      "source_ids": [
+        "jmdict",
+        "kanjidic2",
+        "unihan17",
+        "bunka",
+        "opencc",
+        "project"
+      ],
+      "license_scope": "EDRDG derivative readings and compound relations CC BY-SA 4.0; Unicode License V3 and OpenCC Apache-2.0 source portions retained. Own mapping/generation logic GPLv3 separately.",
+      "references": [
+        "docs/sources/jp-q-sources.md",
+        "docs/sources/jp-v-sources.md"
+      ]
+    },
+    {
+      "path": "config/pc/lua/jp_learning_match.lua",
+      "kind": "program-or-configuration",
+      "project_license": "GPL-3.0-only",
+      "license_scope": "Original project additions and modifications; retained upstream expression keeps its original terms.",
+      "retained_upstream_terms": [],
+      "references": [
+        "LICENSE"
+      ]
+    },
+    {
+      "path": "config/pc/lua/jp_memory.lua",
+      "kind": "program-or-configuration",
+      "project_license": "GPL-3.0-only",
+      "license_scope": "Original project additions and modifications; retained upstream expression keeps its original terms.",
+      "retained_upstream_terms": [],
+      "references": [
+        "LICENSE"
+      ]
+    },
+    {
+      "path": "config/pc/lua/jp_named_symbols.lua",
+      "kind": "program-or-configuration",
+      "project_license": "GPL-3.0-only",
+      "license_scope": "Original project additions and modifications; retained upstream expression keeps its original terms.",
+      "retained_upstream_terms": [],
+      "references": [
+        "LICENSE"
+      ]
+    },
+    {
+      "path": "config/pc/lua/jp_query.lua",
+      "kind": "program-or-configuration",
+      "project_license": "GPL-3.0-only",
+      "license_scope": "Original project additions and modifications; retained upstream expression keeps its original terms.",
+      "retained_upstream_terms": [],
+      "references": [
+        "LICENSE"
+      ]
+    },
+    {
+      "path": "config/pc/lua/jp_reading_metadata.lua",
+      "kind": "program-or-configuration",
+      "project_license": "GPL-3.0-only",
+      "license_scope": "Original project additions and modifications; retained upstream expression keeps its original terms.",
+      "retained_upstream_terms": [],
+      "references": [
+        "LICENSE"
+      ]
+    },
+    {
+      "path": "config/pc/lua/jp_sequence.lua",
+      "kind": "program-or-configuration",
+      "project_license": "GPL-3.0-only",
+      "license_scope": "Original project additions and modifications; retained upstream expression keeps its original terms.",
+      "retained_upstream_terms": [],
+      "references": [
+        "LICENSE"
+      ]
+    },
+    {
+      "path": "config/pc/lua/jp_small_kana.lua",
+      "kind": "data-or-generated-data",
+      "source_group": "jp-independent-kana",
+      "source_ids": [
+        "project"
+      ],
+      "license_scope": "GPLv3 original mapping specification; no exclusive claim on kana characters",
+      "references": [
+        "docs/sources/jp-q-sources.md"
+      ]
+    },
+    {
+      "path": "config/pc/lua/jp_v.lua",
+      "kind": "program-or-configuration",
+      "project_license": "GPL-3.0-only",
+      "license_scope": "Original project additions and modifications; retained upstream expression keeps its original terms.",
+      "retained_upstream_terms": [],
+      "references": [
+        "LICENSE"
+      ]
+    },
+    {
+      "path": "config/pc/lua/jp_v_chars.lua",
+      "kind": "data-or-generated-data",
+      "source_group": "jp-v-character-metadata",
+      "source_ids": [
+        "kanjidic2",
+        "unihan17",
+        "bunka",
+        "opencc",
+        "project"
+      ],
+      "license_scope": "KANJIDIC2 derivative readings CC BY-SA 4.0; Unicode License V3 pinyin and OpenCC Apache-2.0 form portions retained.",
+      "references": [
+        "docs/sources/jp-v-sources.md"
+      ]
+    },
+    {
+      "path": "config/pc/lua/jp_v_data.lua",
+      "kind": "program-or-configuration",
+      "project_license": "GPL-3.0-only",
+      "license_scope": "Original project additions and modifications; retained upstream expression keeps its original terms.",
+      "retained_upstream_terms": [],
+      "references": [
+        "LICENSE",
+        "docs/sources/jp-v-sources.md"
+      ]
+    },
+    {
+      "path": "config/pc/lua/jp_v_words_index.lua",
+      "kind": "data-or-generated-data",
+      "source_group": "jp-word-family-data",
+      "source_ids": [
+        "jmdict",
+        "project"
+      ],
+      "license_scope": "JMdict derivative data CC BY-SA 4.0; own index/reader code GPLv3 separately",
+      "references": [
+        "docs/sources/jp-v-sources.md"
+      ]
+    },
+    {
+      "path": "config/pc/lua/mixed_data.lua",
+      "kind": "data-or-generated-data",
+      "source_group": "mixed-phrases",
+      "source_ids": [
+        "ice",
+        "project"
+      ],
+      "license_scope": "GPLv3-derived curated subset",
+      "references": [
+        "docs/sources/mixed-phrases-sources.md"
+      ]
+    },
+    {
+      "path": "config/pc/lua/mixed_translator.lua",
+      "kind": "program-or-configuration",
+      "project_license": "GPL-3.0-only",
+      "license_scope": "Original project additions and modifications; retained upstream expression keeps its original terms.",
+      "retained_upstream_terms": [],
+      "references": [
+        "LICENSE"
+      ]
+    },
+    {
+      "path": "config/pc/lua/pc_probe_global_mode.lua",
+      "kind": "program-or-configuration",
+      "project_license": "GPL-3.0-only",
+      "license_scope": "Original project additions and modifications; retained upstream expression keeps its original terms.",
+      "retained_upstream_terms": [],
+      "references": [
+        "LICENSE"
+      ]
+    },
+    {
+      "path": "config/pc/lua/pc_probe_greek_proxy.lua",
+      "kind": "program-or-configuration",
+      "project_license": "GPL-3.0-only",
+      "license_scope": "Original project additions and modifications; retained upstream expression keeps its original terms.",
+      "retained_upstream_terms": [],
+      "references": [
+        "LICENSE"
+      ]
+    },
+    {
+      "path": "config/pc/lua/query_info_submit.lua",
+      "kind": "program-or-configuration",
+      "project_license": "GPL-3.0-only",
+      "license_scope": "Original project additions and modifications; retained upstream expression keeps its original terms.",
+      "retained_upstream_terms": [],
+      "references": [
+        "LICENSE"
+      ]
+    },
+    {
+      "path": "config/pc/lua/select_hanzi.lua",
+      "kind": "program-or-configuration",
+      "project_license": "GPL-3.0-only",
+      "license_scope": "Original project additions and modifications; retained upstream expression keeps its original terms.",
+      "retained_upstream_terms": [
+        "GPL-3.0"
+      ],
+      "references": [
+        "LICENSE",
+        "docs/sources/tools-sources.md",
+        "licenses/tools-Ice-GPL-3.0.txt"
+      ],
+      "source_ids": [
+        "project",
+        "ice"
+      ]
+    },
+    {
+      "path": "config/pc/lua/tool_calculator.lua",
+      "kind": "program-or-configuration",
+      "project_license": "GPL-3.0-only",
+      "license_scope": "Original project additions and modifications; retained upstream expression keeps its original terms.",
+      "retained_upstream_terms": [
+        "GPL-3.0"
+      ],
+      "references": [
+        "LICENSE",
+        "docs/sources/tools-sources.md",
+        "licenses/tools-Ice-GPL-3.0.txt"
+      ],
+      "source_ids": [
+        "project",
+        "ice"
+      ]
+    },
+    {
+      "path": "config/pc/lua/tool_processor.lua",
+      "kind": "program-or-configuration",
+      "project_license": "GPL-3.0-only",
+      "license_scope": "Original project additions and modifications; retained upstream expression keeps its original terms.",
+      "retained_upstream_terms": [],
+      "references": [
+        "LICENSE"
+      ]
+    },
+    {
+      "path": "config/pc/lua/tool_segmentor.lua",
+      "kind": "program-or-configuration",
+      "project_license": "GPL-3.0-only",
+      "license_scope": "Original project additions and modifications; retained upstream expression keeps its original terms.",
+      "retained_upstream_terms": [],
+      "references": [
+        "LICENSE"
+      ]
+    },
+    {
+      "path": "config/pc/lua/tool_translator.lua",
+      "kind": "program-or-configuration",
+      "project_license": "GPL-3.0-only",
+      "license_scope": "Original project additions and modifications; retained upstream expression keeps its original terms.",
+      "retained_upstream_terms": [],
+      "references": [
+        "LICENSE"
+      ]
+    },
+    {
+      "path": "config/pc/lua/tool_unicode.lua",
+      "kind": "program-or-configuration",
+      "project_license": "GPL-3.0-only",
+      "license_scope": "Original project additions and modifications; retained upstream expression keeps its original terms.",
+      "retained_upstream_terms": [
+        "GPL-3.0"
+      ],
+      "references": [
+        "LICENSE",
+        "docs/sources/tools-sources.md",
+        "licenses/tools-Ice-GPL-3.0.txt"
+      ],
+      "source_ids": [
+        "project",
+        "ice"
+      ]
+    },
+    {
+      "path": "config/pc/lua/tool_unicode_data.lua",
+      "kind": "data-or-generated-data",
+      "source_group": "unicode-tools-data",
+      "source_ids": [
+        "unicode17",
+        "project"
+      ],
+      "license_scope": "Unicode License V3 derived data; project tool reader code separately GPLv3",
+      "references": [
+        "docs/sources/tools-sources.md"
+      ]
+    },
+    {
+      "path": "config/pc/lua/u_translator.lua",
+      "kind": "program-or-configuration",
+      "project_license": "GPL-3.0-only",
+      "license_scope": "Original project additions and modifications; retained upstream expression keeps its original terms.",
+      "retained_upstream_terms": [],
+      "references": [
+        "LICENSE"
+      ]
+    },
+    {
+      "path": "config/pc/luna_pinyin.dict.yaml",
+      "kind": "data-or-generated-data",
+      "source_group": "luna-data",
+      "source_ids": [
+        "luna",
+        "project"
+      ],
+      "license_scope": "LGPLv3 base with attributed project corrections; preserve original header",
+      "references": [
+        "docs/sources/dictionary-quality-q121-sources.md"
+      ]
+    },
+    {
+      "path": "config/pc/luna_pinyin.extended.dict.yaml",
+      "kind": "program-or-configuration",
+      "project_license": "GPL-3.0-only",
+      "license_scope": "Project dictionary import configuration; imported dictionaries retain their own terms. Existing source reference comments remain in the file.",
+      "source_ids": [
+        "project",
+        "luna"
+      ],
+      "references": [
+        "LICENSE",
+        "docs/sources/dictionary-quality-q121-sources.md"
+      ]
+    },
+    {
+      "path": "config/pc/luna_pinyin.research.dict.yaml",
+      "kind": "program-or-configuration",
+      "project_license": "GPL-3.0-only",
+      "license_scope": "Project dictionary import configuration; imported dictionaries retain their own terms. Existing source reference comments remain in the file.",
+      "source_ids": [
+        "project",
+        "luna"
+      ],
+      "references": [
+        "LICENSE",
+        "docs/sources/dictionary-quality-q121-sources.md"
+      ]
+    },
+    {
+      "path": "config/pc/mixed_full.dict.yaml",
+      "kind": "data-or-generated-data",
+      "source_group": "mixed-phrases",
+      "source_ids": [
+        "ice",
+        "project"
+      ],
+      "license_scope": "GPLv3-derived curated subset",
+      "references": [
+        "docs/sources/mixed-phrases-sources.md"
+      ]
+    },
+    {
+      "path": "config/pc/mixed_full.schema.yaml",
+      "kind": "program-or-configuration",
+      "project_license": "GPL-3.0-only",
+      "license_scope": "Original project additions and modifications; retained upstream expression keeps its original terms.",
+      "retained_upstream_terms": [],
+      "references": [
+        "LICENSE"
+      ]
+    },
+    {
+      "path": "config/pc/opencc/mdx_t2s.json",
+      "kind": "program-or-configuration",
+      "project_license": "GPL-3.0-only",
+      "license_scope": "Original project additions and modifications; retained upstream expression keeps its original terms.",
+      "retained_upstream_terms": [
+        "Apache-2.0 for referenced OpenCC dictionaries; factual project MDX selection rules separately recorded in data audit"
+      ],
+      "references": [
+        "LICENSE",
+        "config/pc/OPENCC.md",
+        "config/pc/config-source-manifest.json",
+        "config/pc/tools/make-opencc-config.py",
+        "docs/sources/mdx-orthography-sources.md",
+        "licenses/OpenCC-LICENSE.txt"
+      ],
+      "source_ids": [
+        "project",
+        "opencc",
+        "mdx_reference"
+      ]
+    },
+    {
+      "path": "config/pc/opencc/mdx_words.txt",
+      "kind": "data-or-generated-data",
+      "source_group": "mdx-small-rules",
+      "source_ids": [
+        "project",
+        "mdx_reference"
+      ],
+      "license_scope": "Own GPLv3 small explicit mapping expression; no grant over external MDX database",
+      "references": [
+        "docs/sources/mdx-orthography-sources.md"
+      ]
+    },
+    {
+      "path": "config/pc/pc_research.custom.yaml",
+      "kind": "program-or-configuration",
+      "project_license": "GPL-3.0-only",
+      "license_scope": "Original project additions and modifications; retained upstream expression keeps its original terms.",
+      "retained_upstream_terms": [],
+      "references": [
+        "LICENSE"
+      ]
+    },
+    {
+      "path": "config/pc/pc_research.schema.yaml",
+      "kind": "program-or-configuration",
+      "project_license": "GPL-3.0-only",
+      "license_scope": "Original project additions and modifications; retained upstream expression keeps its original terms.",
+      "retained_upstream_terms": [
+        "LGPL-3.0 as retained in Luna source notice"
+      ],
+      "references": [
+        "LICENSE",
+        "THIRD_PARTY_NOTICES.md",
+        "licenses/luna-pinyin-LGPL-3.0.txt"
+      ],
+      "source_ids": [
+        "project",
+        "luna"
+      ]
+    },
+    {
+      "path": "config/pc/project_literary_terms.dict.yaml",
+      "kind": "data-or-generated-data",
+      "source_group": "literary-terms",
+      "source_ids": [
+        "project",
+        "poem"
+      ],
+      "license_scope": "Own mapping expression GPLv3; source verse remains public domain",
+      "references": [
+        "docs/sources/project-literary-sources.md"
+      ]
+    },
+    {
+      "path": "config/pc/project_pde_terms.dict.yaml",
+      "kind": "data-or-generated-data",
+      "source_group": "math-project-terms",
+      "source_ids": [
+        "frost_terms",
+        "project"
+      ],
+      "license_scope": "GPLv3; borrowed term/code entries retain Frost attribution",
+      "references": [
+        "docs/sources/pde-terms-sources.md",
+        "docs/sources/project-terms-sources.md"
+      ]
+    },
+    {
+      "path": "config/pc/project_radical.dict.yaml",
+      "kind": "data-or-generated-data",
+      "source_group": "radical-data",
+      "source_ids": [
+        "radical",
+        "project"
+      ],
+      "license_scope": "Mirtle GPLv3 plus original credited upstream source notices",
+      "references": [
+        "docs/sources/radical-stroke-sources.md"
+      ]
+    },
+    {
+      "path": "config/pc/project_radical.schema.yaml",
+      "kind": "program-or-configuration",
+      "project_license": "GPL-3.0-only",
+      "license_scope": "Original project additions and modifications; retained upstream expression keeps its original terms.",
+      "retained_upstream_terms": [],
+      "references": [
+        "LICENSE"
+      ]
+    },
+    {
+      "path": "config/pc/project_radical_parts.dict.yaml",
+      "kind": "data-or-generated-data",
+      "source_group": "radical-data",
+      "source_ids": [
+        "radical",
+        "project"
+      ],
+      "license_scope": "Mirtle GPLv3 plus original credited upstream source notices",
+      "references": [
+        "docs/sources/radical-stroke-sources.md"
+      ]
+    },
+    {
+      "path": "config/pc/project_radical_parts.schema.yaml",
+      "kind": "program-or-configuration",
+      "project_license": "GPL-3.0-only",
+      "license_scope": "Original project additions and modifications; retained upstream expression keeps its original terms.",
+      "retained_upstream_terms": [],
+      "references": [
+        "LICENSE"
+      ]
+    },
+    {
+      "path": "config/pc/project_symbols.dict.yaml",
+      "kind": "data-or-generated-data",
+      "source_group": "own-symbol-tables",
+      "source_ids": [
+        "project"
+      ],
+      "license_scope": "GPLv3 original mapping expression; no exclusive claim on symbols/names themselves",
+      "references": []
+    },
+    {
+      "path": "config/pc/project_terms.dict.yaml",
+      "kind": "data-or-generated-data",
+      "source_group": "math-project-terms",
+      "source_ids": [
+        "frost_terms",
+        "project"
+      ],
+      "license_scope": "GPLv3; borrowed term/code entries retain Frost attribution",
+      "references": [
+        "docs/sources/pde-terms-sources.md",
+        "docs/sources/project-terms-sources.md"
+      ]
+    },
+    {
+      "path": "config/pc/query_strokes.tsv",
+      "kind": "data-or-generated-data",
+      "source_group": "stroke-data",
+      "source_ids": [
+        "stroke",
+        "project"
+      ],
+      "license_scope": "LGPLv3-derived table with AUTHORS attribution",
+      "references": [
+        "docs/sources/query-strokes-source.json"
+      ]
+    },
+    {
+      "path": "config/pc/research_greek.dict.yaml",
+      "kind": "data-or-generated-data",
+      "source_group": "own-symbol-tables",
+      "source_ids": [
+        "project"
+      ],
+      "license_scope": "GPLv3 original mapping expression; no exclusive claim on symbols/names themselves",
+      "references": []
+    },
+    {
+      "path": "config/pc/rime.lua",
+      "kind": "program-or-configuration",
+      "project_license": "GPL-3.0-only",
+      "license_scope": "Original project additions and modifications; retained upstream expression keeps its original terms.",
+      "retained_upstream_terms": [],
+      "references": [
+        "LICENSE"
+      ]
+    },
+    {
+      "path": "config/pc/tools/build-config-release.py",
+      "kind": "program-or-configuration",
+      "project_license": "GPL-3.0-only",
+      "license_scope": "Original project additions and modifications; retained upstream expression keeps its original terms.",
+      "retained_upstream_terms": [],
+      "references": [
+        "LICENSE"
+      ]
+    },
+    {
+      "path": "config/pc/tools/generate-japanese-base.py",
+      "kind": "program-or-configuration",
+      "project_license": "GPL-3.0-only",
+      "license_scope": "Original project additions and modifications; retained upstream expression keeps its original terms.",
+      "retained_upstream_terms": [],
+      "references": [
+        "LICENSE"
+      ]
+    },
+    {
+      "path": "config/pc/tools/make-opencc-config.py",
+      "kind": "program-or-configuration",
+      "project_license": "GPL-3.0-only",
+      "license_scope": "Original project additions and modifications; retained upstream expression keeps its original terms.",
+      "retained_upstream_terms": [],
+      "references": [
+        "LICENSE"
+      ]
+    },
+    {
+      "path": "config/pc/tools/validate-japanese-base.py",
+      "kind": "program-or-configuration",
+      "project_license": "GPL-3.0-only",
+      "license_scope": "Original project additions and modifications; retained upstream expression keeps its original terms.",
+      "retained_upstream_terms": [],
+      "references": [
+        "LICENSE"
+      ]
+    },
+    {
+      "path": "config/pc/u_readings.tsv",
+      "kind": "data-or-generated-data",
+      "source_group": "unihan-readings",
+      "source_ids": [
+        "unihan17",
+        "project"
+      ],
+      "license_scope": "Unicode License V3 data; own display transformation GPLv3",
+      "references": [
+        "docs/sources/u-readings-sources.md"
+      ]
+    },
+    {
+      "path": "config/pc/weasel.custom.yaml",
+      "kind": "program-or-configuration",
+      "project_license": "GPL-3.0-only",
+      "license_scope": "Original project additions and modifications; retained upstream expression keeps its original terms.",
+      "retained_upstream_terms": [],
+      "references": [
+        "LICENSE"
+      ]
+    },
+    {
+      "path": "config/pc/zh-hant-t-essay-bgw-compact.gram",
+      "kind": "data-or-generated-data",
+      "source_group": "compact-model",
+      "source_ids": [
+        "compact_model"
+      ],
+      "license_scope": "Unmodified LGPLv3 upstream binary data",
+      "references": []
+    },
+    {
+      "path": "docs/BUILD.md",
+      "kind": "project-explanatory-document",
+      "project_license": "CC-BY-SA-4.0",
+      "license_scope": "Original explanatory prose; quotations, attribution statements and code/data excerpts retain their own terms.",
+      "references": [
+        "THIRD_PARTY_NOTICES.md",
+        "licenses/CC-BY-SA-4.0.txt"
+      ]
+    },
+    {
+      "path": "docs/PC.md",
+      "kind": "project-explanatory-document",
+      "project_license": "CC-BY-SA-4.0",
+      "license_scope": "Original explanatory prose; quotations, attribution statements and code/data excerpts retain their own terms.",
+      "references": [
+        "THIRD_PARTY_NOTICES.md",
+        "licenses/CC-BY-SA-4.0.txt"
+      ]
+    },
+    {
+      "path": "docs/sources/README.md",
+      "kind": "project-explanatory-document",
+      "project_license": "CC-BY-SA-4.0",
+      "license_scope": "Original explanatory prose; quotations, attribution statements and code/data excerpts retain their own terms.",
+      "references": [
+        "THIRD_PARTY_NOTICES.md",
+        "licenses/CC-BY-SA-4.0.txt"
+      ]
+    },
+    {
+      "path": "docs/sources/dictionary-quality-q121-sources.md",
+      "kind": "project-explanatory-document",
+      "project_license": "CC-BY-SA-4.0",
+      "license_scope": "Original explanatory prose; quotations, attribution statements and code/data excerpts retain their own terms.",
+      "references": [
+        "THIRD_PARTY_NOTICES.md",
+        "licenses/CC-BY-SA-4.0.txt"
+      ]
+    },
+    {
+      "path": "docs/sources/english-case-forms-sources.md",
+      "kind": "project-explanatory-document",
+      "project_license": "CC-BY-SA-4.0",
+      "license_scope": "Original explanatory prose; quotations, attribution statements and code/data excerpts retain their own terms.",
+      "references": [
+        "THIRD_PARTY_NOTICES.md",
+        "licenses/CC-BY-SA-4.0.txt"
+      ]
+    },
+    {
+      "path": "docs/sources/english-core-sources.md",
+      "kind": "project-explanatory-document",
+      "project_license": "CC-BY-SA-4.0",
+      "license_scope": "Original explanatory prose; quotations, attribution statements and code/data excerpts retain their own terms.",
+      "references": [
+        "THIRD_PARTY_NOTICES.md",
+        "licenses/CC-BY-SA-4.0.txt"
+      ]
+    },
+    {
+      "path": "docs/sources/english-extensions-sources.md",
+      "kind": "project-explanatory-document",
+      "project_license": "CC-BY-SA-4.0",
+      "license_scope": "Original explanatory prose; quotations, attribution statements and code/data excerpts retain their own terms.",
+      "references": [
+        "THIRD_PARTY_NOTICES.md",
+        "licenses/CC-BY-SA-4.0.txt"
+      ]
+    },
+    {
+      "path": "docs/sources/english-pde-sources.md",
+      "kind": "project-explanatory-document",
+      "project_license": "CC-BY-SA-4.0",
+      "license_scope": "Original explanatory prose; quotations, attribution statements and code/data excerpts retain their own terms.",
+      "references": [
+        "THIRD_PARTY_NOTICES.md",
+        "licenses/CC-BY-SA-4.0.txt"
+      ]
+    },
+    {
+      "path": "docs/sources/jp-q-sources.md",
+      "kind": "project-explanatory-document",
+      "project_license": "CC-BY-SA-4.0",
+      "license_scope": "Original explanatory prose; quotations, attribution statements and code/data excerpts retain their own terms.",
+      "references": [
+        "THIRD_PARTY_NOTICES.md",
+        "licenses/CC-BY-SA-4.0.txt"
+      ]
+    },
+    {
+      "path": "docs/sources/jp-v-sources.md",
+      "kind": "project-explanatory-document",
+      "project_license": "CC-BY-SA-4.0",
+      "license_scope": "Original explanatory prose; quotations, attribution statements and code/data excerpts retain their own terms.",
+      "references": [
+        "THIRD_PARTY_NOTICES.md",
+        "licenses/CC-BY-SA-4.0.txt"
+      ]
+    },
+    {
+      "path": "docs/sources/luna-compact-model-sources.md",
+      "kind": "project-explanatory-document",
+      "project_license": "CC-BY-SA-4.0",
+      "license_scope": "Original explanatory prose; quotations, attribution statements and code/data excerpts retain their own terms.",
+      "references": [
+        "THIRD_PARTY_NOTICES.md",
+        "licenses/CC-BY-SA-4.0.txt"
+      ]
+    },
+    {
+      "path": "docs/sources/mdx-orthography-sources.md",
+      "kind": "project-explanatory-document",
+      "project_license": "CC-BY-SA-4.0",
+      "license_scope": "Original explanatory prose; quotations, attribution statements and code/data excerpts retain their own terms.",
+      "references": [
+        "THIRD_PARTY_NOTICES.md",
+        "licenses/CC-BY-SA-4.0.txt"
+      ]
+    },
+    {
+      "path": "docs/sources/mixed-phrases-sources.md",
+      "kind": "project-explanatory-document",
+      "project_license": "CC-BY-SA-4.0",
+      "license_scope": "Original explanatory prose; quotations, attribution statements and code/data excerpts retain their own terms.",
+      "references": [
+        "THIRD_PARTY_NOTICES.md",
+        "licenses/CC-BY-SA-4.0.txt"
+      ]
+    },
+    {
+      "path": "docs/sources/native-components.md",
+      "kind": "project-explanatory-document",
+      "project_license": "CC-BY-SA-4.0",
+      "license_scope": "Original explanatory prose; quotations, attribution statements and code/data excerpts retain their own terms.",
+      "references": [
+        "THIRD_PARTY_NOTICES.md",
+        "licenses/CC-BY-SA-4.0.txt"
+      ]
+    },
+    {
+      "path": "docs/sources/pde-terms-sources.md",
+      "kind": "project-explanatory-document",
+      "project_license": "CC-BY-SA-4.0",
+      "license_scope": "Original explanatory prose; quotations, attribution statements and code/data excerpts retain their own terms.",
+      "references": [
+        "THIRD_PARTY_NOTICES.md",
+        "licenses/CC-BY-SA-4.0.txt"
+      ]
+    },
+    {
+      "path": "docs/sources/project-literary-sources.md",
+      "kind": "project-explanatory-document",
+      "project_license": "CC-BY-SA-4.0",
+      "license_scope": "Original explanatory prose; quotations, attribution statements and code/data excerpts retain their own terms.",
+      "references": [
+        "THIRD_PARTY_NOTICES.md",
+        "licenses/CC-BY-SA-4.0.txt"
+      ]
+    },
+    {
+      "path": "docs/sources/project-terms-sources.md",
+      "kind": "project-explanatory-document",
+      "project_license": "CC-BY-SA-4.0",
+      "license_scope": "Original explanatory prose; quotations, attribution statements and code/data excerpts retain their own terms.",
+      "references": [
+        "THIRD_PARTY_NOTICES.md",
+        "licenses/CC-BY-SA-4.0.txt"
+      ]
+    },
+    {
+      "path": "docs/sources/query-strokes-source.json",
+      "kind": "project-metadata",
+      "project_license": "GPL-3.0-only",
+      "license_scope": "Original structured metadata and configuration; cited upstream material retains its own terms.",
+      "references": [
+        "LICENSE",
+        "THIRD_PARTY_NOTICES.md"
+      ]
+    },
+    {
+      "path": "docs/sources/radical-stroke-sources.md",
+      "kind": "project-explanatory-document",
+      "project_license": "CC-BY-SA-4.0",
+      "license_scope": "Original explanatory prose; quotations, attribution statements and code/data excerpts retain their own terms.",
+      "references": [
+        "THIRD_PARTY_NOTICES.md",
+        "licenses/CC-BY-SA-4.0.txt"
+      ]
+    },
+    {
+      "path": "docs/sources/tools-sources.md",
+      "kind": "project-explanatory-document",
+      "project_license": "CC-BY-SA-4.0",
+      "license_scope": "Original explanatory prose; quotations, attribution statements and code/data excerpts retain their own terms.",
+      "references": [
+        "THIRD_PARTY_NOTICES.md",
+        "licenses/CC-BY-SA-4.0.txt"
+      ]
+    },
+    {
+      "path": "docs/sources/u-readings-sources.md",
+      "kind": "project-explanatory-document",
+      "project_license": "CC-BY-SA-4.0",
+      "license_scope": "Original explanatory prose; quotations, attribution statements and code/data excerpts retain their own terms.",
+      "references": [
+        "THIRD_PARTY_NOTICES.md",
+        "licenses/CC-BY-SA-4.0.txt"
+      ]
+    },
+    {
+      "path": "licenses/CC-BY-SA-4.0.txt",
+      "kind": "retained-upstream-notice",
+      "notice_record": "licenses/CC-BY-SA-4.0.txt",
+      "references": [
+        "licenses/third-party-source-manifest.json"
+      ]
+    },
+    {
+      "path": "licenses/EDRDG-licence.html",
+      "kind": "retained-upstream-notice",
+      "notice_record": "licenses/EDRDG-licence.html",
+      "references": [
+        "licenses/third-party-source-manifest.json"
+      ]
+    },
+    {
+      "path": "licenses/JMdict-EDICT_Dictionary_Project.html",
+      "kind": "retained-upstream-notice",
+      "notice_record": "licenses/JMdict-EDICT_Dictionary_Project.html",
+      "references": [
+        "licenses/third-party-source-manifest.json"
+      ]
+    },
+    {
+      "path": "licenses/KANJIDIC_Project.html",
+      "kind": "retained-upstream-notice",
+      "notice_record": "licenses/KANJIDIC_Project.html",
+      "references": [
+        "licenses/third-party-source-manifest.json"
+      ]
+    },
+    {
+      "path": "licenses/OpenCC-LICENSE.txt",
+      "kind": "retained-upstream-notice",
+      "notice_record": "licenses/OpenCC-LICENSE.txt",
+      "references": [
+        "licenses/third-party-source-manifest.json"
+      ]
+    },
+    {
+      "path": "licenses/README.md",
+      "kind": "project-explanatory-document",
+      "project_license": "CC-BY-SA-4.0",
+      "license_scope": "Original explanatory prose; quotations, attribution statements and code/data excerpts retain their own terms.",
+      "references": [
+        "THIRD_PARTY_NOTICES.md",
+        "licenses/CC-BY-SA-4.0.txt"
+      ]
+    },
+    {
+      "path": "licenses/SCOWL-case-forms-Copyright.txt",
+      "kind": "retained-upstream-notice",
+      "notice_record": "licenses/SCOWL-case-forms-Copyright.txt",
+      "references": [
+        "licenses/third-party-source-manifest.json"
+      ]
+    },
+    {
+      "path": "licenses/Unicode-3.0.txt",
+      "kind": "retained-upstream-notice",
+      "notice_record": "licenses/Unicode-3.0.txt",
+      "references": [
+        "licenses/third-party-source-manifest.json"
+      ]
+    },
+    {
+      "path": "licenses/english-core/CC-BY-3.0-legalcode.txt",
+      "kind": "retained-upstream-notice",
+      "notice_record": "licenses/english-core/CC-BY-3.0-legalcode.txt",
+      "references": [
+        "licenses/third-party-source-manifest.json"
+      ]
+    },
+    {
+      "path": "licenses/english-core/Google-Books-CC-BY-3.0-NOTICE.txt",
+      "kind": "retained-upstream-notice",
+      "notice_record": "licenses/english-core/Google-Books-CC-BY-3.0-NOTICE.txt",
+      "references": [
+        "licenses/third-party-source-manifest.json"
+      ]
+    },
+    {
+      "path": "licenses/english-core/Google-Books-Ngram-official.html",
+      "kind": "retained-upstream-notice",
+      "notice_record": "licenses/english-core/Google-Books-Ngram-official.html",
+      "references": [
+        "licenses/third-party-source-manifest.json"
+      ]
+    },
+    {
+      "path": "licenses/english-core/SCOWL-COPYRIGHT-SOURCES-CREDITS.txt",
+      "kind": "retained-upstream-notice",
+      "notice_record": "licenses/english-core/SCOWL-COPYRIGHT-SOURCES-CREDITS.txt",
+      "references": [
+        "licenses/third-party-source-manifest.json"
+      ]
+    },
+    {
+      "path": "licenses/english-core/SCOWL-full-README.txt",
+      "kind": "retained-upstream-notice",
+      "notice_record": "licenses/english-core/SCOWL-full-README.txt",
+      "references": [
+        "licenses/third-party-source-manifest.json"
+      ]
+    },
+    {
+      "path": "licenses/english-core/SCOWL-official-readme.html",
+      "kind": "retained-upstream-notice",
+      "notice_record": "licenses/english-core/SCOWL-official-readme.html",
+      "references": [
+        "licenses/third-party-source-manifest.json"
+      ]
+    },
+    {
+      "path": "licenses/english-core/SymSpell-MIT.txt",
+      "kind": "retained-upstream-notice",
+      "notice_record": "licenses/english-core/SymSpell-MIT.txt",
+      "references": [
+        "licenses/third-party-source-manifest.json"
+      ]
+    },
+    {
+      "path": "licenses/english-core/SymSpell-upstream-README.md",
+      "kind": "retained-upstream-notice",
+      "notice_record": "licenses/english-core/SymSpell-upstream-README.md",
+      "references": [
+        "licenses/third-party-source-manifest.json"
+      ]
+    },
+    {
+      "path": "licenses/english-extensions-Ice-GPL-3.0.txt",
+      "kind": "retained-upstream-notice",
+      "notice_record": "licenses/english-extensions-Ice-GPL-3.0.txt",
+      "references": [
+        "licenses/third-party-source-manifest.json"
+      ]
+    },
+    {
+      "path": "licenses/essay-LGPL-3.0.txt",
+      "kind": "retained-upstream-notice",
+      "notice_record": "licenses/essay-LGPL-3.0.txt",
+      "references": [
+        "licenses/third-party-source-manifest.json"
+      ]
+    },
+    {
+      "path": "licenses/file-licenses.json",
+      "kind": "project-metadata",
+      "project_license": "GPL-3.0-only",
+      "license_scope": "Original structured metadata and configuration; cited upstream material retains its own terms.",
+      "references": [
+        "LICENSE",
+        "THIRD_PARTY_NOTICES.md"
+      ]
+    },
+    {
+      "path": "licenses/luna-compact-model-LGPL-3.0.txt",
+      "kind": "retained-upstream-notice",
+      "notice_record": "licenses/luna-compact-model-LGPL-3.0.txt",
+      "references": [
+        "licenses/third-party-source-manifest.json"
+      ]
+    },
+    {
+      "path": "licenses/luna-pinyin-LGPL-3.0.txt",
+      "kind": "retained-upstream-notice",
+      "notice_record": "licenses/luna-pinyin-LGPL-3.0.txt",
+      "references": [
+        "licenses/third-party-source-manifest.json"
+      ]
+    },
+    {
+      "path": "licenses/pde-terms-reference-GPL-3.0.txt",
+      "kind": "retained-upstream-notice",
+      "notice_record": "licenses/pde-terms-reference-GPL-3.0.txt",
+      "references": [
+        "licenses/third-party-source-manifest.json"
+      ]
+    },
+    {
+      "path": "licenses/project-terms-reference-LICENSE.txt",
+      "kind": "retained-upstream-notice",
+      "notice_record": "licenses/project-terms-reference-LICENSE.txt",
+      "references": [
+        "licenses/third-party-source-manifest.json"
+      ]
+    },
+    {
+      "path": "licenses/radical-stroke/radical-GPL-3.0.txt",
+      "kind": "retained-upstream-notice",
+      "notice_record": "licenses/radical-stroke/radical-GPL-3.0.txt",
+      "references": [
+        "licenses/third-party-source-manifest.json"
+      ]
+    },
+    {
+      "path": "licenses/radical-stroke/radical-source-credits.md",
+      "kind": "retained-upstream-notice",
+      "notice_record": "licenses/radical-stroke/radical-source-credits.md",
+      "references": [
+        "licenses/third-party-source-manifest.json"
+      ]
+    },
+    {
+      "path": "licenses/radical-stroke/stroke-AUTHORS",
+      "kind": "retained-upstream-notice",
+      "notice_record": "licenses/radical-stroke/stroke-AUTHORS",
+      "references": [
+        "licenses/third-party-source-manifest.json"
+      ]
+    },
+    {
+      "path": "licenses/radical-stroke/stroke-LGPL-3.0.txt",
+      "kind": "retained-upstream-notice",
+      "notice_record": "licenses/radical-stroke/stroke-LGPL-3.0.txt",
+      "references": [
+        "licenses/third-party-source-manifest.json"
+      ]
+    },
+    {
+      "path": "licenses/supplement/CC-BY-3.0-legalcode.txt",
+      "kind": "retained-upstream-notice",
+      "notice_record": "licenses/supplement/CC-BY-3.0-legalcode.txt",
+      "references": [
+        "licenses/third-party-source-manifest.json"
+      ]
+    },
+    {
+      "path": "licenses/supplement/CHISE-ids-README.md",
+      "kind": "retained-upstream-notice",
+      "notice_record": "licenses/supplement/CHISE-ids-README.md",
+      "references": [
+        "licenses/third-party-source-manifest.json"
+      ]
+    },
+    {
+      "path": "licenses/supplement/CHISE-ids.el-NOTICE.txt",
+      "kind": "retained-upstream-notice",
+      "notice_record": "licenses/supplement/CHISE-ids.el-NOTICE.txt",
+      "references": [
+        "licenses/third-party-source-manifest.json"
+      ]
+    },
+    {
+      "path": "licenses/supplement/GPL-2.0.txt",
+      "kind": "retained-upstream-notice",
+      "notice_record": "licenses/supplement/GPL-2.0.txt",
+      "references": [
+        "licenses/third-party-source-manifest.json"
+      ]
+    },
+    {
+      "path": "licenses/supplement/Lua-5.3-MIT-NOTICE.txt",
+      "kind": "retained-upstream-notice",
+      "notice_record": "licenses/supplement/Lua-5.3-MIT-NOTICE.txt",
+      "references": [
+        "licenses/third-party-source-manifest.json"
+      ]
+    },
+    {
+      "path": "licenses/supplement/Lua-5.4-MIT-NOTICE.txt",
+      "kind": "retained-upstream-notice",
+      "notice_record": "licenses/supplement/Lua-5.4-MIT-NOTICE.txt",
+      "references": [
+        "licenses/third-party-source-manifest.json"
+      ]
+    },
+    {
+      "path": "licenses/supplement/Mirtle-GPL-3.0.txt",
+      "kind": "retained-upstream-notice",
+      "notice_record": "licenses/supplement/Mirtle-GPL-3.0.txt",
+      "references": [
+        "licenses/third-party-source-manifest.json"
+      ]
+    },
+    {
+      "path": "licenses/supplement/README.md",
+      "kind": "project-explanatory-document",
+      "project_license": "CC-BY-SA-4.0",
+      "license_scope": "Original explanatory prose; quotations, attribution statements and code/data excerpts retain their own terms.",
+      "references": [
+        "THIRD_PARTY_NOTICES.md",
+        "licenses/CC-BY-SA-4.0.txt"
+      ]
+    },
+    {
+      "path": "licenses/supplement/henrysting-chaizi-LICENSE.txt",
+      "kind": "retained-upstream-notice",
+      "notice_record": "licenses/supplement/henrysting-chaizi-LICENSE.txt",
+      "references": [
+        "licenses/third-party-source-manifest.json"
+      ]
+    },
+    {
+      "path": "licenses/supplement/henrysting-chaizi-README.md",
+      "kind": "retained-upstream-notice",
+      "notice_record": "licenses/supplement/henrysting-chaizi-README.md",
+      "references": [
+        "licenses/third-party-source-manifest.json"
+      ]
+    },
+    {
+      "path": "licenses/supplement/kfcd-chaizi-LICENSE.txt",
+      "kind": "retained-upstream-notice",
+      "notice_record": "licenses/supplement/kfcd-chaizi-LICENSE.txt",
+      "references": [
+        "licenses/third-party-source-manifest.json"
+      ]
+    },
+    {
+      "path": "licenses/supplement/kfcd-chaizi-README.md",
+      "kind": "retained-upstream-notice",
+      "notice_record": "licenses/supplement/kfcd-chaizi-README.md",
+      "references": [
+        "licenses/third-party-source-manifest.json"
+      ]
+    },
+    {
+      "path": "licenses/supplement/librime-LICENSE.txt",
+      "kind": "retained-upstream-notice",
+      "notice_record": "licenses/supplement/librime-LICENSE.txt",
+      "references": [
+        "licenses/third-party-source-manifest.json"
+      ]
+    },
+    {
+      "path": "licenses/supplement/librime-lua-LICENSE.txt",
+      "kind": "retained-upstream-notice",
+      "notice_record": "licenses/supplement/librime-lua-LICENSE.txt",
+      "references": [
+        "licenses/third-party-source-manifest.json"
+      ]
+    },
+    {
+      "path": "licenses/supplement/librime-octagram-LICENSE.txt",
+      "kind": "retained-upstream-notice",
+      "notice_record": "licenses/supplement/librime-octagram-LICENSE.txt",
+      "references": [
+        "licenses/third-party-source-manifest.json"
+      ]
+    },
+    {
+      "path": "licenses/supplement/librime-predict-LICENSE.txt",
+      "kind": "retained-upstream-notice",
+      "notice_record": "licenses/supplement/librime-predict-LICENSE.txt",
+      "references": [
+        "licenses/third-party-source-manifest.json"
+      ]
+    },
+    {
+      "path": "licenses/supplement/mirtle-src-README.md",
+      "kind": "retained-upstream-notice",
+      "notice_record": "licenses/supplement/mirtle-src-README.md",
+      "references": [
+        "licenses/third-party-source-manifest.json"
+      ]
+    },
+    {
+      "path": "licenses/supplement/yi-bai-ids-LICENSE.txt",
+      "kind": "retained-upstream-notice",
+      "notice_record": "licenses/supplement/yi-bai-ids-LICENSE.txt",
+      "references": [
+        "licenses/third-party-source-manifest.json"
+      ]
+    },
+    {
+      "path": "licenses/supplement/yi-bai-ids-README.md",
+      "kind": "retained-upstream-notice",
+      "notice_record": "licenses/supplement/yi-bai-ids-README.md",
+      "references": [
+        "licenses/third-party-source-manifest.json"
+      ]
+    },
+    {
+      "path": "licenses/third-party-source-manifest.json",
+      "kind": "project-metadata",
+      "project_license": "GPL-3.0-only",
+      "license_scope": "Original structured metadata and configuration; cited upstream material retains its own terms.",
+      "references": [
+        "LICENSE",
+        "THIRD_PARTY_NOTICES.md"
+      ]
+    },
+    {
+      "path": "licenses/tools-Ice-GPL-3.0.txt",
+      "kind": "retained-upstream-notice",
+      "notice_record": "licenses/tools-Ice-GPL-3.0.txt",
+      "references": [
+        "licenses/third-party-source-manifest.json"
+      ]
+    },
+    {
+      "path": "native/BUILD.md",
+      "kind": "project-explanatory-document",
+      "project_license": "CC-BY-SA-4.0",
+      "license_scope": "Original explanatory prose; quotations, attribution statements and code/data excerpts retain their own terms.",
+      "references": [
+        "THIRD_PARTY_NOTICES.md",
+        "licenses/CC-BY-SA-4.0.txt"
+      ]
+    },
+    {
+      "path": "native/VALIDATION.md",
+      "kind": "project-explanatory-document",
+      "project_license": "CC-BY-SA-4.0",
+      "license_scope": "Original explanatory prose; quotations, attribution statements and code/data excerpts retain their own terms.",
+      "references": [
+        "THIRD_PARTY_NOTICES.md",
+        "licenses/CC-BY-SA-4.0.txt"
+      ]
+    },
+    {
+      "path": "native/engine/librime-lua-n01.patch",
+      "kind": "program-or-configuration",
+      "project_license": "GPL-3.0-only",
+      "license_scope": "Original project additions and modifications; retained upstream expression keeps its original terms.",
+      "retained_upstream_terms": [
+        "BSD-3-Clause"
+      ],
+      "references": [
+        "LICENSE",
+        "docs/sources/native-components.md",
+        "licenses/supplement/librime-lua-LICENSE.txt",
+        "native/BUILD.md",
+        "native/source-manifest.json"
+      ],
+      "source_ids": [
+        "project",
+        "native_librimeLua"
+      ]
+    },
+    {
+      "path": "native/engine/librime-lua-r5-sdk.patch",
+      "kind": "program-or-configuration",
+      "project_license": "GPL-3.0-only",
+      "license_scope": "Original project additions and modifications; retained upstream expression keeps its original terms.",
+      "retained_upstream_terms": [
+        "BSD-3-Clause"
+      ],
+      "references": [
+        "LICENSE",
+        "docs/sources/native-components.md",
+        "licenses/supplement/librime-lua-LICENSE.txt",
+        "native/BUILD.md",
+        "native/source-manifest.json"
+      ],
+      "source_ids": [
+        "project",
+        "native_librimeLua"
+      ]
+    },
+    {
+      "path": "native/engine/librime-n01.patch",
+      "kind": "program-or-configuration",
+      "project_license": "GPL-3.0-only",
+      "license_scope": "Original project additions and modifications; retained upstream expression keeps its original terms.",
+      "retained_upstream_terms": [
+        "BSD-3-Clause"
+      ],
+      "references": [
+        "LICENSE",
+        "docs/sources/native-components.md",
+        "licenses/supplement/librime-LICENSE.txt",
+        "native/BUILD.md",
+        "native/source-manifest.json"
+      ],
+      "source_ids": [
+        "project",
+        "native_librime"
+      ]
+    },
+    {
+      "path": "native/engine/librime-r5-sdk.patch",
+      "kind": "program-or-configuration",
+      "project_license": "GPL-3.0-only",
+      "license_scope": "Original project additions and modifications; retained upstream expression keeps its original terms.",
+      "retained_upstream_terms": [
+        "BSD-3-Clause"
+      ],
+      "references": [
+        "LICENSE",
+        "docs/sources/native-components.md",
+        "licenses/supplement/librime-LICENSE.txt",
+        "native/BUILD.md",
+        "native/source-manifest.json"
+      ],
+      "source_ids": [
+        "project",
+        "native_librime"
+      ]
+    },
+    {
+      "path": "native/source-manifest.json",
+      "kind": "project-metadata",
+      "project_license": "GPL-3.0-only",
+      "license_scope": "Original structured metadata and configuration; cited upstream material retains its own terms.",
+      "references": [
+        "LICENSE",
+        "THIRD_PARTY_NOTICES.md"
+      ]
+    },
+    {
+      "path": "native/tests/preedit_spacing_tests.cc",
+      "kind": "program-or-configuration",
+      "project_license": "GPL-3.0-only",
+      "license_scope": "Original project additions and modifications; retained upstream expression keeps its original terms.",
+      "retained_upstream_terms": [],
+      "references": [
+        "LICENSE",
+        "native/BUILD.md"
+      ]
+    },
+    {
+      "path": "native/tests/shift/Run-ShiftKeySnapshotTests.ps1",
+      "kind": "program-or-configuration",
+      "project_license": "GPL-3.0-only",
+      "license_scope": "Original project additions and modifications; retained upstream expression keeps its original terms.",
+      "retained_upstream_terms": [
+        "GPL-3.0 where extracted Weasel handler logic is included"
+      ],
+      "references": [
+        "LICENSE",
+        "native/BUILD.md"
+      ],
+      "source_ids": [
+        "project",
+        "native_weasel"
+      ]
+    },
+    {
+      "path": "native/tests/shift/ShiftKeySnapshotTests.cpp",
+      "kind": "program-or-configuration",
+      "project_license": "GPL-3.0-only",
+      "license_scope": "Original project additions and modifications; retained upstream expression keeps its original terms.",
+      "retained_upstream_terms": [
+        "GPL-3.0 where extracted Weasel handler logic is included"
+      ],
+      "references": [
+        "LICENSE",
+        "native/BUILD.md"
+      ],
+      "source_ids": [
+        "project",
+        "native_weasel"
+      ]
+    },
+    {
+      "path": "native/weasel/weasel-61020.patch",
+      "kind": "program-or-configuration",
+      "project_license": "GPL-3.0-only",
+      "license_scope": "Original project additions and modifications; retained upstream expression keeps its original terms.",
+      "retained_upstream_terms": [
+        "GPL-3.0"
+      ],
+      "references": [
+        "LICENSE",
+        "docs/sources/native-components.md",
+        "native/BUILD.md",
+        "native/source-manifest.json"
+      ],
+      "source_ids": [
+        "project",
+        "native_weasel"
+      ]
+    },
+    {
+      "path": "native/weasel/weasel-61033.patch",
+      "kind": "program-or-configuration",
+      "project_license": "GPL-3.0-only",
+      "license_scope": "Original project additions and modifications; retained upstream expression keeps its original terms.",
+      "retained_upstream_terms": [
+        "GPL-3.0"
+      ],
+      "references": [
+        "LICENSE",
+        "docs/sources/native-components.md",
+        "native/BUILD.md",
+        "native/source-manifest.json"
+      ],
+      "source_ids": [
+        "project",
+        "native_weasel"
+      ]
+    },
+    {
+      "path": "release-manifest.json",
+      "kind": "project-metadata",
+      "project_license": "GPL-3.0-only",
+      "license_scope": "Original structured metadata and configuration; cited upstream material retains its own terms.",
+      "references": [
+        "LICENSE",
+        "THIRD_PARTY_NOTICES.md"
+      ]
+    },
+    {
+      "path": "scripts/data/build_english_index.py",
+      "kind": "program-or-configuration",
+      "project_license": "GPL-3.0-only",
+      "license_scope": "Original project additions and modifications; retained upstream expression keeps its original terms.",
+      "retained_upstream_terms": [],
+      "references": [
+        "LICENSE",
+        "docs/sources/english-pde-sources.md"
+      ]
+    },
+    {
+      "path": "scripts/data/build_japanese_q.py",
+      "kind": "program-or-configuration",
+      "project_license": "GPL-3.0-only",
+      "license_scope": "Original project additions and modifications; retained upstream expression keeps its original terms.",
+      "retained_upstream_terms": [],
+      "references": [
+        "LICENSE",
+        "docs/sources/jp-q-sources.md"
+      ]
+    },
+    {
+      "path": "scripts/data/rebuild_japanese_family_q.py",
+      "kind": "program-or-configuration",
+      "project_license": "GPL-3.0-only",
+      "license_scope": "Original project additions and modifications; retained upstream expression keeps its original terms.",
+      "retained_upstream_terms": [],
+      "references": [
+        "LICENSE",
+        "config/pc/japanese-q-canonical.json",
+        "config/pc/lua/jp_v_chars.lua",
+        "scripts/data/build_japanese_q.py"
+      ]
+    },
+    {
+      "path": "scripts/native/Apply-Patches.ps1",
+      "kind": "program-or-configuration",
+      "project_license": "GPL-3.0-only",
+      "license_scope": "Original project additions and modifications; retained upstream expression keeps its original terms.",
+      "retained_upstream_terms": [],
+      "references": [
+        "LICENSE",
+        "docs/sources/native-components.md",
+        "native/BUILD.md",
+        "native/source-manifest.json"
+      ]
+    },
+    {
+      "path": "scripts/native/Build-Engine.ps1",
+      "kind": "program-or-configuration",
+      "project_license": "GPL-3.0-only",
+      "license_scope": "Original project additions and modifications; retained upstream expression keeps its original terms.",
+      "retained_upstream_terms": [],
+      "references": [
+        "LICENSE",
+        "docs/sources/native-components.md",
+        "native/BUILD.md",
+        "native/source-manifest.json"
+      ]
+    },
+    {
+      "path": "scripts/native/Build-Weasel.ps1",
+      "kind": "program-or-configuration",
+      "project_license": "GPL-3.0-only",
+      "license_scope": "Original project additions and modifications; retained upstream expression keeps its original terms.",
+      "retained_upstream_terms": [],
+      "references": [
+        "LICENSE",
+        "docs/sources/native-components.md",
+        "native/BUILD.md",
+        "native/source-manifest.json"
+      ]
+    },
+    {
+      "path": "scripts/native/Common.ps1",
+      "kind": "program-or-configuration",
+      "project_license": "GPL-3.0-only",
+      "license_scope": "Original project additions and modifications; retained upstream expression keeps its original terms.",
+      "retained_upstream_terms": [],
+      "references": [
+        "LICENSE",
+        "docs/sources/native-components.md",
+        "native/BUILD.md",
+        "native/source-manifest.json"
+      ]
+    },
+    {
+      "path": "scripts/native/Prepare-Sources.ps1",
+      "kind": "program-or-configuration",
+      "project_license": "GPL-3.0-only",
+      "license_scope": "Original project additions and modifications; retained upstream expression keeps its original terms.",
+      "retained_upstream_terms": [],
+      "references": [
+        "LICENSE",
+        "docs/sources/native-components.md",
+        "native/BUILD.md",
+        "native/source-manifest.json"
+      ]
+    },
+    {
+      "path": "scripts/native/Test-Inventory.ps1",
+      "kind": "program-or-configuration",
+      "project_license": "GPL-3.0-only",
+      "license_scope": "Original project additions and modifications; retained upstream expression keeps its original terms.",
+      "retained_upstream_terms": [],
+      "references": [
+        "LICENSE",
+        "docs/sources/native-components.md",
+        "native/BUILD.md",
+        "native/source-manifest.json"
+      ]
+    },
+    {
+      "path": "scripts/verify_release.py",
+      "kind": "program-or-configuration",
+      "project_license": "GPL-3.0-only",
+      "license_scope": "Original project additions and modifications; retained upstream expression keeps its original terms.",
+      "retained_upstream_terms": [],
+      "references": [
+        "LICENSE"
+      ]
+    },
+    {
+      "path": "tests/Probe-Configuration.ps1",
+      "kind": "program-or-configuration",
+      "project_license": "GPL-3.0-only",
+      "license_scope": "Original project additions and modifications; retained upstream expression keeps its original terms.",
+      "retained_upstream_terms": [],
+      "references": [
+        "LICENSE"
+      ]
+    },
+    {
+      "path": "tests/RimeProbe.cs",
+      "kind": "program-or-configuration",
+      "project_license": "GPL-3.0-only",
+      "license_scope": "Original project additions and modifications; retained upstream expression keeps its original terms.",
+      "retained_upstream_terms": [],
+      "references": [
+        "LICENSE"
+      ]
+    }
+  ]
+}

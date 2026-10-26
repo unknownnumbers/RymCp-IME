@@ -1,8 +1,8 @@
 # 授權範圍與第三方通知
 
-RymCp IME由本工程程式、Rime前端/引擎、插件及多種資料組成. 根[LICENSE](LICENSE) 為GNU GPL version 3, 適用於本工程有權授權的程式與配置整合; 下列第三方材料保留原授權、版權及署名.
+RymCp IME由本工程程式、Rime前端/引擎、插件及多種資料組成. 本工程原創程式碼、配置、資料生成器、測試及原生修改採[GPL-3.0-only](LICENSE). 第三方材料及其原有部分保留原授權、版權與署名, 逐檔範圍見[授權索引](licenses/file-licenses.json).
 
-首發新寫的[README](README.md)、[TODO](TODO.md)、[PC說明](docs/PC.md)、[構建說明](docs/BUILD.md)、[原生構建說明](native/BUILD.md)、[日語PC說明](config/pc/JAPANESE.md)、[OpenCC設定說明](config/pc/OPENCC.md) 依[CC BY-SA 4.0](licenses/CC-BY-SA-4.0.txt) 提供. 這項文檔授權不改變引述材料、程式碼、第三方原文或字典資料的條款; 構建/資料生成腳本仍為程式碼, 沿其GPLv3及第三方原授權. 其他未另標示的本工程來源整理及整合程式沿根GPLv3; 第三方通知與授權正文始終依其自身條款保存.
+各說明文件中的本工程原創文字採[CC BY-SA 4.0](licenses/CC-BY-SA-4.0.txt), 包括README、使用與構建說明、來源整理及設計文件. 第三方文件、授權通知、來源引文與程式片段保留各自條款. 構建與資料生成腳本依程式碼授權提供, 生成資料保留所用來源的授權與署名; 本工程新增部分的範圍見逐檔索引.
 
 | 元件/材料 | 原授權及署名 | 隨附通知與來源 |
 | --- | --- | --- |
@@ -12,7 +12,7 @@ RymCp IME由本工程程式、Rime前端/引擎、插件及多種資料組成. �
 | librime-octagram | GNU GPLv3 | [固定正文](licenses/supplement/librime-octagram-LICENSE.txt) |
 | librime-predict | BSD-3-Clause; ©2023 RIME Developers | [固定正文](licenses/supplement/librime-predict-LICENSE.txt) |
 | 內附Lua5.4 | MIT; ©1994-2024 Lua.org、PUC-Rio | [完整通知](licenses/supplement/Lua-5.4-MIT-NOTICE.txt); 同源樹另附[Lua5.3通知](licenses/supplement/Lua-5.3-MIT-NOTICE.txt), 不表示兩版均連結 |
-| Luna、essay、TC compact模型 | GNU LGPLv3及原作者/來源 | [Luna](licenses/luna-pinyin-LGPL-3.0.txt)、[essay](licenses/essay-LGPL-3.0.txt)、[模型](licenses/luna-compact-model-LGPL-3.0.txt), 均連同[GPLv3](LICENSE); [來源與修改](docs/sources/README.md) |
+| Luna方案與字典、essay、TC compact模型 | GNU LGPLv3及原作者/來源 | [Luna](licenses/luna-pinyin-LGPL-3.0.txt)、[essay](licenses/essay-LGPL-3.0.txt)、[模型](licenses/luna-compact-model-LGPL-3.0.txt), 均連同[GPLv3](LICENSE); [Luna來源與修改](docs/sources/dictionary-quality-q121-sources.md)、[來源索引](docs/sources/README.md) |
 | 英文核心 | SymSpell MIT; 底層Google Books Ngram CC BY3.0及SCOWL複合來源通知 | [英文核心來源](docs/sources/english-core-sources.md)、[完整通知目錄](licenses/english-core/); 不能只以SymSpell MIT概括資料 |
 | 英文大小寫佐證 | SCOWL 2020.12.07及其上游複合來源 | [完整Copyright](licenses/SCOWL-case-forms-Copyright.txt)、[實際用途](docs/sources/english-case-forms-sources.md) |
 | Ice英文擴展、混合詞及工具參考 | GPLv3; iDvel/rime-ice貢獻者; 計算器ChaosAlphard/DeepChirp, 取字BlindingDark | [Ice GPL](licenses/english-extensions-Ice-GPL-3.0.txt)、[工具GPL](licenses/tools-Ice-GPL-3.0.txt)、[來源索引](docs/sources/README.md) |

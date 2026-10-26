@@ -24,3 +24,5 @@ jobs:
         run: python scripts/verify_release.py --require-yaml
       - name: Verify independent Japanese spelling rules
         run: python config/pc/tools/validate-japanese-base.py --directory config/pc
+      - name: Verify Japanese character reading codes
+        run: python scripts/data/rebuild_japanese_family_q.py --check

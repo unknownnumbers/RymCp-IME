@@ -2,6 +2,8 @@
 
 前端來源固定[rime/weasel@9cc96e20dc71b80876b12f689bb5863c76c2a7ed](https://github.com/rime/weasel/tree/9cc96e20dc71b80876b12f689bb5863c76c2a7ed), 保留[GPLv3](../../LICENSE) 與原檔署名. 本工程在此基底上的實際patch及可執行構建流程見[原生BUILD](../../native/BUILD.md); 舊版manifest不代替目前patch鏈.
 
+本工程原生修改、構建腳本及測試的原創部分採GPL-3.0-only. 補丁中的上游原文與上下文保留原授權及署名, 包括librime、librime-lua與librime-predict的BSD-3-Clause條款. 各部分的範圍見[逐檔授權索引](../../licenses/file-licenses.json).
+
 | 元件 | 固定commit | 保留通知 |
 | --- | --- | --- |
 | [librime](https://github.com/rime/librime/tree/1c23358157934bd6e6d6981f0c0164f05393b497) | `1c23358157934bd6e6d6981f0c0164f05393b497` | [BSD-3-Clause, ©2014 RIME Developers](../../licenses/supplement/librime-LICENSE.txt) |
@@ -14,4 +16,4 @@ thirdparty與librime-lua主體來自同一repo的不同固定樹, 不能只抓�
 
 Boost及librime的glog、leveldb、yaml-cpp、googletest、marisa-trie、OpenCC等依賴按實際構建固定來源取得, 保留其上游授權及通知. 本倉庫首批以源碼/配置為主; 這裡的直接元件表沒有把尚未發布的完整二進位安裝包宣稱為已完成全部間接元件通知整理.
 
-固定下載、patch重放與CI產物校驗的範圍由BUILD記錄; 沒有承諾不同工具鏈的位元完全一致. 構建腳本是程式碼, 依GPLv3及保留的第三方條款提供; 新寫BUILD說明本身的CC BY-SA4.0不覆蓋腳本或上游源碼.
+固定下載、patch重放與CI產物校驗的範圍由BUILD記錄; 沒有承諾不同工具鏈的位元完全一致. 本工程原創構建說明採CC BY-SA4.0, 腳本與上游源碼依各自程式碼授權提供.

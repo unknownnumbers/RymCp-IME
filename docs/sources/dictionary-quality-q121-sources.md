@@ -1,8 +1,10 @@
-# Luna主表與中文品質修訂
+# Luna方案、主表與中文品質修訂
 
 `config/pc/luna_pinyin.dict.yaml`來自官方Weasel0.17.4資料的Luna字典, 原版本`2024.02.10`, 本工程版本`2024.02.10.q121.20261019.1`. 精確上游commit未識別; 版本字串中的歷史修訂識別碼原樣保留, 並非另作來源版本推定.
 
 字典原頭保留Rime Developers及CC-CEDICT、AOSP PinyinIME、Chewing、三拼簡繁詞庫、OpenCC、萌典來源. 上游為[rime/rime-luna-pinyin](https://github.com/rime/rime-luna-pinyin), [LGPLv3正文](../../licenses/luna-pinyin-LGPL-3.0.txt) 及其引用的[GPLv3](../../LICENSE) 隨包提供.
+
+`config/pc/pc_research.schema.yaml`沿用Luna方案基底, 保留佛振署名及原來源說明, 並加入本工程的配置整合. Luna原有部分保留上游LGPLv3條款, 本工程新增配置採GPL-3.0-only. 方案的精確上游commit未識別, 逐檔範圍見[授權索引](../../licenses/file-licenses.json).
 
 ## 明列的詞碼修訂
 

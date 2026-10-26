@@ -18,6 +18,12 @@ JMdict來源為[官方JMdict_e.gz](https://www.edrdg.org/pub/Nihongo/JMdict_e.gz
 
 完整code包含`ん`在vowel/y前的`n'`邊界、尾n/nn、促音及長音l. 呼叫端將查詢正文轉小寫, 但不改raw; 不依輸入大小寫改送假名字形. 原生helper關閉completion/sentence/user dictionary, 整合端仍拒絕無來源的sentence候選, 按匹配消耗正文, 保留尾段及既有學習身份.
 
+## 單字讀音與字形家族
+
+`config/pc/lua/jp_family_data.lua`的`q_codes`由[單字讀音資料](jp-v-sources.md)及現用`japanese-q-canonical.json`生成, 使用與q詞庫相同的羅馬字算法. 13,136筆字元資料中的34,245個讀音生成12,390字、38,503個查詢碼. 字形家族、別名與其他讀音欄位保持原有內容. 讀音衍生資料保留EDRDG、Unicode及OpenCC的相應來源條款, 生成程式採GPL-3.0-only.
+
+執行`python scripts/data/rebuild_japanese_family_q.py --check`可核對隨附結果; 使用`--output <new-file>`可另存新結果, 輸出摘要記錄來源與結果的SHA256.
+
 ## 更新程序
 
 資料更新從官方來源取得新JMdict並保存日期/SHA256, 用`python scripts/data/build_japanese_q.py --source <JMdict_e.gz> --out out/japanese-q`重建受限制的表記/讀音及有限詞形, 再核對來源限制、輸出集合及輸入消耗. 輸出目錄必須是新位置, 生成器不改隨附詞典; 可用`--expected-source-sha256`驗證固定輸入. 不能只用新假名表覆蓋一份未核對的詞庫. 新增生成結果須一併保留來源紀錄與EDRDG通知.
