@@ -1,7 +1,7 @@
 {
   "schema": "rymcp-native-sources/1",
   "date": "2026-10-29",
-  "status": "source-release-public-build-workflow-not-yet-validated",
+  "status": "source-inputs-pinned; validation is recorded in native/VALIDATION.md",
   "productComposition": {
     "tsf": "0.17.4.61047; x64 and x86",
     "x64Server": "0.17.4.61042",

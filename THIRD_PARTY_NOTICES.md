@@ -12,6 +12,7 @@ RymCp IME由本工程程式、Rime前端/引擎、插件及多種資料組成. �
 | librime-octagram | GNU GPLv3 | [固定正文](licenses/supplement/librime-octagram-LICENSE.txt) |
 | librime-predict | BSD-3-Clause; ©2023 RIME Developers | [固定正文](licenses/supplement/librime-predict-LICENSE.txt) |
 | 內附Lua5.4 | MIT; ©1994-2024 Lua.org、PUC-Rio | [完整通知](licenses/supplement/Lua-5.4-MIT-NOTICE.txt); 同源樹另附[Lua5.3通知](licenses/supplement/Lua-5.3-MIT-NOTICE.txt), 不表示兩版均連結 |
+| 原生構建依賴 | Boost、Darts、glog、GoogleTest、LevelDB、marisa、OpenCC、yaml-cpp、UTF8CPP、X11、WTL及WinSparkle各自的授權與署名 | [原始通知](licenses/native-dependencies/)、[固定來源及範圍](licenses/third-party-source-manifest.json); 構建產物附帶本目錄通知 |
 | Luna方案與字典、essay、TC compact模型 | GNU LGPLv3及原作者/來源 | [Luna](licenses/luna-pinyin-LGPL-3.0.txt)、[essay](licenses/essay-LGPL-3.0.txt)、[模型](licenses/luna-compact-model-LGPL-3.0.txt), 均連同[GPLv3](LICENSE); [Luna來源與修改](docs/sources/dictionary-quality-q121-sources.md)、[來源索引](docs/sources/README.md) |
 | 英文核心 | SymSpell MIT; 底層Google Books Ngram CC BY3.0及SCOWL複合來源通知 | [英文核心來源](docs/sources/english-core-sources.md)、[完整通知目錄](licenses/english-core/); 不能只以SymSpell MIT概括資料 |
 | 英文大小寫佐證 | SCOWL 2020.12.07及其上游複合來源 | [完整Copyright](licenses/SCOWL-case-forms-Copyright.txt)、[實際用途](docs/sources/english-case-forms-sources.md) |

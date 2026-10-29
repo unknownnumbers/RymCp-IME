@@ -49,8 +49,8 @@
     },
     {
       "path": "THIRD_PARTY_NOTICES.md",
-      "bytes": 5435,
-      "sha256": "e8a079e3aaf189519be825aedb830a9a8b0a23bbba949bc6d587d69ab516b51e"
+      "bytes": 5744,
+      "sha256": "ac19036e7344de154cafb60b202e4d0428922810a59def8387ff68ce78b32a82"
     },
     {
       "path": "TODO.md",
@@ -854,8 +854,8 @@
     },
     {
       "path": "licenses/README.md",
-      "bytes": 1154,
-      "sha256": "4ffcc922d6259c27736e3df63e50b065b4c1d2d0df3a9ef8dbcbd9b19eeb3941"
+      "bytes": 1429,
+      "sha256": "1190ae6376510da332cb637df95d70b5317ec53d96c8caafb389cf6f724cf547"
     },
     {
       "path": "licenses/SCOWL-case-forms-Copyright.txt",
@@ -919,8 +919,8 @@
     },
     {
       "path": "licenses/file-licenses.json",
-      "bytes": 108304,
-      "sha256": "2e6cfe0f9d9a413a3c6004d50a7d9ab291a3de0220df0c7232b8913fc412f554"
+      "bytes": 115102,
+      "sha256": "5c83516f3674a260925e5ef263f536910be106a4283acbac806075a03c5d197e"
     },
     {
       "path": "licenses/luna-compact-model-LGPL-3.0.txt",
@@ -931,6 +931,126 @@
       "path": "licenses/luna-pinyin-LGPL-3.0.txt",
       "bytes": 7652,
       "sha256": "97628afebc60f026f5c2b25d7491c46a5c4ee61f693e7cfa07fbd2c03605979b"
+    },
+    {
+      "path": "licenses/native-dependencies/boost/LICENSE_1_0.txt",
+      "bytes": 1361,
+      "sha256": "beb8e42e9d6b4284e03304d05a81a0755200a965fc8d0a5e0aea1e84cf805d6e"
+    },
+    {
+      "path": "licenses/native-dependencies/darts-clone/COPYING.darts-clone",
+      "bytes": 1491,
+      "sha256": "521de7c11cd32d5542b67876bb973572af2f5400dc47bed01be3fa37102fdd29"
+    },
+    {
+      "path": "licenses/native-dependencies/glog/AUTHORS",
+      "bytes": 1085,
+      "sha256": "e97c0e63f6ec7f4334de7a07c62e7af05b6da4406d20eb511afd24f1c61c41dc"
+    },
+    {
+      "path": "licenses/native-dependencies/glog/COPYING",
+      "bytes": 1479,
+      "sha256": "136d48dea7a681413691f3db3098f6cf5ffaa3119d96d97bb83b8cff3ce38c4a"
+    },
+    {
+      "path": "licenses/native-dependencies/googletest/LICENSE",
+      "bytes": 1475,
+      "sha256": "9702de7e4117a8e2b20dafab11ffda58c198aede066406496bef670d40a22138"
+    },
+    {
+      "path": "licenses/native-dependencies/leveldb/AUTHORS",
+      "bytes": 293,
+      "sha256": "75cccce858c06397a2736b5018b304a6fe50fce7148c7ea7fd532dd255d264b9"
+    },
+    {
+      "path": "licenses/native-dependencies/leveldb/LICENSE",
+      "bytes": 1484,
+      "sha256": "ccc19f1da0798ed666609b65a5b44dd8b3abe6fc08b9c0592eb76e82e174db19"
+    },
+    {
+      "path": "licenses/native-dependencies/marisa-trie/AUTHORS",
+      "bytes": 36,
+      "sha256": "e6e63af57574b0c74b11e2bb8e52679e6eb68427420529fe50224b2bc3820041"
+    },
+    {
+      "path": "licenses/native-dependencies/marisa-trie/COPYING.md",
+      "bytes": 2284,
+      "sha256": "c0e214362b4dcf118371b02c87321f64a4d8317112d732b6d768167a635f383a"
+    },
+    {
+      "path": "licenses/native-dependencies/opencc/AUTHORS",
+      "bytes": 277,
+      "sha256": "cb34e252fa994679bcbfc8355581e821ceda44bd857875e2cfe15b7ec4eec006"
+    },
+    {
+      "path": "licenses/native-dependencies/opencc/LICENSE",
+      "bytes": 9165,
+      "sha256": "b534e465949558eec2597b04f5092b5e161236a68dfbfd04d547592ac3964308"
+    },
+    {
+      "path": "licenses/native-dependencies/utf8cpp/checked.h-NOTICE.txt",
+      "bytes": 1329,
+      "sha256": "ebd758544425cf8d60e3c3735807fddcd2bb82996df198547b034affbfb0d1fd"
+    },
+    {
+      "path": "licenses/native-dependencies/utf8cpp/core.h-NOTICE.txt",
+      "bytes": 1324,
+      "sha256": "1b45829b2934a146274162752708e2f3355aae05e13d78a2cf3a656540a553c1"
+    },
+    {
+      "path": "licenses/native-dependencies/utf8cpp/cpp17.h-NOTICE.txt",
+      "bytes": 1324,
+      "sha256": "23887e4a3ef24d8d7fd54f06bad675d730cd135ccbc12fa1f3dfb559844ac387"
+    },
+    {
+      "path": "licenses/native-dependencies/weasel/LICENSE.txt",
+      "bytes": 35821,
+      "sha256": "0b383d5a63da644f628d99c33976ea6487ed89aaa59f0b3257992deac1171e6b"
+    },
+    {
+      "path": "licenses/native-dependencies/winsparkle-0.8.1/AUTHORS",
+      "bytes": 263,
+      "sha256": "371d84677734c6478821943877de502539acfb97ae4dcce1b20216d4f82e1843"
+    },
+    {
+      "path": "licenses/native-dependencies/winsparkle-0.8.1/COPYING",
+      "bytes": 1213,
+      "sha256": "d236b139330d1456b8f392f8d10453e86c9a9375ec939566b234b9363a56535e"
+    },
+    {
+      "path": "licenses/native-dependencies/winsparkle-0.8.1/COPYING.expat",
+      "bytes": 1144,
+      "sha256": "46336ab2fec900803e2f1a4253e325ac01d998efb09bc6906651f7259e636f76"
+    },
+    {
+      "path": "licenses/native-dependencies/winsparkle-0.8.1/WEASEL-API-HEADER-NOTICE.txt",
+      "bytes": 1206,
+      "sha256": "cf9915fee9cf6512c7c755849cf78fbb44e283961a6519c4d763fd37c78fc649"
+    },
+    {
+      "path": "licenses/native-dependencies/wtl/MS-PL.txt",
+      "bytes": 2641,
+      "sha256": "9e2f669454f9bc20c8b33540cac66cfada1ed5130929807a9b63f08279749f9b"
+    },
+    {
+      "path": "licenses/native-dependencies/wtl/WTL-COPYRIGHT-NOTICE.txt",
+      "bytes": 386,
+      "sha256": "e275a97c31c900bb5ac33e98c8fff741c91133106d17d4724cc16cab79922b00"
+    },
+    {
+      "path": "licenses/native-dependencies/x11/keysym.h-NOTICE.txt",
+      "bytes": 2281,
+      "sha256": "4beeb94f9530a4e30dcd37d6277a5d3824c140d090323c82c9ccd5e5d9e72a7c"
+    },
+    {
+      "path": "licenses/native-dependencies/x11/keysymdef.h-NOTICE.txt",
+      "bytes": 2279,
+      "sha256": "6bbf351a5d24daecee82f85e7cd6db377e43d6f309b259e1feb6cb8aeee3c529"
+    },
+    {
+      "path": "licenses/native-dependencies/yaml-cpp/LICENSE",
+      "bytes": 1061,
+      "sha256": "aa6fcc27be034e41e21dd832f9175bfe694a48491d9e14ff0fa278e19ad14f1b"
     },
     {
       "path": "licenses/pde-terms-reference-GPL-3.0.txt",
@@ -1059,8 +1179,8 @@
     },
     {
       "path": "licenses/third-party-source-manifest.json",
-      "bytes": 27948,
-      "sha256": "c825208af75648c743b505bd2ccde6b4e5dcdbc94c750c17a32a9a56a85fd83b"
+      "bytes": 50944,
+      "sha256": "7517251892d6bc03bbc3fb6739d5ab394e3350fae5723617335717c158118f64"
     },
     {
       "path": "licenses/tools-Ice-GPL-3.0.txt",
@@ -1099,8 +1219,8 @@
     },
     {
       "path": "native/source-manifest.json",
-      "bytes": 12312,
-      "sha256": "4bf574ea71ee17f0ea38f66e4c09cfb734a946ce2e932985c4a036931b30afc9"
+      "bytes": 12326,
+      "sha256": "0527985b6cf0aee19da50a9243e8cfdb3e68ea274f24d5d401cc064abdec6e5f"
     },
     {
       "path": "native/tests/key-pairing/ControlledReadGrant.inc",

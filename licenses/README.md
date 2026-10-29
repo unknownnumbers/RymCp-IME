@@ -8,5 +8,6 @@
 - `english-core/`保存SymSpell、Google Books與SCOWL的8份完整來源/授權通知.
 - `radical-stroke/`保存Mirtle與rime-stroke的原授權、credits及AUTHORS.
 - `supplement/`保存額外補齊的上游通知, 來源URL、固定commit及SHA256見[manifest](third-party-source-manifest.json).
+- [native-dependencies/](native-dependencies/)保存原生構建所用依賴的授權與署名原文, 包括Boost、Darts、glog、GoogleTest、LevelDB、marisa、OpenCC、yaml-cpp、UTF8CPP、X11、WTL及WinSparkle. 固定來源、封存檔與抽取範圍見同一manifest.
 
 第三方原文、授權通知、來源引文及程式片段依各自條款保存. 生成資料保留所用來源的授權與署名.
