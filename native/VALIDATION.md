@@ -4,11 +4,13 @@
 
 ## 本次 61047 來源
 
-本次公開 Actions 的來源組裝、編譯與受控測試結果仍待完成. 腳本與測例已列入公開來源, 不表示當次 workflow 已成功執行.
+[公開原生CI](https://github.com/unknownnumbers/RymCp-IME/actions/runs/40879482063)已在提交`cf885750b13e5337acb724dd2e3fcea5ede6fb5f`以`compile=true`完成, 12個工作項目全部成功. 五個variant來源組裝、R5 x64/x86及N01 x64編譯、61042 Server、61047 TSF和61020 IME構建均通過. 三組引擎各通過34項production preedit helper檢查及上游CTest, 三個Weasel variant各通過兩架構36項Shift合成檢查.
 
 `compile=false` 核對來源組裝; `compile=true` 才啟動引擎與前端編譯, 以及 workflow 明列的受控測例. 來源組裝檢查覆蓋五個獨立 variant 及七份完整 patch. N01 只宣告 x64 執行時, R5 x64/x86 供前端構建與受控 fixture 使用.
 
-61047 按鍵配對檢查每架構要求 V13、V18、V19 各 45、16、34 項, 合計 95 項. 它使用真實 MSCTF manager、受控 COM context 及同次構建的 Server/R5 引擎 IPC. 報告位置及執行入口見[原生構建說明](BUILD.md); 項目數量是驗證條件, 並非本次公開 CI 的成功紀錄.
+61047按鍵配對檢查在x64及Win32各通過V13、V18、V19的45、16、34項, 每架構合計95項. 它使用真實MSCTF manager、受控COM context及同次構建的Server/R5引擎IPC. 測試後來源及乾淨產品輸出均成功還原, 報告位置及入口見[原生構建說明](BUILD.md).
+
+N01開發產物的構建紀錄顯示MSVC版本`19.44.35229.0`. 已核對其壓縮檔、DLL雜湊、來源manifest及68份隨附授權/署名通知, 均與發布來源記錄相符.
 
 ## 已完成的歷史公開檢查
 

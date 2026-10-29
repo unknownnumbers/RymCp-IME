@@ -54,8 +54,8 @@
     },
     {
       "path": "TODO.md",
-      "bytes": 2255,
-      "sha256": "7341e3892122df618242aa4aa33cdaf29adbc2912ba951a1f806bedb88d5c856"
+      "bytes": 2417,
+      "sha256": "082ed00e37dd99b5f4640c37985cc90cb953011704a3db4eb1a99619c7091801"
     },
     {
       "path": "config/pc/JAPANESE.md",
@@ -1189,13 +1189,13 @@
     },
     {
       "path": "native/BUILD.md",
-      "bytes": 7905,
-      "sha256": "64967c561897d7e0aab2daf8c699bd0135ce58f865f1d47b58de97e1c6761c33"
+      "bytes": 8024,
+      "sha256": "415439b553f71bfd2b7403990721ba489aef8bd2408b4adb650b1945529d1b27"
     },
     {
       "path": "native/VALIDATION.md",
-      "bytes": 2044,
-      "sha256": "265635c64cd94f0b4cb6bd5d578825fa4f32c05b75c2724eb3f0efd1f7b6a776"
+      "bytes": 2489,
+      "sha256": "b505f0b25f38ee915204632968c4122fbcdd74ff42aa47de00a03cabf6cb5900"
     },
     {
       "path": "native/engine/librime-lua-n01.patch",

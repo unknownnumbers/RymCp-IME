@@ -1,6 +1,6 @@
 # Windows 原生來源與構建
 
-本目錄提供實際採用的完整來源差異、固定上游及可執行的來源組裝/構建腳本. 本次更新為 61047 TSF、61042 x64 Server、61020 IME、N01 x64 執行時引擎與 R5 x64/x86 構建 SDK. 61047 的公開來源組裝與編譯驗證仍待當次 Actions 結果, 見[驗證範圍](VALIDATION.md).
+本目錄提供實際採用的完整來源差異、固定上游及可執行的來源組裝/構建腳本. 本次更新為 61047 TSF、61042 x64 Server、61020 IME、N01 x64 執行時引擎與 R5 x64/x86 構建 SDK. [公開CI](https://github.com/unknownnumbers/RymCp-IME/actions/runs/40879482063)已通過五組來源組裝、三組引擎構建、三組Weasel元件構建及兩架構按鍵配對檢查, 詳見[驗證範圍](VALIDATION.md).
 
 ## 來源與產品組合
 
