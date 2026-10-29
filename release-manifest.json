@@ -1,6 +1,6 @@
 {
   "format": "rymcp-source-release-v1",
-  "date": "2026-10-26",
+  "date": "2026-10-29",
   "kind": "source-configuration-data-snapshot",
   "nativeBinariesIncluded": false,
   "personalLearningIncluded": false,
@@ -14,8 +14,8 @@
     },
     {
       "path": ".github/workflows/native.yml",
-      "bytes": 5327,
-      "sha256": "f2e712efb541687236f6c7bfd124ed76f401d33971701261dea9a9a91fa8bf69"
+      "bytes": 8516,
+      "sha256": "ba093f76e02f33edfa8e9a250b7d8f1ac96de796aca53dfaab68eed62618f7bb"
     },
     {
       "path": ".github/workflows/verify.yml",
@@ -34,18 +34,18 @@
     },
     {
       "path": "README.en.md",
-      "bytes": 4781,
-      "sha256": "63ec1ebd9ef78d461a93981832c7a7a5e6d02d3c5ffb8e2eb30a4d7a090f6306"
+      "bytes": 5270,
+      "sha256": "54d0229f6c5e53de83f3fa91fa3f00e78ac375d6f9ace36a60297ab44165cebd"
     },
     {
       "path": "README.md",
-      "bytes": 3643,
-      "sha256": "5e6948c3e7ca775fa03babf5090bb677ec59e05b63de81ed7a25f8dc62a738f8"
+      "bytes": 4022,
+      "sha256": "5610fa9abe8c5ee8e6df050b17b4822321592f75dcbb12497c14d101e5d41a1a"
     },
     {
       "path": "README.zh-SC.md",
-      "bytes": 3650,
-      "sha256": "6df9e5f64e27ad1b15d609a236d93325f198f898d35f4e08da8d04a7109b5bb4"
+      "bytes": 4029,
+      "sha256": "447921a1c9fd18ad71baaf111cb86203f0252ad473e13709a3155029e9522628"
     },
     {
       "path": "THIRD_PARTY_NOTICES.md",
@@ -54,8 +54,8 @@
     },
     {
       "path": "TODO.md",
-      "bytes": 1993,
-      "sha256": "12c6e6105fc66cfb6959b18799efcb42b420a2bf8482f76cf381c35d79218ac9"
+      "bytes": 2255,
+      "sha256": "7341e3892122df618242aa4aa33cdaf29adbc2912ba951a1f806bedb88d5c856"
     },
     {
       "path": "config/pc/JAPANESE.md",
@@ -724,13 +724,13 @@
     },
     {
       "path": "docs/BUILD.md",
-      "bytes": 3575,
-      "sha256": "2b390edf34b6ca7074b49efdc65e56fe524a86e1a5c4871eeb5873a6a0e2e245"
+      "bytes": 3589,
+      "sha256": "7330e825e6d56e33675a80855fbf8a91741da358289bf9cc8c70409f50c8371a"
     },
     {
       "path": "docs/PC.md",
-      "bytes": 2502,
-      "sha256": "a3f13d74e66ce798cb45815172b25eb2ca7cb21e534929e40f24fefe11e2df69"
+      "bytes": 2957,
+      "sha256": "23f7da1c8ac2b1922f3566d0511cab84411d39526d277f1df420eca8d9bc4075"
     },
     {
       "path": "docs/sources/README.md",
@@ -789,8 +789,8 @@
     },
     {
       "path": "docs/sources/native-components.md",
-      "bytes": 2778,
-      "sha256": "26c3df99edbaede3648c73ba469183bcaeb91b6330b777a07896f42000258b98"
+      "bytes": 3156,
+      "sha256": "7669034db1c3ff87f6bf214a7f51d738e5b3361c79cbb257b5eb521ea9abcda9"
     },
     {
       "path": "docs/sources/pde-terms-sources.md",
@@ -919,8 +919,8 @@
     },
     {
       "path": "licenses/file-licenses.json",
-      "bytes": 101738,
-      "sha256": "d60f8618f19fe4b465b934e6c0a4e9b84a834ebee55faa5ec6b921b2a27c9c12"
+      "bytes": 108304,
+      "sha256": "2e6cfe0f9d9a413a3c6004d50a7d9ab291a3de0220df0c7232b8913fc412f554"
     },
     {
       "path": "licenses/luna-compact-model-LGPL-3.0.txt",
@@ -1069,13 +1069,13 @@
     },
     {
       "path": "native/BUILD.md",
-      "bytes": 6165,
-      "sha256": "1febe113d2b8c5283b99c50b3ac7b538ae7474c739629f496bfbe28e35e6210d"
+      "bytes": 7905,
+      "sha256": "64967c561897d7e0aab2daf8c699bd0135ce58f865f1d47b58de97e1c6761c33"
     },
     {
       "path": "native/VALIDATION.md",
-      "bytes": 1351,
-      "sha256": "efc9511c965fc82c4a629e9fd6b44992b544dd26b805cbc5723beec239e6a283"
+      "bytes": 2044,
+      "sha256": "265635c64cd94f0b4cb6bd5d578825fa4f32c05b75c2724eb3f0efd1f7b6a776"
     },
     {
       "path": "native/engine/librime-lua-n01.patch",
@@ -1099,8 +1099,63 @@
     },
     {
       "path": "native/source-manifest.json",
-      "bytes": 7780,
-      "sha256": "69f774889f4e9553dc70ef9a126a9ebe6ef06ffd19bb1e1f73e0e58448efd79b"
+      "bytes": 12312,
+      "sha256": "4bf574ea71ee17f0ea38f66e4c09cfb734a946ce2e932985c4a036931b30afc9"
+    },
+    {
+      "path": "native/tests/key-pairing/ControlledReadGrant.inc",
+      "bytes": 795,
+      "sha256": "0d95e50844a8f251677349dee7e70f97d5e043b49e8c16f532cd595e0789ff6c"
+    },
+    {
+      "path": "native/tests/key-pairing/Deploy-PublicFixture.py",
+      "bytes": 5159,
+      "sha256": "3e424aeb2b021dddd1125f98ae9a9b8a1382d2299c534e98b6f982b91a4b4323"
+    },
+    {
+      "path": "native/tests/key-pairing/Invoke-KeyPairingTests.ps1",
+      "bytes": 954,
+      "sha256": "95c18797436ce1497b6b1c09ff76f7b891fc521450f313f6b19ee879ebce54a5"
+    },
+    {
+      "path": "native/tests/key-pairing/ProductHostFixture.h",
+      "bytes": 27957,
+      "sha256": "b44f001a7c1442e429003434b839200e3bf7dd6a4695f22be6ca6f6527c0a284"
+    },
+    {
+      "path": "native/tests/key-pairing/ResponseOwnerProductTests.cpp",
+      "bytes": 117307,
+      "sha256": "530f65a8ab0c1a1391c8bcdbe5cb5a9e24088cc1e365ad166a1086a5177e4a49"
+    },
+    {
+      "path": "native/tests/key-pairing/Run-KeyPairingTests.ps1",
+      "bytes": 10656,
+      "sha256": "8626970fa939e51d94e5ede2d2611c9a900074043f3633b380edd3f41489b15f"
+    },
+    {
+      "path": "native/tests/key-pairing/SelectionControlledModes.inc",
+      "bytes": 4376,
+      "sha256": "ad079211a014049d6abf71066920016dc04ba41d3a8f0fd9fe4c9df8e874d144"
+    },
+    {
+      "path": "native/tests/key-pairing/fixture/b01_public_fixture.dict.yaml",
+      "bytes": 136,
+      "sha256": "001b3c53cd1ccfa223e518b60ce6a4a0a0e5cc2793c47a7560f69180cad0ed2f"
+    },
+    {
+      "path": "native/tests/key-pairing/fixture/default.yaml",
+      "bytes": 90,
+      "sha256": "afc5188c5129533c6dbf9309243b041a332431e598e116787534dc62f4ad4ebb"
+    },
+    {
+      "path": "native/tests/key-pairing/fixture/gui_test.schema.yaml",
+      "bytes": 731,
+      "sha256": "fa0ca63077994110547b422967b7ae50906c93632db494ae02e97acf6e16cfe4"
+    },
+    {
+      "path": "native/tests/key-pairing/fixture/weasel.yaml",
+      "bytes": 204,
+      "sha256": "9f2910f4bc2ca5072bf0717d202fa6528a0c50c363066cdaa95e5417d43949e1"
     },
     {
       "path": "native/tests/preedit_spacing_tests.cc",
@@ -1123,9 +1178,14 @@
       "sha256": "3c545186342577eb512a5448eb842fd30183714bfa1703649ae2caf0eacbf432"
     },
     {
-      "path": "native/weasel/weasel-61033.patch",
-      "bytes": 218515,
-      "sha256": "d6be3d8307997be6d46f54ce2519ede0f6eed6070d72554d3faab85fb99d4c72"
+      "path": "native/weasel/weasel-61047.patch",
+      "bytes": 499800,
+      "sha256": "b493db56ba3af701676ecf00bd7e791ac0562d52077e22ba48273426f6099b0a"
+    },
+    {
+      "path": "native/weasel/weasel-server-61042.patch",
+      "bytes": 489866,
+      "sha256": "c86b7d10f1ee1ba87dfd716d3c4f4b20e18428fc3728c9757434a9ea33ea6523"
     },
     {
       "path": "scripts/data/build_english_index.py",
@@ -1144,8 +1204,8 @@
     },
     {
       "path": "scripts/native/Apply-Patches.ps1",
-      "bytes": 1480,
-      "sha256": "9a6575f0a21022719e3a3ac108abb129c464e7b0bafaf31971b0f1bf23f240b5"
+      "bytes": 1502,
+      "sha256": "cc6909e139e7c3b14c2f0c46388da5535ca4e55df31e59c17d80172348d4f8f2"
     },
     {
       "path": "scripts/native/Build-Engine.ps1",
@@ -1154,8 +1214,8 @@
     },
     {
       "path": "scripts/native/Build-Weasel.ps1",
-      "bytes": 7857,
-      "sha256": "cf29629e950c82ade5eb1d3daf28abbe9c6bd190b3c28cb925b76239cd5fb0e1"
+      "bytes": 8444,
+      "sha256": "fe583571a70a7164a944a7e0feb142aa77839771cf0f60efc664027a96ffb775"
     },
     {
       "path": "scripts/native/Common.ps1",
@@ -1164,18 +1224,18 @@
     },
     {
       "path": "scripts/native/Prepare-Sources.ps1",
-      "bytes": 3106,
-      "sha256": "38cfdaa3f165c8e8aa4b843a7c3cfa685078e852446887caa0124852f88c8d7e"
+      "bytes": 3128,
+      "sha256": "2ecbe003edeae84abcf4e330a90d72cc9309b19582c80bd5d90919de20261ab9"
     },
     {
       "path": "scripts/native/Test-Inventory.ps1",
-      "bytes": 1724,
-      "sha256": "88a5c4738259033707b2c2c5fa849d7264b0da512d9f3552149ff040e4ac7904"
+      "bytes": 2914,
+      "sha256": "502102fedea93971ffe2be1813e11f48c95b60eb885d2e73530375776f39cfb0"
     },
     {
       "path": "scripts/verify_release.py",
       "bytes": 7827,
-      "sha256": "3109c070fc4b770c28bcb7ebdcf4335851c312b5458d1cef6a69167f357b9595"
+      "sha256": "b96eece77ef8b75d20e24a3f05874d4c8a409de95b5dbfdae9d9ab699842a8f6"
     },
     {
       "path": "tests/Probe-Configuration.ps1",

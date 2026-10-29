@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       compile:
-        description: Compile R5 SDKs, N01 x64 and both Weasel variants after source assembly
+        description: Compile R5 SDKs, N01 x64, TSF61047, Server61042, IME61020 and controlled key tests
         type: boolean
         default: false
         required: true
@@ -34,7 +34,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        variant: [weasel-61033, weasel-61020, engine-r5, engine-n01]
+        variant: [weasel-61047, weasel-server-61042, weasel-61020, engine-r5, engine-n01]
     steps:
       - uses: actions/checkout@v4
         with:
@@ -99,15 +99,64 @@ jobs:
           if-no-files-found: warn
           retention-days: 14
 
-  weasel:
+  weasel-server:
     needs: engine
+    if: ${{ inputs.compile }}
+    runs-on: windows-2022
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: microsoft/setup-msbuild@v2
+        with:
+          vs-version: '[17.0,18.0)'
+      - uses: ilammy/msvc-dev-cmd@v1
+        with:
+          arch: x64
+      - name: Get R5 x64 SDK from this workflow run
+        uses: actions/download-artifact@v4
+        with:
+          name: engine-r5-x64
+          path: ${{ runner.temp }}/sdk/engine-r5-x64
+      - name: Get R5 x86 SDK from this workflow run
+        uses: actions/download-artifact@v4
+        with:
+          name: engine-r5-x86
+          path: ${{ runner.temp }}/sdk/engine-r5-x86
+      - name: Assemble fixed 61042 Server sources
+        run: |
+          ./scripts/native/Prepare-Sources.ps1 -Variant 'weasel-server-61042' -Destination (Join-Path $env:RUNNER_TEMP 'weasel')
+      - name: Build the declared Server and controlled Shift fixtures
+        run: |
+          ./scripts/native/Build-Weasel.ps1 -Variant 'weasel-server-61042' -SourcePath (Join-Path $env:RUNNER_TEMP 'weasel') -SdkRoot (Join-Path $env:RUNNER_TEMP 'sdk') -CacheDirectory (Join-Path $env:RUNNER_TEMP 'native-cache') -OutputDirectory (Join-Path $env:RUNNER_TEMP 'weasel-output')
+      - name: Preserve successful Server output and source notices
+        uses: actions/upload-artifact@v4
+        with:
+          name: weasel-server-61042-development
+          path: ${{ runner.temp }}/weasel-output
+          if-no-files-found: error
+          retention-days: 14
+      - name: Preserve compiler diagnostics
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: failure-weasel-server-61042
+          path: |
+            ${{ runner.temp }}/weasel/ci-logs
+            ${{ runner.temp }}/weasel/msbuild*.log
+          if-no-files-found: warn
+          retention-days: 14
+
+  weasel:
+    needs: [engine, weasel-server]
     if: ${{ inputs.compile }}
     runs-on: windows-2022
     timeout-minutes: 90
     strategy:
       fail-fast: false
       matrix:
-        variant: [weasel-61033, weasel-61020]
+        variant: [weasel-61047, weasel-61020]
     steps:
       - uses: actions/checkout@v4
         with:
@@ -134,12 +183,36 @@ jobs:
       - name: Build the declared products and controlled Shift fixtures
         run: |
           ./scripts/native/Build-Weasel.ps1 -Variant '${{ matrix.variant }}' -SourcePath (Join-Path $env:RUNNER_TEMP 'weasel') -SdkRoot (Join-Path $env:RUNNER_TEMP 'sdk') -CacheDirectory (Join-Path $env:RUNNER_TEMP 'native-cache') -OutputDirectory (Join-Path $env:RUNNER_TEMP 'weasel-output')
+      - name: Get 61042 Server built in this workflow run
+        if: matrix.variant == 'weasel-61047'
+        uses: actions/download-artifact@v4
+        with:
+          name: weasel-server-61042-development
+          path: ${{ runner.temp }}/server61042
+      - name: Run production 61047 Test and Actual callback regressions
+        if: matrix.variant == 'weasel-61047'
+        run: |
+          $failed = @()
+          foreach ($architecture in @('x64','Win32')) {
+            try {
+              ./native/tests/key-pairing/Run-KeyPairingTests.ps1 -SourceRoot (Join-Path $env:RUNNER_TEMP 'weasel') -ServerOutputDirectory (Join-Path $env:RUNNER_TEMP 'server61042') -Architecture $architecture
+            } catch { $failed += ($architecture + ': ' + $_.Exception.Message) }
+          }
+          if ($failed.Count) { throw ($failed -join "`n") }
       - name: Preserve successful development output and source notices
         uses: actions/upload-artifact@v4
         with:
           name: ${{ matrix.variant }}-development
           path: ${{ runner.temp }}/weasel-output
           if-no-files-found: error
+          retention-days: 14
+      - name: Preserve actual controlled callback evidence
+        if: always() && matrix.variant == 'weasel-61047'
+        uses: actions/upload-artifact@v4
+        with:
+          name: key-pairing-weasel-61047
+          path: ${{ runner.temp }}/weasel/ci-logs/key-pairing-*
+          if-no-files-found: warn
           retention-days: 14
       - name: Preserve compiler diagnostics
         if: failure()

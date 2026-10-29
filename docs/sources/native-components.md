@@ -4,6 +4,8 @@
 
 本工程原生修改、構建腳本及測試的原創部分採GPL-3.0-only. 補丁中的上游原文與上下文保留原授權及署名, 包括librime、librime-lua與librime-predict的BSD-3-Clause條款. 各部分的範圍見[逐檔授權索引](../../licenses/file-licenses.json).
 
+目前 Weasel 來源分為 `weasel-61047` 的 x86/x64 TSF、`weasel-server-61042` 的 x64 Server 及 `weasel-61020` 的 x86/x64 IME. 三份完整補丁各自套在上述固定官方提交, 不依序疊加. 引擎另分為 N01 x64 執行時來源與 R5 x64/x86 前端構建 SDK; 詳細 patch、架構及產物清單見[原生來源 manifest](../../native/source-manifest.json).
+
 | 元件 | 固定commit | 保留通知 |
 | --- | --- | --- |
 | [librime](https://github.com/rime/librime/tree/1c23358157934bd6e6d6981f0c0164f05393b497) | `1c23358157934bd6e6d6981f0c0164f05393b497` | [BSD-3-Clause, ©2014 RIME Developers](../../licenses/supplement/librime-LICENSE.txt) |

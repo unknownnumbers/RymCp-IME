@@ -135,7 +135,7 @@ def main():
     if args.write_manifest:
         manifest = {
             'format': 'rymcp-source-release-v1',
-            'date': '2026-10-26',
+            'date': '2026-10-29',
             'kind': 'source-configuration-data-snapshot',
             'nativeBinariesIncluded': False,
             'personalLearningIncluded': False,

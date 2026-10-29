@@ -1,6 +1,6 @@
 # SPDX-License-Identifier: GPL-3.0-only
 param(
-    [Parameter(Mandatory)][ValidateSet('weasel-61033','weasel-61020','engine-r5','engine-n01')][string]$Variant,
+    [Parameter(Mandatory)][ValidateSet('weasel-61047','weasel-server-61042','weasel-61020','engine-r5','engine-n01')][string]$Variant,
     [Parameter(Mandatory)][string]$Destination
 )
 . (Join-Path $PSScriptRoot 'Common.ps1')

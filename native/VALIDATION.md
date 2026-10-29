@@ -1,15 +1,23 @@
-# 首次公開來源的驗證範圍
+# 公開原生來源的驗證範圍
 
-2026-10-26. 以下是發布準備時實際完成的本地唯讀檢查; 不是新公開Actions的成功紀錄.
+2026-10-29. 本次公開來源為 61047 TSF、61042 x64 Server、61020 IME、N01 x64 執行時引擎與 R5 x64/x86 構建 SDK. 來源組裝、原生編譯、受控測例與真實應用驗收分別記錄.
 
-- 六份完整patch的SHA256與`source-manifest.json`一致, Git可解析各份diff.
-- 七份PowerShell檔 (六個腳本及Shift測例runner) 全部通過PowerShell語法解析.
-- `weasel-61033`與`weasel-61020`在固定官方原始樹的唯讀`git apply --check`通過; Windows來源壓縮包只有一項檔案mode提示, 沒有內容衝突.
-- `engine-r5`與`engine-n01`的core/Lua patch, 對從固定官方提交URL取得的原始碼壓縮包唯讀套用檢查通過.
-- workflow與腳本未引用維護者私人倉庫、歷史Actions artifact或個人絕對路徑.
+## 本次 61047 來源
 
-壓縮包檢查只證明patch上下文匹配, 沒有驗證Git checkout身份或submodule組裝. 新公開workflow的網路來源組裝仍須實跑確認; 編譯、helper34、Shift36、上游CTest和完整產品/真應用輸入測試也沒有在本輪本地執行. Actions的`compile=false`只核對來源組裝; `compile=true`才啟動編譯及本倉庫明列的受控測例.
+本次公開 Actions 的來源組裝、編譯與受控測試結果仍待完成. 腳本與測例已列入公開來源, 不表示當次 workflow 已成功執行.
 
-所有結果應以檢查範圍單獨表達. 過去日用構建成功不等於這份新公開workflow已成功; 來源公開也不等於提供了可直接安裝的二進位發行包.
+`compile=false` 核對來源組裝; `compile=true` 才啟動引擎與前端編譯, 以及 workflow 明列的受控測例. 來源組裝檢查覆蓋五個獨立 variant 及七份完整 patch. N01 只宣告 x64 執行時, R5 x64/x86 供前端構建與受控 fixture 使用.
 
-本文採CC BY-SA4.0; 第三方原始碼和通知的授權不因此改變.
+61047 按鍵配對檢查每架構要求 V13、V18、V19 各 45、16、34 項, 合計 95 項. 它使用真實 MSCTF manager、受控 COM context 及同次構建的 Server/R5 引擎 IPC. 報告位置及執行入口見[原生構建說明](BUILD.md); 項目數量是驗證條件, 並非本次公開 CI 的成功紀錄.
+
+## 已完成的歷史公開檢查
+
+[61033 公開來源組裝](https://github.com/unknownnumbers/RymCp-IME/actions/runs/40249570384)已成功, 使用 `compile=false`. 該次結果覆蓋當時的 `weasel-61033`、`weasel-61020`、`engine-r5` 與 `engine-n01` 來源組裝, 沒有執行原生編譯器, 也不代替本次 61047 來源的檢查.
+
+配置與日語資料的既有隔離檢查結果見[構建說明](../docs/BUILD.md). 它們驗證本工程現有規則, 不等於所有桌面應用均已驗收.
+
+## 結果界線
+
+原生測例使用新建立的公開 fixture, 不讀取個人學習庫或日用配置. 合成回呼與受控引擎結果只覆蓋明列的操作, 不能據此宣稱自然按鍵派送、所有宿主相容性或全部歷史測例已通過. Ctrl+Space 在不同輸入焦點間的中英狀態同步仍列於[待辦](../TODO.md).
+
+來源公開與開發構建輸出不表示提供了可直接安裝的二進位發行包. 本工程原創說明文字採 CC BY-SA 4.0; 第三方原始碼和通知保留各自授權.

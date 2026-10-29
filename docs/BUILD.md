@@ -1,15 +1,16 @@
 # 源碼與構建
 
-本倉庫以固定上游提交及完整補丁提供原生修改, 構建步驟見[native/BUILD.md](../native/BUILD.md). 源碼組裝與原生編譯分開驗證; 首次公開不提供安裝器, 也不自動部署到現用環境.
+本倉庫以固定上游提交及完整補丁提供原生修改, 構建步驟見[native/BUILD.md](../native/BUILD.md). 源碼組裝與原生編譯分開驗證; 本次提供源碼與配置, 不含獨立安裝器.
 
 ## 原生來源
 
-- Weasel的61033完整補丁對應TSF及服務.
-- Weasel的61020完整補丁對應保留的IME, 在另一棵原始樹套用.
-- librime及librime-lua的N01完整補丁對應step-only引擎.
-- 如需歷史前端的R5 SDK條件, 另從其固定源碼與補丁構建; 不用私有Actions舊產物作依賴.
+- Weasel 的 `weasel-61047` 完整補丁對應 x86/x64 TSF.
+- Weasel 的 `weasel-server-61042` 完整補丁對應 x64 Server.
+- Weasel 的 `weasel-61020` 完整補丁對應保留的 x86/x64 IME.
+- librime 及 librime-lua 的 `engine-n01` 完整補丁對應 step-only N01 x64 執行時引擎.
+- `engine-r5` 另從固定源碼與補丁構建 x64/x86 前端 SDK.
 
-兩份Weasel補丁不能順序疊加. 工具鏈、submodules、外部依賴、下載與測試入口由原生manifest及workflow列出. 公開Actions應只串接當次構建產物, 不能依賴維護者的私人倉庫、歷史run或個人資料路徑.
+三份 Weasel 補丁各自套在相同固定官方提交, 不能順序疊加. 工具鏈、submodules、外部依賴、下載與測試入口由原生 manifest 及 workflow 列出. 公開 Actions 只串接當次構建產物.
 
 ## 配置與資料
 

@@ -1,6 +1,6 @@
 # SPDX-License-Identifier: GPL-3.0-only
 param(
-    [Parameter(Mandatory)][ValidateSet('weasel-61033','weasel-61020')][string]$Variant,
+    [Parameter(Mandatory)][ValidateSet('weasel-61047','weasel-server-61042','weasel-61020')][string]$Variant,
     [Parameter(Mandatory)][string]$SourcePath,
     [Parameter(Mandatory)][string]$SdkRoot,
     [Parameter(Mandatory)][string]$CacheDirectory,
@@ -9,6 +9,7 @@ param(
 . (Join-Path $PSScriptRoot 'Common.ps1')
 if (-not $IsWindows) { throw 'This recipe targets the Windows MSVC toolchain.' }
 $manifest = Get-NativeManifest
+$variantSpec = $manifest.variants[$Variant]
 $source = (Resolve-Path -LiteralPath $SourcePath).Path
 Assert-NativeAssembly $source $Variant
 if (Test-Path -LiteralPath $OutputDirectory) { throw 'Use a new output directory.' }
@@ -29,8 +30,13 @@ if (-not (Test-Path -LiteralPath (Join-Path $cache 'boost_1_84_0/boost/version.h
 $env:BOOST_ROOT = Join-Path $cache 'boost_1_84_0'
 $env:boost_version = '1.84.0'
 $env:RELEASE_BUILD = '1'
-$env:WEASEL_BUILD = $Variant.Substring('weasel-'.Length)
-$env:FILE_VERSION = "0.17.4.$($env:WEASEL_BUILD)"
+$env:WEASEL_BUILD = $variantSpec.buildNumber
+$env:FILE_VERSION = $variantSpec.sourceVersion
+$env:PRODUCT_VERSION = $variantSpec.sourceVersion
+$env:VERSION_MAJOR = '0'
+$env:VERSION_MINOR = '17'
+$env:VERSION_PATCH = '4'
+$env:PLATFORM_TOOLSET = 'v143'
 Copy-Item -LiteralPath (Join-Path $source 'env.vs2022.bat') -Destination (Join-Path $source 'env.bat')
 foreach ($arch in @('x64','x86')) {
     $sdk = Join-Path $SdkRoot "engine-r5-$arch"
@@ -72,14 +78,15 @@ try {
             }
         }
     }
-    & .\build.bat weasel rebuild 2>&1 | Tee-Object -FilePath (Join-Path $logs 'weasel-build.log')
-    if ($LASTEXITCODE -ne 0) { throw 'Weasel compilation failed.' }
-    if ($Variant -ceq 'weasel-61033') {
-        foreach ($platform in @('x64','Win32')) {
-            & msbuild weasel.sln /m /t:WeaselTSF:Rebuild /p:Configuration=Release "/p:Platform=$platform" /v:minimal 2>&1 |
-                Tee-Object -FilePath (Join-Path $logs "tsf-final-$platform-build.log")
-            if ($LASTEXITCODE -ne 0) { throw "Final TSF rebuild failed: $platform" }
-        }
+    & cscript.exe //nologo render.js weasel.props BOOST_ROOT PLATFORM_TOOLSET VERSION_MAJOR VERSION_MINOR VERSION_PATCH PRODUCT_VERSION FILE_VERSION 2>&1 |
+        Tee-Object -FilePath (Join-Path $logs 'generate-properties.log')
+    if ($LASTEXITCODE -ne 0) { throw 'Weasel property generation failed.' }
+    # Build only this source variant's declared product and its project references.
+    # TSF and IME therefore never share a target/PDB output in the same assembly.
+    foreach ($platform in $variantSpec.platforms) {
+        & msbuild weasel.sln /m "/t:$($variantSpec.msbuildTarget):Rebuild" /p:Configuration=Release "/p:Platform=$platform" /v:minimal 2>&1 |
+            Tee-Object -FilePath (Join-Path $logs "$($variantSpec.msbuildTarget)-$platform-build.log")
+        if ($LASTEXITCODE -ne 0) { throw "Declared Weasel product compilation failed: $Variant / $platform" }
     }
     foreach ($platform in @('x64','Win32')) {
         & (Get-NativeRepositoryPath 'native/tests/shift/Run-ShiftKeySnapshotTests.ps1') -Platform $platform -SourceRoot $source
@@ -97,7 +104,7 @@ if (@(Get-ChildItem -LiteralPath (Join-Path $source 'output') -Recurse -File -Fi
 }
 New-Item -ItemType Directory -Path $OutputDirectory | Out-Null
 $products = @()
-foreach ($name in $manifest.variants[$Variant].products) {
+foreach ($name in $variantSpec.products) {
     $path = Join-Path $source "output/$name"
     $machine = if ($name -ceq 'WeaselServer.exe' -or $name.Contains('x64')) { 0x8664 } else { 0x014c }
     Assert-NativePe $path $machine
@@ -109,6 +116,7 @@ Copy-Item -LiteralPath (Join-Path $source 'native-source-assembly.json') -Destin
 Copy-NativeSourceNotices $OutputDirectory
 [ordered]@{
     schema='rymcp-native-build/1'; variant=$Variant; sourceVersion=$env:FILE_VERSION
+    msbuildTarget=$variantSpec.msbuildTarget; platforms=$variantSpec.platforms
     compilationPassed=$true; controlledShiftChecksPerArchitecture=36
     completeProductRegressionRun=$false; realHostInputTested=$false; installerBuilt=$false; installed=$false
     sdk='R5 x64/x86 rebuilt in this workflow'; runtimeEngine='N01 x64 is a separate engine artifact'

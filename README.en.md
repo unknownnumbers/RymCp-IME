@@ -24,6 +24,8 @@ The initial release provides Windows PC source and configuration. A standalone i
 
 The configuration uses the accompanying frontend and engine interfaces. See the [PC guide](docs/PC.md), [Japanese guide](config/pc/JAPANESE.md) and [build guide](docs/BUILD.md).
 
+The current native components are TSF 61047, x64 Server 61042, IME 61020 and the N01 x64 runtime engine; R5 x64/x86 provides the frontend build SDK. Version 61047 corrects key handling decisions: Test callbacks obtain the engine's actual handled result, and matching Actual callbacks acknowledge completed processing without resending keys or writing text twice. This update provides source and configuration. See the [native build guide](native/BUILD.md) for public verification status.
+
 ## The idea behind relearning home speech
 
 Some people are comfortable with Mandarin, Hanyu Pinyin, Zhuyin or Wubi, but no longer remember how words are pronounced in their home speech. This project aims to organize spelling rules, IPA and character/word readings for local speech varieties, so that users can:

@@ -1,10 +1,11 @@
 {
   "schema": "rymcp-native-sources/1",
-  "date": "2026-10-26",
+  "date": "2026-10-29",
   "status": "source-release-public-build-workflow-not-yet-validated",
   "productComposition": {
-    "tsfAndX64Server": "0.17.4.61033",
-    "legacyIme": "0.17.4.61020",
+    "tsf": "0.17.4.61047; x64 and x86",
+    "x64Server": "0.17.4.61042",
+    "legacyIme": "0.17.4.61020; x64 and x86",
     "runtimeEngine": "N01 with step-only GC; x64",
     "frontendBuildSdk": "R5; x64 and x86; rebuilt in the same workflow",
     "installerProvided": false
@@ -49,9 +50,15 @@
   },
   "patches": [
     {
-      "id": "weasel61033",
-      "path": "native/weasel/weasel-61033.patch",
-      "sha256": "d6be3d8307997be6d46f54ce2519ede0f6eed6070d72554d3faab85fb99d4c72",
+      "id": "weasel61047",
+      "path": "native/weasel/weasel-61047.patch",
+      "sha256": "b493db56ba3af701676ecf00bd7e791ac0562d52077e22ba48273426f6099b0a",
+      "source": "weasel"
+    },
+    {
+      "id": "weaselServer61042",
+      "path": "native/weasel/weasel-server-61042.patch",
+      "sha256": "c86b7d10f1ee1ba87dfd716d3c4f4b20e18428fc3728c9757434a9ea33ea6523",
       "source": "weasel"
     },
     {
@@ -86,18 +93,43 @@
     }
   ],
   "variants": {
-    "weasel-61033": {
+    "weasel-61047": {
       "rootSource": "weasel",
       "components": [
         {
           "path": ".",
           "source": "weasel",
-          "patch": "weasel61033"
+          "patch": "weasel61047"
         }
+      ],
+      "sourceVersion": "0.17.4.61047",
+      "buildNumber": "61047",
+      "msbuildTarget": "WeaselTSF",
+      "platforms": [
+        "x64",
+        "Win32"
       ],
       "products": [
         "weasel.dll",
-        "weaselx64.dll",
+        "weaselx64.dll"
+      ]
+    },
+    "weasel-server-61042": {
+      "rootSource": "weasel",
+      "components": [
+        {
+          "path": ".",
+          "source": "weasel",
+          "patch": "weaselServer61042"
+        }
+      ],
+      "sourceVersion": "0.17.4.61042",
+      "buildNumber": "61042",
+      "msbuildTarget": "WeaselServer",
+      "platforms": [
+        "x64"
+      ],
+      "products": [
         "WeaselServer.exe"
       ]
     },
@@ -109,6 +141,13 @@
           "source": "weasel",
           "patch": "weasel61020"
         }
+      ],
+      "sourceVersion": "0.17.4.61020",
+      "buildNumber": "61020",
+      "msbuildTarget": "WeaselIME",
+      "platforms": [
+        "x64",
+        "Win32"
       ],
       "products": [
         "weasel.ime",
@@ -221,6 +260,61 @@
       "path": "native/tests/shift/Run-ShiftKeySnapshotTests.ps1",
       "sha256": "4d21ac6756cb60cebe2900dcde3f67115a66fad475f189325eb3c251d180e759",
       "scope": "Hosted-CI-only fixture runner"
+    },
+    {
+      "path": "native/tests/key-pairing/ControlledReadGrant.inc",
+      "sha256": "0d95e50844a8f251677349dee7e70f97d5e043b49e8c16f532cd595e0789ff6c",
+      "scope": "V13/V18/V19: 95 production Test/Actual callback checks per architecture; controlled COM context and same-run 61042 Server with R5 engine IPC"
+    },
+    {
+      "path": "native/tests/key-pairing/Deploy-PublicFixture.py",
+      "sha256": "3e424aeb2b021dddd1125f98ae9a9b8a1382d2299c534e98b6f982b91a4b4323",
+      "scope": "V13/V18/V19: 95 production Test/Actual callback checks per architecture; controlled COM context and same-run 61042 Server with R5 engine IPC"
+    },
+    {
+      "path": "native/tests/key-pairing/fixture/b01_public_fixture.dict.yaml",
+      "sha256": "001b3c53cd1ccfa223e518b60ce6a4a0a0e5cc2793c47a7560f69180cad0ed2f",
+      "scope": "V13/V18/V19: 95 production Test/Actual callback checks per architecture; controlled COM context and same-run 61042 Server with R5 engine IPC"
+    },
+    {
+      "path": "native/tests/key-pairing/fixture/default.yaml",
+      "sha256": "afc5188c5129533c6dbf9309243b041a332431e598e116787534dc62f4ad4ebb",
+      "scope": "V13/V18/V19: 95 production Test/Actual callback checks per architecture; controlled COM context and same-run 61042 Server with R5 engine IPC"
+    },
+    {
+      "path": "native/tests/key-pairing/fixture/gui_test.schema.yaml",
+      "sha256": "fa0ca63077994110547b422967b7ae50906c93632db494ae02e97acf6e16cfe4",
+      "scope": "V13/V18/V19: 95 production Test/Actual callback checks per architecture; controlled COM context and same-run 61042 Server with R5 engine IPC"
+    },
+    {
+      "path": "native/tests/key-pairing/fixture/weasel.yaml",
+      "sha256": "9f2910f4bc2ca5072bf0717d202fa6528a0c50c363066cdaa95e5417d43949e1",
+      "scope": "V13/V18/V19: 95 production Test/Actual callback checks per architecture; controlled COM context and same-run 61042 Server with R5 engine IPC"
+    },
+    {
+      "path": "native/tests/key-pairing/Invoke-KeyPairingTests.ps1",
+      "sha256": "95c18797436ce1497b6b1c09ff76f7b891fc521450f313f6b19ee879ebce54a5",
+      "scope": "V13/V18/V19: 95 production Test/Actual callback checks per architecture; controlled COM context and same-run 61042 Server with R5 engine IPC"
+    },
+    {
+      "path": "native/tests/key-pairing/ProductHostFixture.h",
+      "sha256": "b44f001a7c1442e429003434b839200e3bf7dd6a4695f22be6ca6f6527c0a284",
+      "scope": "V13/V18/V19: 95 production Test/Actual callback checks per architecture; controlled COM context and same-run 61042 Server with R5 engine IPC"
+    },
+    {
+      "path": "native/tests/key-pairing/ResponseOwnerProductTests.cpp",
+      "sha256": "530f65a8ab0c1a1391c8bcdbe5cb5a9e24088cc1e365ad166a1086a5177e4a49",
+      "scope": "V13/V18/V19: 95 production Test/Actual callback checks per architecture; controlled COM context and same-run 61042 Server with R5 engine IPC"
+    },
+    {
+      "path": "native/tests/key-pairing/Run-KeyPairingTests.ps1",
+      "sha256": "8626970fa939e51d94e5ede2d2611c9a900074043f3633b380edd3f41489b15f",
+      "scope": "V13/V18/V19: 95 production Test/Actual callback checks per architecture; controlled COM context and same-run 61042 Server with R5 engine IPC"
+    },
+    {
+      "path": "native/tests/key-pairing/SelectionControlledModes.inc",
+      "sha256": "ad079211a014049d6abf71066920016dc04ba41d3a8f0fd9fe4c9df8e874d144",
+      "scope": "V13/V18/V19: 95 production Test/Actual callback checks per architecture; controlled COM context and same-run 61042 Server with R5 engine IPC"
     }
   ],
   "toolchain": {

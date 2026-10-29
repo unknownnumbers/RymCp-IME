@@ -2728,6 +2728,204 @@
       ]
     },
     {
+      "path": "native/tests/key-pairing/ControlledReadGrant.inc",
+      "kind": "program-or-configuration",
+      "project_license": "GPL-3.0-only",
+      "license_scope": "Original project additions, fixtures and modifications; retained upstream expression keeps its original terms.",
+      "source_ids": [
+        "project",
+        "native_weasel"
+      ],
+      "retained_upstream_terms": [
+        "GPL-3.0"
+      ],
+      "references": [
+        "LICENSE",
+        "native/BUILD.md",
+        "native/source-manifest.json"
+      ]
+    },
+    {
+      "path": "native/tests/key-pairing/Deploy-PublicFixture.py",
+      "kind": "program-or-configuration",
+      "project_license": "GPL-3.0-only",
+      "license_scope": "Original project additions, fixtures and modifications; retained upstream expression keeps its original terms.",
+      "source_ids": [
+        "project",
+        "native_weasel"
+      ],
+      "retained_upstream_terms": [
+        "GPL-3.0"
+      ],
+      "references": [
+        "LICENSE",
+        "native/BUILD.md",
+        "native/source-manifest.json"
+      ]
+    },
+    {
+      "path": "native/tests/key-pairing/Invoke-KeyPairingTests.ps1",
+      "kind": "program-or-configuration",
+      "project_license": "GPL-3.0-only",
+      "license_scope": "Original project additions, fixtures and modifications; retained upstream expression keeps its original terms.",
+      "source_ids": [
+        "project",
+        "native_weasel"
+      ],
+      "retained_upstream_terms": [
+        "GPL-3.0"
+      ],
+      "references": [
+        "LICENSE",
+        "native/BUILD.md",
+        "native/source-manifest.json"
+      ]
+    },
+    {
+      "path": "native/tests/key-pairing/ProductHostFixture.h",
+      "kind": "program-or-configuration",
+      "project_license": "GPL-3.0-only",
+      "license_scope": "Original project additions, fixtures and modifications; retained upstream expression keeps its original terms.",
+      "source_ids": [
+        "project",
+        "native_weasel"
+      ],
+      "retained_upstream_terms": [
+        "GPL-3.0"
+      ],
+      "references": [
+        "LICENSE",
+        "native/BUILD.md",
+        "native/source-manifest.json"
+      ]
+    },
+    {
+      "path": "native/tests/key-pairing/ResponseOwnerProductTests.cpp",
+      "kind": "program-or-configuration",
+      "project_license": "GPL-3.0-only",
+      "license_scope": "Original project additions, fixtures and modifications; retained upstream expression keeps its original terms.",
+      "source_ids": [
+        "project",
+        "native_weasel"
+      ],
+      "retained_upstream_terms": [
+        "GPL-3.0"
+      ],
+      "references": [
+        "LICENSE",
+        "native/BUILD.md",
+        "native/source-manifest.json"
+      ]
+    },
+    {
+      "path": "native/tests/key-pairing/Run-KeyPairingTests.ps1",
+      "kind": "program-or-configuration",
+      "project_license": "GPL-3.0-only",
+      "license_scope": "Original project additions, fixtures and modifications; retained upstream expression keeps its original terms.",
+      "source_ids": [
+        "project",
+        "native_weasel"
+      ],
+      "retained_upstream_terms": [
+        "GPL-3.0"
+      ],
+      "references": [
+        "LICENSE",
+        "native/BUILD.md",
+        "native/source-manifest.json"
+      ]
+    },
+    {
+      "path": "native/tests/key-pairing/SelectionControlledModes.inc",
+      "kind": "program-or-configuration",
+      "project_license": "GPL-3.0-only",
+      "license_scope": "Original project additions, fixtures and modifications; retained upstream expression keeps its original terms.",
+      "source_ids": [
+        "project",
+        "native_weasel"
+      ],
+      "retained_upstream_terms": [
+        "GPL-3.0"
+      ],
+      "references": [
+        "LICENSE",
+        "native/BUILD.md",
+        "native/source-manifest.json"
+      ]
+    },
+    {
+      "path": "native/tests/key-pairing/fixture/b01_public_fixture.dict.yaml",
+      "kind": "program-or-configuration",
+      "project_license": "GPL-3.0-only",
+      "license_scope": "Original project additions, fixtures and modifications; retained upstream expression keeps its original terms.",
+      "source_ids": [
+        "project",
+        "native_weasel"
+      ],
+      "retained_upstream_terms": [
+        "GPL-3.0"
+      ],
+      "references": [
+        "LICENSE",
+        "native/BUILD.md",
+        "native/source-manifest.json"
+      ]
+    },
+    {
+      "path": "native/tests/key-pairing/fixture/default.yaml",
+      "kind": "program-or-configuration",
+      "project_license": "GPL-3.0-only",
+      "license_scope": "Original project additions, fixtures and modifications; retained upstream expression keeps its original terms.",
+      "source_ids": [
+        "project",
+        "native_weasel"
+      ],
+      "retained_upstream_terms": [
+        "GPL-3.0"
+      ],
+      "references": [
+        "LICENSE",
+        "native/BUILD.md",
+        "native/source-manifest.json"
+      ]
+    },
+    {
+      "path": "native/tests/key-pairing/fixture/gui_test.schema.yaml",
+      "kind": "program-or-configuration",
+      "project_license": "GPL-3.0-only",
+      "license_scope": "Original project additions, fixtures and modifications; retained upstream expression keeps its original terms.",
+      "source_ids": [
+        "project",
+        "native_weasel"
+      ],
+      "retained_upstream_terms": [
+        "GPL-3.0"
+      ],
+      "references": [
+        "LICENSE",
+        "native/BUILD.md",
+        "native/source-manifest.json"
+      ]
+    },
+    {
+      "path": "native/tests/key-pairing/fixture/weasel.yaml",
+      "kind": "program-or-configuration",
+      "project_license": "GPL-3.0-only",
+      "license_scope": "Original project additions, fixtures and modifications; retained upstream expression keeps its original terms.",
+      "source_ids": [
+        "project",
+        "native_weasel"
+      ],
+      "retained_upstream_terms": [
+        "GPL-3.0"
+      ],
+      "references": [
+        "LICENSE",
+        "native/BUILD.md",
+        "native/source-manifest.json"
+      ]
+    },
+    {
       "path": "native/tests/preedit_spacing_tests.cc",
       "kind": "program-or-configuration",
       "project_license": "GPL-3.0-only",
@@ -2792,22 +2990,39 @@
       ]
     },
     {
-      "path": "native/weasel/weasel-61033.patch",
+      "path": "native/weasel/weasel-61047.patch",
       "kind": "program-or-configuration",
       "project_license": "GPL-3.0-only",
-      "license_scope": "Original project additions and modifications; retained upstream expression keeps its original terms.",
+      "license_scope": "Original project additions, fixtures and modifications; retained upstream expression keeps its original terms.",
+      "source_ids": [
+        "project",
+        "native_weasel"
+      ],
       "retained_upstream_terms": [
         "GPL-3.0"
       ],
       "references": [
         "LICENSE",
-        "docs/sources/native-components.md",
         "native/BUILD.md",
         "native/source-manifest.json"
-      ],
+      ]
+    },
+    {
+      "path": "native/weasel/weasel-server-61042.patch",
+      "kind": "program-or-configuration",
+      "project_license": "GPL-3.0-only",
+      "license_scope": "Original project additions, fixtures and modifications; retained upstream expression keeps its original terms.",
       "source_ids": [
         "project",
         "native_weasel"
+      ],
+      "retained_upstream_terms": [
+        "GPL-3.0"
+      ],
+      "references": [
+        "LICENSE",
+        "native/BUILD.md",
+        "native/source-manifest.json"
       ]
     },
     {
