@@ -1,0 +1,109 @@
+name: Scheme packages and runtime checks
+
+on:
+  push:
+    branches: [main, release/2026.11.14]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  source:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install PyYAML==6.0.2
+      - name: Rebuild fixed public base data
+        run: |
+          python scripts/data/rebuild_base.py
+          git diff --exit-code -- config sources/base-build.json
+      - run: python scripts/verify_release.py --require-yaml
+      - run: python config/pc/tools/validate-japanese-base.py --directory config/pc
+      - run: python scripts/data/rebuild_japanese_family_q.py --check
+
+  runtime:
+    needs: source
+    runs-on: windows-2022
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Extract pinned public runtimes
+        shell: powershell
+        run: scripts/schemes/Prepare-ValidationEngines.ps1 -OutputDirectory "$env:RUNNER_TEMP/rymcp-engines"
+      - name: Official Weasel Chinese and smart English
+        shell: powershell
+        run: scripts/schemes/Test-OfficialProfile.ps1 -EngineDir "$env:RUNNER_TEMP/rymcp-engines/official-x64" -SharedDir "$env:RUNNER_TEMP/rymcp-engines/official-extracted/data" -WorkRoot "$env:RUNNER_TEMP/official-scheme-tests"
+      - name: Full scheme N01 x64
+        shell: powershell
+        run: scripts/schemes/Test-FullProfile.ps1 -EngineDir "$env:RUNNER_TEMP/rymcp-engines/stellae-x64" -SharedDir "$env:RUNNER_TEMP/rymcp-engines/official-extracted/data" -WorkRoot "$env:RUNNER_TEMP/full-x64-tests"
+      - name: Full scheme R5 Win32
+        shell: powershell
+        run: |
+          & "$env:WINDIR/SysWOW64/WindowsPowerShell/v1.0/powershell.exe" -NoProfile -ExecutionPolicy Bypass -File scripts/schemes/Test-FullProfile.ps1 -EngineDir "$env:RUNNER_TEMP/rymcp-engines/stellae-Win32" -SharedDir "$env:RUNNER_TEMP/rymcp-engines/official-extracted/data" -WorkRoot "$env:RUNNER_TEMP/full-Win32-tests"
+          if ($LASTEXITCODE -ne 0) { throw 'Win32 scheme checks failed.' }
+      - name: DLC lifecycle and actual modules N01 x64
+        shell: powershell
+        run: scripts/schemes/Test-DlcRuntime.ps1 -EngineDir "$env:RUNNER_TEMP/rymcp-engines/stellae-x64" -SharedDir "$env:RUNNER_TEMP/rymcp-engines/official-extracted/data" -WorkRoot "$env:RUNNER_TEMP/dlc-x64-tests" -Profile pc
+      - name: DLC lifecycle and actual modules official x64
+        shell: powershell
+        run: scripts/schemes/Test-DlcRuntime.ps1 -EngineDir "$env:RUNNER_TEMP/rymcp-engines/official-x64" -SharedDir "$env:RUNNER_TEMP/rymcp-engines/official-extracted/data" -WorkRoot "$env:RUNNER_TEMP/dlc-official-tests" -Profile official-weasel
+      - name: DLC lifecycle and actual modules R5 Win32
+        shell: powershell
+        run: |
+          & "$env:WINDIR/SysWOW64/WindowsPowerShell/v1.0/powershell.exe" -NoProfile -ExecutionPolicy Bypass -File scripts/schemes/Test-DlcRuntime.ps1 -EngineDir "$env:RUNNER_TEMP/rymcp-engines/stellae-Win32" -SharedDir "$env:RUNNER_TEMP/rymcp-engines/official-extracted/data" -WorkRoot "$env:RUNNER_TEMP/dlc-Win32-tests" -Profile pc
+          if ($LASTEXITCODE -ne 0) { throw 'Win32 DLC checks failed.' }
+      - name: Retain fixed-case validation summaries
+        uses: actions/upload-artifact@v4
+        with:
+          name: scheme-validation
+          if-no-files-found: error
+          path: |
+            ${{ runner.temp }}/rymcp-engines/runtimes.json
+            ${{ runner.temp }}/official-scheme-tests/validation.json
+            ${{ runner.temp }}/official-scheme-tests/*-results/results.json
+            ${{ runner.temp }}/full-x64-tests/validation.json
+            ${{ runner.temp }}/full-x64-tests/*-results/results.json
+            ${{ runner.temp }}/full-Win32-tests/validation.json
+            ${{ runner.temp }}/full-Win32-tests/*-results/results.json
+            ${{ runner.temp }}/dlc-x64-tests/validation.json
+            ${{ runner.temp }}/dlc-x64-tests/*/results.json
+            ${{ runner.temp }}/dlc-x64-tests/profile-lifecycle/capacity-*.json
+            ${{ runner.temp }}/dlc-official-tests/validation.json
+            ${{ runner.temp }}/dlc-official-tests/*/results.json
+            ${{ runner.temp }}/dlc-official-tests/profile-lifecycle/capacity-*.json
+            ${{ runner.temp }}/dlc-Win32-tests/validation.json
+            ${{ runner.temp }}/dlc-Win32-tests/*/results.json
+            ${{ runner.temp }}/dlc-Win32-tests/profile-lifecycle/capacity-*.json
+
+  packages:
+    needs: runtime
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Build reviewed scheme archives
+        run: python scripts/build_scheme_packages.py --output-dir out/schemes --version 2026.11.14 --source-ref "$GITHUB_SHA"
+      - name: Record archive hashes
+        working-directory: out/schemes
+        run: sha256sum *.zip > SHA256SUMS.txt
+      - uses: actions/upload-artifact@v4
+        with:
+          name: scheme-packages-2026.11.14
+          if-no-files-found: error
+          path: out/schemes/*

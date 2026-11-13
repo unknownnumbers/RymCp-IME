@@ -1,0 +1,12 @@
+patch:
+  schema_list:
+    - schema: pc_research
+  menu/page_size: 6
+  switcher/hotkeys: [Control+grave]
+  key_binder/bindings:
+    - {when: composing, accept: Control+g, send: BackSpace}
+    - {when: composing, accept: Control+a, send: Left}
+    - {when: composing, accept: Control+d, send: Right}
+    - {when: has_menu, accept: Control+w, send: Page_Up}
+    - {when: has_menu, accept: Control+s, send: Page_Down}
+    - {when: always, accept: Control+period, toggle: ascii_punct}

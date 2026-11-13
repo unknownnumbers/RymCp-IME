@@ -1,0 +1,269 @@
+---
+name: rymcp_dlc/poetry/words_24
+version: '2026.11.14.1'
+sort: by_weight
+use_preset_vocabulary: false
+activation:
+  __include: rymcp_dlc/poetry/words_25.dict:/activation
+...
+昔人已乘白雲去	xi ren yi cheng bai yun qu	100
+昔日長城戰	xi ri chang cheng zhan	100
+昔日橫波目	xi ri heng bo mu	100
+昔日太宗拳毛騧	xi ri tai zong quan mao gua	100
+昔日戲言身後意	xi ri xi yan shen hou yi	100
+西山白雪三奇戍	xi shan bai xue san ji shu	100
+西山寇盜莫相侵	xi shan kou dao mo xiang qin	100
+西山鸞鶴羣	xi shan luan he qun	100
+西山外	xi shan wai	100
+昔時飛箭無全目	xi shi fei jian mo quan mu	100
+西施寧久微	xi shi ning jiu wei	100
+洗手作羹湯	xi shou zuo geng tang	100
+細算浮生千萬緒	xi suan fu sheng qian wan xu	100
+昔歲逢太平	xi sui feng tai ping	100
+昔隨劉氏定長安	xi sui liu shi ding chang an	100
+昔聞洞庭水	xi wen dong ting shui	100
+習習香塵蓮步底	xi xi xiang chen lian bu de	100
+棲棲一代中	xi xi yi dai zhong	100
+西下峨眉峰	xi xia e mei feng	100
+嬉笑游冶	xi xiao you ye	100
+細尋前跡	xi xun qian ji	100
+夕陽㠀外	xi yang dao wai	100
+夕陽度西嶺	xi yang du xi ling	100
+夕陽無限好	xi yang wu xian hao	100
+夕陽無語燕歸愁	xi yang wu yu yan gui chou	100
+夕陽西下	xi yang xi xia	100
+夕陽西下幾時回	xi yang xi xia ji shi hui	100
+夕陽依舊壘	xi yang yi jiu lei	100
+嬉遊處	xi you chu	100
+昔有佳人公孫氏	xi you jia ren gong sun shi	100
+嬉遊醉眠	xi you zui mian	100
+惜與故人違	xi yu gu ren wei	100
+細雨歸鴻	xi yu gui hong	100
+溪雨急	xi yu ji	100
+西園日日掃林亭	xi yuan ri ri sao lin ting	100
+西園亱㱃鳴笳	xi yuan ye yin ming jia	100
+細斟北斗	xi zhen bei dou	100
+西征客	xi zheng ke	100
+細織就	xi zhi jiu	100
+羲之俗書趁姿媚	xi zhi su shu chen zi mei	100
+西州更點	xi zhou geng dian	100
+犀筯厭飫久未下	xi zhu yan yu jiu wei xia	100
+犀箸厭飫久未下	xi zhu yan yu jiu wei xia	100
+洗妝真態	xi zhuang zhen tai	100
+下离煙水	xia chi yan shui	100
+下牀畏蛇食畏藥	xia chuang wei she shi wei yao	100
+下窺指高鳥	xia kui zhi gao diao	100
+下了珠帘	xia le zhu lian	100
+峽裏誰知有人事	xia li shei zhi you ren shi	100
+下馬還尋	xia ma huan xun	100
+下馬飲君酒	xia ma yin jun jiu	100
+夏水欲滿君山青	xia shui yu man jun shan qing	100
+狎興生疏	xia xing sheng shu	100
+下有衝波逆折之回川	xia you chong bo ni she zhi hui chuan	100
+下有衝波逆折之迴川	xia you chong bo ni she zhi hui chuan	100
+下有淥水之波瀾	xia you lu shui zhi bo lan	100
+下有綠水之波瀾	xia you lv shui zhi bo lan	100
+匣中劍	xia zhong jian	100
+閑愛孤雲靜愛僧	xian ai gu yun jing ai seng	100
+先安簟枕	xian an dian zhen	100
+閑傍枕	xian bang zhen	100
+先拂商弦後角羽	xian bi shang xian hou jue yu	100
+先成淚	xian cheng lei	100
+獻愁供恨	xian chou gong hen	100
+閑愁㝡苦	xian chou zui ku	100
+閑穿徑竹	xian chuan jing zhu	100
+賢德北服南單于	xian de bei fu nan chan yu	100
+閑登小閣看新晴	xian deng xiao ge kan xin qing	100
+先帝侍女八千人	xian di shi nv ba qian ren	100
+先帝天馬玉花驄	xian di tian ma yu hua cong	100
+鮮肥屬時禁	xian fei shu shi jin	100
+獻賦十年猶未遇	xian fu shi nian you wei yu	100
+弦歌地	xian ge de	100
+縣官急索租	xian guan ji suo zu	100
+閑花淡淡旾	xian hua dan dan chun	100
+閑花俱謝	xian hua ju xie	100
+先寄一枝旾	xian ji yi zhi chun	100
+閑堦靜	xian jie jing	100
+蘚堦蛩切	xian jie qiong qie	100
+羨金屋去來	xian jin wu qu lai	100
+閑窺石鏡清我心	xian kui shi jing qing wo xin	100
+閑來垂釣碧溪上	xian lai chui diao bi xi shang	100
+閑來垂釣坐溪上	xian lai chui diao zuo xi shang	100
+先淚零	xian lei ling	100
+閑鷺棲常早	xian lu qi chang zao	100
+閑門向山路	xian men xiang shan lu	100
+嫌明燭	xian ming zhu	100
+限南北	xian nan bei	100
+閑品秦箏	xian pin qin zheng	100
+先期汗漫九垓上	xian qi han man jiu gai shang	100
+先遣小姑嘗	xian qian xiao gu chang	100
+閑㕁半湖春色	xian que ban hu chun se	100
+閑㕁傳杯手	xian que chuan bei shou	100
+閑㕁新涼時節	xian que xin liang shi jie	100
+仙人鳳咽瓊簫	xian ren feng yan qiong xiao	100
+仙人掌上雨初晴	xian ren zhang shang yu chu qing	100
+先上小桃枝	xian shang xiao tao zhi	100
+先時已入人肝脾	xian shi yi ru ren gan pi	100
+閑旹又來鏡裏	xian shi you lai jing li	100
+仙臺下見五城樓	xian tai xia jian wu cheng lou	100
+仙桃正落花	xian tao zheng la hua	100
+仙塢迷津	xian wu mi jin	100
+纖纖池塘飛雨	xian xian chi tang fei yu	100
+弦弦掩抑聲聲思	xian xian yan yi sheng sheng si	100
+弦解語	xian xie yu	100
+閑尋舊蹤跡	xian xun jiu zong ji	100
+咸言意氣高	xian yan yi qi gao	100
+咸陽送客屢回顧	xian yang song ke lv hui gu	100
+纖腰一把	xian yao yi ba	100
+閑依露井	xian yi lu jing	100
+閑依農圃鄰	xian yi nong pu lin	100
+閑倚一枝藤	xian yi yi zhi teng	100
+閑院落悽涼	xian yuan luo qi liang	100
+仙樂風飄處處聞	xian yue feng piao chu chu wen	100
+仙云墮影	xian yun duo ying	100
+閑云歸後	xian yun gui hou	100
+險韻詩成	xian yun shi cheng	100
+纖雲四卷天無河	xian yun si juan tian mo he	100
+先指花梢教看	xian zhi hua shao jiao kan	100
+仙之人兮列如麻	xian zhi ren xi lie ru ma	100
+先主武侯同閟宮	xian zhu wu hou tong bi gong	100
+閑坐悲君亦自悲	xian zuo bei jun yi zi bei	100
+閑坐說玄宗	xian zuo shui xuan zong	100
+想伴侶	xiang ban lv	100
+想半屬	xiang ban shu	100
+香瘢新褪紅絲腕	xiang ban xin tui hong si wan	100
+相悲各問年	xiang bei ge wen nian	100
+香屏空掩	xiang bing kong yan	100
+向殘陽	xiang can yang	100
+向長安	xiang chang an	100
+香車寶馬	xiang che bao ma	100
+香塵晻陌	xiang chen an mo	100
+香塵已隔猶回面	xiang chen yi ge you hui mian	100
+向承㤙處	xiang cheng en chu	100
+想垂楊	xiang chui yang	100
+向此成追感	xiang ci cheng dui gan	100
+向此臨水與登山	xiang ci lin shui yu deng shan	100
+想當年	xiang dang nian	100
+想登臨	xiang deng lin	100
+想東園	xiang dong yuan	100
+香度瑤闕	xiang du yao que	100
+相對滄浪水	xiang dui cang lang shui	100
+相對如說興亡	xiang dui ru shui xing wang	100
+相對亦忘言	xiang dui yi wang yan	100
+湘娥化作此幽芳	xiang e hua zuo ci you fang	100
+湘娥乍見	xiang e zha jian	100
+相逢處	xiang feng chu	100
+相逢何必曾相識	xiang feng he bi zeng xiang shi	100
+相逢几番旾換	xiang feng ji pan chun huan	100
+相逢每醉還	xiang feng mei zui huan	100
+相逢夢境	xiang feng meng jing	100
+相逢且儘尊酒	xiang feng qie jin zun jiu	100
+相逢誰在香徑	xiang feng shei zai xiang jing	100
+相逢似有恨	xiang feng shi you hen	100
+香篝熏素被	xiang gou xun su bei	100
+相顧無言	xiang gu wu yan	100
+向河梁	xiang he liang	100
+相咊砧杵	xiang he zhen chu	100
+向雞牎	xiang ji chuang	100
+想佳人	xiang jia ren	100
+想見東風	xiang jian dong feng	100
+相見時難別亦難	xiang jian shi nan bie yi nan	100
+想見西出陽關	xiang jian xi chu yang guan	100
+相見語依依	xiang jian yu yi yi	100
+向淺洲遠渚	xiang jian zhou yuan zhu	100
+相將共	xiang jiang gong	100
+湘江好煙月	xiang jiang hao yan yue	100
+相將見	xiang jiang jian	100
+相將㪚离會	xiang jiang san chi hui	100
+香徑落紅吹已斷	xiang jing la hong chui yi duan	100
+想舊事	xiang jiu shi	100
+相看白刃血紛紛	xiang kan bai ren xue fen fen	100
+相看燭影	xiang kan zhu ying	100
+向來吟秀句	xiang lai yin xiu gou	100
+想淚痕塵影	xiang lei hen chen ying	100
+鄉淚客中盡	xiang lei ke zhong jin	100
+香冷金猊	xiang leng jin ni	100
+香冷入瑤席	xiang leng ru yao xi	100
+相憐相惜	xiang lian xiang xi	100
+相留畏曉鐘	xiang liu wei xiao zhong	100
+向露冷風清	xiang lu leng feng qing	100
+香爐瀑布遙相望	xiang lu pu bu yao xiang wang	100
+鄉夢斷	xiang meng duan	100
+鄉夢窄	xiang meng zhai	100
+巷陌馬聲初斷	xiang mo ma sheng chu duan	100
+巷陌人家	xiang mo ren jia	100
+向南樓	xiang nan lou	100
+香囊晻解	xiang nang an xie	100
+向年年	xiang nian nian	100
+想念我	xiang nian wo	100
+香㬉鴛鴦被	xiang nuan yuan yang bei	100
+想佩環	xiang pei huan	100
+香氣漸暾暾	xiang qi jian tun tun	100
+相期邈雲漢	xiang qi miao yun han	100
+向人側	xiang ren ce	100
+想如今	xiang ru jin	100
+香如霧	xiang ru wu	100
+向甚處	xiang shen chu	100
+想沈香亭北繁華歇	xiang shen xiang ting bei fan hua xie	100
+鄉書不可寄	xiang shu bu ke ji	100
+鄉書何處達	xiang shu he chu da	100
+湘水無情弔豈知	xiang shui wu qing diao kai zhi	100
+相思愁白蘋	xiang si chou bai ping	100
+相思除是	xiang si chu shi	100
+相思無雁足	xiang si mo yan ju	100
+相思難表	xiang si nan biao	100
+相思休問定何如	xiang si xiu wen ding he ru	100
+相思一點	xiang si yi dian	100
+相思一亱牎前夢	xiang si yi ye chuang qian meng	100
+相送情無限	xiang song qing wu xian	100
+想桃叶	xiang tao xie	100
+湘天風雨破寒初	xiang tian feng yu po han chu	100
+湘天濃㬉	xiang tian nong nuan	100
+向晚意不適	xiang wan yi bu shi	100
+向晚一帘疎雨	xiang wan yi lian shu yu	100
+向晚驟	xiang wan zhou	100
+想忘了	xiang wang le	100
+相望試登高	xiang wang shi deng gao	100
+想文君望久	xiang wen jun wang jiu	100
+香霧雲鬟濕	xiang wu yun huan shi	100
+香西風雨	xiang xi feng yu	100
+向銷凝裏	xiang xiao ning li	100
+相攜及田家	xiang xie ji tian jia	100
+鄉心新歲切	xiang xin xin sui qie	100
+向尋常埜橋流水	xiang xun chang ye qiao liu shui	100
+香煙欲傍袞龍浮	xiang yan yu bang gun long fu	100
+襄陽好風日	xiang yang hao feng ri	100
+想夜半承明	xiang ye ban cheng ming	100
+香葉終經宿鸞鳳	xiang ye zhong jing su luan feng	100
+相憶採芙蓉	xiang yi cai fu rong	100
+相憶采芙蓉	xiang yi cai fu rong	100
+想移根換叶	xiang yi gen huan xie	100
+想依稀	xiang yi xi	100
+鄉音難改鬢毛衰	xiang yin nan gai bin mao cui	100
+相迎不道遠	xiang ying bu dao yuan	100
+相應喧喧	xiang ying xuan xuan	100
+相映遠	xiang ying yuan	100
+想幽懽	xiang you huan	100
+想玉樹凋土	xiang yu shu diao tu	100
+相與烜赫流淳熙	xiang yu xuan he liu chun xi	100
+香云隨步起	xiang yun sui bu qi	100
+緗帙流離	xiang zhi liu li	100
+向竹梢疎處	xiang zhu shao shu chu	100
+向醉裏	xiang zui li	100
+向尊前	xiang zun qian	100
+小蟾斜影轉東籬	xiao chan xie ying zhuai dong li	100
+小單于	xiao chan yu	100
+銷愁斗幾千	xiao chou dou ji qian	100
+小牎愁黛澹秋山	xiao chuang chou dai tan qiu shan	100
+小牎翦燭	xiao chuang jian zhu	100
+小牎凈	xiao chuang jing	100
+小牎㴱閉	xiao chuang shen bi	100
+小牎閑對芭蕉展	xiao chuang xian dui ba jiao zhan	100
+小唇秀靨今在否	xiao chun xiu ye jin zai fou	100
+消得斜陽幾度	xiao de xie yang ji du	100
+曉風殘月	xiao feng can yue	100
+曉風吹未醒	xiao feng chui wei xing	100
+小閣幽牎	xiao ge you chuang	100
+曉耕翻露草	xiao geng fan lu cao	100
+孝恭遵婦道	xiao gong zun fu dao	100
+簫鼓哀吟感鬼神	xiao gu ai yin gan gui shen	100

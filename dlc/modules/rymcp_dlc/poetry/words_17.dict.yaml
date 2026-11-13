@@ -1,0 +1,269 @@
+---
+name: rymcp_dlc/poetry/words_17
+version: '2026.11.14.1'
+sort: by_weight
+use_preset_vocabulary: false
+activation:
+  __include: rymcp_dlc/poetry/words_18.dict:/activation
+...
+千萬徧陽關	qian wan bian yang guan	100
+千萬縷	qian wan lv	100
+倩五湖倦客	qian wu hu juan ke	100
+前宵更恁時候	qian xiao geng nen shi hou	100
+潛心默禱若有應	qian xin mo dao re you ying	100
+千尋鐵鎖沈江底	qian xun tie suo shen jiang de	100
+千崖秋色	qian ya qiu se	100
+千巖萬轉路不定	qian yan wan zhuai lu bu ding	100
+牽衣頓足闌道哭	qian yi dun zu lan dao ku	100
+千營共一呼	qian ying gong yi hu	100
+前月浮梁買茶去	qian yue fu liang mai cha qu	100
+縴云㪚	qian yun san	100
+千載琵琶作胡語	qian zai pi pa zuo hu yu	100
+遷者追廻流者還	qian zhe dui hui liu zhe huan	100
+縴指十三弦	qian zhi shi san xian	100
+千種風情	qian zhong feng qing	100
+強帶酒	qiang dai jiu	100
+羌笛何須怨楊柳	qiang di he xu yuan yang liu	100
+強樂還無味	qiang le huan wu wei	100
+強㽞詩酒	qiang liu shi jiu	100
+羌戎賀勞旋	qiang rong he lao xuan	100
+墻頭丹杏雨餘花	qiang tou dan xing yu yu hua	100
+墻頭青玉旆	qiang tou qing yu pei	100
+薔薇謝後	qiang wei xie hou	100
+強㩗酒	qiang xie jiu	100
+墻腰雪老	qiang yao xue lao	100
+強移棲息一枝安	qiang yi qi xi yi zhi an	100
+強㱃還無味	qiang yin huan wu wei	100
+強欲從君無那老	qiang yu cong jun mo na lao	100
+強簪巾幘	qiang zan jin ze	100
+強整帽檐側	qiang zheng mao yan ce	100
+巧把遠山學	qiao ba yuan shan xue	100
+悄邊聲	qiao bian sheng	100
+悄不禁	qiao bu jin	100
+憔悴長縈絆	qiao cui chang ying ban	100
+憔悴江南倦客	qiao cui jiang nan juan ke	100
+憔悴人歸後	qiao cui ren gui hou	100
+憔悴損	qiao cui sun	100
+樵風乍起	qiao feng zha qi	100
+悄郊原帶郭	qiao jiao yuan dai guo	100
+樵客初傳漢姓名	qiao ke chu chuan han xing ming	100
+敲門都不應	qiao men du bu ying	100
+喬木生雲氣	qiao mu sheng yun qi	100
+悄悄至更闌	qiao qiao zhi geng lan	100
+巧沁蘭心	qiao qin lan xin	100
+樵人歸欲盡	qiao ren gui yu jin	100
+橋上酸風䠶眸子	qiao shang suan feng she mou zi	100
+悄庭戶	qiao ting hu	100
+悄無人	qiao wu ren	100
+巧咲艶歌皆我意	qiao xiao yan ge jie wo yi	100
+巧篆垂簪	qiao zhuan chui zan	100
+且登臨	qie deng lin	100
+妾髮初覆額	qie fa chu fu e	100
+且放白鹿青崖間	qie fang bai lu qing ya jian	100
+且共從容	qie gong cong rong	100
+且將此恨	qie jiang ci hen	100
+且樂生前一杯酒	qie le sheng qian yi bei jiu	100
+怯流光	qie liu guang	100
+怯流年	qie liu nian	100
+且㽞取	qie liu qu	100
+且莫思身外	qie mo si shen wai	100
+且莫與	qie mo yu	100
+且如今年冬	qie ru jin nian dong	100
+且爲王孫立斯須	qie wei wang sun li si xu	100
+竊聞天子已傳位	qie wen tian zi yi chuan wei	100
+且向花間㽞晚炤	qie xiang hua jian liu wan zhao	100
+妾心井中水	qie xin jing zhong shui	100
+且休兵	qie xiu bing	100
+且休休	qie xiu xiu	100
+且欲近尋彭澤宰	qie yu jin xun peng ze zai	100
+妾住在橫塘	qie zhu zai heng tang	100
+侵晨淺約宮黃	qin chen jian yao gong huang	100
+秦地羅敷女	qin de luo fu nv	100
+衾鳳冷	qin feng leng	100
+秦關汴水經行地	qin guan bian shui jing xing de	100
+親見霓裳	qin jian ni chang	100
+秦樓阻	qin lou zu	100
+芹泥雨潤	qin ni yu run	100
+親朋無一字	qin peng mo yi zi	100
+秦桑低綠枝	qin sang di lu zhi	100
+秦時明月漢時關	qin shi ming yue han shi guan	100
+琴心三疊道初成	qin xin san die dao chu cheng	100
+琴心相許	qin xin xiang xu	100
+青靄入看無	qing ai ru kan mo	100
+輕把斜陽	qing ba xie yang	100
+清晨簾幕卷輕霜	qing chen lian mu juan qing shuang	100
+清塵收露	qing chen shou lu	100
+清晨再拜鋪丹墀	qing chen zai bai pu dan chi	100
+清愁不斷	qing chou bu duan	100
+清愁似織	qing chou shi zhi	100
+清川帶長薄	qing chuan dai chang bo	100
+晴川歷歷漢陽樹	qing chuan li li han yang shu	100
+清川澹如此	qing chuan tan ru ci	100
+青春作伴好還鄉	qing chun zuo ban hao huan xiang	100
+晴翠接荒城	qing cui jie huang cheng	100
+清燈冷屋	qing deng leng wu	100
+青鳥飛去銜紅巾	qing diao fei qu xian hong jin	100
+青鳥殷勤爲探看	qing diao yin qin wei tan kan	100
+輕翻柳陌	qing fan liu mo	100
+輕飛迅羽	qing fei xun yu	100
+清風吹空月舒波	qing feng chui kong yue shu bo	100
+青楓江上秋天遠	qing feng jiang shang qiu tian yuan	100
+青楓葉赤天雨霜	qing feng ye chi tian yu shuang	100
+清歌莫斷腸	qing ge mo duan chang	100
+青蓋亭亭	qing ge ting ting	100
+清光未減	qing guang wei jian	100
+清光猶爲君	qing guang you wei jun	100
+晴光照綠蘋	qing guang zhao lu ping	100
+晴光轉綠蘋	qing guang zhuai lu ping	100
+輕寒帘影	qing han lian ying	100
+輕寒輕㬉	qing han qing nuan	100
+青翰棹艤	qing han zhuo yi	100
+清華池舘	qing hua chi guan	100
+清淮奉使千餘里	qing huai feng shi qian yu li	100
+青槐夾馳道	qing huai ga chi dao	100
+情懷漸變成衰晚	qing huai jian bian cheng cui wan	100
+清輝淡水木	qing hui dan shui mu	100
+清輝玉臂寒	qing hui yu bi han	100
+清輝照衣裳	qing hui zhao yi shang	100
+清淺小溪如練	qing jian xiao xi ru lian	100
+清景無限	qing jing wu xian	100
+清角吹寒	qing jue chui han	100
+請君試問東流水	qing jun shi wen dong liu shui	100
+請君爲我側耳聽	qing jun wei wo ce er ting	100
+晴空	qing kong	100
+情寬分窄	qing kuan fen zhai	100
+清狂顧曲	qing kuang gu qu	100
+清淚如水	qing lei ru shui	100
+請留盤石上	qing liu pan shi shang	100
+輕攏慢拈	qing long man nian	100
+輕攏慢撚抹復挑	qing long man nian ma fu tiao	100
+青樓薄名存	qing lou bo ming cun	100
+青樓春晚	qing lou chun wan	100
+青樓夢好	qing lou meng hao	100
+青樓彷佛	qing lou pang fo	100
+清漏移	qing lou yi	100
+青樓自管絃	qing lou zi guan xian	100
+清露晨流	qing lu chen liu	100
+青蘿拂行衣	qing luo bi hang yi	100
+輕羅小扇撲流螢	qing luo xiao shan pu liu ying	100
+輕羅已薄未更衣	qing luo yi bo wei geng yi	100
+情滿徐妝	qing man xu zhuang	100
+青門都廢	qing men du fei	100
+青門外	qing men wai	100
+清明過㕁	qing ming guo que	100
+青冥浩蕩不見底	qing ming hao dang bu jian de	100
+清明後	qing ming hou	100
+清明看	qing ming kan	100
+輕暝籠寒	qing ming long han	100
+情難絕	qing nan jue	100
+情難依舊	qing nan yi jiu	100
+青泥何盤盤	qing ni he pan pan	100
+輕鷗聚別	qing ou ju bie	100
+輕顰微笑嬌無奈	qing pin wei xiao jiao wu nai	100
+青錢換酒日無何	qing qian huan jiu ri wu he	100
+清鈆素靨	qing qian su ye	100
+情切	qing qie	100
+情親見君意	qing qin jian jun yi	100
+青青草	qing qing cao	100
+青青如此	qing qing ru ci	100
+輕輕細說與	qing qing xi shuo yu	100
+清秋幕府井梧寒	qing qiu mu fu jing wu han	100
+清泉石上流	qing quan shi shang liu	100
+情人不見	qing ren bu jian	100
+情人怨遙夜	qing ren yuan yao ye	100
+情如水	qing ru shui	100
+清瑟怨遙夜	qing se yuan yao ye	100
+青山不語	qing shan bu yu	100
+青山朝別暮還見	qing shan chao bie mu huan jian	100
+青山獨歸遠	qing shan du gui yuan	100
+青山郭外斜	qing shan guo wai xie	100
+青山橫北郭	qing shan heng bei guo	100
+青山空復情	qing shan kong fu qing	100
+青山空向人	qing shan kong xiang ren	100
+青山澹吾慮	qing shan tan wu lv	100
+輕衫未攬	qing shan wei lan	100
+青山隱隱	qing shan yin yin	100
+青山遮不住	qing shan zhe bu zhu	100
+情傷荀倩	qing shang xun qian	100
+輕失花期	qing shi hua qi	100
+情似游絲	qing shi you si	100
+清時有味是無能	qing shi you wei shi wu neng	100
+情絲待翦	qing si dai jian	100
+青絲勒馬	qing si le ma	100
+晴絲牽緒亂	qing si qian xu luan	100
+輕鬆縴軟	qing song qian ruan	100
+青松如膏沐	qing song ru gao mu	100
+青苔上	qing tai shang	100
+青天無片雲	qing tian mo pian yun	100
+青天墜長星	qing tian zhui chang xing	100
+蜻蜓飛上玉搔頭	qing ting fei shang yu sao tou	100
+輕紈細綺相追飛	qing wan xi qi xiang dui fei	100
+清渭東流劒閣深	qing wei dong liu jian ge shen	100
+青未了	qing wei liao	100
+情味中年別	qing wei zhong nian bie	100
+青蕪國	qing wu guo	100
+清霧斂	qing wu lian	100
+青溪幾曲到雲林	qing xi ji qu dao yun lin	100
+清溪深不測	qing xi shen bu ce	100
+清香未減	qing xiang wei jian	100
+清心拂塵服	qing xin fu chen fu	100
+青煙冪處	qing yan mi chu	100
+晴煙冉冉吳宮樹	qing yan ran ran wu gong shu	100
+輕煙散入五侯家	qing yan san ru wu hou jia	100
+青陽逼歲除	qing yang bi sui chu	100
+輕陰便成雨	qing yin bian cheng yu	100
+清游漸遠	qing you jian yuan	100
+清月出嶺光入扉	qing yue chu ling guang ru fei	100
+青雲羨鳥飛	qing yun xian diao fei	100
+情知旾去後	qing zhi chun qu hou	100
+輕舟已過萬重山	qing zhou yi guo wan chong shan	100
+請奏鳴琴廣陵客	qing zou ming qin guang ling ke	100
+清尊素影	qing zun su ying	100
+清尊未洗	qing zun wei xi	100
+窮邊有客遊	qiong bian you ke you	100
+蛩催機杼	qiong cui ji zhu	100
+瓊瑰晻泣	qiong gui an qi	100
+瓊壺晻缺	qiong hu an que	100
+瓊壺敲儘缺	qiong hu qiao jin que	100
+蛩響衰艸	qiong xiang cui cao	100
+窮巷牛羊歸	qiong xiang niu yang gui	100
+瓊枝璧月旾如昨	qiong zhi bi yue chun ru zuo	100
+秋邊一雁聲	qiu bian yi yan sheng	100
+秋草獨尋人去後	qiu cao du xun ren qu hou	100
+秋燈亱語	qiu deng ye yu	100
+秋風吹不盡	qiu feng chui bu jin	100
+秋風忽憶江東行	qiu feng hu yi jiang dong hang	100
+秋風驚綠	qiu feng jing lu	100
+秋風原上	qiu feng yuan shang	100
+秋花落更遲	qiu hua la geng chi	100
+秋江帶雨	qiu jiang dai yu	100
+秋來發故枝	qiu lai fa gu zhi	100
+秋來書更疎	qiu lai shu geng shu	100
+秋來未著花	qiu lai wei zhao hua	100
+丘巒崩摧	qiu luan beng cui	100
+鞦韆採繩芳柱	qiu qian cai sheng fang zhu	100
+鞦韆外	qiu qian wai	100
+鞦韆院落重帘暮	qiu qian yuan luo chong lian mu	100
+秋日望鄉心	qiu ri wang xiang xin	100
+秋色從西來	qiu se cong xi lai	100
+秋色連波	qiu se lian bo	100
+秋山又幾重	qiu shan you ji chong	100
+秋水日潺湲	qiu shui ri chan yuan	100
+求田問舍	qiu tian wen she	100
+秋晚蒓鱸江上	qiu wan chun lu jiang shang	100
+虯鬚虎眉仍大顙	qiu xu hu mei reng da sang	100
+秋雁又南迴	qiu yan you nan hui	100
+秋已無多	qiu yi mo duo	100
+秋陰旹晴漸向暝	qiu yin shi qing jian xiang ming	100
+秋雨梧桐葉落時	qiu yu wu tong ye la shi	100
+秋與云平	qiu yu yun ping	100
+秋月春風等閑度	qiu yue chun feng deng xian du	100
+秋雲暗幾重	qiu yun an ji chong	100
+曲㟁持觴	qu an chi shang	100
+曲罷曾教善才伏	qu ba zeng jiao shan cai fu	100
+曲屏香㬉	qu bing xiang nuan	100
+驅車登古原	qu che deng gu yuan	100
+去程應轉	qu cheng ying zhuai	100
+曲島蒼茫接翠微	qu dao cang mang jie cui wei	100
+曲港跳魚	qu gang tiao yu	100
+曲盡河星稀	qu jin he xing xi	100

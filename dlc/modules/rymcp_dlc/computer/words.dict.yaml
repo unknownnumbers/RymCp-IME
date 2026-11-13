@@ -1,0 +1,689 @@
+---
+name: rymcp_dlc/computer/words
+version: '2026.11.14.1'
+sort: by_weight
+use_preset_vocabulary: false
+patch:
+  translator/packs/+:
+    - rymcp_dlc_computer
+...
+上下文菜單	shang xia wen cai dan	100
+上檔鍵	shang dang jian	100
+上熱搜	shang re sou	100
+上雲	shang yun	100
+下網	xia wang	100
+丟包	diu bao	100
+並口	bing kou	100
+並行口	bing xing kou	100
+中央處理單元	zhong yang chu li dan yuan	100
+中央處理器	zhong yang chu li qi	100
+中央處理機	zhong yang chu li ji	100
+中招	zhong zhao	100
+中間人攻擊	zhong jian ren gong ji	100
+串口	chuan kou	100
+串處理	chuan chu li	100
+串行	chuan xing	100
+串行口	chuan xing kou	100
+主從	zhu cong	100
+主播	zhu bo	100
+主板	zhu ban	100
+主機	zhu ji	100
+主機名	zhu ji ming	100
+亂碼	luan ma	100
+事務	shi wu	100
+五毛黨	wu mao dang	100
+交叉編譯器	jiao cha bian yi qi	100
+人臉識別	ren lian shi bie	100
+介質訪問控制層	jie zhi fang wen kong zhi ceng	100
+介面	jie mian	100
+付費牆	fu fei qiang	100
+代理	dai li	100
+令牌	ling pai	100
+任務欄	ren wu lan	100
+任務管理器	ren wu guan li qi	100
+休眠	xiu mian	100
+伺服器	si fu qi	100
+佇列	zhu lie	100
+位元	wei yuan	100
+位元組	wei yuan zu	100
+低級語言	di ji yu yan	100
+低階語言	di jie yu yan	100
+佛媛	fo yuan	100
+作用域	zuo yong yu	100
+作用域鏈	zuo yong yu lian	100
+併發	bing fa	100
+依賴注入	yi lai zhu ru	100
+侵入	qin ru	100
+保存	bao cun	100
+信息繭房	xin xi jian fang	100
+修復	xiu fu	100
+倉頡	cang jie	100
+停機時間	ting ji shi jian	100
+側邊欄	ce bian lan	100
+傳參	chuan can	100
+傳輸速率	chuan shu su lv	100
+優先級	you xian ji	100
+元宇宙	yuan yu zhou	100
+先進先出	xian jin xian chu	100
+光柵	guang shan	100
+光標	guang biao	100
+光線追蹤	guang xian zhui zong	100
+兔爸	tu ba	100
+內存儲器	nei cun chu qi	100
+內容管理系統	nei rong guan li xi tong	100
+內核	nei he	100
+內測	nei ce	100
+內聯	nei lian	100
+全局作用域	quan ju zuo yong yu	100
+全屏	quan ping	100
+全拼	quan pin	100
+全端工程師	quan duan gong cheng shi	100
+公測	gong ce	100
+公網	gong wang	100
+共享函數庫	gong xiang han shu ku	100
+共享庫	gong xiang ku	100
+共享程序庫	gong xiang cheng xu ku	100
+冷啟動	leng qi dong	100
+出廠設置	chu chang she zhi	100
+出錯信息	chu cuo xin xi	100
+函式庫	han shi ku	100
+刀庫	dao ku	100
+分佈式環境	fen bu shi huan jing	100
+分割區	fen ge qu	100
+分屏	fen ping	100
+分時	fen shi	100
+分組	fen zu	100
+分頁	fen ye	100
+初始化	chu shi hua	100
+刷入	shua ru	100
+刷屏	shua ping	100
+刷新	shua xin	100
+前端總線	qian duan zong xian	100
+前臺	qian tai	100
+剪切	jian qie	100
+剪切板	jian qie ban	100
+剪貼板	jian tie ban	100
+副檔名	fu dang ming	100
+劇集	ju ji	100
+功能表	gong neng biao	100
+加密套接字協議層	jia mi tao jie zi xie yi ceng	100
+加碼	jia ma	100
+加載	jia zai	100
+加速器	jia su qi	100
+勒索軟件	le suo ruan jian	100
+動圖	dong tu	100
+動態更新	dong tai geng xin	100
+動態鏈接庫	dong tai lian jie ku	100
+包夜	bao ye	100
+包長	bao chang	100
+匯入	hui ru	100
+匯出	hui chu	100
+區位	qu wei	100
+區塊鏈	qu kuai lian	100
+十大神獸	shi da shen shou	100
+千兆	qian zhao	100
+升級	sheng ji	100
+占位符	zhan wei fu	100
+卡	ka	100
+卡巴斯基	ka ba si ji	100
+卡頓	ka dun	100
+印表機	yin biao ji	100
+即指即譯	ji zhi ji yi	100
+卸裝	xie zhuang	100
+卸載	xie zai	100
+原始碼	yuan shi ma	100
+反斜杠	fan xie gang	100
+反斜線	fan xie xian	100
+反白	fan bai	100
+古墓麗影	gu mu li ying	100
+另存為	ling cun wei	100
+只讀	zhi du	100
+可執行	ke zhi xing	100
+可尋址	ke xun zhi	100
+可移植	ke yi zhi	100
+可移植性	ke yi zhi xing	100
+台式	tai shi	100
+吃豆人	chi dou ren	100
+向量圖形	xiang liang tu xing	100
+吧	ba	100
+周邊	zhou bian	100
+呼出	hu chu	100
+命令列	ming ling lie	100
+命令行	ming ling hang	100
+哈希	ha xi	100
+唯讀	wei du	100
+商業版本	shang ye ban ben	100
+啟動區	qi dong qu	100
+啟用	qi yong	100
+單子	dan zi	100
+單擊	dan ji	100
+回帖	hui tie	100
+回收站	hui shou zhan	100
+回滾	hui gun	100
+回調	hui diao	100
+回調函數	hui diao han shu	100
+回車	hui che	100
+回車符	hui che fu	100
+回車鍵	hui che jian	100
+回退	hui tui	100
+固件	gu jian	100
+固態硬盤	gu tai ying pan	100
+國服	guo fu	100
+圖像分割	tu xiang fen ge	100
+圖像識別	tu xiang shi bie	100
+圖形界面	tu xing jie mian	100
+圖形處理單元	tu xing chu li dan yuan	100
+圖形處理器	tu xing chu li qi	100
+圖標	tu biao	100
+圖示	tu shi	100
+型別	xing bie	100
+域名	yu ming	100
+埠	bu	100
+執行緒	zhi xing xu	100
+基礎設施即服務	ji chu she shi ji fu wu	100
+堆棧	dui zhan	100
+堆疊	dui die	100
+堡壘機	bao lei ji	100
+報毒	bao du	100
+報錯	bao cuo	100
+場區	chang qu	100
+增強現實	zeng qiang xian shi	100
+壓縮包	ya suo bao	100
+外加附件	wai jia fu jian	100
+外掛程式	wai gua cheng shi	100
+外插	wai cha	100
+外鏈	wai lian	100
+多任務處理	duo ren wu chu li	100
+多型	duo xing	100
+多平臺	duo ping tai	100
+多點觸控	duo dian chu kong	100
+大數據	da shu ju	100
+套用	tao yong	100
+子目錄	zi mu lu	100
+子級	zi ji	100
+子網屏蔽碼	zi wang ping bi ma	100
+子菜單	zi cai dan	100
+字串	zi chuan	100
+字元	zi yuan	100
+字彙	zi hui	100
+字符	zi fu	100
+字符串	zi fu chuan	100
+字節	zi jie	100
+存儲	cun chu	100
+存儲器	cun chu qi	100
+存取	cun qu	100
+安裝包	an zhuang bao	100
+完璧之身	wan bi zhi shen	100
+宏	hong	100
+宏病毒	hong bing du	100
+宕機	dang ji	100
+定界符	ding jie fu	100
+客戶機	ke hu ji	100
+客戶端	ke hu duan	100
+容器	rong qi	100
+寄存器	ji cun qi	100
+富文本	fu wen ben	100
+實例	shi li	100
+實參	shi can	100
+實名制	shi ming zhi	100
+實際參數	shi ji can shu	100
+寫死	xie si	100
+封包	feng bao	100
+封禁	feng jin	100
+封網	feng wang	100
+對話框	dui hua kuang	100
+小書籤	xiao shu qian	100
+小玩意	xiao wan yi	100
+小筆電	xiao bi dian	100
+小號	xiao hao	100
+尾綴	wei zhui	100
+局部作用域	ju bu zuo yong yu	100
+屏幕	ping mu	100
+工作列	gong zuo lie	100
+工作站	gong zuo zhan	100
+工作管理員	gong zuo guan li yuan	100
+工具條	gong ju tiao	100
+工具欄	gong ju lan	100
+工具鏈	gong ju lian	100
+巨集	ju ji	100
+巨魔	ju mo	100
+平台即服務	ping tai ji fu wu	100
+幻燈片	huan deng pian	100
+序列號	xu lie hao	100
+延遲	yan chi	100
+引用	yin yong	100
+引腳	yin jiao	100
+彈窗	tan chuang	100
+形參	xing can	100
+彩蛋	cai dan	100
+後台	hou tai	100
+後台進程	hou tai jin cheng	100
+後端	hou duan	100
+後門	hou men	100
+復刻	fu ke	100
+微機	wei ji	100
+快取	kuai qu	100
+快捷	kuai jie	100
+快捷方式	kuai jie fang shi	100
+快捷鍵	kuai jie jian	100
+快照	kuai zhao	100
+快閃存儲器	kuai shan cun chu qi	100
+快閃記憶體	kuai shan ji yi ti	100
+快閃記憶體盤	kuai shan ji yi ti pan	100
+惡意軟件	e yi ruan jian	100
+應用	ying yong	100
+應用層	ying yong ceng	100
+應用平台	ying yong ping tai	100
+應用程序	ying yong cheng xu	100
+應用程式	ying yong cheng shi	100
+懸停	xuan ting	100
+懸浮窗	xuan fu chuang	100
+截圖	jie tu	100
+截屏	jie ping	100
+扇區	shan qu	100
+手寫筆	shou xie bi	100
+打包	da bao	100
+打印機	da yin ji	100
+打孔卡	da kong ka	100
+打爆	da bao	100
+批處理	pi chu li	100
+抓包	zhua bao	100
+投屏	tou ping	100
+拉取	la qu	100
+拉黑	la hei	100
+拒絕服務攻擊	ju jue fu wu gong ji	100
+拓展	tuo zhan	100
+拓展塢	tuo zhan wu	100
+拖動	tuo dong	100
+拖拉	tuo la	100
+拖放	tuo fang	100
+拖移	tuo yi	100
+拷	kao	100
+指令集	zhi ling ji	100
+指向裝置	zhi xiang zhuang zhi	100
+指標	zhi biao	100
+指針	zhi zhen	100
+挖礦	wa kuang	100
+掃雷	sao lei	100
+掉線	diao xian	100
+掛起	gua qi	100
+掛載	gua zai	100
+掛馬	gua ma	100
+接入點	jie ru dian	100
+控件	kong jian	100
+推送	tui song	100
+掩碼	yan ma	100
+提權	ti quan	100
+插件	cha jian	100
+換檔鍵	huan dang jian	100
+換行	huan hang	100
+搜索樹	sou suo shu	100
+搭載	da zai	100
+摩爾定律	mo er ding lv	100
+撤銷	che xiao	100
+撥接	bo jie	100
+播放器	bo fang qi	100
+擁塞	yong se	100
+擊打式打印機	ji da shi da yin ji	100
+操作數	cao zuo shu	100
+操作符	cao zuo fu	100
+擴增實境	kuo zeng shi jing	100
+擴展名	kuo zhan ming	100
+擴展程序	kuo zhan cheng xu	100
+收藏	shou cang	100
+故障	gu zhang	100
+散列	san lie	100
+整型	zheng xing	100
+數據中心	shu ju zhong xin	100
+數據庫	shu ju ku	100
+數據結構	shu ju jie gou	100
+數據總線	shu ju zong xian	100
+數組	shu zu	100
+文件夾	wen jian jia	100
+文本	wen ben	100
+文本框	wen ben kuang	100
+文檔	wen dang	100
+斜線號	xie xian hao	100
+斷線	duan xian	100
+斷行	duan hang	100
+斷點	duan dian	100
+日誌	ri zhi	100
+星鏈	xing lian	100
+映象文件	ying xiang wen jian	100
+晶片	jing pian	100
+智能體	zhi neng ti	100
+暗網	an wang	100
+最佳化	zui jia hua	100
+會話	hui hua	100
+有損壓縮	you sun ya suo	100
+有源區	you yuan qu	100
+服務器	fu wu qi	100
+服務提供商	fu wu ti gong shang	100
+木馬	mu ma	100
+木馬病毒	mu ma bing du	100
+架構師	jia gou shi	100
+柯里化	ke li hua	100
+核顯	he xian	100
+根目錄	gen mu lu	100
+格式化	ge shi hua	100
+桌布	zhuo bu	100
+棧	zhan	100
+棧地址	zhan di zhi	100
+棧存儲器	zhan cun chu qi	100
+棧頂	zhan ding	100
+構成	gou cheng	100
+槽	cao	100
+標籤	biao qian	100
+標記	biao ji	100
+標題欄	biao ti lan	100
+模塊	mo kuai	100
+模態	mo tai	100
+模組	mo zu	100
+樣單	yang dan	100
+樹莓派	shu mei pai	100
+機器學習	ji qi xue xi	100
+機械硬盤	ji xie ying pan	100
+機殼	ji qiao	100
+檔案總管	dang an zong guan	100
+正則表達式	zheng ze biao da shi	100
+死機	si ji	100
+死當	si dang	100
+死鎖	si suo	100
+殘影	can ying	100
+殺毒	sha du	100
+氛圍編程	fen wei bian cheng	100
+沙盒	sha he	100
+泡吧	pao ba	100
+波特	bo te	100
+流氓軟件	liu mang ruan jian	100
+流水線	liu shui xian	100
+浮動窗口	fu dong chuang kou	100
+浮窗	fu chuang	100
+浮點	fu dian	100
+浮點型	fu dian xing	100
+浮點數	fu dian shu	100
+消息隊列	xiao xi dui lie	100
+消除鋸齒	xiao chu ju chi	100
+混合現實	hun he xian shi	100
+清屏	qing ping	100
+清零	qing ling	100
+測試	ce shi	100
+渲染	xuan ran	100
+游標	you biao	100
+源代碼	yuan dai ma	100
+源碼	yuan ma	100
+源程序	yuan cheng xu	100
+溢出	yi chu	100
+滑塊	hua kuai	100
+滑鼠	hua shu	100
+滾動	gun dong	100
+滾動條	gun dong tiao	100
+滾輪	gun lun	100
+漢化	han hua	100
+瀏覽器	liu lan qi	100
+灌	guan	100
+無損	wu sun	100
+無痕模式	wu hen mo shi	100
+無符號	wu fu hao	100
+熒光幕	ying guang mu	100
+熱帖	re tie	100
+熱搜	re sou	100
+熱補	re bu	100
+爬蟲	pa chong	100
+父	fu	100
+父目錄	fu mu lu	100
+父級	fu ji	100
+狀態欄	zhuang tai lan	100
+獨立顯卡	du li xian ka	100
+獨顯	du xian	100
+界面	jie mian	100
+畫面	hua mian	100
+異或	yi huo	100
+當掉	dang diao	100
+登入	deng ru	100
+登出	deng chu	100
+發文	fa wen	100
+百兆	bai zhao	100
+盜取	dao qu	100
+盤	pan	100
+盤符	pan fu	100
+目標檢測	mu biao jian ce	100
+目錄	mu lu	100
+直播	zhi bo	100
+直播帶貨	zhi bo dai huo	100
+直譯器	zhi yi qi	100
+相對地址	xiang dui di zhi	100
+睡眠	shui mian	100
+破解	po jie	100
+破解版	po jie ban	100
+硬編碼	ying bian ma	100
+硬體	ying ti	100
+碎片整理	sui pian zheng li	100
+確定	que ding	100
+碼	ma	100
+碼表	ma biao	100
+碼農	ma nong	100
+磁力鏈接	ci li lian jie	100
+磁盤	ci pan	100
+磁碟機	ci die ji	100
+磁貼	ci tie	100
+磁鏈	ci lian	100
+示例代碼	shi li dai ma	100
+神舟	shen zhou	100
+禁用	jin yong	100
+私信	si xin	100
+私聊	si liao	100
+秒殺	miao sha	100
+程序庫	cheng xu ku	100
+程序碼	cheng xu ma	100
+程式	cheng shi	100
+程式碼	cheng shi ma	100
+窗體	chuang ti	100
+站點	zhan dian	100
+符記環	fu ji huan	100
+筆刷	bi shua	100
+筆記型電腦	bi ji xing dian nao	100
+筆記本	bi ji ben	100
+筆記本計算機	bi ji ben ji suan ji	100
+筆記本電腦	bi ji ben dian nao	100
+筆電	bi dian	100
+等待時間	deng dai shi jian	100
+簡拼	jian pin	100
+簽入	qian ru	100
+簽出	qian chu	100
+純文本	chun wen ben	100
+累加器	lei jia qi	100
+絕對地址	jue dui di zhi	100
+綁紮	bang za	100
+綜合業務數字網	zong he ye wu shu zi wang	100
+維基	wei ji	100
+網下	wang xia	100
+網卡	wang ka	100
+網絡地址轉換	wang luo di zhi zhuan huan	100
+網絡語音	wang luo yu yin	100
+網關	wang guan	100
+網點	wang dian	100
+線程	xian cheng	100
+線纜	xian lan	100
+編程	bian cheng	100
+編譯	bian yi	100
+編輯器	bian ji qi	100
+緩存	huan cun	100
+緩衝器	huan chong qi	100
+縮略圖	suo lve tu	100
+置頂	zhi ding	100
+群聊	qun liao	100
+聯想集團	lian xiang ji tuan	100
+聯機分析處理	lian ji fen xi chu li	100
+肉雞	rou ji	100
+腳本	jiao ben	100
+膝上型	xi shang xing	100
+膝上型電腦	xi shang xing dian nao	100
+自動裝箱	zi dong zhuang xiang	100
+自帶	zi dai	100
+自由軟件	zi you ruan jian	100
+草泥馬	cao ni ma	100
+菜單條	cai dan tiao	100
+菜單欄	cai dan lan	100
+華碩	hua shuo	100
+萬用字元	wan yong zi yuan	100
+藍屏死機	lan ping si ji	100
+藍金黃	lan jin huang	100
+處理者	chu li zhe	100
+虛擬	xu ni	100
+螢幕	ying mu	100
+行程	xing cheng	100
+行號	hang hao	100
+補丁	bu ding	100
+視屏	shi ping	100
+視窗	shi chuang	100
+解包	jie bao	100
+解壓	jie ya	100
+解壓縮	jie ya suo	100
+解密	jie mi	100
+解釋器	jie shi qi	100
+解釋執行	jie shi zhi xing	100
+觸控板	chu kong ban	100
+觸控筆	chu kong bi	100
+觸控點	chu kong dian	100
+記憶化	ji yi hua	100
+記憶體	ji yi ti	100
+訪問	fang wen	100
+設定	she ding	100
+詞元	ci yuan	100
+語法	yu fa	100
+語法糖	yu fa tang	100
+語音	yu yin	100
+語音指令	yu yin zhi ling	100
+調入	diao ru	100
+調用	diao yong	100
+讀出	du chu	100
+讀取	du qu	100
+變聲器	bian sheng qi	100
+貝寶	bei bao	100
+負載均衡	fu zai jun heng	100
+貯存器	zhu cun qi	100
+資料	zi liao	100
+資料倉儲	zi liao cang chu	100
+資料庫	zi liao ku	100
+賦值	fu zhi	100
+賬戶	zhang hu	100
+走查	zou cha	100
+起動	qi dong	100
+超時	chao shi	100
+跑分	pao fen	100
+跨平台	kua ping tai	100
+路由	lu you	100
+路由器	lu you qi	100
+跳轉	tiao zhuan	100
+軌跡球	gui ji qiu	100
+輪詢	lun xun	100
+輸入設備	shu ru she bei	100
+轉	zhuan	100
+轉文	zhuan wen	100
+轉碼	zhuan ma	100
+轉義	zhuan yi	100
+轉義字符	zhuan yi zi fu	100
+轉義序列	zhuan yi xu lie	100
+近場通信	jin chang tong xin	100
+近場通訊	jin chang tong xun	100
+近距離無線通訊	jin ju li wu xian tong xun	100
+迴圈	hui quan	100
+退出	tui chu	100
+通用串行總線	tong yong chuan xing zong xian	100
+通訊協定	tong xun xie ding	100
+通配符	tong pei fu	100
+進度條	jin du tiao	100
+進接	jin jie	100
+進棧	jin zhan	100
+進程	jin cheng	100
+遊戲設備	you xi she bei	100
+運作	yun zuo	100
+運行	yun xing	100
+運行時	yun xing shi	100
+運行時錯誤	yun xing shi cuo wu	100
+遠端	yuan duan	100
+適配層	shi pei ceng	100
+選單	xuan dan	100
+選單列	xuan dan lie	100
+酸民	suan min	100
+重命名	chong ming ming	100
+重構	chong gou	100
+重裝	chong zhuang	100
+重載	chong zai	100
+針式打印機	zhen shi da yin ji	100
+釣魚式攻擊	diao yu shi gong ji	100
+錄入	lu ru	100
+錄屏	lu ping	100
+鍵	jian	100
+鎖定	suo ding	100
+鎖屏	suo ping	100
+鏡像站點	jing xiang zhan dian	100
+鑒權	jian quan	100
+閃存	shan cun	100
+閉源	bi yuan	100
+開啟	kai qi	100
+開放源碼	kai fang yuan ma	100
+開機	kai ji	100
+開源	kai yuan	100
+閘道	zha dao	100
+閱讀器	yue du qi	100
+阻斷服務攻擊	zu duan fu wu gong ji	100
+附件	fu jian	100
+附加元件	fu jia yuan jian	100
+限流	xian liu	100
+陣列	zhen lie	100
+隊列	dui lie	100
+隔行	ge hang	100
+隨插即用	sui cha ji yong	100
+集顯	ji xian	100
+雙拼	shuang pin	100
+雙擊	shuang ji	100
+雙核	shuang he	100
+雙開	shuang kai	100
+雜湊	za cou	100
+離線	li xian	100
+雲存儲	yun cun chu	100
+雲盤	yun pan	100
+雲端	yun duan	100
+零日	ling ri	100
+零日漏洞	ling ri lou dong	100
+零等待狀態	ling deng dai zhuang tai	100
+電子表格	dian zi biao ge	100
+非模態	fei mo tai	100
+非空	fei kong	100
+音頻文件	yin pin wen jian	100
+頁框	ye kuang	100
+頁籤	ye qian	100
+預裝	yu zhuang	100
+頭信息	tou xin xi	100
+頭像	tou xiang	100
+類型	lei xing	100
+顯卡	xian ka	100
+首款	shou kuan	100
+駐留	zhu liu	100
+駝峰命名法	tuo feng ming ming fa	100
+駭	hai	100
+駭客	hai ke	100
+驅動	qu dong	100
+驅動程序	qu dong cheng xu	100
+驗證碼	yan zheng ma	100
+高亮	gao liang	100
+高級語言	gao ji yu yan	100
+高速緩存	gao su huan cun	100
+高速緩衝存儲器	gao su huan chong cun chu qi	100
+高階語言	gao jie yu yan	100
+麥金塔電腦	mai jin ta dian nao	100
+黑	hei	100
+黑客	hei ke	100
+黑箱	hei xiang	100
+點按	dian an	100
+點擊率	dian ji lv	100
+點津	dian jin	100
+點選	dian xuan	100
+點開	dian kai	100
+點陣字體	dian zhen zi ti	100
+點陣式打印機	dian zhen shi da yin ji	100
+點陣打印機	dian zhen da yin ji	100
+鼠標	shu biao	100
+鼠標器	shu biao qi	100

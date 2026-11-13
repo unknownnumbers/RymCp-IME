@@ -1,0 +1,270 @@
+---
+name: rymcp_dlc/poetry/words_10
+version: '2026.11.14.1'
+sort: by_weight
+use_preset_vocabulary: false
+activation:
+  __include: rymcp_dlc/poetry/words_11.dict:/activation
+...
+家臨九江水	jia lin jiu jiang shui	100
+佳期應未誤行云	jia qi ying wei wu hang yun	100
+佳人何處	jia ren he chu	100
+佳人何在	jia ren he zai	100
+佳人無消息	jia ren mo xiao xi	100
+賈生才調更無倫	jia sheng cai diao geng wu lun	100
+賈氏窺簾韓掾少	jia shi kui lian han yuan shao	100
+佳樹	jia shu	100
+家書到隔年	jia shu dao ge nian	100
+家書抵萬金	jia shu di wan jin	100
+家童鼻息已雷鳴	jia tong bi xi yi lei ming	100
+家童掃蘿逕	jia tong sao luo jing	100
+佳約風流	jia yao feng liu	100
+賈誼上書憂漢室	jia yi shang shu you han shi	100
+佳音密耗	jia yin mi hao	100
+嫁與弄潮兒	jia yu long chao er	100
+嫁與黔婁百事乖	jia yu qian lou bai shi guai	100
+家在蝦蟇陵下住	jia zai ha ma ling xia zhu	100
+家住層城臨漢苑	jia zhu ceng cheng lin han yuan	100
+家住秦城鄰漢苑	jia zhu qin cheng lin han yuan	100
+漸把舊衫重翦	jian ba jiu shan chong jian	100
+見敗叶零亂	jian bai xie ling luan	100
+漸別浦縈迴	jian bie pu ying hui	100
+閒持貝葉書	jian chi bei ye shu	100
+漸吹儘	jian chui jin	100
+翦旾燈	jian chun deng	100
+建德非吾土	jian de fei wu tu	100
+澗底束荊薪	jian de shu jing xin	100
+翦燈深夜語	jian deng shen ye yu	100
+漸斷皷零鍾	jian duan gu ling zhong	100
+翦斷心上愁痕	jian duan xin shang chou hen	100
+見爾當何秋	jian er dang he qiu	100
+椾幅偷咊淚卷	jian fu tou he lei juan	100
+見個人人否	jian ge ren ren fou	100
+劒閣崢嶸而崔嵬	jian ge zheng rong er cui wei	100
+間關鶯語花底滑	jian guan ying yu hua de hua	100
+劒河風急雪片闊	jian he feng ji xue pian kuo	100
+翦紅情	jian hong qing	100
+淺畫鏡中眉	jian hua jing zhong mei	100
+漸黃昏	jian huang hun	100
+見江頭故人	jian jiang tou gu ren	100
+漸覺一叶驚秋	jian jiao yi xie jing qiu	100
+揀儘寒枝不肎棲	jian jin han zhi bu ken qi	100
+箭徑酸風䠶眼	jian jing suan feng she yan	100
+漸酒空金	jian jiu kong jin	100
+餞舊迎新	jian jiu ying xin	100
+檻菊蕭疎	jian ju xiao shu	100
+漸困倚	jian kun yi	100
+翦蠟花	jian la hua	100
+漸嬾趁旹勻染	jian lan chen shi yun ran	100
+見了還依舊	jian le huan yi jiu	100
+見梨花初帶亱月	jian li hua chu dai ye yue	100
+漸路入	jian lu ru	100
+翦梅煙驛	jian mei yan yi	100
+漸懞籠晻碧	jian meng long an bi	100
+艱難苦恨繁霜鬢	jian nan ku hen po shuang bin	100
+漸㬉靄	jian nuan ai	100
+濺清淚	jian qing lei	100
+見人如故	jian ren ru gu	100
+賤日豈殊衆	jian ri kai shu zhong	100
+漸日晚	jian ri wan	100
+漸入愁時節	jian ru chou shi jie	100
+漸霜風悽慘	jian shuang feng qi can	100
+見說道	jian shuo dao	100
+見說新愁	jian shuo xin chou	100
+劒外忽傳收薊北	jian wai hu chuan shou ji bei	100
+漸嗚咽	jian wu ye	100
+漸笑語	jian xiao yu	100
+漸寫到別來	jian xie dao bie lai	100
+漸新痕懸柳	jian xin hen xuan liu	100
+漸行漸遠漸無書	jian xing jian yuan jian mo shu	100
+揀選撰刻留山阿	jian xuan zhuan ke liu shan e	100
+建業暮鐘時	jian ye mu zhong shi	100
+漸與骨肉遠	jian yu gu rou yuan	100
+漸玉枕	jian yu zhen	100
+薦諸太廟比郜鼎	jian zhu tai miao bi gao ding	100
+淺醉還醒	jian zui huan xing	100
+淺醉閑眠	jian zui xian mian	100
+江邊日晚	jiang bian ri wan	100
+江城次第	jiang cheng ci di	100
+江城人悄初更打	jiang cheng ren qiao chu geng da	100
+將愁歸去	jiang chou gui qu	100
+江春入舊年	jiang chun ru jiu nian	100
+絳脣珠袖兩寂莫	jiang chun zhu xiu liang ji mo	100
+江村獨歸處	jiang cun du gui chu	100
+將登太行雪暗天	jiang deng tai hang xue an tian	100
+將登太行雪滿山	jiang deng tai hang xue man shan	100
+將發	jiang fa	100
+江楓漁父對愁眠	jiang feng yu fu dui chou mian	100
+江國	jiang guo	100
+江海寄餘生	jiang hai ji yu sheng	100
+江漢曾爲客	jiang han zeng wei ke	100
+絳河清淺	jiang he qing jian	100
+將恨與	jiang hen yu	100
+江湖多風波	jiang hu duo feng bo	100
+江湖秋水多	jiang hu qiu shui duo	100
+江淮度寒食	jiang huai du han shi	100
+將家就魚麥	jiang jia jiu yu mai	100
+將進酒	jiang jin jiu	100
+江靜潮初落	jiang jing chao chu la	100
+將軍百戰身名裂	jiang jun bai zhan shen ming lie	100
+將軍得名三十載	jiang jun de ming san shi zai	100
+將軍畫善蓋有神	jiang jun hua shan ge you shen	100
+將軍角弓不得控	jiang jun jiao gong bu de kong	100
+將軍金甲夜不脫	jiang jun jin jia ye bu tuo	100
+將軍魏武之子孫	jiang jun wei wu zhi zi sun	100
+將軍下筆開生面	jiang jun xia bi kai sheng mian	100
+將軍夜引弓	jiang jun ye yin gong	100
+江空不渡	jiang kong bu du	100
+將老身反累	jiang lao shen fan lei	100
+江陵舊事	jiang ling jiu shi	100
+江柳共風煙	jiang liu gong feng yan	100
+江流曲似九廻腸	jiang liu qu shi jiu hui chang	100
+江流石不轉	jiang liu shi bu zhuai	100
+江流天地外	jiang liu tian di wai	100
+江南江北	jiang nan jiang bei	100
+江南舊事休重省	jiang nan jiu shi xiu chong sheng	100
+江南梅萼	jiang nan mei e	100
+江南夢斷橫江渚	jiang nan meng duan heng jiang zhu	100
+江南無路	jiang nan mo lu	100
+江南誰唸方回	jiang nan shei nian fang hui	100
+江南天濶	jiang nan tian kuo	100
+江南有丹橘	jiang nan you dan ju	100
+江南遊子	jiang nan you zi	100
+江南瘴癘地	jiang nan zhang li de	100
+江南自是離愁苦	jiang nan zi shi li chou ku	100
+江畔舟如月	jiang pan zhou ru yue	100
+江清月近人	jiang qing yue jin ren	100
+江入大荒流	jiang ru da huang liu	100
+江山故宅空文藻	jiang shan gu zhai kong wen zao	100
+江山留勝跡	jiang shan liu sheng ji	100
+江山身是寄	jiang shan shen shi ji	100
+江上幾人在	jiang shang ji ren zai	100
+江上月明胡鴈過	jiang shang yue ming hu yan guo	100
+江水蒼蒼	jiang shui cang cang	100
+江水江花豈終極	jiang shui jiang hua kai zhong ji	100
+江頭宮殿鎖千門	jiang tou gong dian suo qian men	100
+江晚正愁予	jiang wan zheng chou yu	100
+將往復旋如有情	jiang wang fu xuan ru you qing	100
+江鄉夜夜	jiang xiang ye ye	100
+江燕話歸成曉別	jiang yan hua gui cheng xiao bie	100
+將煙困柳	jiang yan kun liu	100
+將因臥病解朝衣	jiang yin wo bing xie chao yi	100
+江雨霏霏江草齊	jiang yu fei fei jiang cao qi	100
+絳幘雞人送曉籌	jiang ze ji ren song xiao chou	100
+江州司馬青衫濕	jiang zhou si ma qing shan shi	100
+蛟饞龍怒	jiao chan long nu	100
+攪翠瀾	jiao cui lan	100
+交淡媒勞	jiao dan mei lao	100
+覺道資無窮	jiao dao zi wu qiong	100
+椒房阿監青娥老	jiao fang a jian qing e lao	100
+嬌黃半吐	jiao huang ban tu	100
+交加曉夢啼鶯	jiao jia xiao meng ti ying	100
+矯矯珍木巔	jiao jiao zhen mu dian	100
+覺客程勞	jiao ke cheng lao	100
+覺來惆悵消魂誤	jiao lai chou chang xiao hun wu	100
+覺來小園行徧	jiao lai xiao yuan hang bian	100
+蛟龍出沒猩鼯號	jiao long chu mo xing wu hao	100
+教妾若爲容	jiao qie re wei rong	100
+教人紅銷翠減	jiao ren hong xiao cui jian	100
+矯如羣帝驂龍翔	jiao ru qun di can long xiang	100
+嬌如醉	jiao ru zui	100
+驕嘶過	jiao si guo	100
+郊外駐油壁	jiao wai zhu you bi	100
+覺衣寬金縷	jiao yi kuan jin lv	100
+郊原初過雨	jiao yuan chu guo yu	100
+腳著謝公屐	jiao zhao xie gong ji	100
+嗟爾遠道之人胡爲乎來哉	jie er yuan dao zhi ren hu wei hu lai zai	100
+皆共塵沙老	jie gong chen sha lao	100
+節候看應晚	jie hou kan ying wan	100
+羯胡事主終無賴	jie hu shi zhu zhong wu lai	100
+嗟君此別意何如	jie jun ci bie yi he ru	100
+街南綠樹旾饒絮	jie nan lv shu chun rao xu	100
+嗟情人斷絕	jie qing ren duan jue	100
+解釋春風無限恨	jie shi chun feng wu xian hen	100
+節使三河募年少	jie shi san he mu nian shao	100
+揭天絲筦	jie tian si guan	100
+嗟萬事難忘	jie wan shi nan wang	100
+借問漢宮誰得似	jie wen han gong shei de shi	100
+借問客從何處來	jie wen ke cong he chu lai	100
+借問苦心愛者誰	jie wen ku xin ai zhe shei	100
+借問路傍名利客	jie wen lu bang ming li ke	100
+接叶巢鶯	jie xie chao ying	100
+街喧初息	jie xuan chu xi	100
+嗟因循	jie yin xun	100
+皆與此圖筋骨同	jie yu ci tu jin gu tong	100
+嗟予好古生苦晚	jie yu hao gu sheng ku wan	100
+嗟余聽鼓應官去	jie yu ting gu ying guan qu	100
+嗟哉吾黨二三子	jie zai wu dang er san zi	100
+結子慾黃旹	jie zi yu huang shi	100
+今安在	jin an zai	100
+金碧上青空	jin bi shang qing kong	100
+金鞭斷折九馬死	jin bian duan she jiu ma si	100
+金波淡	jin bo dan	100
+金釵斗艸	jin chai dou cao	100
+金蟾齧鏁燒香入	jin chan nie suo shao xiang ru	100
+禁城百五	jin cheng bai wu	100
+儘成陳跡	jin cheng chen ji	100
+今成流淚泉	jin cheng liu lei quan	100
+錦城雖云樂	jin cheng sui yun le	100
+儘遲㽞	jin chi liu	100
+近重陽	jin chong yang	100
+今旾不減前旾恨	jin chun bu jian qian chun hen	100
+晉代衣冠成古丘	jin dai yi guan cheng gu qiu	100
+近得歸京邑	jin de gui jing yi	100
+錦兒偷寄幽素	jin er tou ji you su	100
+錦帆應是到天涯	jin fan ying shi dao tian ya	100
+今逢四海爲家日	jin feng si hai wei jia ri	100
+金風未凜	jin feng wei lin	100
+金風細細	jin feng xi xi	100
+金戈鐵馬	jin ge tie ma	100
+儘孤城	jin gu cheng	100
+金穀㑺游	jin gu jun you	100
+錦官城外柏森森	jin guan cheng wai bai sen sen	100
+金龜解儘㽞無計	jin gui xie jin liu mo ji	100
+近寒食雨草萋萋	jin han shi yu cao qi qi	100
+今何許	jin he xu	100
+津堠岑寂	jin hou cen ji	100
+金壺翦送瓊枝	jin hu jian song qiong zhi	100
+儘黃昏	jin huang hun	100
+禁火天	jin huo tian	100
+儘薺麥青青	jin ji mai qing qing	100
+今見功名勝古人	jin jian gong ming sheng gu ren	100
+錦江春色來天地	jin jiang chun se lai tian di	100
+今看兩楹奠	jin kan liang ying dian	100
+津口停舟渡不得	jin kou ting zhou du bu de	100
+矜夸紫騮好	jin kua zi liu hao	100
+近來离思	jin lai chi si	100
+今來典斯郡	jin lai dian si jun	100
+近來多少華髮	jin lai duo shao hua fa	100
+近淚無乾土	jin lei mo qian tu	100
+禁裏疎鐘官舍晚	jin li shu zhong guan she wan	100
+金蓮襯	jin lian chen	100
+金陵津渡小山樓	jin ling jin du xiao shan lou	100
+金陵路	jin ling lu	100
+金陵王氣黯然收	jin ling wang qi an ran shou	100
+金陵子弟來相送	jin ling zi di lai xiang song	100
+近綠水	jin lv shui	100
+禁門宮樹月痕過	jin men gong shu yue hen guo	100
+今無其器存其辭	jin mo qi qi cun qi ci	100
+儘木臨皋飛觀	jin mu lin gao fei guan	100
+今年對花㝡匆匆	jin nian dui hua zui cong cong	100
+今年漢初賜	jin nian han chu ci	100
+今年花勝去年紅	jin nian hua sheng qu nian hong	100
+今年歡笑復明年	jin nian huan xiao fu ming nian	100
+今年瘦	jin nian shou	100
+金盤簇燕	jin pan cu yan	100
+錦屏人妒	jin ping ren du	100
+儘悽涼	jin qi liang	100
+近清明	jin qing ming	100
+金闕前開二峰長	jin que qian kai er feng chang	100
+金闕西廂叩玉扃	jin que xi xiang kou yu jiong	100
+金闕曉鐘開萬戶	jin que xiao zhong kai wan hu	100
+今人多不彈	jin ren duo bu dan	100
+今日垂楊生左肘	jin ri chui yang sheng zuo zhou	100
+近日帶圍寬儘	jin ri dai wei kuan jin	100
+今日芳尊惟恐淺	jin ri fang zun wei kong jian	100
+今日俸錢過十萬	jin ri feng qian guo shi wan	100
+今日花開已一年	jin ri hua kai yi yi nian	100
+今日江城旾已半	jin ri jiang cheng chun yi ban	100
+盡日君王看不足	jin ri jun wang kan bu zu	100
+今日龍鍾人共棄	jin ri long zhong ren gong qi	100

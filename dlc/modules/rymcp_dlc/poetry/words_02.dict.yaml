@@ -1,0 +1,269 @@
+---
+name: rymcp_dlc/poetry/words_02
+version: '2026.11.14.1'
+sort: by_weight
+use_preset_vocabulary: false
+activation:
+  __include: rymcp_dlc/poetry/words_03.dict:/activation
+...
+長河漸落曉星沈	chang he jian la xiao xing shen	100
+長河浪頭連天黑	chang he lang tou lian tian hei	100
+閶闔門開	chang he men kai	100
+長河㱃馬	chang he yin ma	100
+長恨此身非我有	chang hen ci shen fei wo you	100
+常恨世人新意少	chang hen shi ren xin yi shao	100
+長恨相從未款	chang hen xiang cong wei kuan	100
+長懷望斷	chang huai wang duan	100
+常記高人右丞句	chang ji gao ren you cheng gou	100
+長記那回旹	chang ji na hui shi	100
+長記誤隨車	chang ji wu sui che	100
+長記曉妝才了	chang ji xiao zhuang cai le	100
+長記曾攜手處	chang ji zeng xie shou chu	100
+長江獨至今	chang jiang du zhi jin	100
+長江一帆遠	chang jiang yi fan yuan	100
+長結西湖煙柳	chang jie xi hu yan liu	100
+唱金縷	chang jin lv	100
+長近尊前	chang jin zun qian	100
+長樂鐘聲花外盡	chang le zhong sheng hua wai jin	100
+腸漫回	chang man hui	100
+長門青草春風淚	chang men qing cao chun feng lei	100
+長門事	chang men shi	100
+常南望	chang nan wang	100
+悵然吟式微	chang ran yin shi wei	100
+長沙謫去古今憐	chang sha zhe qu gu jin lian	100
+長繩百尺拽碑倒	chang sheng bai che ye bei dao	100
+長是嬾攜手去	chang shi lan xie shou qu	100
+長是人千里	chang shi ren qian li	100
+長使英雄淚滿襟	chang shi ying xiong lei man jin	100
+長天凈	chang tian jing	100
+長條故惹行客	chang tiao gu re xing ke	100
+長亭別宴	chang ting bie yan	100
+長亭酒一瓢	chang ting jiu yi piao	100
+長亭柳色纏黃	chang ting liu se chan huang	100
+長亭路	chang ting lu	100
+長亭門外山重疊	chang ting men wai shan chong die	100
+長亭樹	chang ting shu	100
+長亭長在眼	chang ting zhang zai yan	100
+悵望千秋一灑淚	chang wang qian qiu yi sa lei	100
+長偎傍	chang wei bang	100
+悵臥新春白袷衣	chang wo xin chun bai jia yi	100
+長相思	chang xiang si	100
+長向月圓時候	chang xiang yue yuan shi hou	100
+常疑即見桃花面	chang yi ji jian tao hua mian	100
+長於春夢幾多旹	chang yu chun meng ji duo shi	100
+嘗與鴛鴦為侶	chang yu yuan yang wei lv	100
+長願向南流	chang yuan xiang nan liu	100
+長愿相隨	chang yuan xiang sui	100
+長在漢家營	chang zai han jia ying	100
+朝罷須裁五色詔	chao ba xu cai wu se zhao	100
+朝避猛虎	chao bi meng hu	100
+朝別黃鶴樓	chao bie huang he lou	100
+朝辭白帝彩雲間	chao ci bai di cai yun jian	100
+潮回去	chao hui qu	100
+潮落夜江斜月裏	chao la ye jiang xie yue li	100
+朝來塞雁先還	chao lai sai yan xian huan	100
+潮平兩岸闊	chao ping liang an kuo	100
+朝仍越溪女	chao reng yue xi nv	100
+朝如青絲暮成雪	chao ru qing si mu cheng xue	100
+朝天車馬	chao tian che ma	100
+朝天闕	chao tian que	100
+朝聞遊子唱離歌	chao wen you zi chang li ge	100
+朝野多懽	chao ye duo huan	100
+朝云信斷知何處	chao yun xin duan zhi he chu	100
+巢在三珠樹	chao zai san zhu shu	100
+車轔轔	che lin lin	100
+車馬去閑閑	che ma qu xian xian	100
+車師西門佇獻捷	che shi xi men zhu xian jie	100
+車走雷聲語未通	che zou lei sheng yu wei tong	100
+塵埃不見咸陽橋	chen ai bu jian xian yang qiao	100
+塵波澹綠無痕	chen bo tan lu wu hen	100
+趁殘鴉	chen can ya	100
+陳侯立身何坦蕩	chen hou li shen he tan dang	100
+陳跡危亭獨倚	chen ji wei ting du yi	100
+塵椾蠹筦	chen jian du guan	100
+趁嬌塵軟霧	chen jiao chen ruan wu	100
+塵滿哀弦危柱	chen man ai xian wei zhu	100
+塵滿面	chen man mian	100
+稱名憶舊容	chen ming yi jiu rong	100
+塵輕虎落	chen qing hu la	100
+塵誰浣	chen shei huan	100
+陳王昔時宴平樂	chen wang xi shi yan ping le	100
+塵心未盡思鄉縣	chen xin wei jin si xiang xian	100
+郴陽咊雁無	chen yang he yan mo	100
+晨搖玉佩趨金殿	chen yao yu pei qu jin dian	100
+臣子恨	chen zi hen	100
+澄澄變今古	cheng cheng bian jin gu	100
+澄澄映葭葦	cheng cheng ying jia wei	100
+城春草木深	cheng chun cao mu shen	100
+承恩不在貌	cheng en bu zai mao	100
+承恩數上南熏殿	cheng en shu shang nan xun dian	100
+承歡侍宴無閑暇	cheng huan shi yan mo xian xia	100
+成秋苑	cheng qiu yuan	100
+城闕輔三秦	cheng que fu san qin	100
+城闕夜千重	cheng que ye qian chong	100
+城上風光鶯語亂	cheng shang feng guang ying yu luan	100
+城上高樓接大荒	cheng shang gao lou jie da huang	100
+城上沒全師	cheng shang mei quan shi	100
+成嘆息	cheng tan xi	100
+城烏亱起	cheng wu ye qi	100
+城下煙波旾拍岸	cheng xia yan bo chun pai an	100
+丞相祠堂何處尋	cheng xiang ci tang he chu xun	100
+城小賊不屠	cheng xiao zei bu tu	100
+乘興离江渚	cheng xing chi jiang zhu	100
+乘興南遊不戒嚴	cheng xing nan you bu jie yan	100
+逞艶游	cheng yan you	100
+誠知此恨人人有	cheng zhi ci hen ren ren you	100
+城中相識盡繁華	cheng zhong xiang shi jin fan hua	100
+城中增暮寒	cheng zhong zeng mu han	100
+离腸未語先斷	chi chang wei yu xian duan	100
+遲遲日	chi chi ri	100
+遲遲鐘鼓初長夜	chi chi zhong gu chu chang ye	100
+持此謝高鳥	chi ci xie gao diao	100
+离痕懽唾	chi hen huan tuo	100
+离懷多少	chi huai duo shao	100
+池潢不敢顧	chi huang bu gan gu	100
+离䰟晻逐郎行遠	chi hun an zhu lang hang yuan	100
+离䰟難倩招清些	chi hun nan qian zhao qing xie	100
+赤雞白狗賭梨栗	chi ji bai gou du li li	100
+赤闌橋儘香街直	chi lan qiao jin xiang jie zhi	100
+恥令越甲鳴吳軍	chi ling yue jia ming wu jun	100
+魑魅喜人過	chi mei xi ren guo	100
+池面冰膠	chi mian bing jiao	100
+遲暮	chi mu	100
+离人心上秋	chi ren xin shang qiu	100
+遲日催花	chi ri cui hua	100
+遲日園林	chi ri yuan lin	100
+池上紅衣伴倚闌	chi shang hong yi ban yi lan	100
+池塘徧滿春色	chi tang bian man chun se	100
+池塘別後	chi tang bie hou	100
+池塘水綠旾微㬉	chi tang shui lv chun wei nuan	100
+池塘水綠風微㬉	chi tang shui lv feng wei nuan	100
+离亭黯黯	chi ting an an	100
+馳隙流年	chi xi liu nian	100
+持謝鄰家子	chi xie lin jia zi	100
+痴心指望回風墜	chi xin zhi wang hui feng zhui	100
+离緒難整	chi xu nan zheng	100
+池月漸東上	chi yue jian dong shang	100
+重把離愁㴱愬	chong ba li chou shen su	100
+重唱梅邊吸度曲	chong chang mei bian xi du qu	100
+重城不見	chong cheng bu jian	100
+重重簾幕密遮燈	chong chong lian mu mi zhe deng	100
+重到須驚	chong dao xu jing	100
+重過南樓	chong guo nan lou	100
+重見桃根	chong jian tao gen	100
+重來万感	chong lai mo gan	100
+重來是事堪嗟	chong lai shi shi kan jie	100
+重帘未卷	chong lian wei juan	100
+寵柳嬌花寒食近	chong liu jiao hua han shi jin	100
+重門閉	chong men bi	100
+重門須閉	chong men xu bi	100
+重覓幽香	chong mi you xiang	100
+重染風塵京洛	chong ran feng chen jing luo	100
+重燃絳蠟	chong ran jiang la	100
+重上君子堂	chong shang jun zi tang	100
+重省	chong sheng	100
+蟲聲新透綠窗紗	chong sheng xin tou lu chuang sha	100
+重頭歌韻響錚琮	chong tou ge yun xiang zheng cong	100
+虫網吹沾帘竹	chong wang chui zhan lian zhu	100
+虫網闌干	chong wang lan gan	100
+重帷深下莫愁堂	chong wei shen xia mo chou tang	100
+重解綉鞌	chong xie xiu an	100
+重尋無處	chong xun wu chu	100
+重陰未開	chong yin wei kai	100
+愁不歸眠	chou bu gui mian	100
+愁不肎	chou bu ken	100
+愁艸瘞花銘	chou cao yi hua ming	100
+惆悵此情難寄	chou chang ci qing nan ji	100
+愁腸寸結	chou chang cun jie	100
+愁腸待酒舒	chou chang dai jiu shu	100
+惆悵南朝事	chou chang nan chao shi	100
+惆悵南樓遙亱	chou chang nan lou yao ye	100
+惆悵双鴛不到	chou chang shuang yuan bu dao	100
+惆悵相思遲暮	chou chang xiang si chi mu	100
+愁腸已斷無由醉	chou chang yi duan wu you zui	100
+抽刀斷水水更流	chou dao duan shui shui geng liu	100
+愁到眉峯碧聚	chou dao mei feng bi ju	100
+愁多愁極	chou duo chou ji	100
+愁極	chou ji	100
+愁近清觴	chou jin qing shang	100
+愁空山	chou kong shan	100
+愁苦	chou ku	100
+愁裏慾飛還住	chou li yu fei huan zhu	100
+愁入西風南浦	chou ru xi feng nan pu	100
+愁損翠黛双蛾	chou sun cui dai shuang e	100
+愁損綠羅帬	chou sun lu luo qun	100
+愁無比	chou wu bi	100
+愁旋釋	chou xuan shi	100
+愁壓空云慾墜	chou ya kong yun yu zhui	100
+愁一箭風快	chou yi jian feng kuai	100
+愁亦絕	chou yi jue	100
+愁因薄暮起	chou yin bo mu qi	100
+愁余	chou yu	100
+愁雲黲淡萬里凝	chou yun can dan wan li ning	100
+愁只是	chou zhi shi	100
+愁字了得	chou zi liao de	100
+處處伴愁顏	chu chu ban chou yan	100
+處處黃蘆草	chu chu huang lu cao	100
+處處聞啼鳥	chu chu wen ti diao	100
+初彈淥水後楚妃	chu dan lu shui hou chu fei	100
+出洞無論隔山水	chu dong wu lun ge shan shui	100
+初回輕暑	chu hui qing shu	100
+楚江空晚	chu jiang kong wan	100
+楚江湄	chu jiang mei	100
+初將明月比佳期	chu jiang ming yue bi jia qi	100
+楚江沈魄	chu jiang shen po	100
+楚江微雨裏	chu jiang wei yu li	100
+出郊曠清曙	chu jiao kuang qing shu	100
+楚客相思益渺然	chu ke xiang si yi miao ran	100
+楚梅香嫩	chu mei xiang nen	100
+出門復悠悠	chu men fu you you	100
+出門搔白首	chu men sao bai shou	100
+除夢裏	chu meng li	100
+觸目悽涼多少悶	chu mu qi liang duo shao men	100
+初日郢門山	chu ri ying men shan	100
+出入高下窮煙霏	chu ru gao xia qiong yan fei	100
+出塞入塞寒	chu sai ru sai han	100
+楚塞三湘接	chu sai san xiang jie	100
+出山泉水濁	chu shan quan shui zhuo	100
+初識長安䗬蜨	chu shi chang an feng die	100
+出師未捷身先死	chu shi wei jie shen xian si	100
+楚臺風	chu tai feng	100
+楚天千里清秋	chu tian qian li qing qiu	100
+初爲霓裳後六么	chu wei ni chang hou liu yao	100
+初聞涕淚滿衣裳	chu wen ti lei man yi shang	100
+出西城	chu xi cheng	100
+初相見	chu xiang jian	100
+楚香羅袖	chu xiang luo xiu	100
+楚簫咽	chu xiao yan	100
+楚腰腸斷掌中輕	chu yao chang duan zhang zhong qing	100
+初因避地去人間	chu yin bi de qu ren jian	100
+楚苑東風外	chu yuan dong feng wai	100
+川爲淨其波	chuan wei jing qi bo	100
+傳聞至此回	chuan wen zhi ci hui	100
+傳之七十有二代	chuan zhi qi shi you er dai	100
+牀前看月光	chuang qian kan yue guang	100
+牎陰一箭	chuang yin yi jian	100
+吹鬢侵半苧	chui bin qin ban zhu	100
+吹笛到天明	chui di dao tian ming	100
+垂釣將已矣	chui diao jiang yi yi	100
+吹動岑寂	chui dong cen ji	100
+吹度玉門關	chui du yu men guan	100
+吹乾淚眼	chui gan lei yan	100
+垂虹西望	chui hong xi wang	100
+吹儘殘花無人見	chui jin can hua wu ren jian	100
+吹儘緐紅	chui jin fan hong	100
+吹儘香綿	chui jin xiang mian	100
+吹儘也	chui jin ye	100
+吹落	chui la	100
+垂柳不縈裙帶住	chui liu bu ying qun dai zhu	100
+垂柳闌干儘日風	chui liu lan gan jin ri feng	100
+吹梅笛怨	chui mei di yuan	100
+吹入垂楊陌	chui ru chui yang mo	100
+垂下帘櫳	chui xia lian long	100
+垂楊晻吳苑	chui yang an wu yuan	100
+垂楊渡	chui yang du	100
+垂楊金淺	chui yang jin jian	100
+垂楊裏	chui yang li	100
+垂楊係馬	chui yang xi ma	100
+垂楊駐馬	chui yang zhu ma	100
+垂楊紫陌洛城東	chui yang zi mo luo cheng dong	100

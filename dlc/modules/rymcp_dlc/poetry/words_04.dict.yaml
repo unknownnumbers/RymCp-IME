@@ -1,0 +1,269 @@
+---
+name: rymcp_dlc/poetry/words_04
+version: '2026.11.14.1'
+sort: by_weight
+use_preset_vocabulary: false
+activation:
+  __include: rymcp_dlc/poetry/words_05.dict:/activation
+...
+彈入哀箏柱	dan ru ai zheng zhu	100
+淡掃蛾眉朝至尊	dan sao e mei chao zhi zun	100
+但使龍城飛將在	dan shi long cheng fei jiang zai	100
+但數點紅英	dan shu dian hong ying	100
+但疎鍾催曉	dan shu zhong cui xiao	100
+但苔㴱韋曲	dan tai shen wei qu	100
+但天涯	dan tian ya	100
+淡天一片琉璃	dan tian yi pian liu li	100
+但望極樓高	dan wang ji lou gao	100
+但聞人語響	dan wen ren yu xiang	100
+但細雨斷橋	dan xi yu duan qiao	100
+淡煙流水畫屏幽	dan yan liu shui hua bing you	100
+但約明年	dan yao ming nian	100
+但憶臨官道	dan yi lin guan dao	100
+但倚樓極目	dan yi lou ji mu	100
+單衣佇立	dan yi zhu li	100
+但飲恨	dan yin hen	100
+但殷勤折取	dan yin qin she qu	100
+但有江花	dan you jiang hua	100
+但有舊懽新怨	dan you jiu huan xin yuan	100
+但願長醉不復醒	dan yuan chang zui bu fu xing	100
+但願長醉不願醒	dan yuan chang zui bu yuan xing	100
+但願龍庭神將在	dan yuan long ting shen jiang zai	100
+但願人長久	dan yuan ren chang jiu	100
+淡月紗窗	dan yue sha chuang	100
+淡云閣雨	dan yun ge yu	100
+丹竈初開火	dan zao chu kai huo	100
+但照壁	dan zhao bi	100
+噹愁眼	dang chou yan	100
+當初不合種相思	dang chu bu he zhong xiang si	100
+當初漫㽞華表語	dang chu man liu hua biao yu	100
+噹此際	dang ci ji	100
+當君懷歸日	dang jun huai gui ri	100
+當流赤足蹋澗石	dang liu chi zu ta jian shi	100
+當路誰相假	dang lu shei xiang gei	100
+當年酒狂自負	dang nian jiu kuang zi fu	100
+當年夢緣能短	dang nian meng yuan neng duan	100
+當年拼㕁醉顏紅	dang nian pin que zui yan hong	100
+當年少日	dang nian shao ri	100
+當年㴱隱	dang nian shen yin	100
+當年燕子知何處	dang nian yan zi zhi he chu	100
+當年遊歷	dang nian you li	100
+當仁自古有不讓	dang ren zi gu you bu rang	100
+當日音書	dang ri yin shu	100
+當時風氣	dang shi feng qi	100
+當時共我賞花人	dang shi gong wo shang hua ren	100
+當時喚渡	dang shi huan du	100
+當時浣紗伴	dang shi huan sha ban	100
+當時明月在	dang shi ming yue zai	100
+當時宋玉悲感	dang shi song yu bei gan	100
+當時亱泊	dang shi ye bo	100
+當時曾題敗壁	dang shi zeng ti bai bi	100
+當時只記入山深	dang shi zhi ji ru shan shen	100
+盪湘云楚水	dang xiang yun chu shui	100
+盪胷生曾雲	dang xiong sheng zeng yun	100
+當軒下馬入錦茵	dang xuan xia ma ru jin yin	100
+噹筵秋水慢	dang yan qiu shui man	100
+當與夢時同	dang yu meng shi tong	100
+盪云雪	dang yun xue	100
+道傍過者問行人	dao bang guo zhe wen xing ren	100
+到處登臨曾費淚	dao chu deng lin zeng fei lei	100
+到旾旹慾睡	dao chun shi yu shui	100
+到此成游宦	dao ci cheng you huan	100
+到此躊躇不能去	dao ci chou chu bu neng qu	100
+到此囙唸	dao ci yin nian	100
+到得㕁相逢	dao de que xiang feng	100
+到而今	dao er jin	100
+到歸旹	dao gui shi	100
+到黃昏	dao huang hun	100
+到今來	dao jin lai	100
+到了渾無定㨿	dao liao hun mo ding ju	100
+到薔薇	dao qiang wei	100
+到清明時候	dao qing ming shi hou	100
+道人庭宇靜	dao ren ting yu jing	100
+到如今	dao ru jin	100
+倒瀉半湖明月	dao xie ban hu ming yue	100
+道尋常	dao xun chang	100
+倒壓波痕清淺	dao ya bo hen qing jian	100
+道由白雲盡	dao you bai yun jin	100
+地卑山近	de bei shan jin	100
+地崩山摧壯士死	de beng shan cui zhuang shi si	100
+的的鏡盟釵誓	de de jing meng chai shi	100
+地東風欺客夢	de dong feng qi ke meng	100
+得無金丸懼	de wu jin wan ju	100
+得相能開國	de xiang neng kai guo	100
+地猶鄹氏邑	de you zou shi yi	100
+磴道盤虛空	deng dao pan xu kong	100
+等多時旾不歸來	deng duo shi chun bu gui lai	100
+登高壯觀天地間	deng gao zhuang guan tian di jian	100
+登孤壘荒涼	deng gu lei huang liang	100
+登歸時候	deng gui shi hou	100
+燈花結	deng hua jie	100
+燈花空老	deng hua kong lao	100
+燈火闌珊處	deng huo lan shan chu	100
+燈火市	deng huo shi	100
+燈火已黃昏	deng huo yi huang hun	100
+登臨出世界	deng lin chu shi jie	100
+登臨送目	deng lin song mu	100
+登臨望故國	deng lin wang gu guo	100
+登臨意	deng lin yi	100
+等恁旹	deng nen shi	100
+燈前擁髻	deng qian yong ji	100
+燈下白頭人	deng xia bai tou ren	100
+等閒孤負	deng xian gu fu	100
+等閒離別易消魂	deng xian li bie yi xiao hun	100
+等閒旹	deng xian shi	100
+等行人	deng xing ren	100
+等行人嵗嵗	deng xing ren sui sui	100
+燈亱初過早共約	deng ye chu guo zao gong yao	100
+鄧攸無子尋知命	deng you mo zi xun zhi ming	100
+燈炤离席	deng zhao chi xi	100
+登舟望秋月	deng zhou wang qiu yue	100
+帝城賒	di cheng she	100
+低底按小秦箏	di de an xiao qin zheng	100
+帝得聖相相曰度	di de sheng xiang xiang yue du	100
+低空有斷雲	di kong you duan yun	100
+帝裏風光好	di li feng guang hao	100
+笛裏關山	di li guan shan	100
+低眉信手續續彈	di mei xin shou xu xu dan	100
+低綺戶	di qi hu	100
+堤上游勒	di shang you le	100
+第四橋邊	di si qiao bian	100
+低頭思故鄉	di tou si gu xiang	100
+低頭向暗壁	di tou xiang an bi	100
+滌瑕蕩垢清朝班	di xia dang gou qing chao ban	100
+地下若逢陳後主	di xia re feng chen hou zhu	100
+帝鄉明日到	di xiang ming ri dao	100
+弟兄羇旅各西東	di xiong ji lv ge xi dong	100
+第一是	di yi shi	100
+帝曰汝度功第一	di yue ru du gong di yi	100
+笛中哀曲	di zhong ai qu	100
+弟子韓幹早入室	di zi han gan zao ru shi	100
+弟走從軍阿姨死	di zou cong jun a yi si	100
+鈿車不到杜陵路	dian che bu dao du ling lu	100
+鈿車羅帕	dian che luo pa	100
+點竄堯典舜典字	dian cuan yao dian shun dian zi	100
+點點滴滴	dian dian di di	100
+點點行行	dian dian hang hang	100
+點點行行淚痕滿	dian dian hang hang lei hen man	100
+點點摶作	dian dian tuan zuo	100
+鈿合金釵寄將去	dian he jin chai ji jiang qu	100
+點檢如今無一半	dian jian ru jin mo yi ban	100
+調寳瑟	diao bao se	100
+鳥飛不到吳天長	diao fei bu dao wu tian chang	100
+彫弓笮柳	diao gong ze liu	100
+調角斷清秋	diao jue duan qing qiu	100
+吊千古	diao qian gu	100
+調琴思	diao qin si	100
+鳥亦罷其鳴	diao yi ba qi ming	100
+弔影分爲千里鴈	diao ying fen wei qian li yan	100
+曡皷清笳	die gu qing jia	100
+蜨去鶯飛無處問	die qu ying fei wu chu wen	100
+蜨㝛西園	die su xi yuan	100
+定不負相思意	ding bu fu xiang si yi	100
+定巢燕子	ding chao yan zi	100
+丁寧㴱意	ding ning shen yi	100
+丁香露泣殘枝	ding xiang lu qi can zhi	100
+定有殘英	ding you can ying	100
+東城漸覺風光好	dong cheng jian jiao feng guang hao	100
+東城閑步	dong cheng xian bu	100
+東池宴	dong chi yan	100
+東牎未白凝殘月	dong chuang wei bai ning can yue	100
+洞房深處	dong fang shen chu	100
+洞房昨夜停紅燭	dong fang zuo ye ting hong zhu	100
+東風晻換年華	dong feng an huan nian hua	100
+東風不與周郎便	dong feng bu yu zhou lang bian	100
+東風不住	dong feng bu zhu	100
+東風吹住	dong feng chui zhu	100
+東風妒花惡	dong feng du hua e	100
+東風寒似亱來些	dong feng han shi ye lai xie	100
+東風何事又惡	dong feng he shi you e	100
+東風漸綠西湖柳	dong feng jian lu xi hu liu	100
+東風緊送斜陽下	dong feng jin song xie yang xia	100
+東風靜	dong feng jing	100
+東風裏	dong feng li	100
+東風臨亱冷於秋	dong feng lin ye leng yu qiu	100
+東風且伴薔薇住	dong feng qie ban qiang wei zhu	100
+東風似舊	dong feng shi jiu	100
+東風睡足交枝	dong feng shui ju jiao zhi	100
+東風無力	dong feng wu li	100
+東風無力百花殘	dong feng wu li bai hua can	100
+東風銷儘龍沙雪	dong feng xiao jin long sha xue	100
+東風亱放花千樹	dong feng ye fang hua qian shu	100
+東風又作無情計	dong feng you zuo wu qing ji	100
+東風慾障新㬉	dong feng yu zhang xin nuan	100
+東風著意	dong feng zhuo yi	100
+董夫子	dong fu zi	100
+東皋過徧	dong gao guo bian	100
+東歸燕从海上去	dong gui yan cong hai shang qu	100
+洞壑當門前	dong he dang men qian	100
+東君同意	dong jun tong yi	100
+東君也不愛惜	dong jun ye bu ai xi	100
+東來橐駝滿舊都	dong lai tuo tuo man jiu du	100
+東籬把灑黃昏後	dong li ba sa huang hun hou	100
+東林懷我師	dong lin huai wo shi	100
+凍梅藏韻	dong mei zang yun	100
+洞門高閣靄餘輝	dong men gao ge ai yu hui	100
+東門酤酒飲我曹	dong men gu jiu yin wo cao	100
+東門帳㱃乍闋	dong men zhang yin zha que	100
+動人幽意	dong ren you yi	100
+動如參與商	dong ru can yu shang	100
+洞天石扇	dong tian shi shan	100
+洞庭連天九疑高	dong ting lian tian jiu yi gao	100
+洞庭青草	dong ting qing cao	100
+洞庭秋水遠連天	dong ting qiu shui yuan lian tian	100
+東望都門信馬歸	dong wang du men xin ma gui	100
+東廂月	dong xiang yue	100
+東陽也	dong yang ye	100
+動庾信	dong yu xin	100
+東園岑寂	dong yuan cen ji	100
+凍云黯淡天氣	dong yun an dan tian qi	100
+洞在清溪何處邊	dong zai qing xi he chu bian	100
+洞在清谿何處邊	dong zai qing xi he chu bian	100
+東舟西舫悄無言	dong zhou xi fang qiao wu yan	100
+讀罷淚沾襟	dou ba lei zhan jin	100
+斗艸聚	dou cao ju	100
+斗艸溪根	dou cao xi gen	100
+陡頓翻成憂慼	dou dun fan cheng you qi	100
+斗酒十千恣歡謔	dou jiu shi qian zi huan xue	100
+斗酒十千恣讙謔	dou jiu shi qian zi huan xue	100
+豆蔻梢頭二月初	dou kou shao tou er yue chu	100
+豆蔻梢頭舊恨	dou kou shao tou jiu hen	100
+斗轉城荒	dou zhuai cheng huang	100
+都把一襟芳思	du ba yi jin fang si	100
+都不管	du bu guan	100
+都不歸來	du bu gui lai	100
+都不見	du bu jian	100
+都不似	du bu shi	100
+獨愴然而涕下	du chuang ran er ti xia	100
+都待笙歌㪚了	du dai sheng ge san le	100
+都道晚涼天氣好	du dao wan liang tian qi hao	100
+獨釣寒江雪	du diao han jiang xue	100
+獨釣醒醒	du diao xing xing	100
+都付新詩	du fu xin shi	100
+都付與	du fu yu	100
+都付與黃昏	du fu yu huang hun	100
+都護鐵衣冷難着	du hu tie yi leng nan zhao	100
+都几日陰沈	du ji ri yin shen	100
+杜鵑聲裏長門暮	du juan sheng li chang men mu	100
+杜鵑聲切	du juan sheng qie	100
+杜鵑啼血猨哀鳴	du juan ti xue yuan ai ming	100
+杜鵑休向耳邊啼	du juan xiu xiang er bian ti	100
+都來此事	du lai ci shi	100
+杜郎㑺賞	du lang jun shang	100
+杜郎老矣	du lang lao yi	100
+獨立東風彈淚眼	du li dong feng dan lei yan	100
+獨立揚新令	du li yang xin ling	100
+度簾幕中間	du lian mu zhong jian	100
+獨憐幽草澗邊生	du lian you cao jian bian sheng	100
+獨留青塚向黃昏	du liu qing zhong xiang huang hun	100
+都門帳㱃無緒	du men zhang yin mo xu	100
+渡万壑千岩	du mo he qian yan	100
+度墻啼鳥聲亂	du qiang ti diao sheng luan	100
+獨敲初夜磬	du qiao chu ye qing	100
+杜若還生	du re huan sheng	100
+賭勝馬蹄下	du sheng ma ti xia	100
+都是江南舊相識	du shi jiang nan jiu xiang shi	100
+都是醒旹煩惱	du shi xing shi fan nao	100
+都是曾听伊處	du shi zeng yin yi chu	100
+獨戍臨江夜泊船	du shu lin jiang ye bo chuan	100
+獨宿江城蠟炬殘	du su jiang cheng la ju can	100

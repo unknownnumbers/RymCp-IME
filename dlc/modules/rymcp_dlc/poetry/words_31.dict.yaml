@@ -1,0 +1,302 @@
+---
+name: rymcp_dlc/poetry/words_31
+version: '2026.11.14.1'
+sort: by_weight
+use_preset_vocabulary: false
+activation:
+  translator/packs/+:
+    - rymcp_dlc_poetry_00
+    - rymcp_dlc_poetry_01
+    - rymcp_dlc_poetry_02
+    - rymcp_dlc_poetry_03
+    - rymcp_dlc_poetry_04
+    - rymcp_dlc_poetry_05
+    - rymcp_dlc_poetry_06
+    - rymcp_dlc_poetry_07
+    - rymcp_dlc_poetry_08
+    - rymcp_dlc_poetry_09
+    - rymcp_dlc_poetry_10
+    - rymcp_dlc_poetry_11
+    - rymcp_dlc_poetry_12
+    - rymcp_dlc_poetry_13
+    - rymcp_dlc_poetry_14
+    - rymcp_dlc_poetry_15
+    - rymcp_dlc_poetry_16
+    - rymcp_dlc_poetry_17
+    - rymcp_dlc_poetry_18
+    - rymcp_dlc_poetry_19
+    - rymcp_dlc_poetry_20
+    - rymcp_dlc_poetry_21
+    - rymcp_dlc_poetry_22
+    - rymcp_dlc_poetry_23
+    - rymcp_dlc_poetry_24
+    - rymcp_dlc_poetry_25
+    - rymcp_dlc_poetry_26
+    - rymcp_dlc_poetry_27
+    - rymcp_dlc_poetry_28
+    - rymcp_dlc_poetry_29
+    - rymcp_dlc_poetry_30
+    - rymcp_dlc_poetry_31
+...
+終是聖明天子事	zhong shi sheng ming tian zi shi	100
+終歲不聞絲竹聲	zhong sui bu wen si zhu sheng	100
+中歲頗好道	zhong sui po hao dao	100
+中天月色好誰看	zhong tian yue se hao shei kan	100
+中庭日淡芭蕉卷	zhong ting ri dan ba jiao juan	100
+中宵勞夢想	zhong xiao lao meng xiang	100
+終羞人間	zhong xiu ren jian	100
+中有千千結	zhong you qian qian jie	100
+中有一人字太真	zhong you yi ren zi tai zhen	100
+種種惱人天氣	zhong zhong nao ren tian qi	100
+中州盛日	zhong zhou sheng ri	100
+皺波紋迎客棹	zhou bo wen ying ke zhuo	100
+周綱陵遲四海沸	zhou gang ling chi si hai fei	100
+舟橫埜渡	zhou heng ye du	100
+晝寂寂	zhou ji ji	100
+舟楫恐失墜	zhou ji kong shi zhui	100
+州家申名使家抑	zhou jia shen ming shi jia yi	100
+州今夜	zhou jin ye	100
+周南留滯古所惜	zhou nan liu zhi gu suo xi	100
+舟人夜語覺潮生	zhou ren ye yu jiao chao sheng	100
+舟人指點到今疑	zhou ren zhi dian dao jin yi	100
+晝閑度	zhou xian du	100
+晝陰重	zhou yin chong	100
+驟雨才過還晴	zhou yu cai guo huan qing	100
+驟雨初歇	zhou yu chu xie	100
+珠箔飄燈獨自歸	zhu bo piao deng du zi gui	100
+珠箔銀屏邐迤開	zhu bo yin ping li yi kai	100
+主稱會面難	zhu chen hui mian nan	100
+住傳宣	zhu chuan xuan	100
+燭底縈香	zhu de ying xiang	100
+朱鈿寳	zhu dian bao	100
+珠鈿翠蓋	zhu dian cui ge	100
+朱粉不㴱勻	zhu fen bu shen yun	100
+珠歌翠舞	zhu ge cui wu	100
+諸葛大名垂宇宙	zhu ge da ming chui yu zhou	100
+渚寒煙淡	zhu han yan dan	100
+諸侯劒佩鳴相磨	zhu hou jian pei ming xiang mo	100
+朱戶黏雞	zhu hu nian ji	100
+竹檻燈牎	zhu jian deng chuang	100
+竹檻氣寒	zhu jian qi han	100
+住近湓江地低濕	zhu jin pen jiang de di shi	100
+佇久河橋慾去	zhu jiu he qiao yu qu	100
+逐客無消息	zhu ke mo xiao xi	100
+朱闌共語	zhu lan gong yu	100
+住蘭舟	zhu lan zhou	100
+竹冷翠微路	zhu leng cui wei lu	100
+朱帘隔燕	zhu lian ge yan	100
+竹憐新雨後	zhu lian xin yu hou	100
+朱樓外	zhu lou wai	100
+竹露滴清響	zhu lu di qing xiang	100
+駐馬別孤墳	zhu ma bie gu fen	100
+駐馬望千門	zhu ma wang qian men	100
+駐馬銜桮問謫居	zhu ma xian bei wen zhe ju	100
+朱門掩	zhu men yan	100
+朱門映柳	zhu men ying liu	100
+著娉婷	zhu ping ting	100
+渚清沙白鳥飛迴	zhu qing sha bai diao fei hui	100
+朱雀橋邊野草花	zhu que qiao bian ye cao hua	100
+主人何爲言少錢	zhu ren he wei yan shao qian	100
+主人忘歸客不發	zhu ren wang gui ke bu fa	100
+主人下馬客在船	zhu ren xia ma ke zai chuan	100
+主人有酒歡今夕	zhu ren you jiu huan jin xi	100
+著人滋味	zhu ren zi wei	100
+諸生講解得切磋	zhu sheng jiang jie de qie cuo	100
+洙泗上	zhu si shang	100
+蛛絲罩	zhu si zhao	100
+竹外疎花	zhu wai shu hua	100
+竹外一枝斜	zhu wai yi zhi xie	100
+著我扁舟一叶	zhu wo pian zhou yi xie	100
+竹西佳處	zhu xi jia chu	100
+竹喧歸浣女	zhu xuan gui huan nv	100
+朱顏空自改	zhu yan kong zi gai	100
+朱顏那有年年好	zhu yan na you nian nian hao	100
+佇倚危樓風細細	zhu yi wei lou feng xi xi	100
+佇听寒聲	zhu yin han sheng	100
+燭映帘櫳	zhu ying lian long	100
+茱萸看	zhu yu kan	100
+渚雲低暗度	zhu yun di an du	100
+竹杖芒鞋輕勝馬	zhu zhang mang xie qing sheng ma	100
+轉教小玉報雙成	zhuai jiao xiao yu bao shuang cheng	100
+轉南浦	zhuai nan pu	100
+轉於奴僕親	zhuai yu nu pu qin	100
+轉於僮僕親	zhuai yu tong pu qin	100
+轉朱閣	zhuai zhu ge	100
+轉變朱顏	zhuan bian zhu yan	100
+篆縷銷金鼎	zhuan lv xiao jin ding	100
+篆縷銷香鼎	zhuan lv xiao xiang ding	100
+轉軸撥弦三兩聲	zhuan zhou bo xian san liang sheng	100
+妝罷低聲問夫壻	zhuang ba di sheng wen fu xu	100
+妝成每被秋娘妬	zhuang cheng mei bei qiu niang du	100
+壯懷激烈	zhuang huai ji lie	100
+妝樓望	zhuang lou wang	100
+莊生曉夢迷蝴蝶	zhuang sheng xiao meng mi hu die	100
+壯志飢餐胡虜肉	zhuang zhi ji can hu lu rou	100
+壯志逐年衰	zhuang zhi zhu nian cui	100
+墜粉飃紅	zhui fen piao hong	100
+墜粉飄香	zhui fen piao xiang	100
+墜紅無信息	zhui hong mo xin xi	100
+追念	zhui nian	100
+追想當年事	zhui xiang dang nian shi	100
+准儗佳期又誤	zhun ni jia qi you wu	100
+棹移人遠	zhuo yi ren yuan	100
+酌飲四坐以散愁	zhuo yin si zuo yi san chou	100
+濯足洞庭望八荒	zhuo zu dong ting wang ba huang	100
+自慙居處崇	zi can ju chu chong	100
+自旾來	zi chun lai	100
+資從豈待周	zi cong kai dai zhou	100
+自從棄置便衰朽	zi cong qi zhi bian shuai xiu	100
+自從獻寶朝河宗	zi cong xian bao chao he zong	100
+自到瑤台畔	zi dao yao tai pan	100
+恣登臨	zi deng lin	100
+自爾爲佳節	zi er wei jia jie	100
+紫蓋連延接天柱	zi ge lian yan jie tian zhu	100
+自歌誰答	zi ge shei da	100
+自顧無長策	zi gu mo chang ce	100
+自顧影	zi gu ying	100
+子規聲斷	zi gui sheng duan	100
+自過了收燈後	zi guo le shou deng hou	100
+自胡馬窺江去後	zi hu ma kui jiang qu hou	100
+自將磨洗認前朝	zi jiang mo xi ren qian chao	100
+自驚腰衩	zi jing yao cha	100
+自覺諫書稀	zi jue jian shu xi	100
+自覺老煙波	zi jue lao yan bo	100
+自開元	zi kai yuan	100
+自憐碧玉親教舞	zi lian bi yu qin jiao wu	100
+自憐兩鬢清霜	zi lian liang bin qing shuang	100
+自憐詩酒瘦	zi lian shi jiu shou	100
+自憐幽獨	zi lian you du	100
+紫騮認得舊遊踪	zi liu ren de jiu you zong	100
+姊妹弟兄皆列土	zi mei di xiong jie lie tu	100
+自難忘	zi nan wang	100
+自遣一襟幽怨	zi qian yi jin you yuan	100
+自清涼無汗	zi qing liang mo han	100
+紫曲門荒	zi qu men huang	100
+紫泉宮殿鎖煙霞	zi quan gong dian suo yan xia	100
+自是休文	zi shi xiu wen	100
+紫絲羅帶鴛鴦結	zi si luo dai yuan yang jie	100
+字體不類隸與科	zi ti bu lei li yu ke	100
+紫駝之峰出翠釜	zi tuo zhi feng chu cui fu	100
+紫駞之峯出翠釜	zi tuo zhi feng chu cui fu	100
+紫薇登覽㝡關情	zi wei deng lan zui guan qing	100
+自謂經過舊不迷	zi wei jing guo jiu bu mi	100
+紫微朱槿花殘	zi wei zhu jin hua can	100
+自小不相識	zi xiao bu xiang shi	100
+自銷凝	zi xiao ning	100
+自小闕內訓	zi xiao que nei xun	100
+子胥既棄吳江上	zi xu ji qi wu jiang shang	100
+自言本是京城女	zi yan ben shi jing cheng nv	100
+自約賞花人	zi yao shang hua ren	100
+自有晻塵隨馬	zi you an chen sui ma	100
+自有歲寒心	zi you sui han xin	100
+紫萸一枝傳賜	zi yu yi zhi chuan ci	100
+自云良家子	zi yun liang jia zi	100
+自在飛花輕似夢	zi zai fei hua qing shi meng	100
+自知愁染潘郎	zi zhi chou ran pan lang	100
+自足蕩心耳	zi zu dang xin er	100
+縱芭蕉	zong ba jiao	100
+總不堪華髮	zong bu kan hua fa	100
+宗臣遺像肅清高	zong chen yi xiang su qing gao	100
+縱豆蔻䛐工	zong dou kou ci gong	100
+總付與啼	zong fu yu ti	100
+總還鷗鷺	zong huan ou lu	100
+蹤跡	zong ji	100
+縱㽞得鶯花	zong liu de ying hua	100
+總難㽞燕	zong nan liu yan	100
+縱凴高	zong ping gao	100
+總平生稀見	zong ping sheng xi jian	100
+總是愁魚	zong shi chou yu	100
+總是當時攜手處	zong shi dang shi xie shou chu	100
+總是悽涼意	zong shi qi liang yi	100
+縱使相逢應不識	zong shi xiang feng ying bu shi	100
+總是玉關情	zong shi yu guan qing	100
+縱收香藏鏡	zong shou xiang zang jing	100
+總忘卻	zong wang que	100
+總爲浮雲能蔽日	zong wei fu yun neng bi ri	100
+縱揚鞭	zong yang bian	100
+縱英游	zong ying you	100
+縱有殘花	zong you can hua	100
+縱有健婦把鋤犂	zong you jian fu ba chu li	100
+縱玉勒	zong yu le	100
+縱樽前痛飲	zong zun qian tong yin	100
+走馬蘭臺類斷蓬	zou ma lan tai lei duan peng	100
+阻追游	zu dui you	100
+租稅從何出	zu shui cong he chu	100
+祖席離歌	zu xi li ge	100
+醉別西樓醒不記	zui bie xi lou xing bu ji	100
+醉不成歡慘將別	zui bu cheng huan can jiang bie	100
+㝡愁苦	zui chou ku	100
+㝡愁人	zui chou ren	100
+罪從大辟皆除死	zui cong da pi jie chu si	100
+㝡斷人腸	zui duan ren chang	100
+㝡妨它	zui fang ta	100
+㝡關情	zui guan qing	100
+醉和金甲舞	zui he jin jia wu	100
+醉紅自㬉	zui hong zi nuan	100
+醉後不知紅日晚	zui hou bu zhi hong ri wan	100
+醉後不知斜日晚	zui hou bu zhi xie ri wan	100
+醉後各分散	zui hou ge fen san	100
+醉鬟㽞盼	zui huan liu pan	100
+醉䰟愁夢相半	zui hun chou meng xiang ban	100
+醉襟惹	zui jin re	100
+㝡堪愛	zui kan ai	100
+㝡可惜	zui ke xi	100
+㝡苦夢䰟	zui ku meng hun	100
+㝡苦潯陽江頭客	zui ku xun yang jiang tou ke	100
+醉來旹響空弦	zui lai shi xiang kong xian	100
+醉裏秋波	zui li qiu bo	100
+醉連旾夕	zui lian chun xi	100
+醉夢裏	zui meng li	100
+醉明月	zui ming yue	100
+㝡難將息	zui nan jiang xi	100
+醉人花氣	zui ren hua qi	100
+㝡誰苦	zui shei ku	100
+醉沈沈	zui shen shen	100
+最是楚宮俱泯滅	zui shi chu gong ju min mie	100
+醉死差無苦	zui si cha mo ku	100
+醉臥不知白日暮	zui wo bu zhi bai ri mu	100
+醉臥酒壚側	zui wo jiu lu ce	100
+醉臥沙場君莫笑	zui wo sha chang jun mo xiao	100
+㝡無賴	zui wu lai	100
+最先唸	zui xian nian	100
+醉解蘭舟去	zui xie lan zhou qu	100
+醉眼不逢人	zui yan bu feng ren	100
+醉也無人筦	zui ye wu ren guan	100
+醉擁重衾	zui yong chong qin	100
+醉月頻中聖	zui yue pin zhong sheng	100
+樽酒家貧只舊醅	zun jiu jia pin zhi jiu pei	100
+尊酒慰離顏	zun jiu wei li yan	100
+尊前重見	zun qian chong jian	100
+尊前故人如在	zun qian gu ren ru zai	100
+尊前花月	zun qian hua yue	100
+樽前舊風味	zun qian jiu feng wei	100
+尊前茸㡌風	zun qian rong mao feng	100
+遵事跡猶遽	zun shi ji you ju	100
+昨別今已春	zuo bie jin yi chun	100
+坐愁紅顏老	zuo chou hong yan lao	100
+坐法宮中朝四夷	zuo fa gong zhong chao si yi	100
+作個歸期天已許	zuo ge gui qi tian yi xu	100
+坐觀垂釣者	zuo guan chui diao zhe	100
+坐見舉國來奔波	zuo jian ju guo lai ben bo	100
+坐看紅樹不知遠	zuo kan hong shu bu zhi yuan	100
+坐看牽牛織女星	zuo kan qian niu zhi nv xing	100
+坐看雲起時	zuo kan yun qi shi	100
+做冷欺花	zuo leng qi hua	100
+做弄出	zuo long chu	100
+做滿湖	zuo man hu	100
+昨日亂山昏	zuo ri luan shan hun	100
+昨夜東風吹血腥	zuo ye dong feng chui xue xing	100
+昨夜風開露井桃	zuo ye feng kai lu jing tao	100
+昨夜還曾倚	zuo ye huan zeng yi	100
+昨夜冷中庭	zuo ye leng zhong ting	100
+昨夜南園風雨	zuo ye nan yuan feng yu	100
+昨夜裙帶解	zuo ye qun dai xie	100
+昨夜上皇新授籙	zuo ye shang huang xin shou lu	100
+昨夜詩有回紋	zuo ye shi you hui wen	100
+昨夜微霜初渡河	zuo ye wei shuang chu du he	100
+昨夜星辰昨夜風	zuo ye xing chen zuo ye feng	100
+昨夜月同行	zuo ye yue tong hang	100
+昨與故人期	zuo yu gu ren qi	100
+昨者州前搥大鼓	zuo zhe zhou qian chui da gu	100
+坐中多是豪英	zuo zhong duo shi hao ying	100
+座中泣下誰最多	zuo zhong qi xia shei zui duo	100

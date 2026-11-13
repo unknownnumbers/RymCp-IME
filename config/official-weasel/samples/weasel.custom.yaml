@@ -1,0 +1,42 @@
+# GPL-3.0-only. RymCp contributors.
+# Example for a fresh user folder. Merge selected fields into an existing file.
+patch:
+  style/color_scheme: rymcp_gray
+  style/color_scheme_dark: rymcp_gray
+  style/font_face: Microsoft YaHei
+  style/label_font_face: Microsoft YaHei
+  style/comment_font_face: Microsoft YaHei
+  style/font_point: 14
+  style/label_font_point: 14
+  style/comment_font_point: 14
+  style/inline_preedit: false
+  style/preedit_type: composition
+  style/horizontal: false
+  style/vertical_text: false
+  style/label_format: "%s."
+  style/layout/border_width: 1
+  style/layout/margin_x: 8
+  style/layout/margin_y: 5
+  style/layout/spacing: 4
+  style/layout/candidate_spacing: 4
+  style/layout/hilite_spacing: 0
+  style/layout/hilite_padding: 0
+  style/layout/corner_radius: 10
+  preset_color_schemes/rymcp_gray:
+    name: RymCp Gray
+    author: RymCp contributors
+    color_format: abgr
+    back_color: 0x85000000
+    border_color: 0xffa3a3a3
+    text_color: 0xffffffff
+    hilited_text_color: 0xffffffff
+    hilited_back_color: 0x00000000
+    candidate_text_color: 0xfffed898
+    comment_text_color: 0xfffed898
+    label_color: 0xfffed898
+    hilited_candidate_text_color: 0xff89a1fe
+    hilited_comment_text_color: 0xff89a1fe
+    hilited_label_color: 0xff89a1fe
+    hilited_candidate_back_color: 0x00000000
+    shadow_color: 0x00000000
+  app_options/firefox.exe/inline_preedit: null

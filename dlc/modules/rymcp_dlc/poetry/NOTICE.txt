@@ -1,0 +1,9 @@
+CC-CEDICT: community maintained by CC-CEDICT contributors, published by MDBG.
+Original CEDICT: Copyright (C) 1997, 1998 Paul Andrew Denisowski.
+Source: https://www.mdbg.net/chinese/dictionary?page=cedict
+Derived catalog and reading annotations: CC BY-SA 4.0.
+Changes: systematic domain extraction or anthology annotation, tone removal,
+native-syllable filtering, deduplication, and a uniform weight of 100.
+Poetry text: chinese-poetry/chinese-poetry, fixed commit b8594f81a89752241442f2ce267d6f66f96704ee.
+The upstream MIT notice is included unchanged.
+The automatic reading annotations have not been reviewed line by line.

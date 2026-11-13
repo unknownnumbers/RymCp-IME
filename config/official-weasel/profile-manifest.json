@@ -1,0 +1,482 @@
+{
+  "format": "rymcp-official-profile-v2",
+  "version": "2026.11.14",
+  "files": [
+    {
+      "path": "english_extensions/build-report.json",
+      "bytes": 339,
+      "sha256": "68fe2237fbb2b17966e36ce163120e72a6796f63c80a7c0185991f6ad47f3a93"
+    },
+    {
+      "path": "english_extensions/case_forms.tsv",
+      "bytes": 2271,
+      "sha256": "dc0170847cc07b9c78355d8a2c45144f279342ea58e637b22f55d7cabc6859a2"
+    },
+    {
+      "path": "english_extensions/entries.tsv",
+      "bytes": 168113,
+      "sha256": "0de39221f2d57e33b75e61bc23efc28484f4d09aba83eb63917b97b0faaa24eb"
+    },
+    {
+      "path": "english_extensions/keys.bin",
+      "bytes": 665488,
+      "sha256": "61ddd01c582218f2bbf61dc7dbd5e31318b0db261adb7977927980e3d89518cf"
+    },
+    {
+      "path": "english_extensions/postings.bin",
+      "bytes": 242476,
+      "sha256": "e4139cd2639704cd4834bc75774e99d815589178bffa4de6595010dae94f72e7"
+    },
+    {
+      "path": "english_extensions/words.txt",
+      "bytes": 27162,
+      "sha256": "4a4d5469dee4317bae130ef1b8739bdc68d4bf267aa4a9d7ac7f5be3aeaa561d"
+    },
+    {
+      "path": "english_extensions.dict.yaml",
+      "bytes": 42497,
+      "sha256": "46f5b1f58a71fbf4408d6bfeb1d2a292c88b60aae30792f415ef411cea96b4b7"
+    },
+    {
+      "path": "english_full.dict.yaml",
+      "bytes": 2086340,
+      "sha256": "722b9dda5152877bd6372ab1f2ae24a56146e192ce66c740ef031d37b8df774b"
+    },
+    {
+      "path": "english_full.schema.yaml",
+      "bytes": 226,
+      "sha256": "14ebc72115f968697ccbe67ed8e446eb7a0ea42dfead668475ece7548daa8af4"
+    },
+    {
+      "path": "english_index/build-report.json",
+      "bytes": 348,
+      "sha256": "838cf8056ac04b04bb9d358d78b5705e1cb68e54b20540a80690ae53189c9bf5"
+    },
+    {
+      "path": "english_index/keys.bin",
+      "bytes": 10817264,
+      "sha256": "91a28c2f2059f2217455cc7814d445680ed8740501694b84afa1d2f218b138e9"
+    },
+    {
+      "path": "english_index/postings.bin",
+      "bytes": 8121656,
+      "sha256": "309ecadcbf07126d46e9365cf4b38acd75908b47890c55ffb361eba498b62bef"
+    },
+    {
+      "path": "english_index/vocabulary.tsv",
+      "bytes": 1332866,
+      "sha256": "c25e3ca31b102b12ced4afb56976669feea73fbe417735ef3532d4a1c6e8ed95"
+    },
+    {
+      "path": "english_index/words.txt",
+      "bytes": 753189,
+      "sha256": "8bf705417eba57cd5bddeab4ca37a02be471132ac3911e8a862929cb9b4a5d4a"
+    },
+    {
+      "path": "essay.txt",
+      "bytes": 6330573,
+      "sha256": "ae37983a4216145a6854375f21016358470c5dcf5ae9f6a54c29801e70b4d824"
+    },
+    {
+      "path": "licenses/CC-BY-SA-4.0.txt",
+      "bytes": 20138,
+      "sha256": "28a9529c7d0bb4dc51f4bf5c116a3d16ef247a052f7591466768ddf563fd1cf5"
+    },
+    {
+      "path": "licenses/english-extensions-Ice-GPL-3.0.txt",
+      "bytes": 35149,
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+    },
+    {
+      "path": "licenses/essay-LGPL-3.0.txt",
+      "bytes": 7652,
+      "sha256": "97628afebc60f026f5c2b25d7491c46a5c4ee61f693e7cfa07fbd2c03605979b"
+    },
+    {
+      "path": "licenses/luna-compact-model-LGPL-3.0.txt",
+      "bytes": 7651,
+      "sha256": "da7eabb7bafdf7d3ae5e9f223aa5bdc1eece45ac569dc21b3b037520b4464768"
+    },
+    {
+      "path": "licenses/luna-pinyin-LGPL-3.0.txt",
+      "bytes": 7652,
+      "sha256": "97628afebc60f026f5c2b25d7491c46a5c4ee61f693e7cfa07fbd2c03605979b"
+    },
+    {
+      "path": "licenses/OpenCC-LICENSE.txt",
+      "bytes": 9165,
+      "sha256": "b534e465949558eec2597b04f5092b5e161236a68dfbfd04d547592ac3964308"
+    },
+    {
+      "path": "licenses/SCOWL-case-forms-Copyright.txt",
+      "bytes": 11758,
+      "sha256": "283326a422e29c510e2ba6805518c418ce3c35ed1fadc3eec83d2da4f6c5a055"
+    },
+    {
+      "path": "licenses/Unicode-3.0.txt",
+      "bytes": 1995,
+      "sha256": "e7a93b009565cfce55919a381437ac4db883e9da2126fa28b91d12732bc53d96"
+    },
+    {
+      "path": "lua/candidate_keys.lua",
+      "bytes": 2210,
+      "sha256": "4662578a97b5a4bf5892202b374e5ec70a895eafbfda7ca2efacf1fadfd655f3"
+    },
+    {
+      "path": "lua/cn_boundaries.lua",
+      "bytes": 967,
+      "sha256": "20689e1a71bfe13ac67e5ccc505a35e1af41563424e0cab4ba55c300d23a876f"
+    },
+    {
+      "path": "lua/cn_dlc.lua",
+      "bytes": 984,
+      "sha256": "c37d6a1d53e783d07a6d00e64c2a5358a82a6b217ee3b3477653d56c50922638"
+    },
+    {
+      "path": "lua/cn_extra_forms.lua",
+      "bytes": 108874,
+      "sha256": "b0b08c1b47740a8b9d9a4b24e4d7410b89355d2e0d4936c2afe09edfc9414a65"
+    },
+    {
+      "path": "lua/cn_forms.lua",
+      "bytes": 1122446,
+      "sha256": "cf766b14dfa7a688dacc2e548f2b41520c12b2a81ea90477fd1f1190566607f5"
+    },
+    {
+      "path": "lua/cn_match.lua",
+      "bytes": 7699,
+      "sha256": "b69835df849c2583a858cf4ac05a12d7286702ac1c8992ae156d823b06b8b222"
+    },
+    {
+      "path": "lua/cn_native_boundary.lua",
+      "bytes": 687,
+      "sha256": "4dd3c3247958fdfebd98501362d09cc9e88777f6a1c099c6cff7b0dc1483c6a4"
+    },
+    {
+      "path": "lua/cn_neighbor_keys.lua",
+      "bytes": 438,
+      "sha256": "42fb46041478aeb5de92614dd040bc8ebad45fe02b4e4bf7810496a9bfa9b1cd"
+    },
+    {
+      "path": "lua/cn_normal_codec.lua",
+      "bytes": 590,
+      "sha256": "6ed8dc3f51f079659a4363963d155bf62e2fb106702529f8ef1a1d1efb22b671"
+    },
+    {
+      "path": "lua/cn_orthography.lua",
+      "bytes": 1726,
+      "sha256": "d65521c16551d990f0602ea3a743787c9cfdb3be84b116494e90bf2356b05c16"
+    },
+    {
+      "path": "lua/cn_preedit_spacing.lua",
+      "bytes": 2350,
+      "sha256": "dcdf8a861d8fa17de18fce82b11d333ab9f4778e8f5c3db06c5f1d189285f39a"
+    },
+    {
+      "path": "lua/cn_tolerance.lua",
+      "bytes": 1268,
+      "sha256": "13ce3e50251f6ff624b0d0e7184cd2897e4a988018ce5cbc1abd7d738e6d37d5"
+    },
+    {
+      "path": "lua/cn_translator.lua",
+      "bytes": 30001,
+      "sha256": "5a98a9a2b1fcad662a4dae5946fc692d45548e08b36ec59bafd3a0cadbfeb311"
+    },
+    {
+      "path": "lua/draft_limit.lua",
+      "bytes": 1496,
+      "sha256": "b6cee110ce6803219dfb87d6a8fe143b08a4718e8fcf8e914b166ce1cd047bc7"
+    },
+    {
+      "path": "lua/en_distance.lua",
+      "bytes": 834,
+      "sha256": "6d2ff469afe1272d9cf7deaef76a2beea1b7d2e226b865104064013402471de4"
+    },
+    {
+      "path": "lua/en_dlc.lua",
+      "bytes": 2279,
+      "sha256": "b0e50476b40a3340345d69fba63119441e1d53c264f245440875afa5be9cd62d"
+    },
+    {
+      "path": "lua/en_dlc_format.lua",
+      "bytes": 2249,
+      "sha256": "7e7730697d85fe5386d71581f3216458fccc12d91291365f066781961a64f4e8"
+    },
+    {
+      "path": "lua/en_index.lua",
+      "bytes": 4252,
+      "sha256": "dd8276e0e4ee461574b04e6f7a3ebc4ea196801d95948b82a038b205db825b91"
+    },
+    {
+      "path": "lua/en_indexed_translator.lua",
+      "bytes": 11547,
+      "sha256": "f5532f551d9ed30caa1069b76770cef1a22bcff50a74a55fc430e851cb4cbf97"
+    },
+    {
+      "path": "lua/en_processor.lua",
+      "bytes": 2370,
+      "sha256": "04c1f102c61b89ef262dff3bac418a4544a425f44398c1ed3b45bf64356d7cb9"
+    },
+    {
+      "path": "lua/en_segmentor.lua",
+      "bytes": 789,
+      "sha256": "cdcee95fddde2fdf3ea29bf4ff7c84c4cada721a147496945ae8c15b0612b63d"
+    },
+    {
+      "path": "lua/official_backup_mode.lua",
+      "bytes": 1409,
+      "sha256": "0323aeb24efecf7ce39ba2e8a51391ed7d4b83fd7577820af26964d93c066d4a"
+    },
+    {
+      "path": "lua/rymcp_dlc.lua",
+      "bytes": 7802,
+      "sha256": "f138e2b2363a9863ad0f4d221dde377a0a18d69b91c6de65a4422cab4da128ea"
+    },
+    {
+      "path": "lua/select_hanzi.lua",
+      "bytes": 4246,
+      "sha256": "3744c41245468a9266da150bd14d66a20fe7277f7d9380269c257ab53f533718"
+    },
+    {
+      "path": "luna_pinyin.dict.yaml",
+      "bytes": 891284,
+      "sha256": "15cc2481fffb3682173fca712b2ee6a2b154ebd0c6be61252f3fa175f7dc996f"
+    },
+    {
+      "path": "luna_pinyin.research.dict.yaml",
+      "bytes": 137,
+      "sha256": "7aee3e9f3157fe3b2f991485327fe531fc1e775e571df18c6269b2229734e74c"
+    },
+    {
+      "path": "opencc/mdx_t2s.json",
+      "bytes": 720,
+      "sha256": "fc5a5727f65eb56652e44af8d4c01d63f4062f9b6437e9024018d0dd4ad69c87"
+    },
+    {
+      "path": "opencc/mdx_words.txt",
+      "bytes": 74,
+      "sha256": "e8a7da2487f1c15053f2251ae06441be7d9bf5a8982bf87f4f74b5e025c26ae4"
+    },
+    {
+      "path": "opencc/TSCharacters.ocd2",
+      "bytes": 46126,
+      "sha256": "85291e0173e972bbca58c848fb90b3bb41c79674cb61a75645e01bd884ad5927"
+    },
+    {
+      "path": "opencc/TSPhrases.ocd2",
+      "bytes": 9776,
+      "sha256": "edafc46f5c3eca61a754c78e47117e7c73995cacd6c99aadcb8a219d7ae3e53d"
+    },
+    {
+      "path": "pc_research.custom.yaml",
+      "bytes": 256136,
+      "sha256": "3433e18d89983406f664318b1e7362b96090b231ba494fe91f2f0ef8bad40eac"
+    },
+    {
+      "path": "pc_research.schema.yaml",
+      "bytes": 2513,
+      "sha256": "cae295822f2dc31260c60a4f383de0e6afe2447d8eb79c3d8a264c618a77b7aa"
+    },
+    {
+      "path": "rymcp_dlc_computer.dict.yaml",
+      "bytes": 175,
+      "sha256": "7f7fe7ed21298462b7266a933640d24acd24f0803271bb69ded1c30ff8e4dcbc"
+    },
+    {
+      "path": "rymcp_dlc_math.dict.yaml",
+      "bytes": 167,
+      "sha256": "8699bcdb8052c78cbab46b2e655b7af91f83b40df93bdc93eaa9ebfb382b2307"
+    },
+    {
+      "path": "rymcp_dlc_physics.dict.yaml",
+      "bytes": 173,
+      "sha256": "144de58f53f4b8f9fcee9ff1c80484903ba23eb65d1a8372ceaf8b21b3bd590e"
+    },
+    {
+      "path": "rymcp_dlc_poetry.dict.yaml",
+      "bytes": 171,
+      "sha256": "bc7ff6628072ee38945a3a957f399f968aab276211b26f7a4c3c1e5d4828cec9"
+    },
+    {
+      "path": "rymcp_dlc_poetry_00.dict.yaml",
+      "bytes": 177,
+      "sha256": "954fa5f7031d7a9bd590bce188ff30f6911a69dcf32243bf40783673e33e0044"
+    },
+    {
+      "path": "rymcp_dlc_poetry_01.dict.yaml",
+      "bytes": 177,
+      "sha256": "4da1a5620f57f239a388c0866e411f6cec553b2709d54dbf83f3970ea1c8e32d"
+    },
+    {
+      "path": "rymcp_dlc_poetry_02.dict.yaml",
+      "bytes": 177,
+      "sha256": "7a5ea296425bb52ee58629871df4a79e8da7f432b2ff507e6afa45d4e467610e"
+    },
+    {
+      "path": "rymcp_dlc_poetry_03.dict.yaml",
+      "bytes": 177,
+      "sha256": "c69a834140df01384a0bc24cecb1243ef48e7d5fcf79dce715f4a558c5532abd"
+    },
+    {
+      "path": "rymcp_dlc_poetry_04.dict.yaml",
+      "bytes": 177,
+      "sha256": "075a625ed333233578e529248787aa5b10700f1f1392d8f2476fd6cf08deb83f"
+    },
+    {
+      "path": "rymcp_dlc_poetry_05.dict.yaml",
+      "bytes": 177,
+      "sha256": "da0ff8824e115a176e690d389400ea39f779d1d8f0c7778aaef1e3fd49ed055c"
+    },
+    {
+      "path": "rymcp_dlc_poetry_06.dict.yaml",
+      "bytes": 177,
+      "sha256": "064037b299870818892956794414cc91f4c5f7bdb3f58074ccf6263b1bb75404"
+    },
+    {
+      "path": "rymcp_dlc_poetry_07.dict.yaml",
+      "bytes": 177,
+      "sha256": "0b0ff96221615557af08b645be16d0b08ae159f426147deee3fc63ec24dc5020"
+    },
+    {
+      "path": "rymcp_dlc_poetry_08.dict.yaml",
+      "bytes": 177,
+      "sha256": "f9c5a1e44603799897da76eb69a86a49ffb55dc17d023e11ffe0571c1194f2ea"
+    },
+    {
+      "path": "rymcp_dlc_poetry_09.dict.yaml",
+      "bytes": 177,
+      "sha256": "0906920319aea28a6cee6f98ba12d59b3e7d396f4f4cfa090aca091facadda97"
+    },
+    {
+      "path": "rymcp_dlc_poetry_10.dict.yaml",
+      "bytes": 177,
+      "sha256": "0c520b0ab5edd2107fbb75380819ff87ac1dae69cd5a1d5685531742edeb5d9a"
+    },
+    {
+      "path": "rymcp_dlc_poetry_11.dict.yaml",
+      "bytes": 177,
+      "sha256": "42fa5f46f93af3e3d98b99c5154a6abb9b7374019ea7cd6fdf071998f6a5fb7b"
+    },
+    {
+      "path": "rymcp_dlc_poetry_12.dict.yaml",
+      "bytes": 177,
+      "sha256": "df0c55fd1ece10ad276663ed95c3af6e93dfb8a7e522a8f24c5274463fe9a217"
+    },
+    {
+      "path": "rymcp_dlc_poetry_13.dict.yaml",
+      "bytes": 177,
+      "sha256": "8f9c8710f9fb087d7728f87cd17416cb2c352296153ea6b380d716edac953dc3"
+    },
+    {
+      "path": "rymcp_dlc_poetry_14.dict.yaml",
+      "bytes": 177,
+      "sha256": "808fe14d3b50cf31322725bb006604984e7853149f31820d63bcbbb1d1fefdc3"
+    },
+    {
+      "path": "rymcp_dlc_poetry_15.dict.yaml",
+      "bytes": 177,
+      "sha256": "29aa4406717990a53449ee675156e084b7b1bcb678d1bbf5db3156dcd0b916c1"
+    },
+    {
+      "path": "rymcp_dlc_poetry_16.dict.yaml",
+      "bytes": 177,
+      "sha256": "0853079000011a046e655a40fa198414b3e7e4ec459bbd904e166720e87ec74d"
+    },
+    {
+      "path": "rymcp_dlc_poetry_17.dict.yaml",
+      "bytes": 177,
+      "sha256": "662881cb418d23298cc0138099a83ec3115b4eee8fa94583f5d70ea978b30073"
+    },
+    {
+      "path": "rymcp_dlc_poetry_18.dict.yaml",
+      "bytes": 177,
+      "sha256": "db980bf851d8a9ceaf5da7df02534f50dfde0361dee6ed2154ef49fe10854c0b"
+    },
+    {
+      "path": "rymcp_dlc_poetry_19.dict.yaml",
+      "bytes": 177,
+      "sha256": "ad3911d9d425727d291afbf734a29dd4451eb7ee02a9ac27ff23c6633d79c719"
+    },
+    {
+      "path": "rymcp_dlc_poetry_20.dict.yaml",
+      "bytes": 177,
+      "sha256": "76687eca08dc15b6969cb98f612f2b610e976751790172c458f33f0c3c1dbc0d"
+    },
+    {
+      "path": "rymcp_dlc_poetry_21.dict.yaml",
+      "bytes": 177,
+      "sha256": "3035d7cfce757001a71ec39a37ece29bf0b5ea491d349a71ceef01150b885cb4"
+    },
+    {
+      "path": "rymcp_dlc_poetry_22.dict.yaml",
+      "bytes": 177,
+      "sha256": "16622a09ed60e6fb9445d572c5022fefc657ecc9c02048b08ebc760e613dabee"
+    },
+    {
+      "path": "rymcp_dlc_poetry_23.dict.yaml",
+      "bytes": 177,
+      "sha256": "59980eb2db00bd83b492d2546b103e8ed45c4817316b86afaebd680965440709"
+    },
+    {
+      "path": "rymcp_dlc_poetry_24.dict.yaml",
+      "bytes": 177,
+      "sha256": "ff62b7bcf8716b550e03b38300e360b61b14ae5c19c6029cd8e51a75574cfec9"
+    },
+    {
+      "path": "rymcp_dlc_poetry_25.dict.yaml",
+      "bytes": 177,
+      "sha256": "b0b4bccccebc52e12bae5b6d1a30f33f136c6fc4f50f72b53d89d06a78c168cc"
+    },
+    {
+      "path": "rymcp_dlc_poetry_26.dict.yaml",
+      "bytes": 177,
+      "sha256": "642bd080a2a075a599873d3645de6f994984cdb723979c607b29eeb9916a7cf1"
+    },
+    {
+      "path": "rymcp_dlc_poetry_27.dict.yaml",
+      "bytes": 177,
+      "sha256": "4f89db57f19f69853cab894b84ee7cd2f35c9c09e2cdf343fe096e413d2d4a12"
+    },
+    {
+      "path": "rymcp_dlc_poetry_28.dict.yaml",
+      "bytes": 177,
+      "sha256": "037133541ee8e80284b4a8785a61416567d74693c9fc74e85c5026df689c083b"
+    },
+    {
+      "path": "rymcp_dlc_poetry_29.dict.yaml",
+      "bytes": 177,
+      "sha256": "4f729b190416df080c4d5715d4ad998795836dc4e26a74eeeff6c7e5d293a6cb"
+    },
+    {
+      "path": "rymcp_dlc_poetry_30.dict.yaml",
+      "bytes": 177,
+      "sha256": "5e362e8aa4ecab11596e056d3dcb51dd7c0d7a59f29523fa88b93b2fad7dd990"
+    },
+    {
+      "path": "rymcp_dlc_poetry_31.dict.yaml",
+      "bytes": 177,
+      "sha256": "bab3940ba3d96465a0dcf92816a57528bec3740f14fa661559642d046b576e34"
+    },
+    {
+      "path": "samples/default.custom.yaml",
+      "bytes": 480,
+      "sha256": "5ee9e5b83bb8e2c0efd776c0ece3f552a75494356f0295c43473880046f08937"
+    },
+    {
+      "path": "samples/rime.lua",
+      "bytes": 2029,
+      "sha256": "3c080e992ed1ee79bb579acd43521d04d3860a58c4241d8a53412e9d61729492"
+    },
+    {
+      "path": "samples/weasel.custom.yaml",
+      "bytes": 1397,
+      "sha256": "4aa17e5338dd64f7b6395663371254452b3443ae04ab329457ff5b1a58ec9545"
+    },
+    {
+      "path": "zh-hant-t-essay-bgw-compact.gram",
+      "bytes": 41415724,
+      "sha256": "0488ebd6688f900a39200f2b794f2f99bcbf1e8fc27280ae4a2324b08b1559c1"
+    }
+  ],
+  "scope": "Repository profile files and manual-install examples."
+}

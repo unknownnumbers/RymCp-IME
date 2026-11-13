@@ -1,0 +1,34 @@
+{
+  "Build": {
+    "ChineseRows": 680,
+    "DomainPattern": "\\b(?:computing|computers?|programming|software|internet)\\b",
+    "EnglishRows": 345,
+    "SelectedSourceEntries": 682,
+    "Skipped": {
+      "NonHanHeadword": 2
+    }
+  },
+  "DataLicense": "CC-BY-SA-4.0",
+  "Format": 1,
+  "Id": "computer",
+  "Revision": "2026.11.14.1",
+  "Sources": [
+    {
+      "File": "cedict_1_0_ts_utf-8_mdbg.txt.gz",
+      "License": "CC-BY-SA-4.0",
+      "Publisher": "MDBG / CC-CEDICT contributors",
+      "Sha256": "3199822e3cb14dfd13b4c80374cefb6d02e579e92f39e5ac7e6a7fa702fae739",
+      "Snapshot": "2026-11-13T04:51:32Z",
+      "Url": "https://www.mdbg.net/chinese/dictionary?page=cedict"
+    },
+    {
+      "File": "allowed-syllables.txt",
+      "Purpose": "Native dictionary syllable compatibility",
+      "Sha256": "ddd9b253b4f3412d17ed1c119d9d3b36f1153e7c3ff7f62e20e59cdfd1856689",
+      "SourceFile": "config/pc/luna_pinyin.dict.yaml",
+      "SourceLicense": "LGPL-3.0",
+      "SourceSha256": "0397c7741c3347631412f5bd20a6787087ca6c27093a46f216cfc8bb754f285f"
+    }
+  ],
+  "UniformWeight": 100
+}

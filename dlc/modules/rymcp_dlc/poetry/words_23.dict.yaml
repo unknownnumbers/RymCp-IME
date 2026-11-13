@@ -1,0 +1,269 @@
+---
+name: rymcp_dlc/poetry/words_23
+version: '2026.11.14.1'
+sort: by_weight
+use_preset_vocabulary: false
+activation:
+  __include: rymcp_dlc/poetry/words_24.dict:/activation
+...
+唯有池塘自碧	wei you chi tang zi bi	100
+惟有垂楊自舞	wei you chui yang zi wu	100
+惟有歸來是	wei you gui lai shi	100
+唯有舊家秋娘	wei you jiu jia qiu niang	100
+未有涓埃荅聖朝	wei you juan ai da sheng chao	100
+唯有闌干	wei you lan gan	100
+惟有藍橋路近	wei you lan qiao lu jin	100
+惟有淚千行	wei you lei qian hang	100
+惟有兩行低雁	wei you liang hang di yan	100
+未有人行	wei you ren hang	100
+惟有少年心	wei you shao nian xin	100
+唯有溪邊流水	wei you xi bian liu shui	100
+惟有楊花糝徑	wei you yang hua san jing	100
+惟有飲者留其名	wei you yin zhe liu qi ming	100
+惟有幽人夜來去	wei you you ren ye lai qu	100
+惟有游絲千丈	wei you you si qian zhang	100
+惟有御溝聲斷	wei you yu gou sheng duan	100
+爲有雲屏無限嬌	wei you yun bing wu xian jiao	100
+微雨靄芳原	wei yu ai fang yuan	100
+為余浩嘆	wei yu hao tan	100
+微雨燕雙飛	wei yu yan shuang fei	100
+為玉尊	wei yu zun	100
+微云淡月	wei yun dan yue	100
+微韻轉	wei yun zhuai	100
+未整	wei zheng	100
+未知何處是瀟湘	wei zhi he chu shi xiao xiang	100
+唯只見	wei zhi jian	100
+文彩風流猶尚存	wen cai feng liu you shang cun	100
+問蒼波無語	wen cang bo wu yu	100
+聞蟬但益悲	wen chan dan yi bei	100
+文成破體書在紙	wen cheng po ti shu zai zhi	100
+問旾何苦匆匆	wen chun he ku cong cong	100
+問旾何在	wen chun he zai	100
+問荅乃未已	wen da nai wei yi	100
+聞道故林相識多	wen dao gu lin xiang shi duo	100
+聞道漢家天子使	wen dao han jia tian zi shi	100
+聞道黃龍戍	wen dao huang long shu	100
+聞道綺陌東頭	wen dao qi mo dong tou	100
+聞道欲來相問訊	wen dao yu lai xiang wen xun	100
+聞道玉門猶被遮	wen dao yu men you bei zhe	100
+聞道中原遺老	wen dao zhong yuan yi lao	100
+問杜曲	wen du qu	100
+穩氾滄浪空濶	wen fan cang lang kong kuo	100
+問繁華誰解	wen fan hua shei xie	100
+問芳	wen fang	100
+聞風坐相悅	wen feng zuo xiang yue	100
+問何人	wen he ren	100
+問君何所之	wen jun he suo zhi	100
+問君西遊何時還	wen jun xi you he shi huan	100
+問客何爲來	wen ke he wei lai	100
+問梅開未	wen mei kai wei	100
+文朞酒會	wen qi jiu hui	100
+問前度桃花	wen qian du tao hua	100
+聞琴解佩神仙侶	wen qin xie pei shen xian lv	100
+聞琴解神仙侶	wen qin xie shen xian lv	100
+問秋香濃未	wen qiu xiang nong wei	100
+溫泉水滑洗凝脂	wen quan shui hua xi ning zhi	100
+溫柔便入㴱鄉	wen rou bian ru shen xiang	100
+問誰調玉髓	wen shei diao yu sui	100
+問誰㽞楚佩	wen shei liu chu pei	100
+問誰識	wen shei shi	100
+問甚旹	wen shen shi	100
+問甚旹說與	wen shen shi shui yu	100
+問水面	wen shui mian	100
+問嵗華	wen sui hua	100
+文翁翻教授	wen weng fan jiao shou	100
+問我來何方	wen wo lai he fang	100
+問姓驚初見	wen xing jing chu jian	100
+問燕子來旹	wen yan zi lai shi	100
+問因循	wen yin xun	100
+問玉堂何似	wen yu tang he shi	100
+文章憎命達	wen zhang zeng ming da	100
+問之不肯道姓名	wen zhi bu ken dao xing ming	100
+我輩復登臨	wo bei fu deng lin	100
+我本楚狂人	wo ben chu kuang ren	100
+我持長瓢坐巴丘	wo chi chang piao zuo ba qiu	100
+我從去年辭帝京	wo cong qu nian ci di jing	100
+我獨不得出	wo du bu de chu	100
+我歌今與君殊科	wo ge jin yu jun shu ke	100
+我歌月裴回	wo ge yue pei hui	100
+我行殊未已	wo hang shu wei yi	100
+臥後清宵細細長	wo hou qing xiao xi xi chang	100
+我家襄水上	wo jia xiang shui shang	100
+我來正逢秋雨節	wo lai zheng feng qiu yu jie	100
+臥龍躍馬終黃土	wo long yue ma zhong huang tu	100
+我聞琵琶已歎息	wo wen pi pa yi tan xi	100
+我舞影零亂	wo wu ying ling luan	100
+我心素已閑	wo xin su yi xian	100
+我亦多情	wo yi duo qing	100
+我亦舉家清	wo yi ju jia qing	100
+我慾乘風歸去	wo yu cheng feng gui qu	100
+我欲因之夢吳越	wo yu yin zhi meng wu yue	100
+我住長江頭	wo zhu chang jiang tou	100
+我醉君復樂	wo zui jun fu le	100
+吾愛孟夫子	wu ai meng fu zi	100
+無邊落木蕭蕭下	wu bian la mu xiao xiao xia	100
+無邊絲雨細如愁	wu bian si yu xi ru chou	100
+無處不銷魂	wu chu bu xiao hun	100
+吳楚東南坼	wu chu dong nan che	100
+無處話悽涼	wu chu hua qi liang	100
+無處覓簫聲	wu chu mi xiao sheng	100
+無處著清香	wu chu zhu qing xiang	100
+屋底達官走避胡	wu de da guan zou bi hu	100
+武帝祠前雲欲散	wu di ci qian yun yu san	100
+舞低楊柳樓心月	wu di yang liu lou xin yue	100
+無端	wu duan	100
+無端抱影銷魂處	wu duan bao ying xiao hun chu	100
+無端風雨	wu duan feng yu	100
+無端嫁得金龜壻	wu duan jia de jin gui xu	100
+無端自家疎隔	wu duan zi jia shu ge	100
+無非自許	wu fei zi xu	100
+午風清暑	wu feng qing shu	100
+五更鼓角聲悲壯	wu geng gu jue sheng bei zhuang	100
+五更疎欲斷	wu geng shu yu duan	100
+吳宮花草埋幽徑	wu gong hua cao mai you jing	100
+吳宮閑地	wu gong xian de	100
+吳舘巢荒	wu guan chao huang	100
+吾觀自古賢達人	wu guan zi gu xian da ren	100
+吳鴻好為傳歸信	wu hong hao wei chuan gui xin	100
+武侯祠屋常鄰近	wu hou ci wu chang lin jin	100
+嗚呼聖皇及聖相	wu hu sheng huang ji sheng xiang	100
+嗚呼吾意其蹉跎	wu hu wu yi qi cuo tuo	100
+五湖煙水獨忘機	wu hu yan shui du wang ji	100
+五花連錢旋作冰	wu hua lian qian xuan zuo bing	100
+五花馬	wu hua ma	100
+武皇開邊意未已	wu huang kai bian yi wei yi	100
+誤几回	wu ji hui	100
+吳姬壓酒喚客嘗	wu ji ya jiu huan ke chang	100
+吳椾銀粉砑	wu jian yin fen ya	100
+午鏡澡蘭簾幕	wu jing zao lan lian mu	100
+無可奈何花落去	wu ke nai he hua la qu	100
+舞困榆錢自落	wu kun yu qian zi la	100
+誤了乍來双燕	wu le zha lai shuang yan	100
+無聊倦旅	wu liao juan lv	100
+五陵北原上	wu ling bei yuan shang	100
+五陵佳氣無時無	wu ling jia qi mo shi mo	100
+五陵年少爭纏頭	wu ling nian shao zheng chan tou	100
+五馬莫留連	wu ma mo liu lian	100
+午夢扶頭	wu meng fu tou	100
+午夢千山	wu meng qian shan	100
+吾謀適不用	wu mou shi bu yong	100
+無奈被他情擔閣	wu nai bei ta qing dan ge	100
+無奈被些名利縛	wu nai bei xie ming li fu	100
+無奈歸心	wu nai gui xin	100
+無奈酒闌旹	wu nai jiu lan shi	100
+無奈苒苒䰟驚	wu nai ran ran hun jing	100
+吾寧愛與憎	wu ning ai yu zeng	100
+霧濃香鴨	wu nong xiang ya	100
+五千貂錦喪胡塵	wu qian diao jin sang hu chen	100
+無情不似多情苦	wu qing bu shi duo qing ku	100
+無情風雨	wu qing feng yu	100
+無情畫舸	wu qing hua ge	100
+無情水	wu qing shui	100
+物情惟有醉中真	wu qing wei you zui zhong zhen	100
+無情燕子	wu qing yan zi	100
+無情有思	wu qing you si	100
+無情圓又缺	wu qing yuan you que	100
+霧輕云薄	wu qing yun bo	100
+無情最是臺城柳	wu qing zui shi tai cheng liu	100
+無窮官柳	wu qiong guan liu	100
+無窮無盡是離愁	wu qiong wu jin shi li chou	100
+烏鵲正南飛	wu que zheng nan fei	100
+無人處	wu ren chu	100
+無人會	wu ren hui	100
+無人會得凴闌意	wu ren hui de ping lan yi	100
+無人儘日飛花雪	wu ren jin ri fei hua xue	100
+無人收廢帳	wu ren shou fei zhang	100
+無人收拾理則那	wu ren shou shi li ze na	100
+無人為主	wu ren wei zhu	100
+無人信高潔	wu ren xin gao jie	100
+無人埜水荒灣	wu ren ye shui huang wan	100
+無人知此意	wu ren zhi ci yi	100
+物色舊時同	wu se jiu shi tong	100
+霧沈半壘	wu shen ban lei	100
+五十年間似反掌	wu shi nian jian shi fan zhang	100
+烏孫部落家鄉遠	wu sun bu luo jia xiang yuan	100
+梧桐更兼細雨	wu tong geng jian xi yu	100
+梧桐相待老	wu tong xiang dai lao	100
+梧桐叶上三更雨	wu tong xie shang san geng yu	100
+勿謂知音稀	wu wei zhi yin xi	100
+無物似情濃	wu wu shi qing nong	100
+五溪衣服共雲山	wu xi yi fu gong yun shan	100
+巫峽啼猿數行淚	wu xia ti yuan shu hang lei	100
+無限佳麗	wu xian jia li	100
+無限樓前滄波意	wu xian lou qian cang bo yi	100
+午香吹晻塵	wu xiang chui an chen	100
+舞鞋從此生塵	wu xie cong ci sheng chen	100
+舞歇歌沈	wu xie ge shen	100
+舞榭歌台	wu xie ge tai	100
+梧叶飃黃	wu xie piao huang	100
+無心再續笙歌夢	wu xin zai xu sheng ge meng	100
+無言灑清淚	wu yan sa qing lei	100
+無言誰會凴闌意	wu yan shei hui ping lan yi	100
+無言有淚	wu yan you lei	100
+無言自倚修竹	wu yan zi yi xiu zhu	100
+嗚咽夢中語	wu ye meng zhong yu	100
+無意苦爭旾	wu yi ku zheng chun	100
+烏衣巷口夕陽斜	wu yi xiang kou xi yang xie	100
+霧隱城堞	wu yin cheng die	100
+午陰嘉樹清圓	wu yin jia shu qing yuan	100
+無語	wu yu	100
+無語東流	wu yu dong liu	100
+誤玉人	wu yu ren	100
+五月不可觸	wu yue bu ke chu	100
+五月西施採	wu yue xi shi cai	100
+五月西施采	wu yue xi shi cai	100
+悟悅心自足	wu yue xin zi zu	100
+五嶽尋仙不辭遠	wu yue xun xian bu ci yuan	100
+五嶽祭秩皆三公	wu yue zhai zhi jie san gong	100
+五云深處	wu yun shen chu	100
+吳中盛文史	wu zhong sheng wen shi	100
+午醉醒來愁未醒	wu zui xing lai chou wei xing	100
+戲罷曾無理曲時	xi ba zeng wu li qu shi	100
+西北是長安	xi bei shi chang an	100
+夕避長蛇	xi bi chang she	100
+昔別君未婚	xi bie jun wei hun	100
+細草微風岸	xi cao wei feng an	100
+細草香閑小洞幽	xi cao xiang xian xiao dong you	100
+西出都門百餘里	xi chu du men bai yu li	100
+西出陽關無故人	xi chu yang guan wu gu ren	100
+西牎過雨	xi chuang guo yu	100
+西牎又吹晻雨	xi chuang you chui an yu	100
+惜旾長恨花開早	xi chun chang hen hua kai zao	100
+惜旾更把殘紅折	xi chun geng ba can hong she	100
+惜旾行樂莫辤頻	xi chun hang le mo ci pin	100
+西當太白有鳥道	xi dang tai bai you niao dao	100
+夕殿螢飛思悄然	xi dian ying fei si qiao ran	100
+細風吹柳絮	xi feng chui liu xu	100
+西風吹折	xi feng chui she	100
+西風幾時來	xi feng ji shi lai	100
+西風生翠蘿	xi feng sheng cui luo	100
+夕奉天書拜瑣闈	xi feng tian shu bai suo wei	100
+西風梧井叶先愁	xi feng wu jing xie xian chou	100
+西宮南苑多秋草	xi gong nan yuan duo qiu cao	100
+戯皷侵明發	xi gu qin ming fa	100
+係行舟	xi hang zhou	100
+昔何勇銳今何愚	xi he yong rui jin he yu	100
+溪橫水遠	xi heng shui yuan	100
+西湖寒碧	xi hu han bi	100
+溪花與禪意	xi hua yu chan yi	100
+細將幽恨傳	xi jiang you hen chuan	100
+西郊胡正繁	xi jiao hu zheng po	100
+西晉樓船下益州	xi jin lou chuan xia yi zhou	100
+喜靜看	xi jing kan	100
+細看來	xi kan lai	100
+細看諸處好	xi kan zhu chu hao	100
+欷酹酒	xi lei jiu	100
+犀匲黛卷	xi lian dai juan	100
+細柳垂金縷	xi liu chui jin lv	100
+惜流芳	xi liu fang	100
+細柳新蒲爲誰綠	xi liu xin pu wei shei lu	100
+西樓殘月	xi lou can yue	100
+西樓望月幾廻圓	xi lou wang yue ji hui yuan	100
+西樓雅集	xi lou ya ji	100
+西陸蟬聲唱	xi lu chan sheng chang	100
+戯馬台前	xi ma tai qian	100
+溪梅晴炤生香	xi mei qing zhao sheng xiang	100
+喜泥潤	xi ni run	100
+昔年多病厭芳尊	xi nian duo bing yan fang zun	100
+洗鈆霜都儘	xi qian shuang du jin	100
+溪橋柳細	xi qiao liu xi	100

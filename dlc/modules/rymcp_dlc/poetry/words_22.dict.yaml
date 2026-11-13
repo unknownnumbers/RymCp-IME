@@ -1,0 +1,269 @@
+---
+name: rymcp_dlc/poetry/words_22
+version: '2026.11.14.1'
+sort: by_weight
+use_preset_vocabulary: false
+activation:
+  __include: rymcp_dlc/poetry/words_23.dict:/activation
+...
+迢遰三巴路	tiao di san ba lu	100
+迢遞嵩高下	tiao di song gao xia	100
+迢遰送斜暉	tiao di song xie hui	100
+條風佈㬉	tiao feng bu nuan	100
+迢迢不斷如春水	tiao tiao bu duan ru chun shui	100
+迢迢清亱徂	tiao tiao qing ye cu	100
+鐵騎突出刀槍鳴	tie qi tu chu dao qiang ming	100
+鐵衣遠戍辛勤久	tie yi yuan shu xin qin jiu	100
+停杯投筯不能食	ting bei tou zhu bu neng shi	100
+停船暫借問	ting chuan zan jie wen	100
+停燈向曉	ting deng xiang xiao	100
+停舫臨孤驛	ting fang lin gu yi	100
+亭皋正望極	ting gao zheng wang ji	100
+庭戶無聲	ting hu wu sheng	100
+庭上黃昏	ting shang huang hun	100
+亭臺小	ting tai xiao	100
+亭亭明月底	ting ting ming yue de	100
+亭亭清絕	ting ting qing jue	100
+庭軒寂寞近清明	ting xuan ji mo jin qing ming	100
+庭陰轉午	ting yin zhuai wu	100
+庭院晻雨乍歇	ting yuan an yu zha xie	100
+聽鐘未眠客	ting zhong wei mian ke	100
+汀洲漸生杜若	ting zhou jian sheng du re	100
+汀洲無浪復無煙	ting zhou mo lang fu wu yan	100
+汀洲煙箬	ting zhou yan ruo	100
+汀洲窈窕餘醒寐	ting zhou yao tiao yu xing mei	100
+停舟暫借問	ting zhou zan jie wen	100
+汀洲自綠	ting zhou zi lu	100
+桐花半畂	tong hua ban mu	100
+同居長干里	tong ju chang gan li	100
+銅鑪華燭燭增輝	tong lu hua zhu zhu zeng hui	100
+同輦隨君侍君側	tong nian sui jun shi jun ce	100
+銅盤燭淚已流儘	tong pan zhu lei yi liu jin	100
+銅雀春深鎖二喬	tong qiao chun shen suo er qiao	100
+銅雀春深鏁二喬	tong qiao chun shen suo er qiao	100
+通神明	tong shen ming	100
+同時輩流多上道	tong shi bei liu duo shang dao	100
+同是長干人	tong shi chang gan ren	100
+同時歌舞	tong shi ge wu	100
+同是宦遊人	tong shi huan you ren	100
+同是天涯淪落人	tong shi tian ya lun luo ren	100
+銅駝巷陌	tong tuo xiang mo	100
+銅仙鈆淚似洗	tong xian qian lei shi xi	100
+同心共結	tong xin gong jie	100
+同心與我違	tong xin yu wo wei	100
+同穴窅冥何所望	tong xue yao ming he suo wang	100
+童顏若可駐	tong yan re ke zhu	100
+桐陰轉午	tong yin zhuai wu	100
+彤云又吐	tong yun you tu	100
+童稚開荊扉	tong zhi kai jing fei	100
+頭白倚寒翠	tou bai yi han cui	100
+透牎風一線	tou chuang feng yi xian	100
+偷彈清淚寄煙波	tou dan qing lei ji yan bo	100
+偷換韓香	tou huan han xiang	100
+投老殘年	tou lao can nian	100
+偷理綃帬	tou li xiao qun	100
+偷黏艸甲	tou nian cao jia	100
+頭上何所有	tou shang he suo you	100
+投詩贈汩羅	tou shi zeng gu luo	100
+投宿征騎	tou su zheng ji	100
+投曉共	tou xiao gong	100
+偷擲春心	tou zhi chun xin	100
+徒此揖清芬	tu ci yi qing fen	100
+塗改清廟生民詩	tu gai qing miao sheng min shi	100
+土花繚繞	tu hua liao rao	100
+土花庭	tu hua ting	100
+土花沿翠	tu hua yan cui	100
+兎葵燕麥	tu kui yan mai	100
+徒勞恨費聲	tu lao hen fei sheng	100
+徒令上將揮神筆	tu ling shang jiang hui shen bi	100
+途窮反遭俗眼白	tu qiong fan zao su yan bai	100
+突兀壓神州	tu wu ya shen zhou	100
+徒言樹桃李	tu yan shu tao li	100
+推手含情還㕁手	tui shou han qing huan que shou	100
+托微風	tuo wei feng	100
+萬般方寸	wan ban fang cun	100
+晚旾盤馬踏青苔	wan chun pan ma ta qing tai	100
+盌賜將軍拜舞歸	wan ci jiang jun bai wu gui	100
+挽斷羅衣㽞不住	wan duan luo yi liu bu zhu	100
+萬方多難此登臨	wan fang duo nan ci deng lin	100
+晚風吹行舟	wan feng chui hang zhou	100
+晚風菰叶生秋怨	wan feng gu xie sheng qiu yuan	100
+晚風為落	wan feng wei la	100
+萬夫莫開	wan fu mo kai	100
+萬古青濛濛	wan gu qing meng meng	100
+萬古惟留楚客悲	wan gu wei liu chu ke bei	100
+萬古雲霄一羽毛	wan gu yun xiao yi yu mao	100
+萬國衣冠拜冕旒	wan guo yi guan bai mian liu	100
+萬壑樹參天	wan he shu can tian	100
+萬戶擣衣聲	wan hu dao yi sheng	100
+晚霽波聲帶雨	wan ji bo sheng dai yu	100
+晚家南山陲	wan jia nan shan chui	100
+晚見鴈行頻	wan jian yan hang pin	100
+萬逕人蹤滅	wan jing ren zong mie	100
+晚景蕭疎	wan jing xiao shu	100
+晚酒醒餘	wan jiu xing yu	100
+萬籟百泉相與秋	wan lai bai quan xiang yu qiu	100
+晚來翠眉宮樣	wan lai cui mei gong yang	100
+晚來風急	wan lai feng ji	100
+晚來還卷	wan lai huan juan	100
+晚來天欲雪	wan lai tian yu xue	100
+萬里悲秋常作客	wan li bei qiu chang zuo ke	100
+萬里長征人未還	wan li chang zheng ren wei huan	100
+萬里浮雲陰且晴	wan li fu yun yin qie qing	100
+萬里孤云	wan li gu yun	100
+萬里歸心對月明	wan li gui xin dui yue ming	100
+萬里寒光生積雪	wan li han guang sheng ji xue	100
+萬里黃河遶黑山	wan li huang he rao hei shan	100
+萬里禽獸皆遮羅	wan li qin shou jie zhe luo	100
+萬里送行舟	wan li song xing zhou	100
+萬里眼中明	wan li yan zhong ming	100
+萬里云㠶何時到	wan li yun fan he shi dao	100
+萬里雲羅一雁飛	wan li yun luo yi yan fei	100
+萬里征人尚未還	wan li zheng ren shang wei huan	100
+晚涼新浴	wan liang xin yu	100
+婉娩流年	wan mian liu nian	100
+晚年唯好靜	wan nian wei hao jing	100
+萬牛回首丘山重	wan niu hui shou qiu shan chong	100
+萬千心事難寄	wan qian xin shi nan ji	100
+晚晴風歇	wan qing feng xie	100
+萬頃江田一鷺飛	wan qing jiang tian yi lu fei	100
+晚秋天	wan qiu tian	100
+晚日寒生輕暈	wan ri han sheng qing yun	100
+宛如昨	wan ru zuo	100
+萬事不關心	wan shi bu guan xin	100
+萬事隨轉燭	wan shi sui zhuai zhu	100
+萬事一身傷老矣	wan shi yi shen shang lao yi	100
+萬水千山	wan shui qian shan	100
+剜苔剔蘚露節角	wan tai ti xian lu jie jue	100
+晚蜩淒切	wan tiao qi qie	100
+萬象為賓客	wan xiang wei bin ke	100
+萬一灞橋相見	wan yi ba qiao xiang jian	100
+晚雨未摧宮樹	wan yu wei cui gong shu	100
+晚云收	wan yun shou	100
+宛轉蛾眉馬前死	wan zhuan e mei ma qian si	100
+望碧云空暮	wang bi yun kong mu	100
+望不盡	wang bu jin	100
+望徹淮山	wang che huai shan	100
+望處雨收云斷	wang chu yu shou yun duan	100
+輞川圖上看旾暮	wang chuan tu shang kan chun mu	100
+望帝春心託杜鵑	wang di chun xin tuo du juan	100
+望斷故園心眼	wang duan gu yuan xin yan	100
+望斷雙魚信	wang duan shuang yu xin	100
+望鳳闕	wang feng que	100
+枉賦芳蘭幽芷	wang fu fang lan you zhi	100
+望高城不見	wang gao cheng bu jian	100
+望故鄉渺邈	wang gu xiang miao miao	100
+望極旾愁	wang ji chun chou	100
+望極離愁	wang ji li chou	100
+妄跡世所逐	wang ji shi suo zhu	100
+望寄我	wang ji wo	100
+望江關	wang jiang guan	100
+枉教人	wang jiao ren	100
+望倦柳愁荷	wang juan liu chou he	100
+望君煙水闊	wang jun yan shui kuo	100
+往來成古今	wang lai cheng gu jin	100
+往來翻恨重帘礙	wang lai fan hen chong lian ai	100
+枉了玉消香碎	wang le yu xiao xiang sui	100
+望千門如晝	wang qian men ru zhou	100
+望晴檐多風	wang qing yan duo feng	100
+忘卻舊遊端的	wang que jiu you duan di	100
+望人歸	wang ren gui	100
+望人在天北	wang ren zai tian bei	100
+往事後期空記省	wang shi hou qi kong ji sheng	100
+往事莫沈吟	wang shi mo shen yin	100
+往事難追	wang shi nan dui	100
+往事少年依約	wang shi shao nian yi yao	100
+王孫歸不歸	wang sun gui bu gui	100
+王孫驕馬	wang sun jiao ma	100
+王孫善保千金軀	wang sun shan bao qian jin qu	100
+王孫自可留	wang sun zi ke liu	100
+望天不盡	wang tian bu jin	100
+枉望斷天涯	wang wang duan tian ya	100
+往往經嵗遷延	wang wang jing sui qian yan	100
+望望美人遲暮	wang wang mei ren chi mu	100
+往往取酒還獨傾	wang wang qu jiu huan du qing	100
+望仙樓上望君王	wang xian lou shang wang jun wang	100
+王謝鄰里	wang xie lin li	100
+望一成消減	wang yi cheng xiao jian	100
+望玉壺天近	wang yu hu tian jin	100
+忘則怎生便忘得	wang ze zen sheng bian wang de	100
+望昭陽	wang zhao yang	100
+望征路愁迷	wang zheng lu chou mi	100
+望中地遠天濶	wang zhong de yuan tian kuo	100
+望中酒旆閃閃	wang zhong jiu pei shan shan	100
+望中猶記	wang zhong you ji	100
+未諳姑食性	wei an gu shi xing	100
+未必逢矰繳	wei bi feng zeng jiao	100
+微波寄語	wei bo ji yu	100
+未成曲調先有情	wei cheng qu diao xian you qing	100
+爲乘陽氣行時令	wei cheng yang qi hang shi ling	100
+渭城朝雨浥輕塵	wei cheng zhao yu yi qing chen	100
+謂城朝雨浥輕塵	wei cheng zhao yu yi qing chen	100
+未辭剪伐誰能送	wei ci jian fa shei neng song	100
+慰此悽涼心目	wei ci qi liang xin mu	100
+為當時	wei dang shi	100
+未得報恩不能歸	wei de bao en bu neng gui	100
+謂東君	wei dong jun	100
+未覩斯民康	wei du si min kang	100
+未妨惆悵是清狂	wei fang chou chang shi qing kuang	100
+微風吹蘭杜	wei feng chui lan du	100
+爲感君王展轉思	wei gan jun wang zhan zhuan si	100
+未歌先咽	wei ge xian yan	100
+未怪平陽客	wei guai ping yang ke	100
+危乎高哉	wei hu gao zai	100
+未幾拂荊扉	wei ji bi jing fei	100
+唯見長江天際流	wei jian chang jiang tian ji liu	100
+唯見江心秋月白	wei jian jiang xin qiu yue bai	100
+唯見林花落	wei jian lin hua la	100
+唯將遲暮供多病	wei jiang chi mu gong duo bing	100
+唯將舊物表深情	wei jiang jiu wu biao shen qing	100
+唯將終夜長開眼	wei jiang zhong ye zhang kai yan	100
+惟覺時之枕席	wei jiao shi zhi zhen xi	100
+唯覺尊前笑不成	wei jiao zun qian xiao bu cheng	100
+未解憶長安	wei jie yi chang an	100
+為君持酒勸斜陽	wei jun chi jiu quan xie yang	100
+爲君飜作琵琶行	wei jun fan zuo pi pa xing	100
+為君淚	wei jun lei	100
+未肎收儘餘寒	wei ken shou jin yu han	100
+韋郎去也	wei lang qu ye	100
+微冷	wei leng	100
+惟憐一燈影	wei lian yi deng ying	100
+微茫云屋	wei mang yun wu	100
+未免捶楚塵埃間	wei mian chui chu chen ai jian	100
+未名未祿	wei ming wei lu	100
+未怕金吾呵醉	wei pa jin wu a zui	100
+危檣獨夜舟	wei qiang du ye zhou	100
+衞青不敗由天幸	wei qing bu bai you tian xing	100
+衛清羸	wei qing lei	100
+為誰都著眉端聚	wei shei du zhu mei duan ju	100
+為誰嬌鬢尚如許	wei shei jiao bin shang ru xu	100
+為誰頻斷續	wei shei pin duan xu	100
+唯是輕別	wei shi qing bie	100
+惟是有	wei shi you	100
+微收煩暑	wei shou fan shu	100
+微霜淒淒簟色寒	wei shuang qi qi dian se han	100
+渭水自縈秦塞曲	wei shui zi ying qin sai qu	100
+爲他人作嫁衣裳	wei ta ren zuo jia yi shang	100
+危亭曠望	wei ting kuang wang	100
+危亭望極	wei ting wang ji	100
+畏途巉巖不可攀	wei tu chan yan bu ke pan	100
+為問暗香閑艶	wei wen an xiang xian yan	100
+為問花何在	wei wen hua he zai	100
+為問頻相見	wei wen pin xiang jian	100
+爲問元戎竇車騎	wei wen yuan rong dou che ji	100
+爲我度量掘臼科	wei wo du liang jue jiu ke	100
+帷幄未改神慘傷	wei wo wei gai shen can shang	100
+爲我一揮手	wei wo yi hui shou	100
+為嗚咽	wei wu ye	100
+為蕭娘	wei xiao niang	100
+圍羞帶減	wei xiu dai jian	100
+未休關西卒	wei xiu guan xi cu	100
+未羞他	wei xiu ta	100
+為言憔悴如許	wei yan qiao cui ru xu	100
+未央前殿月輪高	wei yang qian dian yue lun gao	100
+微陽下楚丘	wei yang xia chu qiu	100
+維揚憶舊遊	wei yang yi jiu you	100
+為伊才減江淹	wei yi cai jian jiang yan	100
+為伊落淚	wei yi luo lei	100
+為伊消得人憔悴	wei yi xiao de ren qiao cui	100
+惟有長江水	wei you chang jiang shui	100

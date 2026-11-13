@@ -1,0 +1,269 @@
+---
+name: rymcp_dlc/poetry/words_29
+version: '2026.11.14.1'
+sort: by_weight
+use_preset_vocabulary: false
+activation:
+  __include: rymcp_dlc/poetry/words_30.dict:/activation
+...
+玉虎牽絲汲井迴	yu hu qian si ji jing hui	100
+玉花㕁在御榻上	yu hua que zai yu ta shang	100
+玉環飛燕皆塵土	yu huan fei yan jie chen tu	100
+玉環分付	yu huan fen fu	100
+慾黃昏	yu huang hun	100
+欲濟無舟楫	yu ji mo zhou ji	100
+慾減羅衣寒未去	yu jian luo yi han wei qu	100
+玉鋻瓊田三萬頃	yu jian qiong tian san wan qing	100
+欲將輕騎逐	yu jiang qing qi zhu	100
+慾將沈醉換悲涼	yu jiang shen zui huan bei liang	100
+預將書報家	yu jiang shu bao jia	100
+玉階生白露	yu jie sheng bai lu	100
+玉階仙仗擁千官	yu jie xian zhang yong qian guan	100
+慾儘此情書尺素	yu jin ci qing shu chi su	100
+于今腐草無螢火	yu jin fu cao mo ying huo	100
+於今爲庶爲清門	yu jin wei shu wei qing men	100
+玉京羣帝集北斗	yu jing qun di ji bei dou	100
+與君歌一曲	yu jun ge yi qu	100
+與君離別意	yu jun li bie yi	100
+與君營奠復營齋	yu jun ying dian fu ying zhai	100
+與君遊戲	yu jun you xi	100
+慾開還閉	yu kai huan bi	100
+與空堦榆莢	yu kong jie yu jia	100
+玉闌干慵倚	yu lan gan yong yi	100
+庾郎先自吟愁賦	yu lang xian zi yin chou fu	100
+玉勒爭嘶	yu le zheng si	100
+玉壘浮雲變古今	yu lei fu yun bian gu jin	100
+玉蓮漏短	yu lian lou duan	100
+漁梁渡頭爭渡喧	yu liang du tou zheng du xuan	100
+雨淋日炙野火燎	yu lin ri zhi ye huo liao	100
+玉龍哀曲	yu long ai qu	100
+魚龍聽梵聲	yu long ting fan sheng	100
+玉樓天半起笙歌	yu lou tian ban qi sheng ge	100
+玉樓宴罷醉和春	yu lou yan ba zui he chun	100
+庾樓月	yu lou yue	100
+玉露初零	yu lu chu ling	100
+慾買桂花同載酒	yu mai gui hua tong zai jiu	100
+慾暮競然竹	yu mu jing ran zhu	100
+玉盤珍羞直萬錢	yu pan zhen xiu zhi wan qian	100
+玉轡紅纓	yu pei hong ying	100
+玉縴香動小帘鈎	yu qian xiang dong xiao lian gou	100
+玉縴曾擘黃柑	yu qian zeng bo huang gan	100
+雨輕風色暴	yu qing feng se bao	100
+餘情寄	yu qing ji	100
+欲窮千里目	yu qiong qian li mu	100
+欲取鳴琴彈	yu qu ming qin dan	100
+欲去問西家	yu qu wen xi jia	100
+欲取蕪城作帝家	yu qu wu cheng zuo di jia	100
+玉人垂釣理縴鈎	yu ren chui diao li qian gou	100
+玉人垂紺鬒	yu ren chui gan zhen	100
+玉人咊月摘梅花	yu ren he yue zhai mei hua	100
+玉人傢	yu ren jia	100
+漁人鳴榔歸去	yu ren ming lang gui qu	100
+圉人太僕皆惆悵	yu ren tai pu jie chou chang	100
+羽人稀少不在旁	yu ren xi shao bu zai pang	100
+玉容寂莫淚闌干	yu rong ji mo lei lan gan	100
+玉容銷酒	yu rong xiao jiu	100
+欲上青天覽日月	yu shang qing tian lan ri yue	100
+與誰听	yu shei yin	100
+玉繩低轉	yu sheng di zhuai	100
+與詩平	yu shi ping	100
+漁市樵村	yu shi qiao cun	100
+玉手親折	yu shou qin she	100
+羽書昨夜過渠黎	yu shu zuo ye guo qu li	100
+慾說還休	yu shui huan xiu	100
+與說相思	yu shui xiang si	100
+慾說又休	yu shui you xiu	100
+玉台掛秋月	yu tai gua qiu yue	100
+玉梯凝望久	yu ti ning wang jiu	100
+欲投人處宿	yu tou ren chu su	100
+雨外蛩聲早	yu wai qiong sheng zao	100
+雨外熏爐	yu wai xun lu	100
+欲往城南忘南北	yu wang cheng nan wang nan bei	100
+漁翁夜傍西巖宿	yu weng ye bang xi yan su	100
+玉璽不緣歸日角	yu xi bu yuan gui ri jue	100
+羽檄交馳日夕聞	yu xi jiao chi ri xi wen	100
+玉下遲遲	yu xia chi chi	100
+慾下寒塘	yu xia han tang	100
+與閑人登覽	yu xian ren deng lan	100
+餘響入霜鐘	yu xiang ru shuang zhong	100
+慾咲還顰	yu xiao huan pin	100
+與寫宜男雙帶	yu xie yi nan shuang dai	100
+庾信愁賦	yu xin chou fu	100
+庾信愁如許	yu xin chou ru xu	100
+庾信平生最蕭瑟	yu xin ping sheng zui xiao se	100
+雨雪紛紛連大漠	yu xue fen fen lian da mo	100
+欲尋芳草去	yu xun fang cao qu	100
+慾尋前跡	yu xun qian ji	100
+玉顏不及寒鵶色	yu yan bu ji han ya se	100
+魚雁音塵少	yu yan yin chen shao	100
+漁陽鞞鼓動地來	yu yang bing gu dong de lai	100
+余亦乘舟歸鹿門	yu yi cheng zhou gui lu men	100
+欲以菲薄明其衷	yu yi fei bo ming qi zhong	100
+余亦能高詠	yu yi neng gao yong	100
+余亦謝時去	yu yi xie shi qu	100
+玉隱紺紗睡覺	yu yin gan sha shui jiao	100
+餘音更苦	yu yin geng ku	100
+欲飲琵琶馬上催	yu yin pi pa ma shang cui	100
+御宇多年求不得	yu yu duo nian qiu bu de	100
+雨餘風軟碎鳴禽	yu yu feng ruan sui ming qin	100
+慾與人齊	yu yu ren qi	100
+與余問答既有以	yu yu wen da ji you yi	100
+御苑砧聲向晚多	yu yuan zhen sheng xiang wan duo	100
+玉簪螺髻	yu zan luo ji	100
+欲祭疑君在	yu zhai yi jun zai	100
+玉枕紗㕑	yu zhen sha chu	100
+玉箏調柱	yu zheng diao zhu	100
+慾知方寸	yu zhi fang cun	100
+雨中春樹萬人家	yu zhong chun shu wan ren jia	100
+雨中黃葉樹	yu zhong huang ye shu	100
+慾皺還休	yu zhou huan xiu	100
+漁舟逐水愛山春	yu zhou zhu shui ai shan chun	100
+玉柱斜飛雁	yu zhu xie fei yan	100
+玉箸應啼別離後	yu zhu ying ti bie li hou	100
+欲妝臨鏡慵	yu zhuang lin jing yong	100
+與子同賦	yu zi tong fu	100
+緣愁万縷	yuan chou mo lv	100
+怨旾不語	yuan chun bu yu	100
+怨旾遲	yuan chun chi	100
+愿旾暫㽞	yuan chun zan liu	100
+遠道荒寒	yuan dao huang han	100
+遠道迢遞	yuan dao tiao di	100
+願得燕弓射天將	yuan de yan gong she tian jiang	100
+愿低幃昵枕	yuan di wei ni zhen	100
+猿鳥猶疑畏簡書	yuan diao you yi wei jian shu	100
+遠芳侵古道	yuan fang qin gu dao	100
+怨歌長	yuan ge chang	100
+怨歌永	yuan ge yong	100
+元和天子神武姿	yuan he tian zi shen wu zi	100
+圓荷瀉露	yuan he xie lu	100
+怨鴻料過南譙	yuan hong liao guo nan qiao	100
+怨懷無托	yuan huai mo tuo	100
+怨極弦能說	yuan ji xian neng shui	100
+元嘉草草	yuan jia cao cao	100
+緣澗還復去	yuan jian huan fu qu	100
+願借辨口如懸河	yuan jie bian kou ru xuan he	100
+願接盧敖遊太清	yuan jie lu ao you tai qing	100
+願君多采擷	yuan jun duo cai xie	100
+遠客思鄉皆淚垂	yuan ke si xiang jie lei chui	100
+遠客一枝先折	yuan ke yi zhi xian she	100
+鴛樓碎瀉東西玉	yuan lou sui xie dong xi yu	100
+遠夢歸侵曉	yuan meng gui qin xiao	100
+猨鳴天上哀	yuan ming tian shang ai	100
+猿鳴鐘動不知曙	yuan ming zhong dong bu zhi shu	100
+猨猱欲度愁攀援	yuan nao yu du chou pan yuan	100
+猨猱欲度愁攀緣	yuan nao yu du chou pan yuan	100
+遠浦縈迴	yuan pu ying hui	100
+怨曲重招	yuan qu chong zhao	100
+元戎歌吹	yuan rong ge chui	100
+怨入双眉閑斗損	yuan ru shuang mei xian dou sun	100
+遠山晴更多	yuan shan qing geng duo	100
+遠山外	yuan shan wai	100
+遠樹帶行客	yuan shu dai xing ke	100
+願書萬本誦萬過	yuan shu wan ben song wan guo	100
+遠水孤云	yuan shui gu yun	100
+遠送從此別	yuan song cong ci bie	100
+願隨春風寄燕然	yuan sui chun feng ji yan ran	100
+遠隨流水香	yuan sui liu shui xiang	100
+猨啼洞庭樹	yuan ti dong ting shu	100
+願同塵與灰	yuan tong chen yu hui	100
+願爲持竿叟	yuan wei chi gan sou	100
+遠慰風雨夕	yuan wei feng yu xi	100
+元宵佳節	yuan xiao jia jie	100
+鴛鴦不獨宿	yuan yang bu du su	100
+鴛鴦會雙死	yuan yang hui shuang si	100
+鴛鴦密語同傾蓋	yuan yang mi yu tong qing gai	100
+鴛鴦瓦冷霜華重	yuan yang wa leng shuang hua chong	100
+怨抑難招	yuan yi nan zhao	100
+怨月恨花煩惱	yuan yue hen hua fan nao	100
+元只是	yuan zhi shi	100
+苑中萬物生顏色	yuan zhong wan wu sheng yan se	100
+月傍九霄多	yue bang jiu xiao duo	100
+月邊疎影	yue bian shu ying	100
+月波疑滴	yue bo yi di	100
+月出寒通雪山白	yue chu han tong xue shan bai	100
+月殿影開聞夜漏	yue dian ying kai wen ye lou	100
+月黑雁飛高	yue hei yan fei gao	100
+月黑鴈飛高	yue hei yan fei gao	100
+月痕猶炤無寐	yue hen you zhao mo mei	100
+月華如練	yue hua ru lian	100
+月華收	yue hua shou	100
+月既不解飲	yue ji bu jie yin	100
+月皎驚烏棲不定	yue jiao jing wu qi bu ding	100
+月浸葡萄十裏	yue jin pu tao shi li	100
+月落烏啼霜滿天	yue la wu ti shuang man tian	100
+月冷闌干	yue leng lan gan	100
+月冷龍沙	yue leng long sha	100
+月露冷	yue lu leng	100
+月露誰教桂葉香	yue lu shei jiao gui ye xiang	100
+約略輕咲淺	yue lve qing xiao jian	100
+月滿西樓凴闌久	yue man xi lou ping lan jiu	100
+月滿西樓憑欄久	yue man xi lou ping lan jiu	100
+月明池閣亱來秋	yue ming chi ge ye lai qiu	100
+月明好度江湖	yue ming hao du jiang hu	100
+月明松下房櫳靜	yue ming song xia fang long jing	100
+月明欲素愁不眠	yue ming yu su chou bu mian	100
+閱人多矣	yue ren duo yi	100
+越人語天姥	yue ren yu tian lao	100
+月是故鄉明	yue shi gu xiang ming	100
+月洗高梧	yue xi gao wu	100
+越溪深處	yue xi shen chu	100
+月下飛天鏡	yue xia fei tian jing	100
+月下相認	yue xia xiang ren	100
+月斜樓上五更鐘	yue xie lou shang wu geng zhong	100
+月夜歸來	yue ye gui lai	100
+月依墻	yue yi qiang	100
+月湧大江流	yue yong da jiang liu	100
+月有陰晴圓缺	yue you yin qing yuan que	100
+月在庭花舊闌角	yue zai ting hua jiu lan jue	100
+月照城頭烏半飛	yue zhao cheng tou wu ban fei	100
+月照一孤舟	yue zhao yi gu zhou	100
+雲邊雁斷胡天月	yun bian yan duan hu tian yue	100
+雲鬢半偏新睡覺	yun bin ban pian xin shui jiao	100
+雲鬢花顏金步搖	yun bin hua yan jin bu yao	100
+雲鬢亂	yun bin luan	100
+云此最吉餘難同	yun ci zui ji yu nan tong	100
+云淡霜天曙	yun dan shuang tian shu	100
+云飛煙滅	yun fei yan mie	100
+雲峰水隔深	yun feng shui ge shen	100
+云髻	yun ji	100
+雲髻罷梳還對鏡	yun ji ba shu huan dui jing	100
+雲開遠見漢陽城	yun kai yuan jian han yang cheng	100
+雲來氣接巫峽長	yun lai qi jie wu xia chang	100
+云來去	yun lai qu	100
+雲裏帝城雙鳳闕	yun li di cheng shuang feng que	100
+運命唯所遇	yun ming wei suo yu	100
+雲母屏開	yun mu bing kai	100
+雲母屏風燭影深	yun mu ping feng zhu ying shen	100
+雲霓明滅或可覩	yun ni ming mie huo ke du	100
+云破月來花弄影	yun po yue lai hua long ying	100
+雲青青兮欲雨	yun qing qing xi yu yu	100
+云日㬉	yun ri nuan	100
+雲山況是客中過	yun shan kuang shi ke zhong guo	100
+云山深處	yun shan shen chu	100
+雲深不知處	yun shen bu zhi chu	100
+云㴱無雁影	yun shen mo yan ying	100
+雲生結海樓	yun sheng jie hai lou	100
+云隨雁字長	yun sui yan zi chang	100
+云鎖重樓	yun suo chong lou	100
+云澹星疎楚山曉	yun tan xing shu chu shan xiao	100
+雲霞出海曙	yun xia chu hai shu	100
+雲霞生薜帷	yun xia sheng bi wei	100
+韻險還慵押	yun xian huan yong ya	100
+雲想衣裳花想容	yun xiang yi shang hua xiang rong	100
+云意還又沈沈	yun yi huan you shen shen	100
+云尤雨	yun you yu	100
+雲雨荒臺豈夢思	yun yu huang tai kai meng si	100
+雲雨夢	yun yu meng	100
+雲雨雖亡日月新	yun yu sui wang ri yue xin	100
+雲雨巫山枉斷腸	yun yu wu shan wang duan chang	100
+雲棧縈紆登劒閣	yun zhan ying yu deng jian ge	100
+雲之君兮紛紛而來下	yun zhi jun xi fen fen er lai xia	100
+雲中君不降	yun zhong jun bu jiang	100
+在長安	zai chang an	100
+在燈前攲枕	zai deng qian qi zhen	100
+在地願爲連理枝	zai di yuan wei lian li zhi	100
+載將离恨	zai jiang chi hen	100
+載將离恨歸去	zai jiang chi hen gui qu	100
+載酒買花年少事	zai jiu mai hua nian shao shi	100
+載取白雲歸去	zai qu bai yun gui qu	100
+再三追思	zai san zhui si	100

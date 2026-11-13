@@ -1,0 +1,269 @@
+---
+name: rymcp_dlc/poetry/words_09
+version: '2026.11.14.1'
+sort: by_weight
+use_preset_vocabulary: false
+activation:
+  __include: rymcp_dlc/poetry/words_10.dict:/activation
+...
+化作此花幽獨	hua zuo ci hua you du	100
+化作斷䰟心字	hua zuo duan hun xin zi	100
+化作嬌鶯飛歸去	hua zuo jiao ying fei gui qu	100
+化作相思淚	hua zuo xiang si lei	100
+懷此恨	huai ci hen	100
+懷君屬秋夜	huai jun shu qiu ye	100
+淮南暠月冷千山	huai nan hao yue leng qian shan	100
+淮南木落楚山多	huai nan mu la chu shan duo	100
+淮南一葉下	huai nan yi ye xia	100
+淮山春晚	huai shan chun wan	100
+淮上對秋山	huai shang dui qiu shan	100
+淮西有賊五十載	huai xi you zei wu shi zai	100
+淮陰市井笑韓信	huai yin shi jing xiao han xin	100
+淮左名都	huai zuo ming du	100
+還被旾潮晚急	huan bei chun chao wan ji	100
+還被亂鷗飛去	huan bei luan ou fei qu	100
+緩步香	huan bu xiang	100
+幻蒼崖云樹	huan cang ya yun shu	100
+還從物外起田園	huan cong wu wai qi tian yuan	100
+緩歌慢舞凝絲竹	huan ge man wu ning si zhu	100
+懽極	huan ji	100
+還記初關來	huan ji chu guan lai	100
+還見褪粉梅梢	huan jian tui fen mei shao	100
+還見筱墻螢晻	huan jian xiao qiang ying an	100
+還將兩行淚	huan jiang liang hang lei	100
+還將夢去	huan jiang meng qu	100
+喚覺來厭厭	huan jiao lai yan yan	100
+還教一片隨波去	huan jiao yi pian sui bo qu	100
+還看稀星數點	huan kan xi xing shu dian	100
+還來就菊花	huan lai jiu ju hua	100
+還老儘	huan lao jin	100
+還迷鏡中路	huan mi jing zhong lu	100
+還嫋万絲金	huan niao mo si jin	100
+還怕寒侵	huan pa han qin	100
+環佩空歸月夜魂	huan pei kong gui yue ye hun	100
+換譜伊涼	huan pu yi liang	100
+喚起兩眸清炯炯	huan qi liang mou qing jiong jiong	100
+喚起玉人	huan qi yu ren	100
+還寢夢佳期	huan qin meng jia qi	100
+喚取盈盈翠袖	huan qu ying ying cui xiu	100
+還染殘朱剩粉	huan ran can zhu sheng fen	100
+浣紗人說	huan sha ren shui	100
+浣沙游女	huan sha you nv	100
+還始覺	huan shi jiao	100
+還似去年今日意	huan shi qu nian jin ri yi	100
+還似織	huan shi zhi	100
+還㝛河橋深處	huan su he qiao shen chu	100
+還嘆鬢絲飄雪	huan tan bin si piao xue	100
+還相彫梁藻井	huan xiang diao liang zao jing	100
+歡笑情如舊	huan xiao qing ru jiu	100
+歡言得所憩	huan yan de suo qi	100
+還掩故園扉	huan yan gu yuan fei	100
+還移晻叶	huan yi an xie	100
+還依不忍	huan yi bu ren	100
+緩引旾酌	huan yin chun zhuo	100
+還又見	huan you jian	100
+還又嵗晚	huan you sui wan	100
+還乍識	huan zha shi	100
+還轉盼	huan zhuai pan	100
+還作江南會	huan zuo jiang nan hui	100
+黃埃散漫風蕭索	huang ai san man feng xiao suo	100
+黃塵足今古	huang chen ju jin gu	100
+荒城臨古渡	huang cheng lin gu du	100
+黃道寳光相直	huang dao bao guang xiang zhi	100
+黃蜂頻撲鞦韆索	huang feng pin pu qiu qian suo	100
+黃柑薦酒	huang gan jian jiu	100
+黃鶴斷磯頭	huang he duan ji tou	100
+黃河入海流	huang he ru hai liu	100
+黃鶴一去不復返	huang he yi qu bu fu fan	100
+黃河遠上白雲間	huang he yuan shang bai yun jian	100
+黃鶴之飛尚不得	huang he zhi fei shang bu de	100
+黃鶴之飛尚不得過	huang he zhi fei shang bu de guo	100
+黃昏到寺蝙蝠飛	huang hun dao si bian fu fei	100
+黃昏胡騎塵滿城	huang hun hu ji chen man cheng	100
+黃昏小院	huang hun xiao yuan	100
+黃昏斜炤水	huang hun xie zhao shui	100
+黃昏飲馬傍交河	huang hun yin ma bang jiao he	100
+黃金然桂盡	huang jin ran gui jin	100
+怳驚起而長嗟	huang jing qi er chang jie	100
+荒居舊業貧	huang ju jiu ye pin	100
+黃樓夜景	huang lou ye jing	100
+黃蘆苦竹	huang lu ku zhu	100
+黃蘆苦竹繞宅生	huang lu ku zhu rao zhai sheng	100
+黃門飛鞚不動塵	huang men fei kong bu dong chen	100
+恍然驚㪚	huang ran jing san	100
+恍如一瞬星霜換	huang ru yi shun xing shuang huan	100
+黃砂直上白雲間	huang sha zhi shang bai yun jian	100
+黃衫飛白馬	huang shan fei bai ma	100
+黃山舊遶漢宮斜	huang shan jiu rao han gong xie	100
+荒戍落黃葉	huang shu la huang ye	100
+黃叶地	huang xie de	100
+黃葉仍風雨	huang ye reng feng yu	100
+黃云堆雪	huang yun dui xue	100
+黃雲隴底白雪飛	huang yun long de bai xue fei	100
+黃雲萬里動風色	huang yun wan li dong feng se	100
+黃雲蕭條白日暗	huang yun xiao tiao bai ri an	100
+荒洲古漵	huang zhou gu xu	100
+黃竹歌聲動地哀	huang zhu ge sheng dong de ai	100
+會晻識	hui an shi	100
+悔不早荊釵	hui bu zao jing chai	100
+潰旾衫	hui chun shan	100
+悔匆匆	hui cong cong	100
+悔當初	hui dang chu	100
+會當凌絕頂	hui dang ling jue ding	100
+諱道相思	hui dao xiang si	100
+蕙花香也	hui hua xiang ye	100
+悔教夫壻覓封侯	hui jiao fu xu mi feng hou	100
+迴看天際下中流	hui kan tian ji xia zhong liu	100
+回看血淚相和流	hui kan xue lei xiang he liu	100
+迴廊下	hui lang xia	100
+迴廊影	hui lang ying	100
+迴廊朱戶	hui lang zhu hu	100
+回樂峰前沙似雪	hui le feng qian sha shi xue	100
+迴樂峰前沙似雪	hui le feng qian sha shi xue	100
+回眸一笑百媚生	hui mou yi xiao bai mei sheng	100
+廻日樓臺非甲帳	hui ri lou tai fei jia zhang	100
+回首長安遠	hui shou chang an yuan	100
+回首池南舊事	hui shou chi nan jiu shi	100
+回首當年漢舞	hui shou dang nian han wu	100
+回首舊遊	hui shou jiu you	100
+揮手淚霑巾	hui shou lei zhan jin	100
+回首向來蕭瑟處	hui shou xiang lai xiao se chu	100
+揮手自茲去	hui shou zi ci qu	100
+回頭迢遞便數驛	hui tou tiao di bian shu yi	100
+回頭萬里	hui tou wan li	100
+回頭下望人寰處	hui tou xia wang ren huan chu	100
+蕙畹聲搖	hui wan sheng yao	100
+會向瑤臺月下逢	hui xiang yao tai yue xia feng	100
+會解連環	hui xie lian huan	100
+會須一飲三百杯	hui xu yi yin san bai bei	100
+會須一飲三百盃	hui xu yi yin san bai bei	100
+迴厓沓嶂凌蒼蒼	hui ya ta zhang ling cang cang	100
+回舟不待月	hui zhou bu dai yue	100
+迴舟不待月	hui zhou bu dai yue	100
+渾不記	hun bu ji	100
+渾不似	hun bu shi	100
+魂返關塞黑	hun fan guan sai hei	100
+昏黃飲馬傍交河	hun huang yin ma bang jiao he	100
+魂來楓葉青	hun lai feng ye qing	100
+魂魄不曾來入夢	hun po bu ceng lai ru meng	100
+渾是新愁	hun shi xin chou	100
+渾未辦	hun wei ban	100
+渾欲不勝簪	hun yu bu sheng zan	100
+或從十五北防河	huo cong shi wu bei fang he	100
+或騎騏驎翳鳳皇	huo ji qi lin yi feng huang	100
+或恐是同鄉	huo kong shi tong xiang	100
+㸌如羿射九日落	huo ru yi she jiu ri luo	100
+火維地荒足妖怪	huo wei de huang ju yao guai	100
+羈泊欲窮年	ji bo yu qiong nian	100
+薺菜花緐胡蝶亂	ji cai hua fan hu die luan	100
+寄殘云	ji can yun	100
+寄殘醉	ji can zui	100
+記長楸走馬	ji chang qiu zou ma	100
+屐齒莓堦	ji chi mei jie	100
+几處簸錢聲	ji chu bo qian sheng	100
+記出塞	ji chu sai	100
+几處閑田	ji chu xian tian	100
+及茲契幽絕	ji ci qi you jue	100
+即此羨閑逸	ji ci xian xian yi	100
+即從巴峽穿巫峽	ji cong ba xia chuan wu xia	100
+記翠箔張燈	ji cui bo zhang deng	100
+記當日	ji dang ri	100
+記當時	ji dang shi	100
+記得偏重三五	ji de pian zhong san wu	100
+記得小苹初見	ji de xiao ping chu jian	100
+記得玉真初見面	ji de yu zhen chu jian mian	100
+幾度東風	ji du dong feng	100
+幾度飛花	ji du fei hua	100
+幾度隔山川	ji du ge shan chuan	100
+幾度黃昏雨	ji du huang hun yu	100
+幾度㱃㪚歌闌	ji du yin san ge lan	100
+幾度慾心碎	ji du yu xin sui	100
+几段新愁	ji duan xin chou	100
+幾多幽怨	ji duo you yuan	100
+几篙官渡	ji gao guan du	100
+几孤風月	ji gu feng yue	100
+急筦緐弦	ji guan fan xian	100
+幾行歸去盡	ji hang gui qu jin	100
+記畫堂	ji hua tang	100
+髻鬟對起	ji huan dui qi	100
+記喚酒尋芳處	ji huan jiu xun fang chu	100
+几回䰟夢與君同	ji hui hun meng yu jun tong	100
+几回嬌半醉	ji hui jiao ban zui	100
+幾回驚妾夢	ji hui jing qie meng	100
+几回凴双燕	ji hui ping shuang yan	100
+几回沙際歸路	ji hui sha ji gui lu	100
+几回憶	ji hui yi	100
+騎火一川明	ji huo yi chuan ming	100
+寂寂花時閉院門	ji ji hua shi bi yuan men	100
+寂寂江山搖落處	ji ji jiang shan yao la chu	100
+寂寂竟何待	ji ji jing he dai	100
+寄將秦鏡	ji jiang qin jing	100
+即今飄泊干戈際	ji jin piao bo gan ge ji	100
+汲井漱寒齒	ji jing shu han chi	100
+記來旹	ji lai shi	100
+肌理細膩骨肉勻	ji li xi ni gu rou yun	100
+羈旅長堪醉	ji lv chang kan zui	100
+雞鳴紫陌曙光寒	ji ming zi mo shu guang han	100
+寂寞	ji mo	100
+寂寞開無主	ji mo kai mo zhu	100
+寂寞看風絮	ji mo kan feng xu	100
+寂寞空庭春欲晚	ji mo kong ting chun yu wan	100
+寂寞凴高唸遠	ji mo ping gao nian yuan	100
+寂莫身後事	ji mo shen hou shi	100
+寂寞無人見	ji mo wu ren jian	100
+寂寞溪橋畔	ji mo xi qiao pan	100
+寂寞下蕪城	ji mo xia wu cheng	100
+寂寞養殘生	ji mo yang can sheng	100
+寂寞朝朝暮暮	ji mo zhao zhao mu mu	100
+極目霽靄霏微	ji mu ji ai fei wei	100
+極目傷平楚	ji mu shang ping chu	100
+記年旹	ji nian shi	100
+几番旾暮	ji pan chun mu	100
+几番風雨	ji pan feng yu	100
+几番風月	ji pan feng yue	100
+記取崔幑模樣	ji qu cui hui mu yang	100
+記取㽞旹霎	ji qu liu shi sha	100
+記取樓前綠水	ji qu lou qian lv shui	100
+記取明年	ji qu ming nian	100
+既紉蘭佩	ji ren lan pei	100
+几人老	ji ren lao	100
+幾日到臨洮	ji ri dao lin tao	100
+記少年	ji shao nian	100
+寄身且喜滄洲近	ji shen qie xi cang zhou jin	100
+几聲歸雁	ji sheng gui yan	100
+几聲啼	ji sheng ti	100
+几聲砧杵	ji sheng zhen chu	100
+幾時桮重把	ji shi bei chong ba	100
+幾時見得	ji shi jian de	100
+寄書長不避	ji shu chang bu bi	100
+寄宿無人舘	ji su wu ren guan	100
+極望天西	ji wang tian xi	100
+羇危萬里身	ji wei wan li shen	100
+羈危萬里身	ji wei wan li shen	100
+寄臥郊扉久	ji wo jiao fei jiu	100
+記小江	ji xiao jiang	100
+幾許風流地	ji xu feng liu de	100
+幾許盟言	ji xu meng yan	100
+幾許傷旾旾復暮	ji xu shang chun chun fu mu	100
+幾許傷旾春晚	ji xu shang chun chun wan	100
+幾許銷魂	ji xu xiao hun	100
+積雪浮雲端	ji xue fu yun duan	100
+寄煙波東去	ji yan bo dong qu	100
+際夜轉西壑	ji ye zhuai xi he	100
+季鷹歸未	ji ying gui wei	100
+寄語東城沽酒市	ji yu dong cheng gu jiu shi	100
+記玉關	ji yu guan	100
+積雨空林煙火遲	ji yu kong lin yan huo chi	100
+記曾共	ji zeng gong	100
+及至成仙遂不還	ji zhi cheng xian sui bu huan	100
+既至君門遠	ji zhi jun men yuan	100
+掎摭星宿遺羲娥	ji zhi xing xiu yi xi e	100
+機中錦字論長恨	ji zhong jin zi lun chang hen	100
+繼周八代爭戰罷	ji zhou ba dai zheng zhan ba	100
+記醉蹋南屏	ji zui ta nan bing	100
+嘉賓復滿堂	jia bin fu man tang	100
+駕長車踏破	jia chang che ta po	100
+嫁得瞿塘賈	jia de qu tang jia	100
+笳皷悲鳴	jia gu bei ming	100
+佳節又重陽	jia jie you chong yang	100
+佳麗地	jia li de	100

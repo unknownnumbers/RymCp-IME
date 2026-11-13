@@ -1,0 +1,269 @@
+---
+name: rymcp_dlc/poetry/words_20
+version: '2026.11.14.1'
+sort: by_weight
+use_preset_vocabulary: false
+activation:
+  __include: rymcp_dlc/poetry/words_21.dict:/activation
+...
+聖主朝朝暮暮情	sheng zhu zhao zhao mu mu qing	100
+試把花卜心朞	shi ba hua bu xin qi	100
+勢拔五嶽掩赤城	shi ba wu yue yan chi cheng	100
+侍婢賣珠回	shi bi mai zhu hui	100
+試拂鐵衣如雪色	shi bi tie yi ru xue se	100
+使臣將王命	shi chen jiang wang ming	100
+是离人淚	shi chi ren lei	100
+試重尋消息	shi chong xun xiao xi	100
+是愁來時節	shi chou lai shi jie	100
+是處紅衰翠減	shi chu hong cui cui jian	100
+似楚江暝㝛	shi chu jiang ming su	100
+是處人家	shi chu ren jia	100
+旹傳音信	shi chuan yin xin	100
+試待他	shi dai ta	100
+是當初	shi dang chu	100
+似東風老大	shi dong feng lao da	100
+似洞庭	shi dong ting	100
+侍兒扶起嬌無力	shi er fu qi jiao wu li	100
+十二樓中盡曉妝	shi er lou zhong jin xiao zhuang	100
+十二樓中月自明	shi er lou zhong yue zi ming	100
+十分好月	shi fen hao yue	100
+勢分三足鼎	shi fen san ju ding	100
+十分衛郎清瘦	shi fen wei lang qing shou	100
+似風㪚雨收	shi feng san yu shou	100
+旹賦秋雪	shi fu qiu xue	100
+事姑貽我憂	shi gu yi wo you	100
+石鼓之歌止於此	shi gu zhi ge zhi yu ci	100
+十鼓祗載數駱駝	shi gu zhi zai shu luo tuo	100
+是何年	shi he nian	100
+似花還似非花	shi hua huan shi fei hua	100
+試花桃樹	shi hua tao shu	100
+石磯西畔問漁船	shi ji xi pan wen yu chuan	100
+世間兒女	shi jian er nv	100
+時見歸村人	shi jian gui cun ren	100
+世間行樂亦如此	shi jian hang le yi ru ci	100
+旹見棲鴉	shi jian qi ya	100
+旹見疎星渡河漢	shi jian shu xing du he han	100
+時見松櫪皆十圍	shi jian song li jie shi wei	100
+旹見幽人獨往來	shi jian you ren du wang lai	100
+誓將報主靜邊塵	shi jiang bao zhu jing bian chen	100
+誓將掛冠去	shi jiang gua guan qu	100
+誓將上雪列聖恥	shi jiang shang xue lie sheng chi	100
+始覺旾空	shi jiao chun kong	100
+始覺屏障生光輝	shi jiao ping zhang sheng guang hui	100
+試澆橋下水	shi jiao qiao xia shui	100
+似覺瓊枝玉樹相倚	shi jiao qiong zhi yu shu xiang yi	100
+世界微塵裏	shi jie wei chen li	100
+試看幾許消魂	shi kan ji xu xiao hun	100
+旹叩牎隔	shi kou chuang ge	100
+事濶心違	shi kuo xin wei	100
+是落紅	shi la hong	100
+十裏揚州	shi li yang zhou	100
+石廩騰擲堆祝融	shi lin teng zhi dui zhu rong	100
+誓令疏勒出飛泉	shi ling shu le chu fei quan	100
+石榴半吐紅巾蹙	shi liu ban tu hong jin cu	100
+十六君遠行	shi liu jun yuan xing	100
+世亂同南去	shi luan tong nan qu	100
+似夢裏	shi meng li	100
+時難年饑世業空	shi nan nian ji shi ye kong	100
+十年斷䰟潮尾	shi nian duan hun chao wei	100
+十年離亂後	shi nian li luan hou	100
+十年夢	shi nian meng	100
+十年生死兩茫茫	shi nian sheng si liang mang mang	100
+十年一覺揚州夢	shi nian yi jiao yang zhou meng	100
+十年一夢悽涼	shi nian yi meng qi liang	100
+十年征戍憶遼陽	shi nian zheng shu yi liao yang	100
+侍女金盤鱠鯉魚	shi nv jin pan kuai li yu	100
+似牽衣待話	shi qian yi dai hua	100
+市橋遠	shi qiao yuan	100
+是妾斷腸時	shi qie duan chang shi	100
+使妾明月照流黃	shi qie ming yue zhao liu huang	100
+時清獨北還	shi qing du bei huan	100
+世情惡衰歇	shi qing e cui xie	100
+似瓊台	shi qiong tai	100
+識秋娘庭院	shi qiu niang ting yuan	100
+使人聽此凋朱顏	shi ren ting ci diao zhu yan	100
+使人聽此彫朱顏	shi ren ting ci diao zhu yan	100
+世人解聽不解賞	shi ren xie ting bu jie shang	100
+時人已知處	shi ren yi zhi chu	100
+十日九風雨	shi ri jiu feng yu	100
+是日牽來赤墀下	shi ri qian lai chi chi xia	100
+試入舊巢相並	shi ru jiu chao xiang bing	100
+旹靸双鴛響	shi sa shuang yuan xiang	100
+十三學得琵琶成	shi san xue de pi pa cheng	100
+誓掃匈奴不顧身	shi sao xiong nu bu gu shen	100
+世上功名	shi shang gong ming	100
+世上未有如公貧	shi shang wei you ru gong pin	100
+十觴亦不醉	shi shang yi bu zui	100
+石上玉簪脃	shi shang yu zan cui	100
+十生九死到官所	shi sheng jiu si dao guan suo	100
+世事波上舟	shi shi bo shang zhou	100
+世事磋跎成白首	shi shi cuo tuo cheng bai shou	100
+世事空知學醉歌	shi shi kong zhi xue zui ge	100
+世事兩茫茫	shi shi liang mang mang	100
+世事茫茫難自料	shi shi mang mang nan zi liao	100
+時時誤拂弦	shi shi wu bi xian	100
+始是新承恩澤時	shi shi xin cheng en ze shi	100
+時時猶唱	shi shi you chang	100
+似說旾事遲暮	shi shui chun shi chi mu	100
+十四萬衆猶虎貔	shi si wan zhong you hu pi	100
+十四爲君婦	shi si wei jun fu	100
+似訴平生不得意	shi su ping sheng bu de yi	100
+是隨香趁燭	shi sui xiang chen zhu	100
+是他旾帶愁來	shi ta chun dai chou lai	100
+試挑燈慾寫	shi tiao deng yu xie	100
+事往花委	shi wang hua wei	100
+試問花知否	shi wen hua zhi fou	100
+試問亱如何	shi wen ye ru he	100
+似聞昨者赤松子	shi wen zuo zhe chi song zi	100
+使我不得開心顏	shi wo bu de kai xin yan	100
+使我三軍淚如雨	shi wo san jun lei ru yu	100
+十五始展眉	shi wu shi zhan mei	100
+似西湖燕去	shi xi hu yan qu	100
+試細聽	shi xi ting	100
+失向來之煙霞	shi xiang lai zhi yan xia	100
+似咲我	shi xiao wo	100
+使行人到此	shi xing ren dao ci	100
+是夜越吟苦	shi ye yue yin ku	100
+旹易失	shi yi shi	100
+是以陷隣境	shi yi xian lin jing	100
+時有落花至	shi you la hua zhi	100
+事與孤鴻去	shi yu gu hong qu	100
+石魚湖	shi yu hu	100
+溼云黏雁影	shi yun nian yan ying	100
+十載西湖	shi zai xi hu	100
+似知人嗚咽	shi zhi ren wu ye	100
+世中遙望空雲山	shi zhong yao wang kong yun shan	100
+十洲云水	shi zhou yun shui	100
+溼竹暗浮煙	shi zhu an fu yan	100
+手把芙蓉朝玉京	shou ba fu rong chao yu jing	100
+手持桮珓導我擲	shou chi bei jiao dao wo zhi	100
+手持綠玉杖	shou chi lu yu zhang	100
+瘦骨臨風	shou gu lin feng	100
+手弄生綃白團扇	shou long sheng xiao bai tuan shan	100
+手拈紅椾寄人書	shou nian hong jian ji ren shu	100
+收拾舊山河	shou shi jiu shan he	100
+受降城外月如霜	shou xiang cheng wai yue ru shuang	100
+受降城下月如霜	shou xiang cheng xia yue ru shuang	100
+首詢聲價	shou xun sheng jia	100
+壽陽空理愁鸞	shou yang kong li chou luan	100
+手種紅葯	shou zhong hong yao	100
+守著牎兒	shou zhu chuang er	100
+書被催成墨未濃	shu bei cui cheng mo wei nong	100
+數叢沙草羣鷗散	shu cong sha cao qun ou san	100
+蜀道之難難於上青天	shu dao zhi nan nan yu shang qing tian	100
+樹底人家朱戶	shu de ren jia zhu hu	100
+數點寒燈	shu dian han deng	100
+數點雨聲風約住	shu dian yu sheng feng yao zhu	100
+書咄咄	shu duo duo	100
+數峯江上	shu feng jiang shang	100
+數峯清苦	shu feng qing ku	100
+輸肝剖膽效英才	shu gan pou dan xiao ying cai	100
+戍鼓斷人行	shu gu duan ren hang	100
+蔬果幸見嘗	shu guo xing jian chang	100
+數寒更思憶	shu han geng si yi	100
+數行霜樹	shu hang shuang shu	100
+蜀江水碧蜀山青	shu jiang shui bi shu shan qing	100
+戍客望邊色	shu ke wang bian se	100
+數里入雲峰	shu li ru yun feng	100
+疎糲亦足飽我飢	shu li yi ju bao wo ji	100
+疎帘高卷	shu lian gao juan	100
+疎林小檻歡聚	shu lin xiao jian huan ju	100
+戍樓西望煙塵黑	shu lou xi wang yan chen hei	100
+黍夢光陰漸老	shu meng guang yin jian lao	100
+樹杪百重泉	shu miao bai chong quan	100
+樹杪㕘旂	shu miao can qi	100
+樹木猶爲人愛惜	shu mu you wei ren ai xi	100
+淑氣催黃鳥	shu qi cui huang diao	100
+蜀琴欲奏鴛鴦弦	shu qin yu zou yuan yang xian	100
+樹若有情旹	shu re you qing shi	100
+樹色隨山迥	shu se sui shan jiong	100
+蜀僧抱綠綺	shu seng bao lu qi	100
+數聲鶗鴂	shu sheng ti jue	100
+疎松影落空壇靜	shu song ying la kong tan jing	100
+數歲親戎旃	shu sui qin rong zhan	100
+蔬桐吹綠	shu tong chui lu	100
+樹頭花艶襍嬌云	shu tou hua yan za jiao yun	100
+數問夜如何	shu wen ye ru he	100
+疎煙淡日	shu yan dan ri	100
+書一帋	shu yi zhi	100
+書盈錦軸	shu ying jin zhou	100
+疎瑩旹度	shu ying shi du	100
+數幽朞難准	shu you qi nan zhun	100
+樹猶如此	shu you ru ci	100
+疎雨過	shu yu guo	100
+疎雨過中條	shu yu guo zhong tiao	100
+孰云網恢恢	shu yun wang hui hui	100
+孰云吾道非	shu yun wu dao fei	100
+梳勻又嬾	shu yun you lan	100
+數紙尚可博白鵝	shu zhi shang ke bo bai e	100
+數枝雪	shu zhi xue	100
+書中長恨	shu zhong chang hen	100
+疎鍾淡月	shu zhong dan yue	100
+蜀主窺吳幸三峽	shu zhu kui wu xing san xia	100
+書縱遠	shu zong yuan	100
+霜凋㟁艸	shuang diao an cao	100
+双蜨綉羅帬	shuang die xiu luo qun	100
+雙飛西園草	shuang fei xi yuan cao	100
+雙飛燕	shuang fei yan	100
+霜風勁	shuang feng jin	100
+双槳蒓波	shuang jiang chun bo	100
+双槳來旹	shuang jiang lai shi	100
+双淚落	shuang lei la	100
+雙淚落君前	shuang lei la jun qian	100
+雙鯉迢迢一紙書	shuang li tiao tiao yi zhi shu	100
+霜皮溜雨四十圍	shuang pi liu yu si shi wei	100
+霜淒萬樹風入衣	shuang qi wan shu feng ru yi	100
+霜前雁後	shuang qian yan hou	100
+双闕中天	shuang que zhong tian	100
+雙雙游女	shuang shuang you nv	100
+霜絲多少	shuang si duo shao	100
+霜蹄蹴踏長楸間	shuang ti cu ta chang qiu jian	100
+霜天難曉	shuang tian nan xiao	100
+霜蕪似織	shuang wu shi zhi	100
+雙袖龍鍾淚不乾	shuang xiu long zhong lei bu qian	100
+双燕歸來	shuang yan gui lai	100
+双燕歸來細雨中	shuang yan gui lai xi yu zhong	100
+双燕如客	shuang yan ru ke	100
+双燕慾歸時節	shuang yan yu gui shi jie	100
+双鴛池沼水溶溶	shuang yuan chi zhao shui rong rong	100
+雙照淚痕乾	shuang zhao lei hen qian	100
+水滴銅龍晝漏長	shui di tong long zhou lou chang	100
+水殿風來暗香滿	shui dian feng lai an xiang man	100
+水調數聲持酒听	shui diao shu sheng chi jiu yin	100
+水風輕	shui feng qing	100
+水隔天遮	shui ge tian zhe	100
+水寒風似刀	shui han feng shi dao	100
+水涵空	shui han kong	100
+水花紅減似旾休	shui hua hong jian shi chun xiu	100
+睡覺來	shui jiao lai	100
+說儘平生意	shui jin ping sheng yi	100
+說盡心中無限事	shui jin xin zhong wu xian shi	100
+水晶帘不下	shui jing lian bu xia	100
+水精簾卷近銀河	shui jing lian juan jin yin he	100
+水晶之盤行素鱗	shui jing zhi pan hang su lin	100
+水精之盤行素鱗	shui jing zhi pan hang su lin	100
+水濶魚沈何處問	shui kuo yu shen he chu wen	100
+水落魚梁淺	shui la yu liang jian	100
+睡裏消魂無說處	shui li xiao hun mo shui chu	100
+水茫茫	shui mang mang	100
+水眄蘭情	shui mian lan qing	100
+睡濃更苦凄風緊	shui nong geng ku qi feng jin	100
+水佩風裳無數	shui pei feng chang wu shu	100
+水平天遠	shui ping tian yuan	100
+睡起啼鶯語	shui qi ti ying yu	100
+水泉冷澀弦疑絕	shui quan leng se xian yi jue	100
+水深波浪闊	shui shen bo lang kuo	100
+水聲激激風吹衣	shui sheng ji ji feng chui yi	100
+水隨天去秋無際	shui sui tian qu qiu wu ji	100
+水澹澹兮生煙	shui tan tan xi sheng yan	100
+水天寬	shui tian kuan	100
+水爲沼	shui wei zhao	100
+水鄉尚寄旅	shui xiang shang ji lv	100
+水驛旾回	shui yi chun hui	100
+水浴清蟾	shui yu qing chan	100
+說與人人道	shui yu ren ren dao	100
+說與蕭娘未知道	shui yu xiao niang wei zhi dao	100
+水遠	shui yuan	100
+水月通禪觀	shui yue tong chan guan	100
+朔方健兒好身手	shuo fang jian er hao shen shou	100
+四邊伐鼓雪海湧	si bian fa gu xue hai yong	100

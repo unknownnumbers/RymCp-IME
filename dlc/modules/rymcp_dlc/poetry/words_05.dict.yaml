@@ -1,0 +1,270 @@
+---
+name: rymcp_dlc/poetry/words_05
+version: '2026.11.14.1'
+sort: by_weight
+use_preset_vocabulary: false
+activation:
+  __include: rymcp_dlc/poetry/words_06.dict:/activation
+...
+渡頭楊柳青青	du tou yang liu qing qing	100
+渡頭餘落日	du tou yu luo ri	100
+都忘卻	du wang que	100
+都為輕別	du wei qing bie	100
+都無人筦	du wu ren guan	100
+獨向小樓東畔	du xiang xiao lou dong pan	100
+獨夜憶秦關	du ye yi qin guan	100
+獨倚危樓風細細	du yi wei lou feng xi xi	100
+獨有鳳皇池上客	du you feng huang chi shang ke	100
+獨有宦遊人	du you huan you ren	100
+杜宇聲聲不忍聞	du yu sheng sheng bu ren wen	100
+渡遠荊門外	du yuan jing men wai	100
+都緣自有离恨	du yuan zi you chi hen	100
+都在空城	du zai kong cheng	100
+獨在異鄉爲異客	du zai yi xiang wei yi ke	100
+獨酌無相親	du zhuo mo xiang qin	100
+獨自怎生得黑	du zi zen sheng de hei	100
+獨坐幽篁裏	du zuo you huang li	100
+短策頻惹旾香	duan ce pin re chun xiang	100
+斷腸何必更殘陽	duan chang he bi geng can yang	100
+斷腸落日千山暮	duan chang luo ri qian shan mu	100
+斷腸馬上曾聞	duan chang ma shang zeng wen	100
+斷腸片片飛紅	duan chang pian pian fei hong	100
+斷腸移破秦箏柱	duan chang yi po qin zheng zhu	100
+斷腸院落	duan chang yuan luo	100
+斷腸爭忍回顧	duan chang zheng ren hui gu	100
+短髮蕭騷襟袖冷	duan fa xiao sao jin xiu leng	100
+斷梗疎萍	duan geng shu ping	100
+斷鴻難倩	duan hong nan qian	100
+斷鴻聲裏	duan hong sheng li	100
+斷鴻聲遠長天暮	duan hong sheng yuan chang tian mu	100
+斷紅溼	duan hong shi	100
+斷䰟分付	duan hun fen fu	100
+斷䰟分付與	duan hun fen fu yu	100
+斷䰟在否	duan hun zai fou	100
+短楫桃根渡	duan ji tao gen du	100
+短景歸秋	duan jing gui qiu	100
+端居恥聖明	duan ju chi sheng ming	100
+斷絕胡兒戀母聲	duan jue hu er lian mu sheng	100
+短夢依然江表	duan meng yi ran jiang biao	100
+斷無消息石榴紅	duan mo xiao xi shi liu hong	100
+斷橋斜日歸舩	duan qiao xie ri gui chuan	100
+斷闋經嵗慵賦	duan que jing sui yong fu	100
+短松岡	duan song gang	100
+斷崖樹	duan ya shu	100
+斷煙离緒	duan yan chi xu	100
+斷煙禁夜	duan yan jin ye	100
+斷鴈警愁眠	duan yan jing chou mian	100
+斷雁無凴	duan yan mo ping	100
+短雨殘云無意緒	duan yu can yun wu yi xu	100
+斷云依水晚來收	duan yun yi shui wan lai shou	100
+斷云遠	duan yun yuan	100
+對別酒	dui bie jiu	100
+對滄江斜日	dui cang jiang xie ri	100
+對長亭晚	dui chang ting wan	100
+對此結中腸	dui ci jie zhong chang	100
+對此可以酣高樓	dui ci ke yi han gao lou	100
+對此漫嗟榮辱	dui ci man jie rong ru	100
+對雌蜺掛雨	dui ci ni gua yu	100
+對此如何不淚垂	dui ci ru he bu lei chui	100
+對此涕淚雙滂沱	dui ci ti lei shuang pang tuo	100
+對此應解相思	dui ci ying xie xiang si	100
+對此欲倒東南傾	dui ci yu dao dong nan qing	100
+對花對酒	dui hua dui jiu	100
+對江南千里	dui jiang nan qian li	100
+對江天	dui jiang tian	100
+對酒當歌	dui jiu dang ge	100
+對酒競留連	dui jiu jing liu lian	100
+對菱花	dui ling hua	100
+對鸞鏡	dui luan jing	100
+追旅思	dui lv si	100
+對碁陪謝傅	dui qi pei xie fu	100
+對秋燈	dui qiu deng	100
+對人容易	dui ren rong yi	100
+對誰醒	dui shei xing	100
+對㝛煙收	dui su yan shou	100
+追往事	dui wang shi	100
+對西風	dui xi feng	100
+對閑牎畔	dui xian chuang pan	100
+對瀟瀟	dui xiao xiao	100
+對影成三人	dui ying cheng san ren	100
+對語東鄰	dui yu dong lin	100
+頓成悽楚	dun cheng qi chu	100
+頓成清別	dun cheng qing bie	100
+頓老相如	dun lao xiang ru	100
+多病故人疎	duo bing gu ren shu	100
+多病㕁無氣力	duo bing que mo qi li	100
+墮履牽縈	duo lv qian ying	100
+多難識君遲	duo nan shi jun chi	100
+多岐路	duo qi lu	100
+多情	duo qing	100
+多情多感	duo qing duo gan	100
+多情㕁似總無情	duo qing que shi zong wu qing	100
+多情為誰追惜	duo qing wei shei dui xi	100
+多情只有春庭月	duo qing zhi you chun ting yue	100
+多情自古傷離別	duo qing zi gu shang li bie	100
+多少梨園聲在	duo shao li yuan sheng zai	100
+多少蓬萊舊事	duo shao peng lai jiu shi	100
+多少事	duo shao shi	100
+多少遊春意	duo shao you chun yi	100
+多謝梅花	duo xie mei hua	100
+蛾兒雪柳黃金縷	e er xue liu huang jin lv	100
+峨嵋山下少人行	e mei shan xia shao ren hang	100
+蛾眉曾有人妒	e mei zeng you ren du	100
+蛾眉正奇絕	e mei zheng qi jue	100
+爾輩況無恃	er bei kuang mo shi	100
+耳邊曾道	er bian zeng dao	100
+二分塵土	er fen chen tu	100
+而今燈漫掛	er jin deng man gua	100
+而今何事	er jin he shi	100
+而今何意	er jin he yi	100
+而今樂事他年淚	er jin le shi ta nian lei	100
+而今誤我秦樓約	er jin wu wo qin lou yao	100
+爾來四萬八千歲	er lai si wan ba qian sui	100
+二陵風雨自東來	er ling feng yu zi dong lai	100
+兒女紛紛夸結束	er nv fen fen kua jie shu	100
+兒女共霑巾	er nv gong zhan jin	100
+兒女忽成行	er nv hu cheng xing	100
+兒女羅酒漿	er nv luo jiu jiang	100
+兒時	er shi	100
+二十年	er shi nian	100
+二十四橋明月	er shi si qiao ming yue	100
+二十四橋仍在	er shi si qiao reng zai	100
+二十餘年如一夢	er shi yu nian ru yi meng	100
+二水中分白鷺洲	er shui zhong fen bai lu zhou	100
+兒童相見不相識	er tong xiang jian bu xiang shi	100
+二雅褊迫無委蛇	er ya bian pai mo wei yi	100
+二月黃鶯飛上林	er yue huang ying fei shang lin	100
+翻成消歇	fan cheng xiao xie	100
+翻成雨恨云愁	fan cheng yu hen yun chou	100
+緐燈奪霽華	fan deng duo ji hua	100
+泛泛入煙霧	fan fan ru yan wu	100
+氾孤艇	fan gu ting	100
+繁華競逐	fan hua jing zhu	100
+繁華事散逐香塵	fan hua shi san zhu xiang chen	100
+氾畫鷁	fan hua yi	100
+返景入深林	fan jing ru shen lin	100
+煩君最相警	fan jun zui xiang jing	100
+煩痾近消散	fan ke jin xiao san	100
+翻惹得	fan re de	100
+翻身向天仰射雲	fan shen xiang tian yang she yun	100
+翻溼旾衫半袖	fan shi chun shan ban xiu	100
+反是生女好	fan shi sheng nv hao	100
+翻書愁上鬢毛白	fan shu chou shang bin mao bai	100
+翻咲無書	fan xiao mo shu	100
+繁星宿故關	fan xing su gu guan	100
+翻疑夢裏逢	fan yi meng li feng	100
+放冰蜍飛到	fang bing chu fei dao	100
+芳艸碧色	fang cao bi se	100
+芳艸連空濶	fang cao lian kong kuo	100
+芳艸連天	fang cao lian tian	100
+芳艸凝綠	fang cao ning lu	100
+芳艸侵堦映紅葯	fang cao qin jie ying hong yao	100
+芳艸天涯	fang cao tian ya	100
+芳艸王孫知何處	fang cao wang sun zhi he chu	100
+芳艸無情	fang cao wu qing	100
+芳艸斜陽	fang cao xie yang	100
+芳草已云暮	fang cao yi yun mu	100
+仿佛燈前事	fang fu deng qian shi	100
+仿佛炤顏色	fang fu zhao yan se	100
+芳根兼倚	fang gen jian yi	100
+芳機瑞錦	fang ji rui jin	100
+芳郊綠徧	fang jiao lu bian	100
+方今太平日無事	fang jin tai ping ri mo shi	100
+芳徑	fang jing	100
+芳景猶自如故	fang jing you zi ru gu	100
+訪舊半爲鬼	fang jiu ban wei gui	100
+芳醪經口	fang lao jing kou	100
+芳蓮墜粉	fang lian zhui fen	100
+訪鄰尋裏	fang lin xun li	100
+房櫳向晚	fang long xiang wan	100
+坊陌人家	fang mo ren jia	100
+芳思交加	fang si jiao jia	100
+芳思誰寄	fang si shei ji	100
+放曉晴池院	fang xiao qing chi yuan	100
+芳心高潔	fang xin gao jie	100
+芳心還動梁苑	fang xin huan dong liang yuan	100
+芳心千重似束	fang xin qian chong shi shu	100
+芳心是事可可	fang xin shi shi ke ke	100
+芳心向春盡	fang xin xiang chun jin	100
+芳艶流水	fang yan liu shui	100
+芳意長新	fang yi chang xin	100
+方知大藩地	fang zhi da fan de	100
+訪中興	fang zhong xing	100
+廢池喬木	fei chi qiao mu	100
+翡翠衾寒誰與共	fei cui qin han shei yu gong	100
+霏霏涼露沾衣	fei fei liang lu zhan yi	100
+霏霏玉筦旾葭	fei fei yu guan chun jia	100
+非乹病酒	fei gan bing jiu	100
+飛蓋妨花	fei ge fang hua	100
+飛蓋歸來	fei ge gui lai	100
+廢閣先涼	fei ge xian liang	100
+飛過蒼茫	fei guo cang mang	100
+飛紅若到西湖底	fei hong re dao xi hu de	100
+飛近蛾綠	fei jin e lu	100
+費儘鶯兒語	fei jin ying er yu	100
+飛梅弄晚	fei mei long wan	100
+飛鳥沒何處	fei niao mei he chu	100
+非人力	fei ren li	100
+飛入槐府	fei ru huai fu	100
+飛入西城	fei ru xi cheng	100
+飛入尋常百姓家	fei ru xun chang bai xing jia	100
+飛上銀霄	fei shang yin xiao	100
+飛沈理自隔	fei shen li zi ge	100
+沸十裏	fei shi li	100
+肥水東流無盡朞	fei shui dong liu wu jin qi	100
+飛湍瀑流相喧豗	fei tuan bao liu xiang xuan hui	100
+飛湍瀑流爭喧豗	fei tuan bao liu zheng xuan hui	100
+非霧非煙深處	fei wu fei yan shen chu	100
+霏霧弄晴	fei wu long qing	100
+飛絮	fei xu	100
+飛絮蒙蒙	fei xu meng meng	100
+飛絮繞香閣	fei xu rao xiang ge	100
+飛絮沾襟袖	fei xu zhan jin xiu	100
+飛雪滿孤村	fei xue man gu cun	100
+飛燕蹴紅英	fei yan cu hong ying	100
+非煙非霧	fei yan fei wu	100
+飛煙五候宅	fei yan wu hou zhai	100
+飛燕又將歸信誤	fei yan you jiang gui xin wu	100
+費伊心力	fei yi xin li	100
+飛雨旹鳴高屋	fei yu shi ming gao wu	100
+飛云黯淡夕陽間	fei yun an dan xi yang jian	100
+飛云過儘	fei yun guo jin	100
+分曹射覆蠟燈紅	fen cao she fu la deng hong	100
+分曹限紫微	fen cao xian zi wei	100
+紛馳騖	fen chi wu	100
+紛紛墮叶飄香砌	fen fen duo xie piao xiang qi	100
+紛紛暮雪下轅門	fen fen mu xue xia yuan men	100
+分付他誰	fen fu ta shei	100
+分付庭前柳	fen fu ting qian liu	100
+分明共人愁緒	fen ming gong ren chou xu	100
+分明又向華胥見	fen ming you xiang hua xu jian	100
+分明怨恨曲中論	fen ming yuan hen qu zhong lun	100
+粉牆丹柱動光彩	fen qiang dan zhu dong guang cai	100
+粉牆低	fen qiang di	100
+粉香吹下	fen xiang chui xia	100
+焚香獨自語	fen xiang du zi yu	100
+分野中峰變	fen ye zhong feng bian	100
+風悲畫角	feng bei hua jue	100
+風波不信菱枝弱	feng bo bu xin ling zhi ruo	100
+風不定	feng bu ding	100
+風掣紅旗凍不翻	feng che hong qi dong bu fan	100
+風塵何處期	feng chen he chu qi	100
+風塵何所期	feng chen he suo qi	100
+風塵傾動昏王室	feng chen qing dong hun wang shi	100
+風塵荏苒音書絕	feng chen ren ran yin shu jue	100
+鳳城寒盡怕春宵	feng cheng han jin pa chun xiao	100
+鳳城寒食	feng cheng han shi	100
+鳳城遠	feng cheng yuan	100
+䗬愁蜨恨	feng chou die hen	100
+風吹柳花滿店香	feng chui liu hua man dian xiang	100
+風吹仙袂飄颻舉	feng chui xian mei piao yao ju	100
+風燈零亂	feng deng ling luan	100
+風定猶舞	feng ding you wu	100
+風多響易沈	feng duo xiang yi shen	100
+鳳歌笑孔丘	feng ge xiao kong qiu	100
+風鬟三五	feng huan san wu	100
+風鬟霜鬢	feng huan shuang bin	100
+䗬黃晻偷暈	feng huang an tou yun	100
+鳳凰池對青瑣門	feng huang chi dui qing suo men	100
+鳳凰臺上鳳凰遊	feng huang tai shang feng huang you	100
+烽火連三月	feng huo lian san yue	100

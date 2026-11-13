@@ -1,0 +1,269 @@
+---
+name: rymcp_dlc/poetry/words_00
+version: '2026.11.14.1'
+sort: by_weight
+use_preset_vocabulary: false
+activation:
+  __include: rymcp_dlc/poetry/words_01.dict:/activation
+...
+阿濫	a lan	100
+呵手試梅妝	a shou shi mei zhuang	100
+靄靄旾空	ai ai chun kong	100
+欸乃一聲山水綠	ai nai yi sheng shan shui lu	100
+愛渠入眼南山碧	ai qu ru yan nan shan bi	100
+愛說南朝狂客	ai shui nan chao kuang ke	100
+愛貼地爭飛	ai tie de zheng fei	100
+哀音似愬	ai yin shi su	100
+哀哉王孫慎勿疎	ai zai wang sun shen wu shu	100
+哀箏一弄湘江曲	ai zheng yi long xiang jiang qu	100
+艾枝應壓愁鬟亂	ai zhi ying ya chou huan luan	100
+黯黯見臨洮	an an jian lin tao	100
+黯黯夢云驚斷	an an meng yun jing duan	100
+黯黯生天際	an an sheng tian ji	100
+岸邊兩兩三三	an bian liang liang san san	100
+晻補香瘢	an bu xiang ban	100
+安禪制毒龍	an chan zhi du long	100
+晻塵不起	an chen bu qi	100
+晻塵侵	an chen qin	100
+晻塵鎖	an chen suo	100
+晻垂珠淚	an chui zhu lei	100
+安得至老不更歸	an de zhi lao bu geng gui	100
+晻滴鮫珠墜	an di jiao zhu zhui	100
+晻點檢	an dian jian	100
+晻殿鎖	an dian suo	100
+晻斷腸	an duan chang	100
+晻追前事	an dui qian shi	100
+㟁花狂	an hua kuang	100
+安花著蒂	an hua zhao di	100
+諳儘孤眠滋味	an jin gu mian zi wei	100
+暗裡忽驚山鳥啼	an li hu jing shan diao ti	100
+㟁柳何窮	an liu he qiong	100
+晻柳啼鴉	an liu ti ya	100
+安能摧眉折腰事權貴	an neng cui mei zhe yao shi quan gui	100
+安能以此上論列	an neng yi ci shang lun lie	100
+晻凝佇	an ning zhu	100
+晻欺羅袖	an qi luo xiu	100
+晻數十年湖上路	an shu shi nian hu shang lu	100
+晻隨流水到天涯	an sui liu shui dao tian ya	100
+安穩錦屏今夜夢	an wen jin ping jin ye meng	100
+暗想從前	an xiang cong qian	100
+暗想當初	an xiang dang chu	100
+黯鄉䰟	an xiang hun	100
+黯相望	an xiang wang	100
+晻銷肌雪	an xiao ji xue	100
+黯銷凝	an xiao ning	100
+晻許閑人帶偷掏	an xu xian ren dai tou tao	100
+晻雨梅黃	an yu mei huang	100
+安知峰壑今來變	an zhi feng he jin lai bian	100
+安置妥帖平不頗	an zhi tuo tie ping bu po	100
+遨頭小簇行旾隊	ao tou xiao cu hang chun dui	100
+八尺龍鬚方錦褥	ba che long xu fang jin ru	100
+罷官昨日今如何	ba guan zuo ri jin ru he	100
+把劒覓徐君	ba jian mi xu jun	100
+拔劒四顧心茫然	ba jian si gu xin mang ran	100
+芭蕉不展丁香結	ba jiao bu zhan ding xiang jie	100
+芭蕉葉大支子肥	ba jiao ye da zhi zi fei	100
+把酒話桑麻	ba jiu hua sang ma	100
+把酒問青天	ba jiu wen qing tian	100
+把酒祝東風	ba jiu zhu dong feng	100
+八駿日行三萬里	ba jun ri hang san wan li	100
+把破㡌	ba po mao	100
+八千里路雲和月	ba qian li lu yun he yue	100
+巴人訟芋田	ba ren song yu tian	100
+罷如江海凝清光	ba ru jiang hai ning qing guang	100
+巴山夜雨漲秋池	ba shan ye yu zhang qiu chi	100
+把似而今醒到了	ba shi er jin xing dao liao	100
+把吳鈎看了	ba wu gou kan le	100
+把閑言語	ba xian yan yu	100
+把閑語閑言	ba xian yu xian yan	100
+灞原風雨定	ba yuan feng yu ding	100
+八月蝴蝶來	ba yue hu die lai	100
+八月湖水平	ba yue hu shui ping	100
+八月蕭關道	ba yue xiao guan dao	100
+敗壁秋虫嘆	bai bi qiu chong tan	100
+白波九道流雪山	bai bo jiu dao liu xue shan	100
+百步九折縈巖巒	bai bu jiu zhe ying yan luan	100
+白帝城邊古木疎	bai di cheng bian gu mu shu	100
+白鳥無言定自愁	bai diao wu yan ding zi chou	100
+白髮悲花落	bai fa bei hua la	100
+白髮催年老	bai fa cui nian lao	100
+白髮書生神州淚	bai fa shu sheng shen zhou lei	100
+白骨亂蓬蒿	bai gu luan peng hao	100
+敗荷零落	bai he ling luo	100
+敗紅趁	bai hong chen	100
+白狼河北音書斷	bai lang he bei yin shu duan	100
+白了少年頭	bai le shao nian tou	100
+白馬嚼齧黃金勒	bai ma jiao nie huang jin le	100
+白門寥落意多違	bai men liao luo yi duo wei	100
+百年都是幾多時	bai nian du shi ji duo shi	100
+百年多病獨登臺	bai nian duo bing du deng tai	100
+白苹花滿湔帬處	bai ping hua man jian qun chu	100
+白苹洲畔	bai ping zhou pan	100
+白日登山望烽火	bai ri deng shan wang feng huo	100
+白日放歌須縱酒	bai ri fang ge xu zong jiu	100
+白日落梁州	bai ri la liang zhou	100
+白日依山盡	bai ri yi shan jin	100
+白首臥松雲	bai shou wo song yun	100
+白水遶東城	bai shui rao dong cheng	100
+白頭宮女在	bai tou gong nv zai	100
+白頭搔更短	bai tou sao geng duan	100
+敗叶蕭蕭	bai xie xiao xiao	100
+白雲迴望合	bai yun hui wang ge	100
+白雲千載空悠悠	bai yun qian zai kong you you	100
+白雲無盡時	bai yun wu jin shi	100
+白雲依靜渚	bai yun yi jing zhu	100
+百囀黃鸝語	bai zhuan huang li yu	100
+百紫千紅花正亂	bai zi qian hong hua zheng luan	100
+半壁見海日	ban bi jian hai ri	100
+拌分鈿	ban fen dian	100
+半篙波㬉	ban gao bo nuan	100
+半壺秋水薦黃花	ban hu qiu shui jian huang hua	100
+半黃梅子	ban huang mei zi	100
+伴君幽獨	ban jun you du	100
+半空煙雨	ban kong yan yu	100
+半零落	ban ling luo	100
+半飄零	ban piao ling	100
+伴人一霎	ban ren yi sha	100
+伴我微吟	ban wo wei yin	100
+半夜軍行戈相撥	ban ye jun hang ge xiang bo	100
+半夜涼初透	ban ye liang chu tou	100
+半陰半晴云暮	ban yin ban qing yun mu	100
+半作障泥半作帆	ban zuo zhang ni ban zuo fan	100
+傍海棠偏愛	bang hai tang pian ai	100
+傍枯林古道	bang ku lin gu dao	100
+傍鄰聞者多歎息	bang lin wen zhe duo tan xi	100
+傍柳係馬	bang liu xi ma	100
+寳釵分	bao chai fen	100
+寳釵樓上	bao chai lou shang	100
+寳釵樓外秋㴱	bao chai lou wai qiu shen	100
+寳釵貰酒	bao chai shi jiu	100
+報荅平生未展眉	bao da ping sheng wei zhan mei	100
+寳帶金章	bao dai jin zhang	100
+報道山中去	bao dao shan zhong qu	100
+報得三春暉	bao de san chun hui	100
+褒公鄂公毛髮動英姿颯爽來酣戰	bao gong e gong mao fa dong ying zi sa shuang lai han zhan	100
+寳勒倚殘云	bao le yi can yun	100
+寳帘掛秋冷	bao lian gua qiu leng	100
+寳匲明月不欺人	bao lian ming yue bu qi ren	100
+寳帘閑掛小銀鈎	bao lian xian gua xiao yin gou	100
+寶馬彫鞌	bao ma diao an	100
+寶馬彫車香滿路	bao ma diao che xiang man lu	100
+寳扇重尋明月影	bao shan chong xun ming yue ying	100
+寶扇迎歸九華帳	bao shan ying gui jiu hua zhang	100
+抱銅仙	bao tong xian	100
+抱影無眠	bao ying mo mian	100
+寳箏前	bao zheng qian	100
+寳甃楊花轉	bao zhou yang hua zhuai	100
+揹城漸杳	bei cheng jian yao	100
+北斗兼春遠	bei dou jian chun yuan	100
+北斗闌干南斗斜	bei dou lan gan nan dou xie	100
+北斗七星高	bei dou qi xing gao	100
+被翻紅浪	bei fan hong lang	100
+揹飛双燕帖云寒	bei fei shuang yan tie yun han	100
+北風江上寒	bei feng jiang shang han	100
+北風捲地白草折	bei feng juan de bai cao she	100
+碑高三丈字如斗	bei gao san zhang zi ru dou	100
+悲歌未徹	bei ge wei che	100
+悲恨相續	bei hen xiang xu	100
+背後何所見	bei hou he suo jian	100
+北極朝廷終不改	bei ji chao ting zhong bu gai	100
+被冷香消新夢覺	bei leng xiang xiao xin meng jiao	100
+北樓閑上	bei lou xian shang	100
+背面楚腰身	bei mian chu yao shen	100
+杯莫停	bei mo ting	100
+被驅不異犬與雞	bei qu bu yi quan yu ji	100
+北闕休上書	bei que xiu shang shu	100
+揹人還過木末	bei ren huan guo mu me	100
+北山白雲裏	bei shan bai yun li	100
+北土非吾願	bei tu fei wu yuan	100
+揹西風	bei xi feng	100
+揹西曛	bei xi xun	100
+被惜餘薰	bei xi yu xun	100
+奔湊似朝東	ben cou shi chao dong	100
+奔流到海不復回	ben liu dao hai bu fu hui	100
+奔流到海不復迴	ben liu dao hai bu fu hui	100
+本以高難飽	ben yi gao nan bao	100
+崩年亦在永安宮	beng nian yi zai yong an gong	100
+迸泉颯颯飛木末	beng quan sa sa fei mu me	100
+必逢佳士亦寫真	bi feng jia shi yi xie zhen	100
+碧海飛金鏡	bi hai fei jin jing	100
+碧海青天夜夜心	bi hai qing tian ye ye xin	100
+彼何人哉軒與羲	bi he ren zai xuan yu xi	100
+畢竟江流去	bi jing jiang liu qu	100
+碧闌干外繡簾垂	bi lan gan wai xiu lian chui	100
+碧樓帘影不遮愁	bi lou lian ying bu zhe chou	100
+閉門愁寂	bi men chou ji	100
+比人間旾別	bi ren jian chun bie	100
+拂水飃綿送行色	bi shui piao mian song xing se	100
+碧天如水夜雲輕	bi tian ru shui ye yun qing	100
+碧文圓頂夜深縫	bi wen yuan ding ye shen feng	100
+避行客	bi xing ke	100
+碧圓自潔	bi yuan zi jie	100
+璧月初晴	bi yue chu qing	100
+碧云天	bi yun tian	100
+碧砧度韻	bi zhen du yun	100
+遍插茱萸少一人	bian cha zhu yu shao yi ren	100
+便出門千里	bian chu men qian li	100
+便當日	bian dang ri	100
+變調如聞楊柳春	bian diao ru wen yang liu chun	100
+便放慢旾衫針線	bian fang man chun shan zhen xian	100
+便翡翠屏開	bian fei cui bing kai	100
+邊風飄飄那可度	bian feng piao piao na ke du	100
+便行云	bian hang yun	100
+便好去朝天	bian hao qu chao tian	100
+徧舊家門巷	bian jiu jia men xiang	100
+徧九陌	bian jiu mo	100
+便角枕題詩	bian jue zhen ti shi	100
+徧綠埜	bian lu ye	100
+便無准	bian mo zhun	100
+便恁急槳凌波去	bian nen ji jiang ling bo qu	100
+便忍把	bian ren ba	100
+便認得	bian ren de	100
+便隨風去	bian sui feng qu	100
+徧天涯	bian tian ya	100
+邊亭流血成海水	bian ting liu xue cheng hai shui	100
+便忘了	bian wang le	100
+便下襄陽向洛陽	bian xia xiang yang xiang luo yang	100
+便薰梅染柳	bian xun mei ran liu	100
+變一庭凄冷	bian yi ting qi leng	100
+徧倚危闌	bian yi wei lan	100
+便有團圓意	bian you tuan yuan yi	100
+便只恐	bian zhi kong	100
+便至四十西營田	bian zhi si shi xi ying tian	100
+便縱有	bian zong you	100
+表裡俱澄澈	biao li ju cheng che	100
+表曰臣愈昧死上	biao yue chen yu mei si shang	100
+別愁紛絮	bie chou fen xu	100
+別舘寒砧	bie guan han zhen	100
+別後不知君遠近	bie hou bu zhi jun yuan jin	100
+別後訪	bie hou fang	100
+別後書辤	bie hou shu ci	100
+別後總	bie hou zong	100
+別君去時何時還	bie jun qu shi he shi huan	100
+別來不寄一行書	bie lai bu ji yi xing shu	100
+別來滄海事	bie lai cang hai shi	100
+別來錦字終難偶	bie lai jin zi zhong nan ou	100
+別來迅景如梭	bie lai xun jing ru suo	100
+別離在今晨	bie li zai jin chen	100
+別夢依依到謝家	bie meng yi yi dao xie jia	100
+別浦高樓曾漫倚	bie pu gao lou zeng man yi	100
+別情無極	bie qing wu ji	100
+別時茫茫江浸月	bie shi mang mang jiang jin yue	100
+別是閑滋味	bie shi xian zi wei	100
+別時針綫	bie shi zhen xian	100
+別意與之誰短長	bie yi yu zhi shei duan chang	100
+別有傷心無數	bie you shang xin wu shu	100
+別有幽愁暗恨生	bie you you chou an hen sheng	100
+別語愁難聽	bie yu chou nan ting	100
+鬢邊覷	bin bian qu	100
+賓從雜遝實要津	bin cong za ta shi yao jin	100
+鬢髮各已蒼	bin fa ge yi cang	100
+鬢怯瓊梳	bin qie qiong shu	100
+鬢如霜	bin ru shuang	100
+豳詩漫與	bin shi man yu	100
+鬢絲生幾縷	bin si sheng ji lv	100
+鬢先絲	bin xian si	100
+鬢搖煙碧	bin yao yan bi	100
+冰池晴綠炤還空	bing chi qing lu zhao huan kong	100
+冰簟銀牀夢不成	bing dian yin chuang meng bu cheng	100
+冰環玉指	bing huan yu zhi	100
