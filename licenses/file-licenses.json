@@ -807,6 +807,22 @@
       ]
     },
     {
+      "path": "config/official-weasel/lua/cn_exact_processor.lua",
+      "kind": "program-or-configuration",
+      "project_license": "GPL-3.0-only",
+      "references": [
+        "LICENSE"
+      ]
+    },
+    {
+      "path": "config/official-weasel/lua/cn_exact_spelling.lua",
+      "kind": "program-or-configuration",
+      "project_license": "GPL-3.0-only",
+      "references": [
+        "LICENSE"
+      ]
+    },
+    {
       "path": "config/official-weasel/lua/cn_extra_forms.lua",
       "kind": "data-or-generated-data",
       "source_group": "cn-spelling-data",
@@ -2128,6 +2144,22 @@
     },
     {
       "path": "config/pc/lua/cn_dlc.lua",
+      "kind": "program-or-configuration",
+      "project_license": "GPL-3.0-only",
+      "references": [
+        "LICENSE"
+      ]
+    },
+    {
+      "path": "config/pc/lua/cn_exact_processor.lua",
+      "kind": "program-or-configuration",
+      "project_license": "GPL-3.0-only",
+      "references": [
+        "LICENSE"
+      ]
+    },
+    {
+      "path": "config/pc/lua/cn_exact_spelling.lua",
       "kind": "program-or-configuration",
       "project_license": "GPL-3.0-only",
       "references": [
@@ -5582,6 +5614,14 @@
       ]
     },
     {
+      "path": "tests/schemes/Test-ExactSyllable.ps1",
+      "kind": "program-or-configuration",
+      "project_license": "GPL-3.0-only",
+      "references": [
+        "LICENSE"
+      ]
+    },
+    {
       "kind": "program-or-configuration",
       "project_license": "GPL-3.0-only",
       "license_scope": "Original project additions and modifications; retained upstream expression keeps its original terms.",
@@ -5620,6 +5660,30 @@
         "LICENSE"
       ],
       "path": "tests/schemes/Test-OfficialPersistence.ps1"
+    },
+    {
+      "path": "tests/schemes/exact_syllable/observer.lua",
+      "kind": "program-or-configuration",
+      "project_license": "GPL-3.0-only",
+      "references": [
+        "LICENSE"
+      ]
+    },
+    {
+      "path": "tests/schemes/exact_syllable/processor_unit.lua",
+      "kind": "program-or-configuration",
+      "project_license": "GPL-3.0-only",
+      "references": [
+        "LICENSE"
+      ]
+    },
+    {
+      "path": "tests/schemes/exact_syllable/unit_runner.lua",
+      "kind": "program-or-configuration",
+      "project_license": "GPL-3.0-only",
+      "references": [
+        "LICENSE"
+      ]
     }
   ]
 }

@@ -17,6 +17,12 @@ $compiled = Join-Path $work 'compiled'
 & $hostExe -NoProfile -ExecutionPolicy Bypass -File (Join-Path $repo 'tests/Probe-Configuration.ps1') -EngineDll $engine -SharedData $SharedDir -Output $compiled -Phase Compile -Revision release
 if ($LASTEXITCODE -ne 0) { throw 'Full scheme compilation failed.' }
 $results = @()
+$exactOutput = Join-Path $work 'exact-results'
+& $hostExe -NoProfile -ExecutionPolicy Bypass -File (Join-Path $repo 'tests/schemes/Test-ExactSyllable.ps1') -EngineDll $engine -ProfileRoot (Join-Path $repo 'config/pc') -SharedDirectory $SharedDir -OutputDirectory $exactOutput
+if ($LASTEXITCODE -ne 0) { throw 'Exact syllable checks failed.' }
+$exact = Get-Content -LiteralPath (Join-Path $exactOutput 'results.json') -Raw -Encoding UTF8 | ConvertFrom-Json
+if (-not $exact.Completed -or -not $exact.Passed -or -not @($exact.Checks).Count -or @($exact.Checks | Where-Object { -not $_.Passed }).Count) { throw 'Exact syllable validation is incomplete.' }
+$results += [pscustomobject]@{Scenario='Exact';Checks=@($exact.Checks).Count;Passed=$true}
 foreach ($scenario in @('Bracket','Mixed')) {
     $user = Join-Path $work ($scenario.ToLowerInvariant() + '-user')
     Copy-Item -LiteralPath (Join-Path $compiled 'publicuser') -Destination $user -Recurse
@@ -29,6 +35,6 @@ foreach ($scenario in @('Bracket','Mixed')) {
     if (-not $rows.Count -or @($rows | Where-Object { -not $_.Passed }).Count) { throw 'Missing or failed learning assertions.' }
     $results += [pscustomobject]@{Scenario=$scenario;Checks=$rows.Count;Passed=$true}
 }
-$summary = [pscustomobject]@{Format='rymcp-full-scheme-validation-v1';Version='2026.11.14';Passed=$true;Results=$results}
+$summary = [pscustomobject]@{Format='rymcp-full-scheme-validation-v1';Version='2026.11.14.1';Passed=$true;Results=$results}
 $summary | ConvertTo-Json -Depth 5 | Set-Content -LiteralPath (Join-Path $work 'validation.json') -Encoding UTF8
 $summary | ConvertTo-Json -Depth 5

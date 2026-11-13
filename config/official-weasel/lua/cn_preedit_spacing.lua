@@ -1,7 +1,9 @@
 -- Chinese suffix costs retained for candidate boundaries.
 local M = {}
+local exact = require('cn_exact_spelling')
 function M.normal_tail_cost(input, env, cache)
   if cache.tail_cost then return cache.tail_cost end
+  local plan = cache.exact_plan or exact.parse(input)
   local costs, following, counts = {[#input + 1]=0}, {}, {[#input + 1]=0}
   for position = #input, 1, -1 do
     local best
@@ -9,10 +11,14 @@ function M.normal_tail_cost(input, env, cache)
     for length = 1, math.min(env.normal_max_length, #input - position + 1) do
       local kind = env.normal_spellings[input:sub(position, position + length - 1)]
       if kind then
-        local next_position = position + length
-        while input:sub(next_position, next_position) == "'"
-            or input:sub(next_position, next_position) == ' ' do next_position = next_position + 1 end
-        local tail = costs[next_position]
+        local next_position
+        if plan then next_position = exact.advance(plan, position, length, kind)
+        else
+          next_position = position + length
+          while input:sub(next_position, next_position) == "'"
+              or input:sub(next_position, next_position) == ' ' do next_position = next_position + 1 end
+        end
+        local tail = next_position and costs[next_position]
         if tail then
           local cost = kind + tail
           local count = counts[next_position] and counts[next_position] + 1

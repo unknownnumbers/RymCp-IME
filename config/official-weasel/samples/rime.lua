@@ -1,6 +1,8 @@
 -- RymCp Chinese and smart English for official Weasel.
 official_backup_mode = require('official_backup_mode')
 draft_limit = require('draft_limit')
+cn_exact_processor = require('cn_exact_processor')
+cn_exact_segmentor = cn_exact_processor.segmentor
 cn_translator = require('cn_translator')
 en_processor = require('en_processor')
 en_segmentor = require('en_segmentor')

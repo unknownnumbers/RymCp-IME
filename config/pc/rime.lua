@@ -2,6 +2,8 @@
 probe_global_mode = require('pc_probe_global_mode')
 draft_limit = require('draft_limit')
 cn_translator = require('cn_translator')
+cn_exact_processor = require('cn_exact_processor')
+cn_exact_segmentor = cn_exact_processor.segmentor
 en_processor = require('en_processor')
 en_segmentor = require('en_segmentor')
 u_translator = require('u_translator')

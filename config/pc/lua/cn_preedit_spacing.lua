@@ -1,6 +1,7 @@
 -- Normal suffix boundaries are display data, never new input or candidates.
 local mixed = require('mixed_translator')
 local M = {}
+local exact = require('cn_exact_spelling')
 local property = 'cn_preedit_spacing'
 local owner_property, next_owner, owners = 'cn_preedit_spacing_owner', 0, {}
 local chinese = {cn_full=true,phrase=true,user_phrase=true,sentence=true,completion=true}
@@ -9,17 +10,25 @@ local chinese = {cn_full=true,phrase=true,user_phrase=true,sentence=true,complet
 -- complete normal path exists; mixed-word costs alone supply no such path.
 function M.normal_tail_cost(input, env, cache)
   if cache.tail_cost then return cache.tail_cost end
+  local plan = cache.exact_plan or exact.parse(input)
   local costs, following, counts = {[#input + 1]=0}, {}, {[#input + 1]=0}
   for position = #input, 1, -1 do
-    local best = mixed.continuation_cost(input, position, costs)
+    local best
+    if not plan or exact.unmarked(plan, position, #input) then
+      best = mixed.continuation_cost(input, position, costs)
+    end
     local best_next, best_count
     for length = 1, math.min(env.normal_max_length, #input - position + 1) do
       local kind = env.normal_spellings[input:sub(position, position + length - 1)]
       if kind then
-        local next_position = position + length
-        while input:sub(next_position, next_position) == "'"
-            or input:sub(next_position, next_position) == ' ' do next_position = next_position + 1 end
-        local tail = costs[next_position]
+        local next_position
+        if plan then next_position = exact.advance(plan, position, length, kind)
+        else
+          next_position = position + length
+          while input:sub(next_position, next_position) == "'"
+              or input:sub(next_position, next_position) == ' ' do next_position = next_position + 1 end
+        end
+        local tail = next_position and costs[next_position]
         if tail then
           local cost = kind + tail
           local count = counts[next_position] and counts[next_position] + 1
@@ -76,14 +85,15 @@ function M.publish(env)
     return
   end
   local body = raw:sub(seg.start + 1)
-  if not body:match("^[a-z' ]+$") then set(ctx, ''); return end
+  if not body:match('^[a-z\'" ]+$') then set(ctx, ''); return end
   if state.raw ~= raw or state.start ~= seg.start then
     local cache = {}
     M.normal_tail_cost(body, env, cache)
     state.raw, state.start, state.cache = raw, seg.start, cache
   end
   local cache, position, breaks = state.cache, candidate._end - seg.start + 1, {}
-  while body:sub(position, position) == "'" or body:sub(position, position) == ' ' do
+  while body:sub(position, position) == "'" or body:sub(position, position) == ' '
+      or body:sub(position, position) == '"' do
     position = position + 1
   end
   if not cache.tail_count[position] then set(ctx, ''); return end

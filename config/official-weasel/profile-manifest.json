@@ -1,7 +1,12 @@
 {
   "format": "rymcp-official-profile-v2",
-  "version": "2026.11.14",
+  "version": "2026.11.14.1",
   "files": [
+    {
+      "path": "english_extensions.dict.yaml",
+      "bytes": 42497,
+      "sha256": "46f5b1f58a71fbf4408d6bfeb1d2a292c88b60aae30792f415ef411cea96b4b7"
+    },
     {
       "path": "english_extensions/build-report.json",
       "bytes": 339,
@@ -31,11 +36,6 @@
       "path": "english_extensions/words.txt",
       "bytes": 27162,
       "sha256": "4a4d5469dee4317bae130ef1b8739bdc68d4bf267aa4a9d7ac7f5be3aeaa561d"
-    },
-    {
-      "path": "english_extensions.dict.yaml",
-      "bytes": 42497,
-      "sha256": "46f5b1f58a71fbf4408d6bfeb1d2a292c88b60aae30792f415ef411cea96b4b7"
     },
     {
       "path": "english_full.dict.yaml",
@@ -83,6 +83,21 @@
       "sha256": "28a9529c7d0bb4dc51f4bf5c116a3d16ef247a052f7591466768ddf563fd1cf5"
     },
     {
+      "path": "licenses/OpenCC-LICENSE.txt",
+      "bytes": 9165,
+      "sha256": "b534e465949558eec2597b04f5092b5e161236a68dfbfd04d547592ac3964308"
+    },
+    {
+      "path": "licenses/SCOWL-case-forms-Copyright.txt",
+      "bytes": 11758,
+      "sha256": "283326a422e29c510e2ba6805518c418ce3c35ed1fadc3eec83d2da4f6c5a055"
+    },
+    {
+      "path": "licenses/Unicode-3.0.txt",
+      "bytes": 1995,
+      "sha256": "e7a93b009565cfce55919a381437ac4db883e9da2126fa28b91d12732bc53d96"
+    },
+    {
       "path": "licenses/english-extensions-Ice-GPL-3.0.txt",
       "bytes": 35149,
       "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
@@ -103,21 +118,6 @@
       "sha256": "97628afebc60f026f5c2b25d7491c46a5c4ee61f693e7cfa07fbd2c03605979b"
     },
     {
-      "path": "licenses/OpenCC-LICENSE.txt",
-      "bytes": 9165,
-      "sha256": "b534e465949558eec2597b04f5092b5e161236a68dfbfd04d547592ac3964308"
-    },
-    {
-      "path": "licenses/SCOWL-case-forms-Copyright.txt",
-      "bytes": 11758,
-      "sha256": "283326a422e29c510e2ba6805518c418ce3c35ed1fadc3eec83d2da4f6c5a055"
-    },
-    {
-      "path": "licenses/Unicode-3.0.txt",
-      "bytes": 1995,
-      "sha256": "e7a93b009565cfce55919a381437ac4db883e9da2126fa28b91d12732bc53d96"
-    },
-    {
       "path": "lua/candidate_keys.lua",
       "bytes": 2210,
       "sha256": "4662578a97b5a4bf5892202b374e5ec70a895eafbfda7ca2efacf1fadfd655f3"
@@ -133,6 +133,16 @@
       "sha256": "c37d6a1d53e783d07a6d00e64c2a5358a82a6b217ee3b3477653d56c50922638"
     },
     {
+      "path": "lua/cn_exact_processor.lua",
+      "bytes": 2682,
+      "sha256": "1ef4e869b3ee65b96c1a0bc0a4f9b4e47001156a41f04e1b9e571ddfc90b6cfb"
+    },
+    {
+      "path": "lua/cn_exact_spelling.lua",
+      "bytes": 2420,
+      "sha256": "522aac476293cab03bf0edc2155d0edd12d53d5ec857be87c73f2b79c8497854"
+    },
+    {
       "path": "lua/cn_extra_forms.lua",
       "bytes": 108874,
       "sha256": "b0b08c1b47740a8b9d9a4b24e4d7410b89355d2e0d4936c2afe09edfc9414a65"
@@ -144,8 +154,8 @@
     },
     {
       "path": "lua/cn_match.lua",
-      "bytes": 7699,
-      "sha256": "b69835df849c2583a858cf4ac05a12d7286702ac1c8992ae156d823b06b8b222"
+      "bytes": 8305,
+      "sha256": "f5da316d250420d5b83f7eac0faacf4ecf5ccacb03701ade6a256286253a690d"
     },
     {
       "path": "lua/cn_native_boundary.lua",
@@ -169,8 +179,8 @@
     },
     {
       "path": "lua/cn_preedit_spacing.lua",
-      "bytes": 2350,
-      "sha256": "dcdf8a861d8fa17de18fce82b11d333ab9f4778e8f5c3db06c5f1d189285f39a"
+      "bytes": 2599,
+      "sha256": "a5f4f5d7f2d5b52fd561af902671f59852643ed12b8e3b828654563bfa4c9583"
     },
     {
       "path": "lua/cn_tolerance.lua",
@@ -179,8 +189,8 @@
     },
     {
       "path": "lua/cn_translator.lua",
-      "bytes": 30001,
-      "sha256": "5a98a9a2b1fcad662a4dae5946fc692d45548e08b36ec59bafd3a0cadbfeb311"
+      "bytes": 31725,
+      "sha256": "ec1a8cf8d325fd7e0fdd834d62fd963f0d934f576b70504097097b9d6bfbe93c"
     },
     {
       "path": "lua/draft_limit.lua",
@@ -248,16 +258,6 @@
       "sha256": "7aee3e9f3157fe3b2f991485327fe531fc1e775e571df18c6269b2229734e74c"
     },
     {
-      "path": "opencc/mdx_t2s.json",
-      "bytes": 720,
-      "sha256": "fc5a5727f65eb56652e44af8d4c01d63f4062f9b6437e9024018d0dd4ad69c87"
-    },
-    {
-      "path": "opencc/mdx_words.txt",
-      "bytes": 74,
-      "sha256": "e8a7da2487f1c15053f2251ae06441be7d9bf5a8982bf87f4f74b5e025c26ae4"
-    },
-    {
       "path": "opencc/TSCharacters.ocd2",
       "bytes": 46126,
       "sha256": "85291e0173e972bbca58c848fb90b3bb41c79674cb61a75645e01bd884ad5927"
@@ -268,14 +268,24 @@
       "sha256": "edafc46f5c3eca61a754c78e47117e7c73995cacd6c99aadcb8a219d7ae3e53d"
     },
     {
+      "path": "opencc/mdx_t2s.json",
+      "bytes": 720,
+      "sha256": "fc5a5727f65eb56652e44af8d4c01d63f4062f9b6437e9024018d0dd4ad69c87"
+    },
+    {
+      "path": "opencc/mdx_words.txt",
+      "bytes": 74,
+      "sha256": "e8a7da2487f1c15053f2251ae06441be7d9bf5a8982bf87f4f74b5e025c26ae4"
+    },
+    {
       "path": "pc_research.custom.yaml",
-      "bytes": 256136,
-      "sha256": "3433e18d89983406f664318b1e7362b96090b231ba494fe91f2f0ef8bad40eac"
+      "bytes": 290835,
+      "sha256": "c4aea468455469bcb8834285ca7b5568117dbed82729bc94b2fa7b857fd5892d"
     },
     {
       "path": "pc_research.schema.yaml",
-      "bytes": 2513,
-      "sha256": "cae295822f2dc31260c60a4f383de0e6afe2447d8eb79c3d8a264c618a77b7aa"
+      "bytes": 2591,
+      "sha256": "503fe326c8340027b3a7af1f453b2402152a2c651758d2ff85027900b2872ca0"
     },
     {
       "path": "rymcp_dlc_computer.dict.yaml",
@@ -464,8 +474,8 @@
     },
     {
       "path": "samples/rime.lua",
-      "bytes": 2029,
-      "sha256": "3c080e992ed1ee79bb579acd43521d04d3860a58c4241d8a53412e9d61729492"
+      "bytes": 2130,
+      "sha256": "6c970e1d68e9247befc275c36ecd647a4bb6e8970aa73f6004efc2c2e72d86b1"
     },
     {
       "path": "samples/weasel.custom.yaml",

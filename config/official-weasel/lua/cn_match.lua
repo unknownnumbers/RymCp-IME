@@ -1,4 +1,16 @@
 local M = {}
+local exact = require('cn_exact_spelling')
+
+local function advance(raw, first, length, kind, plan, base)
+  if plan then
+    local following = exact.advance(plan, first + (base or 0), length, kind)
+    return following and following - (base or 0)
+  end
+  local following = first + length
+  while raw:sub(following, following) == "'"
+      or raw:sub(following, following) == ' ' do following = following + 1 end
+  return following
+end
 
 local function form(spellings, extra, raw)
   local kind = spellings.values[raw]
@@ -9,7 +21,8 @@ end
 
 -- All input boundaries for the same decoded word. This does not
 -- discard trailing input: the caller compares the continuation separately.
-function M.prefix_ends(raw, syllables, forms, extras)
+function M.prefix_ends(raw, syllables, forms, extras, plan, base)
+  plan = plan or exact.parse(raw)
   local positions = {[0]={0, 0}}
   local _, letter_count = raw:gsub('[A-Za-z]', '')
   for _, syllable in ipairs(syllables) do
@@ -20,15 +33,16 @@ function M.prefix_ends(raw, syllables, forms, extras)
       for length = 1, math.min(spellings.max_length, #raw - offset) do
         local form_kind, cost = form(spellings, extra, raw:sub(offset + 1, offset + length))
         if form_kind and (form_kind < 2 or letter_count >= 3) then
-          local stop = offset + length
-          while raw:sub(stop + 1, stop + 1) == "'"
-              or raw:sub(stop + 1, stop + 1) == ' ' do stop = stop + 1 end
+          local next_position = advance(raw, offset + 1, length, form_kind, plan, base)
+          if next_position and next_position <= #raw + 1 then
+          local stop = next_position - 1
           local kind = math.max(matched[1], form_kind)
           local edits = matched[2] + cost
           local previous = following[stop]
           if not previous or kind < previous[1]
               or (kind == previous[1] and edits < previous[2]) then
             following[stop] = {kind, edits}
+          end
           end
         end
       end
@@ -39,7 +53,8 @@ function M.prefix_ends(raw, syllables, forms, extras)
 end
 
 -- Match the candidate's real syllables, keeping separators as hard boundaries.
-function M.classify(raw, decoded_syllables, forms, segment_input, extras)
+function M.classify(raw, decoded_syllables, forms, segment_input, extras, base, plan)
+  plan = plan or exact.parse(segment_input or raw)
   if #decoded_syllables == 0 then return nil end
   for _, syllable in ipairs(decoded_syllables) do
     if not forms[syllable] then return nil end
@@ -66,12 +81,9 @@ function M.classify(raw, decoded_syllables, forms, segment_input, extras)
     for length = 1, math.min(spellings.max_length, #raw - position + 1) do
       local form_kind, cost = form(spellings, extra, raw:sub(position, position + length - 1))
       if form_kind and (form_kind ~= 2 or letter_count >= 3) then
-        local next_position = position + length
-        while raw:sub(next_position, next_position) == "'"
-            or raw:sub(next_position, next_position) == ' ' do
-          next_position = next_position + 1
-        end
-        local tail_kind, tail_edits = match(index + 1, next_position)
+        local next_position = advance(raw, position, length, form_kind, plan, base)
+        local tail_kind, tail_edits
+        if next_position then tail_kind, tail_edits = match(index + 1, next_position) end
         if tail_kind then
           local kind = math.max(form_kind, tail_kind)
           local edits = cost + tail_edits
@@ -117,7 +129,8 @@ local function equal_length_edits(fragment, spelling, neighbor_enabled, transpos
   end
 end
 
-function M.full_correction_ends(raw, decoded_syllables, full_spellings, neighbor_enabled, missing_enabled, transposition_enabled)
+function M.full_correction_ends(raw, decoded_syllables, full_spellings, neighbor_enabled, missing_enabled, transposition_enabled, plan, base)
+  plan = plan or exact.parse(raw)
   if #decoded_syllables == 0 then return {} end
   local _, letter_count = raw:gsub('[A-Za-z]', '')
   if letter_count < 3 then return {} end
@@ -128,9 +141,9 @@ function M.full_correction_ends(raw, decoded_syllables, full_spellings, neighbor
     local following = {}
     for offset, previous in pairs(positions) do
       local function extend(length, cost)
-        local stop = offset + length
-        while raw:sub(stop + 1, stop + 1) == "'"
-            or raw:sub(stop + 1, stop + 1) == ' ' do stop = stop + 1 end
+        local next_position = advance(raw, offset + 1, length, cost == 0 and 0 or 2, plan, base)
+        if not next_position or next_position > #raw + 1 then return end
+        local stop = next_position - 1
         local found = following[stop]
         if not found then found = {}; following[stop] = found end
         if cost == 0 and previous.exact then found.exact = true end

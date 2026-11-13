@@ -4,6 +4,7 @@ local matcher = require('cn_match')
 local forms = require('cn_forms')
 local tolerance = require('cn_tolerance')
 local normal_codec = require('cn_normal_codec')
+local exact_spelling = require('cn_exact_spelling')
 local english = require('en_indexed_translator')
 local mixed = require('mixed_translator')
 local M = {}
@@ -52,7 +53,8 @@ local function classify(candidate, input, seg, env, cache)
   if completion then key = key .. '\tcompletion\t' .. matched_size end
   local result = cache[key]
   if result == nil then
-    local kind, edits = matcher.classify(raw, syllables, forms, input, env.extra_forms)
+    local kind, edits = matcher.classify(raw, syllables, forms, input, env.extra_forms,
+      candidate.start - seg.start, cache.exact_plan)
     result = kind and {kind, edits, code, completion} or false
     cache[key] = result
   end
@@ -69,7 +71,7 @@ local function complete_ends(candidate, input, seg, env, cache, code, transposit
     local syllables = {}
     for syllable in code:gmatch('%S+') do syllables[#syllables+1]=syllable end
     ends = matcher.full_correction_ends(input:sub(offset+1),syllables,env.full_forms,
-      env.neighbor_substitution,env.missing_letter,transposition)
+      env.neighbor_substitution,env.missing_letter,transposition,cache.exact_plan,offset)
     cache.complete_ends[key]=ends
   end
   return ends,offset
@@ -172,7 +174,8 @@ local function normal_tail_cost(input, env, cache)
 end
 
 local function boundary_query(input, seg, env, cache, query_input)
-  local native = env.native:query(query_input or input, seg)
+  local native_input = query_input or (cache.exact_plan and exact_spelling.encode(input)) or input
+  local native = env.native:query(native_input, seg)
   if not native then return end
   local tail_cost = normal_tail_cost(input, env, cache)
   local word_ends, pending, pending_order = {}, {}, 0
@@ -211,7 +214,7 @@ local function boundary_query(input, seg, env, cache, query_input)
       local ends = word_ends[code]
       if not ends then
         local syllables = env.decoder:decode(candidate:get_genuine():to_phrase().code)
-        ends = matcher.prefix_ends(input, syllables, forms, env.extra_forms)
+        ends = matcher.prefix_ends(input, syllables, forms, env.extra_forms, cache.exact_plan)
         word_ends[code] = ends
       end
       for ending, matched in pairs(ends) do
@@ -252,7 +255,9 @@ end
 
 -- Normal matches retain their native graph, code, spans and consumed range.
 local function normal_query(input, seg, env, cache)
-  local native = env.native:query(normal_codec.encode(input), seg)
+  local query = cache.exact_plan and exact_spelling.encode(input, normal_codec.encode)
+    or normal_codec.encode(input)
+  local native = env.native:query(query, seg)
   if not native then return end
   local ordinary = input:match("^([a-z]+)[' ]*$")
   local skip_single = ordinary and #ordinary < 3 and env.normal_spellings[ordinary] == 0
@@ -274,7 +279,8 @@ local function normal_query(input, seg, env, cache)
 end
 
 local function chinese_query(input, seg, env, exact, cache, normal_only)
-  if not input:match("^[a-z' ]+$") then return end
+  if not input:match("^[a-z' ]+$")
+      and not (cache.exact_plan and input:match('^[a-z\'" ]+$')) then return end
   -- Decide spelling eligibility from the whole queried input.
   -- qi keeps qi characters; qijin still permits qian+jing as a normal prefix.
   local ordinary = input:match("^([a-z]+)[' ]*$")
@@ -286,7 +292,9 @@ local function chinese_query(input, seg, env, exact, cache, normal_only)
   -- Uppercase spellings exist only for normal full syllables in this prism.
   -- They are internal queries; the actual context input remains untouched.
   local translation
-  if exact then translation = Translation(boundary_query,input,seg,env,cache,input:upper())
+  if exact then
+    local query = cache.exact_plan and exact_spelling.encode(input, string.upper) or input:upper()
+    translation = Translation(boundary_query,input,seg,env,cache,query)
   elseif normal_only then translation = Translation(normal_query, input, seg, env, cache)
   else translation = Translation(boundary_query, input, seg, env, cache) end
   if not translation then return end
@@ -476,6 +484,15 @@ local function learned_score(candidate, input, seg, env, cache)
                          or candidate.quality
 end
 
+local function unmarked_query(func, input, seg, env, plan, argument)
+  local translation = Translation(func, input, seg, env, argument)
+  if not translation then return end
+  for candidate in translation:iter() do
+    if exact_spelling.unmarked(plan, candidate.start - seg.start + 1,
+                               candidate._end - seg.start) then yield(candidate) end
+  end
+end
+
 function M.func(input, seg, env)
   if not env.only_chinese and env.engine.context:get_option('research_english') then
     english.func(input, seg, env.english_env, false)
@@ -484,6 +501,10 @@ function M.func(input, seg, env)
   if not seg:has_tag('abc') then return end
   local current_sc = not env.only_chinese and env.engine.context:get_option('simplification')
   local match_cache, learned_scores = {}, {}
+  if not env.only_chinese and env.engine.schema.schema_id == 'pc_research' then
+    local suffix = env.engine.context.input:sub(seg.start + 1)
+    if suffix:sub(1, #input) == input then match_cache.exact_plan = exact_spelling.parse(suffix) end
+  end
   local full_results = Translation(chinese_query, input, seg, env, true, match_cache)
   local normal_results = Translation(chinese_query, input, seg, env, false, match_cache, true)
   local _, letter_count = input:gsub('[a-z]', '')
@@ -491,9 +512,15 @@ function M.func(input, seg, env)
     Translation(chinese_query, input, seg, env, false, match_cache) or nil
   local greek_results, english_results, mixed_results
   if not env.only_chinese then
-    greek_results = Translation(greek.func, input, seg, env.symbol_env)
-    english_results = Translation(english.func, input, seg, env.english_env, true)
-    mixed_results = Translation(mixed.func, input, seg, env.mixed_env)
+    if match_cache.exact_plan then
+      greek_results = Translation(unmarked_query, greek.func, input, seg, env.symbol_env, match_cache.exact_plan)
+      english_results = Translation(unmarked_query, english.func, input, seg, env.english_env, match_cache.exact_plan, true)
+      mixed_results = Translation(unmarked_query, mixed.func, input, seg, env.mixed_env, match_cache.exact_plan)
+    else
+      greek_results = Translation(greek.func, input, seg, env.symbol_env)
+      english_results = Translation(english.func, input, seg, env.english_env, true)
+      mixed_results = Translation(mixed.func, input, seg, env.mixed_env)
+    end
   end
   local fi, fs = full_results:iter()
   local ni, ns = normal_results:iter()
@@ -634,6 +661,14 @@ function M.func(input, seg, env)
       previous_quality = candidate.quality
       if canonical_code and not env.only_chinese then
         candidate = orthography.apply(candidate, canonical_code, current_sc)
+      end
+      if canonical_code and match_cache.exact_plan then
+        local vertices, preedit = candidate:spans().vertices, {}
+        for index = 2, #vertices do
+          preedit[#preedit + 1] = input:sub(vertices[index-1] - seg.start + 1,
+                                           vertices[index] - seg.start)
+        end
+        candidate.preedit = env.preedit_format:apply(table.concat(preedit, ' '), true)
       end
       yield(candidate)
     end

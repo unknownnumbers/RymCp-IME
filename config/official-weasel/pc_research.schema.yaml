@@ -15,6 +15,7 @@ engine:
   processors:
     - lua_processor@official_backup_mode
     - lua_processor@draft_limit
+    - lua_processor@cn_exact_processor
     - lua_processor@en_processor
     - lua_processor@candidate_keys
     - lua_processor@select_hanzi
@@ -28,6 +29,7 @@ engine:
     - express_editor
   segmentors:
     - lua_segmentor@en_segmentor
+    - lua_segmentor@cn_exact_segmentor
     - ascii_segmentor
     - matcher
     - abc_segmentor

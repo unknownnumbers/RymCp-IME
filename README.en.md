@@ -10,7 +10,7 @@ RymCp provides Chinese and smart English Rime schemes, with a foundation for fut
 
 ## Available features
 
-- Chinese full spelling, abbreviations, existing correction rules, composition and local learning, with TC/SC output switching.
+- Chinese full spelling, abbreviations, existing correction rules, composition and local learning, with TC/SC output switching. Use `"` to lock the spelling and boundary of a complete syllable.
 - Smart English words, completion, correction, case handling and existing acronym expansions.
 - The Stellae profile also provides hiragana, katakana, kanji, romaji and q/x/v queries, fixed mixed phrases, character lookup and calculation tools.
 - The official Weasel profile provides Chinese and smart English with six vertical candidates and non-inline composition.

@@ -2,7 +2,7 @@ name: Scheme packages and runtime checks
 
 on:
   push:
-    branches: [main, release/2026.11.14]
+    branches: [main, release/2026.11.14.1]
   pull_request:
   workflow_dispatch:
 
@@ -98,12 +98,12 @@ jobs:
         with:
           python-version: '3.12'
       - name: Build reviewed scheme archives
-        run: python scripts/build_scheme_packages.py --output-dir out/schemes --version 2026.11.14 --source-ref "$GITHUB_SHA"
+        run: python scripts/build_scheme_packages.py --output-dir out/schemes --version 2026.11.14.1 --source-ref "$GITHUB_SHA"
       - name: Record archive hashes
         working-directory: out/schemes
         run: sha256sum *.zip > SHA256SUMS.txt
       - uses: actions/upload-artifact@v4
         with:
-          name: scheme-packages-2026.11.14
+          name: scheme-packages-2026.11.14.1
           if-no-files-found: error
           path: out/schemes/*

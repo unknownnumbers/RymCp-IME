@@ -14,7 +14,7 @@ if (-not (Test-Path -LiteralPath $engine)) { throw 'Missing official engine DLL.
 $env:PATH = ([IO.Path]::GetFullPath($EngineDir)) + ';' + $env:PATH
 $hostExe = (Get-Process -Id $PID).Path
 $user = Join-Path $work 'chinese-user'
-python (Join-Path $repo 'scripts/build_scheme_packages.py') --version 2026.11.14 --prepare-official-dir $user
+python (Join-Path $repo 'scripts/build_scheme_packages.py') --version 2026.11.14.1 --prepare-official-dir $user
 if ($LASTEXITCODE -ne 0) { throw 'Official scheme preparation failed.' }
 $cnOutput = Join-Path $work 'chinese-results'
 & $hostExe -NoProfile -ExecutionPolicy Bypass -File (Join-Path $repo 'tests/schemes/Test-OfficialChinese.ps1') -EngineDll $engine -SharedData $SharedDir -UserData $user -OutputDirectory $cnOutput
@@ -28,6 +28,12 @@ if (-not (Test-Path -LiteralPath $compiledSchema)) { throw 'Compiled official sc
 $schemaText = [IO.File]::ReadAllText($compiledSchema)
 if ($schemaText -notmatch '(?m)^speller:' -or $schemaText -notmatch '(?m)^engine:') { throw 'Compiled official schema is incomplete.' }
 $results = @([pscustomobject]@{Scenario='Chinese';Checks=[int]$cn.Passed;Passed=$true})
+$exactOutput = Join-Path $work 'exact-results'
+& $hostExe -NoProfile -ExecutionPolicy Bypass -File (Join-Path $repo 'tests/schemes/Test-ExactSyllable.ps1') -EngineDll $engine -ProfileRoot (Join-Path $repo 'config/official-weasel') -SharedDirectory $SharedDir -OutputDirectory $exactOutput
+if ($LASTEXITCODE -ne 0) { throw 'Official exact syllable checks failed.' }
+$exact = Get-Content -LiteralPath (Join-Path $exactOutput 'results.json') -Raw -Encoding UTF8 | ConvertFrom-Json
+if (-not $exact.Completed -or -not $exact.Passed -or -not @($exact.Checks).Count -or @($exact.Checks | Where-Object { -not $_.Passed }).Count) { throw 'Official exact syllable validation is incomplete.' }
+$results += [pscustomobject]@{Scenario='Exact';Checks=@($exact.Checks).Count;Passed=$true}
 foreach ($scenario in @('English','Bracket')) {
     $testUser = Join-Path $work ($scenario.ToLowerInvariant() + '-user')
     New-Item -ItemType Directory -Path $testUser | Out-Null
@@ -61,6 +67,6 @@ $persistenceOutput = Join-Path $work 'persistence-results'
 & $hostExe -NoProfile -ExecutionPolicy Bypass -File (Join-Path $repo 'tests/schemes/Test-OfficialPersistence.ps1') -EngineDll $engine -SharedData $SharedDir -UserData (Join-Path $work 'bracket-user') -ExpectedLearning (Join-Path $work 'bracket-results/learning.tsv') -OutputDirectory $persistenceOutput
 if ($LASTEXITCODE -ne 0) { throw 'Official persistence checks failed.' }
 $results += [pscustomobject]@{Scenario='Persistence';Checks=3;Passed=$true}
-$summary = [pscustomobject]@{Format='rymcp-official-scheme-validation-v1';Version='2026.11.14';Engine='1.13.1';Passed=$true;Results=$results}
+$summary = [pscustomobject]@{Format='rymcp-official-scheme-validation-v1';Version='2026.11.14.1';Engine='1.13.1';Passed=$true;Results=$results}
 $summary | ConvertTo-Json -Depth 5 | Set-Content -LiteralPath (Join-Path $work 'validation.json') -Encoding UTF8
 $summary | ConvertTo-Json -Depth 5

@@ -3,6 +3,911 @@ patch:
     - xform/([ei])ng$/$1n/
     - erase/^xx$/
     - xform/^(a|ai|an|ang|ao|ba|bai|ban|bang|bao|bei|ben|bi|bian|biang|biao|bie|bin|bo|bu|ca|cai|can|cang|cao|ce|cei|cen|cha|chai|chan|chang|chao|che|chen|chi|chong|chou|chu|chua|chuai|chuan|chuang|chui|chun|chuo|ci|cong|cou|cu|cuan|cui|cun|cuo|da|dai|dan|dang|dao|de|dei|den|di|dia|dian|diao|die|din|diu|dong|dou|du|duan|dui|dun|duo|e|eh|ei|en|er|fa|fan|fang|fei|fen|fiao|fo|fong|fou|fu|ga|gai|gan|gang|gao|ge|gei|gen|gong|gou|gu|gua|guai|guan|guang|gui|gun|guo|ha|hai|han|hang|hao|he|hei|hen|hong|hou|hu|hua|huai|huan|huang|hui|hun|huo|ji|jia|jian|jiang|jiao|jie|jin|jiong|jiu|ju|juan|jue|jun|ka|kai|kan|kang|kao|ke|kei|ken|kong|kou|ku|kua|kuai|kuan|kuang|kui|kun|kuo|la|lai|lan|lang|lao|le|lei|len|li|lia|lian|liang|liao|lie|lin|liu|lo|long|lou|lu|luan|lun|luo|lv|lvan|lve|ma|mai|man|mang|mao|me|mei|men|mi|mian|miao|mie|min|miu|mo|mou|mu|na|nai|nan|nang|nao|ne|nei|nen|ni|nia|nian|niang|niao|nie|nin|niu|nong|nou|nu|nuan|nun|nuo|nv|nve|o|ou|pa|pai|pan|pang|pao|pei|pen|pi|pia|pian|piao|pie|pin|po|pou|pu|qi|qia|qian|qiang|qiao|qie|qin|qiong|qiu|qu|quan|que|qun|ran|rang|rao|re|ren|ri|rong|rou|ru|rua|ruan|rui|run|ruo|sa|sai|san|sang|sao|se|sei|sen|sha|shai|shan|shang|shao|she|shei|shen|shi|shou|shu|shua|shuai|shuan|shuang|shui|shun|shuo|si|song|sou|su|suan|sui|sun|suo|ta|tai|tan|tang|tao|te|tei|ten|ti|tian|tiao|tie|tin|tong|tou|tu|tuan|tui|tun|tuo|wa|wai|wan|wang|wei|wen|wo|wong|wu|xi|xia|xian|xiang|xiao|xie|xin|xiong|xiu|xu|xuan|xue|xun|ya|yai|yan|yang|yao|ye|yi|yin|yo|yong|you|yu|yuan|yue|yun|za|zai|zan|zang|zao|ze|zei|zen|zha|zhai|zhan|zhang|zhao|zhe|zhei|zhen|zhi|zhong|zhou|zhu|zhua|zhuai|zhuan|zhuang|zhui|zhun|zhuo|zi|zong|zou|zu|zuan|zui|zun|zuo)$/~$1~/
+    # BEGIN exact syllable atomic internal channel
+    # Prefix-free complete forms; byte length equals spelling plus quote.
+    # @a: full=a, root=a, canonical=a
+    - "derive/^~a~$/@a/"
+    # @Ai: full=ai, root=ai, canonical=ai
+    - "derive/^~ai~$/@Ai/"
+    # @An: full=an, root=an, canonical=an
+    - "derive/^~an~$/@An/"
+    # @ANg: full=ang, root=ang, canonical=ang
+    - "derive/^~ang~$/@ANg/"
+    # @Ao: full=ao, root=ao, canonical=ao
+    - "derive/^~ao~$/@Ao/"
+    # @Ba: full=ba, root=ba, canonical=ba
+    - "derive/^~ba~$/@Ba/"
+    # @BAi: full=bai, root=bai, canonical=bai
+    - "derive/^~bai~$/@BAi/"
+    # @BAn: full=ban, root=ban, canonical=ban
+    - "derive/^~ban~$/@BAn/"
+    # @BANg: full=bang, root=bang, canonical=bang
+    - "derive/^~bang~$/@BANg/"
+    # @BAo: full=bao, root=bao, canonical=bao
+    - "derive/^~bao~$/@BAo/"
+    # @BEi: full=bei, root=bei, canonical=bei
+    - "derive/^~bei~$/@BEi/"
+    # @BEn: full=ben, root=ben, canonical=ben,beng
+    - "derive/^~ben~$/@BEn/"
+    # @Bi: full=bi, root=bi, canonical=bi
+    - "derive/^~bi~$/@Bi/"
+    # @BIAn: full=bian, root=bian, canonical=bian
+    - "derive/^~bian~$/@BIAn/"
+    # @BIANg: full=biang, root=biang, canonical=biang
+    - "derive/^~biang~$/@BIANg/"
+    # @BIAo: full=biao, root=biao, canonical=biao
+    - "derive/^~biao~$/@BIAo/"
+    # @BIe: full=bie, root=bie, canonical=bie
+    - "derive/^~bie~$/@BIe/"
+    # @BIn: full=bin, root=bin, canonical=bin,bing
+    - "derive/^~bin~$/@BIn/"
+    # @Bo: full=bo, root=bo, canonical=bo
+    - "derive/^~bo~$/@Bo/"
+    # @Bu: full=bu, root=bu, canonical=bu
+    - "derive/^~bu~$/@Bu/"
+    # @Ca: full=ca, root=ca, canonical=ca
+    - "derive/^~ca~$/@Ca/"
+    # @CAi: full=cai, root=cai, canonical=cai
+    - "derive/^~cai~$/@CAi/"
+    # @CAn: full=can, root=can, canonical=can
+    - "derive/^~can~$/@CAn/"
+    # @CANg: full=cang, root=cang, canonical=cang
+    - "derive/^~cang~$/@CANg/"
+    # @CAo: full=cao, root=cao, canonical=cao
+    - "derive/^~cao~$/@CAo/"
+    # @Ce: full=ce, root=ce, canonical=ce
+    - "derive/^~ce~$/@Ce/"
+    # @CEi: full=cei, root=cei, canonical=cei
+    - "derive/^~cei~$/@CEi/"
+    # @CEn: full=cen, root=cen, canonical=cen,ceng
+    - "derive/^~cen~$/@CEn/"
+    # @CHa: full=cha, root=cha, canonical=cha
+    - "derive/^~cha~$/@CHa/"
+    # @CHAi: full=chai, root=chai, canonical=chai
+    - "derive/^~chai~$/@CHAi/"
+    # @CHAn: full=chan, root=chan, canonical=chan
+    - "derive/^~chan~$/@CHAn/"
+    # @CHANg: full=chang, root=chang, canonical=chang
+    - "derive/^~chang~$/@CHANg/"
+    # @CHAo: full=chao, root=chao, canonical=chao
+    - "derive/^~chao~$/@CHAo/"
+    # @CHe: full=che, root=che, canonical=che
+    - "derive/^~che~$/@CHe/"
+    # @CHEn: full=chen, root=chen, canonical=chen,cheng
+    - "derive/^~chen~$/@CHEn/"
+    # @CHi: full=chi, root=chi, canonical=chi
+    - "derive/^~chi~$/@CHi/"
+    # @CHONg: full=chong, root=chong, canonical=chong
+    - "derive/^~chong~$/@CHONg/"
+    # @CHOu: full=chou, root=chou, canonical=chou
+    - "derive/^~chou~$/@CHOu/"
+    # @CHu: full=chu, root=chu, canonical=chu
+    - "derive/^~chu~$/@CHu/"
+    # @CHUa: full=chua, root=chua, canonical=chua
+    - "derive/^~chua~$/@CHUa/"
+    # @CHUAi: full=chuai, root=chuai, canonical=chuai
+    - "derive/^~chuai~$/@CHUAi/"
+    # @CHUAn: full=chuan, root=chuan, canonical=chuan
+    - "derive/^~chuan~$/@CHUAn/"
+    # @CHUANg: full=chuang, root=chuang, canonical=chuang
+    - "derive/^~chuang~$/@CHUANg/"
+    # @CHUEi: full=chuei, root=chui, canonical=chui
+    - "derive/^~chui~$/@CHUEi/"
+    # @CHUi: full=chui, root=chui, canonical=chui
+    - "derive/^~chui~$/@CHUi/"
+    # @CHUEn: full=chuen, root=chun, canonical=chun
+    - "derive/^~chun~$/@CHUEn/"
+    # @CHUn: full=chun, root=chun, canonical=chun
+    - "derive/^~chun~$/@CHUn/"
+    # @CHUo: full=chuo, root=chuo, canonical=chuo
+    - "derive/^~chuo~$/@CHUo/"
+    # @Ci: full=ci, root=ci, canonical=ci
+    - "derive/^~ci~$/@Ci/"
+    # @CONg: full=cong, root=cong, canonical=cong
+    - "derive/^~cong~$/@CONg/"
+    # @COu: full=cou, root=cou, canonical=cou
+    - "derive/^~cou~$/@COu/"
+    # @Cu: full=cu, root=cu, canonical=cu
+    - "derive/^~cu~$/@Cu/"
+    # @CUAn: full=cuan, root=cuan, canonical=cuan
+    - "derive/^~cuan~$/@CUAn/"
+    # @CUEi: full=cuei, root=cui, canonical=cui
+    - "derive/^~cui~$/@CUEi/"
+    # @CUi: full=cui, root=cui, canonical=cui
+    - "derive/^~cui~$/@CUi/"
+    # @CUEn: full=cuen, root=cun, canonical=cun
+    - "derive/^~cun~$/@CUEn/"
+    # @CUn: full=cun, root=cun, canonical=cun
+    - "derive/^~cun~$/@CUn/"
+    # @CUo: full=cuo, root=cuo, canonical=cuo
+    - "derive/^~cuo~$/@CUo/"
+    # @Da: full=da, root=da, canonical=da
+    - "derive/^~da~$/@Da/"
+    # @DAi: full=dai, root=dai, canonical=dai
+    - "derive/^~dai~$/@DAi/"
+    # @DAn: full=dan, root=dan, canonical=dan
+    - "derive/^~dan~$/@DAn/"
+    # @DANg: full=dang, root=dang, canonical=dang
+    - "derive/^~dang~$/@DANg/"
+    # @DAo: full=dao, root=dao, canonical=dao
+    - "derive/^~dao~$/@DAo/"
+    # @De: full=de, root=de, canonical=de
+    - "derive/^~de~$/@De/"
+    # @DEi: full=dei, root=dei, canonical=dei
+    - "derive/^~dei~$/@DEi/"
+    # @DEn: full=den, root=den, canonical=den,deng
+    - "derive/^~den~$/@DEn/"
+    # @Di: full=di, root=di, canonical=di
+    - "derive/^~di~$/@Di/"
+    # @DIa: full=dia, root=dia, canonical=dia
+    - "derive/^~dia~$/@DIa/"
+    # @DIAn: full=dian, root=dian, canonical=dian
+    - "derive/^~dian~$/@DIAn/"
+    # @DIAo: full=diao, root=diao, canonical=diao
+    - "derive/^~diao~$/@DIAo/"
+    # @DIe: full=die, root=die, canonical=die
+    - "derive/^~die~$/@DIe/"
+    # @DIn: full=din, root=din, canonical=din,ding
+    - "derive/^~din~$/@DIn/"
+    # @DIOu: full=diou, root=diu, canonical=diu
+    - "derive/^~diu~$/@DIOu/"
+    # @DIu: full=diu, root=diu, canonical=diu
+    - "derive/^~diu~$/@DIu/"
+    # @DONg: full=dong, root=dong, canonical=dong
+    - "derive/^~dong~$/@DONg/"
+    # @DOu: full=dou, root=dou, canonical=dou
+    - "derive/^~dou~$/@DOu/"
+    # @Du: full=du, root=du, canonical=du
+    - "derive/^~du~$/@Du/"
+    # @DUAn: full=duan, root=duan, canonical=duan
+    - "derive/^~duan~$/@DUAn/"
+    # @DUEi: full=duei, root=dui, canonical=dui
+    - "derive/^~dui~$/@DUEi/"
+    # @DUi: full=dui, root=dui, canonical=dui
+    - "derive/^~dui~$/@DUi/"
+    # @DUEn: full=duen, root=dun, canonical=dun
+    - "derive/^~dun~$/@DUEn/"
+    # @DUn: full=dun, root=dun, canonical=dun
+    - "derive/^~dun~$/@DUn/"
+    # @DUo: full=duo, root=duo, canonical=duo
+    - "derive/^~duo~$/@DUo/"
+    # @e: full=e, root=e, canonical=e
+    - "derive/^~e~$/@e/"
+    # @Eh: full=eh, root=eh, canonical=eh
+    - "derive/^~eh~$/@Eh/"
+    # @Ei: full=ei, root=ei, canonical=ei
+    - "derive/^~ei~$/@Ei/"
+    # @En: full=en, root=en, canonical=en,eng
+    - "derive/^~en~$/@En/"
+    # @Er: full=er, root=er, canonical=er
+    - "derive/^~er~$/@Er/"
+    # @Fa: full=fa, root=fa, canonical=fa
+    - "derive/^~fa~$/@Fa/"
+    # @FAn: full=fan, root=fan, canonical=fan
+    - "derive/^~fan~$/@FAn/"
+    # @FANg: full=fang, root=fang, canonical=fang
+    - "derive/^~fang~$/@FANg/"
+    # @FEi: full=fei, root=fei, canonical=fei
+    - "derive/^~fei~$/@FEi/"
+    # @FEn: full=fen, root=fen, canonical=fen,feng
+    - "derive/^~fen~$/@FEn/"
+    # @FIAo: full=fiao, root=fiao, canonical=fiao
+    - "derive/^~fiao~$/@FIAo/"
+    # @Fo: full=fo, root=fo, canonical=fo
+    - "derive/^~fo~$/@Fo/"
+    # @FONg: full=fong, root=fong, canonical=fong
+    - "derive/^~fong~$/@FONg/"
+    # @FOu: full=fou, root=fou, canonical=fou
+    - "derive/^~fou~$/@FOu/"
+    # @Fu: full=fu, root=fu, canonical=fu
+    - "derive/^~fu~$/@Fu/"
+    # @Ga: full=ga, root=ga, canonical=ga
+    - "derive/^~ga~$/@Ga/"
+    # @GAi: full=gai, root=gai, canonical=gai
+    - "derive/^~gai~$/@GAi/"
+    # @GAn: full=gan, root=gan, canonical=gan
+    - "derive/^~gan~$/@GAn/"
+    # @GANg: full=gang, root=gang, canonical=gang
+    - "derive/^~gang~$/@GANg/"
+    # @GAo: full=gao, root=gao, canonical=gao
+    - "derive/^~gao~$/@GAo/"
+    # @Ge: full=ge, root=ge, canonical=ge
+    - "derive/^~ge~$/@Ge/"
+    # @GEi: full=gei, root=gei, canonical=gei
+    - "derive/^~gei~$/@GEi/"
+    # @GEn: full=gen, root=gen, canonical=gen,geng
+    - "derive/^~gen~$/@GEn/"
+    # @GONg: full=gong, root=gong, canonical=gong
+    - "derive/^~gong~$/@GONg/"
+    # @GOu: full=gou, root=gou, canonical=gou
+    - "derive/^~gou~$/@GOu/"
+    # @Gu: full=gu, root=gu, canonical=gu
+    - "derive/^~gu~$/@Gu/"
+    # @GUa: full=gua, root=gua, canonical=gua
+    - "derive/^~gua~$/@GUa/"
+    # @GUAi: full=guai, root=guai, canonical=guai
+    - "derive/^~guai~$/@GUAi/"
+    # @GUAn: full=guan, root=guan, canonical=guan
+    - "derive/^~guan~$/@GUAn/"
+    # @GUANg: full=guang, root=guang, canonical=guang
+    - "derive/^~guang~$/@GUANg/"
+    # @GUEi: full=guei, root=gui, canonical=gui
+    - "derive/^~gui~$/@GUEi/"
+    # @GUi: full=gui, root=gui, canonical=gui
+    - "derive/^~gui~$/@GUi/"
+    # @GUEn: full=guen, root=gun, canonical=gun
+    - "derive/^~gun~$/@GUEn/"
+    # @GUn: full=gun, root=gun, canonical=gun
+    - "derive/^~gun~$/@GUn/"
+    # @GUo: full=guo, root=guo, canonical=guo
+    - "derive/^~guo~$/@GUo/"
+    # @Ha: full=ha, root=ha, canonical=ha
+    - "derive/^~ha~$/@Ha/"
+    # @HAi: full=hai, root=hai, canonical=hai
+    - "derive/^~hai~$/@HAi/"
+    # @HAn: full=han, root=han, canonical=han
+    - "derive/^~han~$/@HAn/"
+    # @HANg: full=hang, root=hang, canonical=hang
+    - "derive/^~hang~$/@HANg/"
+    # @HAo: full=hao, root=hao, canonical=hao
+    - "derive/^~hao~$/@HAo/"
+    # @He: full=he, root=he, canonical=he
+    - "derive/^~he~$/@He/"
+    # @HEi: full=hei, root=hei, canonical=hei
+    - "derive/^~hei~$/@HEi/"
+    # @HEn: full=hen, root=hen, canonical=hen,heng
+    - "derive/^~hen~$/@HEn/"
+    # @HONg: full=hong, root=hong, canonical=hong
+    - "derive/^~hong~$/@HONg/"
+    # @HOu: full=hou, root=hou, canonical=hou
+    - "derive/^~hou~$/@HOu/"
+    # @Hu: full=hu, root=hu, canonical=hu
+    - "derive/^~hu~$/@Hu/"
+    # @HUa: full=hua, root=hua, canonical=hua
+    - "derive/^~hua~$/@HUa/"
+    # @HUAi: full=huai, root=huai, canonical=huai
+    - "derive/^~huai~$/@HUAi/"
+    # @HUAn: full=huan, root=huan, canonical=huan
+    - "derive/^~huan~$/@HUAn/"
+    # @HUANg: full=huang, root=huang, canonical=huang
+    - "derive/^~huang~$/@HUANg/"
+    # @HUEi: full=huei, root=hui, canonical=hui
+    - "derive/^~hui~$/@HUEi/"
+    # @HUi: full=hui, root=hui, canonical=hui
+    - "derive/^~hui~$/@HUi/"
+    # @HUEn: full=huen, root=hun, canonical=hun
+    - "derive/^~hun~$/@HUEn/"
+    # @HUn: full=hun, root=hun, canonical=hun
+    - "derive/^~hun~$/@HUn/"
+    # @HUo: full=huo, root=huo, canonical=huo
+    - "derive/^~huo~$/@HUo/"
+    # @Ji: full=ji, root=ji, canonical=ji
+    - "derive/^~ji~$/@Ji/"
+    # @JIa: full=jia, root=jia, canonical=jia
+    - "derive/^~jia~$/@JIa/"
+    # @JIAn: full=jian, root=jian, canonical=jian
+    - "derive/^~jian~$/@JIAn/"
+    # @JIANg: full=jiang, root=jiang, canonical=jiang
+    - "derive/^~jiang~$/@JIANg/"
+    # @JIAo: full=jiao, root=jiao, canonical=jiao
+    - "derive/^~jiao~$/@JIAo/"
+    # @JIe: full=jie, root=jie, canonical=jie
+    - "derive/^~jie~$/@JIe/"
+    # @JIn: full=jin, root=jin, canonical=jin,jing
+    - "derive/^~jin~$/@JIn/"
+    # @JIONg: full=jiong, root=jiong, canonical=jiong
+    - "derive/^~jiong~$/@JIONg/"
+    # @JIOu: full=jiou, root=jiu, canonical=jiu
+    - "derive/^~jiu~$/@JIOu/"
+    # @JIu: full=jiu, root=jiu, canonical=jiu
+    - "derive/^~jiu~$/@JIu/"
+    # @Ju: full=ju, root=ju, canonical=ju
+    - "derive/^~ju~$/@Ju/"
+    # @Jv: full=jv, root=ju, canonical=ju
+    - "derive/^~ju~$/@Jv/"
+    # @JUAn: full=juan, root=juan, canonical=juan
+    - "derive/^~juan~$/@JUAn/"
+    # @JVAn: full=jvan, root=juan, canonical=juan
+    - "derive/^~juan~$/@JVAn/"
+    # @JUe: full=jue, root=jue, canonical=jue
+    - "derive/^~jue~$/@JUe/"
+    # @JVe: full=jve, root=jue, canonical=jue
+    - "derive/^~jue~$/@JVe/"
+    # @JUEn: full=juen, root=jun, canonical=jun
+    - "derive/^~jun~$/@JUEn/"
+    # @JUn: full=jun, root=jun, canonical=jun
+    - "derive/^~jun~$/@JUn/"
+    # @JVn: full=jvn, root=jun, canonical=jun
+    - "derive/^~jun~$/@JVn/"
+    # @Ka: full=ka, root=ka, canonical=ka
+    - "derive/^~ka~$/@Ka/"
+    # @KAi: full=kai, root=kai, canonical=kai
+    - "derive/^~kai~$/@KAi/"
+    # @KAn: full=kan, root=kan, canonical=kan
+    - "derive/^~kan~$/@KAn/"
+    # @KANg: full=kang, root=kang, canonical=kang
+    - "derive/^~kang~$/@KANg/"
+    # @KAo: full=kao, root=kao, canonical=kao
+    - "derive/^~kao~$/@KAo/"
+    # @Ke: full=ke, root=ke, canonical=ke
+    - "derive/^~ke~$/@Ke/"
+    # @KEi: full=kei, root=kei, canonical=kei
+    - "derive/^~kei~$/@KEi/"
+    # @KEn: full=ken, root=ken, canonical=ken,keng
+    - "derive/^~ken~$/@KEn/"
+    # @KONg: full=kong, root=kong, canonical=kong
+    - "derive/^~kong~$/@KONg/"
+    # @KOu: full=kou, root=kou, canonical=kou
+    - "derive/^~kou~$/@KOu/"
+    # @Ku: full=ku, root=ku, canonical=ku
+    - "derive/^~ku~$/@Ku/"
+    # @KUa: full=kua, root=kua, canonical=kua
+    - "derive/^~kua~$/@KUa/"
+    # @KUAi: full=kuai, root=kuai, canonical=kuai
+    - "derive/^~kuai~$/@KUAi/"
+    # @KUAn: full=kuan, root=kuan, canonical=kuan
+    - "derive/^~kuan~$/@KUAn/"
+    # @KUANg: full=kuang, root=kuang, canonical=kuang
+    - "derive/^~kuang~$/@KUANg/"
+    # @KUEi: full=kuei, root=kui, canonical=kui
+    - "derive/^~kui~$/@KUEi/"
+    # @KUi: full=kui, root=kui, canonical=kui
+    - "derive/^~kui~$/@KUi/"
+    # @KUEn: full=kuen, root=kun, canonical=kun
+    - "derive/^~kun~$/@KUEn/"
+    # @KUn: full=kun, root=kun, canonical=kun
+    - "derive/^~kun~$/@KUn/"
+    # @KUo: full=kuo, root=kuo, canonical=kuo
+    - "derive/^~kuo~$/@KUo/"
+    # @La: full=la, root=la, canonical=la
+    - "derive/^~la~$/@La/"
+    # @LAi: full=lai, root=lai, canonical=lai
+    - "derive/^~lai~$/@LAi/"
+    # @LAn: full=lan, root=lan, canonical=lan
+    - "derive/^~lan~$/@LAn/"
+    # @LANg: full=lang, root=lang, canonical=lang
+    - "derive/^~lang~$/@LANg/"
+    # @LAo: full=lao, root=lao, canonical=lao
+    - "derive/^~lao~$/@LAo/"
+    # @Le: full=le, root=le, canonical=le
+    - "derive/^~le~$/@Le/"
+    # @LEi: full=lei, root=lei, canonical=lei
+    - "derive/^~lei~$/@LEi/"
+    # @LEn: full=len, root=len, canonical=leng
+    - "derive/^~len~$/@LEn/"
+    # @Li: full=li, root=li, canonical=li
+    - "derive/^~li~$/@Li/"
+    # @LIa: full=lia, root=lia, canonical=lia
+    - "derive/^~lia~$/@LIa/"
+    # @LIAn: full=lian, root=lian, canonical=lian
+    - "derive/^~lian~$/@LIAn/"
+    # @LIANg: full=liang, root=liang, canonical=liang
+    - "derive/^~liang~$/@LIANg/"
+    # @LIAo: full=liao, root=liao, canonical=liao
+    - "derive/^~liao~$/@LIAo/"
+    # @LIe: full=lie, root=lie, canonical=lie
+    - "derive/^~lie~$/@LIe/"
+    # @LIn: full=lin, root=lin, canonical=lin,ling
+    - "derive/^~lin~$/@LIn/"
+    # @LIOu: full=liou, root=liu, canonical=liu
+    - "derive/^~liu~$/@LIOu/"
+    # @LIu: full=liu, root=liu, canonical=liu
+    - "derive/^~liu~$/@LIu/"
+    # @Lo: full=lo, root=lo, canonical=lo
+    - "derive/^~lo~$/@Lo/"
+    # @LONg: full=long, root=long, canonical=long
+    - "derive/^~long~$/@LONg/"
+    # @LOu: full=lou, root=lou, canonical=lou
+    - "derive/^~lou~$/@LOu/"
+    # @Lu: full=lu, root=lu, canonical=lu
+    - "derive/^~lu~$/@Lu/"
+    # @LUAn: full=luan, root=luan, canonical=luan
+    - "derive/^~luan~$/@LUAn/"
+    # @LUEn: full=luen, root=lun, canonical=lun
+    - "derive/^~lun~$/@LUEn/"
+    # @LUn: full=lun, root=lun, canonical=lun
+    - "derive/^~lun~$/@LUn/"
+    # @LUo: full=luo, root=luo, canonical=luo
+    - "derive/^~luo~$/@LUo/"
+    # @Lv: full=lv, root=lv, canonical=lv
+    - "derive/^~lv~$/@Lv/"
+    # @LVAn: full=lvan, root=lvan, canonical=lvan
+    - "derive/^~lvan~$/@LVAn/"
+    # @LUe: full=lue, root=lve, canonical=lve
+    - "derive/^~lve~$/@LUe/"
+    # @LVe: full=lve, root=lve, canonical=lve
+    - "derive/^~lve~$/@LVe/"
+    # @Ma: full=ma, root=ma, canonical=ma
+    - "derive/^~ma~$/@Ma/"
+    # @MAi: full=mai, root=mai, canonical=mai
+    - "derive/^~mai~$/@MAi/"
+    # @MAn: full=man, root=man, canonical=man
+    - "derive/^~man~$/@MAn/"
+    # @MANg: full=mang, root=mang, canonical=mang
+    - "derive/^~mang~$/@MANg/"
+    # @MAo: full=mao, root=mao, canonical=mao
+    - "derive/^~mao~$/@MAo/"
+    # @Me: full=me, root=me, canonical=me
+    - "derive/^~me~$/@Me/"
+    # @MEi: full=mei, root=mei, canonical=mei
+    - "derive/^~mei~$/@MEi/"
+    # @MEn: full=men, root=men, canonical=men,meng
+    - "derive/^~men~$/@MEn/"
+    # @Mi: full=mi, root=mi, canonical=mi
+    - "derive/^~mi~$/@Mi/"
+    # @MIAn: full=mian, root=mian, canonical=mian
+    - "derive/^~mian~$/@MIAn/"
+    # @MIAo: full=miao, root=miao, canonical=miao
+    - "derive/^~miao~$/@MIAo/"
+    # @MIe: full=mie, root=mie, canonical=mie
+    - "derive/^~mie~$/@MIe/"
+    # @MIn: full=min, root=min, canonical=min,ming
+    - "derive/^~min~$/@MIn/"
+    # @MIOu: full=miou, root=miu, canonical=miu
+    - "derive/^~miu~$/@MIOu/"
+    # @MIu: full=miu, root=miu, canonical=miu
+    - "derive/^~miu~$/@MIu/"
+    # @Mo: full=mo, root=mo, canonical=mo
+    - "derive/^~mo~$/@Mo/"
+    # @MOu: full=mou, root=mou, canonical=mou
+    - "derive/^~mou~$/@MOu/"
+    # @Mu: full=mu, root=mu, canonical=mu
+    - "derive/^~mu~$/@Mu/"
+    # @Na: full=na, root=na, canonical=na
+    - "derive/^~na~$/@Na/"
+    # @NAi: full=nai, root=nai, canonical=nai
+    - "derive/^~nai~$/@NAi/"
+    # @NAn: full=nan, root=nan, canonical=nan
+    - "derive/^~nan~$/@NAn/"
+    # @NANg: full=nang, root=nang, canonical=nang
+    - "derive/^~nang~$/@NANg/"
+    # @NAo: full=nao, root=nao, canonical=nao
+    - "derive/^~nao~$/@NAo/"
+    # @Ne: full=ne, root=ne, canonical=ne
+    - "derive/^~ne~$/@Ne/"
+    # @NEi: full=nei, root=nei, canonical=nei
+    - "derive/^~nei~$/@NEi/"
+    # @NEn: full=nen, root=nen, canonical=nen,neng
+    - "derive/^~nen~$/@NEn/"
+    # @Ni: full=ni, root=ni, canonical=ni
+    - "derive/^~ni~$/@Ni/"
+    # @NIa: full=nia, root=nia, canonical=nia
+    - "derive/^~nia~$/@NIa/"
+    # @NIAn: full=nian, root=nian, canonical=nian
+    - "derive/^~nian~$/@NIAn/"
+    # @NIANg: full=niang, root=niang, canonical=niang
+    - "derive/^~niang~$/@NIANg/"
+    # @NIAo: full=niao, root=niao, canonical=niao
+    - "derive/^~niao~$/@NIAo/"
+    # @NIe: full=nie, root=nie, canonical=nie
+    - "derive/^~nie~$/@NIe/"
+    # @NIn: full=nin, root=nin, canonical=nin,ning
+    - "derive/^~nin~$/@NIn/"
+    # @NIOu: full=niou, root=niu, canonical=niu
+    - "derive/^~niu~$/@NIOu/"
+    # @NIu: full=niu, root=niu, canonical=niu
+    - "derive/^~niu~$/@NIu/"
+    # @NONg: full=nong, root=nong, canonical=nong
+    - "derive/^~nong~$/@NONg/"
+    # @NOu: full=nou, root=nou, canonical=nou
+    - "derive/^~nou~$/@NOu/"
+    # @Nu: full=nu, root=nu, canonical=nu
+    - "derive/^~nu~$/@Nu/"
+    # @NUAn: full=nuan, root=nuan, canonical=nuan
+    - "derive/^~nuan~$/@NUAn/"
+    # @NUEn: full=nuen, root=nun, canonical=nun
+    - "derive/^~nun~$/@NUEn/"
+    # @NUn: full=nun, root=nun, canonical=nun
+    - "derive/^~nun~$/@NUn/"
+    # @NUo: full=nuo, root=nuo, canonical=nuo
+    - "derive/^~nuo~$/@NUo/"
+    # @Nv: full=nv, root=nv, canonical=nv
+    - "derive/^~nv~$/@Nv/"
+    # @NUe: full=nue, root=nve, canonical=nve
+    - "derive/^~nve~$/@NUe/"
+    # @NVe: full=nve, root=nve, canonical=nve
+    - "derive/^~nve~$/@NVe/"
+    # @o: full=o, root=o, canonical=o
+    - "derive/^~o~$/@o/"
+    # @Ou: full=ou, root=ou, canonical=ou
+    - "derive/^~ou~$/@Ou/"
+    # @Pa: full=pa, root=pa, canonical=pa
+    - "derive/^~pa~$/@Pa/"
+    # @PAi: full=pai, root=pai, canonical=pai
+    - "derive/^~pai~$/@PAi/"
+    # @PAn: full=pan, root=pan, canonical=pan
+    - "derive/^~pan~$/@PAn/"
+    # @PANg: full=pang, root=pang, canonical=pang
+    - "derive/^~pang~$/@PANg/"
+    # @PAo: full=pao, root=pao, canonical=pao
+    - "derive/^~pao~$/@PAo/"
+    # @PEi: full=pei, root=pei, canonical=pei
+    - "derive/^~pei~$/@PEi/"
+    # @PEn: full=pen, root=pen, canonical=pen,peng
+    - "derive/^~pen~$/@PEn/"
+    # @Pi: full=pi, root=pi, canonical=pi
+    - "derive/^~pi~$/@Pi/"
+    # @PIa: full=pia, root=pia, canonical=pia
+    - "derive/^~pia~$/@PIa/"
+    # @PIAn: full=pian, root=pian, canonical=pian
+    - "derive/^~pian~$/@PIAn/"
+    # @PIAo: full=piao, root=piao, canonical=piao
+    - "derive/^~piao~$/@PIAo/"
+    # @PIe: full=pie, root=pie, canonical=pie
+    - "derive/^~pie~$/@PIe/"
+    # @PIn: full=pin, root=pin, canonical=pin,ping
+    - "derive/^~pin~$/@PIn/"
+    # @Po: full=po, root=po, canonical=po
+    - "derive/^~po~$/@Po/"
+    # @POu: full=pou, root=pou, canonical=pou
+    - "derive/^~pou~$/@POu/"
+    # @Pu: full=pu, root=pu, canonical=pu
+    - "derive/^~pu~$/@Pu/"
+    # @Qi: full=qi, root=qi, canonical=qi
+    - "derive/^~qi~$/@Qi/"
+    # @QIa: full=qia, root=qia, canonical=qia
+    - "derive/^~qia~$/@QIa/"
+    # @QIAn: full=qian, root=qian, canonical=qian
+    - "derive/^~qian~$/@QIAn/"
+    # @QIANg: full=qiang, root=qiang, canonical=qiang
+    - "derive/^~qiang~$/@QIANg/"
+    # @QIAo: full=qiao, root=qiao, canonical=qiao
+    - "derive/^~qiao~$/@QIAo/"
+    # @QIe: full=qie, root=qie, canonical=qie
+    - "derive/^~qie~$/@QIe/"
+    # @QIn: full=qin, root=qin, canonical=qin,qing
+    - "derive/^~qin~$/@QIn/"
+    # @QIONg: full=qiong, root=qiong, canonical=qiong
+    - "derive/^~qiong~$/@QIONg/"
+    # @QIOu: full=qiou, root=qiu, canonical=qiu
+    - "derive/^~qiu~$/@QIOu/"
+    # @QIu: full=qiu, root=qiu, canonical=qiu
+    - "derive/^~qiu~$/@QIu/"
+    # @Qu: full=qu, root=qu, canonical=qu
+    - "derive/^~qu~$/@Qu/"
+    # @Qv: full=qv, root=qu, canonical=qu
+    - "derive/^~qu~$/@Qv/"
+    # @QUAn: full=quan, root=quan, canonical=quan
+    - "derive/^~quan~$/@QUAn/"
+    # @QVAn: full=qvan, root=quan, canonical=quan
+    - "derive/^~quan~$/@QVAn/"
+    # @QUe: full=que, root=que, canonical=que
+    - "derive/^~que~$/@QUe/"
+    # @QVe: full=qve, root=que, canonical=que
+    - "derive/^~que~$/@QVe/"
+    # @QUEn: full=quen, root=qun, canonical=qun
+    - "derive/^~qun~$/@QUEn/"
+    # @QUn: full=qun, root=qun, canonical=qun
+    - "derive/^~qun~$/@QUn/"
+    # @QVn: full=qvn, root=qun, canonical=qun
+    - "derive/^~qun~$/@QVn/"
+    # @RAn: full=ran, root=ran, canonical=ran
+    - "derive/^~ran~$/@RAn/"
+    # @RANg: full=rang, root=rang, canonical=rang
+    - "derive/^~rang~$/@RANg/"
+    # @RAo: full=rao, root=rao, canonical=rao
+    - "derive/^~rao~$/@RAo/"
+    # @Re: full=re, root=re, canonical=re
+    - "derive/^~re~$/@Re/"
+    # @REn: full=ren, root=ren, canonical=ren,reng
+    - "derive/^~ren~$/@REn/"
+    # @Ri: full=ri, root=ri, canonical=ri
+    - "derive/^~ri~$/@Ri/"
+    # @RONg: full=rong, root=rong, canonical=rong
+    - "derive/^~rong~$/@RONg/"
+    # @ROu: full=rou, root=rou, canonical=rou
+    - "derive/^~rou~$/@ROu/"
+    # @Ru: full=ru, root=ru, canonical=ru
+    - "derive/^~ru~$/@Ru/"
+    # @RUa: full=rua, root=rua, canonical=rua
+    - "derive/^~rua~$/@RUa/"
+    # @RUAn: full=ruan, root=ruan, canonical=ruan
+    - "derive/^~ruan~$/@RUAn/"
+    # @RUEi: full=ruei, root=rui, canonical=rui
+    - "derive/^~rui~$/@RUEi/"
+    # @RUi: full=rui, root=rui, canonical=rui
+    - "derive/^~rui~$/@RUi/"
+    # @RUEn: full=ruen, root=run, canonical=run
+    - "derive/^~run~$/@RUEn/"
+    # @RUn: full=run, root=run, canonical=run
+    - "derive/^~run~$/@RUn/"
+    # @RUo: full=ruo, root=ruo, canonical=ruo
+    - "derive/^~ruo~$/@RUo/"
+    # @Sa: full=sa, root=sa, canonical=sa
+    - "derive/^~sa~$/@Sa/"
+    # @SAi: full=sai, root=sai, canonical=sai
+    - "derive/^~sai~$/@SAi/"
+    # @SAn: full=san, root=san, canonical=san
+    - "derive/^~san~$/@SAn/"
+    # @SANg: full=sang, root=sang, canonical=sang
+    - "derive/^~sang~$/@SANg/"
+    # @SAo: full=sao, root=sao, canonical=sao
+    - "derive/^~sao~$/@SAo/"
+    # @Se: full=se, root=se, canonical=se
+    - "derive/^~se~$/@Se/"
+    # @SEi: full=sei, root=sei, canonical=sei
+    - "derive/^~sei~$/@SEi/"
+    # @SEn: full=sen, root=sen, canonical=sen,seng
+    - "derive/^~sen~$/@SEn/"
+    # @SHa: full=sha, root=sha, canonical=sha
+    - "derive/^~sha~$/@SHa/"
+    # @SHAi: full=shai, root=shai, canonical=shai
+    - "derive/^~shai~$/@SHAi/"
+    # @SHAn: full=shan, root=shan, canonical=shan
+    - "derive/^~shan~$/@SHAn/"
+    # @SHANg: full=shang, root=shang, canonical=shang
+    - "derive/^~shang~$/@SHANg/"
+    # @SHAo: full=shao, root=shao, canonical=shao
+    - "derive/^~shao~$/@SHAo/"
+    # @SHe: full=she, root=she, canonical=she
+    - "derive/^~she~$/@SHe/"
+    # @SHEi: full=shei, root=shei, canonical=shei
+    - "derive/^~shei~$/@SHEi/"
+    # @SHEn: full=shen, root=shen, canonical=shen,sheng
+    - "derive/^~shen~$/@SHEn/"
+    # @SHi: full=shi, root=shi, canonical=shi
+    - "derive/^~shi~$/@SHi/"
+    # @SHOu: full=shou, root=shou, canonical=shou
+    - "derive/^~shou~$/@SHOu/"
+    # @SHu: full=shu, root=shu, canonical=shu
+    - "derive/^~shu~$/@SHu/"
+    # @SHUa: full=shua, root=shua, canonical=shua
+    - "derive/^~shua~$/@SHUa/"
+    # @SHUAi: full=shuai, root=shuai, canonical=shuai
+    - "derive/^~shuai~$/@SHUAi/"
+    # @SHUAn: full=shuan, root=shuan, canonical=shuan
+    - "derive/^~shuan~$/@SHUAn/"
+    # @SHUANg: full=shuang, root=shuang, canonical=shuang
+    - "derive/^~shuang~$/@SHUANg/"
+    # @SHUEi: full=shuei, root=shui, canonical=shui
+    - "derive/^~shui~$/@SHUEi/"
+    # @SHUi: full=shui, root=shui, canonical=shui
+    - "derive/^~shui~$/@SHUi/"
+    # @SHUEn: full=shuen, root=shun, canonical=shun
+    - "derive/^~shun~$/@SHUEn/"
+    # @SHUn: full=shun, root=shun, canonical=shun
+    - "derive/^~shun~$/@SHUn/"
+    # @SHUo: full=shuo, root=shuo, canonical=shuo
+    - "derive/^~shuo~$/@SHUo/"
+    # @Si: full=si, root=si, canonical=si
+    - "derive/^~si~$/@Si/"
+    # @SONg: full=song, root=song, canonical=song
+    - "derive/^~song~$/@SONg/"
+    # @SOu: full=sou, root=sou, canonical=sou
+    - "derive/^~sou~$/@SOu/"
+    # @Su: full=su, root=su, canonical=su
+    - "derive/^~su~$/@Su/"
+    # @SUAn: full=suan, root=suan, canonical=suan
+    - "derive/^~suan~$/@SUAn/"
+    # @SUEi: full=suei, root=sui, canonical=sui
+    - "derive/^~sui~$/@SUEi/"
+    # @SUi: full=sui, root=sui, canonical=sui
+    - "derive/^~sui~$/@SUi/"
+    # @SUEn: full=suen, root=sun, canonical=sun
+    - "derive/^~sun~$/@SUEn/"
+    # @SUn: full=sun, root=sun, canonical=sun
+    - "derive/^~sun~$/@SUn/"
+    # @SUo: full=suo, root=suo, canonical=suo
+    - "derive/^~suo~$/@SUo/"
+    # @Ta: full=ta, root=ta, canonical=ta
+    - "derive/^~ta~$/@Ta/"
+    # @TAi: full=tai, root=tai, canonical=tai
+    - "derive/^~tai~$/@TAi/"
+    # @TAn: full=tan, root=tan, canonical=tan
+    - "derive/^~tan~$/@TAn/"
+    # @TANg: full=tang, root=tang, canonical=tang
+    - "derive/^~tang~$/@TANg/"
+    # @TAo: full=tao, root=tao, canonical=tao
+    - "derive/^~tao~$/@TAo/"
+    # @Te: full=te, root=te, canonical=te
+    - "derive/^~te~$/@Te/"
+    # @TEi: full=tei, root=tei, canonical=tei
+    - "derive/^~tei~$/@TEi/"
+    # @TEn: full=ten, root=ten, canonical=teng
+    - "derive/^~ten~$/@TEn/"
+    # @Ti: full=ti, root=ti, canonical=ti
+    - "derive/^~ti~$/@Ti/"
+    # @TIAn: full=tian, root=tian, canonical=tian
+    - "derive/^~tian~$/@TIAn/"
+    # @TIAo: full=tiao, root=tiao, canonical=tiao
+    - "derive/^~tiao~$/@TIAo/"
+    # @TIe: full=tie, root=tie, canonical=tie
+    - "derive/^~tie~$/@TIe/"
+    # @TIn: full=tin, root=tin, canonical=ting
+    - "derive/^~tin~$/@TIn/"
+    # @TONg: full=tong, root=tong, canonical=tong
+    - "derive/^~tong~$/@TONg/"
+    # @TOu: full=tou, root=tou, canonical=tou
+    - "derive/^~tou~$/@TOu/"
+    # @Tu: full=tu, root=tu, canonical=tu
+    - "derive/^~tu~$/@Tu/"
+    # @TUAn: full=tuan, root=tuan, canonical=tuan
+    - "derive/^~tuan~$/@TUAn/"
+    # @TUEi: full=tuei, root=tui, canonical=tui
+    - "derive/^~tui~$/@TUEi/"
+    # @TUi: full=tui, root=tui, canonical=tui
+    - "derive/^~tui~$/@TUi/"
+    # @TUEn: full=tuen, root=tun, canonical=tun
+    - "derive/^~tun~$/@TUEn/"
+    # @TUn: full=tun, root=tun, canonical=tun
+    - "derive/^~tun~$/@TUn/"
+    # @TUo: full=tuo, root=tuo, canonical=tuo
+    - "derive/^~tuo~$/@TUo/"
+    # @Wa: full=wa, root=wa, canonical=wa
+    - "derive/^~wa~$/@Wa/"
+    # @WAi: full=wai, root=wai, canonical=wai
+    - "derive/^~wai~$/@WAi/"
+    # @WAn: full=wan, root=wan, canonical=wan
+    - "derive/^~wan~$/@WAn/"
+    # @WANg: full=wang, root=wang, canonical=wang
+    - "derive/^~wang~$/@WANg/"
+    # @WEi: full=wei, root=wei, canonical=wei
+    - "derive/^~wei~$/@WEi/"
+    # @WEn: full=wen, root=wen, canonical=wen,weng
+    - "derive/^~wen~$/@WEn/"
+    # @Wo: full=wo, root=wo, canonical=wo
+    - "derive/^~wo~$/@Wo/"
+    # @WONg: full=wong, root=wong, canonical=wong
+    - "derive/^~wong~$/@WONg/"
+    # @Wu: full=wu, root=wu, canonical=wu
+    - "derive/^~wu~$/@Wu/"
+    # @Xi: full=xi, root=xi, canonical=xi
+    - "derive/^~xi~$/@Xi/"
+    # @XIa: full=xia, root=xia, canonical=xia
+    - "derive/^~xia~$/@XIa/"
+    # @XIAn: full=xian, root=xian, canonical=xian
+    - "derive/^~xian~$/@XIAn/"
+    # @XIANg: full=xiang, root=xiang, canonical=xiang
+    - "derive/^~xiang~$/@XIANg/"
+    # @XIAo: full=xiao, root=xiao, canonical=xiao
+    - "derive/^~xiao~$/@XIAo/"
+    # @XIe: full=xie, root=xie, canonical=xie
+    - "derive/^~xie~$/@XIe/"
+    # @XIn: full=xin, root=xin, canonical=xin,xing
+    - "derive/^~xin~$/@XIn/"
+    # @XIONg: full=xiong, root=xiong, canonical=xiong
+    - "derive/^~xiong~$/@XIONg/"
+    # @XIOu: full=xiou, root=xiu, canonical=xiu
+    - "derive/^~xiu~$/@XIOu/"
+    # @XIu: full=xiu, root=xiu, canonical=xiu
+    - "derive/^~xiu~$/@XIu/"
+    # @Xu: full=xu, root=xu, canonical=xu
+    - "derive/^~xu~$/@Xu/"
+    # @Xv: full=xv, root=xu, canonical=xu
+    - "derive/^~xu~$/@Xv/"
+    # @XUAn: full=xuan, root=xuan, canonical=xuan
+    - "derive/^~xuan~$/@XUAn/"
+    # @XVAn: full=xvan, root=xuan, canonical=xuan
+    - "derive/^~xuan~$/@XVAn/"
+    # @XUe: full=xue, root=xue, canonical=xue
+    - "derive/^~xue~$/@XUe/"
+    # @XVe: full=xve, root=xue, canonical=xue
+    - "derive/^~xue~$/@XVe/"
+    # @XUEn: full=xuen, root=xun, canonical=xun
+    - "derive/^~xun~$/@XUEn/"
+    # @XUn: full=xun, root=xun, canonical=xun
+    - "derive/^~xun~$/@XUn/"
+    # @XVn: full=xvn, root=xun, canonical=xun
+    - "derive/^~xun~$/@XVn/"
+    # @Ya: full=ya, root=ya, canonical=ya
+    - "derive/^~ya~$/@Ya/"
+    # @YAi: full=yai, root=yai, canonical=yai
+    - "derive/^~yai~$/@YAi/"
+    # @YAn: full=yan, root=yan, canonical=yan
+    - "derive/^~yan~$/@YAn/"
+    # @YANg: full=yang, root=yang, canonical=yang
+    - "derive/^~yang~$/@YANg/"
+    # @YAo: full=yao, root=yao, canonical=yao
+    - "derive/^~yao~$/@YAo/"
+    # @Ye: full=ye, root=ye, canonical=ye
+    - "derive/^~ye~$/@Ye/"
+    # @Yi: full=yi, root=yi, canonical=yi
+    - "derive/^~yi~$/@Yi/"
+    # @YIn: full=yin, root=yin, canonical=yin,ying
+    - "derive/^~yin~$/@YIn/"
+    # @Yo: full=yo, root=yo, canonical=yo
+    - "derive/^~yo~$/@Yo/"
+    # @YONg: full=yong, root=yong, canonical=yong
+    - "derive/^~yong~$/@YONg/"
+    # @YOu: full=you, root=you, canonical=you
+    - "derive/^~you~$/@YOu/"
+    # @Yu: full=yu, root=yu, canonical=yu
+    - "derive/^~yu~$/@Yu/"
+    # @Yv: full=yv, root=yu, canonical=yu
+    - "derive/^~yu~$/@Yv/"
+    # @YUAn: full=yuan, root=yuan, canonical=yuan
+    - "derive/^~yuan~$/@YUAn/"
+    # @YVAn: full=yvan, root=yuan, canonical=yuan
+    - "derive/^~yuan~$/@YVAn/"
+    # @YUe: full=yue, root=yue, canonical=yue
+    - "derive/^~yue~$/@YUe/"
+    # @YVe: full=yve, root=yue, canonical=yue
+    - "derive/^~yue~$/@YVe/"
+    # @YUEn: full=yuen, root=yun, canonical=yun
+    - "derive/^~yun~$/@YUEn/"
+    # @YUn: full=yun, root=yun, canonical=yun
+    - "derive/^~yun~$/@YUn/"
+    # @YVn: full=yvn, root=yun, canonical=yun
+    - "derive/^~yun~$/@YVn/"
+    # @Za: full=za, root=za, canonical=za
+    - "derive/^~za~$/@Za/"
+    # @ZAi: full=zai, root=zai, canonical=zai
+    - "derive/^~zai~$/@ZAi/"
+    # @ZAn: full=zan, root=zan, canonical=zan
+    - "derive/^~zan~$/@ZAn/"
+    # @ZANg: full=zang, root=zang, canonical=zang
+    - "derive/^~zang~$/@ZANg/"
+    # @ZAo: full=zao, root=zao, canonical=zao
+    - "derive/^~zao~$/@ZAo/"
+    # @Ze: full=ze, root=ze, canonical=ze
+    - "derive/^~ze~$/@Ze/"
+    # @ZEi: full=zei, root=zei, canonical=zei
+    - "derive/^~zei~$/@ZEi/"
+    # @ZEn: full=zen, root=zen, canonical=zen,zeng
+    - "derive/^~zen~$/@ZEn/"
+    # @ZHa: full=zha, root=zha, canonical=zha
+    - "derive/^~zha~$/@ZHa/"
+    # @ZHAi: full=zhai, root=zhai, canonical=zhai
+    - "derive/^~zhai~$/@ZHAi/"
+    # @ZHAn: full=zhan, root=zhan, canonical=zhan
+    - "derive/^~zhan~$/@ZHAn/"
+    # @ZHANg: full=zhang, root=zhang, canonical=zhang
+    - "derive/^~zhang~$/@ZHANg/"
+    # @ZHAo: full=zhao, root=zhao, canonical=zhao
+    - "derive/^~zhao~$/@ZHAo/"
+    # @ZHe: full=zhe, root=zhe, canonical=zhe
+    - "derive/^~zhe~$/@ZHe/"
+    # @ZHEi: full=zhei, root=zhei, canonical=zhei
+    - "derive/^~zhei~$/@ZHEi/"
+    # @ZHEn: full=zhen, root=zhen, canonical=zhen,zheng
+    - "derive/^~zhen~$/@ZHEn/"
+    # @ZHi: full=zhi, root=zhi, canonical=zhi
+    - "derive/^~zhi~$/@ZHi/"
+    # @ZHONg: full=zhong, root=zhong, canonical=zhong
+    - "derive/^~zhong~$/@ZHONg/"
+    # @ZHOu: full=zhou, root=zhou, canonical=zhou
+    - "derive/^~zhou~$/@ZHOu/"
+    # @ZHu: full=zhu, root=zhu, canonical=zhu
+    - "derive/^~zhu~$/@ZHu/"
+    # @ZHUa: full=zhua, root=zhua, canonical=zhua
+    - "derive/^~zhua~$/@ZHUa/"
+    # @ZHUAi: full=zhuai, root=zhuai, canonical=zhuai
+    - "derive/^~zhuai~$/@ZHUAi/"
+    # @ZHUAn: full=zhuan, root=zhuan, canonical=zhuan
+    - "derive/^~zhuan~$/@ZHUAn/"
+    # @ZHUANg: full=zhuang, root=zhuang, canonical=zhuang
+    - "derive/^~zhuang~$/@ZHUANg/"
+    # @ZHUEi: full=zhuei, root=zhui, canonical=zhui
+    - "derive/^~zhui~$/@ZHUEi/"
+    # @ZHUi: full=zhui, root=zhui, canonical=zhui
+    - "derive/^~zhui~$/@ZHUi/"
+    # @ZHUEn: full=zhuen, root=zhun, canonical=zhun
+    - "derive/^~zhun~$/@ZHUEn/"
+    # @ZHUn: full=zhun, root=zhun, canonical=zhun
+    - "derive/^~zhun~$/@ZHUn/"
+    # @ZHUo: full=zhuo, root=zhuo, canonical=zhuo
+    - "derive/^~zhuo~$/@ZHUo/"
+    # @Zi: full=zi, root=zi, canonical=zi
+    - "derive/^~zi~$/@Zi/"
+    # @ZONg: full=zong, root=zong, canonical=zong
+    - "derive/^~zong~$/@ZONg/"
+    # @ZOu: full=zou, root=zou, canonical=zou
+    - "derive/^~zou~$/@ZOu/"
+    # @Zu: full=zu, root=zu, canonical=zu
+    - "derive/^~zu~$/@Zu/"
+    # @ZUAn: full=zuan, root=zuan, canonical=zuan
+    - "derive/^~zuan~$/@ZUAn/"
+    # @ZUEi: full=zuei, root=zui, canonical=zui
+    - "derive/^~zui~$/@ZUEi/"
+    # @ZUi: full=zui, root=zui, canonical=zui
+    - "derive/^~zui~$/@ZUi/"
+    # @ZUEn: full=zuen, root=zun, canonical=zun
+    - "derive/^~zun~$/@ZUEn/"
+    # @ZUn: full=zun, root=zun, canonical=zun
+    - "derive/^~zun~$/@ZUn/"
+    # @ZUo: full=zuo, root=zuo, canonical=zuo
+    - "derive/^~zuo~$/@ZUo/"
+    # END exact syllable atomic internal channel
     # BEGIN complete reliable internal channel
     - "derive/^~a~$/#A#/"
     - "derive/^~ai~$/#AI#/"
