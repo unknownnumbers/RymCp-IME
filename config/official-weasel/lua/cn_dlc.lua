@@ -7,9 +7,10 @@ local managed = {
 }
 for index = 0, 31 do managed[string.format('rymcp_dlc_poetry_%02d', index)] = true end
 
-function M.configure(config)
+function M.configure(config, engine)
+  local snapshot = catalog.modules(engine)
   local enabled = {}
-  for _, module in ipairs(catalog.modules()) do
+  for _, module in ipairs(snapshot) do
     if module.languages.cn then
       for _, name in ipairs(module.packs) do enabled[name] = true end
     end
@@ -25,6 +26,7 @@ function M.configure(config)
     end
   end
   config:set_item('translator/packs', selected.element)
+  return snapshot
 end
 
 return M

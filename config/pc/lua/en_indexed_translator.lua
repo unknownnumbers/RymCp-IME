@@ -209,7 +209,7 @@ function M.init(env)
   env.vocab = vocabulary(index_directory, env.index.words)
   env.ext = extensions(extension_directory, env.vocab)
   env.ext_index = index_module.load(extension_directory)
-  env.dlc = dlc_module.load(env.vocab, env.ext)
+  env.dlc = dlc_module.load(env.vocab, env.ext, env.engine)
   env.mem = Memory(env.engine, env.engine.schema, 'english_native')
   env.mem:memorize(function(commit)
     for _, entry in ipairs(commit:get()) do env.mem:update_userdict(entry, 1, '') end

@@ -1,6 +1,6 @@
 {
   "format": "rymcp-official-profile-v2",
-  "version": "2026.11.14.1",
+  "version": "2026.11.14.2",
   "files": [
     {
       "path": "english_extensions.dict.yaml",
@@ -129,8 +129,8 @@
     },
     {
       "path": "lua/cn_dlc.lua",
-      "bytes": 984,
-      "sha256": "c37d6a1d53e783d07a6d00e64c2a5358a82a6b217ee3b3477653d56c50922638"
+      "bytes": 1044,
+      "sha256": "541b829dc5234d9d5d27f0be426cdaa9bc84b051afa62d115c3ebcd05166f37a"
     },
     {
       "path": "lua/cn_exact_processor.lua",
@@ -189,8 +189,8 @@
     },
     {
       "path": "lua/cn_translator.lua",
-      "bytes": 31725,
-      "sha256": "ec1a8cf8d325fd7e0fdd834d62fd963f0d934f576b70504097097b9d6bfbe93c"
+      "bytes": 31833,
+      "sha256": "40fea28e2a6468c9c10011cdf8632cd767767ccf7e8db7c5af5c2362ff888927"
     },
     {
       "path": "lua/draft_limit.lua",
@@ -204,8 +204,8 @@
     },
     {
       "path": "lua/en_dlc.lua",
-      "bytes": 2279,
-      "sha256": "b0e50476b40a3340345d69fba63119441e1d53c264f245440875afa5be9cd62d"
+      "bytes": 2339,
+      "sha256": "601348fcfa0e44986e3302be29f87c113d78308b482a1085071c16553c2b4164"
     },
     {
       "path": "lua/en_dlc_format.lua",
@@ -219,8 +219,8 @@
     },
     {
       "path": "lua/en_indexed_translator.lua",
-      "bytes": 11547,
-      "sha256": "f5532f551d9ed30caa1069b76770cef1a22bcff50a74a55fc430e851cb4cbf97"
+      "bytes": 11559,
+      "sha256": "081951ed41e903a95adc6135badf69444881e6dafca52e9e627049c2ca48dbdf"
     },
     {
       "path": "lua/en_processor.lua",
@@ -239,8 +239,8 @@
     },
     {
       "path": "lua/rymcp_dlc.lua",
-      "bytes": 7802,
-      "sha256": "f138e2b2363a9863ad0f4d221dde377a0a18d69b91c6de65a4422cab4da128ea"
+      "bytes": 16511,
+      "sha256": "71592167ae7731c2a64fdc527599d7418396b744d129c90659da606d33832d3f"
     },
     {
       "path": "lua/select_hanzi.lua",

@@ -14,7 +14,7 @@ if (-not (Test-Path -LiteralPath $engine)) { throw 'Missing official engine DLL.
 $env:PATH = ([IO.Path]::GetFullPath($EngineDir)) + ';' + $env:PATH
 $hostExe = (Get-Process -Id $PID).Path
 $user = Join-Path $work 'chinese-user'
-python (Join-Path $repo 'scripts/build_scheme_packages.py') --version 2026.11.14.1 --prepare-official-dir $user
+python (Join-Path $repo 'scripts/build_scheme_packages.py') --version 2026.11.14.2 --prepare-official-dir $user
 if ($LASTEXITCODE -ne 0) { throw 'Official scheme preparation failed.' }
 $cnOutput = Join-Path $work 'chinese-results'
 & $hostExe -NoProfile -ExecutionPolicy Bypass -File (Join-Path $repo 'tests/schemes/Test-OfficialChinese.ps1') -EngineDll $engine -SharedData $SharedDir -UserData $user -OutputDirectory $cnOutput
@@ -67,6 +67,6 @@ $persistenceOutput = Join-Path $work 'persistence-results'
 & $hostExe -NoProfile -ExecutionPolicy Bypass -File (Join-Path $repo 'tests/schemes/Test-OfficialPersistence.ps1') -EngineDll $engine -SharedData $SharedDir -UserData (Join-Path $work 'bracket-user') -ExpectedLearning (Join-Path $work 'bracket-results/learning.tsv') -OutputDirectory $persistenceOutput
 if ($LASTEXITCODE -ne 0) { throw 'Official persistence checks failed.' }
 $results += [pscustomobject]@{Scenario='Persistence';Checks=3;Passed=$true}
-$summary = [pscustomobject]@{Format='rymcp-official-scheme-validation-v1';Version='2026.11.14.1';Engine='1.13.1';Passed=$true;Results=$results}
+$summary = [pscustomobject]@{Format='rymcp-official-scheme-validation-v1';Version='2026.11.14.2';Engine='1.13.1';Passed=$true;Results=$results}
 $summary | ConvertTo-Json -Depth 5 | Set-Content -LiteralPath (Join-Path $work 'validation.json') -Encoding UTF8
 $summary | ConvertTo-Json -Depth 5

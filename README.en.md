@@ -14,7 +14,7 @@ RymCp provides Chinese and smart English Rime schemes, with a foundation for fut
 - Smart English words, completion, correction, case handling and existing acronym expansions.
 - The Stellae profile also provides hiragana, katakana, kanji, romaji and q/x/v queries, fixed mixed phrases, character lookup and calculation tools.
 - The official Weasel profile provides Chinese and smart English with six vertical candidates and non-inline composition.
-- The default uses general vocabulary. Math, physics, computing and poetry vocabulary is available through separate DLC modules.
+- The default uses general vocabulary. Separate DLC modules provide broad math and physics vocabulary, computing terms, and the complete Tang poetry, Song poetry and Song ci collections in the pinned source snapshot, together with companion anthologies.
 
 A fresh Stellae profile defaults to SC output, five horizontal Chinese candidates and six vertical smart English candidates. Existing user learning and customization remain part of the normal profile workflow.
 
@@ -25,6 +25,8 @@ A fresh Stellae profile defaults to SC output, five horizontal Chinese candidate
 - [Stellae profile guide](docs/PC.md), [official profile installation and merging](docs/official-weasel.md), and [DLC sources](docs/dlc-sources.md).
 
 Scheme sources are in [config/pc](config/pc) and [config/official-weasel](config/official-weasel). Back up matching configuration files before merging into an existing user directory, and retain user dictionaries.
+
+The 2026.11.14.2 poetry DLC requires scheme base 2026.11.14.2 or later. Catalogs are generated from the repository's fixed source inputs and build scripts; module ZIPs are available in Releases. Readings and text variants use automated processing with bounded checks and have not been reviewed line by line. See [DLC sources and limitations](docs/dlc-sources.md).
 
 ## Mother-tongue pronunciation work
 

@@ -413,14 +413,81 @@
       ]
     },
     "dlc_poetry": {
-      "origin": "Complete public anthology inputs from chinese-poetry at b8594f81a89752241442f2ce267d6f66f96704ee.",
-      "retained_terms": "Original MIT anthology terms; CC-CEDICT-derived readings retain CC BY-SA 4.0.",
+      "origin": "Complete pinned Tang poems, Song poems, Song ci and companion anthologies from chinese-poetry.",
       "notices": [
-        "dlc/sources/chinese-poetry-MIT-LICENSE.txt",
-        "dlc/sources/CC-BY-SA-4.0.txt"
+        "dlc/sources/poetry/LICENSE"
       ],
       "evidence": [
         "docs/dlc-sources.md"
+      ],
+      "retained_terms": [
+        "MIT source terms; generated catalogs and annotations use CC-BY-SA-4.0."
+      ]
+    },
+    "dlc_pypinyin": {
+      "origin": "Pinned pypinyin 0.55.0 build-time reading software and data.",
+      "notices": [
+        "dlc/sources/readings/pypinyin-LICENSE.txt"
+      ],
+      "evidence": [
+        "docs/dlc-sources.md"
+      ],
+      "retained_terms": [
+        "MIT"
+      ]
+    },
+    "dlc_opencc": {
+      "origin": "OpenCC dictionaries at 556ed22496d650bd0b13b6c163be9814637970ae, used during catalog generation.",
+      "notices": [
+        "dlc/sources/readings/opencc/LICENSE",
+        "dlc/sources/readings/opencc/AUTHORS"
+      ],
+      "evidence": [
+        "docs/dlc-sources.md"
+      ],
+      "retained_terms": [
+        "Apache-2.0"
+      ]
+    },
+    "dlc_unihan": {
+      "origin": "Unicode Unihan 17.0.0, original-character reading fallback during catalog generation.",
+      "notices": [
+        "dlc/sources/readings/UNICODE-LICENSE-V3.txt"
+      ],
+      "evidence": [
+        "docs/dlc-sources.md"
+      ],
+      "retained_terms": [
+        "Unicode-3.0"
+      ]
+    },
+    "dlc_science": {
+      "origin": "Broad public Wikipedia subject assessments and Wikidata labels and aliases. Fixed original API response snapshots; article bodies excluded.",
+      "notices": [
+        "dlc/sources/science/CC0-1.0-legalcode.txt",
+        "dlc/sources/science/CC-BY-SA-4.0.txt",
+        "dlc/sources/science/SCIENCE-NOTICE.txt"
+      ],
+      "evidence": [
+        "docs/dlc-sources.md"
+      ],
+      "retained_terms": [
+        "CC0-1.0 for Wikidata data; CC-BY-SA-4.0 for Wikipedia assessments and derived catalogs."
+      ]
+    },
+    "validation_marisa": {
+      "origin": "marisa-trie 1.3.1 native table decoder, validation only; not bundled with the input method.",
+      "notices": [
+        "licenses/table-decoder/LICENSE",
+        "licenses/table-decoder/AUTHORS.rst",
+        "licenses/table-decoder/marisa-trie/COPYING.md",
+        "licenses/table-decoder/marisa-trie/AUTHORS"
+      ],
+      "evidence": [
+        "docs/dlc-sources.md"
+      ],
+      "retained_terms": [
+        "MIT AND (BSD-2-Clause OR LGPL-2.1-or-later)"
       ]
     }
   },
@@ -3325,670 +3392,6 @@
       "references": []
     },
     {
-      "path": "dlc/modules/build-report.json",
-      "kind": "data-or-generated-data",
-      "source_ids": [
-        "project"
-      ],
-      "references": [
-        "docs/dlc-sources.md"
-      ],
-      "license_scope": "Module inputs and derived data retain the declared source licenses; original metadata and generation code use the project licenses."
-    },
-    {
-      "path": "dlc/modules/rymcp_dlc/computer/LICENSE-CC-BY-SA-4.0.txt",
-      "kind": "data-or-generated-data",
-      "source_ids": [
-        "dlc_cedict"
-      ],
-      "references": [
-        "docs/dlc-sources.md"
-      ],
-      "license_scope": "Module inputs and derived data retain the declared source licenses; original metadata and generation code use the project licenses."
-    },
-    {
-      "path": "dlc/modules/rymcp_dlc/computer/NOTICE.txt",
-      "kind": "data-or-generated-data",
-      "source_ids": [
-        "dlc_cedict"
-      ],
-      "references": [
-        "docs/dlc-sources.md"
-      ],
-      "license_scope": "Module inputs and derived data retain the declared source licenses; original metadata and generation code use the project licenses."
-    },
-    {
-      "path": "dlc/modules/rymcp_dlc/computer/SOURCE.json",
-      "kind": "data-or-generated-data",
-      "source_ids": [
-        "dlc_cedict"
-      ],
-      "references": [
-        "docs/dlc-sources.md"
-      ],
-      "license_scope": "Module inputs and derived data retain the declared source licenses; original metadata and generation code use the project licenses."
-    },
-    {
-      "path": "dlc/modules/rymcp_dlc/computer/english.tsv",
-      "kind": "data-or-generated-data",
-      "source_ids": [
-        "dlc_cedict"
-      ],
-      "references": [
-        "docs/dlc-sources.md"
-      ],
-      "license_scope": "Module inputs and derived data retain the declared source licenses; original metadata and generation code use the project licenses."
-    },
-    {
-      "path": "dlc/modules/rymcp_dlc/computer/manifest.tsv",
-      "kind": "data-or-generated-data",
-      "source_ids": [
-        "project"
-      ],
-      "references": [
-        "docs/dlc-sources.md"
-      ],
-      "license_scope": "Module inputs and derived data retain the declared source licenses; original metadata and generation code use the project licenses."
-    },
-    {
-      "path": "dlc/modules/rymcp_dlc/computer/words.dict.yaml",
-      "kind": "data-or-generated-data",
-      "source_ids": [
-        "dlc_cedict"
-      ],
-      "references": [
-        "docs/dlc-sources.md"
-      ],
-      "license_scope": "Module inputs and derived data retain the declared source licenses; original metadata and generation code use the project licenses."
-    },
-    {
-      "path": "dlc/modules/rymcp_dlc/math/LICENSE-CC-BY-SA-4.0.txt",
-      "kind": "data-or-generated-data",
-      "source_ids": [
-        "dlc_cedict"
-      ],
-      "references": [
-        "docs/dlc-sources.md"
-      ],
-      "license_scope": "Module inputs and derived data retain the declared source licenses; original metadata and generation code use the project licenses."
-    },
-    {
-      "path": "dlc/modules/rymcp_dlc/math/NOTICE.txt",
-      "kind": "data-or-generated-data",
-      "source_ids": [
-        "dlc_cedict"
-      ],
-      "references": [
-        "docs/dlc-sources.md"
-      ],
-      "license_scope": "Module inputs and derived data retain the declared source licenses; original metadata and generation code use the project licenses."
-    },
-    {
-      "path": "dlc/modules/rymcp_dlc/math/SOURCE.json",
-      "kind": "data-or-generated-data",
-      "source_ids": [
-        "dlc_cedict"
-      ],
-      "references": [
-        "docs/dlc-sources.md"
-      ],
-      "license_scope": "Module inputs and derived data retain the declared source licenses; original metadata and generation code use the project licenses."
-    },
-    {
-      "path": "dlc/modules/rymcp_dlc/math/english.tsv",
-      "kind": "data-or-generated-data",
-      "source_ids": [
-        "dlc_cedict"
-      ],
-      "references": [
-        "docs/dlc-sources.md"
-      ],
-      "license_scope": "Module inputs and derived data retain the declared source licenses; original metadata and generation code use the project licenses."
-    },
-    {
-      "path": "dlc/modules/rymcp_dlc/math/manifest.tsv",
-      "kind": "data-or-generated-data",
-      "source_ids": [
-        "project"
-      ],
-      "references": [
-        "docs/dlc-sources.md"
-      ],
-      "license_scope": "Module inputs and derived data retain the declared source licenses; original metadata and generation code use the project licenses."
-    },
-    {
-      "path": "dlc/modules/rymcp_dlc/math/words.dict.yaml",
-      "kind": "data-or-generated-data",
-      "source_ids": [
-        "dlc_cedict"
-      ],
-      "references": [
-        "docs/dlc-sources.md"
-      ],
-      "license_scope": "Module inputs and derived data retain the declared source licenses; original metadata and generation code use the project licenses."
-    },
-    {
-      "path": "dlc/modules/rymcp_dlc/physics/LICENSE-CC-BY-SA-4.0.txt",
-      "kind": "data-or-generated-data",
-      "source_ids": [
-        "dlc_cedict"
-      ],
-      "references": [
-        "docs/dlc-sources.md"
-      ],
-      "license_scope": "Module inputs and derived data retain the declared source licenses; original metadata and generation code use the project licenses."
-    },
-    {
-      "path": "dlc/modules/rymcp_dlc/physics/NOTICE.txt",
-      "kind": "data-or-generated-data",
-      "source_ids": [
-        "dlc_cedict"
-      ],
-      "references": [
-        "docs/dlc-sources.md"
-      ],
-      "license_scope": "Module inputs and derived data retain the declared source licenses; original metadata and generation code use the project licenses."
-    },
-    {
-      "path": "dlc/modules/rymcp_dlc/physics/SOURCE.json",
-      "kind": "data-or-generated-data",
-      "source_ids": [
-        "dlc_cedict"
-      ],
-      "references": [
-        "docs/dlc-sources.md"
-      ],
-      "license_scope": "Module inputs and derived data retain the declared source licenses; original metadata and generation code use the project licenses."
-    },
-    {
-      "path": "dlc/modules/rymcp_dlc/physics/english.tsv",
-      "kind": "data-or-generated-data",
-      "source_ids": [
-        "dlc_cedict"
-      ],
-      "references": [
-        "docs/dlc-sources.md"
-      ],
-      "license_scope": "Module inputs and derived data retain the declared source licenses; original metadata and generation code use the project licenses."
-    },
-    {
-      "path": "dlc/modules/rymcp_dlc/physics/manifest.tsv",
-      "kind": "data-or-generated-data",
-      "source_ids": [
-        "project"
-      ],
-      "references": [
-        "docs/dlc-sources.md"
-      ],
-      "license_scope": "Module inputs and derived data retain the declared source licenses; original metadata and generation code use the project licenses."
-    },
-    {
-      "path": "dlc/modules/rymcp_dlc/physics/words.dict.yaml",
-      "kind": "data-or-generated-data",
-      "source_ids": [
-        "dlc_cedict"
-      ],
-      "references": [
-        "docs/dlc-sources.md"
-      ],
-      "license_scope": "Module inputs and derived data retain the declared source licenses; original metadata and generation code use the project licenses."
-    },
-    {
-      "path": "dlc/modules/rymcp_dlc/poetry/LICENSE-CC-BY-SA-4.0.txt",
-      "kind": "data-or-generated-data",
-      "source_ids": [
-        "dlc_poetry",
-        "dlc_cedict"
-      ],
-      "references": [
-        "docs/dlc-sources.md"
-      ],
-      "license_scope": "Module inputs and derived data retain the declared source licenses; original metadata and generation code use the project licenses."
-    },
-    {
-      "path": "dlc/modules/rymcp_dlc/poetry/LICENSE-chinese-poetry-MIT.txt",
-      "kind": "data-or-generated-data",
-      "source_ids": [
-        "dlc_poetry",
-        "dlc_cedict"
-      ],
-      "references": [
-        "docs/dlc-sources.md"
-      ],
-      "license_scope": "Module inputs and derived data retain the declared source licenses; original metadata and generation code use the project licenses."
-    },
-    {
-      "path": "dlc/modules/rymcp_dlc/poetry/NOTICE.txt",
-      "kind": "data-or-generated-data",
-      "source_ids": [
-        "dlc_poetry",
-        "dlc_cedict"
-      ],
-      "references": [
-        "docs/dlc-sources.md"
-      ],
-      "license_scope": "Module inputs and derived data retain the declared source licenses; original metadata and generation code use the project licenses."
-    },
-    {
-      "path": "dlc/modules/rymcp_dlc/poetry/SOURCE.json",
-      "kind": "data-or-generated-data",
-      "source_ids": [
-        "dlc_poetry",
-        "dlc_cedict"
-      ],
-      "references": [
-        "docs/dlc-sources.md"
-      ],
-      "license_scope": "Module inputs and derived data retain the declared source licenses; original metadata and generation code use the project licenses."
-    },
-    {
-      "path": "dlc/modules/rymcp_dlc/poetry/manifest.tsv",
-      "kind": "data-or-generated-data",
-      "source_ids": [
-        "project"
-      ],
-      "references": [
-        "docs/dlc-sources.md"
-      ],
-      "license_scope": "Module inputs and derived data retain the declared source licenses; original metadata and generation code use the project licenses."
-    },
-    {
-      "path": "dlc/modules/rymcp_dlc/poetry/words.dict.yaml",
-      "kind": "data-or-generated-data",
-      "source_ids": [
-        "dlc_poetry",
-        "dlc_cedict"
-      ],
-      "references": [
-        "docs/dlc-sources.md"
-      ],
-      "license_scope": "Module inputs and derived data retain the declared source licenses; original metadata and generation code use the project licenses."
-    },
-    {
-      "path": "dlc/modules/rymcp_dlc/poetry/words_00.dict.yaml",
-      "kind": "data-or-generated-data",
-      "source_ids": [
-        "dlc_poetry",
-        "dlc_cedict"
-      ],
-      "references": [
-        "docs/dlc-sources.md"
-      ],
-      "license_scope": "Module inputs and derived data retain the declared source licenses; original metadata and generation code use the project licenses."
-    },
-    {
-      "path": "dlc/modules/rymcp_dlc/poetry/words_01.dict.yaml",
-      "kind": "data-or-generated-data",
-      "source_ids": [
-        "dlc_poetry",
-        "dlc_cedict"
-      ],
-      "references": [
-        "docs/dlc-sources.md"
-      ],
-      "license_scope": "Module inputs and derived data retain the declared source licenses; original metadata and generation code use the project licenses."
-    },
-    {
-      "path": "dlc/modules/rymcp_dlc/poetry/words_02.dict.yaml",
-      "kind": "data-or-generated-data",
-      "source_ids": [
-        "dlc_poetry",
-        "dlc_cedict"
-      ],
-      "references": [
-        "docs/dlc-sources.md"
-      ],
-      "license_scope": "Module inputs and derived data retain the declared source licenses; original metadata and generation code use the project licenses."
-    },
-    {
-      "path": "dlc/modules/rymcp_dlc/poetry/words_03.dict.yaml",
-      "kind": "data-or-generated-data",
-      "source_ids": [
-        "dlc_poetry",
-        "dlc_cedict"
-      ],
-      "references": [
-        "docs/dlc-sources.md"
-      ],
-      "license_scope": "Module inputs and derived data retain the declared source licenses; original metadata and generation code use the project licenses."
-    },
-    {
-      "path": "dlc/modules/rymcp_dlc/poetry/words_04.dict.yaml",
-      "kind": "data-or-generated-data",
-      "source_ids": [
-        "dlc_poetry",
-        "dlc_cedict"
-      ],
-      "references": [
-        "docs/dlc-sources.md"
-      ],
-      "license_scope": "Module inputs and derived data retain the declared source licenses; original metadata and generation code use the project licenses."
-    },
-    {
-      "path": "dlc/modules/rymcp_dlc/poetry/words_05.dict.yaml",
-      "kind": "data-or-generated-data",
-      "source_ids": [
-        "dlc_poetry",
-        "dlc_cedict"
-      ],
-      "references": [
-        "docs/dlc-sources.md"
-      ],
-      "license_scope": "Module inputs and derived data retain the declared source licenses; original metadata and generation code use the project licenses."
-    },
-    {
-      "path": "dlc/modules/rymcp_dlc/poetry/words_06.dict.yaml",
-      "kind": "data-or-generated-data",
-      "source_ids": [
-        "dlc_poetry",
-        "dlc_cedict"
-      ],
-      "references": [
-        "docs/dlc-sources.md"
-      ],
-      "license_scope": "Module inputs and derived data retain the declared source licenses; original metadata and generation code use the project licenses."
-    },
-    {
-      "path": "dlc/modules/rymcp_dlc/poetry/words_07.dict.yaml",
-      "kind": "data-or-generated-data",
-      "source_ids": [
-        "dlc_poetry",
-        "dlc_cedict"
-      ],
-      "references": [
-        "docs/dlc-sources.md"
-      ],
-      "license_scope": "Module inputs and derived data retain the declared source licenses; original metadata and generation code use the project licenses."
-    },
-    {
-      "path": "dlc/modules/rymcp_dlc/poetry/words_08.dict.yaml",
-      "kind": "data-or-generated-data",
-      "source_ids": [
-        "dlc_poetry",
-        "dlc_cedict"
-      ],
-      "references": [
-        "docs/dlc-sources.md"
-      ],
-      "license_scope": "Module inputs and derived data retain the declared source licenses; original metadata and generation code use the project licenses."
-    },
-    {
-      "path": "dlc/modules/rymcp_dlc/poetry/words_09.dict.yaml",
-      "kind": "data-or-generated-data",
-      "source_ids": [
-        "dlc_poetry",
-        "dlc_cedict"
-      ],
-      "references": [
-        "docs/dlc-sources.md"
-      ],
-      "license_scope": "Module inputs and derived data retain the declared source licenses; original metadata and generation code use the project licenses."
-    },
-    {
-      "path": "dlc/modules/rymcp_dlc/poetry/words_10.dict.yaml",
-      "kind": "data-or-generated-data",
-      "source_ids": [
-        "dlc_poetry",
-        "dlc_cedict"
-      ],
-      "references": [
-        "docs/dlc-sources.md"
-      ],
-      "license_scope": "Module inputs and derived data retain the declared source licenses; original metadata and generation code use the project licenses."
-    },
-    {
-      "path": "dlc/modules/rymcp_dlc/poetry/words_11.dict.yaml",
-      "kind": "data-or-generated-data",
-      "source_ids": [
-        "dlc_poetry",
-        "dlc_cedict"
-      ],
-      "references": [
-        "docs/dlc-sources.md"
-      ],
-      "license_scope": "Module inputs and derived data retain the declared source licenses; original metadata and generation code use the project licenses."
-    },
-    {
-      "path": "dlc/modules/rymcp_dlc/poetry/words_12.dict.yaml",
-      "kind": "data-or-generated-data",
-      "source_ids": [
-        "dlc_poetry",
-        "dlc_cedict"
-      ],
-      "references": [
-        "docs/dlc-sources.md"
-      ],
-      "license_scope": "Module inputs and derived data retain the declared source licenses; original metadata and generation code use the project licenses."
-    },
-    {
-      "path": "dlc/modules/rymcp_dlc/poetry/words_13.dict.yaml",
-      "kind": "data-or-generated-data",
-      "source_ids": [
-        "dlc_poetry",
-        "dlc_cedict"
-      ],
-      "references": [
-        "docs/dlc-sources.md"
-      ],
-      "license_scope": "Module inputs and derived data retain the declared source licenses; original metadata and generation code use the project licenses."
-    },
-    {
-      "path": "dlc/modules/rymcp_dlc/poetry/words_14.dict.yaml",
-      "kind": "data-or-generated-data",
-      "source_ids": [
-        "dlc_poetry",
-        "dlc_cedict"
-      ],
-      "references": [
-        "docs/dlc-sources.md"
-      ],
-      "license_scope": "Module inputs and derived data retain the declared source licenses; original metadata and generation code use the project licenses."
-    },
-    {
-      "path": "dlc/modules/rymcp_dlc/poetry/words_15.dict.yaml",
-      "kind": "data-or-generated-data",
-      "source_ids": [
-        "dlc_poetry",
-        "dlc_cedict"
-      ],
-      "references": [
-        "docs/dlc-sources.md"
-      ],
-      "license_scope": "Module inputs and derived data retain the declared source licenses; original metadata and generation code use the project licenses."
-    },
-    {
-      "path": "dlc/modules/rymcp_dlc/poetry/words_16.dict.yaml",
-      "kind": "data-or-generated-data",
-      "source_ids": [
-        "dlc_poetry",
-        "dlc_cedict"
-      ],
-      "references": [
-        "docs/dlc-sources.md"
-      ],
-      "license_scope": "Module inputs and derived data retain the declared source licenses; original metadata and generation code use the project licenses."
-    },
-    {
-      "path": "dlc/modules/rymcp_dlc/poetry/words_17.dict.yaml",
-      "kind": "data-or-generated-data",
-      "source_ids": [
-        "dlc_poetry",
-        "dlc_cedict"
-      ],
-      "references": [
-        "docs/dlc-sources.md"
-      ],
-      "license_scope": "Module inputs and derived data retain the declared source licenses; original metadata and generation code use the project licenses."
-    },
-    {
-      "path": "dlc/modules/rymcp_dlc/poetry/words_18.dict.yaml",
-      "kind": "data-or-generated-data",
-      "source_ids": [
-        "dlc_poetry",
-        "dlc_cedict"
-      ],
-      "references": [
-        "docs/dlc-sources.md"
-      ],
-      "license_scope": "Module inputs and derived data retain the declared source licenses; original metadata and generation code use the project licenses."
-    },
-    {
-      "path": "dlc/modules/rymcp_dlc/poetry/words_19.dict.yaml",
-      "kind": "data-or-generated-data",
-      "source_ids": [
-        "dlc_poetry",
-        "dlc_cedict"
-      ],
-      "references": [
-        "docs/dlc-sources.md"
-      ],
-      "license_scope": "Module inputs and derived data retain the declared source licenses; original metadata and generation code use the project licenses."
-    },
-    {
-      "path": "dlc/modules/rymcp_dlc/poetry/words_20.dict.yaml",
-      "kind": "data-or-generated-data",
-      "source_ids": [
-        "dlc_poetry",
-        "dlc_cedict"
-      ],
-      "references": [
-        "docs/dlc-sources.md"
-      ],
-      "license_scope": "Module inputs and derived data retain the declared source licenses; original metadata and generation code use the project licenses."
-    },
-    {
-      "path": "dlc/modules/rymcp_dlc/poetry/words_21.dict.yaml",
-      "kind": "data-or-generated-data",
-      "source_ids": [
-        "dlc_poetry",
-        "dlc_cedict"
-      ],
-      "references": [
-        "docs/dlc-sources.md"
-      ],
-      "license_scope": "Module inputs and derived data retain the declared source licenses; original metadata and generation code use the project licenses."
-    },
-    {
-      "path": "dlc/modules/rymcp_dlc/poetry/words_22.dict.yaml",
-      "kind": "data-or-generated-data",
-      "source_ids": [
-        "dlc_poetry",
-        "dlc_cedict"
-      ],
-      "references": [
-        "docs/dlc-sources.md"
-      ],
-      "license_scope": "Module inputs and derived data retain the declared source licenses; original metadata and generation code use the project licenses."
-    },
-    {
-      "path": "dlc/modules/rymcp_dlc/poetry/words_23.dict.yaml",
-      "kind": "data-or-generated-data",
-      "source_ids": [
-        "dlc_poetry",
-        "dlc_cedict"
-      ],
-      "references": [
-        "docs/dlc-sources.md"
-      ],
-      "license_scope": "Module inputs and derived data retain the declared source licenses; original metadata and generation code use the project licenses."
-    },
-    {
-      "path": "dlc/modules/rymcp_dlc/poetry/words_24.dict.yaml",
-      "kind": "data-or-generated-data",
-      "source_ids": [
-        "dlc_poetry",
-        "dlc_cedict"
-      ],
-      "references": [
-        "docs/dlc-sources.md"
-      ],
-      "license_scope": "Module inputs and derived data retain the declared source licenses; original metadata and generation code use the project licenses."
-    },
-    {
-      "path": "dlc/modules/rymcp_dlc/poetry/words_25.dict.yaml",
-      "kind": "data-or-generated-data",
-      "source_ids": [
-        "dlc_poetry",
-        "dlc_cedict"
-      ],
-      "references": [
-        "docs/dlc-sources.md"
-      ],
-      "license_scope": "Module inputs and derived data retain the declared source licenses; original metadata and generation code use the project licenses."
-    },
-    {
-      "path": "dlc/modules/rymcp_dlc/poetry/words_26.dict.yaml",
-      "kind": "data-or-generated-data",
-      "source_ids": [
-        "dlc_poetry",
-        "dlc_cedict"
-      ],
-      "references": [
-        "docs/dlc-sources.md"
-      ],
-      "license_scope": "Module inputs and derived data retain the declared source licenses; original metadata and generation code use the project licenses."
-    },
-    {
-      "path": "dlc/modules/rymcp_dlc/poetry/words_27.dict.yaml",
-      "kind": "data-or-generated-data",
-      "source_ids": [
-        "dlc_poetry",
-        "dlc_cedict"
-      ],
-      "references": [
-        "docs/dlc-sources.md"
-      ],
-      "license_scope": "Module inputs and derived data retain the declared source licenses; original metadata and generation code use the project licenses."
-    },
-    {
-      "path": "dlc/modules/rymcp_dlc/poetry/words_28.dict.yaml",
-      "kind": "data-or-generated-data",
-      "source_ids": [
-        "dlc_poetry",
-        "dlc_cedict"
-      ],
-      "references": [
-        "docs/dlc-sources.md"
-      ],
-      "license_scope": "Module inputs and derived data retain the declared source licenses; original metadata and generation code use the project licenses."
-    },
-    {
-      "path": "dlc/modules/rymcp_dlc/poetry/words_29.dict.yaml",
-      "kind": "data-or-generated-data",
-      "source_ids": [
-        "dlc_poetry",
-        "dlc_cedict"
-      ],
-      "references": [
-        "docs/dlc-sources.md"
-      ],
-      "license_scope": "Module inputs and derived data retain the declared source licenses; original metadata and generation code use the project licenses."
-    },
-    {
-      "path": "dlc/modules/rymcp_dlc/poetry/words_30.dict.yaml",
-      "kind": "data-or-generated-data",
-      "source_ids": [
-        "dlc_poetry",
-        "dlc_cedict"
-      ],
-      "references": [
-        "docs/dlc-sources.md"
-      ],
-      "license_scope": "Module inputs and derived data retain the declared source licenses; original metadata and generation code use the project licenses."
-    },
-    {
-      "path": "dlc/modules/rymcp_dlc/poetry/words_31.dict.yaml",
-      "kind": "data-or-generated-data",
-      "source_ids": [
-        "dlc_poetry",
-        "dlc_cedict"
-      ],
-      "references": [
-        "docs/dlc-sources.md"
-      ],
-      "license_scope": "Module inputs and derived data retain the declared source licenses; original metadata and generation code use the project licenses."
-    },
-    {
       "path": "dlc/sources/CC-BY-SA-4.0.txt",
       "kind": "retained-upstream-notice",
       "notice_record": "dlc/sources/CC-BY-SA-4.0.txt",
@@ -4008,6 +3411,14 @@
       "license_scope": "Module inputs and derived data retain the declared source licenses; original metadata and generation code use the project licenses."
     },
     {
+      "path": "dlc/sources/catalog-source-lock.json",
+      "kind": "program-or-configuration",
+      "project_license": "GPL-3.0-only",
+      "references": [
+        "LICENSE"
+      ]
+    },
+    {
       "path": "dlc/sources/cedict_1_0_ts_utf-8_mdbg.txt.gz",
       "kind": "data-or-generated-data",
       "source_ids": [
@@ -4025,6 +3436,290 @@
       "references": [
         "dlc/sources/chinese-poetry-MIT-LICENSE.txt"
       ]
+    },
+    {
+      "path": "dlc/sources/poetry/LICENSE",
+      "kind": "retained-upstream-notice",
+      "notice_record": "dlc/sources/poetry/LICENSE",
+      "references": [
+        "dlc/sources/poetry/LICENSE"
+      ]
+    },
+    {
+      "path": "dlc/sources/poetry/companion-anthologies.zip",
+      "kind": "fixed-public-source-snapshot-or-metadata",
+      "source_ids": [
+        "dlc_poetry"
+      ],
+      "references": [
+        "docs/dlc-sources.md"
+      ],
+      "license_scope": "Original source data retains the declared source terms; original structured metadata uses GPL-3.0-only."
+    },
+    {
+      "path": "dlc/sources/poetry/song-ci.zip",
+      "kind": "fixed-public-source-snapshot-or-metadata",
+      "source_ids": [
+        "dlc_poetry"
+      ],
+      "references": [
+        "docs/dlc-sources.md"
+      ],
+      "license_scope": "Original source data retains the declared source terms; original structured metadata uses GPL-3.0-only."
+    },
+    {
+      "path": "dlc/sources/poetry/song-poems.zip",
+      "kind": "fixed-public-source-snapshot-or-metadata",
+      "source_ids": [
+        "dlc_poetry"
+      ],
+      "references": [
+        "docs/dlc-sources.md"
+      ],
+      "license_scope": "Original source data retains the declared source terms; original structured metadata uses GPL-3.0-only."
+    },
+    {
+      "path": "dlc/sources/poetry/source-manifest.json",
+      "kind": "fixed-public-source-snapshot-or-metadata",
+      "source_ids": [
+        "dlc_poetry"
+      ],
+      "references": [
+        "docs/dlc-sources.md"
+      ],
+      "license_scope": "Original source data retains the declared source terms; original structured metadata uses GPL-3.0-only."
+    },
+    {
+      "path": "dlc/sources/poetry/tang-poems.zip",
+      "kind": "fixed-public-source-snapshot-or-metadata",
+      "source_ids": [
+        "dlc_poetry"
+      ],
+      "references": [
+        "docs/dlc-sources.md"
+      ],
+      "license_scope": "Original source data retains the declared source terms; original structured metadata uses GPL-3.0-only."
+    },
+    {
+      "path": "dlc/sources/poetry/variant-source-manifest.json",
+      "kind": "fixed-public-source-snapshot-or-metadata",
+      "source_ids": [
+        "dlc_poetry"
+      ],
+      "references": [
+        "docs/dlc-sources.md"
+      ],
+      "license_scope": "Original source data retains the declared source terms; original structured metadata uses GPL-3.0-only."
+    },
+    {
+      "path": "dlc/sources/readings/UNICODE-LICENSE-V3.txt",
+      "kind": "retained-upstream-notice",
+      "notice_record": "dlc/sources/readings/UNICODE-LICENSE-V3.txt",
+      "references": [
+        "dlc/sources/readings/UNICODE-LICENSE-V3.txt"
+      ]
+    },
+    {
+      "path": "dlc/sources/readings/Unihan-17.0.0.zip",
+      "kind": "fixed-public-source-snapshot-or-metadata",
+      "source_ids": [
+        "dlc_unihan"
+      ],
+      "references": [
+        "docs/dlc-sources.md"
+      ],
+      "license_scope": "Original source data retains the declared source terms; original structured metadata uses GPL-3.0-only."
+    },
+    {
+      "path": "dlc/sources/readings/opencc/AUTHORS",
+      "kind": "retained-upstream-notice",
+      "notice_record": "dlc/sources/readings/opencc/AUTHORS",
+      "references": [
+        "dlc/sources/readings/opencc/AUTHORS"
+      ]
+    },
+    {
+      "path": "dlc/sources/readings/opencc/LICENSE",
+      "kind": "retained-upstream-notice",
+      "notice_record": "dlc/sources/readings/opencc/LICENSE",
+      "references": [
+        "dlc/sources/readings/opencc/LICENSE"
+      ]
+    },
+    {
+      "path": "dlc/sources/readings/opencc/STCharacters.txt",
+      "kind": "fixed-public-source-snapshot-or-metadata",
+      "source_ids": [
+        "dlc_opencc"
+      ],
+      "references": [
+        "docs/dlc-sources.md"
+      ],
+      "license_scope": "Original source data retains the declared source terms; original structured metadata uses GPL-3.0-only."
+    },
+    {
+      "path": "dlc/sources/readings/opencc/STPhrases.txt",
+      "kind": "fixed-public-source-snapshot-or-metadata",
+      "source_ids": [
+        "dlc_opencc"
+      ],
+      "references": [
+        "docs/dlc-sources.md"
+      ],
+      "license_scope": "Original source data retains the declared source terms; original structured metadata uses GPL-3.0-only."
+    },
+    {
+      "path": "dlc/sources/readings/opencc/TSCharacters.txt",
+      "kind": "fixed-public-source-snapshot-or-metadata",
+      "source_ids": [
+        "dlc_opencc"
+      ],
+      "references": [
+        "docs/dlc-sources.md"
+      ],
+      "license_scope": "Original source data retains the declared source terms; original structured metadata uses GPL-3.0-only."
+    },
+    {
+      "path": "dlc/sources/readings/opencc/TSPhrases.txt",
+      "kind": "fixed-public-source-snapshot-or-metadata",
+      "source_ids": [
+        "dlc_opencc"
+      ],
+      "references": [
+        "docs/dlc-sources.md"
+      ],
+      "license_scope": "Original source data retains the declared source terms; original structured metadata uses GPL-3.0-only."
+    },
+    {
+      "path": "dlc/sources/readings/opencc/s2t.json",
+      "kind": "fixed-public-source-snapshot-or-metadata",
+      "source_ids": [
+        "dlc_opencc"
+      ],
+      "references": [
+        "docs/dlc-sources.md"
+      ],
+      "license_scope": "Original source data retains the declared source terms; original structured metadata uses GPL-3.0-only."
+    },
+    {
+      "path": "dlc/sources/readings/opencc/source.json",
+      "kind": "fixed-public-source-snapshot-or-metadata",
+      "source_ids": [
+        "dlc_opencc"
+      ],
+      "references": [
+        "docs/dlc-sources.md"
+      ],
+      "license_scope": "Original source data retains the declared source terms; original structured metadata uses GPL-3.0-only."
+    },
+    {
+      "path": "dlc/sources/readings/opencc/t2s.json",
+      "kind": "fixed-public-source-snapshot-or-metadata",
+      "source_ids": [
+        "dlc_opencc"
+      ],
+      "references": [
+        "docs/dlc-sources.md"
+      ],
+      "license_scope": "Original source data retains the declared source terms; original structured metadata uses GPL-3.0-only."
+    },
+    {
+      "path": "dlc/sources/readings/pypinyin-0.55.0-py2.py3-none-any.whl",
+      "kind": "fixed-public-source-snapshot-or-metadata",
+      "source_ids": [
+        "dlc_pypinyin"
+      ],
+      "references": [
+        "docs/dlc-sources.md"
+      ],
+      "license_scope": "Original source data retains the declared source terms; original structured metadata uses GPL-3.0-only."
+    },
+    {
+      "path": "dlc/sources/readings/pypinyin-LICENSE.txt",
+      "kind": "retained-upstream-notice",
+      "notice_record": "dlc/sources/readings/pypinyin-LICENSE.txt",
+      "references": [
+        "dlc/sources/readings/pypinyin-LICENSE.txt"
+      ]
+    },
+    {
+      "path": "dlc/sources/readings/pypinyin-source.json",
+      "kind": "fixed-public-source-snapshot-or-metadata",
+      "source_ids": [
+        "dlc_pypinyin"
+      ],
+      "references": [
+        "docs/dlc-sources.md"
+      ],
+      "license_scope": "Original source data retains the declared source terms; original structured metadata uses GPL-3.0-only."
+    },
+    {
+      "path": "dlc/sources/readings/unihan-source.json",
+      "kind": "program-or-configuration",
+      "project_license": "GPL-3.0-only",
+      "references": [
+        "LICENSE"
+      ]
+    },
+    {
+      "path": "dlc/sources/science/CC-BY-SA-4.0.txt",
+      "kind": "retained-upstream-notice",
+      "notice_record": "dlc/sources/science/CC-BY-SA-4.0.txt",
+      "references": [
+        "dlc/sources/science/CC-BY-SA-4.0.txt"
+      ]
+    },
+    {
+      "path": "dlc/sources/science/CC0-1.0-legalcode.txt",
+      "kind": "retained-upstream-notice",
+      "notice_record": "dlc/sources/science/CC0-1.0-legalcode.txt",
+      "references": [
+        "dlc/sources/science/CC0-1.0-legalcode.txt"
+      ]
+    },
+    {
+      "path": "dlc/sources/science/SCIENCE-NOTICE.txt",
+      "kind": "fixed-public-source-snapshot-or-metadata",
+      "source_ids": [
+        "dlc_science"
+      ],
+      "references": [
+        "docs/dlc-sources.md"
+      ],
+      "license_scope": "Original source data retains the declared source terms; original structured metadata uses GPL-3.0-only."
+    },
+    {
+      "path": "dlc/sources/science/science-api-responses-001.zip",
+      "kind": "fixed-public-source-snapshot-or-metadata",
+      "source_ids": [
+        "dlc_science"
+      ],
+      "references": [
+        "docs/dlc-sources.md"
+      ],
+      "license_scope": "Original source data retains the declared source terms; original structured metadata uses GPL-3.0-only."
+    },
+    {
+      "path": "dlc/sources/science/science-labels-snapshot.json.gz",
+      "kind": "fixed-public-source-snapshot-or-metadata",
+      "source_ids": [
+        "dlc_science"
+      ],
+      "references": [
+        "docs/dlc-sources.md"
+      ],
+      "license_scope": "Original source data retains the declared source terms; original structured metadata uses GPL-3.0-only."
+    },
+    {
+      "path": "dlc/sources/science/science-source-manifest.json",
+      "kind": "fixed-public-source-snapshot-or-metadata",
+      "source_ids": [
+        "dlc_science"
+      ],
+      "references": [
+        "docs/dlc-sources.md"
+      ],
+      "license_scope": "Original source data retains the declared source terms; original structured metadata uses GPL-3.0-only."
     },
     {
       "path": "dlc/sources/song-300.json",
@@ -4833,6 +4528,38 @@
       ]
     },
     {
+      "path": "licenses/table-decoder/AUTHORS.rst",
+      "kind": "retained-upstream-notice",
+      "notice_record": "licenses/table-decoder/AUTHORS.rst",
+      "references": [
+        "licenses/table-decoder/AUTHORS.rst"
+      ]
+    },
+    {
+      "path": "licenses/table-decoder/LICENSE",
+      "kind": "retained-upstream-notice",
+      "notice_record": "licenses/table-decoder/LICENSE",
+      "references": [
+        "licenses/table-decoder/LICENSE"
+      ]
+    },
+    {
+      "path": "licenses/table-decoder/marisa-trie/AUTHORS",
+      "kind": "retained-upstream-notice",
+      "notice_record": "licenses/table-decoder/marisa-trie/AUTHORS",
+      "references": [
+        "licenses/table-decoder/marisa-trie/AUTHORS"
+      ]
+    },
+    {
+      "path": "licenses/table-decoder/marisa-trie/COPYING.md",
+      "kind": "retained-upstream-notice",
+      "notice_record": "licenses/table-decoder/marisa-trie/COPYING.md",
+      "references": [
+        "licenses/table-decoder/marisa-trie/COPYING.md"
+      ]
+    },
+    {
       "path": "licenses/third-party-source-manifest.json",
       "kind": "project-metadata",
       "project_license": "GPL-3.0-only",
@@ -5308,6 +5035,38 @@
       ]
     },
     {
+      "path": "scripts/data/dlc_poetry.py",
+      "kind": "program-or-configuration",
+      "project_license": "GPL-3.0-only",
+      "references": [
+        "LICENSE"
+      ]
+    },
+    {
+      "path": "scripts/data/dlc_readings.py",
+      "kind": "program-or-configuration",
+      "project_license": "GPL-3.0-only",
+      "references": [
+        "LICENSE"
+      ]
+    },
+    {
+      "path": "scripts/data/dlc_science.py",
+      "kind": "program-or-configuration",
+      "project_license": "GPL-3.0-only",
+      "references": [
+        "LICENSE"
+      ]
+    },
+    {
+      "path": "scripts/data/poetry_cleaner.py",
+      "kind": "program-or-configuration",
+      "project_license": "GPL-3.0-only",
+      "references": [
+        "LICENSE"
+      ]
+    },
+    {
       "path": "scripts/data/rebuild_base.py",
       "kind": "program-or-configuration",
       "project_license": "GPL-3.0-only",
@@ -5572,6 +5331,22 @@
       ]
     },
     {
+      "path": "tests/data/test_dlc_readings.py",
+      "kind": "program-or-configuration",
+      "project_license": "GPL-3.0-only",
+      "references": [
+        "LICENSE"
+      ]
+    },
+    {
+      "path": "tests/data/test_poetry_cleaner.py",
+      "kind": "program-or-configuration",
+      "project_license": "GPL-3.0-only",
+      "references": [
+        "LICENSE"
+      ]
+    },
+    {
       "path": "tests/schemes/Check-ChineseDlcTables.py",
       "kind": "program-or-configuration",
       "project_license": "GPL-3.0-only",
@@ -5662,6 +5437,14 @@
       "path": "tests/schemes/Test-OfficialPersistence.ps1"
     },
     {
+      "path": "tests/schemes/Test-ShardedDlc.ps1",
+      "kind": "program-or-configuration",
+      "project_license": "GPL-3.0-only",
+      "references": [
+        "LICENSE"
+      ]
+    },
+    {
       "path": "tests/schemes/exact_syllable/observer.lua",
       "kind": "program-or-configuration",
       "project_license": "GPL-3.0-only",
@@ -5679,6 +5462,14 @@
     },
     {
       "path": "tests/schemes/exact_syllable/unit_runner.lua",
+      "kind": "program-or-configuration",
+      "project_license": "GPL-3.0-only",
+      "references": [
+        "LICENSE"
+      ]
+    },
+    {
+      "path": "tests/schemes/fixtures/sharded_dlc_test.lua",
       "kind": "program-or-configuration",
       "project_license": "GPL-3.0-only",
       "references": [

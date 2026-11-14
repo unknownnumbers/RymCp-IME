@@ -14,3 +14,13 @@ The machine-readable [file index](licenses/file-licenses.json) covers every sour
 - Native frontend and engine sources retain upstream licensing and complete patches. See [native components](docs/sources/native-components.md).
 
 Generator licensing does not replace the licensing of source data or generated data. Fixed source conversion and original corpus reconstruction are different scopes, recorded in the source documentation.
+
+## Optional vocabulary sources
+
+The complete Tang poem, Song poem and Song ci snapshots and companion anthologies retain the original chinese-poetry MIT notice. Generated catalogs and reading annotations use CC BY-SA 4.0.
+
+The build-time reading inputs are pypinyin 0.55.0 under MIT, fixed OpenCC dictionaries under Apache-2.0, and Unicode Unihan 17.0.0 under Unicode-3.0. Original notices and checksums accompany the source snapshots.
+
+The mathematics and physics modules combine CC-CEDICT with broad public subject classifications from Wikipedia contributors under CC BY-SA 4.0 and labels and aliases from Wikidata contributors under CC0. Exact source revisions and original API responses are retained. Article bodies are not included.
+
+The optional native-table validation dependency marisa-trie is used in CI and is not bundled with the input method. Its Python wrapper uses MIT and its bundled libmarisa retains its original BSD 2-clause/LGPL terms.

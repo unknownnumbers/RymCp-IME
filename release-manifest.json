@@ -19,8 +19,8 @@
     },
     {
       "path": ".github/workflows/schemes.yml",
-      "bytes": 5459,
-      "sha256": "5d2dafc177a58c5bf57bebc68e4ec81863a3d1b00ec07c650afb6ebbfb6c3a74"
+      "bytes": 5761,
+      "sha256": "2ba36af6dae9cfd699bc9174bbf95f3558be2fd29209d3c8658c58f115ddd99e"
     },
     {
       "path": ".github/workflows/verify.yml",
@@ -29,8 +29,8 @@
     },
     {
       "path": ".gitignore",
-      "bytes": 89,
-      "sha256": "72beab7fe7bc701eeea96ab90aee8dd537641812187b937a99ff4f43eed13f72"
+      "bytes": 104,
+      "sha256": "04891a53d502fe4bf9913136031263736a3da40ea70c16cec238e8e402119113"
     },
     {
       "path": "LICENSE",
@@ -39,23 +39,23 @@
     },
     {
       "path": "README.en.md",
-      "bytes": 2599,
-      "sha256": "eab5e4dc87d9e1552cdbbdd62295887c4a97be25c1cd1f6d2bedfd5028c80c23"
+      "bytes": 3089,
+      "sha256": "806ef4a6c169c3acff9737a959f4d3c7d7878c810c20badaf51deacc7871dac2"
     },
     {
       "path": "README.md",
-      "bytes": 2133,
-      "sha256": "270025195f34b76386e56b495bd22a3aa06cea0beb226edb19d0981b2e1b8999"
+      "bytes": 2538,
+      "sha256": "431b0f0ce910970641c83933864fabe1b9e63b4d2f6b7f82b508852f36ea6dbb"
     },
     {
       "path": "README.zh-SC.md",
-      "bytes": 2142,
-      "sha256": "6ed3a9aaa001855390ef64f0c46615329f24109f5a8f7aa202ff87bd40b3bd63"
+      "bytes": 2550,
+      "sha256": "ddf1a263916d43b564674a6d82fa44d4e576e038b7219d1d633e57a8aac3c8c2"
     },
     {
       "path": "THIRD_PARTY_NOTICES.md",
-      "bytes": 1855,
-      "sha256": "8c9b9a7c9b0f2b67820ca8595c7ab8399ed85b7f4e81ae815e01694cf431bf38"
+      "bytes": 2811,
+      "sha256": "5892125606905bc190b28096cc49b4e19ba8736261e5d65b8010fb91253c9dc7"
     },
     {
       "path": "TODO.md",
@@ -189,8 +189,8 @@
     },
     {
       "path": "config/official-weasel/lua/cn_dlc.lua",
-      "bytes": 984,
-      "sha256": "c37d6a1d53e783d07a6d00e64c2a5358a82a6b217ee3b3477653d56c50922638"
+      "bytes": 1044,
+      "sha256": "541b829dc5234d9d5d27f0be426cdaa9bc84b051afa62d115c3ebcd05166f37a"
     },
     {
       "path": "config/official-weasel/lua/cn_exact_processor.lua",
@@ -249,8 +249,8 @@
     },
     {
       "path": "config/official-weasel/lua/cn_translator.lua",
-      "bytes": 31725,
-      "sha256": "ec1a8cf8d325fd7e0fdd834d62fd963f0d934f576b70504097097b9d6bfbe93c"
+      "bytes": 31833,
+      "sha256": "40fea28e2a6468c9c10011cdf8632cd767767ccf7e8db7c5af5c2362ff888927"
     },
     {
       "path": "config/official-weasel/lua/draft_limit.lua",
@@ -264,8 +264,8 @@
     },
     {
       "path": "config/official-weasel/lua/en_dlc.lua",
-      "bytes": 2279,
-      "sha256": "b0e50476b40a3340345d69fba63119441e1d53c264f245440875afa5be9cd62d"
+      "bytes": 2339,
+      "sha256": "601348fcfa0e44986e3302be29f87c113d78308b482a1085071c16553c2b4164"
     },
     {
       "path": "config/official-weasel/lua/en_dlc_format.lua",
@@ -279,8 +279,8 @@
     },
     {
       "path": "config/official-weasel/lua/en_indexed_translator.lua",
-      "bytes": 11547,
-      "sha256": "f5532f551d9ed30caa1069b76770cef1a22bcff50a74a55fc430e851cb4cbf97"
+      "bytes": 11559,
+      "sha256": "081951ed41e903a95adc6135badf69444881e6dafca52e9e627049c2ca48dbdf"
     },
     {
       "path": "config/official-weasel/lua/en_processor.lua",
@@ -299,8 +299,8 @@
     },
     {
       "path": "config/official-weasel/lua/rymcp_dlc.lua",
-      "bytes": 7802,
-      "sha256": "f138e2b2363a9863ad0f4d221dde377a0a18d69b91c6de65a4422cab4da128ea"
+      "bytes": 16511,
+      "sha256": "71592167ae7731c2a64fdc527599d7418396b744d129c90659da606d33832d3f"
     },
     {
       "path": "config/official-weasel/lua/select_hanzi.lua",
@@ -349,8 +349,8 @@
     },
     {
       "path": "config/official-weasel/profile-manifest.json",
-      "bytes": 15765,
-      "sha256": "147e422f2226c8cdead4cf3b2dc598dadb1234ba82df7fce41de100a9e06fb93"
+      "bytes": 15767,
+      "sha256": "137410be83153c6230c3b492d3f75890a7515181d97e5a69fa0d2b3b0d8e03a0"
     },
     {
       "path": "config/official-weasel/rymcp_dlc_computer.dict.yaml",
@@ -564,8 +564,8 @@
     },
     {
       "path": "config/pc/config-source-manifest.json",
-      "bytes": 27311,
-      "sha256": "a391ee9814c80163c86fdd47b3dcb61eab3c175273a7be823a2e8a5f3899fb01"
+      "bytes": 27313,
+      "sha256": "9be83c696654b11b10ce4217f8839f6b98436b05a8911b49d53e8e6795471155"
     },
     {
       "path": "config/pc/default.custom.yaml",
@@ -839,8 +839,8 @@
     },
     {
       "path": "config/pc/lua/cn_dlc.lua",
-      "bytes": 984,
-      "sha256": "c37d6a1d53e783d07a6d00e64c2a5358a82a6b217ee3b3477653d56c50922638"
+      "bytes": 1044,
+      "sha256": "541b829dc5234d9d5d27f0be426cdaa9bc84b051afa62d115c3ebcd05166f37a"
     },
     {
       "path": "config/pc/lua/cn_exact_processor.lua",
@@ -899,8 +899,8 @@
     },
     {
       "path": "config/pc/lua/cn_translator.lua",
-      "bytes": 32419,
-      "sha256": "ba660bb990dc97db0f45c978640502846a2b630cd1b6f81a61f281c4982260fd"
+      "bytes": 32529,
+      "sha256": "b6f219123cd9b24d7becbc955cceda20dbc21b51c05a21ec0d33a27185fdfa1e"
     },
     {
       "path": "config/pc/lua/draft_limit.lua",
@@ -909,8 +909,8 @@
     },
     {
       "path": "config/pc/lua/en_dlc.lua",
-      "bytes": 2279,
-      "sha256": "b0e50476b40a3340345d69fba63119441e1d53c264f245440875afa5be9cd62d"
+      "bytes": 2339,
+      "sha256": "601348fcfa0e44986e3302be29f87c113d78308b482a1085071c16553c2b4164"
     },
     {
       "path": "config/pc/lua/en_dlc_format.lua",
@@ -924,8 +924,8 @@
     },
     {
       "path": "config/pc/lua/en_indexed_translator.lua",
-      "bytes": 11587,
-      "sha256": "3ac28397fd735b16f67d560c0a811ea9e49940bad00972ba3c8225f5d18143ac"
+      "bytes": 11599,
+      "sha256": "c1e05ed892faf03675c145035e1e2dd4c4239b8609be5de3a1945513e2441366"
     },
     {
       "path": "config/pc/lua/en_processor.lua",
@@ -1029,8 +1029,8 @@
     },
     {
       "path": "config/pc/lua/rymcp_dlc.lua",
-      "bytes": 7802,
-      "sha256": "f138e2b2363a9863ad0f4d221dde377a0a18d69b91c6de65a4422cab4da128ea"
+      "bytes": 16511,
+      "sha256": "71592167ae7731c2a64fdc527599d7418396b744d129c90659da606d33832d3f"
     },
     {
       "path": "config/pc/lua/scheme_data.lua",
@@ -1403,291 +1403,6 @@
       "sha256": "0488ebd6688f900a39200f2b794f2f99bcbf1e8fc27280ae4a2324b08b1559c1"
     },
     {
-      "path": "dlc/modules/build-report.json",
-      "bytes": 3521,
-      "sha256": "f2117c11e2811374b5f57eeac1549be9c5e324be2f415109d637b02f9d01c959"
-    },
-    {
-      "path": "dlc/modules/rymcp_dlc/computer/LICENSE-CC-BY-SA-4.0.txt",
-      "bytes": 20138,
-      "sha256": "28a9529c7d0bb4dc51f4bf5c116a3d16ef247a052f7591466768ddf563fd1cf5"
-    },
-    {
-      "path": "dlc/modules/rymcp_dlc/computer/NOTICE.txt",
-      "bytes": 407,
-      "sha256": "ca4329fbf5a1d3c9b17c343efafb6cb85f45e0105bcfe2416f0a2d7dbecf6e3f"
-    },
-    {
-      "path": "dlc/modules/rymcp_dlc/computer/SOURCE.json",
-      "bytes": 1094,
-      "sha256": "b95765ea66a7b26934def83dd95cc91f176ada2082e3a31c30be77077e347932"
-    },
-    {
-      "path": "dlc/modules/rymcp_dlc/computer/english.tsv",
-      "bytes": 14376,
-      "sha256": "d46baf6af479e48e4c2621554c2ef926a40e5780dfef50ba04c99bfa35ebcb57"
-    },
-    {
-      "path": "dlc/modules/rymcp_dlc/computer/manifest.tsv",
-      "bytes": 232,
-      "sha256": "6c4102a93f5b48ad29c29353948dd67597033abc3decf1abafe7a478dd30272b"
-    },
-    {
-      "path": "dlc/modules/rymcp_dlc/computer/words.dict.yaml",
-      "bytes": 16928,
-      "sha256": "24da541a64e93e7ed8885efaaf7abb83e57cefff99b5ecf07f051f8ce0c87b13"
-    },
-    {
-      "path": "dlc/modules/rymcp_dlc/math/LICENSE-CC-BY-SA-4.0.txt",
-      "bytes": 20138,
-      "sha256": "28a9529c7d0bb4dc51f4bf5c116a3d16ef247a052f7591466768ddf563fd1cf5"
-    },
-    {
-      "path": "dlc/modules/rymcp_dlc/math/NOTICE.txt",
-      "bytes": 407,
-      "sha256": "ca4329fbf5a1d3c9b17c343efafb6cb85f45e0105bcfe2416f0a2d7dbecf6e3f"
-    },
-    {
-      "path": "dlc/modules/rymcp_dlc/math/SOURCE.json",
-      "bytes": 1176,
-      "sha256": "9e4780111bf865789fcfec622ef6cbb170d19f57ee5520a5549f75d9bd26ec8e"
-    },
-    {
-      "path": "dlc/modules/rymcp_dlc/math/english.tsv",
-      "bytes": 15387,
-      "sha256": "985b95ec663e3143de74dba7f57b3f1b43352935ebf124dfc0fde5939813e30f"
-    },
-    {
-      "path": "dlc/modules/rymcp_dlc/math/manifest.tsv",
-      "bytes": 228,
-      "sha256": "19a2e45d8c01ff6d76740a9eaba55a49ef4711c802b5fc86bd840aabfc8e1896"
-    },
-    {
-      "path": "dlc/modules/rymcp_dlc/math/words.dict.yaml",
-      "bytes": 17767,
-      "sha256": "ac8ec4d699607afa7e0520a09c182a749a9d39d3cc9d25c02843f77d5a7ba6f1"
-    },
-    {
-      "path": "dlc/modules/rymcp_dlc/physics/LICENSE-CC-BY-SA-4.0.txt",
-      "bytes": 20138,
-      "sha256": "28a9529c7d0bb4dc51f4bf5c116a3d16ef247a052f7591466768ddf563fd1cf5"
-    },
-    {
-      "path": "dlc/modules/rymcp_dlc/physics/NOTICE.txt",
-      "bytes": 407,
-      "sha256": "ca4329fbf5a1d3c9b17c343efafb6cb85f45e0105bcfe2416f0a2d7dbecf6e3f"
-    },
-    {
-      "path": "dlc/modules/rymcp_dlc/physics/SOURCE.json",
-      "bytes": 1144,
-      "sha256": "7137a8b6067156f8eefa8cb2b021fd68af745f8f31fde82f9cc54f2af704c1f5"
-    },
-    {
-      "path": "dlc/modules/rymcp_dlc/physics/english.tsv",
-      "bytes": 9126,
-      "sha256": "c1e32e2c5f4e6a29cd91e38ab763aa86e6317d60ac37c44207dc66e99c8fef7f"
-    },
-    {
-      "path": "dlc/modules/rymcp_dlc/physics/manifest.tsv",
-      "bytes": 229,
-      "sha256": "af9ac65e55d9d7307a2f9f2b77dc56a44de031f88d9d3100e5a45921a0601f94"
-    },
-    {
-      "path": "dlc/modules/rymcp_dlc/physics/words.dict.yaml",
-      "bytes": 9510,
-      "sha256": "e31e03fce42b96a589263c6e125632539f67266003d6ec645d931b97d5362eb4"
-    },
-    {
-      "path": "dlc/modules/rymcp_dlc/poetry/LICENSE-CC-BY-SA-4.0.txt",
-      "bytes": 20138,
-      "sha256": "28a9529c7d0bb4dc51f4bf5c116a3d16ef247a052f7591466768ddf563fd1cf5"
-    },
-    {
-      "path": "dlc/modules/rymcp_dlc/poetry/LICENSE-chinese-poetry-MIT.txt",
-      "bytes": 1076,
-      "sha256": "c195319aeaa3ffcbe16aa5d26eec19eae5a42f84337dd2b3dc3c9d5ccbbd6507"
-    },
-    {
-      "path": "dlc/modules/rymcp_dlc/poetry/NOTICE.txt",
-      "bytes": 624,
-      "sha256": "c7de0139aa9b5d85c77e26b7e20079f3fb895867190751f46ab826ff094a528b"
-    },
-    {
-      "path": "dlc/modules/rymcp_dlc/poetry/SOURCE.json",
-      "bytes": 2466,
-      "sha256": "95dbec5807775dd27744b7487c9153b1151ef118436b8876abc6e3c3b8c57f73"
-    },
-    {
-      "path": "dlc/modules/rymcp_dlc/poetry/manifest.tsv",
-      "bytes": 1494,
-      "sha256": "067bcc58525aae38bff304f2f657744a53e18571e724837063dadfbc28f28138"
-    },
-    {
-      "path": "dlc/modules/rymcp_dlc/poetry/words.dict.yaml",
-      "bytes": 353194,
-      "sha256": "43723e0b4e1c5bfe462b9d1461ad4fed6e85402abf056092bcba411f9d016a08"
-    },
-    {
-      "path": "dlc/modules/rymcp_dlc/poetry/words_00.dict.yaml",
-      "bytes": 11269,
-      "sha256": "c16959b6303963a78d21f81d035bddfb3ca330a1190adff9cf1f327c1ddc0099"
-    },
-    {
-      "path": "dlc/modules/rymcp_dlc/poetry/words_01.dict.yaml",
-      "bytes": 11197,
-      "sha256": "b476146e2f1ccf8ac9a4a04660d7b31eb579f936c9b54e38cc8aa994cbd8d8f9"
-    },
-    {
-      "path": "dlc/modules/rymcp_dlc/poetry/words_02.dict.yaml",
-      "bytes": 11310,
-      "sha256": "068b2709bb115569f07c6ef56098a76401f8581550f21a75269e6f9e6855a115"
-    },
-    {
-      "path": "dlc/modules/rymcp_dlc/poetry/words_03.dict.yaml",
-      "bytes": 11190,
-      "sha256": "55843129df129f25fac943b671586dec0f07413ff43b1189c43be4b4ea35374f"
-    },
-    {
-      "path": "dlc/modules/rymcp_dlc/poetry/words_04.dict.yaml",
-      "bytes": 11250,
-      "sha256": "a67b14bc03e8142bcb51ada0e21c402f30a1d0350aac4ba0c760d37cd9c4a60d"
-    },
-    {
-      "path": "dlc/modules/rymcp_dlc/poetry/words_05.dict.yaml",
-      "bytes": 10976,
-      "sha256": "524fc4d6268df1157400225e1f76dd031aee2aee562db63459f67cbc446bfdf9"
-    },
-    {
-      "path": "dlc/modules/rymcp_dlc/poetry/words_06.dict.yaml",
-      "bytes": 11181,
-      "sha256": "f092124cf3a527a6459bd71c4d73fc63f4f4b1b75a556a2d6e824abc56beccc6"
-    },
-    {
-      "path": "dlc/modules/rymcp_dlc/poetry/words_07.dict.yaml",
-      "bytes": 11251,
-      "sha256": "38f369dccf00d09df0307aa565ff17b5f0b94365892c7bbca34094ab9f33d392"
-    },
-    {
-      "path": "dlc/modules/rymcp_dlc/poetry/words_08.dict.yaml",
-      "bytes": 11033,
-      "sha256": "e5a0e5547213fd75023ff46bad1bd9342ad3f3c5dfcecdc0e0e656d69db3a3d4"
-    },
-    {
-      "path": "dlc/modules/rymcp_dlc/poetry/words_09.dict.yaml",
-      "bytes": 11025,
-      "sha256": "9279fd4a964b3a4110b82223f833e43408fbd3936f0cd23ebbd0d0b774980999"
-    },
-    {
-      "path": "dlc/modules/rymcp_dlc/poetry/words_10.dict.yaml",
-      "bytes": 11631,
-      "sha256": "24ec15b8eea2afad71286fbabad5cae2b2bf2dbfbf0235d355fc4f8fbe2f03df"
-    },
-    {
-      "path": "dlc/modules/rymcp_dlc/poetry/words_11.dict.yaml",
-      "bytes": 11688,
-      "sha256": "8873951481e341d55c9b2bb4b60d698eb9dfd3837d8132de03ebd8dd93859239"
-    },
-    {
-      "path": "dlc/modules/rymcp_dlc/poetry/words_12.dict.yaml",
-      "bytes": 11233,
-      "sha256": "0981b2c0225544a6f1b9d36602b74621a18ad89d82242a44e8208d633c688b78"
-    },
-    {
-      "path": "dlc/modules/rymcp_dlc/poetry/words_13.dict.yaml",
-      "bytes": 11277,
-      "sha256": "a185a4be8071aea4888c0854e44f852b04a1fd0eb2b74141c77c4d0295ac5e9a"
-    },
-    {
-      "path": "dlc/modules/rymcp_dlc/poetry/words_14.dict.yaml",
-      "bytes": 11343,
-      "sha256": "660cec6c3ab21e44ce922663763222c28a0100da7930240523b86164a7b0da47"
-    },
-    {
-      "path": "dlc/modules/rymcp_dlc/poetry/words_15.dict.yaml",
-      "bytes": 10892,
-      "sha256": "1552addaef0d2fb7a38758315c6d41b7e6226d40d2f476afe4222d9c26267afd"
-    },
-    {
-      "path": "dlc/modules/rymcp_dlc/poetry/words_16.dict.yaml",
-      "bytes": 10583,
-      "sha256": "48212e1979d3234949e7421d0a468a7b34594e01e31d5c0f1e52bdc53f96c192"
-    },
-    {
-      "path": "dlc/modules/rymcp_dlc/poetry/words_17.dict.yaml",
-      "bytes": 10937,
-      "sha256": "a638ea14e1e3c954fd3aee6715ab941418cf6c31b5493839d2bc1ea01b196218"
-    },
-    {
-      "path": "dlc/modules/rymcp_dlc/poetry/words_18.dict.yaml",
-      "bytes": 11071,
-      "sha256": "d7c1b21478c8b76805ad8f38a7ef0a49920269be99de4c9c5c74e6220d398572"
-    },
-    {
-      "path": "dlc/modules/rymcp_dlc/poetry/words_19.dict.yaml",
-      "bytes": 11962,
-      "sha256": "85f9fdf5c1a608e453b0fc5d202ac1de16950ded5be05849c310c8be9c9856c9"
-    },
-    {
-      "path": "dlc/modules/rymcp_dlc/poetry/words_20.dict.yaml",
-      "bytes": 11601,
-      "sha256": "e09e75a49fc187ca311d1be0079fb091d69307ed6dd9d298cbf8608b773125ae"
-    },
-    {
-      "path": "dlc/modules/rymcp_dlc/poetry/words_21.dict.yaml",
-      "bytes": 11122,
-      "sha256": "8449ef32d2dbbcccc80992bc29017df4efef3211c745bc3d3452734068b153e2"
-    },
-    {
-      "path": "dlc/modules/rymcp_dlc/poetry/words_22.dict.yaml",
-      "bytes": 11523,
-      "sha256": "479741797ec66c699cbab3db5be6de0fdcda90f81c656bf0f54a0b56917e5f35"
-    },
-    {
-      "path": "dlc/modules/rymcp_dlc/poetry/words_23.dict.yaml",
-      "bytes": 11278,
-      "sha256": "46b57bdf252e7636f0ea07a74cac6cd3a4a7605f126fc7e5546ad76fd829fbf2"
-    },
-    {
-      "path": "dlc/modules/rymcp_dlc/poetry/words_24.dict.yaml",
-      "bytes": 11108,
-      "sha256": "3cd50c08dc4047f5c00ba5a81e8d368cce7a359bb3cca11509ad26e619fc97c2"
-    },
-    {
-      "path": "dlc/modules/rymcp_dlc/poetry/words_25.dict.yaml",
-      "bytes": 11045,
-      "sha256": "22e9f4444ae2f14b01af3c39e4a394b563cf0354430a94b82f389f443b3deb14"
-    },
-    {
-      "path": "dlc/modules/rymcp_dlc/poetry/words_26.dict.yaml",
-      "bytes": 11157,
-      "sha256": "8362106f4b758f98670e068ebc3d43ac2fc05add4e201f82b6292cb2eb267496"
-    },
-    {
-      "path": "dlc/modules/rymcp_dlc/poetry/words_27.dict.yaml",
-      "bytes": 11262,
-      "sha256": "209c434b8e52ccd67f010fed6d039d8d0bcac7d1b09075b202061adc88baedf1"
-    },
-    {
-      "path": "dlc/modules/rymcp_dlc/poetry/words_28.dict.yaml",
-      "bytes": 10635,
-      "sha256": "e8f398fcfa0df7095c8f78f7ea9e1809146663a6879c20c6daf20a0dd87c55a0"
-    },
-    {
-      "path": "dlc/modules/rymcp_dlc/poetry/words_29.dict.yaml",
-      "bytes": 11533,
-      "sha256": "3b9fc681b70b8002900bbabbafc508a907a37f86c445794bedd94a5b4226c53c"
-    },
-    {
-      "path": "dlc/modules/rymcp_dlc/poetry/words_30.dict.yaml",
-      "bytes": 11025,
-      "sha256": "512c64a5e93157122b09a6b9f7d377ae1e7dd3370cae8348853c3ac0b6b7710a"
-    },
-    {
-      "path": "dlc/modules/rymcp_dlc/poetry/words_31.dict.yaml",
-      "bytes": 11899,
-      "sha256": "fc71a6b42625d80e40c11e59e8fc41da926b0b5a07d90b9b209d31ed2408b3d9"
-    },
-    {
       "path": "dlc/sources/CC-BY-SA-4.0.txt",
       "bytes": 20138,
       "sha256": "28a9529c7d0bb4dc51f4bf5c116a3d16ef247a052f7591466768ddf563fd1cf5"
@@ -1698,6 +1413,11 @@
       "sha256": "ddd9b253b4f3412d17ed1c119d9d3b36f1153e7c3ff7f62e20e59cdfd1856689"
     },
     {
+      "path": "dlc/sources/catalog-source-lock.json",
+      "bytes": 4775,
+      "sha256": "43b7eb82e039601f13cde5d65cfae6e4931e0ebc99cdce8f6f72a81e4adb60f9"
+    },
+    {
       "path": "dlc/sources/cedict_1_0_ts_utf-8_mdbg.txt.gz",
       "bytes": 3984967,
       "sha256": "3199822e3cb14dfd13b4c80374cefb6d02e579e92f39e5ac7e6a7fa702fae739"
@@ -1706,6 +1426,146 @@
       "path": "dlc/sources/chinese-poetry-MIT-LICENSE.txt",
       "bytes": 1076,
       "sha256": "c195319aeaa3ffcbe16aa5d26eec19eae5a42f84337dd2b3dc3c9d5ccbbd6507"
+    },
+    {
+      "path": "dlc/sources/poetry/LICENSE",
+      "bytes": 1076,
+      "sha256": "c195319aeaa3ffcbe16aa5d26eec19eae5a42f84337dd2b3dc3c9d5ccbbd6507"
+    },
+    {
+      "path": "dlc/sources/poetry/companion-anthologies.zip",
+      "bytes": 236204,
+      "sha256": "32a425d50d9856a259a580a424f044a1b512b8d415ba48fdee9b14bc78db7330"
+    },
+    {
+      "path": "dlc/sources/poetry/song-ci.zip",
+      "bytes": 3062345,
+      "sha256": "34fa9da8f6f2e207c14a07b9bfc1ea1633ab39053206f54121a753c60a0e5ea0"
+    },
+    {
+      "path": "dlc/sources/poetry/song-poems.zip",
+      "bytes": 39831128,
+      "sha256": "408da1c7afe2a851dfa10f2ed2eed2facbae1b49b27fc386f03b2d0bf0306735"
+    },
+    {
+      "path": "dlc/sources/poetry/source-manifest.json",
+      "bytes": 153569,
+      "sha256": "3613abf5c4935474ec6ba608ee60c91dfeafa1067a57c877a6e84882d82138e7"
+    },
+    {
+      "path": "dlc/sources/poetry/tang-poems.zip",
+      "bytes": 9211174,
+      "sha256": "6a25a1a4f2d41e8ada5dbe9a10bdf4029c85b404fef631e252fe9f002c47d542"
+    },
+    {
+      "path": "dlc/sources/poetry/variant-source-manifest.json",
+      "bytes": 3740,
+      "sha256": "91669634c2fa21bba03b411ce9080f4eae30642a6a970347bedde85ab201050d"
+    },
+    {
+      "path": "dlc/sources/readings/UNICODE-LICENSE-V3.txt",
+      "bytes": 1995,
+      "sha256": "e7a93b009565cfce55919a381437ac4db883e9da2126fa28b91d12732bc53d96"
+    },
+    {
+      "path": "dlc/sources/readings/Unihan-17.0.0.zip",
+      "bytes": 8518517,
+      "sha256": "f7a48b2b545acfaa77b2d607ae28747404ce02baefee16396c5d2d7a8ef34b5e"
+    },
+    {
+      "path": "dlc/sources/readings/opencc/AUTHORS",
+      "bytes": 277,
+      "sha256": "cb34e252fa994679bcbfc8355581e821ceda44bd857875e2cfe15b7ec4eec006"
+    },
+    {
+      "path": "dlc/sources/readings/opencc/LICENSE",
+      "bytes": 9165,
+      "sha256": "b534e465949558eec2597b04f5092b5e161236a68dfbfd04d547592ac3964308"
+    },
+    {
+      "path": "dlc/sources/readings/opencc/STCharacters.txt",
+      "bytes": 34353,
+      "sha256": "ed1d268e0ad028511dcf5b0089faed0a980ad332449ec11d481ceefde6879f41"
+    },
+    {
+      "path": "dlc/sources/readings/opencc/STPhrases.txt",
+      "bytes": 1004897,
+      "sha256": "17fece21a28f3db2dc32397abd73d21ae73261c3f295fa6a3fe64b5e8d8b554b"
+    },
+    {
+      "path": "dlc/sources/readings/opencc/TSCharacters.txt",
+      "bytes": 34627,
+      "sha256": "6b5a0a799bea2bb22c001f635eaa3fc2904310f0c08addbff275477a80ecf09a"
+    },
+    {
+      "path": "dlc/sources/readings/opencc/TSPhrases.txt",
+      "bytes": 5181,
+      "sha256": "504169029c43f7f234b8e2ae470720af3657675c5574ff8aa0feb257e1dc5ce2"
+    },
+    {
+      "path": "dlc/sources/readings/opencc/s2t.json",
+      "bytes": 406,
+      "sha256": "710bb970e406d9c0a3dd33c609248686cf1c5578d064b7b7fc89e70fbb9ea75d"
+    },
+    {
+      "path": "dlc/sources/readings/opencc/source.json",
+      "bytes": 2706,
+      "sha256": "dd7376366cb704a9703a6a5e19645fd7e350276b183136dfc0b8008f427c8470"
+    },
+    {
+      "path": "dlc/sources/readings/opencc/t2s.json",
+      "bytes": 406,
+      "sha256": "b818534194f27c2d95f01001edb0a5ec49b9050119892cb30a0504bb202cc07c"
+    },
+    {
+      "path": "dlc/sources/readings/pypinyin-0.55.0-py2.py3-none-any.whl",
+      "bytes": 840203,
+      "sha256": "d53b1e8ad2cdb815fb2cb604ed3123372f5a28c6f447571244aca36fc62a286f"
+    },
+    {
+      "path": "dlc/sources/readings/pypinyin-LICENSE.txt",
+      "bytes": 1105,
+      "sha256": "1e6c90014b4912815c296ee64bb6f6280af47e6d4c5d80e86232dfc5defe764c"
+    },
+    {
+      "path": "dlc/sources/readings/pypinyin-source.json",
+      "bytes": 380,
+      "sha256": "1c59282cdcb813aee1355169d72c79cfa023365d376e1eac8839ae7d22bab046"
+    },
+    {
+      "path": "dlc/sources/readings/unihan-source.json",
+      "bytes": 386,
+      "sha256": "6dabf76d88746c7da87bf7dc4d0cb8c8972b074deee166844a612b88b5826e0c"
+    },
+    {
+      "path": "dlc/sources/science/CC-BY-SA-4.0.txt",
+      "bytes": 20138,
+      "sha256": "28a9529c7d0bb4dc51f4bf5c116a3d16ef247a052f7591466768ddf563fd1cf5"
+    },
+    {
+      "path": "dlc/sources/science/CC0-1.0-legalcode.txt",
+      "bytes": 7048,
+      "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499"
+    },
+    {
+      "path": "dlc/sources/science/SCIENCE-NOTICE.txt",
+      "bytes": 985,
+      "sha256": "cd11abb0a3a799495fe1cf8f8aeb19a02d61cd36bf328c0c6eb2a254ae428f2f"
+    },
+    {
+      "path": "dlc/sources/science/science-api-responses-001.zip",
+      "bytes": 10879310,
+      "sha256": "ee7f214ed37213475b1cd5d4a2fbd9389bee218c8956bee856c7b7063f112065"
+    },
+    {
+      "path": "dlc/sources/science/science-labels-snapshot.json.gz",
+      "bytes": 6925753,
+      "sha256": "a8aa2a8af72ae40cac00905ddd116e255a442d11047447a67b5bfbf584c989fa"
+    },
+    {
+      "path": "dlc/sources/science/science-source-manifest.json",
+      "bytes": 2042,
+      "sha256": "e1e48e4eeded5c0c7e36b9aecaf08ce83f6baefd8aff30889bcc91b59a2e75bc"
     },
     {
       "path": "dlc/sources/song-300.json",
@@ -1719,23 +1579,23 @@
     },
     {
       "path": "docs/BUILD.md",
-      "bytes": 1888,
-      "sha256": "3100873b6549d29c2985236c13147d1e3900926b3c384df2ae184153c79a2302"
+      "bytes": 3244,
+      "sha256": "44372bdd189739d3d73d3959a6291f3b45ce210952cfdfa6f65fac1ee5b5dbbc"
     },
     {
       "path": "docs/PC.md",
-      "bytes": 1412,
-      "sha256": "274c6f404e82af0e1ed3d17eec4c27d50eeaf8b15b0820a15ca038b0f500d8c2"
+      "bytes": 1998,
+      "sha256": "a56c2eb80b1d8aa7368095d0da01d9fd8382f68a504123a278086fddb01d5fe9"
     },
     {
       "path": "docs/dlc-sources.md",
-      "bytes": 5152,
-      "sha256": "99b84a01cf5818f8107bbf391b40a0c0bff361e9248dbc578b663e74f7862ef4"
+      "bytes": 7923,
+      "sha256": "1d545b6f013f38fb4581f3d97431d6b8629f5d30d53e6d0a7abc126a90f33299"
     },
     {
       "path": "docs/official-weasel.md",
-      "bytes": 1288,
-      "sha256": "033b3dbf0aaca9cd57d038db0ef1f60d23ac85284bad809f4bee44c6ceb7b039"
+      "bytes": 1839,
+      "sha256": "191deef555d72356b3d8a73ca03cc0e4cb96a063b97afc522bfe80b42e855991"
     },
     {
       "path": "docs/sources/README.md",
@@ -1919,8 +1779,8 @@
     },
     {
       "path": "licenses/file-licenses.json",
-      "bytes": 186627,
-      "sha256": "69ffac261351e2d93d8daebe5a06a2478d3d34af1193051f87fc7b6f9f42365c"
+      "bytes": 178012,
+      "sha256": "8f2b6beef0d567f5243904c537f21122ccaa8888721b12a9312b3435f79db02f"
     },
     {
       "path": "licenses/luna-compact-model-LGPL-3.0.txt",
@@ -2178,9 +2038,29 @@
       "sha256": "6ce6a9b2b28d0b59327324d3f7c7b874c574674041074f6f115c9d0107437138"
     },
     {
+      "path": "licenses/table-decoder/AUTHORS.rst",
+      "bytes": 286,
+      "sha256": "66a190a07fb804e823db973f5dceb299b6604e90ec99dabefc7e00e527a5bf5e"
+    },
+    {
+      "path": "licenses/table-decoder/LICENSE",
+      "bytes": 1104,
+      "sha256": "7db48dbc62cc4fb19c68088949c74ebf82b3fc6d263ed300a32ad66b9af85f94"
+    },
+    {
+      "path": "licenses/table-decoder/marisa-trie/AUTHORS",
+      "bytes": 37,
+      "sha256": "a49e32e647e3a74e11abd3633f9bdbcddfd7749426dae2154c5ffe5bce75463f"
+    },
+    {
+      "path": "licenses/table-decoder/marisa-trie/COPYING.md",
+      "bytes": 2309,
+      "sha256": "ef0df74dc85a890202ea9edf6c4c218855f421a8718fb8c3bd1c6d12529894b7"
+    },
+    {
       "path": "licenses/third-party-source-manifest.json",
-      "bytes": 50984,
-      "sha256": "9f7e8a0cdf07b5cf806562d667038e84ee203dac30a59eccd581a774f2de0b6e"
+      "bytes": 56222,
+      "sha256": "178ccd2b69f7dcfff19805438e36ff7a3e786f0a37f63991828f4137a06c9f87"
     },
     {
       "path": "licenses/tools-Ice-GPL-3.0.txt",
@@ -2309,8 +2189,8 @@
     },
     {
       "path": "scripts/build_dlc.py",
-      "bytes": 15424,
-      "sha256": "1f586e0a05bda821f492c81ed9024b7e3705c56efd0ada303d023aad7f6dc274"
+      "bytes": 21153,
+      "sha256": "7f360533ad835a7eedb80b1b219835e9b20fbedfbdd82cf414c5ae8f8b64de4c"
     },
     {
       "path": "scripts/build_scheme_packages.py",
@@ -2326,6 +2206,26 @@
       "path": "scripts/data/build_japanese_q.py",
       "bytes": 16588,
       "sha256": "baba5b8e1074e7299c7385370cebe829d4b404f99c8528ee12a499f06e82444e"
+    },
+    {
+      "path": "scripts/data/dlc_poetry.py",
+      "bytes": 12803,
+      "sha256": "ae92f4567fb66888f46ceb81f0252ff0ab666c3727cef220b2e2c1259c309e45"
+    },
+    {
+      "path": "scripts/data/dlc_readings.py",
+      "bytes": 7010,
+      "sha256": "41f2c71da74e08098d1dccf53a27e1296dc08a25480f0da0afddabee8b91e931"
+    },
+    {
+      "path": "scripts/data/dlc_science.py",
+      "bytes": 9145,
+      "sha256": "2cb657622b06f8b2cc6d79e1378814510e5589e786a0157b31fb13b1eb3ed3f8"
+    },
+    {
+      "path": "scripts/data/poetry_cleaner.py",
+      "bytes": 7908,
+      "sha256": "9850b45123ac0448fa7c398becea3adcf527a9d1ce110d02c52a841958a66bbe"
     },
     {
       "path": "scripts/data/rebuild_base.py",
@@ -2374,18 +2274,18 @@
     },
     {
       "path": "scripts/schemes/Test-DlcRuntime.ps1",
-      "bytes": 2969,
-      "sha256": "f15b3b004fac0d03553a93f585744334c4363c808480a622d6b8e41d7e009848"
+      "bytes": 3854,
+      "sha256": "689d71bac5cda475928cae81f0a372fee46c3478d4c87f4e3b201905003d714d"
     },
     {
       "path": "scripts/schemes/Test-FullProfile.ps1",
       "bytes": 3104,
-      "sha256": "b3ec3276e10d18e50645d609983ba1241879250508ab018612c42bb98c417b3e"
+      "sha256": "4726833434712e748d7da940bfe90572044dbcf9736493357398ee482dfc531d"
     },
     {
       "path": "scripts/schemes/Test-OfficialProfile.ps1",
       "bytes": 6013,
-      "sha256": "385d44b11a7e6562e17cb6492cf1a5599ef9049dbbe64f004808d21ba97b6147"
+      "sha256": "fe62b56f4bd54879a144ecf375394e682732956b581d19cee677847c51309ea2"
     },
     {
       "path": "scripts/schemes/Test-SharedProfile.ps1",
@@ -2394,8 +2294,8 @@
     },
     {
       "path": "scripts/verify_release.py",
-      "bytes": 7936,
-      "sha256": "1049f70ffc2cf5f703e9afff6d5ce4ac557c70ac7658711b7dde2f972493164e"
+      "bytes": 12119,
+      "sha256": "72b07184d918901b72ed6d5ba561de692f9eaa3e0ac68c0e5a2e3410e0d51d26"
     },
     {
       "path": "sources/base-build.json",
@@ -2448,9 +2348,19 @@
       "sha256": "286443589e71ef6e90934077f6fb327c145fb17d7f88e42c7c531ac60a6617eb"
     },
     {
+      "path": "tests/data/test_dlc_readings.py",
+      "bytes": 4263,
+      "sha256": "6f7046cf7d58628cd77b2735ee1951809f6d4dad5c37a7d11c987c1b99d30817"
+    },
+    {
+      "path": "tests/data/test_poetry_cleaner.py",
+      "bytes": 3083,
+      "sha256": "187394fe03fe7de21499c37936054e59a1e79938e3459f2e4eb7e3c1e86806e1"
+    },
+    {
       "path": "tests/schemes/Check-ChineseDlcTables.py",
-      "bytes": 4149,
-      "sha256": "5dbed78815e054cd08030754788e914cfd29fafa62ed952b6f9164da69fca2cc"
+      "bytes": 10748,
+      "sha256": "80853747e77de7e1cc8588012f44511556751413282a694474259ed589acb30c"
     },
     {
       "path": "tests/schemes/Test-BracketLearning.ps1",
@@ -2464,8 +2374,8 @@
     },
     {
       "path": "tests/schemes/Test-DlcProfile.ps1",
-      "bytes": 11166,
-      "sha256": "d86c972ed320f1149f70fad132abb9c0d07de6431d3ed9abd5efab9fac17dfd8"
+      "bytes": 15329,
+      "sha256": "0de4ba3f98bfc1b2b1a07de4463bb4a57043e177e36941f8423a037e0b345e5d"
     },
     {
       "path": "tests/schemes/Test-EnglishDlc.ps1",
@@ -2498,6 +2408,11 @@
       "sha256": "cde56c8d54b1e32ef59e4fe522c69d0678903494e25e32ed05bb5d5321ec0824"
     },
     {
+      "path": "tests/schemes/Test-ShardedDlc.ps1",
+      "bytes": 5511,
+      "sha256": "4f181203ca4de699b760a981442e7f47e2bbd6c1c98bc0fc50eff37e87160d0f"
+    },
+    {
       "path": "tests/schemes/exact_syllable/observer.lua",
       "bytes": 1610,
       "sha256": "03919f78e2d631f516f4612038fe48923addfe0d65994850b74bed8fb84de29b"
@@ -2511,6 +2426,11 @@
       "path": "tests/schemes/exact_syllable/unit_runner.lua",
       "bytes": 3421,
       "sha256": "3b393737d023ca78b7f654da64da51304ca215bce043a11187bc98c2c1863bf5"
+    },
+    {
+      "path": "tests/schemes/fixtures/sharded_dlc_test.lua",
+      "bytes": 8556,
+      "sha256": "dc44a7433407fac94a13fd9ce7f4c82de9f1912876c984713c5c4ee4d826943e"
     }
   ]
 }

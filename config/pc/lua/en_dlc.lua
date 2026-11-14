@@ -4,7 +4,8 @@ local packages = require('rymcp_dlc')
 local M = {}
 local function identity(record) return record.code .. '\t' .. record.word end
 
-function M.load(vocab, extensions)
+function M.load(vocab, extensions, engine)
+  local snapshot = packages.modules(engine)
   local aliases, words, owners, ordinary, base = {}, {}, {}, {}, {}
   for _, alias in ipairs(extensions.words) do
     for _, record in ipairs(extensions.aliases[alias]) do
@@ -14,7 +15,7 @@ function M.load(vocab, extensions)
   end
   -- Package order is fixed by the package loader. The first definition owns
   -- a shared identity; additional aliases never add corpus counts.
-  for _, package in ipairs(packages.modules()) do
+  for _, package in ipairs(snapshot) do
     if package.languages.en and package.files['english.tsv'] then
       local records = package.english
       if records then
@@ -49,7 +50,7 @@ function M.load(vocab, extensions)
     end
   end
   table.sort(words)
-  return {aliases=aliases, words=words, ordinary=ordinary, index=index.from_words(words)}
+  return {aliases=aliases, words=words, ordinary=ordinary, index=index.from_words(words), catalog=snapshot}
 end
 
 return M

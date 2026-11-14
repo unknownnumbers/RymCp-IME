@@ -2,7 +2,7 @@ name: Scheme packages and runtime checks
 
 on:
   push:
-    branches: [main, release/2026.11.14.1]
+    branches: [main, release/2026.11.14.2]
   pull_request:
   workflow_dispatch:
 
@@ -20,6 +20,8 @@ jobs:
         with:
           python-version: '3.12'
       - run: python -m pip install PyYAML==6.0.2
+      - name: Check public data cleaners and reading rules
+        run: python -m unittest discover -s tests/data -p 'test_*.py'
       - name: Rebuild fixed public base data
         run: |
           python scripts/data/rebuild_base.py
@@ -31,7 +33,27 @@ jobs:
   runtime:
     needs: source
     runs-on: windows-2022
-    timeout-minutes: 60
+    timeout-minutes: 120
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - name: N01-x64
+            engine: stellae-x64
+            profile: pc
+            host: x64
+            script: Test-FullProfile.ps1
+          - name: official-x64
+            engine: official-x64
+            profile: official-weasel
+            host: x64
+            script: Test-OfficialProfile.ps1
+          - name: R5-Win32
+            engine: stellae-Win32
+            profile: pc
+            host: Win32
+            script: Test-FullProfile.ps1
+    name: Runtime ${{ matrix.name }}
     steps:
       - uses: actions/checkout@v4
         with:
@@ -39,53 +61,52 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+          architecture: x64
+      - name: Install pinned test-only table decoder
+        shell: powershell
+        run: |
+          'marisa-trie==1.3.1 --hash=sha256:9868b7a8e0f648d09ffe25ac29511e6e208cc5fb0d156c295385f9d5dc2a138e' | Set-Content -LiteralPath "$env:RUNNER_TEMP/table-decoder-requirements.txt" -Encoding ASCII
+          python -m pip install --only-binary=:all: --no-deps --require-hashes -r "$env:RUNNER_TEMP/table-decoder-requirements.txt"
+          if ($LASTEXITCODE -ne 0) { throw 'Pinned table decoder installation failed.' }
+      - name: Build complete fixed-source DLC catalogs
+        run: python scripts/build_dlc.py
       - name: Extract pinned public runtimes
         shell: powershell
         run: scripts/schemes/Prepare-ValidationEngines.ps1 -OutputDirectory "$env:RUNNER_TEMP/rymcp-engines"
-      - name: Official Weasel Chinese and smart English
+      - name: Profile and exact-syllable checks
         shell: powershell
-        run: scripts/schemes/Test-OfficialProfile.ps1 -EngineDir "$env:RUNNER_TEMP/rymcp-engines/official-x64" -SharedDir "$env:RUNNER_TEMP/rymcp-engines/official-extracted/data" -WorkRoot "$env:RUNNER_TEMP/official-scheme-tests"
-      - name: Full scheme N01 x64
-        shell: powershell
-        run: scripts/schemes/Test-FullProfile.ps1 -EngineDir "$env:RUNNER_TEMP/rymcp-engines/stellae-x64" -SharedDir "$env:RUNNER_TEMP/rymcp-engines/official-extracted/data" -WorkRoot "$env:RUNNER_TEMP/full-x64-tests"
-      - name: Full scheme R5 Win32
-        shell: powershell
+        env:
+          ENGINE: ${{ matrix.engine }}
+          HOST_ARCH: ${{ matrix.host }}
+          TEST_SCRIPT: ${{ matrix.script }}
         run: |
-          & "$env:WINDIR/SysWOW64/WindowsPowerShell/v1.0/powershell.exe" -NoProfile -ExecutionPolicy Bypass -File scripts/schemes/Test-FullProfile.ps1 -EngineDir "$env:RUNNER_TEMP/rymcp-engines/stellae-Win32" -SharedDir "$env:RUNNER_TEMP/rymcp-engines/official-extracted/data" -WorkRoot "$env:RUNNER_TEMP/full-Win32-tests"
-          if ($LASTEXITCODE -ne 0) { throw 'Win32 scheme checks failed.' }
-      - name: DLC lifecycle and actual modules N01 x64
+          $hostExe = if ($env:HOST_ARCH -eq 'Win32') { "$env:WINDIR/SysWOW64/WindowsPowerShell/v1.0/powershell.exe" } else { (Get-Process -Id $PID).Path }
+          & $hostExe -NoProfile -ExecutionPolicy Bypass -File "scripts/schemes/$env:TEST_SCRIPT" -EngineDir "$env:RUNNER_TEMP/rymcp-engines/$env:ENGINE" -SharedDir "$env:RUNNER_TEMP/rymcp-engines/official-extracted/data" -WorkRoot "$env:RUNNER_TEMP/profile-tests"
+          if ($LASTEXITCODE -ne 0) { throw 'Profile checks failed.' }
+      - name: DLC formats, actual catalogs, and synthetic lifecycle
         shell: powershell
-        run: scripts/schemes/Test-DlcRuntime.ps1 -EngineDir "$env:RUNNER_TEMP/rymcp-engines/stellae-x64" -SharedDir "$env:RUNNER_TEMP/rymcp-engines/official-extracted/data" -WorkRoot "$env:RUNNER_TEMP/dlc-x64-tests" -Profile pc
-      - name: DLC lifecycle and actual modules official x64
-        shell: powershell
-        run: scripts/schemes/Test-DlcRuntime.ps1 -EngineDir "$env:RUNNER_TEMP/rymcp-engines/official-x64" -SharedDir "$env:RUNNER_TEMP/rymcp-engines/official-extracted/data" -WorkRoot "$env:RUNNER_TEMP/dlc-official-tests" -Profile official-weasel
-      - name: DLC lifecycle and actual modules R5 Win32
-        shell: powershell
+        env:
+          ENGINE: ${{ matrix.engine }}
+          HOST_ARCH: ${{ matrix.host }}
+          PROFILE: ${{ matrix.profile }}
         run: |
-          & "$env:WINDIR/SysWOW64/WindowsPowerShell/v1.0/powershell.exe" -NoProfile -ExecutionPolicy Bypass -File scripts/schemes/Test-DlcRuntime.ps1 -EngineDir "$env:RUNNER_TEMP/rymcp-engines/stellae-Win32" -SharedDir "$env:RUNNER_TEMP/rymcp-engines/official-extracted/data" -WorkRoot "$env:RUNNER_TEMP/dlc-Win32-tests" -Profile pc
-          if ($LASTEXITCODE -ne 0) { throw 'Win32 DLC checks failed.' }
+          $hostExe = if ($env:HOST_ARCH -eq 'Win32') { "$env:WINDIR/SysWOW64/WindowsPowerShell/v1.0/powershell.exe" } else { (Get-Process -Id $PID).Path }
+          $pythonExe = (Get-Command python).Source
+          & $hostExe -NoProfile -ExecutionPolicy Bypass -File scripts/schemes/Test-DlcRuntime.ps1 -EngineDir "$env:RUNNER_TEMP/rymcp-engines/$env:ENGINE" -SharedDir "$env:RUNNER_TEMP/rymcp-engines/official-extracted/data" -WorkRoot "$env:RUNNER_TEMP/dlc-tests" -Profile $env:PROFILE -PythonExe $pythonExe
+          if ($LASTEXITCODE -ne 0) { throw 'DLC checks failed.' }
       - name: Retain fixed-case validation summaries
+        if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: scheme-validation
+          name: scheme-validation-${{ matrix.name }}
           if-no-files-found: error
           path: |
             ${{ runner.temp }}/rymcp-engines/runtimes.json
-            ${{ runner.temp }}/official-scheme-tests/validation.json
-            ${{ runner.temp }}/official-scheme-tests/*-results/results.json
-            ${{ runner.temp }}/full-x64-tests/validation.json
-            ${{ runner.temp }}/full-x64-tests/*-results/results.json
-            ${{ runner.temp }}/full-Win32-tests/validation.json
-            ${{ runner.temp }}/full-Win32-tests/*-results/results.json
-            ${{ runner.temp }}/dlc-x64-tests/validation.json
-            ${{ runner.temp }}/dlc-x64-tests/*/results.json
-            ${{ runner.temp }}/dlc-x64-tests/profile-lifecycle/capacity-*.json
-            ${{ runner.temp }}/dlc-official-tests/validation.json
-            ${{ runner.temp }}/dlc-official-tests/*/results.json
-            ${{ runner.temp }}/dlc-official-tests/profile-lifecycle/capacity-*.json
-            ${{ runner.temp }}/dlc-Win32-tests/validation.json
-            ${{ runner.temp }}/dlc-Win32-tests/*/results.json
-            ${{ runner.temp }}/dlc-Win32-tests/profile-lifecycle/capacity-*.json
+            ${{ runner.temp }}/profile-tests/validation.json
+            ${{ runner.temp }}/profile-tests/*-results/results.json
+            ${{ runner.temp }}/dlc-tests/validation.json
+            ${{ runner.temp }}/dlc-tests/*/results.json
+            ${{ runner.temp }}/dlc-tests/profile-lifecycle/capacity-*.json
 
   packages:
     needs: runtime
@@ -97,13 +118,21 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: Build complete fixed-source DLC archives
+        run: python scripts/build_dlc.py
       - name: Build reviewed scheme archives
-        run: python scripts/build_scheme_packages.py --output-dir out/schemes --version 2026.11.14.1 --source-ref "$GITHUB_SHA"
+        run: python scripts/build_scheme_packages.py --output-dir out/schemes --version 2026.11.14.2 --source-ref "$GITHUB_SHA"
       - name: Record archive hashes
-        working-directory: out/schemes
-        run: sha256sum *.zip > SHA256SUMS.txt
+        run: |
+          (cd out/schemes && sha256sum *.zip > SHA256SUMS.txt)
+          (cd out/dlc && sha256sum *.zip > SHA256SUMS.txt)
       - uses: actions/upload-artifact@v4
         with:
-          name: scheme-packages-2026.11.14.1
+          name: scheme-packages-2026.11.14.2
           if-no-files-found: error
-          path: out/schemes/*
+          path: |
+            out/schemes/*.zip
+            out/schemes/SHA256SUMS.txt
+            out/dlc/*.zip
+            out/dlc/SHA256SUMS.txt
+            out/dlc/modules/build-report.json

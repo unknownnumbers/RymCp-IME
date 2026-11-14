@@ -410,7 +410,7 @@ local function initialize_spellings(env, schema)
 end
 
 function M.init(env)
-  dlc.configure(env.engine.schema.config)
+  env.dlc_catalog = dlc.configure(env.engine.schema.config, env.engine)
   env.allow_word_completion = env.engine.schema.config:get_bool('translator/enable_word_completion') == true
   initialize_spellings(env, env.engine.schema)
   env.native = assert(Component.Translator(env.engine, '', 'script_translator@translator'))
@@ -426,7 +426,7 @@ end
 -- schema. This owns one isolated native translator; it does not initialize
 -- symbol, English or mixed-word candidate streams or their learning owners.
 function M.init_chinese(env, schema)
-  dlc.configure(schema.config)
+  env.dlc_catalog = dlc.configure(schema.config, env.engine)
   env.lookup_schema = schema
   env.only_chinese = true
   env.allow_word_completion = false
@@ -438,6 +438,7 @@ function M.init_chinese(env, schema)
 end
 
 function M.fini_chinese(env)
+  env.dlc_catalog = nil
   env.native, env.decoder = nil, nil
   -- Native components release their references before the borrowed Schema.
   collectgarbage('collect')
@@ -445,6 +446,7 @@ function M.fini_chinese(env)
 end
 
 function M.fini(env)
+  env.dlc_catalog = nil
   spacing.fini(env)
   english.fini(env.english_env)
   env.english_env = nil

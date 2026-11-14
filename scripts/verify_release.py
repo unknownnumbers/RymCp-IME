@@ -8,8 +8,10 @@ import argparse
 import ast
 import hashlib
 import json
-from pathlib import Path
+from pathlib import Path, PurePosixPath
 import re
+import stat
+import zipfile
 
 ROOT = Path(__file__).resolve().parents[1]
 IGNORED = {'.git', '__pycache__', 'out', 'work', '.venv', '.pytest_cache'}
@@ -24,7 +26,72 @@ def files():
 
 
 def digest(path):
-    return hashlib.sha256(path.read_bytes()).hexdigest()
+    with path.open('rb') as source:
+        return hashlib.file_digest(source, 'sha256').hexdigest()
+
+
+def source_archive_members(path, relative):
+    """Inspect bounded archive metadata without decoding the corpus again."""
+    with zipfile.ZipFile(path) as archive:
+        members = archive.infolist()
+        if not members or len(members) > 5000 or sum(item.file_size for item in members) > 250_000_000:
+            raise SystemExit(f'Unexpected fixed source archive size: {relative}')
+        seen = set()
+        for item in members:
+            name = item.filename
+            parts = name.split('/')
+            mode = stat.S_IFMT(item.external_attr >> 16)
+            if (not name or name != item.orig_filename or name in seen
+                    or any(part in ('', '.', '..') for part in parts)
+                    or '\\' in name or ':' in name or '\x00' in name
+                    or PurePosixPath(name).is_absolute() or item.is_dir()
+                    or mode not in (0, stat.S_IFREG) or item.flag_bits & 1):
+                raise SystemExit(f'Invalid source archive member in {relative}: {name}')
+            seen.add(name)
+            suffix = PurePosixPath(name).suffix.lower()
+            if relative.startswith('poetry/'):
+                allowed = name == 'LICENSE' or suffix == '.json'
+                if relative == 'poetry/companion-anthologies.zip':
+                    allowed = allowed or suffix == '.md'
+            elif relative == 'readings/pypinyin-0.55.0-py2.py3-none-any.whl':
+                allowed = (parts[0] in ('pypinyin', 'pypinyin-0.55.0.dist-info')
+                           and (suffix in ('.py', '.pyi', '.json', '.typed', '.txt')
+                                or PurePosixPath(name).name in ('METADATA', 'WHEEL', 'RECORD', 'LICENSE')))
+            elif relative == 'readings/Unihan-17.0.0.zip':
+                allowed = re.fullmatch(r'Unihan_[A-Za-z]+\.txt', name) is not None
+            elif re.fullmatch(r'science/science-api-responses-\d{3}\.zip', relative):
+                allowed = (name == 'requests.json' or re.fullmatch(
+                    r'source-cache/(?:enwiki|enwiki-main|wikidata)/[0-9a-f]{64}\.json\.gz', name) is not None)
+            else:
+                allowed = False
+            if not allowed:
+                raise SystemExit(f'Unexpected source archive member type in {relative}: {name}')
+
+
+def verify_catalog_sources():
+    """Only exact locked source archives qualify for binary text-scan skips."""
+    root = ROOT / 'dlc/sources'
+    lock = json.loads((root / 'catalog-source-lock.json').read_text(encoding='utf-8'))
+    if lock.get('Format') != 1 or not isinstance(lock.get('Files'), list) or not lock['Files']:
+        raise SystemExit('Invalid fixed catalog source lock')
+    checked, archives = set(), set()
+    for record in lock['Files']:
+        relative = record['Path']
+        if (not isinstance(relative, str) or not relative
+                or any(part in ('', '.', '..') for part in relative.split('/'))
+                or '\\' in relative or ':' in relative or '\x00' in relative
+                or PurePosixPath(relative).is_absolute() or relative in checked):
+            raise SystemExit('Invalid or repeated fixed catalog source path')
+        path = root / relative
+        if (path.is_symlink() or not path.resolve().is_relative_to(root.resolve())
+                or not path.is_file() or path.stat().st_size != record['Bytes']
+                or digest(path) != record['Sha256']):
+            raise SystemExit(f'Fixed catalog source differs from its checksum lock: {relative}')
+        checked.add(relative)
+        if path.suffix.lower() in ('.zip', '.whl'):
+            source_archive_members(path, relative)
+            archives.add(path.resolve())
+    return len(checked), archives
 
 
 def verify_licenses(payload):
@@ -77,10 +144,13 @@ def main():
     parser.add_argument('--require-yaml', action='store_true', help='Require PyYAML for YAML syntax checks')
     args = parser.parse_args()
     payload = files()
+    catalog_source_count, locked_archives = verify_catalog_sources()
     forbidden_extensions = {'.dll', '.exe', '.pdb', '.dmp', '.log', '.userdb'}
     for path in payload:
         if path.is_symlink() or path.suffix.lower() in forbidden_extensions or '.userdb' in path.name:
             raise SystemExit(f'Unexpected runtime or personal file: {path.relative_to(ROOT)}')
+        if path.suffix.lower() in ('.zip', '.whl') and path.resolve() not in locked_archives:
+            raise SystemExit(f'Unlocked source archive: {path.relative_to(ROOT)}')
         if path.stat().st_size >= 100_000_000:
             raise SystemExit(f'File exceeds this source snapshot size limit: {path.relative_to(ROOT)}')
     private_marker = re.compile(
@@ -96,6 +166,8 @@ def main():
         if args.require_yaml:
             raise SystemExit('Install PyYAML to perform required YAML syntax checks')
     for path in payload:
+        if path.resolve() in locked_archives:
+            continue
         if path.suffix in {'.bin', '.gram', '.ocd2', '.gz', '.xz'}:
             continue
         try:
@@ -160,6 +232,7 @@ def main():
         'yamlParserAvailable': yaml is not None,
         'personalMarkers': 0, 'missingMarkdownLinks': 0,
         'licensedFiles': licensed_count, 'retainedNotices': notice_count,
+        'lockedCatalogSources': catalog_source_count, 'sourceArchives': len(locked_archives),
     }, ensure_ascii=False))
 
 
