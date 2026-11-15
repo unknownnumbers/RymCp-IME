@@ -2,7 +2,7 @@ name: Scheme packages and runtime checks
 
 on:
   push:
-    branches: [main, release/2026.11.14.2]
+    branches: [main, release/2026.11.16]
   pull_request:
   workflow_dispatch:
 
@@ -27,6 +27,7 @@ jobs:
           python scripts/data/rebuild_base.py
           git diff --exit-code -- config sources/base-build.json
       - run: python scripts/verify_release.py --require-yaml
+      - run: python config/pc/assets/status/generate.py --check
       - run: python config/pc/tools/validate-japanese-base.py --directory config/pc
       - run: python scripts/data/rebuild_japanese_family_q.py --check
 
@@ -121,14 +122,14 @@ jobs:
       - name: Build complete fixed-source DLC archives
         run: python scripts/build_dlc.py
       - name: Build reviewed scheme archives
-        run: python scripts/build_scheme_packages.py --output-dir out/schemes --version 2026.11.14.2 --source-ref "$GITHUB_SHA"
+        run: python scripts/build_scheme_packages.py --output-dir out/schemes --version 2026.11.16 --source-ref "$GITHUB_SHA"
       - name: Record archive hashes
         run: |
           (cd out/schemes && sha256sum *.zip > SHA256SUMS.txt)
           (cd out/dlc && sha256sum *.zip > SHA256SUMS.txt)
       - uses: actions/upload-artifact@v4
         with:
-          name: scheme-packages-2026.11.14.2
+          name: scheme-packages-2026.11.16
           if-no-files-found: error
           path: |
             out/schemes/*.zip

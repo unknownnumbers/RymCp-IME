@@ -6,21 +6,21 @@ Recall Your Mother-Tongue Chinese Pronunciations IME
 
 [English (en)](README.en.md) | [Traditional Chinese (zh-TC)](README.md) | [Simplified Chinese (zh-SC)](README.zh-SC.md)
 
-RymCp provides Chinese and smart English Rime schemes, with a foundation for future work on recalling mother-tongue pronunciations.
+RymCp provides Chinese and English Rime schemes, with a foundation for future work on recalling mother-tongue pronunciations.
 
 ## Available features
 
 - Chinese full spelling, abbreviations, existing correction rules, composition and local learning, with TC/SC output switching. Use `"` to lock the spelling and boundary of a complete syllable.
-- Smart English words, completion, correction, case handling and existing acronym expansions.
+- English words, completion, correction, case handling and existing acronym expansions.
 - The Stellae profile also provides hiragana, katakana, kanji, romaji and q/x/v queries, fixed mixed phrases, character lookup and calculation tools.
-- The official Weasel profile provides Chinese and smart English with six vertical candidates and non-inline composition.
+- The official Weasel profile provides Chinese and English with six vertical candidates and non-inline composition.
 - The default uses general vocabulary. Separate DLC modules provide broad math and physics vocabulary, computing terms, and the complete Tang poetry, Song poetry and Song ci collections in the pinned source snapshot, together with companion anthologies.
 
-A fresh Stellae profile defaults to SC output, five horizontal Chinese candidates and six vertical smart English candidates. Existing user learning and customization remain part of the normal profile workflow.
+A fresh Stellae profile defaults to SC output, five horizontal Chinese candidates and six vertical English candidates. Existing user learning and customization remain part of the normal profile workflow. The 2026.11.16 Stellae bundle provides a blue En status icon for English mode.
 
 ## Installation
 
-- [Stellae frontend and scheme installer](https://github.com/unknownnumbers/rime-stellae/releases).
+- [Stellae frontend and scheme installer](https://github.com/unknownnumbers/rime-stellae/releases/tag/v2026.11.16).
 - [Official Weasel scheme ZIP](https://github.com/unknownnumbers/RymCp-IME/releases).
 - [Stellae profile guide](docs/PC.md), [official profile installation and merging](docs/official-weasel.md), and [DLC sources](docs/dlc-sources.md).
 

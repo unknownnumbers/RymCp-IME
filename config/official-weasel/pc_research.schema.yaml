@@ -1,4 +1,4 @@
-# RymCp Chinese and smart English for official Weasel.
+# RymCp Chinese and English for official Weasel.
 # SPDX-License-Identifier: GPL-3.0-only
 schema:
   schema_id: pc_research
@@ -10,7 +10,7 @@ switches:
   - {name: full_shape, reset: 0}
   - {name: simplification, reset: 1, states: [漢字, 汉字]}
   - {name: ascii_punct, reset: 1}
-  - {name: research_english, reset: 0, states: [中文, 智能英文]}
+  - {name: research_english, reset: 0, states: [中文, 英文]}
 engine:
   processors:
     - lua_processor@official_backup_mode

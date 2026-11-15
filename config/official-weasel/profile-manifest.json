@@ -1,6 +1,6 @@
 {
   "format": "rymcp-official-profile-v2",
-  "version": "2026.11.14.2",
+  "version": "2026.11.16",
   "files": [
     {
       "path": "english_extensions.dict.yaml",
@@ -284,8 +284,8 @@
     },
     {
       "path": "pc_research.schema.yaml",
-      "bytes": 2591,
-      "sha256": "503fe326c8340027b3a7af1f453b2402152a2c651758d2ff85027900b2872ca0"
+      "bytes": 2579,
+      "sha256": "dc585d4241bc68be33f6f3e1fb3d3384c8034846c6ae30693fbabd48bafe644b"
     },
     {
       "path": "rymcp_dlc_computer.dict.yaml",

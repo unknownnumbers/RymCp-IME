@@ -95,6 +95,14 @@ def official_record(path: str, old: dict[str, dict]) -> dict:
 
 
 def classify(path: str, old: dict[str, dict]) -> dict:
+    if path in {
+        'config/pc/assets/status/generate.py',
+        'config/pc/assets/status/smart-english.svg',
+        'config/pc/assets/status/smart-english.ico',
+    }:
+        record = copy.deepcopy(ORIGINAL_PROGRAM)
+        record['kind'] = 'original-status-asset-or-generator'
+        return record
     upstream = upstream_configuration(path)
     if upstream:
         return upstream

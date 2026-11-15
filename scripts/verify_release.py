@@ -11,6 +11,7 @@ import json
 from pathlib import Path, PurePosixPath
 import re
 import stat
+import struct
 import zipfile
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -168,6 +169,13 @@ def main():
     for path in payload:
         if path.resolve() in locked_archives:
             continue
+        if path.suffix == '.ico':
+            if path.relative_to(ROOT).as_posix() != 'config/pc/assets/status/smart-english.ico':
+                raise SystemExit('Unexpected status icon resource')
+            data = path.read_bytes()
+            if len(data) < 6 or struct.unpack_from('<HHH', data) != (0, 1, 8):
+                raise SystemExit('Invalid En status icon container')
+            continue
         if path.suffix in {'.bin', '.gram', '.ocd2', '.gz', '.xz'}:
             continue
         try:
@@ -208,7 +216,7 @@ def main():
     if args.write_manifest:
         manifest = {
             'format': 'rymcp-source-release-v1',
-            'date': '2026-11-14',
+            'date': '2026-11-16',
             'kind': 'source-configuration-data-snapshot',
             'nativeBinariesIncluded': False,
             'personalLearningIncluded': False,

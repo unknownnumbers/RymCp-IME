@@ -1,6 +1,6 @@
 # Official Weasel profile sources
 
-`config/official-weasel` adapts the shared Chinese and smart English sources to official Weasel 0.17.4 and its x64 librime 1.13.1 runtime.
+`config/official-weasel` adapts the shared Chinese and English sources to official Weasel 0.17.4 and its x64 librime 1.13.1 runtime.
 
 The profile retains existing Chinese spelling, correction, composition and native learning, and the English recall index, completion, case handling and native word learning. Candidate layout and installation samples use the official frontend interfaces.
 

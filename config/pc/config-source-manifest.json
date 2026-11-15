@@ -1,17 +1,32 @@
 {
   "format": "rymcp-public-config-v2",
-  "scheme_version": "2026.11.14.2",
-  "allowlisted_source_files": 169,
+  "scheme_version": "2026.11.16",
+  "allowlisted_source_files": 172,
   "source_files": [
     {
       "path": "JAPANESE.md",
-      "bytes": 797,
-      "sha256": "ee3480108f5410c4883c21e286e1de1ce4ef5e35588de5b8eecd97c597fbba55"
+      "bytes": 791,
+      "sha256": "8bcc43e7514495036dbc1bc07afbe1fc0b576e607be7debd6eaa4c0ab6c055c6"
     },
     {
       "path": "OPENCC.md",
       "bytes": 921,
       "sha256": "47279a7505a3e4cd71d79116816776ad2c2b346a275628dbd63a04660e76956a"
+    },
+    {
+      "path": "assets/status/generate.py",
+      "bytes": 8774,
+      "sha256": "a054798dfe1ddefc3061bd2277666e52421adaa10acdd4a32b908cedaee40ff1"
+    },
+    {
+      "path": "assets/status/smart-english.ico",
+      "bytes": 374262,
+      "sha256": "2dba231189760c6a8e58f1bc51f8275a73f402b61f600a075cc95be6695cb446"
+    },
+    {
+      "path": "assets/status/smart-english.svg",
+      "bytes": 549,
+      "sha256": "e0a059469ce1dcb2c050063a21fe2e6a668b716da778743a97f58115391b5563"
     },
     {
       "path": "default.custom.yaml",
@@ -570,8 +585,8 @@
     },
     {
       "path": "pc_research.custom.yaml",
-      "bytes": 295812,
-      "sha256": "62db6a96a7728b4a0e0b2238cdbd4f9a282a285cd4914d4981247a4e797039e1"
+      "bytes": 295850,
+      "sha256": "786df824330fb2b82d74c66db4dbaff7e321731b32d5dbdc866dab0d58cea454"
     },
     {
       "path": "pc_research.schema.yaml",

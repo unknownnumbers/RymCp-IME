@@ -4,7 +4,7 @@
 
 小寫碼輸出平假名, 大寫碼輸出片假名. 小假名前加 x, 例如 `xa`、`XA`、`xtsu`、`XTSU`. `xX` 提供整段小假名查詢. `q`/`qQ` 查詢詞形, `v`/`vV` 使用中文拼音查詢日本漢字及讀音.
 
-`Ctrl+E` 選擇日語方案, `Ctrl+R` 返回中文/智能英文方案. 具體拼寫由隨附產生器及 `japanese-q-canonical.json` 定義.
+`Ctrl+E` 選擇日語方案, `Ctrl+R` 返回中文/英文方案. 具體拼寫由隨附產生器及 `japanese-q-canonical.json` 定義.
 
 早期設計借鑒 [Sela 的日語方案](https://github.com/Selaube/rime-jp_sela).
 

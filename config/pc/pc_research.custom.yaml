@@ -10,6 +10,7 @@ patch:
       candidate_spacing: 16
       comment_font_point: 12
     on:
+      icon: assets/status/smart-english.ico
       horizontal: false
       candidate_spacing: 4
       comment_font_point: 14
@@ -18,7 +19,7 @@ patch:
     - { name: full_shape, reset: 0 }
     - { name: simplification, reset: 1, states: [漢字, 汉字] }
     - { name: ascii_punct, reset: 1 }
-    - { name: research_english, reset: 0, states: [中文, 智能英文] }
+    - { name: research_english, reset: 0, states: [中文, 英文] }
     # Last reset is a private initialization-complete notification.
     - { name: probe_options_ready, reset: 1 }
   speller/alphabet: abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ

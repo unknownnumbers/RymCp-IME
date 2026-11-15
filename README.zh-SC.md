@@ -6,21 +6,21 @@ Recall Your Mother-Tongue Chinese Pronunciations IME
 
 [English (en)](README.en.md) | [Traditional Chinese (zh-TC)](README.md) | [Simplified Chinese (zh-SC)](README.zh-SC.md)
 
-RymCp 提供 Rime 中文及智能英文方案, 并为乡音复健的后续工作建立输入底座.
+RymCp 提供 Rime 中文及英文方案, 并为乡音复健的后续工作建立输入底座.
 
 ## 现有功能
 
 - 中文全拼、缩写、既有容错、组句及本地学习, 支持 TC/SC 输出切换. 使用 `"` 固定完整音节的拼写及边界.
-- 智能英文的完整词、补全、容错、大小写与既有缩写展开.
+- 英文的完整词、补全、容错、大小写与既有缩写展开.
 - 墨芯完整方案另提供平假名、片假名、汉字、romaji 及 q/x/v 查询模式, 固定混合词、查字与计算工具.
-- 官方 Weasel 方案提供中文及智能英文, 固定直排 6 项、非内嵌.
+- 官方 Weasel 方案提供中文及英文, 固定直排 6 项、非内嵌.
 - 默认使用通用词库. 数学、物理、电脑及诗词词汇可通过独立 DLC 安装. 数学及物理包涵盖广泛学科词汇, 诗词包收录固定来源的全量唐诗、宋诗、宋词及配套选集.
 
-墨芯完整方案新装默认 SC 输出, 中文横排 5 项、智能英文直排 6 项. 两套方案保留既有学习及自定义配置的使用方式.
+墨芯完整方案新装默认 SC 输出, 中文横排 5 项、英文直排 6 项. 两套方案保留既有学习及自定义配置的使用方式. 配套 2026.11.16 墨芯整合包的英文模式使用蓝色 En 状态图标.
 
 ## 安装
 
-- [墨芯前端与方案安装器](https://github.com/unknownnumbers/rime-stellae/releases).
+- [墨芯前端与方案安装器](https://github.com/unknownnumbers/rime-stellae/releases/tag/v2026.11.16).
 - [官方 Weasel 方案 ZIP](https://github.com/unknownnumbers/RymCp-IME/releases).
 - [完整方案使用说明](docs/PC.md)、[官方方案安装及合并](docs/official-weasel.md)、[DLC 来源](docs/dlc-sources.md).
 
