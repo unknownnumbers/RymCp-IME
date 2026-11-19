@@ -16,6 +16,7 @@ import zlib
 import shutil
 import tempfile
 import platform
+from data.build_dlc_english_index import add_module_index
 from data.dlc_poetry import build_catalog, write_module, archive_module, file_digest
 from data.dlc_readings import Readings
 from data.dlc_science import augment_catalog
@@ -23,6 +24,7 @@ from data.dlc_science import augment_catalog
 ROOT = Path(__file__).resolve().parents[1]
 SOURCES = ROOT / "dlc" / "sources"
 REVISION = "2026.11.14.2"
+INDEXED_PACKAGE_VERSION = "2026.11.19"
 WEIGHT = 100
 POETRY_COMMIT = "b8594f81a89752241442f2ce267d6f66f96704ee"
 LUNA_SHA256 = "0397c7741c3347631412f5bd20a6787087ca6c27093a46f216cfc8bb754f285f"
@@ -351,18 +353,21 @@ def main() -> None:
         if not cn:
             raise ValueError("Empty Chinese catalog: " + domain)
         files = module_files(domain, cn, en, report, sources, english_records)
+        files, english_index = add_module_index(files)
         directory = args.output / "rymcp_dlc" / domain
         existing = {str(p.relative_to(directory)).replace("\\", "/") for p in directory.rglob("*") if p.is_file()}
         if existing - files.keys():
             raise ValueError("Unexpected files in output catalog; choose a clean output directory")
-        directory.mkdir(parents=True, exist_ok=True)
         for relative, data in files.items():
-            (directory / relative).write_bytes(data)
-        filename = f"rymcp-dlc-{domain}-{REVISION}.zip"
+            target = directory / relative
+            target.parent.mkdir(parents=True, exist_ok=True)
+            target.write_bytes(data)
+        filename = f"rymcp-dlc-{domain}-{INDEXED_PACKAGE_VERSION}.zip"
         data = archive(files, domain, args.archives / filename)
         builds[domain] = {"ChineseRows": len(cn), "EnglishRows": len(english_records) if english_records is not None else len(en),
                           "EnglishWords": len(en), "Zip": filename,
-                          "Bytes": len(data), "Sha256": sha256(data), "Build": report}
+                          "Bytes": len(data), "Sha256": sha256(data), "Build": report,
+                          "EnglishIndex": english_index}
     summary = {"Format": 2, "Revision": REVISION, "SourceSha256": PINS,
                'CatalogSourceLockSha256': file_digest(SOURCES / 'catalog-source-lock.json'),
                'Compression': 'ZIP deflate; fixed member order and metadata.',

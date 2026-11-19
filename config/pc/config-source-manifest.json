@@ -1,6 +1,6 @@
 {
   "format": "rymcp-public-config-v2",
-  "scheme_version": "2026.11.16",
+  "scheme_version": "2026.11.19",
   "allowlisted_source_files": 172,
   "source_files": [
     {
@@ -360,8 +360,8 @@
     },
     {
       "path": "lua/cn_translator.lua",
-      "bytes": 32529,
-      "sha256": "b6f219123cd9b24d7becbc955cceda20dbc21b51c05a21ec0d33a27185fdfa1e"
+      "bytes": 32313,
+      "sha256": "454428b91f7b77f8d0211f19734876fef4dcbbf6207bd6a073fb847f33578071"
     },
     {
       "path": "lua/draft_limit.lua",
@@ -370,8 +370,8 @@
     },
     {
       "path": "lua/en_dlc.lua",
-      "bytes": 2339,
-      "sha256": "601348fcfa0e44986e3302be29f87c113d78308b482a1085071c16553c2b4164"
+      "bytes": 4509,
+      "sha256": "a6f03eaa79e595705da56b1dceaa8bf6313f24c4f9cbb58c150430e9ca17b6c8"
     },
     {
       "path": "lua/en_dlc_format.lua",

@@ -35,6 +35,7 @@ foreach ($scenario in @('Bracket','Mixed')) {
     if (-not $rows.Count -or @($rows | Where-Object { -not $_.Passed }).Count) { throw 'Missing or failed learning assertions.' }
     $results += [pscustomobject]@{Scenario=$scenario;Checks=$rows.Count;Passed=$true}
 }
-$summary = [pscustomobject]@{Format='rymcp-full-scheme-validation-v1';Version='2026.11.16';Passed=$true;Results=$results}
+$version = (Get-Content -LiteralPath (Join-Path $repo 'config/pc/config-source-manifest.json') -Raw | ConvertFrom-Json).scheme_version
+$summary = [pscustomobject]@{Format='rymcp-full-scheme-validation-v1';Version=$version;Passed=$true;Results=$results}
 $summary | ConvertTo-Json -Depth 5 | Set-Content -LiteralPath (Join-Path $work 'validation.json') -Encoding UTF8
 $summary | ConvertTo-Json -Depth 5

@@ -75,6 +75,8 @@ function Install-Pack([string]$id,[string]$content,[string]$revision='1',[string
  Write-Text (Join-Path $dir 'english.tsv') $content
  $bytes=$utf8.GetBytes($content)
  Write-Text (Join-Path $dir 'manifest.tsv') "format`t1`nid`t$id`nrevision`t$revision`nlanguages`ten`nfile`tenglish.tsv`t$($bytes.Length)`t$(Adler $bytes)`n"
+ $aliases=@($content -split "`n"|Where-Object {$_ -match '^(word|alias)\t'}|ForEach-Object {($_ -split "`t")[1]}|Sort-Object -Unique -CaseSensitive)
+ Write-Index (Join-Path $dir 'english_index') $aliases
 }
 function Remove-Pack([string]$id){
  $path=[IO.Path]::GetFullPath((Join-Path $user ('rymcp_dlc/'+$id)))
@@ -137,6 +139,12 @@ try{
  Check 'new-word-title-case' (@((Query 'Catalogdlc').Candidates) -ccontains 'Catalogdlc')
  Check 'new-word-upper-case' (@((Query 'CATALOGDLC').Candidates) -ccontains 'CATALOGDLC')
  Check 'new-word-correction' (@((Query 'catalogdcl').Candidates) -ccontains 'catalogdlc')
+ Remove-Item -LiteralPath (Join-Path $user 'rymcp_dlc/math/english_index/keys.bin')
+ Redeploy
+ Check 'old-english-module-keeps-exact-match' (@((Query 'catalogdlc').Candidates) -ccontains 'catalogdlc')
+ Check 'missing-index-skips-only-english-correction' (@((Query 'catalogdcl').Candidates) -cnotcontains 'catalogdlc')
+ Install-Pack 'math' $math;Redeploy
+ Check 'prebuilt-index-restores-english-correction' (@((Query 'catalogdcl').Candidates) -ccontains 'catalogdlc')
  Check 'canonical-name' (@((Query 'dlcp').Candidates) -ccontains 'DlcProper')
  Check 'canonical-alias' (@((Query 'dlpalias').Candidates) -ccontains 'DlcProper')
  Check 'cn-short-prefix-gated' (@((Query 'dl' $true).Candidates) -cnotcontains 'DlcProper')
@@ -165,7 +173,7 @@ try{
  Install-Pack 'math' $math
  Write-Text (Join-Path $user 'rymcp_dlc/math/english.tsv') ($math+'incomplete')
  Redeploy
- Check 'bad-checksum-whole-module-disabled' (@((Query 'dlcp').Candidates) -cnotcontains 'DlcProper')
+ Check 'malformed-data-whole-english-module-disabled' (@((Query 'dlcp').Candidates) -cnotcontains 'DlcProper')
  Check 'bad-module-base-survives' (@((Query 'catalog').Candidates) -ccontains 'catalogbase')
  Install-Pack 'math' ($math.Replace("`t10`t1", "`t0`t1"));Redeploy
  Check 'bad-row-whole-module-disabled' (@((Query 'dlcp').Candidates) -cnotcontains 'DlcProper')
@@ -180,10 +188,10 @@ try{
  Check 'missing-data-whole-module-disabled' (@((Query 'dlcp').Candidates) -cnotcontains 'DlcProper')
  Remove-Pack 'math';Install-Pack 'math' $math '1' $shared;Redeploy
  Check 'shared-only-not-loaded' (@((Query 'dlcp').Candidates) -cnotcontains 'DlcProper')
- Install-Pack 'math' $math;Close-Session;Open-Session
- Check 'same-lua-new-schema-installs' (@((Query 'dlcp').Candidates) -ccontains 'DlcProper')
- Remove-Pack 'math';Close-Session;Open-Session
- Check 'same-lua-new-schema-removal' (@((Query 'dlcp').Candidates) -cnotcontains 'DlcProper')
+ Install-Pack 'math' $math;Redeploy
+ Check 'redeploy-installs-optional-english-module' (@((Query 'dlcp').Candidates) -ccontains 'DlcProper')
+ Remove-Pack 'math';Redeploy
+ Check 'redeploy-removes-optional-english-module' (@((Query 'dlcp').Candidates) -cnotcontains 'DlcProper')
 }catch{$failure=$_.Exception.Message}finally{Close-Engine}
 $result=[ordered]@{Completed=($null -eq $failure);Passed=@($checks|Where-Object Passed).Count;Failed=@($checks|Where-Object {-not $_.Passed}).Count;Error=$failure;SyntheticOnly=$true;Profile=$Profile;Checks=$checks.ToArray()}
 [IO.File]::WriteAllText((Join-Path $out 'results.json'),($result|ConvertTo-Json -Depth 6),$utf8)

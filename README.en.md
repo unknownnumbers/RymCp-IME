@@ -16,17 +16,19 @@ RymCp provides Chinese and English Rime schemes, with a foundation for future wo
 - The official Weasel profile provides Chinese and English with six vertical candidates and non-inline composition.
 - The default uses general vocabulary. Separate DLC modules provide broad math and physics vocabulary, computing terms, and the complete Tang poetry, Song poetry and Song ci collections in the pinned source snapshot, together with companion anthologies.
 
-A fresh Stellae profile defaults to SC output, five horizontal Chinese candidates and six vertical English candidates. Existing user learning and customization remain part of the normal profile workflow. The 2026.11.16 Stellae bundle provides a blue En status icon for English mode.
+A fresh Stellae profile defaults to SC output, five horizontal Chinese candidates and six vertical English candidates. Existing user learning and customization remain part of the normal profile workflow. The 2026.11.19 Stellae bundle provides a blue En status icon for English mode.
 
 ## Installation
 
-- [Stellae frontend and scheme installer](https://github.com/unknownnumbers/rime-stellae/releases/tag/v2026.11.16).
+- [Stellae frontend and scheme installer](https://github.com/unknownnumbers/rime-stellae/releases/tag/v2026.11.19).
 - [Official Weasel scheme ZIP](https://github.com/unknownnumbers/RymCp-IME/releases).
 - [Stellae profile guide](docs/PC.md), [official profile installation and merging](docs/official-weasel.md), and [DLC sources](docs/dlc-sources.md).
 
 Scheme sources are in [config/pc](config/pc) and [config/official-weasel](config/official-weasel). Back up matching configuration files before merging into an existing user directory, and retain user dictionaries.
 
 The 2026.11.14.2 poetry DLC requires scheme base 2026.11.14.2 or later. Catalogs are generated from the repository's fixed source inputs and build scripts; module ZIPs are available in Releases. Readings and text variants use automated processing with bounded checks and have not been reviewed line by line. See [DLC sources and limitations](docs/dlc-sources.md).
+
+Math, physics and computing DLCs include prebuilt English spelling correction indexes. Update older modules before redeploying.
 
 ## Mother-tongue pronunciation work
 

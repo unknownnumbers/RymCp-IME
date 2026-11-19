@@ -1,6 +1,6 @@
 {
   "format": "rymcp-source-release-v1",
-  "date": "2026-11-16",
+  "date": "2026-11-19",
   "kind": "source-configuration-data-snapshot",
   "nativeBinariesIncluded": false,
   "personalLearningIncluded": false,
@@ -20,7 +20,7 @@
     {
       "path": ".github/workflows/schemes.yml",
       "bytes": 5819,
-      "sha256": "50d611b3d242ba4fe8333dd32646de9388953e3ccb72695e54772406c0e38706"
+      "sha256": "63b197c04fe3f157eeb20c80e14c7e90e0ea5b4725a8e94ebd82e3e59c1ff49e"
     },
     {
       "path": ".github/workflows/verify.yml",
@@ -39,18 +39,18 @@
     },
     {
       "path": "README.en.md",
-      "bytes": 3160,
-      "sha256": "441814086d2a8907910196ba28ed67d7a07efbeddd0d1f23e5d5b8b3bd5a78a1"
+      "bytes": 3289,
+      "sha256": "acf57c822a39dd45ae7bb50b5cedbcd42c987be27fa0884455dd141a711f9c7d"
     },
     {
       "path": "README.md",
-      "bytes": 2608,
-      "sha256": "2105cf39b09ed3cc814b5f700419d364064bf91a32017d2b34fe9d2387c90e59"
+      "bytes": 2729,
+      "sha256": "eb6a89c2484c57cbeadfc61ed8d426f047f275086a84bdab6d8fa4c177473921"
     },
     {
       "path": "README.zh-SC.md",
-      "bytes": 2620,
-      "sha256": "28f31c0582ea6db611c53e53930c227c163b18aa53673da122776250f310ecf1"
+      "bytes": 2741,
+      "sha256": "c1d8ebfb7986a5fef9024279a505e8af695e4ed1388466eb435d14c2e2303498"
     },
     {
       "path": "THIRD_PARTY_NOTICES.md",
@@ -249,8 +249,8 @@
     },
     {
       "path": "config/official-weasel/lua/cn_translator.lua",
-      "bytes": 31833,
-      "sha256": "40fea28e2a6468c9c10011cdf8632cd767767ccf7e8db7c5af5c2362ff888927"
+      "bytes": 31670,
+      "sha256": "cb105ce1c0f16b4584d4c3e329600cadd20a5e905c653aebea6b67751d2fbdc9"
     },
     {
       "path": "config/official-weasel/lua/draft_limit.lua",
@@ -264,8 +264,8 @@
     },
     {
       "path": "config/official-weasel/lua/en_dlc.lua",
-      "bytes": 2339,
-      "sha256": "601348fcfa0e44986e3302be29f87c113d78308b482a1085071c16553c2b4164"
+      "bytes": 4509,
+      "sha256": "a6f03eaa79e595705da56b1dceaa8bf6313f24c4f9cbb58c150430e9ca17b6c8"
     },
     {
       "path": "config/official-weasel/lua/en_dlc_format.lua",
@@ -350,7 +350,7 @@
     {
       "path": "config/official-weasel/profile-manifest.json",
       "bytes": 15765,
-      "sha256": "431db83076e65de5c9110f4a96ec185809d736fae14c8d91f6945db503137adc"
+      "sha256": "7c7b40b77524e6ac57d979f52019660d32ecee3c4789a35024d31550ec152b2d"
     },
     {
       "path": "config/official-weasel/rymcp_dlc_computer.dict.yaml",
@@ -580,7 +580,7 @@
     {
       "path": "config/pc/config-source-manifest.json",
       "bytes": 27804,
-      "sha256": "12cbde0cd9d645dcbc2f8affe3be48967e40a7efa807beb1d242c2061de59e0b"
+      "sha256": "67dfafdf6800e89d28a147e38da47e7d710a0ee938f7c884c2b4094c5eee0e19"
     },
     {
       "path": "config/pc/default.custom.yaml",
@@ -914,8 +914,8 @@
     },
     {
       "path": "config/pc/lua/cn_translator.lua",
-      "bytes": 32529,
-      "sha256": "b6f219123cd9b24d7becbc955cceda20dbc21b51c05a21ec0d33a27185fdfa1e"
+      "bytes": 32313,
+      "sha256": "454428b91f7b77f8d0211f19734876fef4dcbbf6207bd6a073fb847f33578071"
     },
     {
       "path": "config/pc/lua/draft_limit.lua",
@@ -924,8 +924,8 @@
     },
     {
       "path": "config/pc/lua/en_dlc.lua",
-      "bytes": 2339,
-      "sha256": "601348fcfa0e44986e3302be29f87c113d78308b482a1085071c16553c2b4164"
+      "bytes": 4509,
+      "sha256": "a6f03eaa79e595705da56b1dceaa8bf6313f24c4f9cbb58c150430e9ca17b6c8"
     },
     {
       "path": "config/pc/lua/en_dlc_format.lua",
@@ -1599,18 +1599,18 @@
     },
     {
       "path": "docs/PC.md",
-      "bytes": 2068,
-      "sha256": "d47cbb3e86cf28c913b8c58c4ddc01d863aa3dc0fb8b0ff48b6352b828a2a1a5"
+      "bytes": 2030,
+      "sha256": "17b88a83b9cfccc17f74a2f79e3c175c8bcbd97636663d3696ecb107fe6f11d8"
     },
     {
       "path": "docs/dlc-sources.md",
-      "bytes": 7923,
-      "sha256": "1d545b6f013f38fb4581f3d97431d6b8629f5d30d53e6d0a7abc126a90f33299"
+      "bytes": 7732,
+      "sha256": "e917d524e5940e96d72346c4b7e6d71ab5952596ed7821d4a9f731b64eff9351"
     },
     {
       "path": "docs/official-weasel.md",
-      "bytes": 1833,
-      "sha256": "bc9f0d6f69101b794aaf5fc02b6f1aac6148567f7eb5114d07b0e00c11bfa5b0"
+      "bytes": 1822,
+      "sha256": "50b4fcb5554ef233bdf114a4e000295cd54994754c9f6c886f4ffcc8a14544ee"
     },
     {
       "path": "docs/sources/README.md",
@@ -1794,8 +1794,8 @@
     },
     {
       "path": "licenses/file-licenses.json",
-      "bytes": 182503,
-      "sha256": "d07f38ba8633d77a029b165d65e5e08022d01b9f28dc04208b602c7cb4660680"
+      "bytes": 182868,
+      "sha256": "20a0adf38f27dd97900326cd641a69de1b9f4bb13f02e78e3d8d78781c9fa0e3"
     },
     {
       "path": "licenses/luna-compact-model-LGPL-3.0.txt",
@@ -2204,8 +2204,8 @@
     },
     {
       "path": "scripts/build_dlc.py",
-      "bytes": 21153,
-      "sha256": "7f360533ad835a7eedb80b1b219835e9b20fbedfbdd82cf414c5ae8f8b64de4c"
+      "bytes": 21411,
+      "sha256": "ae41043bddacc174a5fb0cbe9f06943c2e77f185a32260b9310dd4bc7ab2bb0a"
     },
     {
       "path": "scripts/build_scheme_packages.py",
@@ -2213,9 +2213,14 @@
       "sha256": "f7d47377fe7d1d0b14f10e8efa3e563c408f6d6801e531e61851988bac6b3186"
     },
     {
+      "path": "scripts/data/build_dlc_english_index.py",
+      "bytes": 2326,
+      "sha256": "c378c9aacc4abcd39c1da83718d1c43431ee7006069eafee6e2e61a7a2e2b87d"
+    },
+    {
       "path": "scripts/data/build_english_index.py",
-      "bytes": 3801,
-      "sha256": "4ba02120db93e59686d9c1a8f8c9d0e69d25910b1f78b7917610dfbf75268940"
+      "bytes": 3947,
+      "sha256": "69644655855e05e457833f3374c235bb39d1a8c9f31396ef1d3ae8d96cfc81ef"
     },
     {
       "path": "scripts/data/build_japanese_q.py",
@@ -2294,13 +2299,13 @@
     },
     {
       "path": "scripts/schemes/Test-FullProfile.ps1",
-      "bytes": 3102,
-      "sha256": "15f80bffff69426ec939a2887891e1e673ac54a12a0f437edd4013167c1a2d3e"
+      "bytes": 3233,
+      "sha256": "b1f436c3f8cc0d9e49758a022a657ac880d066a4397b8a82e1b8415362d1ef69"
     },
     {
       "path": "scripts/schemes/Test-OfficialProfile.ps1",
-      "bytes": 6009,
-      "sha256": "72a26f1e060cf95274c46f1f459d1e996131550592ff4decde278d8622826c63"
+      "bytes": 6138,
+      "sha256": "1b8451746fbff4dbe10191a6f6ba2a08337d107570777cc98d1bcb20696d803d"
     },
     {
       "path": "scripts/schemes/Test-SharedProfile.ps1",
@@ -2310,7 +2315,7 @@
     {
       "path": "scripts/verify_release.py",
       "bytes": 12538,
-      "sha256": "2aebfdce79a145f2f7f7ab771ea60a2d19dc8d12ae667fff86c7e1cd6135c7d0"
+      "sha256": "4551d4fac1b6c69396340bfadc9c472d91bbd9eb7aeb85bc21357460a40fadb5"
     },
     {
       "path": "sources/base-build.json",
@@ -2394,8 +2399,8 @@
     },
     {
       "path": "tests/schemes/Test-EnglishDlc.ps1",
-      "bytes": 13713,
-      "sha256": "574fe8b4a7559b2c50bcca5b73b3dd01dd72ee39128e4a013ac21dd9a949a920"
+      "bytes": 14384,
+      "sha256": "9452d615752121a216223c5ddb5fc0673b09e339616981bfba77ed653fd4e71b"
     },
     {
       "path": "tests/schemes/Test-ExactSyllable.ps1",

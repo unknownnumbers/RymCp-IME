@@ -9,7 +9,6 @@ local M = {}
 local native_boundary = require('cn_native_boundary')
 local spacing = require('cn_preedit_spacing')
 local orthography = require('cn_orthography')
-local dlc = require('cn_dlc')
 
 local function is_removed_symbol(text)
   local any = false
@@ -410,7 +409,6 @@ local function initialize_spellings(env, schema)
 end
 
 function M.init(env)
-  env.dlc_catalog = dlc.configure(env.engine.schema.config, env.engine)
   env.allow_word_completion = env.engine.schema.config:get_bool('translator/enable_word_completion') == true
   initialize_spellings(env, env.engine.schema)
   env.native = assert(Component.Translator(env.engine, '', 'script_translator@translator'))
@@ -426,7 +424,6 @@ end
 -- schema. This owns one isolated native translator; it does not initialize
 -- symbol, English or mixed-word candidate streams or their learning owners.
 function M.init_chinese(env, schema)
-  env.dlc_catalog = dlc.configure(schema.config, env.engine)
   env.lookup_schema = schema
   env.only_chinese = true
   env.allow_word_completion = false

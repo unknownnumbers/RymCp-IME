@@ -16,17 +16,19 @@ RymCp 提供 Rime 中文及英文方案, 并为乡音复健的后续工作建立
 - 官方 Weasel 方案提供中文及英文, 固定直排 6 项、非内嵌.
 - 默认使用通用词库. 数学、物理、电脑及诗词词汇可通过独立 DLC 安装. 数学及物理包涵盖广泛学科词汇, 诗词包收录固定来源的全量唐诗、宋诗、宋词及配套选集.
 
-墨芯完整方案新装默认 SC 输出, 中文横排 5 项、英文直排 6 项. 两套方案保留既有学习及自定义配置的使用方式. 配套 2026.11.16 墨芯整合包的英文模式使用蓝色 En 状态图标.
+墨芯完整方案新装默认 SC 输出, 中文横排 5 项、英文直排 6 项. 两套方案保留既有学习及自定义配置的使用方式. 配套 2026.11.19 墨芯整合包的英文模式使用蓝色 En 状态图标.
 
 ## 安装
 
-- [墨芯前端与方案安装器](https://github.com/unknownnumbers/rime-stellae/releases/tag/v2026.11.16).
+- [墨芯前端与方案安装器](https://github.com/unknownnumbers/rime-stellae/releases/tag/v2026.11.19).
 - [官方 Weasel 方案 ZIP](https://github.com/unknownnumbers/RymCp-IME/releases).
 - [完整方案使用说明](docs/PC.md)、[官方方案安装及合并](docs/official-weasel.md)、[DLC 来源](docs/dlc-sources.md).
 
 方案源码分别位于 [config/pc](config/pc) 与 [config/official-weasel](config/official-weasel). 安装到已有资料夹时, 先备份同名配置并依说明合并, 保留用户词库.
 
 2026.11.14.2 诗词 DLC 需要 2026.11.14.2 或更新的方案基座. 词表由仓库中的固定来源及构建程序生成, 可直接下载 Release 的模块 ZIP. 读音与异文采用自动处理及有限校核, 尚未逐句审校, 详见 [DLC 来源与限制](docs/dlc-sources.md).
+
+数学、物理与电脑 DLC 随包提供英文拼写纠错索引. 已有旧包时可更新对应模块后重新部署.
 
 ## 乡音复健
 

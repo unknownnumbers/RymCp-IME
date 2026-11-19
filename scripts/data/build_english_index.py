@@ -55,8 +55,8 @@ def read_words(path):
     return sorted(words), {'input_rows': rows, 'rejected_rows': rejected}
 
 
-def build(input_path, output_dir):
-    words, report = read_words(input_path)
+def write_index(words, output_dir):
+    """Write the native index for ordered, unique ASCII words."""
     postings = {}
     for word_id, word in enumerate(words, 1):
         for key in deletion_keys(word):
@@ -76,7 +76,7 @@ def build(input_path, output_dir):
                 postings_file.write(WORD_ID.pack(word_id))
             posting_count += len(ids)
 
-    report.update({
+    return {
         'format': 'ascii-prefix-delete-v1',
         'prefix_length': PREFIX_LENGTH,
         'max_distance': MAX_DISTANCE,
@@ -87,7 +87,12 @@ def build(input_path, output_dir):
         'largest_posting': max(map(len, postings.values())),
         'bytes': {name: (output_dir / name).stat().st_size
                   for name in ('words.txt', 'keys.bin', 'postings.bin')},
-    })
+    }
+
+
+def build(input_path, output_dir):
+    words, report = read_words(input_path)
+    report.update(write_index(words, output_dir))
     (output_dir / 'build-report.json').write_text(
         json.dumps(report, ensure_ascii=False, indent=2) + '\n', encoding='utf-8', newline='\n')
     return report
