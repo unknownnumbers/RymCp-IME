@@ -78,3 +78,5 @@ jp_query_filter = jp_query.filter
 
 -- Isolated exact whole-draft Japanese symbol names.
 jp_named_symbols = require('jp_named_symbols')
+
+official_translator = require('official_translator')

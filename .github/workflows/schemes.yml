@@ -2,7 +2,7 @@ name: Scheme packages and runtime checks
 
 on:
   push:
-    branches: [main, release/2026.11.19]
+    branches: [main, release/2026.11.20]
   pull_request:
   workflow_dispatch:
 
@@ -122,14 +122,14 @@ jobs:
       - name: Build complete fixed-source DLC archives
         run: python scripts/build_dlc.py
       - name: Build reviewed scheme archives
-        run: python scripts/build_scheme_packages.py --output-dir out/schemes --version 2026.11.19 --source-ref "$GITHUB_SHA"
+        run: python scripts/build_scheme_packages.py --profile stellae --output-dir out/schemes --version 2026.11.20 --source-ref "$GITHUB_SHA"
       - name: Record archive hashes
         run: |
           (cd out/schemes && sha256sum *.zip > SHA256SUMS.txt)
           (cd out/dlc && sha256sum *.zip > SHA256SUMS.txt)
       - uses: actions/upload-artifact@v4
         with:
-          name: scheme-packages-2026.11.19
+          name: scheme-packages-2026.11.20
           if-no-files-found: error
           path: |
             out/schemes/*.zip

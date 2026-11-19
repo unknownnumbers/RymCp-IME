@@ -225,6 +225,32 @@ try {
     $unitSummary = [RimeProbe]::Property($script:s, 'cn_exact_unit_checks')
     Check 'pure-lua-unit-suites' ($unitSummary -ceq 'PASS processor=56 matcher=16') $unitSummary
 
+    if (Test-Path -LiteralPath (Join-Path $user 'lua/official_translator.lua')) {
+        $beforeThreshold = Query ('s' * 7)
+        Type-Raw 's'
+        Check 'eight-initials-keep-Chinese-candidates' (
+            [RimeProbe]::Input($script:s) -ceq ('s' * 8) -and
+            [RimeProbe]::Snapshot($script:s,6).Candidates.Count -gt 0 -and $script:commits.Count -eq 0)
+        Stroke 0xff08
+        $restored = [RimeProbe]::Snapshot($script:s,400)
+        Check 'deleting-eighth-initial-restores-menu' (
+            [RimeProbe]::Input($script:s) -ceq ('s' * 7) -and
+            ($restored.Candidates -join "`n") -ceq ($beforeThreshold.Candidates -join "`n") -and
+            $restored.Preedit -ceq $beforeThreshold.Preedit)
+        $longMenu = Query ('s' * 24)
+        Check 'long-initials-keep-Chinese-candidates' ($longMenu.Candidates.Count -gt 0)
+
+        [void](Query 'uUh')
+        Stroke 0xff0d 4
+        Commit-Is 'on-demand-character-lookup' '一 (h)'
+        [void](Query 'U4e2d')
+        Stroke 0xff0d 4
+        Commit-Is 'on-demand-Unicode-input' '中 (U+4E2D)'
+        [void](Query 'cC(1+2.5)*log(2,8)')
+        Stroke 0xff0d
+        Commit-Is 'on-demand-calculator' '(1+2.5)*log(2,8)=10.5'
+    }
+
     # All learning below comes from these fixed public examples.
     Seed 'xiaosiren' @('笑','死','人') '笑死人'
     Seed 'xiaoren' @('小','人') '小人'

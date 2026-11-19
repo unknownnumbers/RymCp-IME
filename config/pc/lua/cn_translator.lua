@@ -490,6 +490,23 @@ local function unmarked_query(func, input, seg, env, plan, argument)
   end
 end
 
+local function long_single_letter_abbreviations(input, seg, env)
+  if #input < 8 or env.only_chinese or seg.start ~= 0 or not input:match('^[a-z]+$') then
+    return false
+  end
+  local ctx = env.engine.context
+  if ctx.input ~= input or ctx.caret_pos ~= #input then return false end
+  local normal = env.normal_spellings
+  for pos = 1, #input do
+    if normal[input:sub(pos, pos)] ~= 1 then return false end
+    -- Keep the full query when this draft has a multi-letter normal spelling.
+    for last = pos + 1, math.min(#input, pos + env.normal_max_length - 1) do
+      if normal[input:sub(pos, last)] then return false end
+    end
+  end
+  return true
+end
+
 function M.func(input, seg, env)
   if not env.only_chinese and env.engine.context:get_option('research_english') then
     english.func(input, seg, env.english_env, false)
@@ -502,10 +519,12 @@ function M.func(input, seg, env)
     local suffix = env.engine.context.input:sub(seg.start + 1)
     if suffix:sub(1, #input) == input then match_cache.exact_plan = exact_spelling.parse(suffix) end
   end
-  local full_results = Translation(chinese_query, input, seg, env, true, match_cache)
+  local normal_only = long_single_letter_abbreviations(input, seg, env)
+  local full_results = not normal_only and
+    Translation(chinese_query, input, seg, env, true, match_cache) or nil
   local normal_results = Translation(chinese_query, input, seg, env, false, match_cache, true)
   local _, letter_count = input:gsub('[a-z]', '')
-  local extended_results = letter_count >= 3 and
+  local extended_results = not normal_only and letter_count >= 3 and
     Translation(chinese_query, input, seg, env, false, match_cache) or nil
   local greek_results, english_results, mixed_results
   if not env.only_chinese then
@@ -519,7 +538,8 @@ function M.func(input, seg, env)
       mixed_results = Translation(mixed.func, input, seg, env.mixed_env)
     end
   end
-  local fi, fs = full_results:iter()
+  local fi, fs
+  if full_results then fi, fs = full_results:iter() end
   local ni, ns = normal_results:iter()
   local xi, xs
   if extended_results then xi, xs = extended_results:iter() end
@@ -527,7 +547,7 @@ function M.func(input, seg, env)
   if greek_results then gi, gs = greek_results:iter() end
   if english_results then ei, es = english_results:iter() end
   if mixed_results then mi, ms = mixed_results:iter() end
-  local f, n, x, g, e, m = fi(fs), ni(ns), xi and xi(xs),
+  local f, n, x, g, e, m = fi and fi(fs), ni(ns), xi and xi(xs),
     gi and gi(gs), ei and ei(es), mi and mi(ms)
   spacing.record(env,input,seg.start,match_cache)
   local complete_end = seg.start + #input

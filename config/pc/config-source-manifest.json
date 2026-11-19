@@ -1,7 +1,7 @@
 {
   "format": "rymcp-public-config-v2",
-  "scheme_version": "2026.11.19",
-  "allowlisted_source_files": 172,
+  "scheme_version": "2026.11.20",
+  "allowlisted_source_files": 173,
   "source_files": [
     {
       "path": "JAPANESE.md",
@@ -360,8 +360,8 @@
     },
     {
       "path": "lua/cn_translator.lua",
-      "bytes": 32313,
-      "sha256": "454428b91f7b77f8d0211f19734876fef4dcbbf6207bd6a073fb847f33578071"
+      "bytes": 33155,
+      "sha256": "598e08c35b34db392cabb918e3a2a4b22efd2966fc5c4f604e85a1102fe3f25b"
     },
     {
       "path": "lua/draft_limit.lua",
@@ -472,6 +472,11 @@
       "path": "lua/mixed_translator.lua",
       "bytes": 3511,
       "sha256": "f878f62589653baf0d9a37b45114a7307ba9304fe7754f97b8890726426bafed"
+    },
+    {
+      "path": "lua/official_translator.lua",
+      "bytes": 1018,
+      "sha256": "bd4691421879dcd644385cc5cd181fb42a0b9eeb8831170a007b199c6546e741"
     },
     {
       "path": "lua/pc_probe_global_mode.lua",
@@ -585,8 +590,8 @@
     },
     {
       "path": "pc_research.custom.yaml",
-      "bytes": 295850,
-      "sha256": "786df824330fb2b82d74c66db4dbaff7e321731b32d5dbdc866dab0d58cea454"
+      "bytes": 295785,
+      "sha256": "56a517d46e0eb16b92d4b4d825d790a96870744b6a773c5213212395eb4f757e"
     },
     {
       "path": "pc_research.schema.yaml",
@@ -635,8 +640,8 @@
     },
     {
       "path": "rime.lua",
-      "bytes": 3312,
-      "sha256": "a5e96c025248d55b5adcb43d0727b4badbc0501bc775a66b4b4d058315a475a0"
+      "bytes": 3368,
+      "sha256": "99649c8db94fdf34453f66af2e73610baa7f9c3846f98718886bac20ddb66d7f"
     },
     {
       "path": "rymcp_dlc_computer.dict.yaml",
