@@ -8,7 +8,8 @@ local function plain(key)
 end
 
 local function ordinary(seg)
-  return seg:has_tag('abc')
+  return seg:has_tag('abc') and not seg:has_tag('u_lookup')
+      and not seg:has_tag('reverse_lookup')
 end
 
 local function observe(env)
@@ -47,7 +48,9 @@ function M.func(key, env)
   if ctx:get_option('ascii_mode') or ctx.composition:empty() then return 2 end
   local seg = ctx.composition:back()
   local word = ordinary(seg)
-  if not word then return 2 end
+  local unicode_move = seg:has_tag('tool_unicode') and (code == 0x2c or code == 0x2e)
+  if not seg:has_tag('abc') and not seg:has_tag('u_lookup')
+      and not unicode_move then return 2 end
   local has_menu = ctx:has_menu()
   if code == 0x2d and word then
     if not env.ever_later_page then

@@ -1,6 +1,6 @@
 {
   "format": "rymcp-official-profile-v2",
-  "version": "2026.11.19",
+  "version": "2026.11.20.1",
   "files": [
     {
       "path": "english_extensions.dict.yaml",
@@ -119,8 +119,8 @@
     },
     {
       "path": "lua/candidate_keys.lua",
-      "bytes": 2210,
-      "sha256": "4662578a97b5a4bf5892202b374e5ec70a895eafbfda7ca2efacf1fadfd655f3"
+      "bytes": 2445,
+      "sha256": "358d80996415e74d9062d6b5bff218b4323cc183595d98c8aee5dda7dd9281c8"
     },
     {
       "path": "lua/cn_boundaries.lua",
@@ -189,8 +189,8 @@
     },
     {
       "path": "lua/cn_translator.lua",
-      "bytes": 31670,
-      "sha256": "cb105ce1c0f16b4584d4c3e329600cadd20a5e905c653aebea6b67751d2fbdc9"
+      "bytes": 32492,
+      "sha256": "a75d54c87a40ac27d4a36b9ac4da986b7f5c6b7b8b5414047a252fc13ced1e1a"
     },
     {
       "path": "lua/draft_limit.lua",
@@ -238,14 +238,64 @@
       "sha256": "0323aeb24efecf7ce39ba2e8a51391ed7d4b83fd7577820af26964d93c066d4a"
     },
     {
+      "path": "lua/official_translator.lua",
+      "bytes": 1018,
+      "sha256": "bd4691421879dcd644385cc5cd181fb42a0b9eeb8831170a007b199c6546e741"
+    },
+    {
+      "path": "lua/query_info_submit.lua",
+      "bytes": 5788,
+      "sha256": "7e4c4dd40375295478c81c99c1fccc47259943c1328f5eb4bba21ef213932ed1"
+    },
+    {
       "path": "lua/rymcp_dlc.lua",
       "bytes": 16511,
       "sha256": "71592167ae7731c2a64fdc527599d7418396b744d129c90659da606d33832d3f"
     },
     {
+      "path": "lua/scheme_data.lua",
+      "bytes": 750,
+      "sha256": "181b37a95ff605818b6db79c1fc94747a9d9cb04c0ca9eb82b120c35d0628426"
+    },
+    {
       "path": "lua/select_hanzi.lua",
       "bytes": 4246,
       "sha256": "3744c41245468a9266da150bd14d66a20fe7277f7d9380269c257ab53f533718"
+    },
+    {
+      "path": "lua/tool_calculator.lua",
+      "bytes": 12655,
+      "sha256": "6e4fada9bd31a636d67a31ddc67c3bec7fab02116d060b79e2457e308ada884a"
+    },
+    {
+      "path": "lua/tool_processor.lua",
+      "bytes": 2626,
+      "sha256": "9fc7ac2b782c4c6f6950d6583a95ea5a199711c94de442eb0183e543ff374a7d"
+    },
+    {
+      "path": "lua/tool_segmentor.lua",
+      "bytes": 881,
+      "sha256": "de182baae9865cd1b2a4fab3df6f69c0e48071e6aaf39f049d23a50d138730e9"
+    },
+    {
+      "path": "lua/tool_translator.lua",
+      "bytes": 2378,
+      "sha256": "c620b182fdf6483337cb56b214dcf8d728e4c1257c1b66f6743a8ee2d6869b94"
+    },
+    {
+      "path": "lua/tool_unicode.lua",
+      "bytes": 1815,
+      "sha256": "b6375b1114b92bb9b420baa3aea1bdedcca2366f6fc3fc499d87d7464ef47c63"
+    },
+    {
+      "path": "lua/tool_unicode_data.lua",
+      "bytes": 5970,
+      "sha256": "84ced4a71016ee930f04c7d70f8982e61231cf5fe113cc19cbaa0f69bec7526d"
+    },
+    {
+      "path": "lua/u_translator.lua",
+      "bytes": 5322,
+      "sha256": "1a171566a85827f4ae69a87f999a410cf5fba352fedab32c02a70d8a8fcc080c"
     },
     {
       "path": "luna_pinyin.dict.yaml",
@@ -284,8 +334,33 @@
     },
     {
       "path": "pc_research.schema.yaml",
-      "bytes": 2579,
-      "sha256": "dc585d4241bc68be33f6f3e1fb3d3384c8034846c6ae30693fbabd48bafe644b"
+      "bytes": 3988,
+      "sha256": "68f07524c97b316ade219b5b5441fa61558273c2467759a15099826d5950009e"
+    },
+    {
+      "path": "project_radical.dict.yaml",
+      "bytes": 2167597,
+      "sha256": "ac2ce6698fc4982fd2d5580a903fb7f7517ab4d8cd1e09403645b4dea08e5f7e"
+    },
+    {
+      "path": "project_radical.schema.yaml",
+      "bytes": 602,
+      "sha256": "8e97d1b19e7f4a7a54bcaa5066410e9dc96c0d815bdd463080a3ad7192b599b1"
+    },
+    {
+      "path": "project_radical_parts.dict.yaml",
+      "bytes": 2300077,
+      "sha256": "dcdbeaa0e9e711e3f6e7f0d0d492db6fa1f67424299d36fde1ef2b59dbe66287"
+    },
+    {
+      "path": "project_radical_parts.schema.yaml",
+      "bytes": 1033,
+      "sha256": "5d3bc1bccc3a948385c5242d37385f6ab623a80c63ced2c4b46b6cfcee8219a2"
+    },
+    {
+      "path": "query_strokes.tsv",
+      "bytes": 1559049,
+      "sha256": "79f3578cded6d4f42adca0a3b37548bdfdcb5062f6aee11103671cfc9d4cc401"
     },
     {
       "path": "rymcp_dlc_computer.dict.yaml",
@@ -474,13 +549,18 @@
     },
     {
       "path": "samples/rime.lua",
-      "bytes": 2130,
-      "sha256": "6c970e1d68e9247befc275c36ecd647a4bb6e8970aa73f6004efc2c2e72d86b1"
+      "bytes": 2318,
+      "sha256": "a0cf4236b53df08b47b71a84a8a8772685ca9b21e67ab763229f5cec78a0ba79"
     },
     {
       "path": "samples/weasel.custom.yaml",
       "bytes": 1397,
       "sha256": "4aa17e5338dd64f7b6395663371254452b3443ae04ab329457ff5b1a58ec9545"
+    },
+    {
+      "path": "u_readings.tsv",
+      "bytes": 556891,
+      "sha256": "67f8f2b4ecfbdddc3b4e6d238f093ad68a6aab944767832e38d0dc5ad36a0d8d"
     },
     {
       "path": "zh-hant-t-essay-bgw-compact.gram",

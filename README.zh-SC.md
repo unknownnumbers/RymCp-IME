@@ -11,9 +11,10 @@ RymCp 提供 Rime 中文及英文方案, 并为乡音复健的后续工作建立
 ## 现有功能
 
 - 中文全拼、缩写、既有容错、组句及本地学习, 支持 TC/SC 输出切换. 使用 `"` 固定完整音节的拼写及边界.
-- 墨芯从第 8 键起以普通组句处理整段只能按单字母切分的简拼.
+- 光标位于草稿末端时, 两套方案从第 8 键起以普通组句处理整段只能按单字母切分的简拼.
 - 英文的完整词、补全、容错、大小写与既有缩写展开.
-- 墨芯完整方案另提供平假名、片假名、汉字、romaji 及 q/x/v 查询模式, 固定混合词. 查字、Unicode 和计算工具按输入模式调用.
+- 查字、Unicode 和计算工具按输入模式调用.
+- 墨芯完整方案另提供平假名、片假名、汉字、romaji、q/x/v 查询模式和固定混合词.
 - 官方 Weasel 方案提供中文及英文, 固定直排 6 项、非内嵌.
 - 默认使用通用词库. 数学、物理、电脑及诗词词汇可通过独立 DLC 安装. 数学及物理包涵盖广泛学科词汇, 诗词包收录固定来源的全量唐诗、宋诗、宋词及配套选集.
 
@@ -22,7 +23,7 @@ RymCp 提供 Rime 中文及英文方案, 并为乡音复健的后续工作建立
 ## 安装
 
 - [墨芯前端与方案安装器](https://github.com/unknownnumbers/rime-stellae/releases/tag/v2026.11.20).
-- [官方 Weasel 方案 ZIP](https://github.com/unknownnumbers/RymCp-IME/releases/tag/v2026.11.19).
+- [官方 Weasel 方案 ZIP](https://github.com/unknownnumbers/RymCp-IME/releases/tag/v2026.11.20.1).
 - [完整方案使用说明](docs/PC.md)、[官方方案安装及合并](docs/official-weasel.md)、[DLC 来源](docs/dlc-sources.md).
 
 方案源码分别位于 [config/pc](config/pc) 与 [config/official-weasel](config/official-weasel). 安装到已有资料夹时, 先备份同名配置并依说明合并, 保留用户词库.

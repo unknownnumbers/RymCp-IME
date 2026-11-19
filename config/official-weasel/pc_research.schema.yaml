@@ -3,8 +3,8 @@
 schema:
   schema_id: pc_research
   name: 朙月拓展
-  version: '2026.11.14.official-weasel.1'
-  dependencies: [english_full]
+  version: '2026.11.20.1'
+  dependencies: [stroke, project_radical, project_radical_parts, english_full]
 switches:
   - {name: ascii_mode, reset: 0}
   - {name: full_shape, reset: 0}
@@ -17,6 +17,8 @@ engine:
     - lua_processor@draft_limit
     - lua_processor@cn_exact_processor
     - lua_processor@en_processor
+    - lua_processor@query_info_submit
+    - lua_processor@tool_processor
     - lua_processor@candidate_keys
     - lua_processor@select_hanzi
     - ascii_composer
@@ -29,6 +31,7 @@ engine:
     - express_editor
   segmentors:
     - lua_segmentor@en_segmentor
+    - lua_segmentor@tool_segmentor
     - lua_segmentor@cn_exact_segmentor
     - ascii_segmentor
     - matcher
@@ -37,7 +40,7 @@ engine:
     - fallback_segmentor
   translators:
     - punct_translator
-    - lua_translator@cn_translator
+    - lua_translator@official_translator
   filters:
     - lua_filter@research_mode_filter
     - simplifier
@@ -74,6 +77,7 @@ key_binder:
 recognizer:
   patterns:
     uppercase: '^$'
+    reverse_lookup: "^uU[a-z]*U?'?$"
 ascii_composer:
   good_old_caps_lock: true
   switch_key:
@@ -83,8 +87,52 @@ ascii_composer:
     Eisu_toggle: clear
     Control_L: noop
     Control_R: noop
+research_stroke:
+  dictionary: stroke
+  prism: stroke
+  tag: u_lookup
+  enable_user_dict: false
+  enable_encoder: false
+  encode_commit_history: false
+  enable_sentence: false
+  enable_completion: true
+  sentence_over_completion: false
+  contextual_suggestions: false
+  initial_quality: 0
+research_radical:
+  dictionary: project_radical
+  prism: project_radical
+  tag: u_lookup
+  enable_user_dict: false
+  enable_encoder: false
+  encode_commit_history: false
+  enable_sentence: false
+  enable_completion: true
+  sentence_over_completion: false
+  contextual_suggestions: false
+  initial_quality: 0
+
+research_radical_parts:
+  dictionary: project_radical_parts
+  prism: project_radical_parts
+  tag: u_lookup
+  delimiter: " '"
+  enable_user_dict: false
+  enable_encoder: false
+  encode_commit_history: false
+  enable_sentence: false
+  enable_completion: true
+  enable_word_completion: false
+  enable_correction: false
+  contextual_suggestions: false
+  # Keep the sentence graph empty; component lookup must return one entry.
+  max_homophones: 0
+  spelling_hints: 99
+  always_show_comments: true
+  initial_quality: 0
+
 simplifier:
-  excluded_types: [mdx_sc_original]
+  excluded_types: [tool_unicode, tool_calc, u_stroke, u_stroke_completion, u_radical, u_radical_completion, u_radical_abbreviation, mdx_sc_original]
   opencc_config: mdx_t2s.json
 draft_limits:
   chinese: 48

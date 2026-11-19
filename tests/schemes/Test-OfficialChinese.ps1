@@ -56,9 +56,17 @@ try {
     [RimeProbe]::RimeInitialize([ref]$traits)
     [RimeProbe]::RimeDeployerInitialize([ref]$traits)
     $watch = [Diagnostics.Stopwatch]::StartNew()
-    if ($true) {
-        if (-not [RimeProbe]::RimeDeploySchema((Join-Path $user 'english_full.schema.yaml'))) { throw 'English dictionary deployment failed' }
-        if (-not [RimeProbe]::RimeDeploySchema((Join-Path $user 'pc_research.schema.yaml'))) { throw 'Chinese schema deployment failed' }
+    $schemas = @(
+        (Join-Path $shared 'stroke.schema.yaml')
+        (Join-Path $user 'project_radical.schema.yaml')
+        (Join-Path $user 'project_radical_parts.schema.yaml')
+        (Join-Path $user 'english_full.schema.yaml')
+        (Join-Path $user 'pc_research.schema.yaml')
+    )
+    foreach ($schema in $schemas) {
+        if (-not [RimeProbe]::RimeDeploySchema($schema)) {
+            throw "Schema deployment failed for $([IO.Path]::GetFileName($schema))."
+        }
     }
     $result.DeployMilliseconds = $watch.ElapsedMilliseconds
     $session = [RimeProbe]::RimeCreateSession()
@@ -92,10 +100,21 @@ try {
             Check ('partial-tail-'+$raw) ((Pos $state $word) -ge 0) ([string[]]$state.Context.Candidates | Select-Object -First 12)
         }
     }
-    foreach ($raw in @('pi','alpha','juhao','partial','cC1+1','uUmu')) {
+    foreach ($raw in @('pi','alpha','juhao','partial')) {
         $state = Query $raw 1000
         $forbidden = @($state.Context.Candidates | Where-Object { $_ -cmatch '^[\u0370-\u03ff\u2000-\u2bff\u3000-\u303f]+$' -or $_ -ceq '。' -or $_ -ceq '3.141592653589793' })
         Check ('removed-named-features-'+$raw) ($forbidden.Count -eq 0) $forbidden.Count
+    }
+    $state = Query 'uUmumuU'
+    $index = Pos $state '林'
+    Check 'component-lookup-candidate' ($index -ge 0) ([string[]]$state.Context.Candidates | Select-Object -First 12)
+    if ($index -ge 0) {
+        for ($move = 0; $move -lt $index; $move++) { [RimeProbe]::RimeProcessKey($session,0xff54,0) | Out-Null }
+        [RimeProbe]::RimeProcessKey($session,0xff0d,4) | Out-Null
+        $state = Capture 'component-lookup-reading-commit'
+        Check 'component-lookup-reading-commit' ($state.Commit -ceq '林 (lin2)') $state.Commit
+    } else {
+        Check 'component-lookup-reading-commit' $false
     }
     # Repeated selection must train the canonical word through native Memory.
     $state = Query 'ken' 500

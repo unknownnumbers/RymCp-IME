@@ -1134,6 +1134,26 @@
       "path": "config/official-weasel/lua/official_backup_mode.lua"
     },
     {
+      "path": "config/official-weasel/lua/official_translator.lua",
+      "kind": "program-or-configuration",
+      "project_license": "GPL-3.0-only",
+      "license_scope": "Original project additions and modifications; retained upstream expression keeps its original terms.",
+      "retained_upstream_terms": [],
+      "references": [
+        "LICENSE"
+      ]
+    },
+    {
+      "path": "config/official-weasel/lua/query_info_submit.lua",
+      "kind": "program-or-configuration",
+      "project_license": "GPL-3.0-only",
+      "license_scope": "Original project additions and modifications; retained upstream expression keeps its original terms.",
+      "retained_upstream_terms": [],
+      "references": [
+        "LICENSE"
+      ]
+    },
+    {
       "path": "config/official-weasel/lua/rymcp_dlc.lua",
       "kind": "program-or-configuration",
       "project_license": "GPL-3.0-only",
@@ -1141,6 +1161,16 @@
         "LICENSE",
         "docs/sources/official-weasel-sources.md"
       ]
+    },
+    {
+      "kind": "program-or-configuration",
+      "project_license": "GPL-3.0-only",
+      "license_scope": "Original project additions and modifications; retained upstream expression keeps its original terms.",
+      "retained_upstream_terms": [],
+      "references": [
+        "LICENSE"
+      ],
+      "path": "config/official-weasel/lua/scheme_data.lua"
     },
     {
       "path": "config/official-weasel/lua/select_hanzi.lua",
@@ -1159,6 +1189,95 @@
       "source_ids": [
         "project",
         "ice"
+      ]
+    },
+    {
+      "path": "config/official-weasel/lua/tool_calculator.lua",
+      "kind": "program-or-configuration",
+      "project_license": "GPL-3.0-only",
+      "license_scope": "Original project additions and modifications; retained upstream expression keeps its original terms.",
+      "retained_upstream_terms": [
+        "GPL-3.0"
+      ],
+      "references": [
+        "LICENSE",
+        "docs/sources/tools-sources.md",
+        "licenses/tools-Ice-GPL-3.0.txt"
+      ],
+      "source_ids": [
+        "project",
+        "ice"
+      ]
+    },
+    {
+      "path": "config/official-weasel/lua/tool_processor.lua",
+      "kind": "program-or-configuration",
+      "project_license": "GPL-3.0-only",
+      "license_scope": "Original project additions and modifications; retained upstream expression keeps its original terms.",
+      "retained_upstream_terms": [],
+      "references": [
+        "LICENSE"
+      ]
+    },
+    {
+      "path": "config/official-weasel/lua/tool_segmentor.lua",
+      "kind": "program-or-configuration",
+      "project_license": "GPL-3.0-only",
+      "license_scope": "Original project additions and modifications; retained upstream expression keeps its original terms.",
+      "retained_upstream_terms": [],
+      "references": [
+        "LICENSE"
+      ]
+    },
+    {
+      "path": "config/official-weasel/lua/tool_translator.lua",
+      "kind": "program-or-configuration",
+      "project_license": "GPL-3.0-only",
+      "license_scope": "Original project additions and modifications; retained upstream expression keeps its original terms.",
+      "retained_upstream_terms": [],
+      "references": [
+        "LICENSE"
+      ]
+    },
+    {
+      "path": "config/official-weasel/lua/tool_unicode.lua",
+      "kind": "program-or-configuration",
+      "project_license": "GPL-3.0-only",
+      "license_scope": "Original project additions and modifications; retained upstream expression keeps its original terms.",
+      "retained_upstream_terms": [
+        "GPL-3.0"
+      ],
+      "references": [
+        "LICENSE",
+        "docs/sources/tools-sources.md",
+        "licenses/tools-Ice-GPL-3.0.txt"
+      ],
+      "source_ids": [
+        "project",
+        "ice"
+      ]
+    },
+    {
+      "path": "config/official-weasel/lua/tool_unicode_data.lua",
+      "kind": "data-or-generated-data",
+      "source_group": "unicode-tools-data",
+      "source_ids": [
+        "unicode17",
+        "project"
+      ],
+      "license_scope": "Unicode License V3 derived data; project tool reader code separately GPLv3",
+      "references": [
+        "docs/sources/tools-sources.md"
+      ]
+    },
+    {
+      "path": "config/official-weasel/lua/u_translator.lua",
+      "kind": "program-or-configuration",
+      "project_license": "GPL-3.0-only",
+      "license_scope": "Original project additions and modifications; retained upstream expression keeps its original terms.",
+      "retained_upstream_terms": [],
+      "references": [
+        "LICENSE"
       ]
     },
     {
@@ -1291,6 +1410,65 @@
         "docs/sources/official-weasel-sources.md"
       ],
       "path": "config/official-weasel/profile-manifest.json"
+    },
+    {
+      "path": "config/official-weasel/project_radical.dict.yaml",
+      "kind": "data-or-generated-data",
+      "source_group": "radical-data",
+      "source_ids": [
+        "radical",
+        "project"
+      ],
+      "license_scope": "Mirtle GPLv3 plus original credited upstream source notices",
+      "references": [
+        "docs/sources/radical-stroke-sources.md"
+      ]
+    },
+    {
+      "path": "config/official-weasel/project_radical.schema.yaml",
+      "kind": "program-or-configuration",
+      "project_license": "GPL-3.0-only",
+      "license_scope": "Original project additions and modifications; retained upstream expression keeps its original terms.",
+      "retained_upstream_terms": [],
+      "references": [
+        "LICENSE"
+      ]
+    },
+    {
+      "path": "config/official-weasel/project_radical_parts.dict.yaml",
+      "kind": "data-or-generated-data",
+      "source_group": "radical-data",
+      "source_ids": [
+        "radical",
+        "project"
+      ],
+      "license_scope": "Mirtle GPLv3 plus original credited upstream source notices",
+      "references": [
+        "docs/sources/radical-stroke-sources.md"
+      ]
+    },
+    {
+      "path": "config/official-weasel/project_radical_parts.schema.yaml",
+      "kind": "program-or-configuration",
+      "project_license": "GPL-3.0-only",
+      "license_scope": "Original project additions and modifications; retained upstream expression keeps its original terms.",
+      "retained_upstream_terms": [],
+      "references": [
+        "LICENSE"
+      ]
+    },
+    {
+      "path": "config/official-weasel/query_strokes.tsv",
+      "kind": "data-or-generated-data",
+      "source_group": "stroke-data",
+      "source_ids": [
+        "stroke",
+        "project"
+      ],
+      "license_scope": "LGPLv3-derived table with AUTHORS attribution",
+      "references": [
+        "docs/sources/query-strokes-source.json"
+      ]
     },
     {
       "path": "config/official-weasel/rymcp_dlc_computer.dict.yaml",
@@ -1647,6 +1825,19 @@
       "references": [
         "LICENSE",
         "docs/sources/official-weasel-sources.md"
+      ]
+    },
+    {
+      "path": "config/official-weasel/u_readings.tsv",
+      "kind": "data-or-generated-data",
+      "source_group": "unihan-readings",
+      "source_ids": [
+        "unihan17",
+        "project"
+      ],
+      "license_scope": "Unicode License V3 data; own display transformation GPLv3",
+      "references": [
+        "docs/sources/u-readings-sources.md"
       ]
     },
     {

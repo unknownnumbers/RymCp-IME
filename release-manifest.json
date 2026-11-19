@@ -39,18 +39,18 @@
     },
     {
       "path": "README.en.md",
-      "bytes": 3449,
-      "sha256": "13335b29b6a5790cfa133b9ed01fc407160c5ebbdcac415fe40ff72aa3d3a191"
+      "bytes": 3486,
+      "sha256": "654fc93a93133b6568e63919172ac5587fb06cc89f4ba51bfe307750e6b65fe3"
     },
     {
       "path": "README.md",
-      "bytes": 2861,
-      "sha256": "c40eef67d5a76adfb86dcb8b531852812ab51f390d48dd33cbaabc3408013752"
+      "bytes": 2899,
+      "sha256": "5d81473f3e6667a9138a928dba1371b7a348f01f5901d7fe9d75deff518bb265"
     },
     {
       "path": "README.zh-SC.md",
-      "bytes": 2873,
-      "sha256": "5a95a25deb6fb39696efe5643962a15174bc6c684b04c755d34a945b820a9006"
+      "bytes": 2911,
+      "sha256": "8ee2d2ca4b1e354f908118ed6cdee3e45845d291571810a21a908cb58ab2cde8"
     },
     {
       "path": "THIRD_PARTY_NOTICES.md",
@@ -179,8 +179,8 @@
     },
     {
       "path": "config/official-weasel/lua/candidate_keys.lua",
-      "bytes": 2210,
-      "sha256": "4662578a97b5a4bf5892202b374e5ec70a895eafbfda7ca2efacf1fadfd655f3"
+      "bytes": 2445,
+      "sha256": "358d80996415e74d9062d6b5bff218b4323cc183595d98c8aee5dda7dd9281c8"
     },
     {
       "path": "config/official-weasel/lua/cn_boundaries.lua",
@@ -249,8 +249,8 @@
     },
     {
       "path": "config/official-weasel/lua/cn_translator.lua",
-      "bytes": 31670,
-      "sha256": "cb105ce1c0f16b4584d4c3e329600cadd20a5e905c653aebea6b67751d2fbdc9"
+      "bytes": 32492,
+      "sha256": "a75d54c87a40ac27d4a36b9ac4da986b7f5c6b7b8b5414047a252fc13ced1e1a"
     },
     {
       "path": "config/official-weasel/lua/draft_limit.lua",
@@ -298,14 +298,64 @@
       "sha256": "0323aeb24efecf7ce39ba2e8a51391ed7d4b83fd7577820af26964d93c066d4a"
     },
     {
+      "path": "config/official-weasel/lua/official_translator.lua",
+      "bytes": 1018,
+      "sha256": "bd4691421879dcd644385cc5cd181fb42a0b9eeb8831170a007b199c6546e741"
+    },
+    {
+      "path": "config/official-weasel/lua/query_info_submit.lua",
+      "bytes": 5788,
+      "sha256": "7e4c4dd40375295478c81c99c1fccc47259943c1328f5eb4bba21ef213932ed1"
+    },
+    {
       "path": "config/official-weasel/lua/rymcp_dlc.lua",
       "bytes": 16511,
       "sha256": "71592167ae7731c2a64fdc527599d7418396b744d129c90659da606d33832d3f"
     },
     {
+      "path": "config/official-weasel/lua/scheme_data.lua",
+      "bytes": 750,
+      "sha256": "181b37a95ff605818b6db79c1fc94747a9d9cb04c0ca9eb82b120c35d0628426"
+    },
+    {
       "path": "config/official-weasel/lua/select_hanzi.lua",
       "bytes": 4246,
       "sha256": "3744c41245468a9266da150bd14d66a20fe7277f7d9380269c257ab53f533718"
+    },
+    {
+      "path": "config/official-weasel/lua/tool_calculator.lua",
+      "bytes": 12655,
+      "sha256": "6e4fada9bd31a636d67a31ddc67c3bec7fab02116d060b79e2457e308ada884a"
+    },
+    {
+      "path": "config/official-weasel/lua/tool_processor.lua",
+      "bytes": 2626,
+      "sha256": "9fc7ac2b782c4c6f6950d6583a95ea5a199711c94de442eb0183e543ff374a7d"
+    },
+    {
+      "path": "config/official-weasel/lua/tool_segmentor.lua",
+      "bytes": 881,
+      "sha256": "de182baae9865cd1b2a4fab3df6f69c0e48071e6aaf39f049d23a50d138730e9"
+    },
+    {
+      "path": "config/official-weasel/lua/tool_translator.lua",
+      "bytes": 2378,
+      "sha256": "c620b182fdf6483337cb56b214dcf8d728e4c1257c1b66f6743a8ee2d6869b94"
+    },
+    {
+      "path": "config/official-weasel/lua/tool_unicode.lua",
+      "bytes": 1815,
+      "sha256": "b6375b1114b92bb9b420baa3aea1bdedcca2366f6fc3fc499d87d7464ef47c63"
+    },
+    {
+      "path": "config/official-weasel/lua/tool_unicode_data.lua",
+      "bytes": 5970,
+      "sha256": "84ced4a71016ee930f04c7d70f8982e61231cf5fe113cc19cbaa0f69bec7526d"
+    },
+    {
+      "path": "config/official-weasel/lua/u_translator.lua",
+      "bytes": 5322,
+      "sha256": "1a171566a85827f4ae69a87f999a410cf5fba352fedab32c02a70d8a8fcc080c"
     },
     {
       "path": "config/official-weasel/luna_pinyin.dict.yaml",
@@ -344,13 +394,38 @@
     },
     {
       "path": "config/official-weasel/pc_research.schema.yaml",
-      "bytes": 2579,
-      "sha256": "dc585d4241bc68be33f6f3e1fb3d3384c8034846c6ae30693fbabd48bafe644b"
+      "bytes": 3988,
+      "sha256": "68f07524c97b316ade219b5b5441fa61558273c2467759a15099826d5950009e"
     },
     {
       "path": "config/official-weasel/profile-manifest.json",
-      "bytes": 15765,
-      "sha256": "7c7b40b77524e6ac57d979f52019660d32ecee3c4789a35024d31550ec152b2d"
+      "bytes": 18309,
+      "sha256": "d06d168bb254e50a871fbff3def116bb21007c8a68ab1870fa998029dc5ab468"
+    },
+    {
+      "path": "config/official-weasel/project_radical.dict.yaml",
+      "bytes": 2167597,
+      "sha256": "ac2ce6698fc4982fd2d5580a903fb7f7517ab4d8cd1e09403645b4dea08e5f7e"
+    },
+    {
+      "path": "config/official-weasel/project_radical.schema.yaml",
+      "bytes": 602,
+      "sha256": "8e97d1b19e7f4a7a54bcaa5066410e9dc96c0d815bdd463080a3ad7192b599b1"
+    },
+    {
+      "path": "config/official-weasel/project_radical_parts.dict.yaml",
+      "bytes": 2300077,
+      "sha256": "dcdbeaa0e9e711e3f6e7f0d0d492db6fa1f67424299d36fde1ef2b59dbe66287"
+    },
+    {
+      "path": "config/official-weasel/project_radical_parts.schema.yaml",
+      "bytes": 1033,
+      "sha256": "5d3bc1bccc3a948385c5242d37385f6ab623a80c63ced2c4b46b6cfcee8219a2"
+    },
+    {
+      "path": "config/official-weasel/query_strokes.tsv",
+      "bytes": 1559049,
+      "sha256": "79f3578cded6d4f42adca0a3b37548bdfdcb5062f6aee11103671cfc9d4cc401"
     },
     {
       "path": "config/official-weasel/rymcp_dlc_computer.dict.yaml",
@@ -539,13 +614,18 @@
     },
     {
       "path": "config/official-weasel/samples/rime.lua",
-      "bytes": 2130,
-      "sha256": "6c970e1d68e9247befc275c36ecd647a4bb6e8970aa73f6004efc2c2e72d86b1"
+      "bytes": 2318,
+      "sha256": "a0cf4236b53df08b47b71a84a8a8772685ca9b21e67ab763229f5cec78a0ba79"
     },
     {
       "path": "config/official-weasel/samples/weasel.custom.yaml",
       "bytes": 1397,
       "sha256": "4aa17e5338dd64f7b6395663371254452b3443ae04ab329457ff5b1a58ec9545"
+    },
+    {
+      "path": "config/official-weasel/u_readings.tsv",
+      "bytes": 556891,
+      "sha256": "67f8f2b4ecfbdddc3b4e6d238f093ad68a6aab944767832e38d0dc5ad36a0d8d"
     },
     {
       "path": "config/official-weasel/zh-hant-t-essay-bgw-compact.gram",
@@ -1614,8 +1694,8 @@
     },
     {
       "path": "docs/official-weasel.md",
-      "bytes": 1822,
-      "sha256": "50b4fcb5554ef233bdf114a4e000295cd54994754c9f6c886f4ffcc8a14544ee"
+      "bytes": 2185,
+      "sha256": "f5e7e8b026ca6d752f3e5133211d2e0a6169b0175b3e764fb58a54a4dfa21c25"
     },
     {
       "path": "docs/sources/README.md",
@@ -1674,8 +1754,8 @@
     },
     {
       "path": "docs/sources/official-weasel-sources.md",
-      "bytes": 1102,
-      "sha256": "9b4a89ce20c77bf4e147c0d32b9d0c811c30fcb7df55cd50f921200da098501d"
+      "bytes": 1276,
+      "sha256": "a36e02eb67a959bc36297a8bd98500c482617d3856f53963e516ac92ff740c0a"
     },
     {
       "path": "docs/sources/query-strokes-source.json",
@@ -1799,8 +1879,8 @@
     },
     {
       "path": "licenses/file-licenses.json",
-      "bytes": 183231,
-      "sha256": "819421ecbbdbae4b8e27d4db7f203013b77271ca16a2ee49ca8d9703249b5560"
+      "bytes": 189608,
+      "sha256": "a51985fb1f7377e47b121b08357267d994b4300ad2f5aaa03dac7eecebed33be"
     },
     {
       "path": "licenses/luna-compact-model-LGPL-3.0.txt",
@@ -2419,8 +2499,8 @@
     },
     {
       "path": "tests/schemes/Test-OfficialChinese.ps1",
-      "bytes": 9265,
-      "sha256": "f4c2c5f4dd3f8a16975e5807428b90e7051d616368d6be4b22ad6fff97a59786"
+      "bytes": 10047,
+      "sha256": "574cd9a839c0892084996b26991c1d3ec34b131ae4f7e70916e63d1c1e44dc89"
     },
     {
       "path": "tests/schemes/Test-OfficialEnglish.ps1",
