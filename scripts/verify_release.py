@@ -170,7 +170,8 @@ def main():
         if path.resolve() in locked_archives:
             continue
         if path.suffix == '.ico':
-            if path.relative_to(ROOT).as_posix() != 'config/pc/assets/status/smart-english.ico':
+            if path.relative_to(ROOT).as_posix() not in {'config/pc/assets/status/smart-english.ico',
+                                                          'config/official-weasel/assets/status/smart-english.ico'}:
                 raise SystemExit('Unexpected status icon resource')
             data = path.read_bytes()
             if len(data) < 6 or struct.unpack_from('<HHH', data) != (0, 1, 8):
@@ -216,7 +217,7 @@ def main():
     if args.write_manifest:
         manifest = {
             'format': 'rymcp-source-release-v1',
-            'date': '2026-11-20',
+            'date': '2026-11-24',
             'kind': 'source-configuration-data-snapshot',
             'nativeBinariesIncluded': False,
             'personalLearningIncluded': False,

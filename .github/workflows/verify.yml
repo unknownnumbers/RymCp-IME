@@ -22,6 +22,8 @@ jobs:
         run: python -m pip install PyYAML==6.0.2
       - name: Verify source snapshot and syntax
         run: python scripts/verify_release.py --require-yaml
+      - name: Verify derived profile
+        run: python scripts/rebuild_profiles.py --check
       - name: Verify independent Japanese spelling rules
         run: python config/pc/tools/validate-japanese-base.py --directory config/pc
       - name: Verify Japanese character reading codes

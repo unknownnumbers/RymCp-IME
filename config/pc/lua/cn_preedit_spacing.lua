@@ -85,7 +85,7 @@ function M.publish(env)
     return
   end
   local body = raw:sub(seg.start + 1)
-  if not body:match('^[a-z\'" ]+$') then set(ctx, ''); return end
+  if not body:match('^[a-z\'"; ]+$') then set(ctx, ''); return end
   if state.raw ~= raw or state.start ~= seg.start then
     local cache = {}
     M.normal_tail_cost(body, env, cache)
@@ -93,7 +93,7 @@ function M.publish(env)
   end
   local cache, position, breaks = state.cache, candidate._end - seg.start + 1, {}
   while body:sub(position, position) == "'" or body:sub(position, position) == ' '
-      or body:sub(position, position) == '"' do
+      or body:sub(position, position) == '"' or body:sub(position, position) == ';' do
     position = position + 1
   end
   if not cache.tail_count[position] then set(ctx, ''); return end

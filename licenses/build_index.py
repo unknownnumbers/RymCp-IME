@@ -27,15 +27,18 @@ ORIGINAL_PROGRAM = {
 
 
 def upstream_configuration(path: str) -> dict | None:
-    if path in {'config/pc/opencc/TSCharacters.ocd2', 'config/pc/opencc/TSPhrases.ocd2'}:
+    if path in {'config/pc/opencc/TSCharacters.ocd2', 'config/pc/opencc/TSPhrases.ocd2',
+                'config/pc/opencc/STCharacters.ocd2', 'config/pc/opencc/STPhrases.ocd2',
+                'config/pc/opencc/s2t.json'}:
         return {
-            'kind': 'data-or-generated-data',
+            'kind': 'program-or-configuration' if path.endswith('.json') else 'data-or-generated-data',
             'source_group': 'opencc-conversion-data',
             'source_ids': ['opencc_weasel'],
             'license_scope': 'Unmodified OpenCC conversion data, Apache-2.0; source attribution and notice retained.',
             'references': ['licenses/OpenCC-LICENSE.txt', 'docs/sources/shared-config-sources.md'],
         }
-    if path == 'config/pc/default.yaml':
+    if path in {'config/pc/default.yaml', 'config/pc/key_bindings.yaml',
+                'config/pc/punctuation.yaml', 'config/pc/symbols.yaml'}:
         return {
             'kind': 'program-or-configuration',
             'source_ids': ['prelude'],
@@ -112,10 +115,18 @@ def classify(path: str, old: dict[str, dict]) -> dict:
         return copy.deepcopy(old[path])
     if path == 'config/pc/lua/scheme_data.lua':
         return copy.deepcopy(ORIGINAL_PROGRAM)
-    if path in {'licenses/shared-config/prelude-LICENSE.txt', 'licenses/shared-config/prelude-AUTHORS.txt'}:
+    if path in {'config/profiles.json', 'config/pc/source-dependencies.json'}:
+        return {
+            'kind': 'project-metadata',
+            'project_license': 'GPL-3.0-only',
+            'license_scope': 'Original profile and dependency metadata; referenced resources retain their component terms.',
+            'references': ['LICENSE', 'docs/sources/shared-config-sources.md'],
+        }
+    notice = path.removeprefix('config/pc/')
+    if notice in {'licenses/shared-config/prelude-LICENSE.txt', 'licenses/shared-config/prelude-AUTHORS.txt'}:
         return {
             'kind': 'retained-upstream-notice',
-            'notice_record': path,
+            'notice_record': notice,
             'source_ids': ['prelude'],
             'license_scope': 'Original upstream license or attribution text, preserved verbatim under its own terms.',
             'references': ['THIRD_PARTY_NOTICES.md', 'licenses/third-party-source-manifest.json'],
@@ -140,7 +151,7 @@ def main() -> None:
         'caveat': 'The precise upstream configuration commit packaged by Weasel is unknown. The packaged source bytes are pinned by content hash.',
     }
     index['sources']['prelude'] = {
-        'origin': 'rime/rime-prelude, official Weasel 0.17.4 data/default.yaml',
+        'origin': 'rime/rime-prelude, official Weasel 0.17.4 packaged default, key bindings, punctuation and symbols',
         'upstream_commit': None,
         'notice_commit': '95542a274915ba5496ff3260a2c71946238d4cce',
         'retained_terms': ['GNU LGPL version 3', 'rime-prelude AUTHORS attribution'],
@@ -150,7 +161,7 @@ def main() -> None:
     }
     index['sources']['opencc_weasel'] = {
         'origin': 'BYVoid/OpenCC conversion resources, official Weasel 0.17.4 data/opencc',
-        'source_paths': ['TSCharacters.ocd2', 'TSPhrases.ocd2'],
+        'source_paths': ['TSCharacters.ocd2', 'TSPhrases.ocd2', 'STCharacters.ocd2', 'STPhrases.ocd2', 's2t.json'],
         'upstream_commit': None,
         'retained_terms': ['Apache License 2.0', 'original OpenCC authors'],
         'notices': ['licenses/OpenCC-LICENSE.txt'],
@@ -161,12 +172,20 @@ def main() -> None:
         'The JP master snapshot has a recorded content hash but no exact upstream commit established. '
         'Standard conversions shipped with the official profile are indexed separately as opencc_weasel.')
     old = {record['path']: record for record in index['files']}
-    records = []
+    paths = []
     for file in sorted(ROOT.rglob('*')):
         if not file.is_file() or any(part in IGNORED for part in file.relative_to(ROOT).parts):
             continue
         path = file.relative_to(ROOT).as_posix()
-        record = classify(path, old)
+        paths.append(path)
+    # Classify common inputs first so new official copies inherit their terms.
+    reviewed = dict(old)
+    for path in paths:
+        if not path.startswith('config/official-weasel/'):
+            reviewed[path] = classify(path, old)
+    records = []
+    for path in paths:
+        record = official_record(path, reviewed) if path.startswith('config/official-weasel/') else reviewed[path]
         record['path'] = path
         records.append(record)
     index['files'] = records

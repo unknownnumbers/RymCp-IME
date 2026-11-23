@@ -1,5 +1,5 @@
 -- Binary prefix-delete recall, followed by the project's unrestricted DL.
-local distance = require('en_distance')
+local distance = require('pc_probe_greek_proxy').distance
 local M, Index, cache = {}, {}, {}
 Index.__index = Index
 local PREFIX_LENGTH, KEY_WIDTH, RECORD_SIZE = 7, 8, 16

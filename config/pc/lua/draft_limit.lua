@@ -21,11 +21,11 @@ function M.shape(raw, schema_id, english, limits, confirmed)
           and (last == 'v' or last == 'V') then suffix = 1 end
     elseif (raw:sub(1, 1) == 'v' and raw:sub(1, 2) ~= 'vu')
         or raw:sub(1, 1) == 'q' then prefix = math.max(0, 1 - confirmed) end
-  elseif pending:sub(1, 2) == 'cC' then mode, prefix = 'calculator', 2
-  elseif pending:sub(1, 2) == 'uU' then
+  elseif confirmed == 0 and raw:sub(1, 2) == 'cC' then mode, prefix = 'calculator', 2
+  elseif confirmed == 0 and raw:sub(1, 2) == 'uU' then
     mode, prefix = 'radical', 2
     if #pending > 2 and pending:sub(-1) == 'U' then suffix = 1 end
-  elseif pending:match('^U%x*$') then mode, prefix = 'unicode', 1 end
+  elseif confirmed == 0 and raw:match('^U%x*$') then mode, prefix = 'unicode', 1 end
   return {mode=mode, prefix=prefix, suffix=suffix,
           body=#pending-prefix-suffix, limit=limits[mode], confirmed=confirmed}
 end

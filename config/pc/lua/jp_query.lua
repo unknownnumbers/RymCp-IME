@@ -10,15 +10,18 @@ local function lookup_codes(text)
 end
 M.lookup_codes = lookup_codes
 
-function M.parse(ctx)
+function M.parse(ctx, start)
   local raw = ctx.input
   local prefix = raw:sub(1, 2)
   if prefix == 'qQ' or prefix == 'xX' then
     return {raw=raw, prefix=prefix, prefix_len=2, body_start=2,
       body_end=#raw, body=raw:sub(3), held=true, small=prefix == 'xX'}
   elseif raw:match("^q[a-z' ]*$") then
-    return {raw=raw, prefix='q', prefix_len=1, body_start=1,
-      body_end=#raw, body=raw:sub(2), held=false, small=false}
+    if start == nil then start = ctx.composition:empty() and 0 or ctx.composition:back().start end
+    if start == 0 then
+      return {raw=raw, prefix='q', prefix_len=1, body_start=1,
+        body_end=#raw, body=raw:sub(2), held=false, small=false}
+    end
   end
 end
 
@@ -64,7 +67,7 @@ local function native_query(query, seg, env)
 end
 function M.translator.func(input, seg, env)
   local ctx = env.engine.context
-  local state = not ctx:get_option('ascii_mode') and M.parse(ctx)
+  local state = not ctx:get_option('ascii_mode') and M.parse(ctx, seg.start)
   if not state then return end
   local start = math.max(seg.start, state.body_start)
   local body = state.raw:sub(start + 1)
@@ -224,15 +227,15 @@ function M.filter.func(input, env)
 end
 
 local function submit(ctx, candidate, text, env, learned)
-  local state = M.parse(ctx)
+  local state = M.parse(ctx, candidate.start)
   local before, prior = jp.selected_prefix(ctx, candidate.start)
   local tail = state.raw:sub(candidate._end + 1)
-  local continuation = tail ~= '' and (state.prefix .. tail) or ''
+  if tail ~= '' and state.held then tail = state.prefix .. tail end
   env.engine:commit_text(before .. text)
   for _, word in ipairs(prior) do memory.learn(env.owner, word) end
   if learned then memory.learn(env.owner, learned) end
   ctx:clear()
-  if continuation ~= '' then ctx:push_input(continuation) end
+  if tail ~= '' then ctx:push_input(tail) end
 end
 
 local nav = {[0x2c]='Up', [0x2e]='Down', [0x2d]='Page_Up', [0x3d]='Page_Down'}

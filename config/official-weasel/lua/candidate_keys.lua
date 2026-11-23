@@ -42,9 +42,32 @@ end
 function M.func(key, env)
   observe(env)
   local code = key.keycode
+  local ctx = env.engine.context
+  if (code == 0xff09 or code == 0xff08) and plain(key)
+      and env.engine.schema.schema_id == 'pc_research'
+      and not ctx:get_option('ascii_mode') and not ctx:get_option('research_english')
+      and not ctx.composition:empty() then
+    local seg = ctx.composition:back()
+    local confirmed = ctx.composition:toSegmentation():get_confirmed_position()
+    if ordinary(seg) and not seg:has_tag('tool_calculator') and not seg:has_tag('tool_unicode')
+        and confirmed > 0 and confirmed < #ctx.input then
+      if code == 0xff09 and ctx.caret_pos == #ctx.input then
+        -- Native word-right skips this boundary when wrapping from the end.
+        ctx:confirm_previous_selection()
+        ctx.caret_pos = confirmed
+        return 1
+      elseif code == 0xff08 and ctx.caret_pos > confirmed
+          and ctx.input:sub(confirmed + 1):match('^[A-Za-z\'"; ]+$') then
+        -- Edit the pending spelling without native selection undo or the
+        -- editor reopening the selected segment when its final suffix goes.
+        ctx:confirm_previous_selection()
+        ctx:pop_input(1)
+        return 1
+      end
+    end
+  end
   local target = navigation[code] or native_navigation[code]
   if not target or not plain(key) then return 2 end
-  local ctx = env.engine.context
   if ctx:get_option('ascii_mode') or ctx.composition:empty() then return 2 end
   local seg = ctx.composition:back()
   local word = ordinary(seg)
@@ -68,6 +91,7 @@ function M.func(key, env)
   -- Native arrow/page actions do not emit Context update notifications.
   local result = env.selector:process_key_event(KeyEvent(target))
   observe(env)
+  require('cn_preedit_spacing').refresh(ctx)
   return navigation[code] and 1 or result
 end
 

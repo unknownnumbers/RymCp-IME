@@ -1,7 +1,7 @@
 {
   "schema": "rymcp-native-sources/1",
-  "date": "2026-10-29",
-  "status": "source-inputs-pinned; validation is recorded in native/VALIDATION.md",
+  "date": "2026-11-24",
+  "status": "Historical native inputs retained with original hashes; current scheme profiles use explicit companion or official engine capabilities.",
   "productComposition": {
     "tsf": "0.17.4.61047; x64 and x86",
     "x64Server": "0.17.4.61042",
@@ -315,6 +315,16 @@
       "path": "native/tests/key-pairing/SelectionControlledModes.inc",
       "sha256": "ad079211a014049d6abf71066920016dc04ba41d3a8f0fd9fe4c9df8e874d144",
       "scope": "V13/V18/V19: 95 production Test/Actual callback checks per architecture; controlled COM context and same-run 61042 Server with R5 engine IPC"
+    },
+    {
+      "path": "tests/rebuilt-profile/Test-RebuiltProfile.ps1",
+      "sha256": "dbf6cf1ef62fdfcff3d7efe17e226de76dd21f2013ec02ad67dd6b8bcfe53ca4",
+      "scope": "Fresh generated-profile deployment and fixed native behavior/learning cases; no desktop operation."
+    },
+    {
+      "path": "tests/rebuilt-profile/RimeProbe.cs",
+      "sha256": "286443589e71ef6e90934077f6fb327c145fb17d7f88e42c7c531ac60a6617eb",
+      "scope": "Fresh generated-profile deployment and fixed native behavior/learning cases; no desktop operation."
     }
   ],
   "toolchain": {
@@ -330,5 +340,13 @@
     "Engine third-party dependency archives are official prebuilt inputs with pinned hashes.",
     "Source assembly, compilation, helper tests and end-to-end input validation are different checks.",
     "No installer, personal configuration, learning database or historic private build artifact is included."
-  ]
+  ],
+  "schemeSnapshot": "2026.11.24",
+  "role": "Retained native build recipes; current frontend is maintained in the companion repository.",
+  "currentFrontend": {
+    "repository": "https://github.com/unknownnumbers/rime-stellae",
+    "schemeCapabilities": "config/profiles.json",
+    "sourceManifest": "native/source-manifest.json in the companion repository"
+  },
+  "nativeInputSnapshotDate": "2026-10-29"
 }

@@ -1,4 +1,17 @@
+# Full scheme for official Weasel with a fixed candidate page.
 patch:
+  menu/page_size: 6
+  switches:
+    - { name: ascii_mode, reset: 0 }
+    - { name: full_shape, reset: 0 }
+    - { name: simplification, reset: 1, states: [漢字, 汉字] }
+    - { name: ascii_punct, reset: 1 }
+    - { name: research_english, reset: 0, states: [中文, 英文] }
+    # Last reset is a private initialization-complete notification.
+    - { name: probe_options_ready, reset: 1 }
+  speller/alphabet: abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ
+  speller/initials: abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ
+  speller/delimiter: " '"
   speller/algebra:
     - xform/([ei])ng$/$1n/
     - erase/^xx$/
@@ -8972,6 +8985,75 @@ patch:
     - fuzz/^~o~$/zo/
     - erase/^@[a-z]+@$/
     - xform/^~([a-z]+)~$/$1/
+    - xform/^~g~(.+).$/$1~/
+  translator/dictionary: luna_pinyin.research
+  engine/processors:
+    - lua_processor@probe_global_mode
+    - lua_processor@draft_limit
+    - lua_processor@cn_exact_processor
+    - lua_processor@en_processor
+    - lua_processor@query_info_submit
+    - lua_processor@tool_processor
+    - lua_processor@candidate_keys
+    - lua_processor@select_hanzi
+    - ascii_composer
+    - recognizer
+    - key_binder
+    - speller
+    - punctuator
+    - selector
+    - navigator
+    - express_editor
+  engine/translators:
+    - punct_translator
+    - lua_translator@official_translator
+  engine/filters:
+    - lua_filter@research_mode_filter
+    - simplifier
+    - uniquifier
+    - lua_filter@candidate_comment_filter
+  ascii_composer/switch_key:
+    Shift_L: noop
+    Shift_R: noop
+    Caps_Lock: noop
+    Eisu_toggle: clear
+    Control_L: noop
+    Control_R: noop
+  # Keep the default uppercase recognizer from consuming candidate numbers.
+  recognizer/patterns/uppercase: '^$'
+  recognizer/patterns/reverse_lookup: '^$'
+  key_binder/bindings:
+    - { when: has_menu, accept: Shift+Delete, send: Control+Delete }
+    - { when: always, accept: Control+Shift+f, toggle: simplification }
+    - { when: always, accept: Control+Shift+F, toggle: simplification }
+  research_greek:
+    dictionary: research_greek
+    enable_completion: true
+    enable_sentence: false
+    enable_user_dict: true
+    initial_quality: 0
+  probe/unified_memory: true
+  translator/user_dict: luna_pinyin
+
+  cn_decoder:
+    dictionary: luna_pinyin.research
+    prism: luna_pinyin.research
+    enable_user_dict: false
+  translator/enable_completion: false
+  translator/enable_word_completion: true
+  translator/use_stock_word_completion: true
+  probe/greek_code_prefix: "~g~"
+
+  schema/dependencies: [stroke, project_radical, project_radical_parts, english_full, mixed_full]
+  engine/segmentors:
+    - lua_segmentor@en_segmentor
+    - lua_segmentor@tool_segmentor
+    - lua_segmentor@cn_exact_segmentor
+    - ascii_segmentor
+    - matcher
+    - abc_segmentor
+    - punct_segmentor
+    - fallback_segmentor
   english_native:
     dictionary: english_full
     prism: english_full
@@ -8986,6 +9068,69 @@ patch:
     enable_encoder: false
     encode_commit_history: false
     initial_quality: 0
+
+  research_stroke:
+    dictionary: stroke
+    prism: stroke
+    tag: u_lookup
+    enable_user_dict: false
+    enable_encoder: false
+    encode_commit_history: false
+    enable_sentence: false
+    enable_completion: true
+    sentence_over_completion: false
+    contextual_suggestions: false
+    initial_quality: 0
+  research_radical:
+    dictionary: project_radical
+    prism: project_radical
+    tag: u_lookup
+    enable_user_dict: false
+    enable_encoder: false
+    encode_commit_history: false
+    enable_sentence: false
+    enable_completion: true
+    sentence_over_completion: false
+    contextual_suggestions: false
+    initial_quality: 0
+
+  research_radical_parts:
+    dictionary: project_radical_parts
+    prism: project_radical_parts
+    tag: u_lookup
+    delimiter: " '"
+    enable_user_dict: false
+    enable_encoder: false
+    encode_commit_history: false
+    enable_sentence: false
+    enable_completion: true
+    enable_word_completion: false
+    enable_correction: false
+    contextual_suggestions: false
+    # Keep the sentence graph empty; component lookup must return one entry.
+    max_homophones: 0
+    spelling_hints: 99
+    always_show_comments: true
+    initial_quality: 0
+
+  simplifier/excluded_types: [tool_unicode, tool_calc, u_stroke, u_stroke_completion, u_radical, u_radical_completion, u_radical_abbreviation, mdx_sc_original]
+  simplifier/opencc_config: mdx_t2s.json
+
+  mixed_native:
+    dictionary: mixed_full
+    prism: mixed_full
+    user_dict: pc_mixed
+    tag: abc
+    delimiter: " "
+    enable_user_dict: true
+    enable_sentence: false
+    enable_completion: false
+    contextual_suggestions: false
+    enable_encoder: false
+    encode_commit_history: false
+    initial_quality: 0
+
+  # R06-R08; change here and redeploy. Existing typo paths remain.
   cn_tolerance:
     missing_letter: true
     neighbor_substitution: true
@@ -9003,3 +9148,10 @@ patch:
   # END Luna compact model trial 2026-10-19
 
   # Pending spelling only. Mode prefixes and supported reading suffixes are separate.
+  draft_limits:
+    chinese: 48
+    english: 64
+    calculator: 256
+    radical: 64
+    unicode: 6
+    japanese: 48

@@ -169,7 +169,7 @@ ascii_composer:
     Shift_R: inline_ascii
     Control_L: noop
     Control_R: noop
-    Caps_Lock: clear
+    Caps_Lock: noop
     Eisu_toggle: clear
 translator:
   dictionary: jp_sela_custom

@@ -2,7 +2,7 @@ name: Scheme packages and runtime checks
 
 on:
   push:
-    branches: [main, release/2026.11.20]
+    branches: [main, release/2026.11.24]
   pull_request:
   workflow_dispatch:
 
@@ -27,7 +27,7 @@ jobs:
           python scripts/data/rebuild_base.py
           git diff --exit-code -- config sources/base-build.json
       - run: python scripts/verify_release.py --require-yaml
-      - run: python config/pc/assets/status/generate.py --check
+      - run: python scripts/rebuild_profiles.py --check
       - run: python config/pc/tools/validate-japanese-base.py --directory config/pc
       - run: python scripts/data/rebuild_japanese_family_q.py --check
 
@@ -43,17 +43,10 @@ jobs:
             engine: stellae-x64
             profile: pc
             host: x64
-            script: Test-FullProfile.ps1
           - name: official-x64
             engine: official-x64
             profile: official-weasel
             host: x64
-            script: Test-OfficialProfile.ps1
-          - name: R5-Win32
-            engine: stellae-Win32
-            profile: pc
-            host: Win32
-            script: Test-FullProfile.ps1
     name: Runtime ${{ matrix.name }}
     steps:
       - uses: actions/checkout@v4
@@ -74,16 +67,19 @@ jobs:
       - name: Extract pinned public runtimes
         shell: powershell
         run: scripts/schemes/Prepare-ValidationEngines.ps1 -OutputDirectory "$env:RUNNER_TEMP/rymcp-engines"
-      - name: Profile and exact-syllable checks
+      - name: Fresh source-derived profile checks
         shell: powershell
         env:
           ENGINE: ${{ matrix.engine }}
           HOST_ARCH: ${{ matrix.host }}
-          TEST_SCRIPT: ${{ matrix.script }}
+          PROFILE: ${{ matrix.profile }}
         run: |
+          python scripts/rebuild_profiles.py --output out/native-profiles --prepare-official out/official-fresh
+          if ($LASTEXITCODE -ne 0) { throw 'Profile derivation failed.' }
           $hostExe = if ($env:HOST_ARCH -eq 'Win32') { "$env:WINDIR/SysWOW64/WindowsPowerShell/v1.0/powershell.exe" } else { (Get-Process -Id $PID).Path }
-          & $hostExe -NoProfile -ExecutionPolicy Bypass -File "scripts/schemes/$env:TEST_SCRIPT" -EngineDir "$env:RUNNER_TEMP/rymcp-engines/$env:ENGINE" -SharedDir "$env:RUNNER_TEMP/rymcp-engines/official-extracted/data" -WorkRoot "$env:RUNNER_TEMP/profile-tests"
-          if ($LASTEXITCODE -ne 0) { throw 'Profile checks failed.' }
+          $profileRoot = if ($env:PROFILE -eq 'official-weasel') { 'out/official-fresh' } else { 'out/native-profiles/config/pc' }
+          & $hostExe -NoProfile -ExecutionPolicy Bypass -File tests/rebuilt-profile/Test-RebuiltProfile.ps1 -Kind $env:PROFILE -GeneratedProfile $profileRoot -EnginePath "$env:RUNNER_TEMP/rymcp-engines/$env:ENGINE/rime.dll" -OutputPath "$env:RUNNER_TEMP/profile-tests"
+          if ($LASTEXITCODE -ne 0) { throw 'Fresh profile checks failed.' }
       - name: DLC formats, actual catalogs, and synthetic lifecycle
         shell: powershell
         env:
@@ -103,8 +99,8 @@ jobs:
           if-no-files-found: error
           path: |
             ${{ runner.temp }}/rymcp-engines/runtimes.json
-            ${{ runner.temp }}/profile-tests/validation.json
-            ${{ runner.temp }}/profile-tests/*-results/results.json
+            ${{ runner.temp }}/profile-tests/proof.json
+            ${{ runner.temp }}/profile-tests/rebuilt-binaries.json
             ${{ runner.temp }}/dlc-tests/validation.json
             ${{ runner.temp }}/dlc-tests/*/results.json
             ${{ runner.temp }}/dlc-tests/profile-lifecycle/capacity-*.json
@@ -122,14 +118,14 @@ jobs:
       - name: Build complete fixed-source DLC archives
         run: python scripts/build_dlc.py
       - name: Build reviewed scheme archives
-        run: python scripts/build_scheme_packages.py --profile stellae --output-dir out/schemes --version 2026.11.20 --source-ref "$GITHUB_SHA"
+        run: python scripts/build_scheme_packages.py --profile all --output-dir out/schemes --version 2026.11.24 --source-ref "$GITHUB_SHA"
       - name: Record archive hashes
         run: |
           (cd out/schemes && sha256sum *.zip > SHA256SUMS.txt)
           (cd out/dlc && sha256sum *.zip > SHA256SUMS.txt)
       - uses: actions/upload-artifact@v4
         with:
-          name: scheme-packages-2026.11.20
+          name: scheme-packages-2026.11.24
           if-no-files-found: error
           path: |
             out/schemes/*.zip

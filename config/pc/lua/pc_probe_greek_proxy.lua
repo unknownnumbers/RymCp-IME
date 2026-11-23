@@ -90,7 +90,11 @@ function M.func(input, seg, env)
           candidate = ShadowCandidate(candidate, candidate.type, candidate.text,
                                       query .. ' · 纠错')
         end
-        local prefix_penalty = env.unified and query ~= input and edits == 0 and 1 or 0
+        -- The prefix prior belongs to unlearned static entries only.
+        -- Native user phrases keep their learned comparison.
+        local genuine = candidate:get_genuine()
+        local prefix_penalty = env.unified and query ~= input and edits == 0
+            and genuine.type ~= 'user_phrase' and 1 or 0
         items[#items + 1] = {candidate=candidate, kind=kind,
                              score=candidate.quality - edits * 0.05 - prefix_penalty}
       end

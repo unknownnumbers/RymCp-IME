@@ -9027,14 +9027,14 @@ patch:
     - lua_filter@candidate_comment_filter
   ascii_composer/switch_key:
     Shift_L: noop
-    Shift_R: inline_ascii
-    Caps_Lock: clear
+    Shift_R: noop
+    Caps_Lock: noop
     Eisu_toggle: clear
     Control_L: noop
     Control_R: noop
   # Keep the default uppercase recognizer from consuming candidate numbers.
   recognizer/patterns/uppercase: '^$'
-  recognizer/patterns/reverse_lookup: "^uU[a-z]*U?'?$"
+  recognizer/patterns/reverse_lookup: '^$'
   key_binder/bindings:
     - { when: has_menu, accept: Shift+Delete, send: Control+Delete }
     - { when: always, accept: Control+Shift+f, toggle: simplification }
@@ -9054,6 +9054,7 @@ patch:
     enable_user_dict: false
   translator/enable_completion: false
   translator/enable_word_completion: true
+  translator/use_stock_word_completion: false
   probe/greek_code_prefix: "~g~"
 
   schema/dependencies: [stroke, project_radical, project_radical_parts, english_full, mixed_full]

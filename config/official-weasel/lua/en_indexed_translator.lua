@@ -2,6 +2,7 @@
 local M, vocab_cache, extension_cache = {}, {}, {}
 local index_module = require('en_index')
 local dlc_module = require('en_dlc')
+local scheme_data = require('scheme_data')
 
 local function identity(code, text) return code .. '\t' .. text end
 
@@ -9,11 +10,12 @@ local function vocabulary(directory, words)
   if vocab_cache[directory] then return vocab_cache[directory] end
   local frequency = {}
   local file = assert(io.open(directory .. '/vocabulary.tsv', 'r'))
-  for line in file:lines() do
+  local data = assert(file:read('*a'))
+  file:close()
+  for line in data:gmatch('[^\n]+') do
     local word, count = line:match('^([^\t]+)\t(%d+)')
     if word then frequency[word] = tonumber(count) end
   end
-  file:close()
   -- The binary index already owns the same sorted, immutable vocabulary.
   -- Keep its word_id order and share the array with prefix lookup.
   local result = {words=words, frequency=frequency}
@@ -202,9 +204,8 @@ local function lookup(input, env, chinese)
 end
 
 function M.init(env)
-  local directory = rime_api.get_user_data_dir()
-  local index_directory = directory .. '/english_index'
-  local extension_directory = directory .. '/english_extensions'
+  local index_directory = scheme_data.directory('english_index', 'words.txt')
+  local extension_directory = scheme_data.directory('english_extensions', 'entries.tsv')
   env.index = index_module.load(index_directory)
   env.vocab = vocabulary(index_directory, env.index.words)
   env.ext = extensions(extension_directory, env.vocab)

@@ -27,4 +27,10 @@ local mapping = {
   ["y"] = "=",
   ["z"] = ">",
 }
-return {encode=function(input) return (input:gsub("[a-z]", mapping)) end}
+local reverse = {}
+for letter, encoded in pairs(mapping) do reverse[encoded] = letter end
+
+return {
+  encode = function(input) return (input:gsub("[a-z]", mapping)) end,
+  decode = function(input) return (input:gsub(".", reverse)) end,
+}

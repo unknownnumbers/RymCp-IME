@@ -10,11 +10,12 @@ local function vocabulary(directory, words)
   if vocab_cache[directory] then return vocab_cache[directory] end
   local frequency = {}
   local file = assert(io.open(directory .. '/vocabulary.tsv', 'r'))
-  for line in file:lines() do
+  local data = assert(file:read('*a'))
+  file:close()
+  for line in data:gmatch('[^\n]+') do
     local word, count = line:match('^([^\t]+)\t(%d+)')
     if word then frequency[word] = tonumber(count) end
   end
-  file:close()
   -- The binary index already owns the same sorted, immutable vocabulary.
   -- Keep its word_id order and share the array with prefix lookup.
   local result = {words=words, frequency=frequency}

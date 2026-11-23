@@ -1,7 +1,7 @@
 -- Same-process coordinator; no schema switching or persistent mode file.
 local M = {}
 local G = {next_id=0, records={}, values={research_english=false, simplification=true},
-           busy=false, held_printable={}, key_sequence=0}
+           busy=false, held_printable={}}
 
 -- ToUnicodeEx may report '+' on keydown but '=' after Shift is released.
 -- Pair the two ASCII symbols of the same QWERTY key, and letter case.
@@ -33,10 +33,45 @@ local function physical_shift(ctx, key)
           repeated=(flags & 16) ~= 0, id=message .. ':' .. vkey .. ':' .. info}
 end
 
-local function cancel_shift_tap(owner)
-  if not owner then return end
-  owner.shift_key, owner.shift_sequence = nil, nil
-  owner.shift_blocked = true
+local function arm_shift_tap(key, env, physical)
+  local pending = G.shift_tap
+  local code = key.keycode
+  local chord = (key.modifier & 0x4c) ~= 0
+
+  if physical then
+    local other = code == 0xffe1 and physical.right or code == 0xffe2 and physical.left
+    chord = chord or physical.printable or other
+    if pending and pending.key == code and
+        (pending.id == physical.id or (physical.repeated and pending.owner == env)) then
+      -- The same native message may reach both callbacks. It can cancel a
+      -- pending tap, but cannot turn a chord into a new eligible tap.
+      pending.blocked = pending.blocked or chord
+      return
+    end
+    if physical.repeated then
+      if pending then pending.blocked = true end
+      return
+    end
+    -- A fresh native down can recover when a prior release was not delivered.
+    env.legacy_shift_down = nil
+    if not physical.printable then G.held_printable = {} end
+    G.shift_tap = {owner=env, key=code, id=physical.id, blocked=chord}
+    return
+  end
+
+  -- Legacy clients deliver ordinary key events without the optional facts.
+  -- A second visible Shift side or context is enough to cancel a pending tap.
+  local down = env.legacy_shift_down or {}
+  env.legacy_shift_down = down
+  if pending then
+    pending.blocked = pending.blocked or pending.owner ~= env or pending.key ~= code
+                      or pending.id ~= nil or chord
+  else
+    G.shift_tap = {owner=env, key=code,
+                   blocked=chord or next(G.held_printable) ~= nil or
+                           next(down) ~= nil}
+  end
+  down[code] = true
 end
 
 local function apply_page_size(record)
@@ -80,13 +115,6 @@ function M.init(env)
   env.record = record
   G.records[record.id] = record
   env.connection = record.context.option_update_notifier:connect(function(context, name)
-    if record.alive and name == 'ascii_mode' and context:get_option('ascii_mode')
-        and context:get_option('research_english') then
-      context:set_option('research_english', false)
-    elseif record.alive and name == 'research_english' and context:get_option('research_english')
-        and context:get_option('ascii_mode') then
-      context:set_option('ascii_mode', false)
-    end
     if name == 'research_english' and record.alive then apply_page_size(record) end
     if name == 'probe_options_ready' and record.alive and not record.armed then
       arm(record)
@@ -105,12 +133,8 @@ function M.init(env)
 end
 
 function M.fini(env)
-  if G.shift_owner == env then
-    cancel_shift_tap(env)
-    G.shift_owner = nil
-  end
-  if G.physical_gesture and G.physical_gesture.owner == env then
-    G.physical_gesture = nil
+  if G.shift_tap and G.shift_tap.owner == env then
+    G.shift_tap = nil
   end
   local record = env.record
   if record then
@@ -122,116 +146,35 @@ function M.fini(env)
 end
 
 function M.func(key, env)
-  -- Replay a validated right-Shift tap through the native inline_ascii handler.
-  if env.native_shift then return 2 end
   arm(env.record)
   local ctx = env.record.context
   local shift = key.keycode == 0xffe1 or key.keycode == 0xffe2
   if not shift then
-    G.key_sequence = G.key_sequence + 1
-    if G.physical_gesture then
-      G.physical_gesture.blocked = true
-      cancel_shift_tap(G.physical_gesture.owner)
-    end
+    if G.shift_tap then G.shift_tap.blocked = true end
     local code = printable_key(key.keycode)
     if code then
       if key:release() then G.held_printable[code] = nil
       elseif (key.modifier & 0x4c) == 0 then G.held_printable[code] = true end
     end
+    return 2
   end
-  env.held_shift = env.held_shift or {}
-  if shift then
-    local physical = physical_shift(ctx, key)
-    local gesture = G.physical_gesture
-    if not key:release() and physical and not physical.repeated and gesture
-        and gesture.id == physical.id and gesture.key == key.keycode then
-      -- Repeated Test/Key callbacks for this message cannot clear a chord or
-      -- move its owner, even when another context received the duplicate.
-      local other = key.keycode == 0xffe1 and physical.right or
-                    key.keycode == 0xffe2 and physical.left
-      gesture.blocked = gesture.blocked or physical.printable or other
-                        or (key.modifier & 0x4c) ~= 0
-      if gesture.blocked then cancel_shift_tap(gesture.owner) end
-      return 0
-    end
-    local cross_owner = G.shift_owner and G.shift_owner ~= env
-    if cross_owner then
-      -- A release in another context may cancel A, never commit a tap in B.
-      cancel_shift_tap(G.shift_owner)
-      G.shift_owner = nil
-      G.physical_gesture = nil
-    end
-    if not key:release() then
-      if physical and not physical.repeated then
-        -- Only a valid fresh down can retire a missing-up candidate and repair
-        -- a stale printable record. Repeat and unknown data cannot rearm it.
-        cancel_shift_tap(G.shift_owner)
-        env.held_shift = {}
-        if physical.left then env.held_shift[0xffe1] = true end
-        if physical.right then env.held_shift[0xffe2] = true end
-        if not physical.printable then G.held_printable = {} end
-        env.shift_key = key.keycode
-        env.shift_sequence = G.key_sequence
-        local other = key.keycode == 0xffe1 and physical.right or
-                      key.keycode == 0xffe2 and physical.left
-        env.shift_blocked = (key.modifier & 0x4c) ~= 0 or physical.printable or other
-        G.physical_gesture = {owner=env, id=physical.id, key=key.keycode,
-                              blocked=env.shift_blocked}
-      elseif physical and physical.repeated then
-        local existing = G.shift_owner == env and env.shift_key == key.keycode
-                         and env.held_shift[key.keycode]
-        if not existing then env.shift_key = nil end
-        local other = key.keycode == 0xffe1 and physical.right or
-                      key.keycode == 0xffe2 and physical.left
-        env.shift_blocked = env.shift_blocked or not existing or physical.printable
-                            or other or (key.modifier & 0x4c) ~= 0
-        if G.physical_gesture then
-          G.physical_gesture.blocked = G.physical_gesture.blocked or env.shift_blocked
-        end
-      elseif next(env.held_shift) then
-        env.shift_key, env.shift_blocked = nil, true
-      else
-        env.shift_key = key.keycode
-        env.shift_sequence = G.key_sequence
-        env.shift_blocked = (key.modifier & 0x4c) ~= 0
-                            or next(G.held_printable) ~= nil or cross_owner
-      end
-      env.held_shift[key.keycode] = true
-      G.shift_owner = env
-    else
-      local toggle = env.shift_key == key.keycode and not env.shift_blocked
-                     and env.shift_sequence == G.key_sequence
-                     and (key.modifier & 0x4c) == 0
-                     and not cross_owner
-      if gesture then
-        toggle = toggle and gesture.owner == env and not gesture.blocked and physical ~= nil
-      end
-      if physical then
-        toggle = toggle and not physical.printable and not physical.left and not physical.right
-      end
-      env.held_shift[key.keycode], env.shift_key = nil, nil
-      env.shift_blocked = next(env.held_shift) ~= nil
-      if G.shift_owner == env then G.shift_owner = nil end
-      G.physical_gesture = nil
-      if toggle then
-        if key.keycode == 0xffe1 then
-          ctx:set_option('research_english', not ctx:get_option('research_english'))
-        else
-          env.native_shift = true
-          env.engine:process_key(KeyEvent(0xffe2, 0))
-          env.engine:process_key(KeyEvent(0xffe2, 0x40000000))
-          env.native_shift = false
-        end
-        return 1
-      end
-    end
-    -- Leave physical modifier events to the application, without a second tracker.
+
+  local physical = physical_shift(ctx, key)
+  if not key:release() then
+    arm_shift_tap(key, env, physical)
     return 0
-  else
-    -- A release also proves that Shift overlapped another key.
-    env.shift_key = nil
-    if next(env.held_shift) then env.shift_blocked = true end
   end
-  return 2
+
+  if env.legacy_shift_down then env.legacy_shift_down[key.keycode] = nil end
+  local tap = G.shift_tap
+  G.shift_tap = nil
+  if not tap or tap.owner ~= env or tap.key ~= key.keycode or tap.blocked
+      or (key.modifier & 0x4c) ~= 0 or (tap.id and not physical)
+      or (physical and (physical.printable or physical.left or physical.right)) then
+    return 0
+  end
+  if ctx:get_option('ascii_mode') then return 0 end
+  ctx:set_option('research_english', not ctx:get_option('research_english'))
+  return 1
 end
 return M

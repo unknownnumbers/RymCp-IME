@@ -4,6 +4,7 @@
 local M = {}
 local select_hanzi = require('select_hanzi')
 local bracket_kind = 'jp_bracket_character'
+local kana_tail_kind = 'jp_v_kana_tail'
 
 -- Keep only spelling vertices, not the learnable native Phrase. Components
 -- have separate env tables; this context-owned handle joins their lifetimes.
@@ -83,15 +84,15 @@ local function kind(candidate)
     or candidate:get_genuine().type:match('^jp_v') ~= nil)
 end
 
-local function single_query(ctx)
+local function single_query(raw)
   -- The old dictionary's only v-led Kana code is vu. Preserve its continuation
   -- as well (e.g. vu+na); other lowercase v+code syntax belongs to the lookup.
   -- Also identify an empty-menu query so Ctrl+Return cannot fall through to
   -- native script submission and leak its control prefix.
-  return ctx.input:match("^v[a-z' ]*$") ~= nil and ctx.input:sub(1, 2) ~= 'vu'
+  return raw:match("^v[a-z' ]*$") ~= nil and raw:sub(1, 2) ~= 'vu'
 end
 
-function M.parse(ctx)
+function M.parse(ctx, start)
   local raw = ctx.input
   if raw:sub(1, 2) == 'vV' then
     local marker = #raw > 2 and raw:sub(-1) or ''
@@ -101,16 +102,27 @@ function M.parse(ctx)
       body_end=finish, body=raw:sub(3, finish), closed=closed,
       marker=closed and marker or '', mode=marker == 'V' and 'word' or 'char'}
   end
-  if raw == 'v' or single_query(ctx) then
-    return {active=true, held=false, raw=raw, prefix_len=1, body_start=1,
-      body_end=#raw, body=raw:sub(2), closed=false, marker='', mode='char'}
-  end
+  if not single_query(raw) then return end
+  -- Single v owns only the initial lookup segment. Once selected, the
+  -- remaining draft is handled by the ordinary Japanese speller.
+  if start == nil then start = ctx.composition:empty() and 0 or ctx.composition:back().start end
+  if start ~= 0 then return end
+  return {active=true, held=false, raw=raw, prefix_len=1, body_start=1,
+    body_end=#raw, body=raw:sub(2), closed=false, marker='', mode='char'}
 end
 
 local function han(cp)
   return cp == 0x3007 or (cp >= 0x3400 and cp <= 0x4dbf)
     or (cp >= 0x4e00 and cp <= 0x9fff) or (cp >= 0xf900 and cp <= 0xfaff)
     or (cp >= 0x20000 and cp <= 0x2fa1f) or (cp >= 0x30000 and cp <= 0x3347f)
+end
+
+function M.reading_parts(candidate)
+  if candidate.type ~= kana_tail_kind then return candidate.text, '' end
+  for position, cp in utf8.codes(candidate.text) do
+    if not han(cp) then return candidate.text:sub(1, position - 1), candidate.text:sub(position) end
+  end
+  return candidate.text, ''
 end
 
 local function reading_value(values)
@@ -226,11 +238,12 @@ end
 
 -- All values are snapshotted before commit/clear, including actual shown text.
 function M.submit(ctx, candidate, text, engine, learned_text)
-  local state = M.parse(ctx)
-  if not state or not candidate or not kind(candidate) then return false end
+  if not kind(candidate) then return false end
+  local state = M.parse(ctx, candidate.start)
+  if not state then return false end
   local before, prior_words = selected_prefix(ctx, candidate.start)
   local tail = state.raw:sub(math.min(candidate._end, state.body_end) + 1, state.body_end)
-  local continuation = tail ~= '' and ((state.held and 'vV' or 'v') .. tail .. state.marker) or ''
+  if tail ~= '' and state.held then tail = 'vV' .. tail .. state.marker end
   engine:commit_text(before .. text)
   local owner = memory.acquire(engine)
   -- Direct annotated/character commits bypass Context's native Memory hook.
@@ -239,15 +252,15 @@ function M.submit(ctx, candidate, text, engine, learned_text)
   if learned_text ~= false then memory.learn(owner, learned_text or candidate.text) end
   memory.release(owner)
   ctx:clear()
-  if continuation ~= '' then ctx:push_input(continuation) end
+  if tail ~= '' then ctx:push_input(tail) end
   return true
 end
 
 M.segmentor = {}
 function M.segmentor.func(segmentation, env)
   local ctx = env.engine.context
-  if ctx:get_option('ascii_mode') or not M.parse(ctx) then return true end
   local start = segmentation:get_current_start_position()
+  if ctx:get_option('ascii_mode') or not M.parse(ctx, start) then return true end
   -- A caret move edits the same query, rather than truncating its right side.
   segmentation.input = ctx.input
   if start >= #ctx.input then return true end
@@ -268,6 +281,7 @@ end
 function M.translator.fini(env)
   if env.japanese then env.japanese_module.fini_chinese(env.japanese) end
   if env.chinese then env.chinese_module.fini_chinese(env.chinese) end
+  env.kana = nil
   env.japanese, env.japanese_module, env.chinese, env.chinese_module = nil, nil, nil, nil
   shared_fini(env)
 end
@@ -396,16 +410,73 @@ local function prefer(a, b)
   return a.score > b.score
 end
 
-function M.translator.func(input, seg, env)
+local function all_kana(text)
+  for _, cp in utf8.codes(text) do
+    if not ((cp >= 0x3041 and cp <= 0x309f) or (cp >= 0x30a1 and cp <= 0x30ff) or
+        (cp >= 0x31f0 and cp <= 0x31ff) or (cp >= 0x1b000 and cp <= 0x1b16f)) then return false end
+  end
+  return text ~= ''
+end
+
+local function native_kana(query, start, ending, env)
+  if not env.kana then
+    env.kana = Component.Translator(env.engine, env.engine.schema, '', 'script_translator@jp_v_kana')
+  end
+  if not env.kana then return end
+  local seg = Segment(start, ending)
+  seg.tags = Set({'abc'})
+  local translation = env.kana:query(query, seg)
+  if not translation then return end
+  for candidate in translation:iter() do
+    if candidate._end ~= ending then break end
+    if candidate:get_genuine().type ~= 'completion' and all_kana(candidate.text) then return candidate end
+  end
+end
+
+-- One exact Pinyin head followed by native romaji, without another dictionary
+-- or an entry containing a synthetic Han-and-kana surface.
+local function kana_tail(query, start, ending, env)
+  if not query:match("^[a-z][a-z' ]*[a-z]$") or #query < 3 then return end
+  local pinyin = env.japanese
+  local matcher, forms = require('cn_match'), require('cn_forms')
+  for head_length = math.min(#query - 1, pinyin.normal_max_length), 1, -1 do
+    local head = query:sub(1, head_length)
+    if pinyin.normal_spellings[head] == 0 then
+      local tail_start = head_length + 1
+      while query:sub(tail_start, tail_start):match("[' ]") do tail_start = tail_start + 1 end
+      local kana = native_kana(query:sub(tail_start), start + tail_start - 1, ending, env)
+      if kana then
+        local head_end = start + head_length
+        local head_seg = Segment(start, head_end)
+        head_seg.tags = Set({'abc'})
+        local translation = pinyin.native:query(head:upper(), head_seg)
+        if translation then
+          local candidates, seen = {}, {}
+          for candidate in translation:iter() do
+            if candidate._end ~= head_end then break end
+            local phrase = candidate:get_genuine():to_phrase()
+            if phrase and utf8.len(candidate.text) == 1 and han(utf8.codepoint(candidate.text)) and
+                phrase.type ~= 'sentence' and phrase.type ~= 'completion' and
+                matcher.classify(head, pinyin.decoder:decode(phrase.code), forms, head, pinyin.extra_forms) == 0 then
+              local canonical = family.resolve(candidate.text)
+              if not seen[canonical] then
+                seen[canonical] = true
+                candidates[#candidates+1] = candidate
+                if #candidates == 3 then break end
+              end
+            end
+          end
+          if #candidates > 0 then return candidates, kana end
+        end
+      end
+    end
+  end
+end
+
+function M.translator.func(_, seg, env)
   local ctx = env.engine.context
   if ctx:get_option('ascii_mode') then return end
-  local state
-  if ctx.input:sub(1, 2) == 'vV' then state = M.parse(ctx)
-  elseif (seg.start == 0 and input:match("^v[a-z' ]+$") and input:sub(1, 2) ~= 'vu')
-      or single_query(ctx) then
-    state = {raw=ctx.input, held=false, body_start=1, body_end=#ctx.input,
-      body=ctx.input:sub(2), marker='', mode='char'}
-  end
+  local state = M.parse(ctx, seg.start)
   if not state or not state.body:match("^[a-z' ]+$") then return end
   memory.begin_query(env.jp_owner)
   local start = math.max(seg.start, state.body_start)
@@ -419,12 +490,36 @@ function M.translator.func(input, seg, env)
   local chinese = state.held and lookup_stream(chinese_translation(query, query_seg, env), 'chinese', state, start, env)
   local learned = learned_stream(query, start, state, env, false)
   local seen, ordinal = {}, 0
+  local pending_kana = not state.held
   while jp.head or (chinese and chinese.head) or learned.head do
     local stream = jp
     if chinese and chinese.head and prefer(chinese, stream) then stream = chinese end
     if learned.head and prefer(learned, stream) then stream = learned end
     local candidate = stream.head
     local ending = candidate._end
+    if pending_kana then
+      pending_kana = false
+      -- A complete dictionary word keeps the existing lookup unchanged.
+      -- A generated sentence is not evidence of an exact whole word.
+      if ending < state.body_end or stream.match_kind ~= 0 or candidate:get_genuine():to_sentence() then
+        local heads, kana = kana_tail(query, start, state.body_end, env)
+        for _, head in ipairs(heads or {}) do
+          local text = head.text .. kana.text
+          local canonical = Phrase(env.jp_owner.mem, kana_tail_kind, seg.start, state.body_end,
+                                   memory.entry(env.jp_owner, head.text))
+          local shown = ShadowCandidate(canonical:toCandidate(), kana_tail_kind, text, variant_metadata(head.text))
+          shown.start, shown._end, shown.preedit = seg.start, state.body_end, state.raw
+          ordinal = ordinal + 1
+          shown.quality = 1000000 - ordinal
+          local vertices = head:spans().vertices
+          for _, vertex in ipairs(kana:spans().vertices) do
+            if vertex > head._end then vertices[#vertices+1] = vertex end
+          end
+          remember_navigation(ctx, shown, head, state, vertices)
+          yield(shown)
+        end
+      end
+    end
     local identity = family.resolve(candidate.text) .. '\t' .. ending
     if ending > start and not seen[identity] then
       seen[identity] = true
@@ -460,7 +555,7 @@ function M.filter.func(input, env)
     return
   end
   local active = M.parse(ctx) ~= nil
-  if not active and ctx.input:match("^q[a-z' ]+$") then
+  if not active and query_state and query_state.body ~= '' then
     memory.begin_query(env.jp_owner)
     local state = {raw=ctx.input, body_start=0, body_end=#ctx.input}
     local start = ctx.composition:empty() and 0 or ctx.composition:back().start
@@ -568,7 +663,8 @@ function M.processor.func(key, env)
       or key:super() then return 2 end
   local state = M.parse(ctx)
   if not state then
-    if ctx.input:match("^q[a-z' ]+$") and navigate_query(key, ctx, env.navigation) then return 1 end
+    if ctx.input:match("^q[a-z' ]+$") and require('jp_query').parse(ctx)
+        and navigate_query(key, ctx, env.navigation) then return 1 end
     return 2
   end
   if navigate_query(key, ctx, env.navigation) then return 1 end

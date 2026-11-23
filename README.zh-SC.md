@@ -10,23 +10,23 @@ RymCp 提供 Rime 中文及英文方案, 并为乡音复健的后续工作建立
 
 ## 现有功能
 
-- 中文全拼、缩写、既有容错、组句及本地学习, 支持 TC/SC 输出切换. 使用 `"` 固定完整音节的拼写及边界.
+- 中文全拼、缩写、既有容错、组句及本地学习, 支持 TC/SC 输出切换. 使用 `;` 固定前一个完整音节, 使用 `"` 确认其左侧整段完整拼写. 例如 `xiao;sr`、`woxiang"` 和 `wenti"s`.
 - 光标位于草稿末端时, 两套方案从第 8 键起以普通组句处理整段只能按单字母切分的简拼.
 - 英文的完整词、补全、容错、大小写与既有缩写展开.
 - 查字、Unicode 和计算工具按输入模式调用.
-- 墨芯完整方案另提供平假名、片假名、汉字、romaji、q/x/v 查询模式和固定混合词.
-- 官方 Weasel 方案提供中文及英文, 固定直排 6 项、非内嵌.
+- 两套方案均提供平假名、片假名、汉字、romaji、q/x/v 查询模式和固定混合词.
+- 官方 Weasel 方案使用原生整词补全, 固定直排 6 项、非内嵌.
 - 默认使用通用词库. 数学、物理、电脑及诗词词汇可通过独立 DLC 安装. 数学及物理包涵盖广泛学科词汇, 诗词包收录固定来源的全量唐诗、宋诗、宋词及配套选集.
 
-墨芯完整方案新装默认 SC 输出, 中文横排 5 项、英文直排 6 项. 两套方案保留既有学习及自定义配置的使用方式. 配套 2026.11.20 墨芯整合包的英文模式使用蓝色 En 状态图标.
+墨芯完整方案新装默认 SC 输出, 中文横排 5 项、英文直排 6 项. 两套方案保留既有学习及自定义配置的使用方式. 墨芯前端的英文模式使用蓝色 En 状态图标. 中文方案的左右 Shift 在中文与英文间切换, 红 A 保留前端的原生输入状态.
 
 ## 安装
 
-- [墨芯前端与方案安装器](https://github.com/unknownnumbers/rime-stellae/releases/tag/v2026.11.20).
-- [官方 Weasel 方案 ZIP](https://github.com/unknownnumbers/RymCp-IME/releases/tag/v2026.11.20.1).
+- [墨芯前端与方案安装器](https://github.com/unknownnumbers/rime-stellae/releases).
+- [官方 Weasel 方案 ZIP](https://github.com/unknownnumbers/RymCp-IME/releases/tag/v2026.11.24).
 - [完整方案使用说明](docs/PC.md)、[官方方案安装及合并](docs/official-weasel.md)、[DLC 来源](docs/dlc-sources.md).
 
-方案源码分别位于 [config/pc](config/pc) 与 [config/official-weasel](config/official-weasel). 安装到已有资料夹时, 先备份同名配置并依说明合并, 保留用户词库.
+共用维护源位于 [config/pc](config/pc), [config/official-weasel](config/official-weasel) 由同一源码和明确的引擎设置生成. 修改共用源后使用 `python scripts/rebuild_profiles.py --refresh-official`, 并以 `--check` 核对派生结果. 安装到已有资料夹时, 先备份同名配置并依说明合并, 保留用户词库.
 
 2026.11.14.2 诗词 DLC 需要 2026.11.14.2 或更新的方案基座. 词表由仓库中的固定来源及构建程序生成, 可直接下载 Release 的模块 ZIP. 读音与异文采用自动处理及有限校核, 尚未逐句审校, 详见 [DLC 来源与限制](docs/dlc-sources.md).
 

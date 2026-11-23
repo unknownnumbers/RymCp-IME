@@ -21,10 +21,10 @@ function M.func(input, seg, env)
   if env.engine.context:get_option('research_english') then
     return chinese.func(input, seg, env.chinese)
   end
-  if seg:has_tag('tool_calculator') or seg:has_tag('tool_unicode') then
+  if seg.start == 0 and (seg:has_tag('tool_calculator') or seg:has_tag('tool_unicode')) then
     return tools.func(input, seg, env.tools)
   end
-  if input:match("^uU[a-z]+U?'?$") then
+  if seg.start == 0 and input:match("^uU[a-z]+U?'?$") then
     if not env.lookup then
       env.lookup = {engine=env.engine}
       lookup.init(env.lookup)

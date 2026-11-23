@@ -10,7 +10,7 @@ function M.func(segmentation, env)
   local word = input:match(english and "^[A-Za-z][A-Za-z'-]*" or "^[A-Za-z][A-Za-z%-]*")
   if not word then return true end
   if not english and (not word:find('-', 1, true)
-      or input:sub(1, 2) == 'cC' or input:sub(1, 2) == 'uU') then return true end
+      or (start == 0 and (input:sub(1, 2) == 'cC' or input:sub(1, 2) == 'uU'))) then return true end
   local segment = Segment(start, start + #word)
   segment.tags = english and Set({'abc', 'research_english'})
       or Set({'abc', 'english_compound'})

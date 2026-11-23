@@ -55,7 +55,6 @@ function M.init(env)
   env.radical = assert(Component.Translator(env.engine, '', 'table_translator@research_radical'))
   env.parts = assert(Component.Translator(env.engine, '', 'script_translator@research_radical_parts'))
   env.radical_codes = Memory(env.engine, env.engine.schema, 'research_radical')
-  env.traditional = assert(Opencc('s2t.json'))
 end
 
 function M.fini(env)
@@ -66,7 +65,7 @@ function M.fini(env)
 end
 
 function M.func(input, seg, env)
-  if env.engine.context:get_option('research_english') then return end
+  if seg.start ~= 0 or env.engine.context:get_option('research_english') then return end
   local code, marker = input:match("^uU([a-z]+)(U?)'?$")
   if not code then return end
   local show_readings = marker == 'U'
@@ -84,6 +83,9 @@ function M.func(input, seg, env)
   }
   local prefer_stroke = code:match('^[hspnz]+$') ~= nil
   local traditional = not env.engine.context:get_option('simplification')
+  if traditional and not env.traditional then
+    env.traditional = assert(Opencc('s2t.json'))
+  end
   local seen, ordinal = {}, 0
   while true do
     local current, current_rank

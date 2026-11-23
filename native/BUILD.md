@@ -1,5 +1,7 @@
 # Windows 原生來源與構建
 
+Current frontend source and installer builds are maintained in [rime-stellae](https://github.com/unknownnumbers/rime-stellae). This directory retains earlier native recipes and their pinned inputs. Current scheme generation is documented in [Build](../docs/BUILD.md).
+
 本目錄保存 61047 原生組合的來源與構建記錄. 目前配套墨芯前端為 61052, 其完整來源、補丁、測試及構建入口見 [Rime Stellae](https://github.com/unknownnumbers/rime-stellae).
 
 本目錄提供實際採用的完整來源差異、固定上游及可執行的來源組裝/構建腳本. 本次更新為 61047 TSF、61042 x64 Server、61020 IME、N01 x64 執行時引擎與 R5 x64/x86 構建 SDK. [公開CI](https://github.com/unknownnumbers/RymCp-IME/actions/runs/40879482063)已通過五組來源組裝、三組引擎構建、三組Weasel元件構建及兩架構按鍵配對檢查, 詳見[驗證範圍](VALIDATION.md).
@@ -11,7 +13,7 @@
 | `weasel-61047` | x86/x64 TSF, 來源版本 `0.17.4.61047` |
 | `weasel-server-61042` | x64 Server, 來源版本 `0.17.4.61042` |
 | `weasel-61020` | 保留的x86/x64 IME, 來源版本 `0.17.4.61020` |
-| `engine-n01` | 現用引擎來源: N01詞碼接點與step-only GC; 本入口只宣告x64 |
+| `engine-n01` | 保留的 N01 詞碼接點與 step-only GC 配方; 本入口只宣告 x64 |
 | `engine-r5` | 前端構建SDK及受控fixture的R5引擎, x64/x86; 與N01執行時引擎分開 |
 
 每個 Weasel variant 都從相同固定官方提交開始套自己的完整 delta. 三份 Weasel patch 不能依序疊套. N01 與 R5 的 core/Lua patch 也分別套在各自原始上游, 不互相疊加.

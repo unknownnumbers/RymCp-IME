@@ -111,3 +111,14 @@ patch:
     radical: 64
     unicode: 6
     japanese: 48
+  jp_v_kana:
+    dictionary: jp_sela_custom
+    prism: jp_sela_custom
+    enable_user_dict: false
+    enable_sentence: true
+    enable_completion: false
+    enable_word_completion: false
+    contextual_suggestions: false
+    enable_encoder: false
+    encode_commit_history: false
+    strict_spelling: true

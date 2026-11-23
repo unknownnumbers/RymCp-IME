@@ -9,8 +9,8 @@ $archiveCommand = Get-Command 7z.exe -ErrorAction SilentlyContinue
 $archiveTool = if ($archiveCommand) { $archiveCommand.Source } else { Join-Path $env:ProgramFiles '7-Zip/7z.exe' }
 if (-not (Test-Path -LiteralPath $archiveTool)) { throw '7-Zip is required for installer extraction.' }
 $assets = @(
-    @{Id='official';Url='https://github.com/rime/weasel/releases/download/0.17.4/weasel-0.17.4.0-installer.exe';Hash='cf509534a8f5f8af9c98ed7cbb8f135439f145a8cbe7e50ede42bb5b5ab45c29'},
-    @{Id='stellae';Url='https://github.com/unknownnumbers/rime-stellae/releases/download/v0.17.4.61052/stellae-0.17.4.61052-installer.exe';Hash='747f4a86ae77c519731bc441ed90e1cbb954decb78473d0e945441dd681c44e7'}
+    @{Id='official';Url='https://github.com/rime/weasel/releases/download/0.17.4/weasel-0.17.4.0-installer.exe';Hash='cf509534a8f5f8af9c98ed7cbb8f135439f145a8cbe7e50ede42bb5b5ab45c29';Runtime=@{x64='2d8f1bc3737635a11d9fb1bfca4dc9e70533633930a8a0142a81ca879c39c45b'}},
+    @{Id='stellae';Url='https://github.com/unknownnumbers/rime-stellae/releases/download/v2026.11.20/stellae-rymcp-2026.11.20-installer.exe';Hash='692684d2102c85cd7c6714da21006a97b312d039cd4658f45de9877c6f4ade60';Runtime=@{x64='7c2d5d5a922d0d8fbd07c6a9f4d8f9be56a4e2f9b3a50e54cfabede09f509f21';Win32='a1c6fb6b92844ee6365b4f576583a0aca10d7bf2146f158c37d1cade7d12252c'}}
 )
 function Machine([string]$path) {
     $bytes = [IO.File]::ReadAllBytes($path)
@@ -30,8 +30,8 @@ foreach ($asset in $assets) {
     if ($LASTEXITCODE -ne 0) { throw ('Extraction failed: ' + $asset.Id) }
     $machines = if ($asset.Id -eq 'official') { @{x64=0x8664} } else { @{x64=0x8664;Win32=0x14c} }
     foreach ($architecture in $machines.Keys) {
-        $matches = @(Get-ChildItem -LiteralPath $extract -File -Filter 'rime*.dll' | Where-Object { (Machine $_.FullName) -eq $machines[$architecture] })
-        if ($matches.Count -ne 1) { throw ('Expected one runtime for ' + $asset.Id + '/' + $architecture) }
+        $matches = @(Get-ChildItem -LiteralPath $extract -Recurse -File -Filter 'rime*.dll' | Where-Object { (Machine $_.FullName) -eq $machines[$architecture] -and (Get-FileHash -LiteralPath $_.FullName -Algorithm SHA256).Hash.ToLowerInvariant() -ceq $asset.Runtime[$architecture] })
+        if (-not $matches.Count) { throw ('Pinned runtime not found for ' + $asset.Id + '/' + $architecture) }
         $engineDir = Join-Path $out ($asset.Id + '-' + $architecture)
         New-Item -ItemType Directory -Path $engineDir | Out-Null
         Copy-Item -LiteralPath $matches[0].FullName -Destination (Join-Path $engineDir 'rime.dll')

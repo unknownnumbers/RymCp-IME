@@ -120,8 +120,9 @@ function M.func(key, env)
     local candidate = ctx:get_selected_candidate()
     if candidate then
       local group = state.mode == 'char' and (shift and 'on' or 'kun') or nil
-      local description = jp.describe(candidate.text, state.mode, group)
-      jp.submit(ctx, candidate, description.commit, env.engine)
+      local text, tail = jp.reading_parts(candidate)
+      local description = jp.describe(text, state.mode, group)
+      jp.submit(ctx, candidate, description.commit .. tail, env.engine, text)
     end
     return 1
   end

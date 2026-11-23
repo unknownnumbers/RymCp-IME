@@ -25,7 +25,7 @@ end
 
 function M.func(key, env)
   local ctx = env.engine.context
-  if not ctx:get_option('research_english') or key:release()
+  if ctx:get_option('ascii_mode') or not ctx:get_option('research_english') or key:release()
       or key:alt() or key:super() then return 2 end
   if not ctx:is_composing() then return 2 end
   if key:ctrl() then return edit_word(key, ctx) end
